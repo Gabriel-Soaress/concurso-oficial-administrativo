@@ -443,9 +443,9 @@
   </header>
 
   <!-- ========================================================= -->
-  <!-- SIDEBAR NAVIGATION (DESKTOP)                              -->
+  <!-- SIDEBAR NAVIGATION (DESKTOP - 100% FIXA NA TELA)          -->
   <!-- ========================================================= -->
-  <aside class="hidden md:flex md:w-72 surface border-r border-tech shrink-0 flex-col justify-between md:h-screen md:sticky md:top-0">
+  <aside class="hidden md:flex md:w-72 md:fixed md:inset-y-0 md:left-0 md:z-30 surface border-r border-tech shrink-0 flex-col justify-between overflow-y-auto">
     <div class="p-6 space-y-6">
       <!-- Brand Header -->
       <div class="flex items-center justify-between">
@@ -548,8 +548,9 @@
   </nav>
 
   <!-- ========================================================= -->
-  <!-- MAIN CONTENT AREA                                         -->
+  <!-- MAIN CONTENT AREA (COM MARGEM ESQUERDA DA SIDEBAR FIXA)   -->
   <!-- ========================================================= -->
+  <div class="flex-1 min-w-0 md:ml-72 flex flex-col">
   <main class="flex-1 min-w-0 py-6 sm:py-12 px-4 sm:px-8 lg:px-14 max-w-6xl mx-auto w-full">
 
     <!-- ======================================================= -->
@@ -970,6 +971,7 @@
     </section>
 
   </main>
+  </div>
 
   <script>
     const DB_SQL_URL = "https://ep-muddy-thunder-ac0eoxn3-pooler.sa-east-1.aws.neon.tech/sql";
