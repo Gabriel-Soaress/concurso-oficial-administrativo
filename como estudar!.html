@@ -1,0 +1,1992 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>Oficial Administrativo — Plataforma de Estudos (90 Dias)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+  <style>
+    :root {
+      --bg-app: #f4f6fb;
+      --bg-surface: #ffffff;
+      --bg-elevated: #f8fafc;
+      --bg-muted: #eef2f8;
+      --border: #e2e8f0;
+      --border-strong: #cbd5e1;
+      --text-primary: #0f172a;
+      --text-secondary: #475569;
+      --text-muted: #64748b;
+      --brand: #4f46e5;
+      --brand-hover: #4338ca;
+      --brand-soft: #eef2ff;
+      --shadow-sm: 0 2px 6px -1px rgba(15, 23, 42, 0.04), 0 1px 2px -1px rgba(15, 23, 42, 0.03);
+      --shadow-md: 0 10px 25px -5px rgba(15, 23, 42, 0.06), 0 4px 10px -2px rgba(15, 23, 42, 0.03);
+      --shadow-lg: 0 20px 35px -8px rgba(15, 23, 42, 0.08), 0 8px 15px -4px rgba(15, 23, 42, 0.04);
+    }
+    html.dark {
+      --bg-app: #0b0f19;
+      --bg-surface: #131926;
+      --bg-elevated: #182032;
+      --bg-muted: #1e273b;
+      --border: #263147;
+      --border-strong: #354463;
+      --text-primary: #f8fafc;
+      --text-secondary: #94a3b8;
+      --text-muted: #64748b;
+      --brand: #6366f1;
+      --brand-hover: #818cf8;
+      --brand-soft: rgba(99, 102, 241, 0.14);
+      --shadow-sm: 0 2px 6px -1px rgba(0, 0, 0, 0.35);
+      --shadow-md: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
+      --shadow-lg: 0 20px 35px -8px rgba(0, 0, 0, 0.65);
+    }
+    * {
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+    }
+    html, body {
+      overflow-x: hidden;
+      max-width: 100%;
+    }
+    body {
+      background-color: var(--bg-app);
+      color: var(--text-primary);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      margin: 0;
+      padding: 0;
+      -webkit-font-smoothing: antialiased;
+      letter-spacing: -0.01em;
+    }
+    h1, h2, h3, h4, .font-display {
+      font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+      letter-spacing: -0.02em;
+    }
+    .font-mono {
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .surface {
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+    }
+    .surface-card {
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+      transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+    }
+    .surface-card:hover {
+      border-color: var(--border-strong);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+    }
+    .surface-muted {
+      background-color: var(--bg-muted);
+      border: 1px solid var(--border);
+    }
+    .text-sec {
+      color: var(--text-secondary);
+    }
+    .text-mut {
+      color: var(--text-muted);
+    }
+    .border-tech {
+      border-color: var(--border);
+    }
+    /* Hero Gradient Banner */
+    .hero-banner {
+      background: linear-gradient(135deg, #4f46e5 0%, #2563eb 55%, #0ea5e9 100%);
+      color: #ffffff;
+      box-shadow: 0 16px 32px -8px rgba(79, 70, 229, 0.35);
+    }
+    html.dark .hero-banner {
+      background: linear-gradient(135deg, #3730a3 0%, #1d4ed8 55%, #0369a1 100%);
+      box-shadow: 0 16px 32px -8px rgba(30, 58, 138, 0.45);
+    }
+    /* Navigation */
+    .nav-btn {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      width: 100%;
+      padding: 0.8rem 1rem;
+      border-radius: 0.75rem;
+      font-size: 0.88rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+      transition: all 0.15s ease;
+      text-align: left;
+      cursor: pointer;
+      border: 1px solid transparent;
+    }
+    .nav-btn:hover {
+      background-color: var(--bg-muted);
+      color: var(--text-primary);
+    }
+    .nav-btn.active {
+      background: linear-gradient(135deg, #4f46e5, #3b82f6);
+      color: #ffffff;
+      font-weight: 600;
+      box-shadow: 0 6px 15px -3px rgba(79, 70, 229, 0.35);
+    }
+    .mob-nav-btn {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.2rem;
+      flex: 1;
+      min-width: 0;
+      padding: 0.6rem 0.2rem;
+      font-size: 0.7rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+      border-top: 2.5px solid transparent;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .mob-nav-btn.active {
+      color: var(--brand);
+      border-top-color: var(--brand);
+      font-weight: 700;
+      background-color: var(--brand-soft);
+    }
+    /* Inputs & Buttons */
+    .input-tech {
+      background-color: var(--bg-surface);
+      color: var(--text-primary);
+      border: 1.5px solid var(--border-strong);
+      border-radius: 0.75rem;
+      padding: 0.7rem 0.95rem;
+      font-size: 0.86rem;
+      width: 100%;
+      max-width: 100%;
+      transition: border-color 0.15s ease, box-shadow 0.15s ease;
+    }
+    .input-tech:focus {
+      outline: none;
+      border-color: var(--brand);
+      box-shadow: 0 0 0 3.5px rgba(79, 70, 229, 0.15);
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, #4f46e5, #3b82f6);
+      color: #ffffff;
+      font-weight: 600;
+      font-size: 0.84rem;
+      padding: 0.68rem 1.15rem;
+      border-radius: 0.75rem;
+      transition: all 0.18s ease;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.45rem;
+      border: none;
+      white-space: nowrap;
+      box-shadow: 0 4px 12px -2px rgba(79, 70, 229, 0.35);
+    }
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 16px -2px rgba(79, 70, 229, 0.45);
+      filter: brightness(1.05);
+    }
+    .btn-secondary {
+      background-color: var(--bg-surface);
+      color: var(--text-primary);
+      border: 1.5px solid var(--border-strong);
+      font-weight: 600;
+      font-size: 0.82rem;
+      padding: 0.65rem 1rem;
+      border-radius: 0.75rem;
+      transition: all 0.15s ease;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      white-space: nowrap;
+      text-decoration: none;
+    }
+    .btn-secondary:hover {
+      background-color: var(--bg-muted);
+      border-color: var(--brand);
+      color: var(--brand);
+    }
+    .tab-pill {
+      padding: 0.55rem 0.5rem;
+      font-size: 0.78rem;
+      font-weight: 600;
+      border-radius: 0.65rem;
+      color: var(--text-secondary);
+      cursor: pointer;
+      transition: all 0.15s ease;
+      text-align: center;
+    }
+    @media (min-width: 640px) {
+      .tab-pill {
+        padding: 0.6rem 1.15rem;
+        font-size: 0.85rem;
+      }
+    }
+    .tab-pill.active {
+      background: linear-gradient(135deg, #4f46e5, #3b82f6);
+      color: #ffffff;
+      box-shadow: 0 4px 10px -2px rgba(79, 70, 229, 0.3);
+    }
+    .persona-pill {
+      flex: 1;
+      padding: 0.68rem 0.75rem;
+      font-size: 0.82rem;
+      font-weight: 600;
+      border-radius: 0.75rem;
+      border: 1.5px solid var(--border-strong);
+      background-color: var(--bg-surface);
+      color: var(--text-secondary);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.45rem;
+      transition: all 0.15s ease;
+    }
+    .persona-pill:hover {
+      background-color: var(--bg-muted);
+    }
+    .persona-pill.active {
+      background-color: var(--brand-soft);
+      color: var(--brand);
+      border-color: var(--brand);
+    }
+    /* Custom Checkbox */
+    .check-custom {
+      appearance: none;
+      -webkit-appearance: none;
+      width: 1.3rem;
+      height: 1.3rem;
+      border: 2px solid var(--border-strong);
+      border-radius: 0.45rem;
+      background-color: var(--bg-surface);
+      display: inline-grid;
+      place-content: center;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      flex-shrink: 0;
+    }
+    .check-custom:hover {
+      border-color: var(--brand);
+    }
+    .check-custom:checked {
+      background-color: #10b981;
+      border-color: #10b981;
+      box-shadow: 0 2px 6px rgba(16, 185, 129, 0.35);
+    }
+    .check-custom:checked::before {
+      content: "";
+      width: 0.6rem;
+      height: 0.36rem;
+      border-left: 2.2px solid #ffffff;
+      border-bottom: 2.2px solid #ffffff;
+      transform: rotate(-45deg) translate(0.5px, -0.5px);
+    }
+    /* Page transitions */
+    .page-view {
+      display: none;
+      animation: fadeIn 0.2s ease-out;
+    }
+    .page-view.active {
+      display: block;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    /* Subject Color Badges */
+    .badge-port { background-color: rgba(59, 130, 246, 0.12); color: #2563eb; border: 1px solid rgba(59, 130, 246, 0.25); }
+    html.dark .badge-port { color: #60a5fa; }
+    .badge-rlm { background-color: rgba(245, 158, 11, 0.12); color: #d97706; border: 1px solid rgba(245, 158, 11, 0.25); }
+    html.dark .badge-rlm { color: #fbbf24; }
+    .badge-esp { background-color: rgba(139, 92, 246, 0.12); color: #7c3aed; border: 1px solid rgba(139, 92, 246, 0.25); }
+    html.dark .badge-esp { color: #a78bfa; }
+    .badge-ger { background-color: rgba(16, 185, 129, 0.12); color: #059669; border: 1px solid rgba(16, 185, 129, 0.25); }
+    html.dark .badge-ger { color: #34d399; }
+    .badge-sim { background-color: rgba(244, 63, 94, 0.12); color: #e11d48; border: 1px solid rgba(244, 63, 94, 0.25); }
+    html.dark .badge-sim { color: #fb7185; }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col md:flex-row pb-24 md:pb-0">
+
+  <!-- ========================================================= -->
+  <!-- ALERTA DE ERRO DE SINCRONIZAÇÃO (SÓ APARECE SE DER ERRO)  -->
+  <!-- ========================================================= -->
+  <div id="syncErrorBanner" class="hidden fixed bottom-20 md:bottom-6 right-4 left-4 sm:left-auto z-50 sm:max-w-sm surface rounded-xl p-4 border-l-4 border-l-red-500 shadow-xl flex items-start gap-3">
+    <svg class="w-5 h-5 text-red-500 shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+    <div class="flex-1 text-xs">
+      <div class="font-bold text-red-600 dark:text-red-400">Falha ao sincronizar progresso</div>
+      <div id="syncErrorText" class="text-sec mt-0.5">Suas alterações foram salvas localmente neste dispositivo.</div>
+    </div>
+    <button type="button" onclick="document.getElementById('syncErrorBanner').classList.add('hidden')" class="text-mut hover:text-sec p-1">
+      <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+  </div>
+
+  <!-- ========================================================= -->
+  <!-- TELA DE LOGIN PRINCIPAL                                   -->
+  <!-- ========================================================= -->
+  <div id="loginScreen" class="fixed inset-0 z-50 flex flex-col items-center justify-center p-5 overflow-y-auto" style="background-color: var(--bg-app);">
+    <div class="fixed top-4 right-4 flex items-center gap-2">
+      <button type="button" onclick="toggleTheme()" title="Alternar tema Claro/Escuro" class="p-2.5 rounded-xl surface text-sec cursor-pointer hover:opacity-80">
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+      </button>
+    </div>
+
+    <div class="w-full max-w-md space-y-6 my-auto py-6">
+      <div class="text-center space-y-2.5">
+        <div class="w-14 h-14 rounded-2xl hero-banner flex items-center justify-center mx-auto">
+          <svg class="w-7 h-7 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+        </div>
+        <div class="inline-flex items-center gap-1.5 text-xs font-mono uppercase tracking-widest text-indigo-600 dark:text-indigo-400 font-semibold px-3 py-1 rounded-full bg-indigo-500/10">
+          <span>Plano Estratégico 90 Dias</span>
+        </div>
+        <h1 class="text-2xl sm:text-3xl font-extrabold tracking-tight">Oficial Administrativo</h1>
+        <p class="text-xs sm:text-sm text-sec leading-relaxed max-w-sm mx-auto">
+          Entre com sua conta para carregar seu progresso da trilha, simulados e anotações em qualquer dispositivo.
+        </p>
+      </div>
+
+      <div class="surface rounded-2xl p-6 sm:p-8 space-y-6 border border-tech shadow-xl">
+        <form id="loginForm" class="space-y-4" onsubmit="handleLogin(event)">
+          <div class="space-y-1.5">
+            <label for="loginIdentifier" class="block text-xs font-semibold uppercase tracking-wider text-sec">
+              Usuário ou E-mail
+            </label>
+            <div class="relative">
+              <input
+                id="loginIdentifier"
+                type="text"
+                required
+                autocomplete="username"
+                placeholder="Digite seu usuário ou e-mail"
+                class="input-tech pl-10"
+              />
+              <svg class="w-4 h-4 text-mut absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+          </div>
+
+          <div class="space-y-1.5">
+            <label for="loginPassword" class="block text-xs font-semibold uppercase tracking-wider text-sec">
+              Senha
+            </label>
+            <div class="relative">
+              <input
+                id="loginPassword"
+                type="password"
+                required
+                autocomplete="current-password"
+                placeholder="••••••••"
+                class="input-tech pl-10 pr-10"
+              />
+              <svg class="w-4 h-4 text-mut absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              <button
+                type="button"
+                onclick="togglePasswordVisibility()"
+                class="absolute right-3 top-1/2 -translate-y-1/2 p-1 text-mut hover:text-sec cursor-pointer"
+                title="Mostrar/ocultar senha"
+              >
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <div id="loginError" class="hidden rounded-xl p-3 bg-red-500/10 border border-red-500/30 text-xs text-red-600 dark:text-red-400 font-medium"></div>
+
+          <button id="loginSubmitBtn" type="submit" class="btn-primary w-full py-3 text-sm">
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4M10 17l5-5-5-5M15 12H3"/></svg>
+            <span id="loginBtnLabel">Entrar na Plataforma</span>
+          </button>
+        </form>
+
+        <div class="pt-4 border-t border-tech text-center">
+          <button type="button" onclick="continueOffline()" class="text-xs font-medium text-sec hover:text-indigo-600 dark:hover:text-indigo-400 cursor-pointer">
+            Continuar sem conta (salvar apenas neste navegador)
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================= -->
+  <!-- MOBILE TOP HEADER                                         -->
+  <!-- ========================================================= -->
+  <header class="md:hidden surface border-b border-tech px-4 py-3 flex items-center justify-between sticky top-0 z-30 w-full">
+    <div class="flex items-center gap-2.5 min-w-0">
+      <div class="w-8 h-8 rounded-xl hero-banner flex items-center justify-center shrink-0">
+        <svg class="w-4 h-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+      </div>
+      <div class="truncate">
+        <div class="text-[10px] font-mono uppercase tracking-wider text-indigo-600 dark:text-indigo-400 font-bold leading-none">Plano 90 Dias</div>
+        <div class="text-sm font-bold leading-tight mt-0.5 truncate">Oficial Administrativo</div>
+      </div>
+    </div>
+    <div class="flex items-center gap-1.5 shrink-0">
+      <button type="button" onclick="handleAuthClick()" id="mobAuthBtn" class="btn-secondary !py-1.5 !px-2.5 !text-xs !rounded-lg">
+        <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        <span id="mobAuthLabel">Entrar</span>
+      </button>
+      <button id="themeToggleMob" type="button" aria-label="Alternar tema" class="p-2 rounded-lg border border-tech text-sec">
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========================================================= -->
+  <!-- SIDEBAR NAVIGATION (DESKTOP)                              -->
+  <!-- ========================================================= -->
+  <aside class="hidden md:flex md:w-72 surface border-r border-tech shrink-0 flex-col justify-between md:h-screen md:sticky md:top-0">
+    <div class="p-6 space-y-6">
+      <!-- Brand Header -->
+      <div class="flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl hero-banner flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          </div>
+          <div>
+            <div class="text-[11px] font-mono uppercase tracking-wider text-indigo-600 dark:text-indigo-400 font-bold leading-none">Plano 90 Dias</div>
+            <h1 class="text-base font-extrabold tracking-tight mt-1">Oficial Adm.</h1>
+          </div>
+        </div>
+        <button id="themeToggle" type="button" title="Alternar tema Claro/Escuro" class="p-2.5 rounded-xl hover:bg-slate-200/50 dark:hover:bg-slate-800 text-sec cursor-pointer border border-tech">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        </button>
+      </div>
+
+      <!-- User Account Bar -->
+      <div class="surface-muted rounded-xl px-4 py-3 flex items-center justify-between">
+        <div class="flex items-center gap-2.5 min-w-0">
+          <div class="w-7 h-7 rounded-full bg-indigo-500/15 text-indigo-600 dark:text-indigo-400 flex items-center justify-center shrink-0">
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+          <span id="sidebarUserLabel" class="text-xs font-bold truncate">Modo Local</span>
+        </div>
+        <button type="button" onclick="handleAuthClick()" id="sidebarAuthBtn" class="text-xs font-semibold text-indigo-600 dark:text-indigo-400 hover:underline cursor-pointer shrink-0">
+          Entrar
+        </button>
+      </div>
+
+      <!-- Progress Widget -->
+      <div class="surface-muted rounded-2xl p-4 space-y-3">
+        <div class="flex items-center justify-between text-xs">
+          <span class="font-semibold text-sec">Progresso Geral</span>
+          <span id="sidebarPct" class="font-mono font-bold text-indigo-600 dark:text-indigo-400">0%</span>
+        </div>
+        <div class="w-full h-2 bg-slate-200 dark:bg-slate-700 rounded-full overflow-hidden">
+          <div id="sidebarBar" class="h-full bg-gradient-to-r from-indigo-600 to-blue-500 transition-all duration-300" style="width: 0%"></div>
+        </div>
+        <div class="flex items-center justify-between text-xs text-mut font-mono pt-0.5">
+          <span id="sidebarCount">0/60 blocos</span>
+          <span id="sidebarExamsCount">0/93 provas</span>
+        </div>
+      </div>
+
+      <!-- Navigation Links -->
+      <nav class="space-y-1.5">
+        <div class="px-3 pb-1.5 text-[11px] font-mono uppercase tracking-wider text-mut font-semibold">Menu Principal</div>
+        <button type="button" onclick="switchPage('metodo')" id="nav-metodo" class="nav-btn active">
+          <svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+          <span>O Método & Base</span>
+        </button>
+        <button type="button" onclick="switchPage('cronograma')" id="nav-cronograma" class="nav-btn">
+          <svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          <span>Cronograma (12 Sem)</span>
+        </button>
+        <button type="button" onclick="switchPage('gerador')" id="nav-gerador" class="nav-btn">
+          <svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+          <span>Gerador de Prompt</span>
+        </button>
+        <button type="button" onclick="switchPage('provas')" id="nav-provas" class="nav-btn">
+          <svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          <span>Acervo (93 Provas)</span>
+        </button>
+      </nav>
+    </div>
+
+    <div class="p-6 border-t border-tech text-xs text-mut space-y-3">
+      <a href="edital_organizado_oficial_administrativo.pdf" target="_blank" class="btn-secondary w-full">
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        <span>Mapa do Edital (PDF)</span>
+      </a>
+      <div class="font-mono text-[11px] flex items-center justify-between text-mut px-1">
+        <span>Meta: 1h30/dia</span>
+        <span>Sábado: Simulado</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ========================================================= -->
+  <!-- MOBILE BOTTOM NAVIGATION BAR                              -->
+  <!-- ========================================================= -->
+  <nav class="md:hidden fixed bottom-0 inset-x-0 w-full surface border-t border-tech grid grid-cols-4 z-40 shadow-lg">
+    <button type="button" onclick="switchPage('metodo')" id="mob-metodo" class="mob-nav-btn active">
+      <svg class="w-5 h-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+      <span class="truncate">Método</span>
+    </button>
+    <button type="button" onclick="switchPage('cronograma')" id="mob-cronograma" class="mob-nav-btn">
+      <svg class="w-5 h-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+      <span class="truncate">Trilha</span>
+    </button>
+    <button type="button" onclick="switchPage('gerador')" id="mob-gerador" class="mob-nav-btn">
+      <svg class="w-5 h-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+      <span class="truncate">Prompt</span>
+    </button>
+    <button type="button" onclick="switchPage('provas')" id="mob-provas" class="mob-nav-btn">
+      <svg class="w-5 h-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+      <span class="truncate">Provas</span>
+    </button>
+  </nav>
+
+  <!-- ========================================================= -->
+  <!-- MAIN CONTENT AREA                                         -->
+  <!-- ========================================================= -->
+  <main class="flex-1 min-w-0 py-6 sm:py-12 px-4 sm:px-8 lg:px-14 max-w-6xl mx-auto w-full">
+
+    <!-- ======================================================= -->
+    <!-- PÁGINA 1: O MÉTODO & BASE DAS PROVAS                    -->
+    <!-- ======================================================= -->
+    <section id="page-metodo" class="page-view active space-y-10 sm:space-y-16">
+
+      <!-- Hero Banner Colorido & Espaçado -->
+      <div class="hero-banner rounded-2xl sm:rounded-3xl p-6 sm:p-10 lg:p-12 flex flex-col lg:flex-row lg:items-center justify-between gap-6 sm:gap-8">
+        <div class="space-y-3 sm:space-y-4 max-w-2xl">
+          <div class="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest bg-white/15 backdrop-blur-sm px-3.5 py-1.5 rounded-full font-semibold">
+            <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            <span>Sistema de Estudo • 12 Semanas</span>
+          </div>
+          <h2 class="text-2xl sm:text-4xl font-extrabold tracking-tight leading-tight">
+            O Método da Lógica de Origem
+          </h2>
+          <p class="text-sm sm:text-base text-white/90 leading-relaxed">
+            Em vez de decorar regras soltas ou fórmulas prontas, você constrói o conhecimento do básico ao avançado entendendo <strong>o porquê lógico e histórico</strong> de cada conceito — validado em 93 provas reais de Oficial Administrativo.
+          </p>
+        </div>
+
+        <div class="flex flex-col sm:flex-row lg:flex-col gap-3 shrink-0">
+          <button type="button" onclick="switchPage('gerador')" class="bg-white text-indigo-700 hover:bg-indigo-50 font-bold text-sm px-6 py-3.5 rounded-xl shadow-lg inline-flex items-center justify-center gap-2.5 cursor-pointer transition">
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+            <span>Gerar Aula da Semana</span>
+          </button>
+          <button type="button" onclick="switchPage('cronograma')" class="bg-white/15 hover:bg-white/25 text-white border border-white/25 font-semibold text-sm px-6 py-3.5 rounded-xl inline-flex items-center justify-center gap-2.5 cursor-pointer transition">
+            <span>Ver Trilha de 12 Semanas</span>
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Os 4 Pilares do Método -->
+      <div class="space-y-5 sm:space-y-6">
+        <div class="space-y-1.5">
+          <div class="text-xs font-mono uppercase tracking-widest text-indigo-600 dark:text-indigo-400 font-bold">Como Funciona na Prática</div>
+          <h3 class="text-xl sm:text-2xl font-bold">Os 4 Pilares da Sua Rotina (1h30/dia + Sábado)</h3>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6 lg:gap-8">
+          <div class="surface-card rounded-2xl p-6 sm:p-8 space-y-4 border-t-4 border-t-indigo-500">
+            <div class="flex items-center justify-between gap-2">
+              <div class="w-11 h-11 rounded-xl bg-indigo-500/12 text-indigo-600 dark:text-indigo-400 flex items-center justify-center shrink-0">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+              </div>
+              <span class="text-xs font-mono font-semibold px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-600 dark:text-indigo-400">
+                01 • Interrogação Elaborativa
+              </span>
+            </div>
+            <h4 class="text-lg font-bold">Entender o "Porquê" antes do "Como"</h4>
+            <p class="text-sm text-sec leading-relaxed">
+              Toda regra gramatical, exceção, lei ou operação matemática nasceu para resolver um problema prático. Compreender a causa e o mecanismo elimina a decoreba frágil e blinda você contra pegadinhas.
+            </p>
+          </div>
+
+          <div class="surface-card rounded-2xl p-6 sm:p-8 space-y-4 border-t-4 border-t-emerald-500">
+            <div class="flex items-center justify-between gap-2">
+              <div class="w-11 h-11 rounded-xl bg-emerald-500/12 text-emerald-600 dark:text-emerald-400 flex items-center justify-center shrink-0">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+              </div>
+              <span class="text-xs font-mono font-semibold px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400">
+                02 • Técnica Feynman
+              </span>
+            </div>
+            <h4 class="text-lg font-bold">Síntese de 3 Linhas no Caderno</h4>
+            <p class="text-sm text-sec leading-relaxed">
+              Não copie páginas de teoria. Ao encerrar o estudo do dia, escreva com suas próprias palavras, em <strong>no máximo 3 linhas</strong>, como você explicaria a lógica central daquilo para um amigo em 1 minuto.
+            </p>
+          </div>
+
+          <div class="surface-card rounded-2xl p-6 sm:p-8 space-y-4 border-t-4 border-t-amber-500">
+            <div class="flex items-center justify-between gap-2">
+              <div class="w-11 h-11 rounded-xl bg-amber-500/12 text-amber-600 dark:text-amber-400 flex items-center justify-center shrink-0">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <span class="text-xs font-mono font-semibold px-3 py-1 rounded-full bg-amber-500/10 text-amber-600 dark:text-amber-400">
+                03 • Segunda a Sexta (90 min)
+              </span>
+            </div>
+            <h4 class="text-lg font-bold">Bloco Diário no Formato 60 / 30</h4>
+            <p class="text-sm text-sec leading-relaxed">
+              Nos seus 90 minutos diários: dedique <strong>60 min para Construção</strong> (40 min de teoria lógica do básico ao avançado + 20 min de questões do tema) e <strong>30 min para Aplicação</strong> nas provas do acervo.
+            </p>
+          </div>
+
+          <div class="surface-card rounded-2xl p-6 sm:p-8 space-y-4 border-t-4 border-t-rose-500">
+            <div class="flex items-center justify-between gap-2">
+              <div class="w-11 h-11 rounded-xl bg-rose-500/12 text-rose-600 dark:text-rose-400 flex items-center justify-center shrink-0">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              </div>
+              <span class="text-xs font-mono font-semibold px-3 py-1 rounded-full bg-rose-500/10 text-rose-600 dark:text-rose-400">
+                04 • Sábado e Domingo
+              </span>
+            </div>
+            <h4 class="text-lg font-bold">Simulado Fixo de Sábado + Caderno de Erros</h4>
+            <p class="text-sm text-sec leading-relaxed">
+              Todo sábado você resolve <strong>1 prova completa</strong> (numeradas de <code>1.pdf</code> a <code>12.pdf</code> na ordem das semanas). Para cada erro, anote 1 linha explicando o motivo lógico da resposta correta.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- A Base das Provas -->
+      <div class="space-y-5 sm:space-y-6">
+        <div class="space-y-1.5">
+          <div class="text-xs font-mono uppercase tracking-widest text-indigo-600 dark:text-indigo-400 font-bold">Conteúdo Programático</div>
+          <h3 class="text-xl sm:text-2xl font-bold">Arquitetura das 4 Disciplinas (Pré-Requisitos Encadeados)</h3>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6 lg:gap-8">
+          <div class="surface-card rounded-2xl p-6 sm:p-8 space-y-4">
+            <div class="flex items-center gap-3.5">
+              <div class="w-11 h-11 rounded-xl bg-blue-500/12 text-blue-600 dark:text-blue-400 flex items-center justify-center shrink-0">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+              </div>
+              <div>
+                <span class="text-xs font-mono font-bold text-blue-600 dark:text-blue-400 uppercase">Disciplina 01</span>
+                <h4 class="text-lg font-bold">Língua Portuguesa</h4>
+              </div>
+            </div>
+            <p class="text-sm text-sec leading-relaxed">
+              Construída como uma escada lógica: começamos pelo som e acentuação (<strong>Fonologia</strong>), passamos pelo papel de cada classe de palavra (<strong>Morfologia</strong>), avançamos para a função na frase (<strong>Sintaxe Simples e Composta</strong>) e chegamos naturalmente em <strong>Concordância, Regência, Crase e Pontuação</strong>.
+            </p>
+          </div>
+
+          <div class="surface-card rounded-2xl p-6 sm:p-8 space-y-4">
+            <div class="flex items-center gap-3.5">
+              <div class="w-11 h-11 rounded-xl bg-amber-500/12 text-amber-600 dark:text-amber-400 flex items-center justify-center shrink-0">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="16" y1="14" x2="16" y2="18"/><path d="M16 10h.01M12 10h.01M8 10h.01M12 14h.01M8 14h.01M12 18h.01M8 18h.01"/></svg>
+              </div>
+              <div>
+                <span class="text-xs font-mono font-bold text-amber-600 dark:text-amber-400 uppercase">Disciplina 02</span>
+                <h4 class="text-lg font-bold">Matemática e Raciocínio Lógico</h4>
+              </div>
+            </div>
+            <p class="text-sm text-sec leading-relaxed">
+              Foco no que cada conta faz na realidade: saímos das operações básicas e frações para comparação de grandezas (<strong>Razão, Proporção, Regra de Três, Porcentagem e Conjuntos</strong>), avançando para <strong>Equações, Funções, Sequências/Reversão, Lógica Proposicional, Geometria, Combinatória e Matrizes</strong>.
+            </p>
+          </div>
+
+          <div class="surface-card rounded-2xl p-6 sm:p-8 space-y-4">
+            <div class="flex items-center gap-3.5">
+              <div class="w-11 h-11 rounded-xl bg-purple-500/12 text-purple-600 dark:text-purple-400 flex items-center justify-center shrink-0">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 9h1M14 9h1M9 13h1M14 13h1M9 17h6"/></svg>
+              </div>
+              <div>
+                <span class="text-xs font-mono font-bold text-purple-600 dark:text-purple-400 uppercase">Disciplina 03</span>
+                <h4 class="text-lg font-bold">Conhecimentos Específicos (Do Zero)</h4>
+              </div>
+            </div>
+            <p class="text-sm text-sec leading-relaxed">
+              Ensinado como o fluxo real de uma Prefeitura: <strong>Administração Pública e Princípios</strong> &rarr; <strong>Estrutura e Rotinas</strong> &rarr; Como redigir (<strong>Redação Oficial</strong>) &rarr; Como tramitar (<strong>Protocolo</strong>) &rarr; Como guardar nas 3 Idades (<strong>Arquivo</strong>) &rarr; <strong>Informática + LAI e LGPD</strong>.
+            </p>
+          </div>
+
+          <div class="surface-card rounded-2xl p-6 sm:p-8 space-y-4">
+            <div class="flex items-center gap-3.5">
+              <div class="w-11 h-11 rounded-xl bg-emerald-500/12 text-emerald-600 dark:text-emerald-400 flex items-center justify-center shrink-0">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              </div>
+              <div>
+                <span class="text-xs font-mono font-bold text-emerald-600 dark:text-emerald-400 uppercase">Disciplina 04</span>
+                <h4 class="text-lg font-bold">Conhecimentos Gerais & Atualidades</h4>
+              </div>
+            </div>
+            <p class="text-sm text-sec leading-relaxed">
+              Estudo em <strong>Três Escalas Conectadas</strong>: Formação histórica e geográfica do <strong>Brasil</strong> &rarr; <strong>Estado de São Paulo</strong> &rarr; <strong>Município de Birigui e Região</strong>, articulados aos temas atuais de Economia, Energia, Política, Sustentabilidade e Geopolítica.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================= -->
+    <!-- PÁGINA 2: CRONOGRAMA & CHECKLISTS ESPAÇADAS             -->
+    <!-- ======================================================= -->
+    <section id="page-cronograma" class="page-view space-y-6 sm:space-y-10">
+      <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-4 sm:gap-6">
+        <div class="space-y-1.5">
+          <div class="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-indigo-600 dark:text-indigo-400 font-bold">
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            <span>Trilha Sequencial de Pré-Requisitos</span>
+          </div>
+          <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight">Cronograma de 12 Semanas</h2>
+          <p class="text-sm text-sec">
+            Marque as metas concluídas na semana ou clique em <strong>Gerar Aula</strong> para abrir o estúdio de prompt.
+          </p>
+        </div>
+
+        <!-- Grid de 3 colunas sem estourar a largura no mobile -->
+        <div class="surface p-1.5 rounded-xl grid grid-cols-3 gap-1 w-full lg:w-auto shrink-0">
+          <button type="button" onclick="selectMonth(1)" id="tab-m1" class="tab-pill active">Mês 1</button>
+          <button type="button" onclick="selectMonth(2)" id="tab-m2" class="tab-pill">Mês 2</button>
+          <button type="button" onclick="selectMonth(3)" id="tab-m3" class="tab-pill">Mês 3</button>
+        </div>
+      </div>
+
+      <div id="monthBanner" class="surface rounded-2xl p-4 sm:p-6 border-l-4 border-l-indigo-500"></div>
+
+      <div id="weeksListContainer" class="space-y-6 sm:space-y-8"></div>
+    </section>
+
+    <!-- ======================================================= -->
+    <!-- PÁGINA 3: GERADOR DE PROMPT (LAYOUT HORIZONTAL LIMPO)   -->
+    <!-- ======================================================= -->
+    <section id="page-gerador" class="page-view space-y-6 sm:space-y-10">
+      <div class="space-y-1.5">
+        <div class="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-indigo-600 dark:text-indigo-400 font-bold">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+          <span>Estúdio de Prompt Inteligente</span>
+        </div>
+        <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight">Gerador de Aula da Semana</h2>
+        <p class="text-sm text-sec max-w-2xl">
+          O modelo do prompt se adapta automaticamente à <strong>matéria escolhida</strong> e ao seu <strong>ambiente (IA Web vs. Agente PC)</strong>, enviando apenas as diretrizes relevantes.
+        </p>
+      </div>
+
+      <!-- Painel Horizontal de Configuração -->
+      <div class="surface rounded-2xl sm:rounded-3xl p-5 sm:p-8 lg:p-10 space-y-6 sm:space-y-8 shadow-md">
+        <!-- Linha 1: Ambiente + Semana + Matéria -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-4 sm:gap-6 items-end">
+          <div class="md:col-span-4 space-y-2">
+            <label class="block text-xs font-mono uppercase tracking-wider text-sec font-bold">
+              1. Ambiente de Estudo
+            </label>
+            <div class="flex gap-2">
+              <button type="button" id="btnPersonaWeb" onclick="setPersona('web')" class="persona-pill">
+                <svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M8 10h.01M12 10h.01M16 10h.01"/></svg>
+                <span>IA Web / Mobile</span>
+              </button>
+              <button type="button" id="btnPersonaAgent" onclick="setPersona('agent')" class="persona-pill active">
+                <svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                <span>Agente PC</span>
+              </button>
+            </div>
+            <input type="hidden" id="modeSelect" value="agent" />
+          </div>
+
+          <div class="md:col-span-4 space-y-2">
+            <label for="weekSelect" class="block text-xs font-mono uppercase tracking-wider text-sec font-bold">
+              2. Semana do Cronograma (01 a 12)
+            </label>
+            <select id="weekSelect" class="input-tech"></select>
+          </div>
+
+          <div class="md:col-span-4 space-y-2">
+            <label for="subjectSelect" class="block text-xs font-mono uppercase tracking-wider text-sec font-bold">
+              3. Modelo por Disciplina
+            </label>
+            <select id="subjectSelect" class="input-tech">
+              <option value="all">Semana Completa (Plano Seg a Sáb)</option>
+              <option value="port">Modelo: Língua Portuguesa</option>
+              <option value="rlm">Modelo: Matemática e RLM</option>
+              <option value="esp">Modelo: Conhecimentos Específicos</option>
+              <option value="ger">Modelo: Conhecimentos Gerais</option>
+              <option value="simulado">Modelo: Simulado de Sábado & Erros</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Linha 2: Resumo Dinâmico do Foco Selecionado -->
+        <div id="generatorWeekPreview" class="surface-muted rounded-2xl p-4 sm:p-6"></div>
+
+        <!-- Linha 3: Campo Horizontal de Dificuldade + Botões Compactos e Estáveis -->
+        <div class="flex flex-col sm:flex-row sm:items-end gap-4 pt-1">
+          <div class="flex-1 space-y-2 min-w-0">
+            <label for="difficultyInput" class="block text-xs font-mono uppercase tracking-wider text-sec font-bold">
+              4. Dúvida específica ou ponto para aprofundar (Opcional)
+            </label>
+            <input
+              id="difficultyInput"
+              type="text"
+              placeholder="Ex: Quero entender a lógica do MMC nas frações, ou Desconcentração vs Descentralização..."
+              class="input-tech"
+            />
+          </div>
+
+          <div class="flex items-center gap-2.5 shrink-0">
+            <button id="copyPromptBtn" type="button" class="btn-primary min-w-[135px]">
+              <svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              <span id="copyBtnText">Copiar Prompt</span>
+            </button>
+            <button type="button" onclick="togglePromptDrawer()" id="togglePromptBtn" class="btn-secondary min-w-[110px]" title="Ver ou editar o texto do prompt">
+              <svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+              <span id="togglePromptLabel">Ver Texto</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Atalhos Rápidos para Persona Mobile/Web -->
+        <div id="webAiShortcuts" class="hidden pt-4 border-t border-tech flex flex-wrap items-center justify-between gap-3 text-xs">
+          <span class="text-sec font-semibold">Copiou? Cole na sua IA preferida:</span>
+          <div class="flex flex-wrap gap-2">
+            <a href="https://chatgpt.com/" target="_blank" rel="noopener" class="btn-secondary !py-2 !px-3 !text-xs">
+              <span>ChatGPT</span>
+              <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+            </a>
+            <a href="https://claude.ai/" target="_blank" rel="noopener" class="btn-secondary !py-2 !px-3 !text-xs">
+              <span>Claude</span>
+              <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+            </a>
+            <a href="https://gemini.google.com/" target="_blank" rel="noopener" class="btn-secondary !py-2 !px-3 !text-xs">
+              <span>Gemini</span>
+              <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Gaveta Horizontal do Prompt -->
+        <div id="promptDrawer" class="hidden pt-5 border-t border-tech space-y-3">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <div class="flex items-center gap-2">
+              <span class="text-xs font-mono uppercase tracking-wider text-indigo-600 dark:text-indigo-400 font-bold">Prompt Gerado (Editável)</span>
+              <span id="folderIndicator" class="text-xs text-mut font-mono"></span>
+            </div>
+            <button id="resetPromptBtn" type="button" class="text-xs font-semibold text-sec hover:text-indigo-600 cursor-pointer">
+              Limpar Dúvida
+            </button>
+          </div>
+          <textarea
+            id="promptOutput"
+            rows="13"
+            class="input-tech font-mono text-xs leading-relaxed"
+          ></textarea>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================= -->
+    <!-- PÁGINA 4: ACERVO DE 93 PROVAS & SIMULADOS ESPAÇADOS     -->
+    <!-- ======================================================= -->
+    <section id="page-provas" class="page-view space-y-6 sm:space-y-10">
+      <div class="space-y-1.5">
+        <div class="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-indigo-600 dark:text-indigo-400 font-bold">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          <span>Biblioteca Oficial (1.pdf a 93.pdf)</span>
+        </div>
+        <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight">12 Simulados & 81 Provas de Treino</h2>
+        <p class="text-sm text-sec max-w-2xl">
+          As provas <strong>#1 a #12</strong> são os seus Simulados Oficiais de Sábado (um para cada semana). As provas <strong>#13 a #93</strong> servem para o treino diário de 30 minutos.
+        </p>
+      </div>
+
+      <!-- Cards de Resumo do Acervo -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
+        <div class="surface rounded-2xl p-5 flex items-center gap-4">
+          <div class="w-12 h-12 rounded-xl bg-rose-500/12 text-rose-600 dark:text-rose-400 flex items-center justify-center shrink-0">
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <div>
+            <div class="text-xs font-mono uppercase text-mut font-semibold">Simulados de Sábado</div>
+            <div id="statSimulados" class="text-xl font-extrabold mt-0.5">0 / 12 feitos</div>
+          </div>
+        </div>
+
+        <div class="surface rounded-2xl p-5 flex items-center gap-4">
+          <div class="w-12 h-12 rounded-xl bg-indigo-500/12 text-indigo-600 dark:text-indigo-400 flex items-center justify-center shrink-0">
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          </div>
+          <div>
+            <div class="text-xs font-mono uppercase text-mut font-semibold">Provas de Treino</div>
+            <div id="statTreinos" class="text-xl font-extrabold mt-0.5">0 / 81 feitas</div>
+          </div>
+        </div>
+
+        <div class="surface rounded-2xl p-5 flex items-center gap-4">
+          <div class="w-12 h-12 rounded-xl bg-emerald-500/12 text-emerald-600 dark:text-emerald-400 flex items-center justify-center shrink-0">
+            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <div>
+            <div class="text-xs font-mono uppercase text-mut font-semibold">Total Concluído</div>
+            <div id="statTotalExams" class="text-xl font-extrabold mt-0.5">0 de 93 PDFs</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Barra Horizontal de Filtros -->
+      <div class="surface rounded-2xl p-4 sm:p-5 grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
+        <select id="examTypeFilter" class="input-tech">
+          <option value="all">Todas as 93 provas</option>
+          <option value="sim">Apenas os 12 Simulados (1–12)</option>
+          <option value="train">Apenas Treino Diário (13–93)</option>
+        </select>
+        <select id="examYearFilter" class="input-tech">
+          <option value="all">Todos os anos (2022–2026)</option>
+          <option value="2026">Ano 2026 (5 provas)</option>
+          <option value="2025">Ano 2025 (14 provas)</option>
+          <option value="2024">Ano 2024 (39 provas)</option>
+          <option value="2023">Ano 2023 (20 provas)</option>
+          <option value="2022">Ano 2022 (15 provas)</option>
+        </select>
+        <input id="examSearch" type="text" placeholder="Buscar por prefeitura, câmara ou banca..." class="input-tech" />
+      </div>
+
+      <!-- Lista Mobile -->
+      <div id="examsMobileList" class="md:hidden space-y-4"></div>
+
+      <!-- Tabela Desktop Espaçada -->
+      <div class="hidden md:block surface rounded-2xl overflow-hidden shadow-sm">
+        <div class="overflow-x-auto">
+          <table class="w-full text-left border-collapse">
+            <thead>
+              <tr class="surface-muted border-b border-tech text-xs font-mono uppercase text-sec">
+                <th class="py-4 px-6 w-20">Status</th>
+                <th class="py-4 px-5 w-20">Prova</th>
+                <th class="py-4 px-5 w-24">Ano</th>
+                <th class="py-4 px-6">Órgão / Instituição</th>
+                <th class="py-4 px-6">Banca</th>
+                <th class="py-4 px-6 text-right">Downloads (PDF)</th>
+              </tr>
+            </thead>
+            <tbody id="examsTableBody" class="divide-y divide-slate-200 dark:divide-slate-800 text-sm"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    const DB_SQL_URL = "https://ep-muddy-thunder-ac0eoxn3-pooler.sa-east-1.aws.neon.tech/sql";
+    const DB_CONN_STR = "postgresql://neondb_owner:npg_l2mWY5HINrgG@ep-muddy-thunder-ac0eoxn3-pooler.sa-east-1.aws.neon.tech/neondb?sslmode=require";
+
+    const allExams = [{"i": 1, "y": 2024, "o": "Pref. Cataguases/MG", "b": "ACCESS", "g": true}, {"i": 2, "y": 2022, "o": "Câmara de Fernandópolis/SP", "b": "VUNESP", "g": true}, {"i": 3, "y": 2026, "o": "Câmara de Francisco Morato/SP", "b": "AVANÇA SP", "g": true}, {"i": 4, "y": 2025, "o": "Pref. Nonai-RS", "b": "OBJETIVA CONCURSOS", "g": true}, {"i": 5, "y": 2024, "o": "Câmara de Caratinga/MG", "b": "INSTITUTO CONSULPLAN", "g": true}, {"i": 6, "y": 2024, "o": "Pref. Itaguara/MG", "b": "ACCESS", "g": true}, {"i": 7, "y": 2024, "o": "Câmara de Itapeva/SP", "b": "VUNESP", "g": true}, {"i": 8, "y": 2026, "o": "Pref. Bom Jesus/RS", "b": "Fundatec", "g": true}, {"i": 9, "y": 2024, "o": "Pref. Santana de Parnaíba/SP", "b": "INSTITUO MAIS", "g": true}, {"i": 10, "y": 2024, "o": "Pref. Pedreira/SP", "b": "Avança SP", "g": true}, {"i": 11, "y": 2024, "o": "Câmara de Itajubá/MG", "b": "INSTITUTO CONSULPLAN", "g": true}, {"i": 12, "y": 2026, "o": "Pref. Silveira Martins/RS", "b": "Legalle Concursos", "g": true}, {"i": 13, "y": 2026, "o": "Pref. Getúlio Vargas/RS", "b": "FUNDATEC", "g": true}, {"i": 14, "y": 2026, "o": "Câmara de Silveira Martins/RS", "b": "Legalle Concursos", "g": true}, {"i": 15, "y": 2025, "o": "Pref. São Vicente do Sul/RS", "b": "FUNDATEC", "g": true}, {"i": 16, "y": 2025, "o": "Pref. Bocaina do Sul/SC", "b": "INAZ DO PARÁ", "g": true}, {"i": 17, "y": 2025, "o": "Pref. e Câmara de Cerro Grande/RS", "b": "FUNDATEC", "g": true}, {"i": 18, "y": 2025, "o": "Pref. Santana de Parnaíba/SP", "b": "MSCONCURSOS", "g": true}, {"i": 19, "y": 2025, "o": "Pref. Barra Bonita/SC", "b": "AMEOSC", "g": true}, {"i": 20, "y": 2025, "o": "Pref. Rio dos Índios/RS", "b": "Fenix", "g": true}, {"i": 21, "y": 2025, "o": "Pref. de Rio dos Índios/RS", "b": "Fenix", "g": true}, {"i": 22, "y": 2025, "o": "Pref. Ilópolis/RS", "b": "OBJETIVA CONCURSOS", "g": true}, {"i": 23, "y": 2025, "o": "Pref. Porto Mauá/RS", "b": "FUNDATEC", "g": true}, {"i": 24, "y": 2025, "o": "Pref. Morro da Fumaça/SC", "b": "UNESC", "g": true}, {"i": 25, "y": 2025, "o": "Pref. Soledade/RS", "b": "FUNDATEC", "g": true}, {"i": 26, "y": 2025, "o": "Prefeitura de Jequitaí - MG", "b": "FADENOR", "g": true}, {"i": 27, "y": 2025, "o": "ELETROCAR", "b": "OBJETIVA CONCURSOS", "g": true}, {"i": 28, "y": 2024, "o": "Câmara de Santa Leopoldina/ES", "b": "IDCAP", "g": false}, {"i": 29, "y": 2024, "o": "Pref. Arroio do Sal/RS", "b": "FUNDATEC", "g": true}, {"i": 30, "y": 2024, "o": "Câmara de Itapecerica da Serra/SP", "b": "AVANÇASP", "g": true}, {"i": 31, "y": 2024, "o": "Pref. Jari/RS", "b": "FUNDATEC", "g": true}, {"i": 32, "y": 2024, "o": "Pref. São Francisco de Paula/RS", "b": "FUNDATEC", "g": true}, {"i": 33, "y": 2024, "o": "Pref. Buritizal/SP", "b": "Creative Group", "g": true}, {"i": 34, "y": 2024, "o": "Câmara de São João do Triunfo/PR", "b": "FAU - UNICENTRO", "g": true}, {"i": 35, "y": 2024, "o": "Pref. Arroio do Sal/RS", "b": "FUNDATEC", "g": true}, {"i": 36, "y": 2024, "o": "Câmara de Caratinga/MG", "b": "INSTITUTO CONSULPLAN", "g": true}, {"i": 37, "y": 2024, "o": "Câmara de Itapeva/SP", "b": "VUNESP", "g": true}, {"i": 38, "y": 2024, "o": "Pref. Iturama/MG", "b": "HL", "g": true}, {"i": 39, "y": 2024, "o": "Pref. Nova Laranjeiras/PR", "b": "FAU - UNICENTRO", "g": true}, {"i": 40, "y": 2024, "o": "Pref. Senador Salgado Filho/RS", "b": "OBJETIVA CONCURSOS", "g": true}, {"i": 41, "y": 2024, "o": "AmeriPrev", "b": "Avança SP", "g": true}, {"i": 42, "y": 2024, "o": "Câmara de Itajubá/MG", "b": "INSTITUTO CONSULPLAN", "g": true}, {"i": 43, "y": 2024, "o": "CIRC/RS", "b": "OBJETIVA CONCURSOS", "g": true}, {"i": 44, "y": 2024, "o": "Pref. e Câmara de São Martinho da Serra/RS", "b": "FUNDATEC", "g": true}, {"i": 45, "y": 2024, "o": "SAAE de Linhares/ES", "b": "IBADE", "g": true}, {"i": 46, "y": 2024, "o": "Pref. e Câmara Passo do Sobrado/RS", "b": "FUNDATEC", "g": true}, {"i": 47, "y": 2024, "o": "Pref. Lebon Régis/SC", "b": "OBJETIVA CONCURSOS", "g": true}, {"i": 48, "y": 2024, "o": "Pref. Camaquã/RS", "b": "Creative Group", "g": true}, {"i": 49, "y": 2024, "o": "Pref. Santa Leopoldina/ES", "b": "OBJETIVA CONCURSOS", "g": true}, {"i": 50, "y": 2024, "o": "Pref. Inocência/MS", "b": "GAMA", "g": true}, {"i": 51, "y": 2024, "o": "Pref. Gentil/RS", "b": "OBJETIVA CONCURSOS", "g": true}, {"i": 52, "y": 2024, "o": "Pref. Segredo/RS", "b": "FUNDATEC", "g": true}, {"i": 53, "y": 2024, "o": "Pref. Várzea da Palma/MG", "b": "FADENOR", "g": true}, {"i": 54, "y": 2024, "o": "Pref. Venâncio Aires/RS", "b": "FUNDATEC", "g": true}, {"i": 55, "y": 2024, "o": "Câmara de Itaiópolis/SC", "b": "OBJETIVA CONCURSOS", "g": true}, {"i": 56, "y": 2024, "o": "Pref. Barra do Guarita/RS", "b": "FUNDATEC", "g": true}, {"i": 57, "y": 2024, "o": "Pref. Concórdia/SC", "b": "FEPESE", "g": true}, {"i": 58, "y": 2024, "o": "Pref. Vila Maria/RS", "b": "FUNDATEC", "g": true}, {"i": 59, "y": 2024, "o": "Pref. Lajeado Grande/SC", "b": "UNO Chapecó", "g": true}, {"i": 60, "y": 2023, "o": "Pref. Ibiraiaras/RS", "b": "FUNDATEC", "g": true}, {"i": 61, "y": 2023, "o": "Pref. Santana de Parnaíba/SP", "b": "INSTITUTO MAIS", "g": true}, {"i": 62, "y": 2023, "o": "FUTEL", "b": "FUNDEP", "g": true}, {"i": 63, "y": 2023, "o": "Pref. São João do Polêsine/RS", "b": "FUNDATEC", "g": true}, {"i": 64, "y": 2023, "o": "Pref. Santa Cecília do Sul/RS", "b": "FUNDATEC", "g": true}, {"i": 65, "y": 2023, "o": "Pref. Cruzeiro do Iguaçu/PR", "b": "FAU - UNICENTRO", "g": true}, {"i": 66, "y": 2023, "o": "Câmara de Avaré/SP", "b": "INSTITUTO UNIQUE", "g": true}, {"i": 67, "y": 2023, "o": "Pref. e Câmara de Braga/RS", "b": "FUNDATEC", "g": true}, {"i": 68, "y": 2023, "o": "Pref. Araçariguama/SP", "b": "AVANÇA SP", "g": true}, {"i": 69, "y": 2023, "o": "Pref. Conselheiro Pena/MG - SAAE", "b": "MÁXIMA AUDITORIA", "g": true}, {"i": 70, "y": 2023, "o": "ELETROCAR", "b": "FUNDATEC", "g": true}, {"i": 71, "y": 2023, "o": "Pref. Faxinal do Soturno/RS", "b": "FUNDATEC", "g": true}, {"i": 72, "y": 2023, "o": "Pref. Ibarama/RS", "b": "FUNDATEC", "g": true}, {"i": 73, "y": 2023, "o": "Pref. Rio Branco do Ivaí/PR", "b": "FAUEL", "g": true}, {"i": 74, "y": 2023, "o": "Pref. Vista Gaúcha/RS", "b": "FUNDATEC", "g": true}, {"i": 75, "y": 2023, "o": "Pref. Vargem Alta/ES", "b": "IDCAP", "g": false}, {"i": 76, "y": 2023, "o": "Pref. Santa Cecília do Sul/RS", "b": "FUNDATEC", "g": true}, {"i": 77, "y": 2023, "o": "Pref. São João do Polêsine/RS", "b": "FUNDATEC", "g": true}, {"i": 78, "y": 2023, "o": "FUTEL", "b": "FUNDEP", "g": true}, {"i": 79, "y": 2023, "o": "Pref. Santana de Parnaíba/SP", "b": "INSTITUTO MAIS", "g": true}, {"i": 80, "y": 2022, "o": "Câmara Madre de Deus de Minas/MG", "b": "Fundação CEFETMINAS", "g": true}, {"i": 81, "y": 2022, "o": "Pref. Caeté/MG", "b": "INSTITUTO CONSULPLAN", "g": true}, {"i": 82, "y": 2022, "o": "Câmara São João do Ivaí/ PR", "b": "FAUEL", "g": true}, {"i": 83, "y": 2022, "o": "Câmara de Socorro/SP", "b": "IUDS", "g": true}, {"i": 84, "y": 2022, "o": "Pref. Rio das Antas-SC", "b": "Pref. Rio das Antas-SC", "g": true}, {"i": 85, "y": 2022, "o": "Pref. Paracatu/MG", "b": "COTEC/FADENOR", "g": true}, {"i": 86, "y": 2022, "o": "Pref. Rio das Anatas/SC", "b": "Pref. Rio das Anatas/SC", "g": true}, {"i": 87, "y": 2022, "o": "Ref. Paim Filho/RS", "b": "FUNDATEC", "g": true}, {"i": 88, "y": 2022, "o": "Pref. Tunas/RS", "b": "FUNDATEC", "g": true}, {"i": 89, "y": 2022, "o": "Pref. Laranjal Paulista/SP", "b": "Avança SP", "g": true}, {"i": 90, "y": 2022, "o": "Pref. Rio das Antas/SC", "b": "OMNI CONCURSOS", "g": true}, {"i": 91, "y": 2022, "o": "Pref. Santana de Parnaíba/SP", "b": "MAIS", "g": true}, {"i": 92, "y": 2022, "o": "Pref. São Miguel do Iguaçu/PR", "b": "UNIOESTE", "g": true}, {"i": 93, "y": 2022, "o": "Pref. Santana de Parnaíba/SP", "b": "INSTITUTO MAIS", "g": true}];
+
+    const weeksData = [
+      {
+        num: 1,
+        monthNum: 1,
+        monthTitle: "Mês 1 — Fundações (Construindo a Base do Zero)",
+        title: "Semana 01: Os Alicerces da Língua, dos Números e do Estado",
+        folder: "semana-01",
+        prereq: "Ponto de partida (Zero pré-requisitos — base para a Semana 02).",
+        port: "Leitura e interpretação de textos (ideia central, informações explícitas/implícitas e inferência) + Fonologia básica, divisão silábica, lógica da sílaba tônica/acentuação gráfica e ortografia.",
+        rlm: "Conjuntos numéricos (N, Z, Q, R), operações fundamentais, lógica real das frações, números decimais, potências, raízes e prioridade das operações nas expressões numéricas.",
+        esp: "O que é Estado, Governo e Administração Pública; Princípios da Administração Pública (LIMPE expressos + implícitos) e a finalidade do serviço público.",
+        ger: "Formação histórica, territorial e econômica do Brasil (grandes ciclos históricos e regiões brasileiras).",
+        simulado: "Prova 1.pdf (Gabarito g1.pdf — Banca ACCESS - Pref. Cataguases/MG)",
+        simBanca: "Banca Instituto ACCESS — Prefeitura de Cataguases/MG (2026)",
+        simNum: 1
+      },
+      {
+        num: 2,
+        monthNum: 1,
+        monthTitle: "Mês 1 — Fundações (Construindo a Base do Zero)",
+        title: "Semana 02: Dando Nome, Estrutura e Proporção às Coisas",
+        folder: "semana-02",
+        prereq: "Requer Semana 01 (Sons/Ortografia, Frações/Operações e Princípios da Administração).",
+        port: "Morfologia I (Substantivo, Adjetivo, Artigo, Numeral e Pronome — papel anafórico e catafórico no texto) + Estrutura e formação das palavras (derivação, composição e plural dos compostos).",
+        rlm: "Teoria dos Conjuntos (união, interseção, diferença e Diagramas de Venn) + Razões, Proporções e Divisão Diretamente e Inversamente Proporcional.",
+        esp: "Organização Administrativa Básica: Centralização vs. Descentralização (Outorga e Delegação) e Concentração vs. Desconcentração; Administração Direta e Indireta.",
+        ger: "História do Brasil Republicano, Era Vargas, Industrialização, Redemocratização, Constituição de 1988, Três Poderes e Cidadania.",
+        simulado: "Prova 2.pdf (Gabarito g2.pdf — Banca VUNESP - Câmara de Fernandópolis/SP)",
+        simBanca: "Banca VUNESP — Câmara de Fernandópolis/SP (2026)",
+        simNum: 2
+      },
+      {
+        num: 3,
+        monthNum: 1,
+        monthTitle: "Mês 1 — Fundações (Construindo a Base do Zero)",
+        title: "Semana 03: Ações, Conectores, Porcentagem e Gestão Interna",
+        folder: "semana-03",
+        prereq: "Requer Semana 02 (Classes nominais, Razão/Proporção e Organização Administrativa).",
+        port: "Morfologia II (Verbos: lógica dos tempos e modos; Advérbios; diferença entre Preposição e Artigo; Conjunções) + Semântica em contexto (sinônimos, antônimos, homônimos e parônimos).",
+        rlm: "Regra de Três Simples e Composta (entendendo a lógica das grandezas diretas e inversas) + Porcentagem (aumentos e descontos sucessivos).",
+        esp: "Funções da Administração (PODC: Planejar, Organizar, Dirigir e Controlar), Estruturas Organizacionais (Linear, Funcional, Linha-Staff, Matricial) e Ciclo PDCA.",
+        ger: "Formação histórica, geográfica, demográfica e econômica do Estado de São Paulo e do interior paulista.",
+        simulado: "Prova 3.pdf (Gabarito g3.pdf — Banca Avança SP - Câmara de Francisco Morato/SP)",
+        simBanca: "Banca Avança SP — Câmara de Francisco Morato/SP (2026)",
+        simNum: 3
+      },
+      {
+        num: 4,
+        monthNum: 1,
+        monthTitle: "Mês 1 — Fundações (Construindo a Base do Zero)",
+        title: "Semana 04: A Frase Simples, Equações de 1º Grau e Rotinas de Trabalho",
+        folder: "semana-04",
+        prereq: "Requer Semanas 02 e 03 (Todas as classes de palavras, Aritmética e Funções PODC).",
+        port: "Sintaxe da Oração Simples: Frase, Oração e Período; Sujeito, Predicado, Transitividade Verbal (VTD, VTI, VI, VL), Objetos Direto/Indireto, Adjuntos e Aposto.",
+        rlm: "Álgebra Base: Equações e Inequações de 1º grau + Sistemas de equações de 1º grau com duas incógnitas.",
+        esp: "Organização do Trabalho e Rotinas: fluxo de demandas, controles administrativos, prazos, pendências, rastreabilidade e apoio a reuniões, pautas e atas.",
+        ger: "História, Geografia, Economia e Atualidades de Birigui/SP (fundação, Ferrovia Noroeste, polo calçadista) e Região Noroeste Paulista.",
+        simulado: "Prova 4.pdf (Gabarito g4.pdf — Banca Objetiva - Pref. Nonai/RS)",
+        simBanca: "Banca Objetiva Concursos — Prefeitura de Nonoai/RS (2026)",
+        simNum: 4
+      },
+      {
+        num: 5,
+        monthNum: 2,
+        monthTitle: "Mês 2 — Estrutura Intermediária (Relações, Fluxos e Documentos)",
+        title: "Semana 05: Período Composto, Funções e Redação Oficial",
+        folder: "semana-05",
+        prereq: "Requer Semanas 03 e 04 (Conjunções + Oração Simples, Equações de 1º grau e Rotinas).",
+        port: "Sintaxe do Período Composto: Orações Coordenadas e Orações Subordinadas Substantivas, Adjetivas (Restritivas vs. Explicativas) e Adverbiais.",
+        rlm: "Equações e Inequações de 2º grau + Funções de 1º e 2º grau (relação entre fórmula, tabela, raízes e leitura de gráficos).",
+        esp: "Redação e Comunicação Oficial (Manual da Presidência da República): clareza, concisão, impessoalidade, Padrão Ofício, pronomes de tratamento e fechos.",
+        ger: "Economia e Energia no Brasil Atual: inflação, PIB, Reforma Tributária (IBS/CBS), matriz energética e transição energética.",
+        simulado: "Prova 5.pdf (Gabarito g5.pdf — Banca Consulplan - Câmara de Caratinga/MG)",
+        simBanca: "Banca Instituto Consulplan — Câmara de Caratinga/MG (2025)",
+        simNum: 5
+      },
+      {
+        num: 6,
+        monthNum: 2,
+        monthTitle: "Mês 2 — Estrutura Intermediária (Relações, Fluxos e Documentos)",
+        title: "Semana 06: Concordância, Sequências/Progressões e Protocolo",
+        folder: "semana-06",
+        prereq: "Requer Semanas 04 e 05 (Sujeito/Núcleo, Funções e Redação Oficial).",
+        port: "Concordância Verbal e Nominal: a lógica da concordância com o núcleo do sujeito e casos especiais (verbos impessoais haver/fazer, sujeito composto).",
+        rlm: "Sequências Lógicas (números, letras, figuras), Princípio da Regressão ou Reversão (resolver de trás para frente) + Progressões (PA e PG).",
+        esp: "Protocolo e Movimentação Documental: Recebimento, Registro, Classificação, Distribuição, Tramitação e Expedição.",
+        ger: "Política e Segurança Pública Contemporâneas: instituições, políticas públicas, decisões governamentais e impactos sociais.",
+        simulado: "Prova 6.pdf (Gabarito g6.pdf — Banca ACCESS - Pref. Itaguara/MG)",
+        simBanca: "Banca Instituto ACCESS — Prefeitura de Itaguara/MG (2024)",
+        simNum: 6
+      },
+      {
+        num: 7,
+        monthNum: 2,
+        monthTitle: "Mês 2 — Estrutura Intermediária (Relações, Fluxos e Documentos)",
+        title: "Semana 07: Regência, Lógica Proposicional e Arquivologia",
+        folder: "semana-07",
+        prereq: "Requer Semanas 03, 04 e 06 (Preposições + Transitividade Verbal e Protocolo).",
+        port: "Regência Verbal e Nominal: verbos que exigem ou não preposição e mudança de sentido (assistir, aspirar, visar, implicar, obedecer, preferir).",
+        rlm: "Lógica Proposicional (proposições, conectivos, Tabela-Verdade, Equivalências e Leis de De Morgan para negação) + Argumentação e Dedução.",
+        esp: "Arquivologia Completa: Teoria das 3 Idades (Corrente, Intermediário, Permanente), Tabela de Temporalidade, métodos de arquivamento, conservação e recuperação.",
+        ger: "Sociedade, Demografia e Educação: Censo IBGE, transformações sociais, acesso a serviços e debates educacionais.",
+        simulado: "Prova 7.pdf (Gabarito g7.pdf — Banca VUNESP - Câmara de Itapeva/SP)",
+        simBanca: "Banca VUNESP — Câmara Municipal de Itapeva/SP (2025)",
+        simNum: 7
+      },
+      {
+        num: 8,
+        monthNum: 2,
+        monthTitle: "Mês 2 — Estrutura Intermediária (Relações, Fluxos e Documentos)",
+        title: "Semana 08: Crase, Geometria Plana/Espacial e Informática I",
+        folder: "semana-08",
+        prereq: "Requer Semana 07 (Regência) + Semana 02 (Artigos) e Semana 04 (Equações).",
+        port: "Domínio da Crase: a mecânica lógica da fusão (Preposição 'a' + Artigo 'a'); lógica dos casos proibidos, obrigatórios e facultativos.",
+        rlm: "Geometria Plana e Espacial: unidades, perímetros, áreas de figuras planas, Teorema de Pitágoras e volumes de sólidos (cubo, paralelepípedo, cilindro).",
+        esp: "Informática Aplicada I: Editores de Texto (Word: formatação, atalhos, exportação) e Planilhas (Excel: SOMA, MÉDIA, MAIOR, CONT.SE, SE, filtros).",
+        ger: "Tecnologia, Inovação e Sustentabilidade: Inteligência Artificial, 5G, desenvolvimento sustentável, mudanças climáticas e COP30.",
+        simulado: "Prova 8.pdf (Gabarito g8.pdf — Banca Fundatec - Pref. Bom Jesus/RS)",
+        simBanca: "Banca FUNDATEC — Prefeitura de Bom Jesus/RS (2025)",
+        simNum: 8
+      },
+      {
+        num: 9,
+        monthNum: 3,
+        monthTitle: "Mês 3 — Avançado, Legislação (LAI/LGPD) e Lapidação Final",
+        title: "Semana 09: Pontuação Sintática, Combinatória/Probabilidade e Informática II",
+        folder: "semana-09",
+        prereq: "Requer Semanas 04 e 05 (Sintaxe Simples e Composta) e Semanas 01 a 03 (Frações/Conjuntos).",
+        port: "Pontuação Aplicada à Sintaxe: ordem direta (Sujeito-Verbo-Complemento) vs. deslocamentos; vírgula, ponto e vírgula, dois-pontos, travessão, aspas e zeugma.",
+        rlm: "Análise Combinatória (Princípio Multiplicativo, Permutação, diferença lógica entre Arranjo e Combinação) + Cálculo de Probabilidades.",
+        esp: "Informática Aplicada II: E-mail (Para, Cc, Cco e anexos), gestão de arquivos digitais, navegadores e Segurança da Informação (Pilares CID, golpes e Backup).",
+        ger: "Relações Internacionais e Geopolítica: conflitos globais, Acordo Mercosul-UE, BRICS, comércio e efeitos no Brasil.",
+        simulado: "Prova 9.pdf (Gabarito g9.pdf — Banca Instituto Mais - Pref. Santana de Parnaíba/SP)",
+        simBanca: "Banca Instituto Mais — Prefeitura de Santana de Parnaíba/SP (2025)",
+        simNum: 9
+      },
+      {
+        num: 10,
+        monthNum: 3,
+        monthTitle: "Mês 3 — Avançado, Legislação (LAI/LGPD) e Lapidação Final",
+        title: "Semana 10: Reescrita, Polinômios/Matrizes e Lei de Acesso à Informação (LAI)",
+        folder: "semana-10",
+        prereq: "Requer Semanas 01 a 09 (Base de Sintaxe/Pontuação, Equações e Fluxo Documental).",
+        port: "Reescrita de Frases e Parágrafos: substituição de conectivos, voz verbal e pontuação mantendo sentido e correção.",
+        rlm: "Álgebra Complementar: Polinômios (grau, valor numérico e operações) + Matrizes, Determinantes (2x2 e 3x3) e Sistemas Lineares.",
+        esp: "Legislação I — Lei de Acesso à Informação (LAI - Lei 12.527/2011): transparência ativa/passiva, prazos de solicitação (20 + 10 dias) e graus de sigilo.",
+        ger: "Artes, Literatura e História Cultural: movimentos artísticos e literários vinculados à história nacional e regional.",
+        simulado: "Prova 10.pdf (Gabarito g10.pdf — Banca Avança SP - Pref. Pedreira/SP)",
+        simBanca: "Banca Avança SP — Prefeitura de Pedreira/SP (2025)",
+        simNum: 10
+      },
+      {
+        num: 11,
+        monthNum: 3,
+        monthTitle: "Mês 3 — Avançado, Legislação (LAI/LGPD) e Lapidação Final",
+        title: "Semana 11: Trigonometria/Geometria Analítica, LGPD e Relação LAI vs. LGPD",
+        folder: "semana-11",
+        prereq: "Requer Semanas 05, 08 e 10 (Funções + Geometria Plana e LAI).",
+        port: "Treino Multi-Bancas Intensivo: resolução comparada dos temas campeões de prova (Interpretação, Coesão, Crase, Regência, Concordância e Pontuação).",
+        rlm: "Trigonometria no Triângulo Retângulo (seno, cosseno, tangente) + Geometria Analítica (plano cartesiano, distância entre pontos e equação da reta).",
+        esp: "Legislação II — LGPD (Lei 13.709/2018): dado pessoal e sensível, tratamento pelo Poder Público + Comparativo Prático LAI vs. LGPD nas rotinas.",
+        ger: "Síntese das Três Escalas Territoriais: conexão de temas atuais entre Birigui/Região <-> Estado de São Paulo <-> Brasil/Mundo.",
+        simulado: "Prova 11.pdf (Gabarito g11.pdf — Banca Consulplan - Câmara de Itajubá/MG)",
+        simBanca: "Banca Instituto Consulplan — Câmara Municipal de Itajubá/MG (2024)",
+        simNum: 11
+      },
+      {
+        num: 12,
+        monthNum: 3,
+        monthTitle: "Mês 3 — Avançado, Legislação (LAI/LGPD) e Lapidação Final",
+        title: "Semana 12: Revisão Geral Integrada, Casos Práticos e Sprint Final",
+        folder: "semana-12",
+        prereq: "Consolidação das Semanas 01 a 11.",
+        port: "Revisão Geral do Caderno de Erros de Língua Portuguesa (refazer questões erradas nos 3 meses).",
+        rlm: "Revisão Geral de Fórmulas pelo Significado + Resolução das questões marcadas no Caderno de Erros.",
+        esp: "Casos Práticos Integrados: Princípios + Rotinas + Redação Oficial + Protocolo/Arquivo + Informática + LAI e LGPD.",
+        ger: "Leitura Final do Dossiê de Atualidades (2025/2026) e dados históricos/econômicos de Birigui/SP.",
+        simulado: "Prova 12.pdf (Gabarito g12.pdf — Banca Legalle) + Revisão estratégica de 1.pdf e 6.pdf (ACCESS)",
+        simBanca: "Banca Legalle Concursos + Revisão Banca Instituto ACCESS",
+        simNum: 12
+      }
+    ];
+
+    const STORAGE_KEY = "concurso_oficial_adm_checklist_v1";
+    const EXAMS_STORAGE_KEY = "concurso_oficial_adm_exams_done_v1";
+    const USER_STORAGE_KEY = "concurso_oficial_adm_user_v1";
+
+    let checklistState = {};
+    let examsDoneState = {};
+    let currentUser = null;
+    try {
+      checklistState = JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}");
+      examsDoneState = JSON.parse(localStorage.getItem(EXAMS_STORAGE_KEY) || "{}");
+      currentUser = JSON.parse(localStorage.getItem(USER_STORAGE_KEY) || "null");
+    } catch (e) {}
+
+    let activeMonth = 1;
+
+    async function dbQuery(query, params = []) {
+      const response = await fetch(DB_SQL_URL, {
+        method: "POST",
+        headers: {
+          "Neon-Connection-String": DB_CONN_STR,
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ query, params })
+      });
+      if (!response.ok) {
+        throw new Error("Não foi possível comunicar com o servidor.");
+      }
+      return await response.json();
+    }
+
+    function showSyncError(msg) {
+      const banner = document.getElementById("syncErrorBanner");
+      const txt = document.getElementById("syncErrorText");
+      if (txt && msg) txt.textContent = msg;
+      if (banner) banner.classList.remove("hidden");
+    }
+
+    function hideSyncError() {
+      const banner = document.getElementById("syncErrorBanner");
+      if (banner) banner.classList.add("hidden");
+    }
+
+    function togglePasswordVisibility() {
+      const inp = document.getElementById("loginPassword");
+      inp.type = inp.type === "password" ? "text" : "password";
+    }
+
+    function showLoginScreen() {
+      document.getElementById("loginError").classList.add("hidden");
+      document.getElementById("loginScreen").classList.remove("hidden");
+      setTimeout(() => {
+        const el = document.getElementById("loginIdentifier");
+        if (el) el.focus();
+      }, 50);
+    }
+
+    function hideLoginScreen() {
+      document.getElementById("loginScreen").classList.add("hidden");
+    }
+
+    function continueOffline() {
+      hideLoginScreen();
+      updateAuthUI();
+    }
+
+    function updateAuthUI() {
+      const userLbl = document.getElementById("sidebarUserLabel");
+      const authBtn = document.getElementById("sidebarAuthBtn");
+      const mobLbl = document.getElementById("mobAuthLabel");
+
+      if (currentUser) {
+        userLbl.textContent = currentUser.nome || currentUser.email;
+        authBtn.textContent = "Sair";
+        if (mobLbl) mobLbl.textContent = currentUser.nome || "Sair";
+      } else {
+        userLbl.textContent = "Modo Local";
+        authBtn.textContent = "Entrar";
+        if (mobLbl) mobLbl.textContent = "Entrar";
+      }
+    }
+
+    function handleAuthClick() {
+      if (currentUser) {
+        currentUser = null;
+        localStorage.removeItem(USER_STORAGE_KEY);
+        document.getElementById("loginPassword").value = "";
+        updateAuthUI();
+        showLoginScreen();
+      } else {
+        showLoginScreen();
+      }
+    }
+
+    async function handleLogin(e) {
+      e.preventDefault();
+      const ident = document.getElementById("loginIdentifier").value.trim();
+      const pass = document.getElementById("loginPassword").value;
+      const errBox = document.getElementById("loginError");
+      const btnLbl = document.getElementById("loginBtnLabel");
+
+      errBox.classList.add("hidden");
+      btnLbl.textContent = "Autenticando...";
+
+      try {
+        const res = await dbQuery(
+          "SELECT id, nome, email FROM usuarios WHERE (LOWER(email) = LOWER($1) OR LOWER(nome) = LOWER($1)) AND senha = $2 LIMIT 1;",
+          [ident, pass]
+        );
+        if (!res.rows || res.rows.length === 0) {
+          errBox.textContent = "Usuário/e-mail ou senha incorretos.";
+          errBox.classList.remove("hidden");
+          btnLbl.textContent = "Entrar na Plataforma";
+          return;
+        }
+        currentUser = res.rows[0];
+        localStorage.setItem(USER_STORAGE_KEY, JSON.stringify(currentUser));
+        updateAuthUI();
+        await pullProgressFromCloud();
+        hideLoginScreen();
+        btnLbl.textContent = "Entrar na Plataforma";
+      } catch (err) {
+        errBox.textContent = "Erro de conexão ao autenticar. Verifique sua internet.";
+        errBox.classList.remove("hidden");
+        btnLbl.textContent = "Entrar na Plataforma";
+      }
+    }
+
+    async function pullProgressFromCloud() {
+      if (!currentUser) return;
+      try {
+        const res = await dbQuery(
+          "SELECT checklist, provas_feitas, notas_dificuldade, semana_atual FROM concurso_progresso WHERE usuario_id = $1;",
+          [currentUser.id]
+        );
+        hideSyncError();
+        if (res.rows && res.rows.length > 0) {
+          const row = res.rows[0];
+          const dbChecklist = typeof row.checklist === "string" ? JSON.parse(row.checklist) : (row.checklist || {});
+          const dbProvas = typeof row.provas_feitas === "string" ? JSON.parse(row.provas_feitas) : (row.provas_feitas || {});
+
+          checklistState = { ...checklistState, ...dbChecklist };
+          examsDoneState = { ...examsDoneState, ...dbProvas };
+          localStorage.setItem(STORAGE_KEY, JSON.stringify(checklistState));
+          localStorage.setItem(EXAMS_STORAGE_KEY, JSON.stringify(examsDoneState));
+
+          if (row.notas_dificuldade && !document.getElementById("difficultyInput").value) {
+            document.getElementById("difficultyInput").value = row.notas_dificuldade;
+          }
+          renderMonthWeeks();
+          updateSidebarProgress();
+          renderExamsTable();
+          updateGeneratorPrompt();
+          await pushProgressToCloud();
+        } else {
+          await pushProgressToCloud();
+        }
+      } catch (err) {
+        showSyncError("Não foi possível carregar os dados da nuvem. Usando dados salvos no dispositivo.");
+      }
+    }
+
+    async function pushProgressToCloud() {
+      if (!currentUser) return;
+      try {
+        const diff = document.getElementById("difficultyInput").value.trim();
+        const sem = parseInt(document.getElementById("weekSelect").value || "1", 10);
+        await dbQuery(
+          `INSERT INTO concurso_progresso (usuario_id, checklist, provas_feitas, notas_dificuldade, semana_atual, updated_at)
+           VALUES ($1, $2::jsonb, $3::jsonb, $4, $5, NOW())
+           ON CONFLICT (usuario_id) DO UPDATE SET
+             checklist = EXCLUDED.checklist,
+             provas_feitas = EXCLUDED.provas_feitas,
+             notas_dificuldade = EXCLUDED.notas_dificuldade,
+             semana_atual = EXCLUDED.semana_atual,
+             updated_at = NOW();`,
+          [
+            currentUser.id,
+            JSON.stringify(checklistState),
+            JSON.stringify(examsDoneState),
+            diff,
+            sem
+          ]
+        );
+        hideSyncError();
+      } catch (err) {
+        showSyncError("Sem conexão com o servidor. Seu progresso foi salvo localmente.");
+      }
+    }
+
+    function switchPage(pageId) {
+      ["metodo", "cronograma", "gerador", "provas"].forEach(id => {
+        document.getElementById("page-" + id).classList.toggle("active", id === pageId);
+        const deskBtn = document.getElementById("nav-" + id);
+        if (deskBtn) deskBtn.classList.toggle("active", id === pageId);
+        const mobBtn = document.getElementById("mob-" + id);
+        if (mobBtn) mobBtn.classList.toggle("active", id === pageId);
+      });
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    function togglePromptDrawer() {
+      const drawer = document.getElementById("promptDrawer");
+      const lbl = document.getElementById("togglePromptLabel");
+      const isHidden = drawer.classList.toggle("hidden");
+      lbl.textContent = isHidden ? "Ver Texto" : "Ocultar";
+    }
+
+    function setPersona(mode) {
+      document.getElementById("modeSelect").value = mode;
+      document.getElementById("btnPersonaWeb").classList.toggle("active", mode === "web");
+      document.getElementById("btnPersonaAgent").classList.toggle("active", mode === "agent");
+      document.getElementById("webAiShortcuts").classList.toggle("hidden", mode !== "web");
+      updateGeneratorPrompt();
+    }
+
+    function selectMonth(m) {
+      activeMonth = m;
+      [1, 2, 3].forEach(idx => {
+        document.getElementById("tab-m" + idx).classList.toggle("active", idx === m);
+      });
+      renderMonthWeeks();
+    }
+
+    function renderMonthWeeks() {
+      const mWeeks = weeksData.filter(w => w.monthNum === activeMonth);
+      const banner = document.getElementById("monthBanner");
+      const descriptions = {
+        1: "Objetivo do Mês 1: Construir toda a base de interpretação, classes de palavras, operações/proporções e entender do zero como a Administração Pública funciona.",
+        2: "Objetivo do Mês 2: Avançar para sintaxe (período simples e composto), concordância/regência/crase, equações/funções/lógica e dominar Redação Oficial, Protocolo e Arquivo.",
+        3: "Objetivo do Mês 3: Fechar pontuação, combinatória/matrizes/geometria analítica, dominar LAI e LGPD na prática e lapidar o Caderno de Erros."
+      };
+      banner.innerHTML = `
+        <div class="space-y-1">
+          <div class="font-bold text-sm sm:text-base">${mWeeks[0].monthTitle}</div>
+          <div class="text-xs sm:text-sm text-sec">${descriptions[activeMonth]}</div>
+        </div>
+      `;
+
+      const container = document.getElementById("weeksListContainer");
+      container.innerHTML = mWeeks.map(w => {
+        const items = [
+          { id: `w${w.num}_port`, badgeClass: "badge-port", tag: "Português", name: "Língua Portuguesa", text: w.port },
+          { id: `w${w.num}_rlm`, badgeClass: "badge-rlm", tag: "Matemática & RLM", name: "Raciocínio Lógico e Matemático", text: w.rlm },
+          { id: `w${w.num}_esp`, badgeClass: "badge-esp", tag: "Específicos", name: "Conhecimentos Específicos", text: w.esp },
+          { id: `w${w.num}_ger`, badgeClass: "badge-ger", tag: "Gerais", name: "Conhecimentos Gerais", text: w.ger },
+          { id: `w${w.num}_sim`, badgeClass: "badge-sim", tag: "Simulado de Sábado", name: "Simulado Fixo", text: w.simulado }
+        ];
+        const doneCount = items.filter(i => checklistState[i.id]).length;
+        const weekPct = Math.round((doneCount / 5) * 100);
+        return `
+          <div class="surface rounded-2xl sm:rounded-3xl p-5 sm:p-8 space-y-5 sm:space-y-6 shadow-sm">
+            <!-- Header da Semana -->
+            <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 pb-4 sm:pb-5 border-b border-tech">
+              <div class="space-y-1.5 min-w-0">
+                <div class="flex flex-wrap items-center gap-2">
+                  <span class="text-xs font-mono font-bold px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-600 dark:text-indigo-400">${w.folder}/</span>
+                  <span class="text-xs font-mono font-semibold text-mut">${doneCount}/5 concluídas (${weekPct}%)</span>
+                </div>
+                <h3 class="text-base sm:text-xl font-extrabold leading-snug">${w.title}</h3>
+                <p class="text-xs sm:text-sm text-sec">${w.prereq}</p>
+              </div>
+              <button type="button" onclick="openGeneratorForWeek(${w.num})" class="btn-primary w-full sm:w-auto shrink-0 self-start lg:self-center">
+                <span>Gerar Aula (Semana ${String(w.num).padStart(2, '0')})</span>
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+
+            <!-- Lista de Checklists Espaçadas -->
+            <div class="space-y-3 sm:space-y-3.5">
+              ${items.map(item => {
+                const checked = !!checklistState[item.id];
+                return `
+                  <label class="flex items-start gap-3.5 sm:gap-4 p-4 sm:p-5 rounded-2xl border border-tech hover:border-indigo-500/40 surface-elevated cursor-pointer transition ${checked ? 'opacity-55 bg-emerald-500/5' : ''}">
+                    <input
+                      type="checkbox"
+                      ${checked ? "checked" : ""}
+                      onchange="toggleCheck('${item.id}')"
+                      class="check-custom mt-0.5"
+                    />
+                    <div class="space-y-1.5 flex-1 min-w-0">
+                      <div class="flex flex-wrap items-center gap-2">
+                        <span class="font-mono text-[11px] font-bold px-2.5 py-0.5 rounded-full ${item.badgeClass}">${item.tag}</span>
+                        <strong class="text-sm font-bold ${checked ? 'line-through' : ''}">${item.name}</strong>
+                      </div>
+                      <p class="text-xs sm:text-sm text-sec leading-relaxed m-0 break-words ${checked ? 'line-through' : ''}">
+                        ${item.text}
+                      </p>
+                    </div>
+                  </label>
+                `;
+              }).join("")}
+            </div>
+          </div>
+        `;
+      }).join("");
+    }
+
+    function toggleCheck(id) {
+      checklistState[id] = !checklistState[id];
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(checklistState));
+      } catch (e) {}
+      renderMonthWeeks();
+      updateSidebarProgress();
+      pushProgressToCloud();
+    }
+
+    function updateSidebarProgress() {
+      const total = weeksData.length * 5;
+      let done = 0;
+      weeksData.forEach(w => {
+        ["port", "rlm", "esp", "ger", "sim"].forEach(k => {
+          if (checklistState[`w${w.num}_${k}`]) done++;
+        });
+      });
+
+      let simDone = 0;
+      let trainDone = 0;
+      Object.entries(examsDoneState).forEach(([k, val]) => {
+        if (val) {
+          const num = parseInt(k, 10);
+          if (num <= 12) simDone++;
+          else trainDone++;
+        }
+      });
+      const examsDoneCount = simDone + trainDone;
+
+      const pct = Math.round((done / total) * 100);
+      document.getElementById("sidebarPct").textContent = pct + "%";
+      document.getElementById("sidebarBar").style.width = pct + "%";
+      document.getElementById("sidebarCount").textContent = `${done}/${total} blocos`;
+      document.getElementById("sidebarExamsCount").textContent = `${examsDoneCount}/93 provas`;
+
+      const elSim = document.getElementById("statSimulados");
+      const elTr = document.getElementById("statTreinos");
+      const elTot = document.getElementById("statTotalExams");
+      if (elSim) elSim.textContent = `${simDone} / 12 feitos`;
+      if (elTr) elTr.textContent = `${trainDone} / 81 feitas`;
+      if (elTot) elTot.textContent = `${examsDoneCount} de 93 PDFs`;
+    }
+
+    function openGeneratorForWeek(num) {
+      document.getElementById("weekSelect").value = String(num);
+      updateGeneratorPrompt();
+      switchPage("gerador");
+    }
+
+    // =========================================================
+    // CONSTRUTOR DE PROMPTS ESPECÍFICOS (MATÉRIA x AMBIENTE)
+    // =========================================================
+    function buildSpecificPrompt(w, subj, mode, diff) {
+      const weekStr = String(w.num).padStart(2, "0");
+      const isAgent = mode === "agent";
+
+      // 1. MODELO EXCLUSIVO: LÍNGUA PORTUGUESA
+      if (subj === "port") {
+        const customDoubt = diff
+          ? `
+FOCO ESPECIAL / MINHA DÚVIDA EM PORTUGUÊS:
+"${diff}"
+-> Aprofunde esse ponto com exemplos comparativos (frase certa vs. frase errada) antes de avançar.
+`
+          : "";
+
+        if (isAgent) {
+          return `Atue como meu Professor Especialista em Língua Portuguesa para Concursos (Cargo: Oficial Administrativo — Semana ${weekStr}).
+
+TEMA EXCLUSIVO DESTA AULA DE PORTUGUÊS:
+- Assunto: ${w.port}
+- Base / Pré-requisito na trilha: ${w.prereq}
+${customDoubt}
+MEU PERFIL E MÉTODO DIDÁTICO ("A LÓGICA DA LÍNGUA"):
+Tenho Ensino Médio completo, mas vi essa base há bastante tempo. Eu aprendo muito melhor entendendo **a lógica, a causa e a origem histórica das regras e das exceções**, em vez de decorar listas de macetes.
+1. Explique do básico ao avançado: qual problema de comunicação ou ambiguidade essa regra gramatical resolve?
+2. Por que as exceções dessa regra existem (qual a lógica sonora, histórica ou sintática por trás delas)?
+3. Mostre a mecânica funcionando em frases reais (comparando o uso correto com as pegadinhas clássicas de prova).
+4. Ao final da explicação, crie uma **"Síntese Feynman de 3 Linhas"** para eu copiar no meu caderno.
+
+TAREFA PARA O AGENTE LOCAL:
+1. Consulte ".agents/GUIA_DO_AGENTE.md" para checar meu progresso atual.
+2. Crie (se não existir) a pasta "${w.folder}/" e salve o arquivo "${w.folder}/portugues_semana_${weekStr}.md" com esta aula completa e uma bateria de 10 questões reais de Língua Portuguesa extraídas do acervo local "prova-auto/" (use "prova-auto/indice_provas.txt") sobre este tema, com gabarito comentado alternativa por alternativa.
+3. Quando eu confirmar a conclusão, marque "[x]" no bloco de Português da Semana ${weekStr} em ".agents/GUIA_DO_AGENTE.md".`;
+        } else {
+          return `Atue como meu Professor Especialista em Língua Portuguesa para o concurso de Oficial Administrativo (${w.title}).
+
+TEMA EXCLUSIVO DESTA SESSÃO DE ESTUDO (90 MINUTOS):
+- Conteúdo Programático: ${w.port}
+${customDoubt}
+COMO EU APRENDO MELHOR (DIRETRIZ OBRIGATÓRIA):
+Tenho Ensino Médio, mas vi a gramática há bastante tempo. Não quero listas secas de regras nem macetes soltos para decorar. Quero entender **a lógica e o porquê por trás da regra e das exceções**:
+1. Construa a base degrau por degrau (do básico ao nível de prova): para que serve esse mecanismo na língua e como ele evita ambiguidade no texto?
+2. Explique a razão lógica (e, quando útil, histórica/fonética) das regras e principalmente das **exceções** cobradas nesse tema.
+3. Mostre exemplos práticos comentados das pegadinhas mais comuns em bancas de concursos municipais (como Instituto ACCESS, VUNESP e Consulplan).
+4. Inclua uma **"Síntese Feynman de 3 Linhas"** (como explicar a lógica central desse assunto para um amigo em 1 minuto).
+5. Ao final, elabore **8 questões de múltipla escolha (A a D)** focadas exclusivamente neste tópico de Português, com gabarito comentado detalhando o erro de cada alternativa incorreta.`;
+        }
+      }
+
+      // 2. MODELO EXCLUSIVO: MATEMÁTICA E RACIOCÍNIO LÓGICO
+      if (subj === "rlm") {
+        const customDoubt = diff
+          ? `
+MINHA MAIOR DIFICULDADE NESTA CONTA / ASSUNTO:
+"${diff}"
+-> Desmonte essa operação passo a passo, mostrando o que acontece nos bastidores do cálculo.
+`
+          : "";
+
+        if (isAgent) {
+          return `Atue como meu Professor Especialista em Matemática e Raciocínio Lógico para Concursos (Cargo: Oficial Administrativo — Semana ${weekStr}).
+
+TEMA EXCLUSIVO DESTA AULA DE MATEMÁTICA / RLM:
+- Assunto: ${w.rlm}
+- Base / Pré-requisito na trilha: ${w.prereq}
+${customDoubt}
+MEU PERFIL E MÉTODO DIDÁTICO ("O QUE A CONTA FAZ NA REALIDADE"):
+Tenho Ensino Médio, mas faz tempo que vi Matemática. Meu bloqueio acontece quando me jogam fórmulas prontas sem explicar o que elas significam. Eu aprendo muito rápido quando entendo **o que a conta está fazendo no mundo real e por que a propriedade matemática funciona assim**:
+1. Antes de qualquer fórmula ou algoritmo, explique a intuição prática e visual do conceito (do básico ao avançado).
+2. Mostre de onde vem a fórmula ou regra operacional para que eu não dependa de decoreba cega.
+3. Resolva exemplos progressivos (nível básico, intermediário e questão de concurso) sem pular passagens algébricas.
+4. Inclua uma **"Síntese Feynman de 3 Linhas"** resumindo o coração lógico desse cálculo.
+
+TAREFA PARA O AGENTE LOCAL:
+1. Verifique ".agents/GUIA_DO_AGENTE.md".
+2. Salve na pasta "${w.folder}/" o arquivo "${w.folder}/matematica_rlm_semana_${weekStr}.md" contendo a explicação completa + 10 questões reais de Matemática/RLM retiradas das provas em "prova-auto/" sobre este assunto, resolvidas passo a passo.
+3. Ao final do meu estudo, marque "[x]" em Matemática/RLM da Semana ${weekStr} em ".agents/GUIA_DO_AGENTE.md".`;
+        } else {
+          return `Atue como meu Professor Especialista em Matemática e Raciocínio Lógico para o concurso de Oficial Administrativo (${w.title}).
+
+TEMA EXCLUSIVO DESTA SESSÃO DE ESTUDO (90 MINUTOS):
+- Conteúdo Programático: ${w.rlm}
+${customDoubt}
+COMO EU APRENDO MELHOR (DIRETRIZ OBRIGATÓRIA):
+Tenho Ensino Médio, mas vi Matemática há bastante tempo. Não me jogue fórmulas prontas logo no início: eu preciso entender **o que a conta faz na realidade e a lógica por trás do cálculo**:
+1. Comece pelo básico absoluto: qual problema real essa operação/conceito resolve e como enxergá-lo de forma intuitiva?
+2. Demonstre de forma simples por que a regra/fórmula funciona assim (para que eu entenda o mecanismo em vez de apenas decorar).
+3. Resolva 3 exemplos guiados passo a passo (mostrando como traduzir o enunciado em português para a linguagem matemática).
+4. Destaque os erros de conta mais comuns que as bancas usam nas alternativas incorretas e entregue uma **"Síntese Feynman de 3 Linhas"** para meu caderno.
+5. Ao final, proponha **8 questões de múltipla escolha** no padrão de concursos de Oficial Administrativo sobre este tema, com resolução comentada linha por linha.`;
+        }
+      }
+
+      // 3. MODELO EXCLUSIVO: CONHECIMENTOS ESPECÍFICOS
+      if (subj === "esp") {
+        const customDoubt = diff
+          ? `
+PONTO QUE QUERO COMPREENDER MELHOR:
+"${diff}"
+-> Explique esse conceito com um exemplo concreto de rotina dentro de uma Prefeitura.
+`
+          : "";
+
+        if (isAgent) {
+          return `Atue como meu Tutor Especialista em Administração Pública e Rotinas Administrativas (Cargo: Oficial Administrativo — Semana ${weekStr}).
+
+TEMA EXCLUSIVO DE CONHECIMENTOS ESPECÍFICOS:
+- Assunto: ${w.esp}
+- Conexão com a semana anterior: ${w.prereq}
+${customDoubt}
+MEU PERFIL E MÉTODO DIDÁTICO ("A HISTÓRIA REAL DE UMA PREFEITURA"):
+Tirando a parte de Informática, todo o conteúdo de Conhecimentos Específicos é um **contato novo (do zero)** para mim. Por isso:
+1. Não use juridiquês solto. Ensine este tópico como uma **história contínua do funcionamento prático de uma Prefeitura Municipal** (eu sou o Oficial Administrativo sentado na repartição: por que essa regra/procedimento existe e como ela funciona no meu dia a dia?).
+2. Diferencie claramente os conceitos parecidos que as bancas trocam para confundir o candidato (usando quadros comparativos e exemplos reais).
+3. Ao final de cada subtópico, crie uma **"Síntese Feynman de 3 Linhas"**.
+
+TAREFA PARA O AGENTE LOCAL:
+1. Consulte ".agents/GUIA_DO_AGENTE.md".
+2. Crie na pasta "${w.folder}/" o arquivo "${w.folder}/especificos_semana_${weekStr}.md" com o guia teórico-prático completo + 10 questões reais de Conhecimentos Específicos extraídas de "prova-auto/" sobre este tema, comentadas alternativa por alternativa.
+3. Quando eu avisar que finalizei, marque "[x]" em Conhecimentos Específicos da Semana ${weekStr} em ".agents/GUIA_DO_AGENTE.md".`;
+        } else {
+          return `Atue como meu Tutor Especialista em Conhecimentos Específicos para o concurso de Oficial Administrativo (${w.title}).
+
+TEMA EXCLUSIVO DESTA SESSÃO DE ESTUDO (90 MINUTOS):
+- Conteúdo Programático: ${w.esp}
+${customDoubt}
+COMO EU APRENDO MELHOR (DIRETRIZ OBRIGATÓRIA):
+Para mim, a matéria de Conhecimentos Específicos (exceto Informática) é um **contato novo, começando do zero**.
+1. Explique do básico ao avançado sem jargões soltos: conte o conteúdo como **o funcionamento lógico e real do dia a dia de uma Prefeitura Municipal** (por que esse instituto, documento, rotina ou lei foi criado e qual problema prático ele evita no serviço público).
+2. Use exemplos concretos do trabalho de um Oficial Administrativo e monte quadros comparativos entre os termos que as bancas costumam inverter nas provas.
+3. Inclua uma **"Síntese Feynman de 3 Linhas"** ao final da teoria para eu anotar no caderno.
+4. Elabore **8 questões de múltipla escolha** focadas exatamente neste tópico de Conhecimentos Específicos, com gabarito comentado explicando por que a correta está certa e qual o erro conceitual das demais.`;
+        }
+      }
+
+      // 4. MODELO EXCLUSIVO: CONHECIMENTOS GERAIS & ATUALIDADES
+      if (subj === "ger") {
+        const customDoubt = diff
+          ? `
+RECORTE OU DÚVIDA ESPECÍFICA EM GERAIS:
+"${diff}"
+`
+          : "";
+
+        if (isAgent) {
+          return `Atue como meu Professor de História, Geografia, Política e Atualidades para o concurso de Oficial Administrativo de Birigui/SP (Semana ${weekStr}).
+
+TEMA EXCLUSIVO DE CONHECIMENTOS GERAIS:
+- Assunto: ${w.ger}
+${customDoubt}
+MÉTODO DIDÁTICO ("CAUSA -> FATO -> CONSEQUÊNCIA NAS 3 ESCALAS"):
+1. Explique o tema como uma linha histórica e geográfica lógica (Causa -> Fato -> Consequência), sem listas soltas de datas ou nomes desconexos.
+2. Conecte sempre que aplicável as **Três Escalas Territoriais**: Brasil/Mundo <-> Estado de São Paulo <-> Município de Birigui e Região Noroeste Paulista.
+3. Destaque os dados oficiais (IBGE, marcos históricos, matriz econômica e política) mais cobrados em provas municipais e feche com uma **"Síntese Feynman de 3 Linhas"**.
+
+TAREFA PARA O AGENTE LOCAL:
+1. Crie na pasta "${w.folder}/" o arquivo "${w.folder}/conhecimentos_gerais_semana_${weekStr}.md" com este dossiê didático e 8 questões comentadas (extraídas de "prova-auto/" + inéditas sobre Birigui/SP e atualidades).
+2. Quando eu concluir a leitura, marque "[x]" em Conhecimentos Gerais da Semana ${weekStr} em ".agents/GUIA_DO_AGENTE.md".`;
+        } else {
+          return `Atue como meu Professor de Conhecimentos Gerais (História, Geografia, Política e Atualidades) para o concurso de Oficial Administrativo (${w.title}).
+
+TEMA EXCLUSIVO DESTA SESSÃO DE ESTUDO:
+- Conteúdo Programático: ${w.ger}
+${customDoubt}
+COMO EU APRENDO MELHOR (DIRETRIZ OBRIGATÓRIA):
+1. Construa uma narrativa lógica de **Causa -> Fato -> Consequência**, explicando como os processos históricos, econômicos e geográficos se conectam até chegar ao cenário atual.
+2. Articule o conteúdo nas **Três Escalas**: Nacional (Brasil) -> Estadual (São Paulo) -> Municipal/Regional (Birigui e Noroeste Paulista).
+3. Entregue uma **"Síntese Feynman de 3 Linhas"** com os pontos-chave indispensáveis para a prova.
+4. Elabore **8 questões de múltipla escolha** sobre o tema com gabarito comentado.`;
+        }
+      }
+
+      // 5. MODELO EXCLUSIVO: SIMULADO DE SÁBADO & CADERNO DE ERROS
+      if (subj === "simulado") {
+        const customDoubt = diff
+          ? `
+QUESTÕES QUE ERREI / DÚVIDAS DO SIMULADO:
+"${diff}"
+`
+          : "";
+
+        if (isAgent) {
+          return `Atue como meu Analista de Desempenho e Revisor do Simulado de Sábado da Semana ${weekStr} (Cargo: Oficial Administrativo).
+
+PROVA ALVO DESTE SÁBADO NO ACERVO LOCAL:
+- Arquivo da Prova: "prova-auto/${w.simNum}.pdf"
+- Arquivo do Gabarito: "prova-auto/g${w.simNum}.pdf"
+- Referência: ${w.simBanca}
+- Conteúdos acumulados na minha trilha até esta Semana ${weekStr}: ${w.title}
+${customDoubt}
+TAREFA PARA O AGENTE LOCAL:
+1. Abra e analise a prova "prova-auto/${w.simNum}.pdf" e seu gabarito "prova-auto/g${w.simNum}.pdf".
+2. Mapeie quais questões dessa prova cobram os assuntos que já estudei até a Semana ${weekStr} e quais cobram tópicos das próximas semanas.
+3. Para as questões que eu indicar que errei (ou para as 10 questões mais estratégicas da prova), faça a **Engenharia Reversa**: explique a lógica da resposta certa, aponte a pegadinha das alternativas incorretas e gere a frase de 1 linha para o meu **Caderno de Erros** em "${w.folder}/caderno_erros_semana_${weekStr}.md".
+4. Atualize o checklist do Simulado da Semana ${weekStr} em ".agents/GUIA_DO_AGENTE.md".`;
+        } else {
+          return `Atue como meu Avaliador de Simulado e Mentor de Engenharia Reversa para o concurso de Oficial Administrativo (Sábado da Semana ${weekStr}).
+
+ESCOPO DO SIMULADO DESTA SEMANA (PADRÃO ${w.simBanca.toUpperCase()}):
+- Português acumulado até aqui: ${w.port}
+- Matemática/RLM acumulada até aqui: ${w.rlm}
+- Conhecimentos Específicos da semana: ${w.esp}
+- Conhecimentos Gerais da semana: ${w.ger}
+${customDoubt}
+COMO CONDUZIR ESTA SESSÃO DE SIMULADO E CORREÇÃO:
+1. Se eu tiver colado acima as questões que errei no meu treino, faça a dissecação lógica de cada uma: explique por que a alternativa certa é verdadeira, qual a pegadinha que me atraiu na incorreta e escreva **1 linha de ouro para o meu Caderno de Erros**.
+2. Caso eu ainda não tenha enviado questões específicas, monte agora um **Mini-Simulado Oficial de Sábado com 15 questões inéditas/adaptadas** (5 de Português, 4 de Matemática/RLM, 4 de Conhecimentos Específicos e 2 de Conhecimentos Gerais) calibradas exatamente nos temas desta Semana ${weekStr}, seguidas do Gabarito Comentado pela Lógica de Origem.`;
+        }
+      }
+
+      // 6. MODELO SEMANA COMPLETA (SEGUNDA A SÁBADO — AS 4 MATÉRIAS)
+      const customDoubtAll = diff
+        ? `
+ATENÇÃO ESPECIAL NESTA SEMANA (MINHA MAIOR DÚVIDA):
+"${diff}"
+-> Dê prioridade e aprofunde passo a passo este ponto dentro do cronograma da semana.
+`
+        : "";
+
+      if (isAgent) {
+        return `Atue como meu Tutor Especialista para o concurso de Oficial Administrativo (Plano de 90 Dias — **${w.title}**).
+
+MAPA COMPLETO DOS CONTEÚDOS DESTA SEMANA ${weekStr}:
+1. LÍNGUA PORTUGUESA: ${w.port}
+2. MATEMÁTICA E RLM: ${w.rlm}
+3. CONHECIMENTOS ESPECÍFICOS (Do Zero): ${w.esp}
+4. CONHECIMENTOS GERAIS (Domingo): ${w.ger}
+5. SIMULADO FIXO DE SÁBADO: ${w.simulado}
+(Pré-requisito cumprido: ${w.prereq})
+${customDoubtAll}
+DIRETRIZ DIDÁTICA ("A LÓGICA DE ORIGEM"):
+- Em Português e Matemática (tenho Ensino Médio, mas vi há tempo): construa do básico ao avançado explicando o porquê da regra/exceção e o que a conta faz na realidade antes de apresentar fórmulas.
+- Em Conhecimentos Específicos (contato novo): explique como a história prática das rotinas dentro de uma Prefeitura Municipal.
+- Em Conhecimentos Gerais: conecte Causa -> Fato -> Consequência nas 3 escalas (Birigui/Região <-> SP <-> Brasil).
+- Inclua ao final de cada matéria uma **"Síntese Feynman de 3 Linhas"**.
+
+TAREFA PARA O AGENTE LOCAL:
+1. Leia ".agents/GUIA_DO_AGENTE.md" para verificar o status atual.
+2. Crie a pasta "${w.folder}/" na raiz do projeto e gere os materiais de estudo organizados para meus blocos diários de 1h30 (Segunda a Sexta: 60 min teoria lógica + 30 min questões reais extraídas de "prova-auto/").
+3. Ao final de cada etapa que eu concluir, atualize o checklist em ".agents/GUIA_DO_AGENTE.md".`;
+      } else {
+        return `Atue como meu Tutor Especialista para o concurso de Oficial Administrativo (Plano de 90 Dias — **${w.title}**).
+
+CRONOGRAMA INTEGRADO DESTA SEMANA (BLOCOS DE 1h30/DIA):
+- Segunda e Quarta (Português + Específicos):
+  • Português: ${w.port}
+  • Específicos: ${w.esp}
+- Terça e Quinta (Matemática/RLM + Específicos):
+  • Matemática/RLM: ${w.rlm}
+  • Específicos: ${w.esp}
+- Sexta-feira (Revisão Prática Integrada + Questões)
+- Domingo (Conhecimentos Gerais): ${w.ger}
+${customDoubtAll}
+MEU PERFIL E MÉTODO DIDÁTICO ("A LÓGICA DE ORIGEM"):
+- Tenho Ensino Médio em Português e Matemática (mas vi há bastante tempo), e em Conhecimentos Específicos o contato é novo (do zero).
+- Não me entregue resumos secos para decorar: explique **a lógica e a origem de cada regra/exceção em Português**, **o que cada conta faz na prática em Matemática** e **como os conceitos de Específicos funcionam no dia a dia real de uma Prefeitura**.
+- Estruture a resposta dividindo claramente os blocos da semana (do básico ao avançado), inclua uma **"Síntese Feynman de 3 Linhas"** por matéria e feche com uma bateria de **12 questões comentadas** cobrindo os 4 eixos da semana.`;
+      }
+    }
+
+    function updateGeneratorPrompt() {
+      const weekNum = parseInt(document.getElementById("weekSelect").value, 10);
+      const w = weeksData.find(x => x.num === weekNum);
+      const subj = document.getElementById("subjectSelect").value;
+      const mode = document.getElementById("modeSelect").value;
+      const diff = document.getElementById("difficultyInput").value.trim();
+
+      document.getElementById("folderIndicator").textContent = mode === "agent"
+        ? `• Agente PC (${w.folder}/)`
+        : `• IA Web / Mobile (Sem arquivos locais)`;
+
+      // Dynamic Preview Box based on selected subject focus
+      const previewEl = document.getElementById("generatorWeekPreview");
+      if (subj === "all") {
+        previewEl.innerHTML = `
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1.5 pb-3.5 mb-3.5 border-b border-tech">
+            <div class="flex items-center gap-2">
+              <span class="text-xs font-mono font-bold px-2.5 py-0.5 rounded-full bg-indigo-500/10 text-indigo-600 dark:text-indigo-400">Semana Completa</span>
+              <h4 class="text-sm sm:text-base font-bold">${w.title}</h4>
+            </div>
+            <span class="text-xs text-mut">${w.prereq}</span>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3.5 text-xs">
+            <div class="surface rounded-xl p-3.5 space-y-1.5">
+              <span class="inline-block font-mono text-[10px] font-bold px-2 py-0.5 rounded-full badge-port">Português</span>
+              <p class="text-sec leading-relaxed m-0">${w.port}</p>
+            </div>
+            <div class="surface rounded-xl p-3.5 space-y-1.5">
+              <span class="inline-block font-mono text-[10px] font-bold px-2 py-0.5 rounded-full badge-rlm">Matemática & RLM</span>
+              <p class="text-sec leading-relaxed m-0">${w.rlm}</p>
+            </div>
+            <div class="surface rounded-xl p-3.5 space-y-1.5">
+              <span class="inline-block font-mono text-[10px] font-bold px-2 py-0.5 rounded-full badge-esp">Específicos</span>
+              <p class="text-sec leading-relaxed m-0">${w.esp}</p>
+            </div>
+            <div class="surface rounded-xl p-3.5 space-y-1.5">
+              <span class="inline-block font-mono text-[10px] font-bold px-2 py-0.5 rounded-full badge-ger">Gerais & Simulado</span>
+              <p class="text-sec leading-relaxed m-0">${w.ger}</p>
+            </div>
+          </div>
+        `;
+      } else {
+        const focusMap = {
+          port: { badge: "badge-port", label: "Modelo Exclusivo • Língua Portuguesa", content: w.port, method: "Foco na origem lógica das regras e exceções gramaticais, sem enviar informações das outras matérias." },
+          rlm: { badge: "badge-rlm", label: "Modelo Exclusivo • Matemática e RLM", content: w.rlm, method: "Foco na intuição real da conta antes da fórmula e resolução passo a passo, sem poluir com outras matérias." },
+          esp: { badge: "badge-esp", label: "Modelo Exclusivo • Conhecimentos Específicos", content: w.esp, method: "Foco em ensinar do zero como o fluxo prático de uma Prefeitura Municipal, com quadros comparativos." },
+          ger: { badge: "badge-ger", label: "Modelo Exclusivo • Conhecimentos Gerais", content: w.ger, method: "Foco na conexão Causa -> Fato -> Consequência nas 3 escalas (Birigui/Região <-> SP <-> Brasil)." },
+          simulado: { badge: "badge-sim", label: "Modelo Exclusivo • Simulado & Diagnóstico de Erros", content: mode === "agent" ? w.simulado : w.simBanca, method: mode === "agent" ? "Analisa diretamente o PDF do simulado na pasta local prova-auto/ e monta o Caderno de Erros." : "Gera um Simulado Diagnóstico calibrado na banca da semana ou corrige suas questões no chat." }
+        };
+        const f = focusMap[subj];
+        previewEl.innerHTML = `
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 mb-3 border-b border-tech">
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="font-mono text-xs font-bold px-3 py-0.5 rounded-full ${f.badge}">${f.label}</span>
+              <span class="text-xs font-bold text-sec">${w.title}</span>
+            </div>
+            <span class="text-xs font-mono text-mut">${mode === "agent" ? "Versão Agente Local" : "Versão IA Web"}</span>
+          </div>
+          <div class="space-y-1.5 text-xs sm:text-sm">
+            <div><strong class="font-semibold">Conteúdo que rege este prompt:</strong> <span class="text-sec">${f.content}</span></div>
+            <div class="text-xs text-mut">${f.method}</div>
+          </div>
+        `;
+      }
+
+      document.getElementById("promptOutput").value = buildSpecificPrompt(w, subj, mode, diff);
+    }
+
+    function toggleExamDone(idx) {
+      examsDoneState[idx] = !examsDoneState[idx];
+      try {
+        localStorage.setItem(EXAMS_STORAGE_KEY, JSON.stringify(examsDoneState));
+      } catch (e) {}
+      renderExamsTable();
+      updateSidebarProgress();
+      pushProgressToCloud();
+    }
+
+    function renderExamsTable() {
+      const q = document.getElementById("examSearch").value.trim().toLowerCase();
+      const y = document.getElementById("examYearFilter").value;
+      const t = document.getElementById("examTypeFilter").value;
+      const simMap = {};
+      weeksData.forEach(w => { simMap[w.simNum] = w.num; });
+
+      const filtered = allExams.filter(ex => {
+        if (t === "sim" && ex.i > 12) return false;
+        if (t === "train" && ex.i <= 12) return false;
+        if (y !== "all" && String(ex.y) !== y) return false;
+        if (q && !(ex.o.toLowerCase().includes(q) || ex.b.toLowerCase().includes(q) || String(ex.i) === q)) return false;
+        return true;
+      });
+
+      const fileSvg = `<svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>`;
+      const checkSvg = `<svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>`;
+
+      // Desktop table
+      document.getElementById("examsTableBody").innerHTML = filtered.map(ex => {
+        const done = !!examsDoneState[ex.i];
+        const simWeek = simMap[ex.i];
+        return `
+          <tr class="hover:bg-slate-50/80 dark:hover:bg-slate-800/40 transition ${done ? 'opacity-50 bg-emerald-500/5' : ''}">
+            <td class="py-4 px-6">
+              <input
+                type="checkbox"
+                ${done ? "checked" : ""}
+                onchange="toggleExamDone(${ex.i})"
+                class="check-custom"
+              />
+            </td>
+            <td class="py-4 px-5 font-mono font-bold text-indigo-600 dark:text-indigo-400">#${ex.i}</td>
+            <td class="py-4 px-5">
+              <span class="font-mono text-xs font-semibold px-2.5 py-1 rounded-md surface-muted">${ex.y}</span>
+            </td>
+            <td class="py-4 px-6 font-semibold">
+              <div class="flex flex-wrap items-center gap-2">
+                <span>${ex.o}</span>
+                ${simWeek ? `<span class="text-xs font-mono px-2.5 py-0.5 rounded-full badge-sim font-bold">Simulado Sem ${String(simWeek).padStart(2, '0')}</span>` : ""}
+              </div>
+            </td>
+            <td class="py-4 px-6 text-sec font-medium">${ex.b}</td>
+            <td class="py-4 px-6 text-right space-x-2 whitespace-nowrap">
+              <a href="prova-auto/${ex.i}.pdf" target="_blank" class="btn-secondary !py-2 !px-3.5 !text-xs">${fileSvg}<span>Prova (${ex.i}.pdf)</span></a>
+              ${ex.g ? `<a href="prova-auto/g${ex.i}.pdf" target="_blank" class="btn-secondary !py-2 !px-3.5 !text-xs">${checkSvg}<span>Gabarito (g${ex.i}.pdf)</span></a>` : `<span class="text-xs text-mut font-mono px-3">Sem gab.</span>`}
+            </td>
+          </tr>
+        `;
+      }).join("");
+
+      // Mobile cards
+      document.getElementById("examsMobileList").innerHTML = filtered.map(ex => {
+        const done = !!examsDoneState[ex.i];
+        const simWeek = simMap[ex.i];
+        return `
+          <div class="surface rounded-2xl p-5 space-y-4 shadow-sm ${done ? 'opacity-55 bg-emerald-500/5' : ''}">
+            <div class="flex items-center justify-between gap-2">
+              <label class="flex items-center gap-2.5 cursor-pointer">
+                <input
+                  type="checkbox"
+                  ${done ? "checked" : ""}
+                  onchange="toggleExamDone(${ex.i})"
+                  class="check-custom"
+                />
+                <span class="font-mono font-bold text-sm text-indigo-600 dark:text-indigo-400">Prova #${ex.i}</span>
+                <span class="font-mono text-xs px-2 py-0.5 rounded surface-muted">${ex.y}</span>
+              </label>
+              ${simWeek ? `<span class="text-xs font-mono px-2.5 py-0.5 rounded-full badge-sim font-bold">Simulado Sem ${String(simWeek).padStart(2, '0')}</span>` : `<span class="text-xs font-mono text-mut">Treino</span>`}
+            </div>
+            <div class="space-y-1">
+              <div class="font-bold text-sm sm:text-base leading-snug">${ex.o}</div>
+              <div class="text-xs text-sec font-medium">Banca: <strong>${ex.b}</strong></div>
+            </div>
+            <div class="grid grid-cols-2 gap-2.5 pt-1">
+              <a href="prova-auto/${ex.i}.pdf" target="_blank" class="btn-secondary !py-2.5 !px-3 !text-xs w-full">${fileSvg}<span>Prova (${ex.i}.pdf)</span></a>
+              ${ex.g ? `<a href="prova-auto/g${ex.i}.pdf" target="_blank" class="btn-secondary !py-2.5 !px-3 !text-xs w-full">${checkSvg}<span>Gabarito (g${ex.i}.pdf)</span></a>` : `<span class="text-xs text-mut font-mono py-2 px-3 text-center">Sem gab.</span>`}
+            </div>
+          </div>
+        `;
+      }).join("");
+    }
+
+    // Init
+    document.getElementById("weekSelect").innerHTML = weeksData
+      .map(w => `<option value="${w.num}">${w.title}</option>`)
+      .join("");
+
+    document.getElementById("weekSelect").addEventListener("change", () => {
+      updateGeneratorPrompt();
+      pushProgressToCloud();
+    });
+    document.getElementById("subjectSelect").addEventListener("change", updateGeneratorPrompt);
+    document.getElementById("difficultyInput").addEventListener("input", updateGeneratorPrompt);
+    document.getElementById("difficultyInput").addEventListener("blur", pushProgressToCloud);
+    document.getElementById("examSearch").addEventListener("input", renderExamsTable);
+    document.getElementById("examYearFilter").addEventListener("change", renderExamsTable);
+    document.getElementById("examTypeFilter").addEventListener("change", renderExamsTable);
+
+    document.getElementById("resetPromptBtn").addEventListener("click", () => {
+      document.getElementById("difficultyInput").value = "";
+      updateGeneratorPrompt();
+      pushProgressToCloud();
+    });
+
+    document.getElementById("copyPromptBtn").addEventListener("click", async () => {
+      const out = document.getElementById("promptOutput");
+      try {
+        await navigator.clipboard.writeText(out.value);
+      } catch (e) {
+        out.select();
+        document.execCommand("copy");
+      }
+      const txt = document.getElementById("copyBtnText");
+      txt.textContent = "Copiado!";
+      setTimeout(() => { txt.textContent = "Copiar Prompt"; }, 2000);
+    });
+
+    function toggleTheme() {
+      document.documentElement.classList.toggle("dark");
+    }
+    document.getElementById("themeToggle").addEventListener("click", toggleTheme);
+    document.getElementById("themeToggleMob").addEventListener("click", toggleTheme);
+
+    if (window.innerWidth < 768 || window.location.protocol.startsWith("http")) {
+      setPersona("web");
+    } else {
+      setPersona("agent");
+    }
+
+    renderMonthWeeks();
+    updateSidebarProgress();
+    renderExamsTable();
+    updateAuthUI();
+    if (currentUser) {
+      hideLoginScreen();
+      pullProgressFromCloud();
+    } else {
+      showLoginScreen();
+    }
+  </script>
+</body>
+</html>

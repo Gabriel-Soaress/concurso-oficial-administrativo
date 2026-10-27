@@ -1,0 +1,95 @@
+Nº | Tipo | Ano | Órgão | Banca | Prova | Gabarito | URL
+--------------------------------------------------------------------------------------------------------------
+1 | SIMULADO SEM 01 | 2024 | Pref. Cataguases/MG | ACCESS | 1.pdf | g1.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-prefeitura-cataguases-mg-access-2024
+2 | SIMULADO SEM 02 | 2022 | Câmara de Fernandópolis/SP | VUNESP | 2.pdf | g2.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-camara-de-fernandopolis-sp-vunesp-2022
+3 | SIMULADO SEM 03 | 2026 | Câmara de Francisco Morato/SP | AVANÇA SP | 3.pdf | g3.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-camara-de-francisco-morato-sp-avanca-sp-2026
+4 | SIMULADO SEM 04 | 2025 | Pref. Nonai-RS | OBJETIVA CONCURSOS | 4.pdf | g4.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-prefeitura-nonai-rs-objetiva-concursos-2025
+5 | SIMULADO SEM 05 | 2024 | Câmara de Caratinga/MG | INSTITUTO CONSULPLAN | 5.pdf | g5.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-camara-de-caratinga-mg-instituto-consulplan-2024
+6 | SIMULADO SEM 06 | 2024 | Pref. Itaguara/MG | ACCESS | 6.pdf | g6.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-prefeitura-itaguara-mg-access-2024
+7 | SIMULADO SEM 07 | 2024 | Câmara de Itapeva/SP | VUNESP | 7.pdf | g7.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-camara-de-itapeva-sp-vunesp-2024
+8 | SIMULADO SEM 08 | 2026 | Pref. Bom Jesus/RS | Fundatec | 8.pdf | g8.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-prefeitura-bom-jesus-rs-fundatec-2026
+9 | SIMULADO SEM 09 | 2024 | Pref. Santana de Parnaíba/SP | INSTITUO MAIS | 9.pdf | g9.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-prefeitura-santana-de-parnaiba-sp-instituo-mais-2024
+10 | SIMULADO SEM 10 | 2024 | Pref. Pedreira/SP | Avança SP | 10.pdf | g10.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-prefeitura-pedreira-sp-avanca-sp-2024
+11 | SIMULADO SEM 11 | 2024 | Câmara de Itajubá/MG | INSTITUTO CONSULPLAN | 11.pdf | g11.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-camara-de-itajuba-mg-instituto-consulplan-2024
+12 | SIMULADO SEM 12 | 2026 | Pref. Silveira Martins/RS | Legalle Concursos | 12.pdf | g12.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-prefeitura-silveira-martins-rs-legalle-concursos-2026
+13 | TREINO DIÁRIO | 2026 | Pref. Getúlio Vargas/RS | FUNDATEC | 13.pdf | g13.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-prefeitura-getulio-vargas-rs-fundatec-2026
+14 | TREINO DIÁRIO | 2026 | Câmara de Silveira Martins/RS | Legalle Concursos | 14.pdf | g14.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-camara-de-silveira-martins-rs-legalle-concursos-2026
+15 | TREINO DIÁRIO | 2025 | Pref. São Vicente do Sul/RS | FUNDATEC | 15.pdf | g15.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-prefeitura-sao-vicente-do-sul-rs-fundatec-2025
+16 | TREINO DIÁRIO | 2025 | Pref. Bocaina do Sul/SC | INAZ DO PARÁ | 16.pdf | g16.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-prefeitura-bocaina-do-sul-sc-inaz-do-para-2025
+17 | TREINO DIÁRIO | 2025 | Pref. e Câmara de Cerro Grande/RS | FUNDATEC | 17.pdf | g17.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-prefeitura-e-camara-de-cerro-grande-rs-fundatec-2025
+18 | TREINO DIÁRIO | 2025 | Pref. Santana de Parnaíba/SP | MSCONCURSOS | 18.pdf | g18.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-prefeitura-santana-de-parnaiba-sp-msconcursos-2025
+19 | TREINO DIÁRIO | 2025 | Pref. Barra Bonita/SC | AMEOSC | 19.pdf | g19.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-prefeitura-barra-bonita-sc-ameosc-2025
+20 | TREINO DIÁRIO | 2025 | Pref. Rio dos Índios/RS | Fenix | 20.pdf | g20.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-prefeitura-rio-dos-indios-rs-fenix-2025
+21 | TREINO DIÁRIO | 2025 | Pref. de Rio dos Índios/RS | Fenix | 21.pdf | g21.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-prefeitura-de-rio-dos-indios-rs-fenix-2025
+22 | TREINO DIÁRIO | 2025 | Pref. Ilópolis/RS | OBJETIVA CONCURSOS | 22.pdf | g22.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-prefeitura-ilopolis-rs-objetiva-concursos-2025
+23 | TREINO DIÁRIO | 2025 | Pref. Porto Mauá/RS | FUNDATEC | 23.pdf | g23.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-prefeitura-porto-maua-rs-fundatec-2025
+24 | TREINO DIÁRIO | 2025 | Pref. Morro da Fumaça/SC | UNESC | 24.pdf | g24.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-prefeitura-morro-da-fumaca-sc-unesc-2025
+25 | TREINO DIÁRIO | 2025 | Pref. Soledade/RS | FUNDATEC | 25.pdf | g25.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-prefeitura-soledade-rs-fundatec-2025
+26 | TREINO DIÁRIO | 2025 | Prefeitura de Jequitaí - MG | FADENOR | 26.pdf | g26.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-prefeitura-de-jequitai-mg-fadenor-2025
+27 | TREINO DIÁRIO | 2025 | ELETROCAR | OBJETIVA CONCURSOS | 27.pdf | g27.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-eletrocar-objetiva-concursos-2025
+28 | TREINO DIÁRIO | 2024 | Câmara de Santa Leopoldina/ES | IDCAP | 28.pdf | (sem gabarito separado) | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-camara-de-santa-leopoldina-es-idcap-2024
+29 | TREINO DIÁRIO | 2024 | Pref. Arroio do Sal/RS | FUNDATEC | 29.pdf | g29.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-prefeitura-arroio-do-sal-rs-fundatec-2024
+30 | TREINO DIÁRIO | 2024 | Câmara de Itapecerica da Serra/SP | AVANÇASP | 30.pdf | g30.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-camara-de-itapecerica-da-serra-sp-avancasp-2024
+31 | TREINO DIÁRIO | 2024 | Pref. Jari/RS | FUNDATEC | 31.pdf | g31.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-prefeitura-jari-rs-fundatec-2024
+32 | TREINO DIÁRIO | 2024 | Pref. São Francisco de Paula/RS | FUNDATEC | 32.pdf | g32.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-prefeitura-sao-francisco-de-paula-rs-fundatec-2024
+33 | TREINO DIÁRIO | 2024 | Pref. Buritizal/SP | Creative Group | 33.pdf | g33.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-prefeitura-buritizal-sp-creative-group-2024
+34 | TREINO DIÁRIO | 2024 | Câmara de São João do Triunfo/PR | FAU - UNICENTRO | 34.pdf | g34.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-camara-de-sao-joao-do-triunfo-pr-fau-unicentro-2024
+35 | TREINO DIÁRIO | 2024 | Pref. Arroio do Sal/RS | FUNDATEC | 35.pdf | g35.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-prefeitura-arroio-do-sal-rs-fundatec-2024
+36 | TREINO DIÁRIO | 2024 | Câmara de Caratinga/MG | INSTITUTO CONSULPLAN | 36.pdf | g36.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-camara-de-caratinga-mg-instituto-consulplan-2024
+37 | TREINO DIÁRIO | 2024 | Câmara de Itapeva/SP | VUNESP | 37.pdf | g37.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-camara-de-itapeva-sp-vunesp-2024
+38 | TREINO DIÁRIO | 2024 | Pref. Iturama/MG | HL | 38.pdf | g38.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-prefeitura-iturama-mg-hl-2024
+39 | TREINO DIÁRIO | 2024 | Pref. Nova Laranjeiras/PR | FAU - UNICENTRO | 39.pdf | g39.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-prefeitura-nova-laranjeiras-pr-fau-unicentro-2024
+40 | TREINO DIÁRIO | 2024 | Pref. Senador Salgado Filho/RS | OBJETIVA CONCURSOS | 40.pdf | g40.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-prefeitura-senador-salgado-filho-rs-objetiva-concursos-2024
+41 | TREINO DIÁRIO | 2024 | AmeriPrev | Avança SP | 41.pdf | g41.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-ameriprev-avanca-sp-2024
+42 | TREINO DIÁRIO | 2024 | Câmara de Itajubá/MG | INSTITUTO CONSULPLAN | 42.pdf | g42.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-camara-de-itajuba-mg-instituto-consulplan-2024
+43 | TREINO DIÁRIO | 2024 | CIRC/RS | OBJETIVA CONCURSOS | 43.pdf | g43.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-circ-rs-objetiva-concursos-2024
+44 | TREINO DIÁRIO | 2024 | Pref. e Câmara de São Martinho da Serra/RS | FUNDATEC | 44.pdf | g44.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-prefeitura-e-camara-de-sao-martinho-da-serra-rs-fundatec-2024
+45 | TREINO DIÁRIO | 2024 | SAAE de Linhares/ES | IBADE | 45.pdf | g45.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-saae-de-linhares-es-ibade-2024
+46 | TREINO DIÁRIO | 2024 | Pref. e Câmara Passo do Sobrado/RS | FUNDATEC | 46.pdf | g46.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-prefeitura-e-camara-passo-do-sobrado-rs-fundatec-2024
+47 | TREINO DIÁRIO | 2024 | Pref. Lebon Régis/SC | OBJETIVA CONCURSOS | 47.pdf | g47.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-prefeitura-lebon-regis-sc-objetiva-concursos-2024
+48 | TREINO DIÁRIO | 2024 | Pref. Camaquã/RS | Creative Group | 48.pdf | g48.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-prefeitura-camaqua-rs-creative-group-2024
+49 | TREINO DIÁRIO | 2024 | Pref. Santa Leopoldina/ES | OBJETIVA CONCURSOS | 49.pdf | g49.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-prefeitura-santa-leopoldina-es-objetiva-concursos-2024
+50 | TREINO DIÁRIO | 2024 | Pref. Inocência/MS | GAMA | 50.pdf | g50.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-prefeitura-inocencia-ms-gama-2024
+51 | TREINO DIÁRIO | 2024 | Pref. Gentil/RS | OBJETIVA CONCURSOS | 51.pdf | g51.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-prefeitura-gentil-rs-objetiva-concursos-2024
+52 | TREINO DIÁRIO | 2024 | Pref. Segredo/RS | FUNDATEC | 52.pdf | g52.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-prefeitura-segredo-rs-fundatec-2024
+53 | TREINO DIÁRIO | 2024 | Pref. Várzea da Palma/MG | FADENOR | 53.pdf | g53.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-prefeitura-varzea-da-palma-mg-fadenor-2024
+54 | TREINO DIÁRIO | 2024 | Pref. Venâncio Aires/RS | FUNDATEC | 54.pdf | g54.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-prefeitura-venancio-aires-rs-fundatec-2024
+55 | TREINO DIÁRIO | 2024 | Câmara de Itaiópolis/SC | OBJETIVA CONCURSOS | 55.pdf | g55.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-camara-de-itaiopolis-sc-objetiva-concursos-2024
+56 | TREINO DIÁRIO | 2024 | Pref. Barra do Guarita/RS | FUNDATEC | 56.pdf | g56.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-prefeitura-barra-do-guarita-rs-fundatec-2024
+57 | TREINO DIÁRIO | 2024 | Pref. Concórdia/SC | FEPESE | 57.pdf | g57.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-prefeitura-concordia-sc-fepese-2024
+58 | TREINO DIÁRIO | 2024 | Pref. Vila Maria/RS | FUNDATEC | 58.pdf | g58.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-prefeitura-vila-maria-rs-fundatec-2024
+59 | TREINO DIÁRIO | 2024 | Pref. Lajeado Grande/SC | UNO Chapecó | 59.pdf | g59.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-prefeitura-lajeado-grande-sc-uno-chapeco-2024
+60 | TREINO DIÁRIO | 2023 | Pref. Ibiraiaras/RS | FUNDATEC | 60.pdf | g60.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-prefeitura-ibiraiaras-rs-fundatec-2023
+61 | TREINO DIÁRIO | 2023 | Pref. Santana de Parnaíba/SP | INSTITUTO MAIS | 61.pdf | g61.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-prefeitura-santana-de-parnaiba-sp-instituto-mais-2023
+62 | TREINO DIÁRIO | 2023 | FUTEL | FUNDEP | 62.pdf | g62.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-futel-fundep-2023
+63 | TREINO DIÁRIO | 2023 | Pref. São João do Polêsine/RS | FUNDATEC | 63.pdf | g63.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-prefeitura-sao-joao-do-polesine-rs-fundatec-2023
+64 | TREINO DIÁRIO | 2023 | Pref. Santa Cecília do Sul/RS | FUNDATEC | 64.pdf | g64.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-prefeitura-santa-cecilia-do-sul-rs-fundatec-2023
+65 | TREINO DIÁRIO | 2023 | Pref. Cruzeiro do Iguaçu/PR | FAU - UNICENTRO | 65.pdf | g65.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-prefeitura-cruzeiro-do-iguacu-pr-fau-unicentro-2023
+66 | TREINO DIÁRIO | 2023 | Câmara de Avaré/SP | INSTITUTO UNIQUE | 66.pdf | g66.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-camara-de-avare-sp-instituto-unique-2023
+67 | TREINO DIÁRIO | 2023 | Pref. e Câmara de Braga/RS | FUNDATEC | 67.pdf | g67.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-prefeitura-e-camara-de-braga-rs-fundatec-2023
+68 | TREINO DIÁRIO | 2023 | Pref. Araçariguama/SP | AVANÇA SP | 68.pdf | g68.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-prefeitura-aracariguama-sp-avanca-sp-2023
+69 | TREINO DIÁRIO | 2023 | Pref. Conselheiro Pena/MG - SAAE | MÁXIMA AUDITORIA | 69.pdf | g69.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-prefeitura-conselheiro-pena-mg-saae-maxima-auditoria-2023
+70 | TREINO DIÁRIO | 2023 | ELETROCAR | FUNDATEC | 70.pdf | g70.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-eletrocar-fundatec-2023
+71 | TREINO DIÁRIO | 2023 | Pref. Faxinal do Soturno/RS | FUNDATEC | 71.pdf | g71.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-prefeitura-faxinal-do-soturno-rs-fundatec-2023
+72 | TREINO DIÁRIO | 2023 | Pref. Ibarama/RS | FUNDATEC | 72.pdf | g72.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-prefeitura-ibarama-rs-fundatec-2023
+73 | TREINO DIÁRIO | 2023 | Pref. Rio Branco do Ivaí/PR | FAUEL | 73.pdf | g73.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-prefeitura-rio-branco-do-ivai-pr-fauel-2023
+74 | TREINO DIÁRIO | 2023 | Pref. Vista Gaúcha/RS | FUNDATEC | 74.pdf | g74.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-prefeitura-vista-gaucha-rs-fundatec-2023
+75 | TREINO DIÁRIO | 2023 | Pref. Vargem Alta/ES | IDCAP | 75.pdf | (sem gabarito separado) | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-prefeitura-vargem-alta-es-idcap-2023
+76 | TREINO DIÁRIO | 2023 | Pref. Santa Cecília do Sul/RS | FUNDATEC | 76.pdf | g76.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-prefeitura-santa-cecilia-do-sul-rs-fundatec-2023
+77 | TREINO DIÁRIO | 2023 | Pref. São João do Polêsine/RS | FUNDATEC | 77.pdf | g77.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-prefeitura-sao-joao-do-polesine-rs-fundatec-2023
+78 | TREINO DIÁRIO | 2023 | FUTEL | FUNDEP | 78.pdf | g78.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-futel-fundep-2023
+79 | TREINO DIÁRIO | 2023 | Pref. Santana de Parnaíba/SP | INSTITUTO MAIS | 79.pdf | g79.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-prefeitura-santana-de-parnaiba-sp-instituto-mais-2023
+80 | TREINO DIÁRIO | 2022 | Câmara Madre de Deus de Minas/MG | Fundação CEFETMINAS | 80.pdf | g80.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-camara-madre-de-deus-de-minas-mg-fundacao-cefetminas-2022
+81 | TREINO DIÁRIO | 2022 | Pref. Caeté/MG | INSTITUTO CONSULPLAN | 81.pdf | g81.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-prefeitura-caete-mg-instituto-consulplan-2022
+82 | TREINO DIÁRIO | 2022 | Câmara São João do Ivaí/ PR | FAUEL | 82.pdf | g82.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-camara-sao-joao-do-ivai-pr-fauel-2022
+83 | TREINO DIÁRIO | 2022 | Câmara de Socorro/SP | IUDS | 83.pdf | g83.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-camara-de-socorro-sp-iuds-2022
+84 | TREINO DIÁRIO | 2022 | Pref. Rio das Antas-SC | Pref. Rio das Antas-SC | 84.pdf | g84.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-prefeitura-rio-das-antas-sc-prefeitura-rio-das-antas-sc-2022
+85 | TREINO DIÁRIO | 2022 | Pref. Paracatu/MG | COTEC/FADENOR | 85.pdf | g85.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-prefeitura-paracatu-mg-cotec-fadenor-2022
+86 | TREINO DIÁRIO | 2022 | Pref. Rio das Anatas/SC | Pref. Rio das Anatas/SC | 86.pdf | g86.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-prefeitura-rio-das-anatas-sc-prefeitura-rio-das-anatas-sc-2022
+87 | TREINO DIÁRIO | 2022 | Ref. Paim Filho/RS | FUNDATEC | 87.pdf | g87.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-ref-paim-filho-rs-fundatec-2022
+88 | TREINO DIÁRIO | 2022 | Pref. Tunas/RS | FUNDATEC | 88.pdf | g88.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-prefeitura-tunas-rs-fundatec-2022
+89 | TREINO DIÁRIO | 2022 | Pref. Laranjal Paulista/SP | Avança SP | 89.pdf | g89.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-prefeitura-laranjal-paulista-sp-avanca-sp-2022
+90 | TREINO DIÁRIO | 2022 | Pref. Rio das Antas/SC | OMNI CONCURSOS | 90.pdf | g90.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-prefeitura-rio-das-antas-sc-omni-concursos-2022
+91 | TREINO DIÁRIO | 2022 | Pref. Santana de Parnaíba/SP | MAIS | 91.pdf | g91.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-prefeitura-santana-de-parnaiba-sp-mais-2022
+92 | TREINO DIÁRIO | 2022 | Pref. São Miguel do Iguaçu/PR | UNIOESTE | 92.pdf | g92.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-prefeitura-sao-miguel-do-iguacu-pr-unioeste-2022
+93 | TREINO DIÁRIO | 2022 | Pref. Santana de Parnaíba/SP | INSTITUTO MAIS | 93.pdf | g93.pdf | https://www.pciconcursos.com.br/provas/download/oficial-administrativo-prefeitura-santana-de-parnaiba-sp-instituto-mais-2022
