@@ -2,7 +2,7 @@
 
 Sistema completo de preparação em **12 semanas (3 meses)** para concursos de **Oficial Administrativo**, estruturado pela **Lógica de Origem** (*entender o porquê lógico e histórico de cada regra, exceção e cálculo, do básico ao avançado*), com trilha sequencial de pré-requisitos e um acervo de **93 provas reais (2022–2026)** com gabarito.
 
-- **Acesso Online (Web & Mobile):** [https://gabriel-soaress.github.io/concurso-oficial-administrativo/](https://gabriel-soaress.github.io/concurso-oficial-administrativo/)
+- **Acesso Online (Web & Mobile):** [https://concurso-oficial-administrativo.vercel.app/](https://concurso-oficial-administrativo.vercel.app/)
 
 ---
 
