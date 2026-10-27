@@ -1,0 +1,4 @@
+.agents/usuario_ativo.json
+.vercel/
+__pycache__/
+*.pyc

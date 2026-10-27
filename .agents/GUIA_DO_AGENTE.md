@@ -2,11 +2,16 @@
 **Projeto:** Preparação Completa para Concurso de Oficial Administrativo (Prazo: 3 Meses / 12 Semanas)
 
 > **INSTRUÇÃO OBRIGATÓRIA PARA QUALQUER AGENTE IA:**
-> Sempre que iniciar uma sessão ou receber uma mensagem do usuário neste diretório (`c:\Users\gabri\OneDrive\Documentos\concurso`):
+> Sempre que iniciar uma sessão ou receber uma mensagem do usuário neste diretório:
 > 1. Leia este arquivo (`.agents/GUIA_DO_AGENTE.md`) para saber exatamente em qual **Semana e Tópico** o usuário está no **Checklist de Progresso** (Seção 5).
-> 2. **ORGANIZAÇÃO EM PASTAS POR SEMANA:** Sempre que gerar conteúdos, aulas, resumos ou listas de exercícios para uma semana específica (ex: Semana 1, Semana 2...), **crie uma pasta dedicada na raiz do projeto** no formato `semana-01/`, `semana-02/` ... `semana-12/` (ex: `c:\Users\gabri\OneDrive\Documentos\concurso\semana-01\`) e salve todos os materiais daquela semana lá dentro.
-> 3. Quando o usuário avisar que concluiu um tópico, bloco ou simulado, **edite imediatamente a Seção 5 deste arquivo**, trocando `[ ]` por `[x]` e registrando observações/acertos se informados.
-> 4. Ao ensinar qualquer conteúdo ao usuário, siga rigorosamente o **Perfil Cognitivo e Didático do Aluno (Seção 2)** — nunca jogue regras secas ou fórmulas decoradas sem antes explicar **o porquê lógico/histórico** daquilo existir.
+> 2. **VINCULAÇÃO DO E-MAIL DO USUÁRIO (SINCRONIZAÇÃO COM O SITE):** Verifique se o e-mail do usuário já está configurado localmente rodando `python .agents/sync_db.py status`. **Caso ainda não tenha o e-mail configurado (`.agents/usuario_ativo.json` ausente), pergunte ao usuário qual é o e-mail ou nome de usuário dele na plataforma** e execute `python .agents/sync_db.py set-user <email_informado>`.
+> 3. **ORGANIZAÇÃO EM PASTAS POR SEMANA:** Sempre que gerar conteúdos, aulas, resumos ou listas de exercícios para uma semana específica (ex: Semana 1, Semana 2...), **crie uma pasta dedicada na raiz do projeto** no formato `semana-01/`, `semana-02/` ... `semana-12/` e salve todos os materiais daquela semana lá dentro.
+> 4. **ATUALIZAÇÃO AUTOMÁTICA DO PROGRESSO (LOCAL + SITE):** Quando o usuário avisar que concluiu um tópico, bloco ou simulado:
+>    - Edite imediatamente a Seção 5 deste arquivo, trocando `[ ]` por `[x]`.
+>    - Sincronize o progresso na conta do usuário para atualizar o site automaticamente rodando:
+>      - `python .agents/sync_db.py mark <chave>` (chaves: `w1_port`, `w1_rlm`, `w1_esp`, `w1_ger`, `w1_sim` ... até `w12_sim`)
+>      - `python .agents/sync_db.py exam <numero_da_prova>` (ex: `1` a `93`)
+> 5. Ao ensinar qualquer conteúdo ao usuário, siga rigorosamente o **Perfil Cognitivo e Didático do Aluno (Seção 2)** — nunca jogue regras secas ou fórmulas decoradas sem antes explicar **o porquê lógico/histórico** daquilo existir.
 
 ---
 

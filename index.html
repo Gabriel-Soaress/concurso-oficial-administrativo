@@ -1539,9 +1539,9 @@ Tenho Ensino Médio completo, mas vi essa base há bastante tempo. Eu aprendo mu
 4. Ao final da explicação, crie uma **"Síntese Feynman de 3 Linhas"** para eu copiar no meu caderno.
 
 TAREFA PARA O AGENTE LOCAL:
-1. Consulte ".agents/GUIA_DO_AGENTE.md" para checar meu progresso atual.
+1. Consulte ".agents/GUIA_DO_AGENTE.md" e verifique se meu e-mail já está vinculado rodando "python .agents/sync_db.py status" (caso não esteja, pergunte meu e-mail da plataforma e vincule com "python .agents/sync_db.py set-user <email>").
 2. Crie (se não existir) a pasta "${w.folder}/" e salve o arquivo "${w.folder}/portugues_semana_${weekStr}.md" com esta aula completa e uma bateria de 10 questões reais de Língua Portuguesa extraídas do acervo local "prova-auto/" (use "prova-auto/indice_provas.txt") sobre este tema, com gabarito comentado alternativa por alternativa.
-3. Quando eu confirmar a conclusão, marque "[x]" no bloco de Português da Semana ${weekStr} em ".agents/GUIA_DO_AGENTE.md".`;
+3. Quando eu confirmar a conclusão, marque "[x]" em ".agents/GUIA_DO_AGENTE.md" e atualize meu progresso no site com "python .agents/sync_db.py mark w${w.num}_port".`;
         } else {
           return `Atue como meu Professor Especialista em Língua Portuguesa para o concurso de Oficial Administrativo (${w.title}).
 
@@ -1583,9 +1583,9 @@ Tenho Ensino Médio, mas faz tempo que vi Matemática. Meu bloqueio acontece qua
 4. Inclua uma **"Síntese Feynman de 3 Linhas"** resumindo o coração lógico desse cálculo.
 
 TAREFA PARA O AGENTE LOCAL:
-1. Verifique ".agents/GUIA_DO_AGENTE.md".
+1. Consulte ".agents/GUIA_DO_AGENTE.md" e verifique se meu e-mail já está vinculado com "python .agents/sync_db.py status" (se não estiver, pergunte meu e-mail e registre com "python .agents/sync_db.py set-user <email>").
 2. Salve na pasta "${w.folder}/" o arquivo "${w.folder}/matematica_rlm_semana_${weekStr}.md" contendo a explicação completa + 10 questões reais de Matemática/RLM retiradas das provas em "prova-auto/" sobre este assunto, resolvidas passo a passo.
-3. Ao final do meu estudo, marque "[x]" em Matemática/RLM da Semana ${weekStr} em ".agents/GUIA_DO_AGENTE.md".`;
+3. Ao final do meu estudo, marque "[x]" em ".agents/GUIA_DO_AGENTE.md" e sincronize no site com "python .agents/sync_db.py mark w${w.num}_rlm".`;
         } else {
           return `Atue como meu Professor Especialista em Matemática e Raciocínio Lógico para o concurso de Oficial Administrativo (${w.title}).
 
@@ -1626,9 +1626,9 @@ Tirando a parte de Informática, todo o conteúdo de Conhecimentos Específicos 
 3. Ao final de cada subtópico, crie uma **"Síntese Feynman de 3 Linhas"**.
 
 TAREFA PARA O AGENTE LOCAL:
-1. Consulte ".agents/GUIA_DO_AGENTE.md".
+1. Consulte ".agents/GUIA_DO_AGENTE.md" e verifique se meu e-mail já está vinculado com "python .agents/sync_db.py status" (se não estiver, pergunte meu e-mail e registre com "python .agents/sync_db.py set-user <email>").
 2. Crie na pasta "${w.folder}/" o arquivo "${w.folder}/especificos_semana_${weekStr}.md" com o guia teórico-prático completo + 10 questões reais de Conhecimentos Específicos extraídas de "prova-auto/" sobre este tema, comentadas alternativa por alternativa.
-3. Quando eu avisar que finalizei, marque "[x]" em Conhecimentos Específicos da Semana ${weekStr} em ".agents/GUIA_DO_AGENTE.md".`;
+3. Quando eu avisar que finalizei, marque "[x]" em ".agents/GUIA_DO_AGENTE.md" e sincronize no site com "python .agents/sync_db.py mark w${w.num}_esp".`;
         } else {
           return `Atue como meu Tutor Especialista em Conhecimentos Específicos para o concurso de Oficial Administrativo (${w.title}).
 
@@ -1665,8 +1665,9 @@ MÉTODO DIDÁTICO ("CAUSA -> FATO -> CONSEQUÊNCIA NAS 3 ESCALAS"):
 3. Destaque os dados oficiais (IBGE, marcos históricos, matriz econômica e política) mais cobrados em provas municipais e feche com uma **"Síntese Feynman de 3 Linhas"**.
 
 TAREFA PARA O AGENTE LOCAL:
-1. Crie na pasta "${w.folder}/" o arquivo "${w.folder}/conhecimentos_gerais_semana_${weekStr}.md" com este dossiê didático e 8 questões comentadas (extraídas de "prova-auto/" + inéditas sobre Birigui/SP e atualidades).
-2. Quando eu concluir a leitura, marque "[x]" em Conhecimentos Gerais da Semana ${weekStr} em ".agents/GUIA_DO_AGENTE.md".`;
+1. Verifique meu e-mail vinculado com "python .agents/sync_db.py status" (se não houver, pergunte meu e-mail e registre com "python .agents/sync_db.py set-user <email>").
+2. Crie na pasta "${w.folder}/" o arquivo "${w.folder}/conhecimentos_gerais_semana_${weekStr}.md" com este dossiê didático e 8 questões comentadas (extraídas de "prova-auto/" + inéditas sobre Birigui/SP e atualidades).
+3. Quando eu concluir a leitura, marque "[x]" em ".agents/GUIA_DO_AGENTE.md" e sincronize no site com "python .agents/sync_db.py mark w${w.num}_ger".`;
         } else {
           return `Atue como meu Professor de Conhecimentos Gerais (História, Geografia, Política e Atualidades) para o concurso de Oficial Administrativo (${w.title}).
 
@@ -1700,10 +1701,11 @@ PROVA ALVO DESTE SÁBADO NO ACERVO LOCAL:
 - Conteúdos acumulados na minha trilha até esta Semana ${weekStr}: ${w.title}
 ${customDoubt}
 TAREFA PARA O AGENTE LOCAL:
-1. Abra e analise a prova "prova-auto/${w.simNum}.pdf" e seu gabarito "prova-auto/g${w.simNum}.pdf".
-2. Mapeie quais questões dessa prova cobram os assuntos que já estudei até a Semana ${weekStr} e quais cobram tópicos das próximas semanas.
-3. Para as questões que eu indicar que errei (ou para as 10 questões mais estratégicas da prova), faça a **Engenharia Reversa**: explique a lógica da resposta certa, aponte a pegadinha das alternativas incorretas e gere a frase de 1 linha para o meu **Caderno de Erros** em "${w.folder}/caderno_erros_semana_${weekStr}.md".
-4. Atualize o checklist do Simulado da Semana ${weekStr} em ".agents/GUIA_DO_AGENTE.md".`;
+1. Verifique meu e-mail vinculado com "python .agents/sync_db.py status" (se não houver, pergunte meu e-mail e registre com "python .agents/sync_db.py set-user <email>").
+2. Abra e analise a prova "prova-auto/${w.simNum}.pdf" e seu gabarito "prova-auto/g${w.simNum}.pdf".
+3. Mapeie quais questões dessa prova cobram os assuntos que já estudei até a Semana ${weekStr} e quais cobram tópicos das próximas semanas.
+4. Para as questões que eu indicar que errei (ou para as 10 questões mais estratégicas da prova), faça a **Engenharia Reversa**: explique a lógica da resposta certa, aponte a pegadinha das alternativas incorretas e gere a frase de 1 linha para o meu **Caderno de Erros** em "${w.folder}/caderno_erros_semana_${weekStr}.md".
+5. Atualize o checklist do Simulado em ".agents/GUIA_DO_AGENTE.md" e sincronize no site com "python .agents/sync_db.py mark w${w.num}_sim" e "python .agents/sync_db.py exam ${w.simNum}".`;
         } else {
           return `Atue como meu Avaliador de Simulado e Mentor de Engenharia Reversa para o concurso de Oficial Administrativo (Sábado da Semana ${weekStr}).
 
@@ -1746,9 +1748,9 @@ DIRETRIZ DIDÁTICA ("A LÓGICA DE ORIGEM"):
 - Inclua ao final de cada matéria uma **"Síntese Feynman de 3 Linhas"**.
 
 TAREFA PARA O AGENTE LOCAL:
-1. Leia ".agents/GUIA_DO_AGENTE.md" para verificar o status atual.
+1. Leia ".agents/GUIA_DO_AGENTE.md" e verifique se meu e-mail da plataforma já está vinculado rodando "python .agents/sync_db.py status" (caso não esteja, pergunte meu e-mail e vincule com "python .agents/sync_db.py set-user <email>").
 2. Crie a pasta "${w.folder}/" na raiz do projeto e gere os materiais de estudo organizados para meus blocos diários de 1h30 (Segunda a Sexta: 60 min teoria lógica + 30 min questões reais extraídas de "prova-auto/").
-3. Ao final de cada etapa que eu concluir, atualize o checklist em ".agents/GUIA_DO_AGENTE.md".`;
+3. Ao final de cada etapa que eu concluir, atualize o checklist em ".agents/GUIA_DO_AGENTE.md" e sincronize no site usando "python .agents/sync_db.py mark w${w.num}_<bloco>".`;
       } else {
         return `Atue como meu Tutor Especialista para o concurso de Oficial Administrativo (Plano de 90 Dias — **${w.title}**).
 
