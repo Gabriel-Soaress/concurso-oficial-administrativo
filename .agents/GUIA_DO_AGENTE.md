@@ -23,6 +23,11 @@
   * **Provas `1.pdf` a `12.pdf` (`g1.pdf` a `g12.pdf`):** São os **12 Simulados Oficiais de Sábado**, renumerados exatamente na ordem da **Semana 01 até a Semana 12**!
   * **Provas `13.pdf` a `93.pdf` (`g13.pdf` a `g93.pdf`):** São as **81 provas de Treino Diário** (para usar de segunda a sexta nas baterias de questões por matéria).
   * `prova-auto/indice_provas.txt`: Índice completo mapeando `Nº | Tipo | Ano | Órgão | Banca | Prova | Gabarito | URL`.
+
+> [!IMPORTANT]
+> **PRESERVAÇÃO TOTAL DOS 12 SIMULADOS DE SÁBADO (PROVAS 1 A 12):**
+> Nunca retire questões de 1.pdf a 12.pdf para aulas semanais, apostilas teóricas ou baterias diárias de exercícios. Elas são reservadas com exclusividade para os Simulados de Sábado. Todas as questões de aula devem vir exclusivamente das provas de Treino Diário (13.pdf a 93.pdf).
+
 * `semana-01/`, `semana-02/`, etc.: Pastas criadas pelos agentes à medida que os materiais de cada semana são gerados.
 
 ---
@@ -39,7 +44,12 @@
      * **A lógica por trás da regra e das exceções** (ex: *por que* a crase não ocorre antes de verbo; *por que* a vírgula não separa sujeito e verbo).
      * **O significado físico/prático da conta matemática** (ex: *o que* uma equação, função, matriz ou razão está fazendo na realidade).
      * **O contexto histórico e institucional** (ex: *por que* a Administração Pública funciona assim; *qual* a história que levou a um fato político/econômico).
-3. **Nível Inicial por Grande Grupo:**
+* **Regra Pedagógica Absoluta (Didático e Completo ao Máximo):**
+      * **Zero termos jogados do nada:** Qualquer conceito novo (ex: ditongo, hiato, paroxítona, dígrafo, inferência, anáfora) deve ser primeiramente conceituado com termos simples antes de ser usado.
+      * **O Porquê e a Lógica:** Explicar qual problema prático da comunicação escrita ou acústica a regra resolve e a lógica das exceções.
+      * **Analogias e Comparativos (Certo vs. Errado):** Sempre ilustrar com analogias da vida real e quadros comparativos entre a frase correta e o erro clássico que a banca cria.
+      * **Síntese Feynman de 3 Linhas:** Finalizar cada tópico com um resumo conciso para fixação no caderno.
+   3. **Nível Inicial por Grande Grupo:**
    * **Grupo 01 (Português) e Grupo 02 (Matemática/RLM):** Já viu no Ensino Médio, mas precisa relembrar desde a base com explicação lógica passo a passo até chegar nos tópicos avançados.
    * **Grupo 03 (Conhecimentos Gerais):** Exige atenção especial à **História Municipal (Birigui/SP e região), História Nacional, Geografia e Política**, sempre conectando causa, fato e consequência nas 3 escalas (Municipal $\leftrightarrow$ Estadual $\leftrightarrow$ Nacional/Global).
    * **Grupo 04 (Conhecimentos Específicos):** Tirando **Informática** (onde já tem familiaridade), **quase tudo é contato novo** (Administração Pública, Rotinas, Redação Oficial, Protocolo, Arquivo, LAI e LGPD). O agente deve ensinar esses temas como uma narrativa contínua do funcionamento de uma Prefeitura.
@@ -76,10 +86,10 @@ Quando o usuário enviar o Prompt Matriz da Semana $X$:
 ### MÊS 1 — As Fundações (Do Zero à Base Sólida)
 
 #### Semana 1: Os Alicerces (`semana-01/`)
-- [ ] **Português (Sem 1):** Leitura/Interpretação (ideia central, inferência, implícitos) + Fonologia básica, sílabas, lógica da tonicidade/acentuação e ortografia.
+- [x] **Português (Sem 1):** Leitura/Interpretação (ideia central, inferência, implícitos) + Fonologia básica, sílabas, lógica da tonicidade/acentuação e ortografia.
 - [ ] **Matemática/RLM (Sem 1):** Conjuntos numéricos ($\mathbb{N}, \mathbb{Z}, \mathbb{Q}, \mathbb{R}$), operações fundamentais, lógica das frações, decimais, potências, raízes e expressões numéricas.
 - [ ] **Específicos (Sem 1):** O que é Estado, Governo e Administração Pública; Princípios (LIMPE + implícitos) e serviço público.
-- [ ] **Conhecimentos Gerais (Sem 1):** Formação histórica, territorial e econômica do Brasil (grandes ciclos e regiões).
+- [x] **Conhecimentos Gerais (Sem 1):** Formação histórica, territorial e econômica do Brasil (grandes ciclos e regiões).
 - [ ] **Simulado de Sábado 1:** Prova `prova-auto/1.pdf` (Gabarito `g1.pdf` - ACCESS - Pref. Cataguases/MG) — *Nota/Acertos: ___/40*
 
 #### Semana 2: Dando Nome e Proporção às Coisas (`semana-02/`)
