@@ -508,7 +508,7 @@
         </button>
         <button type="button" onclick="switchPage('provas')" id="nav-provas" class="nav-btn">
           <svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
-          <span>Acervo (93 Provas)</span>
+          <span>Acervo & Provas ACCESS</span>
         </button>
       </nav>
     </div>
@@ -881,91 +881,209 @@
       </div>
     </section>
 
-    <!-- ======================================================= -->
-    <!-- PÁGINA 4: ACERVO DE 93 PROVAS & SIMULADOS ESPAÇADOS     -->
+        <!-- ======================================================= -->
+    <!-- PÁGINA 4: ACERVO DE PROVAS & SIMULADOS                   -->
     <!-- ======================================================= -->
     <section id="page-provas" class="page-view space-y-6 sm:space-y-10">
-      <div class="space-y-1.5">
-        <div class="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-indigo-600 dark:text-indigo-400 font-bold">
-          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-          <span>Biblioteca Oficial (1.pdf a 93.pdf)</span>
-        </div>
-        <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight">12 Simulados & 81 Provas de Treino</h2>
-        <p class="text-sm text-sec max-w-2xl">
-          As provas <strong>#1 a #12</strong> são os seus Simulados Oficiais de Sábado (um para cada semana). As provas <strong>#13 a #93</strong> servem para o treino diário de 30 minutos.
-        </p>
-      </div>
-
-      <!-- Cards de Resumo do Acervo -->
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
-        <div class="surface rounded-2xl p-5 flex items-center gap-4">
-          <div class="w-12 h-12 rounded-xl bg-rose-500/12 text-rose-600 dark:text-rose-400 flex items-center justify-center shrink-0">
-            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+      <!-- Header do Acervo com Seletor de Abas -->
+      <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-4">
+        <div class="space-y-1.5">
+          <div class="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-indigo-600 dark:text-indigo-400 font-bold">
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            <span>Biblioteca de Provas</span>
           </div>
-          <div>
-            <div class="text-xs font-mono uppercase text-mut font-semibold">Simulados de Sábado</div>
-            <div id="statSimulados" class="text-xl font-extrabold mt-0.5">0 / 12 feitos</div>
-          </div>
+          <h2 class="text-2xl sm:text-3xl font-extrabold tracking-tight">Acervo de Questões & Provas</h2>
+          <p class="text-sm text-sec max-w-2xl">
+            Alterne entre o <strong>Acervo Geral</strong> (12 Simulados de Sábado + 81 Provas de Treino) e a aba <strong>Provas do ACCESS</strong> (21 cadernos recentes da banca oficial do seu concurso).
+          </p>
         </div>
 
-        <div class="surface rounded-2xl p-5 flex items-center gap-4">
-          <div class="w-12 h-12 rounded-xl bg-indigo-500/12 text-indigo-600 dark:text-indigo-400 flex items-center justify-center shrink-0">
-            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-          </div>
-          <div>
-            <div class="text-xs font-mono uppercase text-mut font-semibold">Provas de Treino</div>
-            <div id="statTreinos" class="text-xl font-extrabold mt-0.5">0 / 81 feitas</div>
-          </div>
-        </div>
-
-        <div class="surface rounded-2xl p-5 flex items-center gap-4">
-          <div class="w-12 h-12 rounded-xl bg-emerald-500/12 text-emerald-600 dark:text-emerald-400 flex items-center justify-center shrink-0">
-            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-          </div>
-          <div>
-            <div class="text-xs font-mono uppercase text-mut font-semibold">Total Concluído</div>
-            <div id="statTotalExams" class="text-xl font-extrabold mt-0.5">0 de 93 PDFs</div>
-          </div>
+        <!-- Seletor de Abas da Página de Acervo -->
+        <div class="surface p-1.5 rounded-xl grid grid-cols-2 gap-1.5 w-full lg:w-auto shrink-0 shadow-sm border border-tech">
+          <button type="button" onclick="switchAcervoTab('geral')" id="tab-acervo-geral" class="tab-pill active">
+            Acervo Geral (93)
+          </button>
+          <button type="button" onclick="switchAcervoTab('access')" id="tab-acervo-access" class="tab-pill flex items-center justify-center gap-1.5">
+            <span>Provas do ACCESS</span>
+            <span class="text-[10px] font-mono px-1.5 py-0.5 rounded-full bg-indigo-500/20 text-indigo-700 dark:text-indigo-300 font-bold">21</span>
+          </button>
         </div>
       </div>
 
-      <!-- Barra Horizontal de Filtros -->
-      <div class="surface rounded-2xl p-4 sm:p-5 grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
-        <select id="examTypeFilter" class="input-tech">
-          <option value="all">Todas as 93 provas</option>
-          <option value="sim">Apenas os 12 Simulados (1–12)</option>
-          <option value="train">Apenas Treino Diário (13–93)</option>
-        </select>
-        <select id="examYearFilter" class="input-tech">
-          <option value="all">Todos os anos (2022–2026)</option>
-          <option value="2026">Ano 2026 (5 provas)</option>
-          <option value="2025">Ano 2025 (14 provas)</option>
-          <option value="2024">Ano 2024 (39 provas)</option>
-          <option value="2023">Ano 2023 (20 provas)</option>
-          <option value="2022">Ano 2022 (15 provas)</option>
-        </select>
-        <input id="examSearch" type="text" placeholder="Buscar por prefeitura, câmara ou banca..." class="input-tech" />
+      <!-- ============================================== -->
+      <!-- ABA 1: ACERVO GERAL (93 PROVAS DE TREINO)      -->
+      <!-- ============================================== -->
+      <div id="acervo-view-geral" class="space-y-6 sm:space-y-8">
+        <!-- Cards de Resumo do Acervo Geral -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
+          <div class="surface rounded-2xl p-5 flex items-center gap-4">
+            <div class="w-12 h-12 rounded-xl bg-rose-500/12 text-rose-600 dark:text-rose-400 flex items-center justify-center shrink-0">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <div>
+              <div class="text-xs font-mono uppercase text-mut font-semibold">Simulados de Sábado</div>
+              <div id="statSimulados" class="text-xl font-extrabold mt-0.5">0 / 12 feitos</div>
+            </div>
+          </div>
+
+          <div class="surface rounded-2xl p-5 flex items-center gap-4">
+            <div class="w-12 h-12 rounded-xl bg-indigo-500/12 text-indigo-600 dark:text-indigo-400 flex items-center justify-center shrink-0">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            </div>
+            <div>
+              <div class="text-xs font-mono uppercase text-mut font-semibold">Provas de Treino</div>
+              <div id="statTreinos" class="text-xl font-extrabold mt-0.5">0 / 81 feitas</div>
+            </div>
+          </div>
+
+          <div class="surface rounded-2xl p-5 flex items-center gap-4">
+            <div class="w-12 h-12 rounded-xl bg-emerald-500/12 text-emerald-600 dark:text-emerald-400 flex items-center justify-center shrink-0">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <div>
+              <div class="text-xs font-mono uppercase text-mut font-semibold">Total Concluído</div>
+              <div id="statTotalExams" class="text-xl font-extrabold mt-0.5">0 de 93 PDFs</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Barra Horizontal de Filtros Geral -->
+        <div class="surface rounded-2xl p-4 sm:p-5 grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
+          <select id="examTypeFilter" class="input-tech">
+            <option value="all">Todas as 93 provas</option>
+            <option value="sim">Apenas os 12 Simulados (1–12)</option>
+            <option value="train">Apenas Treino Diário (13–93)</option>
+          </select>
+          <select id="examYearFilter" class="input-tech">
+            <option value="all">Todos os anos (2022–2026)</option>
+            <option value="2026">Ano 2026 (5 provas)</option>
+            <option value="2025">Ano 2025 (14 provas)</option>
+            <option value="2024">Ano 2024 (39 provas)</option>
+            <option value="2023">Ano 2023 (20 provas)</option>
+            <option value="2022">Ano 2022 (15 provas)</option>
+          </select>
+          <input id="examSearch" type="text" placeholder="Buscar por prefeitura, câmara ou banca..." class="input-tech" />
+        </div>
+
+        <!-- Lista Mobile Geral -->
+        <div id="examsMobileList" class="md:hidden space-y-4"></div>
+
+        <!-- Tabela Desktop Espaçada Geral -->
+        <div class="hidden md:block surface rounded-2xl overflow-hidden shadow-sm">
+          <div class="overflow-x-auto">
+            <table class="w-full text-left border-collapse">
+              <thead>
+                <tr class="surface-muted border-b border-tech text-xs font-mono uppercase text-sec">
+                  <th class="py-4 px-6 w-20">Status</th>
+                  <th class="py-4 px-5 w-20">Prova</th>
+                  <th class="py-4 px-5 w-24">Ano</th>
+                  <th class="py-4 px-6">Órgão / Instituição</th>
+                  <th class="py-4 px-6">Banca</th>
+                  <th class="py-4 px-6 text-right">Downloads (PDF)</th>
+                </tr>
+              </thead>
+              <tbody id="examsTableBody" class="divide-y divide-slate-200 dark:divide-slate-800 text-sm"></tbody>
+            </table>
+          </div>
+        </div>
       </div>
 
-      <!-- Lista Mobile -->
-      <div id="examsMobileList" class="md:hidden space-y-4"></div>
+      <!-- ============================================== -->
+      <!-- ABA 2: PROVAS DO ACCESS (BANCA DO CONCURSO)    -->
+      <!-- ============================================== -->
+      <div id="acervo-view-access" class="space-y-6 sm:space-y-8 hidden">
+        <!-- Banner Estratégico da Banca ACCESS -->
+        <div class="surface rounded-2xl p-5 sm:p-6 border-l-4 border-l-indigo-500 relative overflow-hidden">
+          <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+            <div class="space-y-1.5">
+              <div class="inline-flex items-center gap-2 text-xs font-mono uppercase font-bold text-indigo-600 dark:text-indigo-400">
+                <span class="w-2 h-2 rounded-full bg-indigo-500 animate-pulse"></span>
+                <span>Banca Examinadora Oficial</span>
+              </div>
+              <h3 class="text-lg sm:text-xl font-bold">Treino Especializado: Instituto ACCESS (2024 a 2026)</h3>
+              <p class="text-sm text-sec max-w-3xl leading-relaxed">
+                Cadernos oficiais de nível médio da área administrativa (equivalente a Oficial Administrativo, Assistente e Escriturário). Use estas provas para dominar o estilo de formulação dos enunciados, a interpretação textual e o padrão de cobrança da <strong>ACCESS</strong>!
+              </p>
+            </div>
+            <div class="shrink-0 flex items-center gap-2">
+              <span class="text-xs font-mono font-bold px-3.5 py-2 rounded-xl bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 border border-indigo-500/20">
+                21 Provas c/ Gabarito
+              </span>
+            </div>
+          </div>
+        </div>
 
-      <!-- Tabela Desktop Espaçada -->
-      <div class="hidden md:block surface rounded-2xl overflow-hidden shadow-sm">
-        <div class="overflow-x-auto">
-          <table class="w-full text-left border-collapse">
-            <thead>
-              <tr class="surface-muted border-b border-tech text-xs font-mono uppercase text-sec">
-                <th class="py-4 px-6 w-20">Status</th>
-                <th class="py-4 px-5 w-20">Prova</th>
-                <th class="py-4 px-5 w-24">Ano</th>
-                <th class="py-4 px-6">Órgão / Instituição</th>
-                <th class="py-4 px-6">Banca</th>
-                <th class="py-4 px-6 text-right">Downloads (PDF)</th>
-              </tr>
-            </thead>
-            <tbody id="examsTableBody" class="divide-y divide-slate-200 dark:divide-slate-800 text-sm"></tbody>
-          </table>
+        <!-- Cards de Resumo ACCESS -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
+          <div class="surface rounded-2xl p-5 flex items-center gap-4">
+            <div class="w-12 h-12 rounded-xl bg-blue-500/12 text-blue-600 dark:text-blue-400 flex items-center justify-center shrink-0">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+            </div>
+            <div>
+              <div class="text-xs font-mono uppercase text-mut font-semibold">Provas da ACCESS</div>
+              <div class="text-xl font-extrabold mt-0.5">21 Cadernos</div>
+            </div>
+          </div>
+
+          <div class="surface rounded-2xl p-5 flex items-center gap-4">
+            <div class="w-12 h-12 rounded-xl bg-amber-500/12 text-amber-600 dark:text-amber-400 flex items-center justify-center shrink-0">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <div>
+              <div class="text-xs font-mono uppercase text-mut font-semibold">Nível / Perfil</div>
+              <div class="text-xl font-extrabold mt-0.5">Médio / Administrativo</div>
+            </div>
+          </div>
+
+          <div class="surface rounded-2xl p-5 flex items-center gap-4">
+            <div class="w-12 h-12 rounded-xl bg-emerald-500/12 text-emerald-600 dark:text-emerald-400 flex items-center justify-center shrink-0">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <div>
+              <div class="text-xs font-mono uppercase text-mut font-semibold">Total Realizado</div>
+              <div id="statAccessExams" class="text-xl font-extrabold mt-0.5">0 de 21 feitas</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Barra de Filtros ACCESS -->
+        <div class="surface rounded-2xl p-4 sm:p-5 grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
+          <select id="accessYearFilter" class="input-tech">
+            <option value="all">Todos os anos (2024 a 2026)</option>
+            <option value="2026">Ano 2026 (6 provas)</option>
+            <option value="2025">Ano 2025 (4 provas)</option>
+            <option value="2024">Ano 2024 (11 provas)</option>
+          </select>
+          <select id="accessRoleFilter" class="input-tech">
+            <option value="all">Todos os cargos</option>
+            <option value="assistente">Assistente (Adm / Legislativo)</option>
+            <option value="oficial">Oficial / Agente Adm.</option>
+            <option value="escriturario">Escriturário</option>
+            <option value="auxiliar">Auxiliar Administrativo</option>
+          </select>
+          <input id="accessSearch" type="text" placeholder="Buscar por órgão, município ou cargo..." class="input-tech" />
+        </div>
+
+        <!-- Lista Mobile ACCESS -->
+        <div id="accessMobileList" class="md:hidden space-y-4"></div>
+
+        <!-- Tabela Desktop ACCESS -->
+        <div class="hidden md:block surface rounded-2xl overflow-hidden shadow-sm">
+          <div class="overflow-x-auto">
+            <table class="w-full text-left border-collapse">
+              <thead>
+                <tr class="surface-muted border-b border-tech text-xs font-mono uppercase text-sec">
+                  <th class="py-4 px-6 w-20">Status</th>
+                  <th class="py-4 px-5 w-20">#</th>
+                  <th class="py-4 px-5 w-24">Ano</th>
+                  <th class="py-4 px-6">Órgão / Instituição</th>
+                  <th class="py-4 px-6">Cargo Oficial</th>
+                  <th class="py-4 px-6 text-right">Downloads Oficiais</th>
+                </tr>
+              </thead>
+              <tbody id="accessTableBody" class="divide-y divide-slate-200 dark:divide-slate-800 text-sm"></tbody>
+            </table>
+          </div>
         </div>
       </div>
     </section>
@@ -981,6 +1099,177 @@
       ? "/api/db"
       : VERCEL_API_URL;
 
+    
+    const accessExams = [
+  {
+    "i": 1,
+    "y": 2026,
+    "o": "Universidade Federal do Pampa (Unipampa)",
+    "c": "Assistente em Administração",
+    "f": "access_01_Universidade_Federal_do_P_PROVA_OBJETIVA_-_ASSISTENTE_EM_ADMI.pdf",
+    "g": "gabarito_01_Universidade_Federal_do_P.pdf"
+  },
+  {
+    "i": 2,
+    "y": 2026,
+    "o": "Universidade Federal do Acre (UFAC)",
+    "c": "Assistente em Administração",
+    "f": "access_02_Universidade_Federal_do_A_PROVA_OBJETIVA_-_ASSISTENTE_EM_ADMI.pdf",
+    "g": "gabarito_02_Universidade_Federal_do_A.pdf"
+  },
+  {
+    "i": 3,
+    "y": 2026,
+    "o": "Univ. Federal da Fronteira Sul (UFFS)",
+    "c": "Assistente em Administração",
+    "f": "access_03_UFFS_-_Universidade_Feder_PROVA_OBJETIVA_-_ASSISTENTE_EM_ADMI.pdf",
+    "g": "gabarito_03_UFFS_-_Universidade_Feder.pdf"
+  },
+  {
+    "i": 4,
+    "y": 2026,
+    "o": "Conselho Reg. de Medicina do Pará (CRM-PA)",
+    "c": "Assistente Administrativo",
+    "f": "access_04_Conselho_Regional_de_Medi_PROVA_OBJETIVA_-_ASSISTENTE_ADMINIS.pdf",
+    "g": "gabarito_04_Conselho_Regional_de_Medi.pdf"
+  },
+  {
+    "i": 5,
+    "y": 2026,
+    "o": "Prefeitura Municipal de Promissão/SP",
+    "c": "Escriturário A",
+    "f": "access_05_Prefeitura_Municipal_de_P_PROVA_OBJETIVA_-_ESCRITURRIO_A_15_0.pdf",
+    "g": "gabarito_05_Prefeitura_Municipal_de_P.pdf"
+  },
+  {
+    "i": 6,
+    "y": 2025,
+    "o": "Prefeitura de Estrela Dalva/MG",
+    "c": "Auxiliar Administrativo",
+    "f": "access_06_Prefeitura_Municipal_de_E_PROVA_OBJETIVA_-_AUXILIAR_ADMINISTR.pdf",
+    "g": "gabarito_06_Prefeitura_Municipal_de_E.pdf"
+  },
+  {
+    "i": 7,
+    "y": 2025,
+    "o": "Prefeitura Municipal de Apiaí/SP",
+    "c": "Escriturário",
+    "f": "access_07_Prefeitura_Municipal_de_A_PROVA_OBJETIVA_-_ESCRITURRIO_-_TIPO.pdf",
+    "g": "gabarito_07_Prefeitura_Municipal_de_A.pdf"
+  },
+  {
+    "i": 8,
+    "y": 2025,
+    "o": "Conselho Reg. de Biologia 5ª Região (CRBio-05)",
+    "c": "Assistente Administrativo",
+    "f": "access_08_Conselho_Regional_de_Biol_PROVA_OBJETIVA_-_ASSISTENTE_ADMINIS.pdf",
+    "g": "gabarito_08_Conselho_Regional_de_Biol.pdf"
+  },
+  {
+    "i": 9,
+    "y": 2025,
+    "o": "Prefeitura Municipal de Rodeiro/MG",
+    "c": "Assistente Administrativo",
+    "f": "access_09_Prefeitura_Municipal_de_R_PROVA_OBJETIVA_-_ASSISTENTE_ADMINIS.pdf",
+    "g": "gabarito_09_Prefeitura_Municipal_de_R.pdf"
+  },
+  {
+    "i": 10,
+    "y": 2026,
+    "o": "Prefeitura Municipal de Contagem/MG",
+    "c": "Assistente Administrativo (40h)",
+    "f": "access_10_Prefeitura_Municipal_de_C_PROVA_OBJETIVA_-_ASSISTENTE_ADMINIS.pdf",
+    "g": "gabarito_10_Prefeitura_Municipal_de_C.pdf"
+  },
+  {
+    "i": 11,
+    "y": 2024,
+    "o": "Univ. Federal da Fronteira do Sul (UFFS)",
+    "c": "Assistente em Administração",
+    "f": "access_11_UFFS_-_Universidade_Feder_Prova_Objetiva_-_Assistente_em_Admi.pdf",
+    "g": "gabarito_11_UFFS_-_Universidade_Feder.pdf"
+  },
+  {
+    "i": 12,
+    "y": 2024,
+    "o": "AMARP - Assoc. Municípios Alto Rio Pardo/MG",
+    "c": "Assistente Administrativo",
+    "f": "access_12_AMARP_-_Associao_dos_Muni_PROVA_OBJETIVA_-_ASSISTENTE_ADMINIS.pdf",
+    "g": "gabarito_12_AMARP_-_Associao_dos_Muni.pdf"
+  },
+  {
+    "i": 13,
+    "y": 2024,
+    "o": "Conselho Reg. de Biologia 8ª Região (CRBio-08)",
+    "c": "Auxiliar Administrativo",
+    "f": "access_13_Conselho_Regional_de_Biol_PROVA_OBJETIVA_-_AUXILIAR_ADMINISTR.pdf",
+    "g": "gabarito_13_Conselho_Regional_de_Biol.pdf"
+  },
+  {
+    "i": 14,
+    "y": 2024,
+    "o": "Conselho Reg. de Biologia 8ª Região (CRBio-08)",
+    "c": "Assistente Administrativo",
+    "f": "access_14_Conselho_Regional_de_Biol_PROVA_OBJETIVA_-_ASSISTENTE_ADMINIS.pdf",
+    "g": "gabarito_14_Conselho_Regional_de_Biol.pdf"
+  },
+  {
+    "i": 15,
+    "y": 2024,
+    "o": "Prefeitura Municipal de Tombos/MG",
+    "c": "Agente de Administração Escolar",
+    "f": "access_15_Prefeitura_Municipal_de_T_PROVA_OBJETIVA_-_AGENTE_DE_ADMINIST.pdf",
+    "g": "gabarito_15_Prefeitura_Municipal_de_T.pdf"
+  },
+  {
+    "i": 16,
+    "y": 2024,
+    "o": "Prefeitura Municipal de Passos/MG",
+    "c": "Oficial de Administração",
+    "f": "access_16_Prefeitura_Municipal_de_P_PROVA_OBJETIVA_-_OFICIAL_DE_ADMINIS.pdf",
+    "g": "gabarito_16_Prefeitura_Municipal_de_P.pdf"
+  },
+  {
+    "i": 17,
+    "y": 2024,
+    "o": "Universidade Federal de Jataí (UFJ)",
+    "c": "Assistente em Administração",
+    "f": "access_17_Universidade_Federal_de_J_Prova_Objetiva_-_Assistente_em_Admi.pdf",
+    "g": "gabarito_17_Universidade_Federal_de_J.pdf"
+  },
+  {
+    "i": 18,
+    "y": 2024,
+    "o": "Prefeitura Municipal de Domingos Martins/ES",
+    "c": "Auxiliar Administrativo",
+    "f": "access_18_Prefeitura_Municipal_de_D_PROVA_OBJETIVA_-_AUXILIAR_ADMINISTR.pdf",
+    "g": "gabarito_18_Prefeitura_Municipal_de_D.pdf"
+  },
+  {
+    "i": 19,
+    "y": 2024,
+    "o": "Prefeitura Municipal de Cataguases/MG",
+    "c": "Oficial Administrativo",
+    "f": "access_19_Prefeitura_Municipal_de_C_PROVA_OBJETIVA_-_OFICIAL_ADMINISTRA.pdf",
+    "g": "gabarito_19_Prefeitura_Municipal_de_C.pdf"
+  },
+  {
+    "i": 20,
+    "y": 2024,
+    "o": "Prefeitura Municipal de Cataguases/MG",
+    "c": "Agente Administrativo",
+    "f": "access_20_Prefeitura_Municipal_de_C_PROVA_OBJETIVA_-_AGENTE_ADMINISTRAT.pdf",
+    "g": "gabarito_20_Prefeitura_Municipal_de_C.pdf"
+  },
+  {
+    "i": 21,
+    "y": 2024,
+    "o": "Câmara Municipal de Conquista/MG",
+    "c": "Assistente Legislativo",
+    "f": "access_21_Cmara_Municipal_de_Conqui_PROVA_OBJETIVA_-_ASSISTENTE_LEGISLA.pdf",
+    "g": "gabarito_21_Cmara_Municipal_de_Conqui.pdf"
+  }
+];
     const allExams = [{"i": 1, "y": 2024, "o": "Pref. Cataguases/MG", "b": "ACCESS", "g": true}, {"i": 2, "y": 2022, "o": "Câmara de Fernandópolis/SP", "b": "VUNESP", "g": true}, {"i": 3, "y": 2026, "o": "Câmara de Francisco Morato/SP", "b": "AVANÇA SP", "g": true}, {"i": 4, "y": 2025, "o": "Pref. Nonai-RS", "b": "OBJETIVA CONCURSOS", "g": true}, {"i": 5, "y": 2024, "o": "Câmara de Caratinga/MG", "b": "INSTITUTO CONSULPLAN", "g": true}, {"i": 6, "y": 2024, "o": "Pref. Itaguara/MG", "b": "ACCESS", "g": true}, {"i": 7, "y": 2024, "o": "Câmara de Itapeva/SP", "b": "VUNESP", "g": true}, {"i": 8, "y": 2026, "o": "Pref. Bom Jesus/RS", "b": "Fundatec", "g": true}, {"i": 9, "y": 2024, "o": "Pref. Santana de Parnaíba/SP", "b": "INSTITUO MAIS", "g": true}, {"i": 10, "y": 2024, "o": "Pref. Pedreira/SP", "b": "Avança SP", "g": true}, {"i": 11, "y": 2024, "o": "Câmara de Itajubá/MG", "b": "INSTITUTO CONSULPLAN", "g": true}, {"i": 12, "y": 2026, "o": "Pref. Silveira Martins/RS", "b": "Legalle Concursos", "g": true}, {"i": 13, "y": 2026, "o": "Pref. Getúlio Vargas/RS", "b": "FUNDATEC", "g": true}, {"i": 14, "y": 2026, "o": "Câmara de Silveira Martins/RS", "b": "Legalle Concursos", "g": true}, {"i": 15, "y": 2025, "o": "Pref. São Vicente do Sul/RS", "b": "FUNDATEC", "g": true}, {"i": 16, "y": 2025, "o": "Pref. Bocaina do Sul/SC", "b": "INAZ DO PARÁ", "g": true}, {"i": 17, "y": 2025, "o": "Pref. e Câmara de Cerro Grande/RS", "b": "FUNDATEC", "g": true}, {"i": 18, "y": 2025, "o": "Pref. Santana de Parnaíba/SP", "b": "MSCONCURSOS", "g": true}, {"i": 19, "y": 2025, "o": "Pref. Barra Bonita/SC", "b": "AMEOSC", "g": true}, {"i": 20, "y": 2025, "o": "Pref. Rio dos Índios/RS", "b": "Fenix", "g": true}, {"i": 21, "y": 2025, "o": "Pref. de Rio dos Índios/RS", "b": "Fenix", "g": true}, {"i": 22, "y": 2025, "o": "Pref. Ilópolis/RS", "b": "OBJETIVA CONCURSOS", "g": true}, {"i": 23, "y": 2025, "o": "Pref. Porto Mauá/RS", "b": "FUNDATEC", "g": true}, {"i": 24, "y": 2025, "o": "Pref. Morro da Fumaça/SC", "b": "UNESC", "g": true}, {"i": 25, "y": 2025, "o": "Pref. Soledade/RS", "b": "FUNDATEC", "g": true}, {"i": 26, "y": 2025, "o": "Prefeitura de Jequitaí - MG", "b": "FADENOR", "g": true}, {"i": 27, "y": 2025, "o": "ELETROCAR", "b": "OBJETIVA CONCURSOS", "g": true}, {"i": 28, "y": 2024, "o": "Câmara de Santa Leopoldina/ES", "b": "IDCAP", "g": false}, {"i": 29, "y": 2024, "o": "Pref. Arroio do Sal/RS", "b": "FUNDATEC", "g": true}, {"i": 30, "y": 2024, "o": "Câmara de Itapecerica da Serra/SP", "b": "AVANÇASP", "g": true}, {"i": 31, "y": 2024, "o": "Pref. Jari/RS", "b": "FUNDATEC", "g": true}, {"i": 32, "y": 2024, "o": "Pref. São Francisco de Paula/RS", "b": "FUNDATEC", "g": true}, {"i": 33, "y": 2024, "o": "Pref. Buritizal/SP", "b": "Creative Group", "g": true}, {"i": 34, "y": 2024, "o": "Câmara de São João do Triunfo/PR", "b": "FAU - UNICENTRO", "g": true}, {"i": 35, "y": 2024, "o": "Pref. Arroio do Sal/RS", "b": "FUNDATEC", "g": true}, {"i": 36, "y": 2024, "o": "Câmara de Caratinga/MG", "b": "INSTITUTO CONSULPLAN", "g": true}, {"i": 37, "y": 2024, "o": "Câmara de Itapeva/SP", "b": "VUNESP", "g": true}, {"i": 38, "y": 2024, "o": "Pref. Iturama/MG", "b": "HL", "g": true}, {"i": 39, "y": 2024, "o": "Pref. Nova Laranjeiras/PR", "b": "FAU - UNICENTRO", "g": true}, {"i": 40, "y": 2024, "o": "Pref. Senador Salgado Filho/RS", "b": "OBJETIVA CONCURSOS", "g": true}, {"i": 41, "y": 2024, "o": "AmeriPrev", "b": "Avança SP", "g": true}, {"i": 42, "y": 2024, "o": "Câmara de Itajubá/MG", "b": "INSTITUTO CONSULPLAN", "g": true}, {"i": 43, "y": 2024, "o": "CIRC/RS", "b": "OBJETIVA CONCURSOS", "g": true}, {"i": 44, "y": 2024, "o": "Pref. e Câmara de São Martinho da Serra/RS", "b": "FUNDATEC", "g": true}, {"i": 45, "y": 2024, "o": "SAAE de Linhares/ES", "b": "IBADE", "g": true}, {"i": 46, "y": 2024, "o": "Pref. e Câmara Passo do Sobrado/RS", "b": "FUNDATEC", "g": true}, {"i": 47, "y": 2024, "o": "Pref. Lebon Régis/SC", "b": "OBJETIVA CONCURSOS", "g": true}, {"i": 48, "y": 2024, "o": "Pref. Camaquã/RS", "b": "Creative Group", "g": true}, {"i": 49, "y": 2024, "o": "Pref. Santa Leopoldina/ES", "b": "OBJETIVA CONCURSOS", "g": true}, {"i": 50, "y": 2024, "o": "Pref. Inocência/MS", "b": "GAMA", "g": true}, {"i": 51, "y": 2024, "o": "Pref. Gentil/RS", "b": "OBJETIVA CONCURSOS", "g": true}, {"i": 52, "y": 2024, "o": "Pref. Segredo/RS", "b": "FUNDATEC", "g": true}, {"i": 53, "y": 2024, "o": "Pref. Várzea da Palma/MG", "b": "FADENOR", "g": true}, {"i": 54, "y": 2024, "o": "Pref. Venâncio Aires/RS", "b": "FUNDATEC", "g": true}, {"i": 55, "y": 2024, "o": "Câmara de Itaiópolis/SC", "b": "OBJETIVA CONCURSOS", "g": true}, {"i": 56, "y": 2024, "o": "Pref. Barra do Guarita/RS", "b": "FUNDATEC", "g": true}, {"i": 57, "y": 2024, "o": "Pref. Concórdia/SC", "b": "FEPESE", "g": true}, {"i": 58, "y": 2024, "o": "Pref. Vila Maria/RS", "b": "FUNDATEC", "g": true}, {"i": 59, "y": 2024, "o": "Pref. Lajeado Grande/SC", "b": "UNO Chapecó", "g": true}, {"i": 60, "y": 2023, "o": "Pref. Ibiraiaras/RS", "b": "FUNDATEC", "g": true}, {"i": 61, "y": 2023, "o": "Pref. Santana de Parnaíba/SP", "b": "INSTITUTO MAIS", "g": true}, {"i": 62, "y": 2023, "o": "FUTEL", "b": "FUNDEP", "g": true}, {"i": 63, "y": 2023, "o": "Pref. São João do Polêsine/RS", "b": "FUNDATEC", "g": true}, {"i": 64, "y": 2023, "o": "Pref. Santa Cecília do Sul/RS", "b": "FUNDATEC", "g": true}, {"i": 65, "y": 2023, "o": "Pref. Cruzeiro do Iguaçu/PR", "b": "FAU - UNICENTRO", "g": true}, {"i": 66, "y": 2023, "o": "Câmara de Avaré/SP", "b": "INSTITUTO UNIQUE", "g": true}, {"i": 67, "y": 2023, "o": "Pref. e Câmara de Braga/RS", "b": "FUNDATEC", "g": true}, {"i": 68, "y": 2023, "o": "Pref. Araçariguama/SP", "b": "AVANÇA SP", "g": true}, {"i": 69, "y": 2023, "o": "Pref. Conselheiro Pena/MG - SAAE", "b": "MÁXIMA AUDITORIA", "g": true}, {"i": 70, "y": 2023, "o": "ELETROCAR", "b": "FUNDATEC", "g": true}, {"i": 71, "y": 2023, "o": "Pref. Faxinal do Soturno/RS", "b": "FUNDATEC", "g": true}, {"i": 72, "y": 2023, "o": "Pref. Ibarama/RS", "b": "FUNDATEC", "g": true}, {"i": 73, "y": 2023, "o": "Pref. Rio Branco do Ivaí/PR", "b": "FAUEL", "g": true}, {"i": 74, "y": 2023, "o": "Pref. Vista Gaúcha/RS", "b": "FUNDATEC", "g": true}, {"i": 75, "y": 2023, "o": "Pref. Vargem Alta/ES", "b": "IDCAP", "g": false}, {"i": 76, "y": 2023, "o": "Pref. Santa Cecília do Sul/RS", "b": "FUNDATEC", "g": true}, {"i": 77, "y": 2023, "o": "Pref. São João do Polêsine/RS", "b": "FUNDATEC", "g": true}, {"i": 78, "y": 2023, "o": "FUTEL", "b": "FUNDEP", "g": true}, {"i": 79, "y": 2023, "o": "Pref. Santana de Parnaíba/SP", "b": "INSTITUTO MAIS", "g": true}, {"i": 80, "y": 2022, "o": "Câmara Madre de Deus de Minas/MG", "b": "Fundação CEFETMINAS", "g": true}, {"i": 81, "y": 2022, "o": "Pref. Caeté/MG", "b": "INSTITUTO CONSULPLAN", "g": true}, {"i": 82, "y": 2022, "o": "Câmara São João do Ivaí/ PR", "b": "FAUEL", "g": true}, {"i": 83, "y": 2022, "o": "Câmara de Socorro/SP", "b": "IUDS", "g": true}, {"i": 84, "y": 2022, "o": "Pref. Rio das Antas-SC", "b": "Pref. Rio das Antas-SC", "g": true}, {"i": 85, "y": 2022, "o": "Pref. Paracatu/MG", "b": "COTEC/FADENOR", "g": true}, {"i": 86, "y": 2022, "o": "Pref. Rio das Anatas/SC", "b": "Pref. Rio das Anatas/SC", "g": true}, {"i": 87, "y": 2022, "o": "Ref. Paim Filho/RS", "b": "FUNDATEC", "g": true}, {"i": 88, "y": 2022, "o": "Pref. Tunas/RS", "b": "FUNDATEC", "g": true}, {"i": 89, "y": 2022, "o": "Pref. Laranjal Paulista/SP", "b": "Avança SP", "g": true}, {"i": 90, "y": 2022, "o": "Pref. Rio das Antas/SC", "b": "OMNI CONCURSOS", "g": true}, {"i": 91, "y": 2022, "o": "Pref. Santana de Parnaíba/SP", "b": "MAIS", "g": true}, {"i": 92, "y": 2022, "o": "Pref. São Miguel do Iguaçu/PR", "b": "UNIOESTE", "g": true}, {"i": 93, "y": 2022, "o": "Pref. Santana de Parnaíba/SP", "b": "INSTITUTO MAIS", "g": true}];
 
     const weeksData = [
@@ -1335,6 +1624,7 @@
           renderMonthWeeks();
           updateSidebarProgress();
           renderExamsTable();
+          renderAccessExamsTable();
           updateGeneratorPrompt();
           await pushProgressToCloud();
         } else {
@@ -1502,14 +1792,21 @@
 
       let simDone = 0;
       let trainDone = 0;
+      let accessDone = 0;
       Object.entries(examsDoneState).forEach(([k, val]) => {
         if (val) {
-          const num = parseInt(k, 10);
-          if (num <= 12) simDone++;
-          else trainDone++;
+          if (k.startsWith("access_")) {
+            accessDone++;
+          } else {
+            const num = parseInt(k, 10);
+            if (num <= 12) simDone++;
+            else trainDone++;
+          }
         }
       });
       const examsDoneCount = simDone + trainDone;
+      const elAccess = document.getElementById("statAccessExams");
+      if (elAccess) elAccess.textContent = `${accessDone} de 21 feitas`;
 
       const pct = Math.round((done / total) * 100);
       document.getElementById("sidebarPct").textContent = pct + "%";
@@ -1873,6 +2170,133 @@ MEU PERFIL E MÉTODO DIDÁTICO ("A LÓGICA DE ORIGEM"):
       pushProgressToCloud();
     }
 
+    
+    let currentAcervoTab = "geral";
+
+    function switchAcervoTab(tab) {
+      currentAcervoTab = tab;
+      const tabGeral = document.getElementById("tab-acervo-geral");
+      const tabAccess = document.getElementById("tab-acervo-access");
+      const viewGeral = document.getElementById("acervo-view-geral");
+      const viewAccess = document.getElementById("acervo-view-access");
+
+      if (tabGeral) tabGeral.classList.toggle("active", tab === "geral");
+      if (tabAccess) tabAccess.classList.toggle("active", tab === "access");
+      if (viewGeral) viewGeral.classList.toggle("hidden", tab !== "geral");
+      if (viewAccess) viewAccess.classList.toggle("hidden", tab !== "access");
+
+      if (tab === "access") {
+        renderAccessExamsTable();
+      } else {
+        renderExamsTable();
+      }
+    }
+
+    function toggleAccessExamDone(idx) {
+      const key = "access_" + idx;
+      examsDoneState[key] = !examsDoneState[key];
+      try {
+        localStorage.setItem(EXAMS_STORAGE_KEY, JSON.stringify(examsDoneState));
+      } catch (e) {}
+      renderAccessExamsTable();
+      updateSidebarProgress();
+      pushProgressToCloud();
+    }
+
+    function renderAccessExamsTable() {
+      const q = (document.getElementById("accessSearch")?.value || "").trim().toLowerCase();
+      const y = document.getElementById("accessYearFilter")?.value || "all";
+      const r = document.getElementById("accessRoleFilter")?.value || "all";
+
+      const filtered = accessExams.filter(ex => {
+        if (y !== "all" && String(ex.y) !== y) return false;
+        if (r !== "all") {
+          const cargoLower = ex.c.toLowerCase();
+          if (r === "assistente" && !(cargoLower.includes("assistente") || cargoLower.includes("legislativo"))) return false;
+          if (r === "oficial" && !(cargoLower.includes("oficial") || cargoLower.includes("agente"))) return false;
+          if (r === "escriturario" && !cargoLower.includes("escritur")) return false;
+          if (r === "auxiliar" && !cargoLower.includes("auxiliar")) return false;
+        }
+        if (q && !(ex.o.toLowerCase().includes(q) || ex.c.toLowerCase().includes(q) || String(ex.y).includes(q) || String(ex.i) === q)) {
+          return false;
+        }
+        return true;
+      });
+
+      const fileSvg = `<svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>`;
+      const checkSvg = `<svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>`;
+
+      const tbody = document.getElementById("accessTableBody");
+      if (tbody) {
+        tbody.innerHTML = filtered.map(ex => {
+          const done = !!examsDoneState["access_" + ex.i];
+          return `
+            <tr class="hover:bg-slate-50/80 dark:hover:bg-slate-800/40 transition ${done ? 'opacity-50 bg-emerald-500/5' : ''}">
+              <td class="py-4 px-6">
+                <input
+                  type="checkbox"
+                  ${done ? "checked" : ""}
+                  onchange="toggleAccessExamDone(${ex.i})"
+                  class="check-custom"
+                />
+              </td>
+              <td class="py-4 px-5 font-mono font-bold text-indigo-600 dark:text-indigo-400">#${ex.i}</td>
+              <td class="py-4 px-5">
+                <span class="font-mono text-xs font-semibold px-2.5 py-1 rounded-md surface-muted">${ex.y}</span>
+              </td>
+              <td class="py-4 px-6 font-semibold">
+                <div class="flex flex-wrap items-center gap-2">
+                  <span>${ex.o}</span>
+                  <span class="text-[10px] font-mono px-2 py-0.5 rounded-full bg-blue-500/10 text-blue-600 dark:text-blue-400 font-bold">ACCESS</span>
+                </div>
+              </td>
+              <td class="py-4 px-6 text-sec font-medium">
+                <span class="inline-flex items-center gap-1.5">
+                  <span>${ex.c}</span>
+                </span>
+              </td>
+              <td class="py-4 px-6 text-right space-x-2 whitespace-nowrap">
+                <a href="prova-auto/provas-access/${ex.f}" target="_blank" class="btn-secondary !py-2 !px-3.5 !text-xs">${fileSvg}<span>Prova PDF</span></a>
+                <a href="prova-auto/provas-access/${ex.g}" target="_blank" class="btn-secondary !py-2 !px-3.5 !text-xs">${checkSvg}<span>Gabarito</span></a>
+              </td>
+            </tr>
+          `;
+        }).join("");
+      }
+
+      const mobileList = document.getElementById("accessMobileList");
+      if (mobileList) {
+        mobileList.innerHTML = filtered.map(ex => {
+          const done = !!examsDoneState["access_" + ex.i];
+          return `
+            <div class="surface rounded-2xl p-5 space-y-4 shadow-sm ${done ? 'opacity-55 bg-emerald-500/5' : ''}">
+              <div class="flex items-center justify-between gap-2">
+                <label class="flex items-center gap-2.5 cursor-pointer">
+                  <input
+                    type="checkbox"
+                    ${done ? "checked" : ""}
+                    onchange="toggleAccessExamDone(${ex.i})"
+                    class="check-custom"
+                  />
+                  <span class="font-mono font-bold text-sm text-indigo-600 dark:text-indigo-400">ACCESS #${ex.i}</span>
+                  <span class="font-mono text-xs px-2 py-0.5 rounded surface-muted">${ex.y}</span>
+                </label>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded-full bg-blue-500/10 text-blue-600 dark:text-blue-400 font-bold">Oficial</span>
+              </div>
+              <div class="space-y-1">
+                <div class="font-bold text-sm sm:text-base leading-snug">${ex.o}</div>
+                <div class="text-xs text-sec font-medium">Cargo: <strong>${ex.c}</strong></div>
+              </div>
+              <div class="grid grid-cols-2 gap-2.5 pt-1">
+                <a href="prova-auto/provas-access/${ex.f}" target="_blank" class="btn-secondary !py-2.5 !px-3 !text-xs w-full">${fileSvg}<span>Prova PDF</span></a>
+                <a href="prova-auto/provas-access/${ex.g}" target="_blank" class="btn-secondary !py-2.5 !px-3 !text-xs w-full">${checkSvg}<span>Gabarito</span></a>
+              </div>
+            </div>
+          `;
+        }).join("");
+      }
+    }
+
     function renderExamsTable() {
       const q = document.getElementById("examSearch").value.trim().toLowerCase();
       const y = document.getElementById("examYearFilter").value;
@@ -1971,6 +2395,11 @@ MEU PERFIL E MÉTODO DIDÁTICO ("A LÓGICA DE ORIGEM"):
     document.getElementById("examSearch").addEventListener("input", renderExamsTable);
     document.getElementById("examYearFilter").addEventListener("change", renderExamsTable);
     document.getElementById("examTypeFilter").addEventListener("change", renderExamsTable);
+
+    document.getElementById("accessSearch")?.addEventListener("input", renderAccessExamsTable);
+    document.getElementById("accessYearFilter")?.addEventListener("change", renderAccessExamsTable);
+    document.getElementById("accessRoleFilter")?.addEventListener("change", renderAccessExamsTable);
+    renderAccessExamsTable();
 
     document.getElementById("resetPromptBtn").addEventListener("click", () => {
       document.getElementById("difficultyInput").value = "";

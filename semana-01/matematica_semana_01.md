@@ -1,4 +1,25 @@
-# Semana 01: Matemática e Raciocínio Lógico-Matemático (RLM) — Os Alicerces dos Números e do Cálculo
+# Semana 01: Matemática 
+
+> [!NOTE]
+> 🎯 **Pausa Rápida para Fixar (Treino Imediato de MDC):**
+> Calcule o MDC no seu rascunho:
+> - **MDC(30, 45)**
+> 
+> <details>
+> <summary><b>Ver Resposta e Fatoração Rápida</b></summary>
+> 
+> ```text
+>   30 , 45 | 2   (só o 30 divide)
+>   15 , 45 | 3*  (ambos dividem por 3 -> marca com *)
+>    5 , 15 | 3   (só o 15 divide)
+>    5 ,  5 | 5*  (ambos dividem por 5 -> marca com *)
+>    1 ,  1 | 
+> -----------------------------------
+> Fatores comuns: 3 × 5 = 15
+> ```
+> Resposta: **MDC(30, 45) = 15**. *(15 é o maior número que divide 30 e 45 ao mesmo tempo).*
+> </details>
+e Raciocínio Lógico-Matemático (RLM) — Os Alicerces dos Números e do Cálculo
 **Cargo:** Oficial Administrativo  
 **Nível de Escolaridade:** Ensino Médio  
 **Foco:** Didática Passo a Passo, Compreensão Lógica/Física das Operações, Eliminação de Macetes Cegos, Treino Rápido e Resolução de Questões Reais de Concursos
@@ -124,6 +145,24 @@ $$(-20) \times (-3) = +60$$
 
 ---
 
+
+> [!NOTE]
+> 🎯 **Pausa Rápida para Fixar (Treino Imediato no Caderno):**
+> Resolva em 1 minuto antes de seguir:
+> 1. Quanto é $(-7) + (-5)$? *(Dica: somar duas dívidas)*
+> 2. Quanto é $12 - (-8)$? *(Dica: tirar um débito é o mesmo que somar crédito)*
+> 3. Quanto é $(-4) \times (-6)$ e quanto é $(-30) \div 5$?
+> 
+> <details>
+> <summary><b>Ver Resposta Rápida</b></summary>
+> 
+> 1. $(-7) + (-5) = \mathbf{-12}$ *(devo 7 e devo 5, fico devendo 12)*.  
+> 2. $12 - (-8) = 12 + 8 = \mathbf{20}$.  
+> 3. $(-4) \times (-6) = \mathbf{+24}$ *(sinais iguais na multiplicação dão mais)*; $(-30) \div 5 = \mathbf{-6}$ *(sinais diferentes dão menos)*.
+> </details>
+
+---
+
 ### 5. O Conjunto dos Racionais ($\mathbb{Q}$): Pedaços da Unidade
 * **Origem:** Nem tudo no mundo pode ser contado em unidades inteiras. Ao dividir uma terra entre 3 herdeiros ou partilhar uma jornada de trabalho, surgiram as partes da unidade.
 * **Definição:** $\mathbb{Q} = \left\{ \frac{a}{b} \;\middle|\; a \in \mathbb{Z},\; b \in \mathbb{Z},\; b \neq 0 \right\}$
@@ -240,6 +279,26 @@ Multiplicação: 2 × 2 × 2 × 2 × 3 = 2⁴ × 3 = 48
 MMC(8, 12, 16) = 48
 ```
 
+> [!NOTE]
+> 🎯 **Pausa Rápida para Fixar (Treino Imediato de MMC):**
+> Calcule o MMC no seu rascunho:
+> - **MMC(6, 10, 15)**
+> 
+> <details>
+> <summary><b>Ver Resposta e Fatoração Rápida</b></summary>
+> 
+> ```text
+>   6 , 10 , 15 | 2  (6 e 10 dividem por 2)
+>   3 ,  5 , 15 | 3  (3 e 15 dividem por 3)
+>   1 ,  5 ,  5 | 5  (5 divide por 5)
+>   1 ,  1 ,  1 | 
+> -----------------------------------
+> 2 × 3 × 5 = 30
+> ```
+> Resposta: **MMC(6, 10, 15) = 30**.
+> </details>
+
+
 ---
 
 ### 3. Como Calcular o MDC Passo a Passo (Máximo Divisor Comum)
@@ -308,6 +367,26 @@ Agora acompanhe o raciocínio:
 
 ---
 
+
+> [!NOTE]
+> 🎯 **Pausa Rápida para Fixar (Treino Imediato de Soma/Subtração de Frações):**
+> Resolva no papel:
+> 1. $\frac{2}{7} + \frac{3}{7}$ *(denominadores iguais)*
+> 2. $\frac{1}{2} + \frac{1}{3}$ *(denominadores diferentes: tire o MMC de 2 e 3)*
+> 3. $\frac{3}{4} - \frac{1}{6}$ *(MMC de 4 e 6)*
+> 
+> <details>
+> <summary><b>Ver Resposta Rápida</b></summary>
+> 
+> 1. $\frac{2+3}{7} = \mathbf{\frac{5}{7}}$.  
+> 2. $\text{MMC}(2, 3) = 6$. Divide pelo de baixo, multiplica pelo de cima:  
+>    $\frac{3}{6} + \frac{2}{6} = \mathbf{\frac{5}{6}}$.  
+> 3. $\text{MMC}(4, 6) = 12$.  
+>    $\frac{(12\div 4)\times 3}{12} - \frac{(12\div 6)\times 1}{12} = \frac{9}{12} - \frac{2}{12} = \mathbf{\frac{7}{12}}$.
+> </details>
+
+---
+
 ### 7. Multiplicação de Frações: A Lógica de "Uma Parte de Outra Parte"
 Em matemática, a preposição **"de"** significa **multiplicação**:
 - Metade **de** R$ 100 $\implies \frac{1}{2} \times 100 = 50$.
@@ -329,6 +408,22 @@ $$3 \div \frac{1}{2} = ? \quad \left(\text{"Quantas metades de pizza cabem dentr
 * Logo, em 3 pizzas inteiras cabem $3 \times 2 = 6$ metades!
 * Dividir por meio ($\frac{1}{2}$) é fisicamente o mesmo que multiplicar por $2$.
 $$\frac{a}{b} \div \frac{c}{d} = \frac{a}{b} \times \frac{d}{c}$$
+
+---
+
+
+> [!NOTE]
+> 🎯 **Pausa Rápida para Fixar (Multiplicação e Divisão de Frações):**
+> Resolva no papel:
+> 1. $\frac{3}{5} \times \frac{2}{7}$
+> 2. $\frac{4}{9} \div \frac{2}{3}$ *(Dica: copia a primeira e multiplica pelo inverso da segunda!)*
+> 
+> <details>
+> <summary><b>Ver Resposta Rápida</b></summary>
+> 
+> 1. De cima vezes de cima, de baixo vezes de baixo: $\frac{3 \times 2}{5 \times 7} = \mathbf{\frac{6}{35}}$.  
+> 2. Inverte a segunda: $\frac{4}{9} \times \frac{3}{2} = \frac{12}{18}$. Simplificando por 6: $\mathbf{\frac{2}{3}}$.
+> </details>
 
 ---
 
@@ -405,6 +500,24 @@ Passo 3: CORTE AS VÍRGULAS e divida normalmente como números inteiros!
 3. $108 \div 36 = \mathbf{3}$.  
    $3 \times 36 = 108$. Resto: $108 - 108 = 0$.
 4. Quociente exato: $\mathbf{23}$.
+
+---
+
+
+> [!NOTE]
+> 🎯 **Pausa Rápida para Fixar (Multiplicação e Divisão com Vírgula):**
+> Resolva armando a continha:
+> 1. $1{,}2 \times 0{,}4$
+> 2. $7{,}5 \div 0{,}5$ *(Dica: iguale as casas e corte as vírgulas!)*
+> 3. $12 \div 0{,}04$
+> 
+> <details>
+> <summary><b>Ver Resposta Rápida</b></summary>
+> 
+> 1. $12 \times 4 = 48$. Como há 1 casa em 1,2 e 1 casa em 0,4 (total 2 casas): $\mathbf{0{,}48}$.  
+> 2. $7{,}5$ tem 1 casa e $0{,}5$ tem 1 casa. Cortando a vírgula: $75 \div 5 = \mathbf{15}$.  
+> 3. $12$ tem 0 casas; $0{,}04$ tem 2 casas. Empatando: $12{,}00 \div 0{,}04 \implies 1200 \div 4 = \mathbf{300}$.
+> </details>
 
 ---
 
@@ -494,6 +607,26 @@ E o expoente negativo apenas inverte a base: $\mathbf{a^{-n} = \frac{1}{a^n}}$.
 
 ---
 
+
+> [!NOTE]
+> 🎯 **Pausa Rápida para Fixar (Potências e Propriedades):**
+> Calcule o valor numérico:
+> 1. $2^4$
+> 2. $(-3)^2$ vs. $-3^2$ *(Cuidado com o parêntese!)*
+> 3. $7^0$ e $5^{-1}$
+> 4. $2^3 \times 2^2$
+> 
+> <details>
+> <summary><b>Ver Resposta Rápida</b></summary>
+> 
+> 1. $2 \times 2 \times 2 \times 2 = \mathbf{16}$.  
+> 2. $(-3)^2 = (-3) \times (-3) = \mathbf{+9}$. Já em $-3^2$, o menos fica esperando: $-(3 \times 3) = \mathbf{-9}$.  
+> 3. $7^0 = \mathbf{1}$; $5^{-1} = \mathbf{\frac{1}{5}} = 0{,}2$.  
+> 4. Mantém a base e soma os expoentes: $2^{3+2} = 2^5 = \mathbf{32}$.
+> </details>
+
+---
+
 ### 4. Radiciação Passo a Passo: Como Extrair Raiz Quadrada por Fatoração Prima
 Como calcular raízes de números grandes como $\sqrt{1024}$ ou $\sqrt{169}$ em prova sem calculadora?
 > **O Método dos Pares de Primos:** Fatore o número na vertical e agrupe fatores iguais de dois em dois (ao quadrado). Cada par sai da raiz como um único fator!
@@ -544,6 +677,26 @@ Se você somasse primeiro ($3+4=7 \times 2 = 14$), estaria multiplicando o $3$ i
 > 1. Potência é multiplicação repetida; $a^0=1$ decorre da divisão por si mesmo e expoente negativo inverte a fração.  
 > 2. Para extrair raízes de números grandes, fatora-se em primos agrupando de 2 em 2.  
 > 3. Em expressões, parênteses mandam primeiro; potências/raízes vêm antes de vezes/dividir, que vêm antes de somar/subtrair.
+
+---
+
+
+> [!NOTE]
+> 🎯 **Pausa Rápida para Fixar (Expressão Numérica Simples):**
+> Calcule respeitando as prioridades:
+> 1. $20 - 3 \times 4$
+> 2. $(10 - 2) \div 2 + 5$
+> 3. $2 + 3 \times (4^2 - 10)$
+> 
+> <details>
+> <summary><b>Ver Resposta Rápida</b></summary>
+> 
+> 1. Primeiro vezes: $20 - 12 = \mathbf{8}$. *(Se fizesse 20 - 3 primeiro daria 68, totalmente errado!)*.  
+> 2. Primeiro parênteses: $8 \div 2 + 5 = 4 + 5 = \mathbf{9}$.  
+> 3. Dentro do parêntese: $4^2 = 16 \implies 16 - 10 = 6$.  
+>    Depois multiplicação: $3 \times 6 = 18$.  
+>    Por fim a soma: $2 + 18 = \mathbf{20}$.
+> </details>
 
 ---
 
