@@ -88,7 +88,7 @@ Quando o usuário enviar o Prompt Matriz da Semana $X$:
 #### Semana 1: Os Alicerces (`semana-01/`)
 - [x] **Português (Sem 1):** Leitura/Interpretação (ideia central, inferência, implícitos) + Fonologia básica, sílabas, lógica da tonicidade/acentuação e ortografia.
 - [ ] **Matemática/RLM (Sem 1):** Conjuntos numéricos ($\mathbb{N}, \mathbb{Z}, \mathbb{Q}, \mathbb{R}$), operações fundamentais, lógica das frações, decimais, potências, raízes e expressões numéricas.
-- [ ] **Específicos (Sem 1):** O que é Estado, Governo e Administração Pública; Princípios (LIMPE + implícitos) e serviço público.
+- [x] **Específicos (Sem 1):** O que é Estado, Governo e Administração Pública; Princípios (LIMPE + implícitos) e serviço público.
 - [x] **Conhecimentos Gerais (Sem 1):** Formação histórica, territorial e econômica do Brasil (grandes ciclos e regiões).
 - [ ] **Simulado de Sábado 1:** Prova `prova-auto/1.pdf` (Gabarito `g1.pdf` - ACCESS - Pref. Cataguases/MG) — *Nota/Acertos: ___/40*
 
