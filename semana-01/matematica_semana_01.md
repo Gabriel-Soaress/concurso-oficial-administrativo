@@ -493,13 +493,38 @@ Passo 3: CORTE AS VÍRGULAS e divida normalmente como números inteiros!
    $$1500 \div 3 = \mathbf{500}$$
    *(Significado: cabem 500 moedinhas de 3 centavos em 15 reais!)*
 
-#### Exemplo com Chave Inteira: $828 \div 36$
-1. Tomamos os primeiros dígitos suficientes: $82 \div 36 = \mathbf{2}$.  
-   $2 \times 36 = 72$. Resto: $82 - 72 = 10$.
-2. Desce o próximo algarismo (8) $\implies 108$.
-3. $108 \div 36 = \mathbf{3}$.  
-   $3 \times 36 = 108$. Resto: $108 - 108 = 0$.
-4. Quociente exato: $\mathbf{23}$.
+#### Exemplo com Chave Inteira: 828 ÷ 36
+
+Veja como a conta e armada e resolvida na chave passo a passo (como fazemos no papel):
+
+```text
+ Passo 1: Olhamos o 8. Como 8 e menor que 36, nao da. Pegamos o 82.
+          Quantas vezes o 36 cabe dentro do 82?
+          36 x 1 = 36
+          36 x 2 = 72 (cabe 2 vezes! Se fosse 3, daria 108 e passaria).
+          Coloca o 2 na chave e subtrai 72 de 82:
+
+     8 2 8 | 36
+   - 7 2   +-----
+    ----     2
+     1 0
+
+ Passo 2: Sobraram 10 de resto. Agora DESCE o ultimo algarismo (o 8).
+          Juntando com o 10, formamos o numero 108.
+          Quantas vezes o 36 cabe dentro do 108?
+          36 x 3 = 108 cravado! Cabe exatamente 3 vezes.
+          Coloca o 3 na chave e subtrai 108 de 108:
+
+     8 2 8 | 36
+   - 7 2   +-----
+    ----     2 3   <-- Resultado (Quociente)
+     1 0 8
+   - 1 0 8
+    ------
+         0         <-- Resto zero (divisao exata!)
+```
+
+* **Resultado final:** **23**.
 
 ---
 
@@ -1070,12 +1095,19 @@ Na Escola do campo Aprender a Viver, são consumidos por dia 36 litros de leite.
 **Comentário Passo a Passo:**  
 * **Operação Requerida:** Divisão exata de números naturais no contexto de suprimentos da administração escolar.
   $$\text{Dias} = \frac{\text{Estoque Total}}{\text{Consumo Diário}} = \frac{828}{36}$$
-* **Efetuando a Divisão na Chave:**  
-  1. $82 \div 36 = 2$ (pois $36 \times 2 = 72$).  
-     Sobra: $82 - 72 = 10$.  
-  2. Desce o algarismo $8 \implies 108$.  
-  3. $108 \div 36 = 3$ (pois $36 \times 3 = 108$).  
-     Sobra: $108 - 108 = 0$.  
+* **Efetuando a Divisao na Chave:**
+  ```text
+     8 2 8 | 36
+   - 7 2   +-----
+    ----     2 3  <-- 23 dias letivos
+     1 0 8
+   - 1 0 8
+    ------
+         0        <-- Resto 0 (divisao exata)
+  ```
+  1. Pega **82**: $36 \times 2 = 72$. Restam $10$.
+  2. Desce o **8**: forma **108**.
+  3. Pega **108**: $36 \times 3 = 108$. Resto **0**.
 * **Resultado:** 23 dias letivos.  
 * **Gabarito:** Letra **C**.
 </details>
