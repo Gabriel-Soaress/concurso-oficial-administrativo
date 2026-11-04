@@ -51,7 +51,7 @@ def detect_kind_and_counts(filename, text):
 
     # Check if it's a numbered worksheet like exercicios_fracoes_decimais_dizimas.md
     if "## 📝 Caderno de Questões" in text or fname.startswith("exercicios") or fname.startswith("lista"):
-        qs = re.findall(r'^\d+\.\s+.+?\\_.*$', text, flags=re.M)
+        qs = re.findall(r'^\d+\.\s+.+?(?:_{2,}|\\_).*$', text, flags=re.M)
         if qs:
             return "worksheet", len(qs)
 
