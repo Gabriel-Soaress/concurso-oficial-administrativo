@@ -9,7 +9,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" crossorigin="anonymous"></script>
+  <script>window.tailwind = { config: { darkMode: "class" } };</script>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>if (window.tailwind) { tailwind.config = { darkMode: "class" }; }</script>
   <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
   <style>
     :root {
@@ -19,9 +21,9 @@
       --bg-muted: #eef2f8;
       --border: #e2e8f0;
       --border-strong: #cbd5e1;
-      --text-primary: #0f172a;
-      --text-secondary: #475569;
-      --text-muted: #64748b;
+      --text-primary: #090d16;
+      --text-secondary: #1e293b;
+      --text-muted: #475569;
       --brand: #4f46e5;
       --brand-hover: #4338ca;
       --brand-soft: #eef2ff;
@@ -36,9 +38,9 @@
       --bg-muted: #1e273b;
       --border: #263147;
       --border-strong: #354463;
-      --text-primary: #f8fafc;
-      --text-secondary: #94a3b8;
-      --text-muted: #64748b;
+      --text-primary: #ffffff;
+      --text-secondary: #cbd5e1;
+      --text-muted: #94a3b8;
       --brand: #6366f1;
       --brand-hover: #818cf8;
       --brand-soft: rgba(99, 102, 241, 0.14);
@@ -89,6 +91,9 @@
     .surface-muted {
       background-color: var(--bg-muted);
       border: 1px solid var(--border);
+    }
+    .text-pri {
+      color: var(--text-primary) !important;
     }
     .text-sec {
       color: var(--text-secondary);
@@ -371,8 +376,12 @@
     .lesson-table td {
       padding: 0.7rem 1rem;
       border: 1px solid var(--border);
-      color: var(--text-secondary);
+      color: var(--text-primary);
+      font-weight: 500;
       vertical-align: top;
+    }
+    #page-aula article, #page-aula p, #page-aula li, #page-aula td, #page-aula blockquote, .quiz-opt-card {
+      color: var(--text-primary);
     }
     .lesson-table tr:nth-child(even) td {
       background-color: rgba(148, 163, 184, 0.05);
@@ -2164,7 +2173,7 @@
           } else {
             const innerRendered = renderRichMarkdown(qBlock.join("\n"), `${contextId}_bq${cIdx}`);
             calloutTokens.push(`
-              <blockquote class="lesson-callout callout-note italic text-sec text-sm leading-relaxed space-y-2">
+              <blockquote class="lesson-callout callout-note italic text-pri text-sm leading-relaxed space-y-2">
                 ${innerRendered}
               </blockquote>
             `);
@@ -2221,26 +2230,20 @@
         const idx = detailsTokens.length;
         detailsTokens.push(`
           <div class="mt-3 pt-3 border-t border-tech space-y-2.5">
-            <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-2">
-              <input
-                type="text"
-                id="input_${dId}"
-                placeholder="Digite sua resposta/rascunho aqui antes de conferir..."
-                class="input-tech !py-2 !px-3 !text-xs flex-1"
-                onkeydown="if(event.key==='Enter'){event.preventDefault();toggleTheoryPractice('${dId}');}"
-              />
+            <div>
               <button
                 type="button"
                 onclick="toggleTheoryPractice('${dId}')"
                 id="btn_${dId}"
-                class="btn-primary !py-2 !px-4 !text-xs shrink-0"
+                data-label="${escapeHtml(cleanSummary)}"
+                class="btn-secondary !py-2 !px-4 !text-xs"
               >
-                <span>✔️ Enviar & ${cleanSummary}</span>
+                <span>👁️ ${cleanSummary}</span>
               </button>
             </div>
             <div id="body_${dId}" class="hidden surface rounded-xl p-4 border border-emerald-500/40 bg-emerald-500/5 space-y-2 text-xs sm:text-sm">
-              <div class="font-mono text-[11px] uppercase font-bold text-emerald-600 dark:text-emerald-400">✅ Resolução & Conferência Passo a Passo:</div>
-              <div class="space-y-2 leading-relaxed">${renderedInner}</div>
+              <div class="font-mono text-[11px] uppercase font-bold text-emerald-600 dark:text-emerald-400">✅ Resolução & Passo a Passo:</div>
+              <div class="space-y-2 leading-relaxed text-pri">${renderedInner}</div>
             </div>
           </div>
         `);
@@ -2262,7 +2265,7 @@
         return `<a href="${href}" target="_blank" class="text-indigo-600 dark:text-indigo-400 font-semibold hover:underline">${label}</a>`;
       });
       s = s.replace(/\*\*\*([^*]+)\*\*\*/g, "<strong><em>$1</em></strong>");
-      s = s.replace(/\*\*([^*]+)\*\*/g, '<strong class="font-bold text-slate-900 dark:text-slate-100">$1</strong>');
+      s = s.replace(/\*\*([^*]+)\*\*/g, '<strong class="font-extrabold text-pri">$1</strong>');
       s = s.replace(/\*([^*\n]+)\*/g, "<em>$1</em>");
       return s;
     }
@@ -2381,7 +2384,7 @@
                 </li>
               `;
             }
-            return `<li class="leading-relaxed">${formatInlineMd(it)}</li>`;
+            return `<li class="leading-relaxed text-pri">${formatInlineMd(it)}</li>`;
           }).join("");
 
           const tag = isOrdered ? "ol" : "ul";
@@ -2405,7 +2408,7 @@
           i++;
         }
         if (paraLines.length > 0) {
-          out.push(`<p class="text-sm sm:text-[15px] leading-relaxed text-slate-700 dark:text-slate-200 my-2.5">${paraLines.join("<br/>")}</p>`);
+          out.push(`<p class="text-sm sm:text-[15px] leading-relaxed text-pri font-normal my-2.5">${paraLines.join("<br/>")}</p>`);
         }
       }
 
@@ -2435,7 +2438,8 @@
       if (!bodyEl) return;
       const isHidden = bodyEl.classList.toggle("hidden");
       if (btnEl) {
-        btnEl.innerHTML = isHidden ? "<span>✔️ Enviar & Ver Passo a Passo</span>" : "<span>🔼 Ocultar Resolução</span>";
+        const lbl = btnEl.getAttribute("data-label") || "Ver Resolução e Resposta Passo a Passo";
+        btnEl.innerHTML = isHidden ? `<span>👁️ ${lbl}</span>` : "<span>🔼 Ocultar Resolução</span>";
       }
     }
 
@@ -3290,9 +3294,34 @@
       if (!container) return;
 
       if (doc.kind === "worksheet") {
-        const wsData = parseWorksheetMarkdown(doc.content);
-        if (wsData) {
-          container.innerHTML = renderWorksheetForm(doc, wsData);
+        const norm = String(doc.content || "").replace(/\r\n/g, "\n");
+        const gMarker = "## 🔑 Gabarito Comentado";
+        const tMarker = "## 📊 Tabela de Lembretes";
+        if (norm.includes(gMarker)) {
+          const beforeG = norm.split(gMarker)[0].trim();
+          const afterG = norm.split(gMarker)[1];
+          const gBody = afterG.includes(tMarker) ? (gMarker + "\n" + afterG.split(tMarker)[0]).trim() : (gMarker + "\n" + afterG).trim();
+          const tailMd = afterG.includes(tMarker) ? (tMarker + afterG.split(tMarker)[1]).trim() : "";
+          container.innerHTML = `
+            <article class="surface rounded-2xl sm:rounded-3xl p-5 sm:p-8 md:p-10 space-y-4 shadow-sm text-pri">
+              ${renderRichMarkdown(beforeG, `${doc.id}_ws_main`)}
+            </article>
+            <div id="interactiveQuestionsAnchor" class="surface rounded-2xl sm:rounded-3xl p-5 sm:p-8 space-y-4 shadow-sm border border-indigo-500/30">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                <div>
+                  <div class="text-xs font-mono uppercase font-bold text-indigo-600 dark:text-indigo-400">🔑 Conferência de Respostas</div>
+                  <h3 class="text-lg sm:text-xl font-extrabold text-pri">Gabarito Comentado Passo a Passo</h3>
+                </div>
+                <button type="button" onclick="document.getElementById('wsGabBody_${doc.id}').classList.toggle('hidden')" class="btn-primary !py-2.5 !px-5 !text-xs">
+                  <span>👁️ Mostrar / Ocultar Gabarito</span>
+                </button>
+              </div>
+              <div id="wsGabBody_${doc.id}" class="hidden pt-4 border-t border-tech space-y-4 text-pri">
+                ${renderRichMarkdown(gBody, `${doc.id}_ws_gab`)}
+              </div>
+            </div>
+            ${tailMd ? `<article class="surface rounded-2xl sm:rounded-3xl p-5 sm:p-8 space-y-4 shadow-sm text-pri">${renderRichMarkdown(tailMd, `${doc.id}_ws_tail`)}</article>` : ""}
+          `;
           return;
         }
       }
