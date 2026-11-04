@@ -63,17 +63,19 @@ A língua portuguesa conta com centenas de milhares de vocábulos no dicionário
 Na Semana 02, estudamos o bloco das **Classes Nominais** (aquelas que giram em torno do nome/substantivo):
 
 ```text
-               ┌─────────────┐
-               │   ARTIGO    │ (Determina / Generaliza)
-               └──────┬──────┘
-                      │
-┌──────────────┐      ▼      ┌──────────────┐
-│   ADJETIVO   ├──► [ SUBSTANTIVO ] ◄──┤   NUMERAL    │ (Quantifica / Ordena)
-└──────────────┘ (Caracteriza)│      └──────────────┘
+                       ┌─────────────┐
+                       │   ARTIGO    │  (Determina / Especifica)
+                       └──────┬──────┘
+                              │
+                              ▼
+┌──────────────┐       ┌─────────────┐       ┌──────────────┐
+│   ADJETIVO   │ ────► │ SUBSTANTIVO │ ◄──── │   NUMERAL    │  (Quantifica / Ordena)
+│(Caracteriza) │       │  (O NÚCLEO) │       │ (Posiciona)  │
+└──────────────┘       └──────┬──────┘       └──────────────┘
                               │
                               ▼
                        ┌─────────────┐
-                       │   PRONOME   │ (Substitui / Acompanha)
+                       │   PRONOME   │  (Substitui / Acompanha)
                        └─────────────┘
 ```
 
