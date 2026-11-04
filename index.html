@@ -338,27 +338,25 @@
       display: none !important;
     }
     .katex {
-      font-size: 1.16em !important;
+      font-size: 1.12em !important;
       color: var(--text-primary);
     }
+    .katex .mfrac .mord {
+      font-size: 1.08em !important;
+    }
     .lesson-math-inline {
-      display: inline-block;
-      vertical-align: middle;
-      margin: 0.1rem 0.15rem;
-      max-width: 100%;
-      overflow-x: auto;
-      overflow-y: hidden;
-      -webkit-overflow-scrolling: touch;
+      display: inline;
+      padding: 0 0.08rem;
     }
     .lesson-math-inline .katex {
-      font-size: 1.16em !important;
+      font-size: 1.14em !important;
     }
     .lesson-math-block {
       background-color: var(--bg-muted);
       border: 1.5px solid var(--border-strong);
-      border-radius: 1rem;
-      padding: 0.95rem 0.85rem;
-      margin: 1rem 0;
+      border-radius: 0.9rem;
+      padding: 0.85rem 0.75rem;
+      margin: 0.85rem 0;
       max-width: 100%;
       overflow-x: auto;
       overflow-y: hidden;
@@ -366,15 +364,15 @@
       text-align: center;
     }
     .lesson-math-block .katex {
-      font-size: 1.25em !important;
+      font-size: 1.22em !important;
     }
     .ascii-diagram-wrap {
-      margin: 1rem 0;
-      border-radius: 1rem;
+      margin: 0.9rem 0;
+      border-radius: 0.9rem;
       background-color: #0f172a;
       color: #ffffff;
       border: 1.5px solid #334155;
-      padding: 0.95rem 1rem;
+      padding: 0.75rem 0.6rem;
       max-width: 100%;
       overflow-x: auto;
       -webkit-overflow-scrolling: touch;
@@ -387,42 +385,75 @@
     .ascii-diagram {
       margin: 0;
       font-family: 'JetBrains Mono', Consolas, Monaco, monospace;
-      font-size: 0.9rem;
+      font-size: clamp(0.55rem, 2.15vw, 0.88rem);
       font-weight: 600;
-      line-height: 1.65;
+      line-height: 1.45;
       white-space: pre;
       color: #f8fafc;
     }
     .lesson-table {
       width: 100%;
-      min-width: 480px;
+      min-width: 440px;
       border-collapse: collapse;
-      font-size: 0.88rem;
+      font-size: 0.85rem;
+    }
+    .lesson-launch-btn {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      width: 100%;
+      padding: 0.75rem 1rem;
+      border-radius: 0.85rem;
+      font-weight: 700;
+      font-size: 0.84rem;
+      transition: all 0.16s ease;
+      cursor: pointer;
+      text-align: left;
+      text-decoration: none;
+    }
+    .lesson-launch-btn.primary {
+      background: linear-gradient(135deg, #4f46e5, #3b82f6);
+      color: #ffffff;
+      border: 1px solid transparent;
+      box-shadow: 0 4px 12px -2px rgba(79, 70, 229, 0.32);
+    }
+    .lesson-launch-btn.primary:hover {
+      filter: brightness(1.06);
+      transform: translateY(-1px);
+    }
+    .lesson-launch-btn.secondary {
+      background-color: var(--bg-surface);
+      color: var(--text-primary);
+      border: 1.5px solid var(--brand);
+    }
+    .lesson-launch-btn.secondary:hover {
+      background-color: var(--brand-soft);
     }
     @media (min-width: 640px) {
       .katex {
-        font-size: 1.26em !important;
+        font-size: 1.22em !important;
       }
       .lesson-math-inline .katex {
-        font-size: 1.28em !important;
+        font-size: 1.24em !important;
       }
       .lesson-math-block {
-        padding: 1.25rem 1.5rem;
-        margin: 1.25rem 0;
+        padding: 1.2rem 1.5rem;
+        margin: 1.15rem 0;
       }
       .lesson-math-block .katex {
-        font-size: 1.52em !important;
+        font-size: 1.45em !important;
       }
       .ascii-diagram-wrap {
-        padding: 1.25rem 1.5rem;
-        margin: 1.2rem 0;
+        padding: 1.2rem 1.4rem;
+        margin: 1.15rem 0;
       }
       .ascii-diagram {
-        font-size: 1.05rem;
-        line-height: 1.7;
+        font-size: 1rem;
+        line-height: 1.65;
       }
       .lesson-table {
-        font-size: 0.96rem;
+        font-size: 0.94rem;
       }
     }
     .lesson-table th {
@@ -447,12 +478,18 @@
       background-color: rgba(148, 163, 184, 0.05);
     }
     .lesson-callout {
-      border-radius: 1rem;
-      padding: 1.1rem 1.25rem;
-      margin: 1.25rem 0;
+      border-radius: 0.9rem;
+      padding: 0.85rem 0.9rem;
+      margin: 1rem 0;
       border: 1px solid var(--border);
       border-left-width: 4px;
       background-color: var(--bg-elevated);
+    }
+    @media (min-width: 640px) {
+      .lesson-callout {
+        padding: 1.15rem 1.3rem;
+        margin: 1.25rem 0;
+      }
     }
     .lesson-callout.callout-note { border-left-color: #4f46e5; background-color: rgba(79, 70, 229, 0.05); }
     .lesson-callout.callout-tip { border-left-color: #10b981; background-color: rgba(16, 185, 129, 0.05); }
@@ -472,8 +509,8 @@
       position: relative;
       min-width: 0;
       max-width: 100%;
-      overflow-wrap: anywhere;
-      word-break: break-word;
+      overflow-wrap: break-word;
+      word-break: normal;
     }
     @media (min-width: 640px) {
       .quiz-opt-card {
@@ -484,7 +521,8 @@
     #page-aula, #aulaRenderedContainer, #page-aula article {
       min-width: 0;
       max-width: 100%;
-      overflow-wrap: anywhere;
+      overflow-wrap: break-word;
+      word-break: normal;
     }
     .quiz-opt-card:hover {
       border-color: var(--brand);
@@ -1342,7 +1380,7 @@
         <!-- Seletor de Arquivos quando a matéria tem 2+ materiais (ex: Matemática: Aula + Lista de Exercícios) -->
         <div id="aulaMultiDocBar" class="hidden pt-2 border-t border-tech flex flex-col sm:flex-row sm:items-center justify-between gap-2">
           <span class="text-[11px] font-mono text-mut font-semibold uppercase">Alternar Material:</span>
-          <div id="aulaMultiDocTabs" class="surface-muted p-1 rounded-xl grid grid-cols-1 sm:flex sm:flex-wrap gap-1.5 w-full sm:w-auto"></div>
+          <div id="aulaMultiDocTabs" class="surface-muted p-1 rounded-xl grid grid-cols-2 sm:flex sm:flex-wrap gap-1.5 w-full sm:w-auto"></div>
         </div>
       </div>
 
@@ -2021,33 +2059,43 @@
 
                 const docsButtonsHtml = docs.map((doc, dIdx) => {
                   const qSaved = quizzesSaved[doc.id];
-                  const scoreBadge = (qSaved && qSaved.submitted)
-                    ? `<span class="ml-1 px-2 py-0.5 rounded-full text-[11px] font-mono font-bold ${qSaved.correct / qSaved.total >= 0.7 ? 'bg-emerald-500/20 text-emerald-700 dark:text-emerald-300' : 'bg-amber-500/20 text-amber-700 dark:text-amber-300'}">🏆 ${qSaved.correct}/${qSaved.total}</span>`
+                  const showScore = doc.kind === "lesson" && qSaved && qSaved.submitted && qSaved.total > 0;
+                  const scoreBadge = showScore
+                    ? `<span class="px-2 py-0.5 rounded-md text-[11px] font-mono font-extrabold bg-white/20 text-white">🏆 ${qSaved.correct}/${qSaved.total}</span>`
                     : "";
-                  const icon = doc.kind === "worksheet" ? "📝" : "📖";
-                  const btnStyle = dIdx === 0 ? "btn-primary !py-2 !px-3.5 !text-xs" : "btn-secondary !py-2 !px-3.5 !text-xs !border-indigo-500/40";
+                  const isWorksheet = doc.kind === "worksheet";
+                  const btnLabel = isWorksheet
+                    ? `📝 Lista de Exercícios (${doc.questionCount || 43})`
+                    : `📖 Estudar Aula & Questões (${doc.questionCount || 10})`;
+                  const btnVariant = dIdx === 0 ? "primary" : "secondary";
+                  const rightCall = isWorksheet ? "Abrir Lista →" : "Abrir Aula →";
                   return `
-                    <button type="button" onclick="openLessonReader('${item.id}', ${dIdx})" class="${btnStyle}">
-                      <span>${icon} ${doc.shortTitle}</span>
-                      ${scoreBadge}
+                    <button type="button" onclick="openLessonReader('${item.id}', ${dIdx})" class="lesson-launch-btn ${btnVariant}">
+                      <span class="truncate">${btnLabel}</span>
+                      <span class="flex items-center gap-1.5 shrink-0 text-xs font-mono opacity-95">
+                        ${scoreBadge}
+                        <span>${rightCall}</span>
+                      </span>
                     </button>
                   `;
                 }).join("");
 
                 const simButtonsHtml = isSim ? `
-                  <a href="prova-auto/${w.simNum}.pdf" target="_blank" class="btn-secondary !py-2 !px-3.5 !text-xs">
-                    <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-                    <span>Abrir Prova (${w.simNum}.pdf)</span>
+                  <a href="prova-auto/${w.simNum}.pdf" target="_blank" class="lesson-launch-btn secondary">
+                    <span>📄 Abrir Prova (${w.simNum}.pdf)</span>
+                    <span class="text-xs font-mono text-indigo-600 dark:text-indigo-400 shrink-0">PDF →</span>
                   </a>
-                  <a href="prova-auto/g${w.simNum}.pdf" target="_blank" class="btn-secondary !py-2 !px-3.5 !text-xs">
-                    <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-                    <span>Gabarito (g${w.simNum}.pdf)</span>
+                  <a href="prova-auto/g${w.simNum}.pdf" target="_blank" class="lesson-launch-btn secondary">
+                    <span>✅ Gabarito Oficial (g${w.simNum}.pdf)</span>
+                    <span class="text-xs font-mono text-indigo-600 dark:text-indigo-400 shrink-0">PDF →</span>
                   </a>
                 ` : "";
 
+                const gridColsCls = (docs.length > 1 || isSim) ? "grid-cols-1 sm:grid-cols-2" : "grid-cols-1";
+
                 return `
-                  <div class="p-4 sm:p-5 rounded-2xl border border-tech hover:border-indigo-500/40 surface-elevated transition ${checked ? 'bg-emerald-500/5 border-emerald-500/30' : ''}">
-                    <div class="flex items-start gap-3.5 sm:gap-4">
+                  <div class="p-4 sm:p-5 rounded-2xl border border-tech hover:border-indigo-500/40 surface-elevated transition space-y-3 ${checked ? 'bg-emerald-500/5 border-emerald-500/30' : ''}">
+                    <div class="flex items-start gap-3 sm:gap-4">
                       <input
                         type="checkbox"
                         ${checked ? "checked" : ""}
@@ -2055,25 +2103,24 @@
                         class="check-custom mt-0.5"
                         title="Marcar bloco como concluído"
                       />
-                      <div class="space-y-2 flex-1 min-w-0">
+                      <div class="space-y-1.5 flex-1 min-w-0">
                         <div class="flex flex-wrap items-center justify-between gap-2">
                           <div class="flex flex-wrap items-center gap-2">
                             <span class="font-mono text-[11px] font-bold px-2.5 py-0.5 rounded-full ${item.badgeClass}">${item.tag}</span>
-                            <strong class="text-sm font-bold ${checked ? 'line-through opacity-75' : ''}">${item.name}</strong>
+                            <strong class="text-sm sm:text-base font-bold ${checked ? 'line-through opacity-75' : ''}">${item.name}</strong>
                           </div>
-                          ${docs.length > 0 ? `<span class="text-[11px] font-mono font-bold text-indigo-600 dark:text-indigo-400">${docs.length === 1 ? '1 material na trilha' : docs.length + ' materiais na trilha'}</span>` : ""}
                         </div>
                         <p class="text-xs sm:text-sm text-sec leading-relaxed m-0 break-words ${checked ? 'line-through opacity-70' : ''}">
                           ${item.text}
                         </p>
-                        ${(docsButtonsHtml || simButtonsHtml) ? `
-                          <div class="pt-2.5 mt-2 border-t border-tech flex flex-wrap items-center gap-2">
-                            ${docsButtonsHtml}
-                            ${simButtonsHtml}
-                          </div>
-                        ` : ""}
                       </div>
                     </div>
+                    ${(docsButtonsHtml || simButtonsHtml) ? `
+                      <div class="pt-3 border-t border-tech grid ${gridColsCls} gap-2.5">
+                        ${docsButtonsHtml}
+                        ${simButtonsHtml}
+                      </div>
+                    ` : ""}
                   </div>
                 `;
               }).join("")}
@@ -2185,10 +2232,7 @@
     }
 
     function renderKaTeXSafe(tex, displayMode) {
-      let cleanTex = String(tex || "").trim();
-      if (!displayMode && cleanTex.includes("\\frac")) {
-        cleanTex = "\\displaystyle " + cleanTex;
-      }
+      const cleanTex = String(tex || "").trim();
       if (window.katex && typeof window.katex.renderToString === "function") {
         try {
           return window.katex.renderToString(cleanTex, {
@@ -2213,6 +2257,11 @@
       const codeTokens = [];
       const mathTokens = [];
       const detailsTokens = [];
+
+      // 0-A. Transformar '## Sumário da Aula' em um Índice retrátil elegante (evita 50 linhas de rolagem no celular antes da aula começar)
+      text = text.replace(/##\s+Sumário da Aula\n([\s\S]*?)(?=\n---\n|\n##\s+EIXO)/i, (_, tocBody) => {
+        return `<details><summary>📑 Ver Sumário / Índice Completo da Aula</summary>\n${tocBody.trim()}\n</details>\n`;
+      });
 
       // 0. Extrair blocos de citação / GitHub Alerts (> [!NOTE], > [!TIP], etc.) PRIMEIRO,
       // removendo o prefixo '>' de cada linha e processando recursivamente o interior!
@@ -2282,10 +2331,16 @@
         return `@@MATH_TOKEN_${idx}@@`;
       });
 
-      // 4. Extrair matemática Inline $...$
+      // 4. Extrair matemática Inline $...$ (se a fórmula for longa com \quad ou \implies, exibir em caixa rolável para não quebrar linhas no celular)
       text = text.replace(/\$([^\$\n]+?)\$/g, (_, tex) => {
         const idx = mathTokens.length;
-        mathTokens.push(`<span class="lesson-math-inline">${renderKaTeXSafe(tex, false)}</span>`);
+        const tClean = String(tex || "").trim();
+        const isLongFormula = tClean.length > 42 || tClean.includes("\\quad") || tClean.includes("\\implies") || tClean.includes("\\Longleftrightarrow");
+        if (isLongFormula) {
+          mathTokens.push(`<div class="lesson-math-block">${renderKaTeXSafe(tClean, true)}</div>`);
+        } else {
+          mathTokens.push(`<span class="lesson-math-inline">${renderKaTeXSafe(tClean, false)}</span>`);
+        }
         return `@@MATH_TOKEN_${idx}@@`;
       });
 
@@ -2319,8 +2374,8 @@
                 <span>👁️ ${cleanSummary}</span>
               </button>
             </div>
-            <div id="body_${dId}" class="hidden surface rounded-xl p-4 border border-emerald-500/40 bg-emerald-500/5 space-y-2 text-xs sm:text-sm">
-              <div class="font-mono text-[11px] uppercase font-bold text-emerald-600 dark:text-emerald-400">✅ Resolução & Passo a Passo:</div>
+            <div id="body_${dId}" class="hidden surface rounded-xl p-4 border ${cleanSummary.includes('Sumário') ? 'border-indigo-500/40 bg-indigo-500/5' : 'border-emerald-500/40 bg-emerald-500/5'} space-y-2 text-xs sm:text-sm">
+              <div class="font-mono text-[11px] uppercase font-bold ${cleanSummary.includes('Sumário') ? 'text-indigo-600 dark:text-indigo-400' : 'text-emerald-600 dark:text-emerald-400'}">${cleanSummary.includes('Sumário') ? '📑 Índice de Tópicos da Aula:' : '✅ Resolução & Passo a Passo:'}</div>
               <div class="space-y-2 leading-relaxed text-pri">${renderedInner}</div>
             </div>
           </div>
@@ -2429,45 +2484,30 @@
           }
         }
 
-        // Listas (- , * , 1. ) e Checklists Interativos (- [ ] , * [ ] )
+        // Listas Aninhadas (- , * , 1. ) e Checklists Interativos (- [ ] , * [ ] )
         if (/^(\*|-|\d+\.)\s+/.test(trimmed)) {
-          const listItems = [];
-          const isOrdered = /^\d+\.\s+/.test(trimmed);
-          while (i < lines.length && /^(\s*)(\*|-|\d+\.)\s+/.test(lines[i])) {
-            let itemLine = lines[i].trim().replace(/^(\*|-|\d+\.)\s+/, "");
-            i++;
-            while (
-              i < lines.length &&
-              lines[i].startsWith("  ") &&
-              !/^(\s*)(\*|-|\d+\.)\s+/.test(lines[i]) &&
-              !/^@@(CALLOUT_BLOCK|CODE_BLOCK|DETAILS_BLOCK)_\d+@@$/.test(lines[i].trim())
-            ) {
-              itemLine += " " + lines[i].trim();
+          const blockLines = [];
+          while (i < lines.length) {
+            const ln = lines[i];
+            const lnTrim = ln.trim();
+            if (!lnTrim) {
+              // Se a próxima linha não-vazia ainda for item de lista ou continuação indentada, continuar na mesma lista
+              let nextNonEmpty = i + 1;
+              while (nextNonEmpty < lines.length && !lines[nextNonEmpty].trim()) nextNonEmpty++;
+              if (nextNonEmpty < lines.length && (/^(\s*)(\*|-|\d+\.)\s+/.test(lines[nextNonEmpty]) || lines[nextNonEmpty].startsWith("  "))) {
+                i = nextNonEmpty;
+                continue;
+              }
+              break;
+            }
+            if (/^(\s*)(\*|-|\d+\.)\s+/.test(ln) || ln.startsWith("  ")) {
+              blockLines.push(ln);
               i++;
+            } else {
+              break;
             }
-            listItems.push(itemLine);
           }
-
-          const renderedItems = listItems.map((it, idx) => {
-            const chkMatch = it.match(/^\[([ xX])\]\s+(.+)$/);
-            if (chkMatch) {
-              const chkKey = `chk_${contextId}_${idx}`;
-              const isChecked = !!(checklistState._lessonChecks && checklistState._lessonChecks[chkKey]);
-              return `
-                <li class="list-none -ml-4 my-1.5">
-                  <label class="flex items-start gap-3 p-3 rounded-xl border border-tech surface-elevated cursor-pointer hover:border-indigo-500/40 transition">
-                    <input type="checkbox" ${isChecked ? "checked" : ""} onchange="toggleLessonInnerCheck('${chkKey}', this)" class="check-custom mt-0.5" />
-                    <span class="text-xs sm:text-sm leading-relaxed ${isChecked ? 'line-through opacity-60' : ''}">${formatInlineMd(chkMatch[2])}</span>
-                  </label>
-                </li>
-              `;
-            }
-            return `<li class="leading-relaxed text-pri">${formatInlineMd(it)}</li>`;
-          }).join("");
-
-          const tag = isOrdered ? "ol" : "ul";
-          const cls = isOrdered ? "list-decimal pl-6 space-y-2 text-[15px] sm:text-base my-3" : "list-disc pl-6 space-y-2 text-[15px] sm:text-base my-3";
-          out.push(`<${tag} class="${cls}">${renderedItems}</${tag}>`);
+          out.push(renderNestedListLines(blockLines, contextId + "_L" + i));
           continue;
         }
 
@@ -2491,6 +2531,67 @@
       }
 
       return out.join("\n");
+    }
+
+
+    function renderNestedListLines(lines, listCtxId) {
+      if (!lines || lines.length === 0) return "";
+      const getIndent = s => (s.match(/^(\s*)/)[1] || "").replace(/\t/g, "  ").length;
+      const baseIndent = Math.min(...lines.filter(l => /^(\s*)(\*|-|\d+\.)\s+/.test(l)).map(getIndent));
+      const firstTrim = lines[0].trim();
+      const isOrdered = /^\d+\.\s+/.test(firstTrim);
+
+      const items = [];
+      let cur = null;
+
+      for (const raw of lines) {
+        const ind = getIndent(raw);
+        const trimmed = raw.trim();
+        const isMarker = /^(\*|-|\d+\.)\s+/.test(trimmed);
+
+        if (isMarker && ind <= baseIndent + 1) {
+          if (cur) items.push(cur);
+          cur = {
+            head: trimmed.replace(/^(\*|-|\d+\.)\s+/, ""),
+            subLines: []
+          };
+        } else if (cur) {
+          if (isMarker) {
+            cur.subLines.push(raw);
+          } else {
+            if (cur.subLines.length === 0) {
+              cur.head += " " + trimmed;
+            } else {
+              cur.subLines.push(raw);
+            }
+          }
+        }
+      }
+      if (cur) items.push(cur);
+
+      const renderedItems = items.map((it, idx) => {
+        const chkMatch = it.head.match(/^\[([ xX])\]\s+(.+)$/);
+        if (chkMatch) {
+          const chkKey = `chk_${listCtxId}_${idx}`;
+          const isChecked = !!(checklistState._lessonChecks && checklistState._lessonChecks[chkKey]);
+          return `
+            <li class="list-none -ml-4 my-1.5">
+              <label class="flex items-start gap-3 p-3 rounded-xl border border-tech surface-elevated cursor-pointer hover:border-indigo-500/40 transition">
+                <input type="checkbox" ${isChecked ? "checked" : ""} onchange="toggleLessonInnerCheck('${chkKey}', this)" class="check-custom mt-0.5" />
+                <span class="text-sm sm:text-base leading-relaxed text-pri ${isChecked ? 'line-through opacity-60' : ''}">${formatInlineMd(chkMatch[2])}</span>
+              </label>
+            </li>
+          `;
+        }
+        const subHtml = it.subLines.length > 0 ? renderNestedListLines(it.subLines, `${listCtxId}_${idx}`) : "";
+        return `<li class="leading-relaxed text-pri">${formatInlineMd(it.head)}${subHtml}</li>`;
+      }).join("");
+
+      const tag = isOrdered ? "ol" : "ul";
+      const cls = isOrdered
+        ? "list-decimal pl-5 sm:pl-6 space-y-2 text-[15px] sm:text-base my-2.5"
+        : "list-disc pl-4 sm:pl-6 space-y-1.5 text-[14px] sm:text-[15px] my-1.5";
+      return `<${tag} class="${cls}">${renderedItems}</${tag}>`;
     }
 
     function renderRichMarkdownRestoreTokens(htmlStr, calloutTokens, codeTokens, mathTokens, detailsTokens) {
@@ -2535,7 +2636,7 @@
     }
 
     function scrollToAnchor(slug) {
-      const el = document.getElementById(slug);
+      const el = document.getElementById(slug) || document.getElementById(slugifyHeading(slug));
       if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
     }
 
@@ -3352,14 +3453,16 @@
           multiBar.classList.remove("hidden");
           multiTabs.innerHTML = docs.map((d, idx) => {
             const active = idx === activeLessonDocIdx;
-            const icon = d.kind === "worksheet" ? "📝" : "📖";
+            const tabLabel = d.kind === "worksheet"
+              ? `📝 Lista (${d.questionCount || 43} Exerc.)`
+              : `📖 Aula + ${d.questionCount || 10} Questões`;
             return `
               <button
                 type="button"
                 onclick="openLessonReader('${activeLessonBlockId}', ${idx})"
                 class="tab-pill ${active ? 'active' : ''}"
               >
-                ${icon} ${d.shortTitle}
+                ${tabLabel}
               </button>
             `;
           }).join("");
@@ -3372,33 +3475,59 @@
       if (!container) return;
 
       if (doc.kind === "worksheet") {
-        const norm = String(doc.content || "").replace(/\r\n/g, "\n");
-        const gMarker = "## 🔑 Gabarito Comentado";
-        const tMarker = "## 📊 Tabela de Lembretes";
-        if (norm.includes(gMarker)) {
-          const beforeG = norm.split(gMarker)[0].trim();
-          const afterG = norm.split(gMarker)[1];
-          const gBody = afterG.includes(tMarker) ? (gMarker + "\n" + afterG.split(tMarker)[0]).trim() : (gMarker + "\n" + afterG).trim();
-          const tailMd = afterG.includes(tMarker) ? (tMarker + afterG.split(tMarker)[1]).trim() : "";
-          container.innerHTML = `
-            <article class="surface rounded-2xl sm:rounded-3xl p-5 sm:p-8 md:p-10 space-y-4 shadow-sm text-pri">
-              ${renderRichMarkdown(beforeG, `${doc.id}_ws_main`)}
-            </article>
-            <div id="interactiveQuestionsAnchor" class="surface rounded-2xl sm:rounded-3xl p-5 sm:p-8 space-y-4 shadow-sm border border-indigo-500/30">
-              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-                <div>
-                  <div class="text-xs font-mono uppercase font-bold text-indigo-600 dark:text-indigo-400">🔑 Conferência de Respostas</div>
-                  <h3 class="text-lg sm:text-xl font-extrabold text-pri">Gabarito Comentado Passo a Passo</h3>
+        const wsData = parseWorksheetMarkdown(doc.content);
+        if (wsData) {
+          const catsHtml = wsData.categories.map(cat => {
+            const itemsCards = cat.items.map(it => {
+              const cleanPrompt = it.promptMd.replace(/=\s*$/, "").trim();
+              const promptRendered = renderRichMarkdown(cleanPrompt, `${doc.id}_wsp_${it.num}`).replace(/^<p[^>]*>|<\/p>$/g, "");
+              const expRendered = renderRichMarkdown(it.explanationMd, `${doc.id}_wse_${it.num}`).replace(/^<p[^>]*>|<\/p>$/g, "");
+              return `
+                <div class="p-3.5 sm:p-4 rounded-xl border border-tech surface-elevated space-y-2.5 flex flex-col justify-between">
+                  <div class="flex items-center justify-between gap-2">
+                    <span class="font-mono text-[11px] font-extrabold px-2 py-0.5 rounded bg-indigo-500/10 text-indigo-600 dark:text-indigo-400">#${String(it.num).padStart(2, '0')}</span>
+                    <button type="button" onclick="document.getElementById('wsAns_${doc.id}_${it.num}').classList.toggle('hidden')" class="text-xs font-mono font-bold text-indigo-600 dark:text-indigo-400 hover:underline cursor-pointer">
+                      👁️ Ver gabarito
+                    </button>
+                  </div>
+                  <div class="text-base sm:text-lg font-bold text-pri py-1 overflow-x-auto">
+                    ${promptRendered}
+                  </div>
+                  <div id="wsAns_${doc.id}_${it.num}" class="hidden pt-2.5 border-t border-tech text-xs sm:text-sm leading-relaxed text-pri bg-emerald-500/5 -mx-3.5 -mb-3.5 p-3.5 rounded-b-xl">
+                    <span class="font-mono font-extrabold text-emerald-600 dark:text-emerald-400">✓ Resposta:</span> ${expRendered}
+                  </div>
                 </div>
-                <button type="button" onclick="document.getElementById('wsGabBody_${doc.id}').classList.toggle('hidden')" class="btn-primary !py-2.5 !px-5 !text-xs">
-                  <span>👁️ Mostrar / Ocultar Gabarito</span>
-                </button>
+              `;
+            }).join("");
+            return `
+              <div class="surface rounded-2xl p-4 sm:p-6 space-y-3.5 shadow-sm">
+                <h3 class="text-base sm:text-lg font-extrabold text-indigo-600 dark:text-indigo-400 border-b border-tech pb-2">
+                  ${formatInlineMd(cat.title)}
+                </h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  ${itemsCards}
+                </div>
               </div>
-              <div id="wsGabBody_${doc.id}" class="hidden pt-4 border-t border-tech space-y-4 text-pri">
-                ${renderRichMarkdown(gBody, `${doc.id}_ws_gab`)}
+            `;
+          }).join("");
+
+          container.innerHTML = `
+            <article class="surface rounded-2xl sm:rounded-3xl p-4 sm:p-8 space-y-4 shadow-sm text-pri">
+              ${renderRichMarkdown(wsData.introMd, `${doc.id}_ws_intro`)}
+            </article>
+            <div id="interactiveQuestionsAnchor" class="surface rounded-2xl p-4 sm:p-6 border-l-4 border-l-indigo-500 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+              <div>
+                <div class="text-xs font-mono uppercase font-bold text-indigo-600 dark:text-indigo-400">📝 Caderno de Exercícios (${wsData.allItems.length} Questões)</div>
+                <h3 class="text-base sm:text-xl font-extrabold text-pri">Resolva no caderno e toque em "Ver gabarito" para conferir</h3>
               </div>
+              <button type="button" onclick="document.querySelectorAll('[id^=\'wsAns_${doc.id}_\']').forEach(el => el.classList.toggle('hidden'))" class="btn-primary !py-2.5 !px-4 !text-xs shrink-0">
+                <span>👁️ Mostrar / Ocultar Todos os Gabaritos</span>
+              </button>
             </div>
-            ${tailMd ? `<article class="surface rounded-2xl sm:rounded-3xl p-5 sm:p-8 space-y-4 shadow-sm text-pri">${renderRichMarkdown(tailMd, `${doc.id}_ws_tail`)}</article>` : ""}
+            <div class="space-y-4 sm:space-y-6">
+              ${catsHtml}
+            </div>
+            ${wsData.outroMd ? `<article class="surface rounded-2xl sm:rounded-3xl p-4 sm:p-8 space-y-4 shadow-sm text-pri">${renderRichMarkdown(wsData.outroMd, `${doc.id}_ws_tail`)}</article>` : ""}
           `;
           return;
         }
@@ -3409,13 +3538,13 @@
       const theoryHtml = renderRichMarkdown(parsed.preMd, `${doc.id}_theory`);
       const questionsHtml = parsed.questions.length > 0 ? renderMCQuestionsForm(doc, parsed.questions) : "";
       const postHtml = parsed.postMd ? `
-        <div class="surface rounded-2xl p-5 sm:p-8 space-y-3 shadow-sm">
+        <div class="surface rounded-2xl p-4 sm:p-8 space-y-3 shadow-sm">
           ${renderRichMarkdown(parsed.postMd, `${doc.id}_post`)}
         </div>
       ` : "";
 
       container.innerHTML = `
-        <article class="surface rounded-2xl sm:rounded-3xl p-5 sm:p-8 md:p-10 space-y-4 shadow-sm">
+        <article class="surface rounded-2xl sm:rounded-3xl p-4 sm:p-8 md:p-10 space-y-4 shadow-sm">
           ${theoryHtml}
         </article>
         ${questionsHtml}
