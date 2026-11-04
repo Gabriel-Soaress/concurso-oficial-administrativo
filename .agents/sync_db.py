@@ -83,6 +83,12 @@ def get_active_user(optional_identifier=None):
 
 
 if __name__ == "__main__":
+    try:
+        import sync_lessons
+        sync_lessons.main()
+    except Exception as e:
+        print(f"Aviso ao sincronizar aulas-data.js: {e}")
+
     cmd = sys.argv[1] if len(sys.argv) > 1 else "status"
 
     if cmd == "set-user":

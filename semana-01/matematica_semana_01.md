@@ -1,25 +1,4 @@
-# Semana 01: Matemática 
-
-> [!NOTE]
-> 🎯 **Pausa Rápida para Fixar (Treino Imediato de MDC):**
-> Calcule o MDC no seu rascunho:
-> - **MDC(30, 45)**
-> 
-> <details>
-> <summary><b>Ver Resposta e Fatoração Rápida</b></summary>
-> 
-> ```text
->   30 , 45 | 2   (só o 30 divide)
->   15 , 45 | 3*  (ambos dividem por 3 -> marca com *)
->    5 , 15 | 3   (só o 15 divide)
->    5 ,  5 | 5*  (ambos dividem por 5 -> marca com *)
->    1 ,  1 | 
-> -----------------------------------
-> Fatores comuns: 3 × 5 = 15
-> ```
-> Resposta: **MDC(30, 45) = 15**. *(15 é o maior número que divide 30 e 45 ao mesmo tempo).*
-> </details>
-e Raciocínio Lógico-Matemático (RLM) — Os Alicerces dos Números e do Cálculo
+# Semana 01: Matemática e Raciocínio Lógico-Matemático (RLM) — Os Alicerces dos Números e do Cálculo
 **Cargo:** Oficial Administrativo  
 **Nível de Escolaridade:** Ensino Médio  
 **Foco:** Didática Passo a Passo, Compreensão Lógica/Física das Operações, Eliminação de Macetes Cegos, Treino Rápido e Resolução de Questões Reais de Concursos
@@ -328,6 +307,27 @@ MDC(42, 56) = 14
 > **Aplicação Prática Imediata:**  
 > Se a questão pedir o maior número de kits que uma escola pode montar com 42 lápis e 56 canetas sem sobrar nada, a resposta é exatamente o **MDC(42, 56) = 14 kits**!  
 > Cada kit terá $42 \div 14 = 3$ lápis e $56 \div 14 = 4$ canetas.
+
+> [!NOTE]
+> 🎯 **Pausa Rápida para Fixar (Treino Imediato de MDC):**
+> Calcule o MDC no seu rascunho:
+> - **MDC(30, 45)**
+> 
+> <details>
+> <summary><b>Ver Resposta e Fatoração Rápida</b></summary>
+> 
+> ```text
+>   30 , 45 | 2   (só o 30 divide)
+>   15 , 45 | 3*  (ambos dividem por 3 -> marca com *)
+>    5 , 15 | 3   (só o 15 divide)
+>    5 ,  5 | 5*  (ambos dividem por 5 -> marca com *)
+>    1 ,  1 | 
+> -----------------------------------
+> Fatores comuns: 3 × 5 = 15
+> ```
+> Resposta: **MDC(30, 45) = 15**. *(15 é o maior número que divide 30 e 45 ao mesmo tempo).*
+> </details>
+
 
 ---
 

@@ -5,7 +5,7 @@
 > Sempre que iniciar uma sessão ou receber uma mensagem do usuário neste diretório:
 > 1. Leia este arquivo (`.agents/GUIA_DO_AGENTE.md`) para saber exatamente em qual **Semana e Tópico** o usuário está no **Checklist de Progresso** (Seção 5).
 > 2. **VINCULAÇÃO DO E-MAIL DO USUÁRIO (SINCRONIZAÇÃO COM O SITE):** Verifique se o e-mail do usuário já está configurado localmente rodando `python .agents/sync_db.py status`. **Caso ainda não tenha o e-mail configurado (`.agents/usuario_ativo.json` ausente), pergunte ao usuário qual é o e-mail ou nome de usuário dele na plataforma** e execute `python .agents/sync_db.py set-user <email_informado>`.
-> 3. **ORGANIZAÇÃO EM PASTAS POR SEMANA:** Sempre que gerar conteúdos, aulas, resumos ou listas de exercícios para uma semana específica (ex: Semana 1, Semana 2...), **crie uma pasta dedicada na raiz do projeto** no formato `semana-01/`, `semana-02/` ... `semana-12/` e salve todos os materiais daquela semana lá dentro.
+> 3. **ORGANIZAÇÃO EM PASTAS POR SEMANA + INCORPORAÇÃO AUTOMÁTICA AO SITE:** Sempre que gerar conteúdos, aulas, resumos ou listas de exercícios para uma semana específica (ex: Semana 1, Semana 2...), **crie uma pasta dedicada na raiz do projeto** no formato `semana-01/`, `semana-02/` ... `semana-12/`, salve os arquivos `.md` lá dentro e **rode imediatamente `python .agents/sync_lessons.py`** para incorporar os `.md` diretamente na Trilha interativa do site (`aulas-data.js`).
 > 4. **ATUALIZAÇÃO AUTOMÁTICA DO PROGRESSO (LOCAL + SITE):** Quando o usuário avisar que concluiu um tópico, bloco ou simulado:
 >    - Edite imediatamente a Seção 5 deste arquivo, trocando `[ ]` por `[x]`.
 >    - Sincronize o progresso na conta do usuário para atualizar o site automaticamente rodando:
@@ -17,9 +17,10 @@
 
 ## 1. Visão Geral dos Arquivos do Workspace (`c:\Users\gabri\OneDrive\Documentos\concurso`)
 
-* `como estudar!.html`: Painel interativo do aluno contendo a introdução ao método, a trilha de 12 semanas organizada por pré-requisitos e o **Gerador de Prompt Matriz** por semana.
+* `index.html`: Aplicação principal do aluno contendo a trilha interativa de 12 semanas, o **Leitor de Aulas e Exercícios Interativos (`#page-aula`)**, o acervo de provas e o **Gerador de Prompt Matriz**.
+* `aulas-data.js` e `.agents/sync_lessons.py`: Sistema automatizado que converte todos os arquivos `.md` de `semana-01/` a `semana-12/` em aulas e listas de exercícios interativas linkadas diretamente aos cards de cada semana e matéria na Trilha do site.
 * `edital_organizado_oficial_administrativo.pdf`: Documento original do aluno com o Mapa de Estudos dividido em 4 Grandes Grupos (01. Língua Portuguesa, 02. Raciocínio Lógico e Matemático, 03. Conhecimentos Gerais, 04. Conhecimentos Específicos), alinhado ao concurso de Oficial Administrativo (Prefeitura de Birigui/SP — Edital 220/2026 — Banca Instituto ACCESS: 40 questões, sendo 10 de cada grupo).
-* `prova-auto/`: Pasta contendo **93 provas reais de Oficial Administrativo (2022 a 2026)** numeradas de `1.pdf` a `93.pdf` e seus respectivos gabaritos `g1.pdf` a `g93.pdf`:
+* `prova-auto/`: Pasta contendo **93 provas reais de Oficial Administrativo (2022 a 2026)** numeradas de `1.pdf` a `93.pdf` e seus respectivos gabaritos `g1.pdf` a `g93.pdf`, além de `provas-access/` com 45 provas de Nível Médio do Instituto ACCESS (2024–2026):
   * **Provas `1.pdf` a `12.pdf` (`g1.pdf` a `g12.pdf`):** São os **12 Simulados Oficiais de Sábado**, renumerados exatamente na ordem da **Semana 01 até a Semana 12**!
   * **Provas `13.pdf` a `93.pdf` (`g13.pdf` a `g93.pdf`):** São as **81 provas de Treino Diário** (para usar de segunda a sexta nas baterias de questões por matéria).
   * `prova-auto/indice_provas.txt`: Índice completo mapeando `Nº | Tipo | Ano | Órgão | Banca | Prova | Gabarito | URL`.
@@ -77,7 +78,16 @@ Quando o usuário enviar o Prompt Matriz da Semana $X$:
    * **Atenção Especial às Dificuldades Informadas:** Aprofunde com analogias extras os pontos que o aluno destacou no campo de dificuldades do prompt.
    * **Síntese Feynman (3 Linhas):** Resumo curto por tópico para o aluno passar para o caderno.
    * **Bateria de Questões Reais Comentadas:** Questões extraídas das provas de `prova-auto/` com gabarito e explicação investigativa de cada alternativa.
-3. **Atualize o Checklist (Seção 5 abaixo):** Quando o aluno confirmar que concluiu um tópico ou semana, marque `[x]`.
+3. **DIRETRIZ OBRIGATÓRIA — Incorpore cada `.md` ao Site (`aulas-data.js`):**
+   * As pessoas não abrem arquivos `.md` brutos fora do sistema. Todo arquivo `.md` criado ou editado dentro de `semana-XX/` **DEVE ser incorporado automaticamente à Trilha do site (`index.html`)** rodando:
+     ```bash
+     python .agents/sync_lessons.py
+     ```
+   * Se uma matéria tiver **2 ou mais arquivos `.md`** (ex.: `matematica_semana_01.md` com a aula + `exercicios_fracoes_decimais_dizimas.md` com lista extra de exercícios), o script `sync_lessons.py` vincula todos eles automaticamente ao card da matéria na Trilha e cria abas alternadoras dentro do Leitor de Aulas.
+   * **Formato de Questões para virar Formulário Interativo no Site:**
+     - Nas aulas (`*_semana_XX.md`), estruture cada questão com `### Questão X (Banca — Órgão — Ano)`, alternativas `- **A)** ...`, `- **B)** ...` e bloco `<details><summary>Ver Gabarito e Resolução Passo a Passo</summary> **Gabarito Oficial: Letra X** ... </details>`. O site transforma isso automaticamente em formulário com botão **"Enviar e Corrigir"**, placar de acertos/erros e revelação da correção.
+     - Nas listas de exercícios abertos (`exercicios_*.md`), use `## Questões`, `### 1. Título`, itens `1. ... = ______` e `## Gabarito` correspondente.
+4. **Atualize o Checklist (Seção 5 abaixo):** Quando o aluno confirmar que concluiu um tópico ou semana, marque `[x]` e rode `python .agents/sync_db.py mark wX_<materia>`.
 
 ---
 
