@@ -52,22 +52,20 @@
 Para quem vai prestar concurso para **Oficial Administrativo**, compreender a diferença entre Estado, Governo e Administração Pública é o primeiro degrau obrigatório.  
 Na vida comum, as pessoas dizem: *"o governo aumentou o IPTU"*, *"o Estado não cuida da saúde"*, *"a prefeitura demorou para protocolar meu pedido"*, tratando tudo como sinônimo. Para a sua banca de concurso, são três conceitos jurídicos completamente distintos e complementares.
 
-```
-       ┌────────────────────────────────────────────────────────┐
-       │                       ESTADO                           │
-       │   A Pessoa Jurídica Soberana Maior (Povo + Território) │
-       │                                                        │
-       │   ┌────────────────────────────────────────────────┐   │
-       │   │                    GOVERNO                     │   │
-       │   │   A Cúpula Política Temporária (Mandatos/Planos)│   │
-       │   │                                                │   │
-       │   │   ┌────────────────────────────────────────┐   │   │
-       │   │   │         ADMINISTRAÇÃO PÚBLICA          │   │   │
-       │   │   │   O Motor Técnico Permanente           │   │   │
-       │   │   │   (Servidores, Secretarias, Rotinas)   │   │   │
-       │   │   └────────────────────────────────────────┘   │   │
-       │   └────────────────────────────────────────────────┘   │
-       └────────────────────────────────────────────────────────┘
+```text
+┌────────────────────────────────────┐
+│ ESTADO (Pessoa Jurídica Soberana)  │
+│ Povo + Território + Soberania      │
+│  ┌──────────────────────────────┐  │
+│  │ GOVERNO (Cúpula Política)    │  │
+│  │ Temporário: Mandatos e Metas │  │
+│  │  ┌────────────────────────┐  │  │
+│  │  │ ADMINISTRAÇÃO PÚBLICA  │  │  │
+│  │  │ Máquina Técnica Fixa   │  │  │
+│  │  │ (Servidores e Órgãos)  │  │  │
+│  │  └────────────────────────┘  │  │
+│  └──────────────────────────────┘  │
+└────────────────────────────────────┘
 ```
 
 ---
@@ -148,18 +146,19 @@ No entanto, quando a Prefeitura precisa passar uma avenida por um terreno para l
 O mestre Celso Antônio Bandeira de Mello sintetizou esse regime em **duas grandes pedras de toque** (dois pilares indissociáveis):
 
 ```text
-                  A BALANÇA DO REGIME ADMINISTRATIVO
-                     
-              PRERROGATIVAS                     SUJEIÇÕES
-       (Supremacia do Interesse)        (Indisponibilidade do Interesse)
-                   ▲                                    ▲
-                   │                                    │
-           O Estado tem poderes                 O Estado tem amarras
-           especiais para agir                  rígidas e não pode
-           em prol da coletividade.             fazer o que bem entender.
-                   └─────────────────┬──────────────────┘
-                                     │
-                             INTERESSE PÚBLICO
+┌────────────────────────────────────┐
+│ BALANÇA DO REGIME ADMINISTRATIVO   │
+├────────────────────────────────────┤
+│ ⚖️ PILAR 1: PRERROGATIVAS          │
+│ (Supremacia do Interesse Público)  │
+│ -> Poderes especiais p/ agir pela  │
+│    coletividade.                   │
+├────────────────────────────────────┤
+│ ⚖️ PILAR 2: SUJEIÇÕES (LIMITES)    │
+│ (Indisponibilidade do Interesse)   │
+│ -> Amarras legais: o gestor não é  │
+│    dono da coisa pública.          │
+└────────────────────────────────────┘
 ```
 
 ---

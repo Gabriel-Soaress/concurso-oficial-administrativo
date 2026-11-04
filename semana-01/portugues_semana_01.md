@@ -89,18 +89,19 @@ Quando lemos nas entrelinhas, nosso cérebro não pode inventar suposições sol
 ### 4. Os 3 Pecados Capitais da Interpretação em Concursos
 Ao analisar as 4 ou 5 alternativas de uma questão de interpretação, 90% dos erros cometidos pelos candidatos caem em uma destas três armadilhas:
 
-```
-          ┌───────────────────────────────────────────────┐
-          │  OS 3 ERROS DE INTERPRETAÇÃO EM PROVAS        │
-          └──────────────────────┬────────────────────────┘
-                                 │
-     ┌───────────────────────────┼───────────────────────────┐
-     ▼                           ▼                           ▼
-1. EXTRAPOLAÇÃO             2. REDUÇÃO                  3. CONTRADIÇÃO
-   (Viagem além do texto)      (Foco estrito em detalhe)   (Oposto do que foi dito)
-   A banca acrescenta fatos    A alternativa pega só uma   A alternativa inverte a
-   do mundo real que NÃO       partezinha e generaliza,    relação de causa e efeito
-   estão no texto da prova.    esquecendo o contexto.      ou troca afirmação por negação.
+```text
+┌────────────────────────────────────┐
+│ OS 3 ERROS DE INTERPRETAÇÃO        │
+├────────────────────────────────────┤
+│ 1. EXTRAPOLAÇÃO (Ir além do texto) │
+│    Inventa fatos de fora do texto. │
+├────────────────────────────────────┤
+│ 2. REDUÇÃO (Olhar só a parte)      │
+│    Pega um detalhe e generaliza.   │
+├────────────────────────────────────┤
+│ 3. CONTRADIÇÃO (Dizer o oposto)    │
+│    Inverte causa/efeito ou nega.   │
+└────────────────────────────────────┘
 ```
 
 ---
@@ -223,11 +224,17 @@ O acento gráfico no papel **não** existe para complicar a vida do estudante: e
 ### 2. A Classificação Natural (Contando do Fim para o Começo)
 Para classificar a posição da sílaba tônica, contamos sempre **da direita para a esquerda** (do final da palavra para trás):
 
-```
-       [ ANTEPENÚLTIMA ]       [ PENÚLTIMA ]       [ ÚLTIMA ]
-               │                     │                 │
-         Proparoxítona           Paroxítona         Oxítona
-            MÁ-                 -GI-              -CA
+```text
+┌────────────────────────────────────┐
+│ POSIÇÃO DA SÍLABA TÔNICA (MÁ-GI-CA)│
+├────────────────────────────────────┤
+│ 3ª Antepenúltima -> Proparoxítona  │
+│                     (MÁ-)          │
+│ 2ª Penúltima     -> Paroxítona     │
+│                     (-GI-)         │
+│ 1ª Última        -> Oxítona        │
+│                     (-CA)          │
+└────────────────────────────────────┘
 ```
 
 1. **Oxítona:** A última sílaba é a mais forte (*ca-fé*, *ci-pó*, *a-mor*, *tam-bém*).  

@@ -47,17 +47,22 @@ O Brasil que conhecemos hoje, com seus 8,5 milhões de km², **não nasceu com e
 
 Para entender como essa fronteira explodiu para o interior, precisamos conhecer 3 mecanismos fundamentais:
 
-```
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                   A EVOLUÇÃO DAS FRONTEIRAS BRASILEIRAS                     │
-├────────────────────────┬──────────────────────────┬─────────────────────────┤
-│   TORDESILHAS (1494)   │    EXPANSÃO (SÉC. XVII)  │   TRATADO DE MADRI      │
-│                        │                          │        (1750)           │
-│ Linha imaginária que   │ Bandeirantes, pecuária   │ Oficializa o tamanho    │
-│ dividia a América      │ e padres jesuítas furam  │ atual: quem ocupou e    │
-│ entre Espanha e        │ a linha imaginária e vão │ povoou a terra fica     │
-│ Portugal (só o litoral)│ até o coração do país.   │ com ela (Uti Possidetis)│
-└────────────────────────┴──────────────────────────┴─────────────────────────┘
+```text
+┌────────────────────────────────────┐
+│ EVOLUÇÃO DAS FRONTEIRAS DO BRASIL  │
+├────────────────────────────────────┤
+│ 1. TORDESILHAS (1494)              │
+│    Linha imaginária que restringia │
+│    Portugal apenas ao litoral.     │
+├────────────────────────────────────┤
+│ 2. EXPANSÃO (SÉC. XVII)            │
+│    Bandeirantes, pecuária e missões│
+│    avançam para o interior.        │
+├────────────────────────────────────┤
+│ 3. TRATADO DE MADRI (1750)         │
+│    Princípio do Uti Possidetis:    │
+│    quem ocupou fica com a terra.   │
+└────────────────────────────────────┘
 ```
 
 ---
@@ -122,15 +127,24 @@ A economia brasileira funcionou, durante séculos, por meio de **ciclos econômi
 
 Cada ciclo econômico mudou a geografia do Brasil, criando cidades e deslocando populações:
 
-```
-  ┌──────────────────────────┬──────────────────────────┬──────────────────────────┐
-  │     AÇÚCAR (Séc. XVI-XVII)│    OURO (Séc. XVIII)     │    CAFÉ (Séc. XIX-XX)    │
-  ├──────────────────────────┼──────────────────────────┼──────────────────────────┤
-  │ • Polo: Nordeste litorâneo│ • Polo: Sudeste/Minas     │ • Polo: São Paulo/Sudeste │
-  │ • Sociedade rural, latifún-│ • Urbanização, vilas,     │ • Ferrovias, portos,      │
-  │   dio e escravidão negra. │   artesanato e barroco.  │   imigração e indústrias.│
-  │ • Capital: Salvador.     │ • Capital muda p/ o Rio. │ • Capitalização de SP.   │
-  └──────────────────────────┴──────────────────────────┴──────────────────────────┘
+```text
+┌────────────────────────────────────┐
+│ OS 3 GRANDES CICLOS ECONÔMICOS     │
+├────────────────────────────────────┤
+│ 1. AÇÚCAR (Séculos XVI–XVII)       │
+│ • Polo: Litoral do Nordeste        │
+│ • Latifúndio, engenho e escravidão │
+│ • Capital: Salvador                │
+├────────────────────────────────────┤
+│ 2. OURO (Século XVIII)             │
+│ • Polo: Minas Gerais / Sudeste     │
+│ • Interiorização e rede urbana     │
+│ • Capital muda para o Rio (1763)   │
+├────────────────────────────────────┤
+│ 3. CAFÉ (Séculos XIX–XX)           │
+│ • Polo: Vale do Paraíba e Oeste/SP │
+│ • Ferrovias, imigrantes e indústria│
+└────────────────────────────────────┘
 ```
 
 ---
@@ -209,16 +223,26 @@ Estabelecida em 1969 pelo Instituto Brasileiro de Geografia e Estatística (IBGE
 
 * **Critério Fundamental:** Respeita **estritamente os limites políticos e as fronteiras estaduais**. Nenhum estado tem um pedaço numa região e outro pedaço em outra!
 
-```
-┌─────────────────┬─────────────────────────────────────────────────────────────┐
-│  MACRORREGIÃO   │                     ESTADOS INTEGRANTES                     │
-├─────────────────┼─────────────────────────────────────────────────────────────┤
-│ 1. NORTE        │ 7 Estados: AC, AP, AM, PA, RO, RR, TO                       │
-│ 2. NORDESTE     │ 9 Estados: AL, BA, CE, MA, PB, PE, PI, RN, SE               │
-│ 3. SUDESTE      │ 4 Estados: SP, MG, RJ, ES                                   │
-│ 4. SUL          │ 3 Estados: PR, SC, RS                                       │
-│ 5. CENTRO-OESTE │ 3 Estados + DF: GO, MT, MS e Brasília (DF)                 │
-└─────────────────┴─────────────────────────────────────────────────────────────┘
+```text
+┌────────────────────────────────────┐
+│ AS 5 MACRORREGIÕES DO IBGE         │
+├────────────────────────────────────┤
+│ 1. NORTE (7 Estados):              │
+│    AC, AP, AM, PA, RO, RR, TO      │
+├────────────────────────────────────┤
+│ 2. NORDESTE (9 Estados):           │
+│    AL, BA, CE, MA, PB, PE, PI, RN, │
+│    SE                              │
+├────────────────────────────────────┤
+│ 3. SUDESTE (4 Estados):            │
+│    SP, MG, RJ, ES                  │
+├────────────────────────────────────┤
+│ 4. SUL (3 Estados):                │
+│    PR, SC, RS                      │
+├────────────────────────────────────┤
+│ 5. CENTRO-OESTE (3 Estados + DF):  │
+│    GO, MT, MS + Distrito Federal   │
+└────────────────────────────────────┘
 ```
 
 ---

@@ -358,13 +358,25 @@
       padding: 0.85rem 0.75rem;
       margin: 0.85rem 0;
       max-width: 100%;
-      overflow-x: auto;
-      overflow-y: hidden;
-      -webkit-overflow-scrolling: touch;
+      overflow-x: hidden;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 0.35rem 0.55rem;
       text-align: center;
     }
     .lesson-math-block .katex {
-      font-size: 1.22em !important;
+      font-size: 1.15em !important;
+      white-space: normal !important;
+    }
+    .lesson-math-block .katex-display {
+      margin: 0 !important;
+      white-space: normal !important;
+    }
+    .lesson-math-block .katex-html,
+    .lesson-math-block .katex .mtext {
+      white-space: normal !important;
     }
     .ascii-diagram-wrap {
       margin: 0.9rem 0;
@@ -372,10 +384,9 @@
       background-color: #0f172a;
       color: #ffffff;
       border: 1.5px solid #334155;
-      padding: 0.75rem 0.6rem;
+      padding: 0.85rem 0.8rem;
       max-width: 100%;
-      overflow-x: auto;
-      -webkit-overflow-scrolling: touch;
+      overflow-x: hidden;
       box-shadow: inset 0 2px 4px rgba(0,0,0,0.25);
     }
     html.dark .ascii-diagram-wrap {
@@ -385,17 +396,64 @@
     .ascii-diagram {
       margin: 0;
       font-family: 'JetBrains Mono', Consolas, Monaco, monospace;
-      font-size: clamp(0.55rem, 2.15vw, 0.88rem);
+      font-size: clamp(0.68rem, 2.6vw, 0.92rem);
       font-weight: 600;
-      line-height: 1.45;
-      white-space: pre;
+      line-height: 1.5;
+      white-space: pre-wrap;
+      word-break: break-word;
       color: #f8fafc;
+    }
+    .ascii-diagram.ascii-box {
+      white-space: pre;
+      font-size: clamp(0.65rem, 2.5vw, 0.92rem);
+    }
+    .lesson-table-wrap {
+      margin: 1rem 0;
+      max-width: 100%;
     }
     .lesson-table {
       width: 100%;
-      min-width: 440px;
       border-collapse: collapse;
-      font-size: 0.85rem;
+      font-size: 0.88rem;
+    }
+    @media (max-width: 639px) {
+      .lesson-table thead {
+        display: none;
+      }
+      .lesson-table,
+      .lesson-table tbody,
+      .lesson-table tr,
+      .lesson-table td {
+        display: block;
+        width: 100%;
+      }
+      .lesson-table tr {
+        border: 1.5px solid var(--border-strong);
+        border-radius: 0.9rem;
+        margin-bottom: 0.8rem;
+        background-color: var(--bg-surface);
+        overflow: hidden;
+        box-shadow: var(--shadow-sm);
+      }
+      .lesson-table td {
+        border: none !important;
+        border-bottom: 1px solid var(--border) !important;
+        padding: 0.65rem 0.85rem !important;
+        text-align: left;
+      }
+      .lesson-table td:last-child {
+        border-bottom: none !important;
+      }
+      .lesson-table td::before {
+        content: attr(data-label);
+        display: block;
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 0.68rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        color: var(--brand);
+        margin-bottom: 0.2rem;
+      }
     }
     .lesson-launch-btn {
       display: flex;
@@ -451,6 +509,11 @@
       .ascii-diagram {
         font-size: 1rem;
         line-height: 1.65;
+      }
+      .lesson-table-wrap {
+        border-radius: 0.85rem;
+        border: 1px solid var(--border);
+        overflow: hidden;
       }
       .lesson-table {
         font-size: 0.94rem;
@@ -2248,6 +2311,93 @@
       return fallbackMathFormat(cleanTex);
     }
 
+
+    function splitTopLevelEquals(texStr) {
+      const s = String(texStr || "").trim();
+      if (s.length <= 32) return [s];
+      const parts = [];
+      let depth = 0;
+      let cur = "";
+      for (let i = 0; i < s.length; i++) {
+        const ch = s[i];
+        if (ch === "{") depth++;
+        else if (ch === "}" && depth > 0) depth--;
+        if (ch === "=" && depth === 0 && s[i - 1] !== "!" && s[i - 1] !== "<" && s[i - 1] !== ">" && s[i + 1] !== "=") {
+          if (cur.trim()) parts.push(cur.trim());
+          cur = "= ";
+        } else {
+          cur += ch;
+        }
+      }
+      if (cur.trim()) parts.push(cur.trim());
+      return parts.length > 1 ? parts : [s];
+    }
+
+    function renderDisplayMathResponsive(rawTex) {
+      let s = String(rawTex || "").trim();
+      let noteHtml = "";
+
+      // Extrair comentario explicativo no final
+      const noteMatch = s.match(/\\quad\s*(?:\\left)?\(\s*\\text\{([^{}]+)\}(?:\\right)?\)\s*$/);
+      if (noteMatch) {
+        noteHtml = `<div class="w-full text-xs sm:text-sm font-sans font-semibold text-sec mt-1">${escapeHtml(noteMatch[1])}</div>`;
+        s = s.slice(0, noteMatch.index).trim();
+      }
+
+      // Dividir por \qquad, \quad, \implies, \Longleftrightarrow
+      const arrowPlaceholder = " @@ARROW_IMP@@ ";
+      const norm = s
+        .replace(/\\qquad+/g, " @@QUAD_SEP@@ ")
+        .replace(/\\quad\s*\\text\{e\}\s*\\quad/g, " @@TEXT_E_SEP@@ ")
+        .replace(/\\quad+/g, " @@QUAD_SEP@@ ")
+        .replace(/\\implies|\\Longrightarrow/g, arrowPlaceholder)
+        .replace(/\\Longleftrightarrow/g, " @@ARROW_IFF@@ ");
+
+      const rawTokens = norm.split(/\s+(@@(?:ARROW_IMP|ARROW_IFF|QUAD_SEP|TEXT_E_SEP)@@)\s+/);
+      const htmlPieces = [];
+
+      rawTokens.forEach(tok => {
+        const t = tok.trim();
+        if (!t) return;
+        if (t === "@@ARROW_IMP@@") {
+          htmlPieces.push(`<span class="font-mono font-extrabold text-indigo-600 dark:text-indigo-400 px-1">⇒</span>`);
+        } else if (t === "@@ARROW_IFF@@") {
+          htmlPieces.push(`<span class="font-mono font-extrabold text-indigo-600 dark:text-indigo-400 px-1">⇔</span>`);
+        } else if (t === "@@QUAD_SEP@@") {
+          htmlPieces.push(`<span class="w-3 sm:w-5 inline-block"></span>`);
+        } else if (t === "@@TEXT_E_SEP@@") {
+          htmlPieces.push(`<span class="font-sans font-bold text-sec px-1.5">e</span>`);
+        } else {
+          const eqSubParts = splitTopLevelEquals(t);
+          eqSubParts.forEach(sub => {
+            htmlPieces.push(`<span class="inline-flex items-center">${renderKaTeXSafe(sub, false)}</span>`);
+          });
+        }
+      });
+
+      return `<div class="lesson-math-block">${htmlPieces.join("")}${noteHtml}</div>`;
+    }
+
+    function renderInlineMathResponsive(rawTex) {
+      const s = String(rawTex || "").trim();
+      if (s.length <= 36 && !s.includes("\\quad") && !s.includes("\\implies")) {
+        return `<span class="lesson-math-inline">${renderKaTeXSafe(s, false)}</span>`;
+      }
+      const norm = s
+        .replace(/\\quad\s*\\text\{e\}\s*\\quad/g, " @@INL_E@@ ")
+        .replace(/\\quad+/g, " @@INL_SPACE@@ ")
+        .replace(/\\implies|\\Longrightarrow/g, " @@INL_IMP@@ ");
+      const parts = norm.split(/\s+(@@(?:INL_E|INL_SPACE|INL_IMP)@@)\s+/);
+      return parts.map(p => {
+        const pt = p.trim();
+        if (!pt) return "";
+        if (pt === "@@INL_E@@") return " e ";
+        if (pt === "@@INL_SPACE@@") return " ";
+        if (pt === "@@INL_IMP@@") return ` <strong class="text-indigo-600 dark:text-indigo-400">⇒</strong> `;
+        return `<span class="lesson-math-inline">${renderKaTeXSafe(pt, false)}</span>`;
+      }).join("");
+    }
+
     // Transforma Markdown completo (com suporte a código ASCII, tabelas, callouts, listas, checklists e fórmulas KaTeX) em HTML limpo
     function renderRichMarkdown(mdText, contextId = "doc") {
       if (!mdText) return "";
@@ -2313,34 +2463,31 @@
       }
       text = normLines.join("\n");
 
-      // 1. Proteger blocos de código ```...``` (diagramas ASCII de divisão na chave, fatoração MMC/MDC, etc.)
+      // 1. Proteger blocos de código ```...``` (diagramas ASCII, fatoração MMC/MDC, passos destacados)
       text = text.replace(/```([^\n]*)\n([\s\S]*?)```/g, (_, lang, codeBody) => {
         const idx = codeTokens.length;
-        const cleanCode = escapeHtml(codeBody.replace(/\n$/, ""));
-        codeTokens.push(`<div class="ascii-diagram-wrap"><pre class="ascii-diagram"><code>${cleanCode}</code></pre></div>`);
+        const rawCode = codeBody.replace(/\n$/, "");
+        const hasBoxChars = /[┌┐└┘├┤┬┴┼│]/.test(rawCode);
+        const cleanCode = escapeHtml(rawCode);
+        const boxCls = hasBoxChars ? "ascii-diagram ascii-box" : "ascii-diagram";
+        codeTokens.push(`<div class="ascii-diagram-wrap"><pre class="${boxCls}"><code>${cleanCode}</code></pre></div>`);
         return `\n@@CODE_BLOCK_${idx}@@\n`;
       });
 
       // 2. Proteger símbolos monetários R$ e US$ antes de extrair $...$ do LaTeX
       text = text.replace(/R\$/g, "@@CURR_BRL@@").replace(/US\$/g, "@@CURR_USD@@").replace(/\\\$/g, "@@ESC_DOLLAR@@");
 
-      // 3. Extrair blocos matemáticos Display $$...$$
+      // 3. Extrair blocos matemáticos Display $$...$$ (quebrando passos longos em itens flex para caber 100% na tela do celular sem scroll lateral)
       text = text.replace(/\$\$([\s\S]*?)\$\$/g, (_, tex) => {
         const idx = mathTokens.length;
-        mathTokens.push(`<div class="lesson-math-block">${renderKaTeXSafe(tex, true)}</div>`);
+        mathTokens.push(renderDisplayMathResponsive(tex));
         return `@@MATH_TOKEN_${idx}@@`;
       });
 
-      // 4. Extrair matemática Inline $...$ (se a fórmula for longa com \quad ou \implies, exibir em caixa rolável para não quebrar linhas no celular)
+      // 4. Extrair matemática Inline $...$ (permitindo quebra de linha natural entre passos de equações no celular)
       text = text.replace(/\$([^\$\n]+?)\$/g, (_, tex) => {
         const idx = mathTokens.length;
-        const tClean = String(tex || "").trim();
-        const isLongFormula = tClean.length > 42 || tClean.includes("\\quad") || tClean.includes("\\implies") || tClean.includes("\\Longleftrightarrow");
-        if (isLongFormula) {
-          mathTokens.push(`<div class="lesson-math-block">${renderKaTeXSafe(tClean, true)}</div>`);
-        } else {
-          mathTokens.push(`<span class="lesson-math-inline">${renderKaTeXSafe(tClean, false)}</span>`);
-        }
+        mathTokens.push(renderInlineMathResponsive(tex));
         return `@@MATH_TOKEN_${idx}@@`;
       });
 
@@ -2468,14 +2615,15 @@
             const headers = parseCells(tableLines[0]);
             const isSep = /^[\s|:-]+$/.test(tableLines[1]);
             const bodyRows = tableLines.slice(isSep ? 2 : 1).map(parseCells);
+            const plainHeaders = tableLines[0].slice(1, -1).split("|").map(c => c.replace(/\*+/g, "").replace(/@@MATH_TOKEN_\d+@@/g, "").trim());
             out.push(`
-              <div class="overflow-x-auto my-4 rounded-xl border border-tech shadow-sm">
+              <div class="lesson-table-wrap">
                 <table class="lesson-table">
                   <thead>
                     <tr>${headers.map(h => `<th>${h}</th>`).join("")}</tr>
                   </thead>
                   <tbody>
-                    ${bodyRows.map(r => `<tr>${r.map(c => `<td>${c}</td>`).join("")}</tr>`).join("")}
+                    ${bodyRows.map(r => `<tr>${r.map((c, cIdx) => `<td data-label="${escapeHtml(plainHeaders[cIdx] || '')}">${c}</td>`).join("")}</tr>`).join("")}
                   </tbody>
                 </table>
               </div>

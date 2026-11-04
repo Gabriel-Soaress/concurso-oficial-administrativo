@@ -64,27 +64,21 @@
 Nenhum símbolo matemático nasceu pronto na natureza. Todos os conjuntos numéricos surgiram para responder a **problemas práticos de convivência, comércio, medição e administração de recursos**.
 
 ```text
-  ┌─────────────────────────────────────────────────────────────────┐
-  │                   OS CONJUNTOS NUMÉRICOS REAIS                  │
-  │                                                                 │
-  │   ┌─────────────────────────────────────────────────────────┐   │
-  │   │  RACIONAIS (ℚ)                                          │   │
-  │   │                                                         │   │
-  │   │     ┌─────────────────────────────────────────────┐     │   │
-  │   │     │  INTEIROS (ℤ)                               │     │   │
-  │   │     │                                             │     │   │
-  │   │     │     ┌─────────────────────────────────┐     │     │   │
-  │   │     │     │  NATURAIS (ℕ): 0, 1, 2, 3...    │     │     │   │
-  │   │     │     └─────────────────────────────────┘     │     │   │
-  │   │     │        ..., -3, -2, -1                      │     │   │
-  │   │     └─────────────────────────────────────────────┘     │   │
-  │   │        1/2, -3/4, 0,75, 0,333...                        │   │
-  │   └─────────────────────────────────────────────────────────┘   │
-  │                                                                 │
-  │   ┌─────────────────────────────────────────────────────────┐   │
-  │   │  IRRACIONAIS (𝕀): √2, √3, π, e, 1,41421356...           │   │
-  │   └─────────────────────────────────────────────────────────┘   │
-  └─────────────────────────────────────────────────────────────────┘
+┌────────────────────────────────────┐
+│ CONJUNTOS NUMÉRICOS REAIS (ℝ)      │
+│ ┌────────────────────────────────┐ │
+│ │ RACIONAIS (ℚ): 1/2, 0,75, 0,33…│ │
+│ │ ┌────────────────────────────┐ │ │
+│ │ │ INTEIROS (ℤ): ...-2, -1    │ │ │
+│ │ │ ┌────────────────────────┐ │ │ │
+│ │ │ │ NATURAIS (ℕ): 0, 1, 2… │ │ │ │
+│ │ │ └────────────────────────┘ │ │ │
+│ │ └────────────────────────────┘ │ │
+│ └────────────────────────────────┘ │
+│ ┌────────────────────────────────┐ │
+│ │ IRRACIONAIS (𝕀): √2, √3, π, e  │ │
+│ └────────────────────────────────┘ │
+└────────────────────────────────────┘
 ```
 
 ---
@@ -229,13 +223,13 @@ Vamos calcular o **MMC(12, 18)** passo a passo:
 Veja o desenho da operação:
 
 ```text
-  12 , 18 | 2   (ambos dividem por 2)
-   6 ,  9 | 2   (o 6 divide por 2; o 9 repete)
-   3 ,  9 | 3   (ambos dividem por 3)
-   1 ,  3 | 3   (o 3 divide por 3)
-   1 ,  1 | 
-------------------------------------------------
-Multiplicação dos fatores: 2 × 2 × 3 × 3 = 36
+  12 , 18 | 2  (ambos dividem por 2)
+   6 ,  9 | 2  (6 divide; 9 repete)
+   3 ,  9 | 3  (ambos dividem por 3)
+   1 ,  3 | 3  (3 divide por 3)
+   1 ,  1 |
+------------------------------------
+Fatores: 2 × 2 × 3 × 3 = 36
 MMC(12, 18) = 36
 ```
 
@@ -252,9 +246,9 @@ MMC(12, 18) = 36
    2 ,  3 ,  4 | 2
    1 ,  3 ,  2 | 2
    1 ,  3 ,  1 | 3
-   1 ,  1 ,  1 | 
-------------------------------------------------
-Multiplicação: 2 × 2 × 2 × 2 × 3 = 2⁴ × 3 = 48
+   1 ,  1 ,  1 |
+------------------------------------
+Fatores: 2⁴ × 3 = 16 × 3 = 48
 MMC(8, 12, 16) = 48
 ```
 
@@ -293,15 +287,15 @@ Fazemos a mesma grade de fatoração do MMC, mas com **uma regra de ouro**:
 Vamos calcular o **MDC(42, 56)**:
 
 ```text
-  42 , 56 | 2*  (Dividiu ambos! Marca com asterisco)
-  21 , 28 | 2   (Só dividiu o 28; o 21 repetiu. NÃO marca)
-  21 , 14 | 2   (Só dividiu o 14. NÃO marca)
-  21 ,  7 | 3   (Só dividiu o 21. NÃO marca)
-   7 ,  7 | 7*  (Dividiu ambos! Marca com asterisco)
-   1 ,  1 | 
-------------------------------------------------
-Multiplicamos APENAS os marcados: 2 × 7 = 14
-MDC(42, 56) = 14
+  42 , 56 | 2* (dividiu ambos -> marca *)
+  21 , 28 | 2  (só o 28 divide)
+  21 , 14 | 2  (só o 14 divide)
+  21 ,  7 | 3  (só o 21 divide)
+   7 ,  7 | 7* (dividiu ambos -> marca *)
+   1 ,  1 |
+------------------------------------
+Multiplica só os marcados (*):
+MDC(42, 56) = 2 × 7 = 14
 ```
 
 > **Aplicação Prática Imediata:**  
@@ -336,7 +330,7 @@ Uma fração $\frac{a}{b}$ é uma instrução física de medição e partição:
 * **Denominador ($b$):** É o **calibre/tamanho do padrão**. Informa em **quantas partes iguais** a unidade foi fatiada. Ele dá o "nome" da medida (quartos, quintos, oitavos).
 * **Numerador ($a$):** É a **quantidade de fatias** que você pegou, gastou ou tem em mãos.
 
-$$\frac{3}{8} \longrightarrow \frac{\text{Quantas fatias peguei (3)}}{\text{Em quantas partes iguais o todo foi fatiado (8)}}$$
+$$\frac{3}{8} = \frac{\text{Partes tomadas (3)}}{\text{Total de partes (8)}}$$
 
 ---
 
@@ -497,31 +491,25 @@ Passo 3: CORTE AS VÍRGULAS e divida normalmente como números inteiros!
 
 Veja como a conta e armada e resolvida na chave passo a passo (como fazemos no papel):
 
+1. **Passo 1:** Olhamos o $8$ (menor que $36$, não dá). Pegamos o **$82$**. Quantas vezes o $36$ cabe em $82$? Como $36 	imes 2 = 72$, cabe **$2$ vezes** (sobra resto $10$):
+
 ```text
- Passo 1: Olhamos o 8. Como 8 e menor que 36, nao da. Pegamos o 82.
-          Quantas vezes o 36 cabe dentro do 82?
-          36 x 1 = 36
-          36 x 2 = 72 (cabe 2 vezes! Se fosse 3, daria 108 e passaria).
-          Coloca o 2 na chave e subtrai 72 de 82:
+   8 2 8 | 36
+ - 7 2   +-----
+  ----     2
+   1 0
+```
 
-     8 2 8 | 36
-   - 7 2   +-----
-    ----     2
-     1 0
+2. **Passo 2:** Abaixo do resto $10$, **desce o último algarismo ($8$)**, formando **$108$**. Quantas vezes o $36$ cabe em $108$? Como $36 	imes 3 = 108$, cabe **$3$ vezes** exatas:
 
- Passo 2: Sobraram 10 de resto. Agora DESCE o ultimo algarismo (o 8).
-          Juntando com o 10, formamos o numero 108.
-          Quantas vezes o 36 cabe dentro do 108?
-          36 x 3 = 108 cravado! Cabe exatamente 3 vezes.
-          Coloca o 3 na chave e subtrai 108 de 108:
-
-     8 2 8 | 36
-   - 7 2   +-----
-    ----     2 3   <-- Resultado (Quociente)
-     1 0 8
-   - 1 0 8
-    ------
-         0         <-- Resto zero (divisao exata!)
+```text
+   8 2 8 | 36
+ - 7 2   +-----
+  ----     2 3  <- Quociente (23)
+   1 0 8
+ - 1 0 8
+  ------
+       0        <- Resto zero!
 ```
 
 * **Resultado final:** **23**.
@@ -617,12 +605,12 @@ $$a^n = \underbrace{a \times a \times a \times \dots \times a}_{n \text{ vezes}}
 Veja a escada descendente dividindo sempre por 2 a cada degrau:
 
 ```text
-2³  = 8     (dividido por 2)
-2²  = 4     (dividido por 2)
-2¹  = 2     (dividido por 2)
-2⁰  = 1     (dividido por 2)  --> Todo número elevado a zero vale 1!
-2⁻¹ = 1/2   (dividido por 2)  --> Expoente negativo inverte a base!
-2⁻² = 1/4   (dividido por 2)  --> 1 / 2²
+2³  = 8    (÷ 2)
+2²  = 4    (÷ 2)
+2¹  = 2    (÷ 2)
+2⁰  = 1    (÷ 2) -> Todo nº elevado a 0 vale 1!
+2⁻¹ = 1/2  (÷ 2) -> Expoente negativo inverte!
+2⁻² = 1/4  (÷ 2) -> 1 / 2²
 ```
 
 Pela regra da divisão de potências de mesma base:
@@ -738,12 +726,12 @@ Se você somasse primeiro ($3+4=7 \times 2 = 14$), estaria multiplicando o $3$ i
 Montando a grade de fatoração e marcando com asterisco ($^*$) os fatores que dividem ambos ao mesmo tempo:
 
 ```text
-  24 , 36 | 2*  (dividiu ambos -> marca para o MDC)
-  12 , 18 | 2*  (dividiu ambos -> marca para o MDC)
-   6 ,  9 | 2   (só dividiu o 6)
-   3 ,  9 | 3*  (dividiu ambos -> marca para o MDC)
-   1 ,  3 | 3   (só dividiu o 3)
-   1 ,  1 | 
+  24 , 36 | 2* (dividiu ambos -> MDC)
+  12 , 18 | 2* (dividiu ambos -> MDC)
+   6 ,  9 | 2  (só dividiu o 6)
+   3 ,  9 | 3* (dividiu ambos -> MDC)
+   1 ,  3 | 3  (só dividiu o 3)
+   1 ,  1 |
 ```
 
 * **MMC (multiplica todos os fatores da coluna):**
