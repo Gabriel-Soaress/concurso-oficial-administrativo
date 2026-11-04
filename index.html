@@ -327,43 +327,56 @@
       display: none !important;
     }
     .katex {
-      font-size: 1.06em !important;
+      font-size: 1.26em !important;
+      color: var(--text-primary);
+    }
+    .lesson-math-inline {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0.12rem 0.18rem;
+    }
+    .lesson-math-inline .katex {
+      font-size: 1.28em !important;
     }
     .lesson-math-block {
       background-color: var(--bg-muted);
-      border: 1px solid var(--border);
-      border-radius: 0.85rem;
-      padding: 0.9rem 1.1rem;
-      margin: 1rem 0;
+      border: 1.5px solid var(--border-strong);
+      border-radius: 1rem;
+      padding: 1.25rem 1.5rem;
+      margin: 1.25rem 0;
       overflow-x: auto;
       text-align: center;
     }
+    .lesson-math-block .katex {
+      font-size: 1.52em !important;
+    }
     .ascii-diagram-wrap {
-      margin: 1rem 0;
-      border-radius: 0.9rem;
+      margin: 1.2rem 0;
+      border-radius: 1rem;
       background-color: #0f172a;
-      color: #f8fafc;
-      border: 1px solid #334155;
-      padding: 1rem 1.25rem;
+      color: #ffffff;
+      border: 1.5px solid #334155;
+      padding: 1.25rem 1.5rem;
       overflow-x: auto;
       box-shadow: inset 0 2px 4px rgba(0,0,0,0.25);
     }
     html.dark .ascii-diagram-wrap {
       background-color: #090d16;
-      border-color: #1e293b;
+      border-color: #334155;
     }
     .ascii-diagram {
       margin: 0;
       font-family: 'JetBrains Mono', Consolas, Monaco, monospace;
-      font-size: 0.84rem;
-      line-height: 1.55;
+      font-size: 1.05rem;
+      font-weight: 600;
+      line-height: 1.7;
       white-space: pre;
-      color: #e2e8f0;
+      color: #f8fafc;
     }
     .lesson-table {
       width: 100%;
       border-collapse: collapse;
-      font-size: 0.86rem;
+      font-size: 0.96rem;
     }
     .lesson-table th {
       background-color: var(--bg-muted);
@@ -2110,7 +2123,10 @@
     }
 
     function renderKaTeXSafe(tex, displayMode) {
-      const cleanTex = String(tex || "").trim();
+      let cleanTex = String(tex || "").trim();
+      if (!displayMode && cleanTex.includes("\\frac")) {
+        cleanTex = "\\displaystyle " + cleanTex;
+      }
       if (window.katex && typeof window.katex.renderToString === "function") {
         try {
           return window.katex.renderToString(cleanTex, {
@@ -2388,7 +2404,7 @@
           }).join("");
 
           const tag = isOrdered ? "ol" : "ul";
-          const cls = isOrdered ? "list-decimal pl-6 space-y-1.5 text-sm my-2.5" : "list-disc pl-6 space-y-1.5 text-sm my-2.5";
+          const cls = isOrdered ? "list-decimal pl-6 space-y-2 text-[15px] sm:text-base my-3" : "list-disc pl-6 space-y-2 text-[15px] sm:text-base my-3";
           out.push(`<${tag} class="${cls}">${renderedItems}</${tag}>`);
           continue;
         }
@@ -2408,7 +2424,7 @@
           i++;
         }
         if (paraLines.length > 0) {
-          out.push(`<p class="text-sm sm:text-[15px] leading-relaxed text-pri font-normal my-2.5">${paraLines.join("<br/>")}</p>`);
+          out.push(`<p class="text-[15px] sm:text-base leading-relaxed text-pri font-normal my-3">${paraLines.join("<br/>")}</p>`);
         }
       }
 
