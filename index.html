@@ -193,8 +193,16 @@
       justify-content: center;
       gap: 0.45rem;
       border: none;
-      white-space: nowrap;
+      white-space: normal;
+      text-align: center;
+      line-height: 1.3;
+      max-width: 100%;
       box-shadow: 0 4px 12px -2px rgba(79, 70, 229, 0.35);
+    }
+    @media (min-width: 640px) {
+      .btn-primary, .btn-secondary {
+        white-space: nowrap;
+      }
     }
     .btn-primary:hover {
       transform: translateY(-1px);
@@ -215,7 +223,10 @@
       align-items: center;
       justify-content: center;
       gap: 0.4rem;
-      white-space: nowrap;
+      white-space: normal;
+      text-align: center;
+      line-height: 1.3;
+      max-width: 100%;
       text-decoration: none;
     }
     .btn-secondary:hover {
@@ -327,37 +338,46 @@
       display: none !important;
     }
     .katex {
-      font-size: 1.26em !important;
+      font-size: 1.16em !important;
       color: var(--text-primary);
     }
     .lesson-math-inline {
       display: inline-block;
       vertical-align: middle;
-      margin: 0.12rem 0.18rem;
+      margin: 0.1rem 0.15rem;
+      max-width: 100%;
+      overflow-x: auto;
+      overflow-y: hidden;
+      -webkit-overflow-scrolling: touch;
     }
     .lesson-math-inline .katex {
-      font-size: 1.28em !important;
+      font-size: 1.16em !important;
     }
     .lesson-math-block {
       background-color: var(--bg-muted);
       border: 1.5px solid var(--border-strong);
       border-radius: 1rem;
-      padding: 1.25rem 1.5rem;
-      margin: 1.25rem 0;
+      padding: 0.95rem 0.85rem;
+      margin: 1rem 0;
+      max-width: 100%;
       overflow-x: auto;
+      overflow-y: hidden;
+      -webkit-overflow-scrolling: touch;
       text-align: center;
     }
     .lesson-math-block .katex {
-      font-size: 1.52em !important;
+      font-size: 1.25em !important;
     }
     .ascii-diagram-wrap {
-      margin: 1.2rem 0;
+      margin: 1rem 0;
       border-radius: 1rem;
       background-color: #0f172a;
       color: #ffffff;
       border: 1.5px solid #334155;
-      padding: 1.25rem 1.5rem;
+      padding: 0.95rem 1rem;
+      max-width: 100%;
       overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
       box-shadow: inset 0 2px 4px rgba(0,0,0,0.25);
     }
     html.dark .ascii-diagram-wrap {
@@ -367,16 +387,43 @@
     .ascii-diagram {
       margin: 0;
       font-family: 'JetBrains Mono', Consolas, Monaco, monospace;
-      font-size: 1.05rem;
+      font-size: 0.9rem;
       font-weight: 600;
-      line-height: 1.7;
+      line-height: 1.65;
       white-space: pre;
       color: #f8fafc;
     }
     .lesson-table {
       width: 100%;
+      min-width: 480px;
       border-collapse: collapse;
-      font-size: 0.96rem;
+      font-size: 0.88rem;
+    }
+    @media (min-width: 640px) {
+      .katex {
+        font-size: 1.26em !important;
+      }
+      .lesson-math-inline .katex {
+        font-size: 1.28em !important;
+      }
+      .lesson-math-block {
+        padding: 1.25rem 1.5rem;
+        margin: 1.25rem 0;
+      }
+      .lesson-math-block .katex {
+        font-size: 1.52em !important;
+      }
+      .ascii-diagram-wrap {
+        padding: 1.25rem 1.5rem;
+        margin: 1.2rem 0;
+      }
+      .ascii-diagram {
+        font-size: 1.05rem;
+        line-height: 1.7;
+      }
+      .lesson-table {
+        font-size: 0.96rem;
+      }
     }
     .lesson-table th {
       background-color: var(--bg-muted);
@@ -415,14 +462,29 @@
     .quiz-opt-card {
       display: flex;
       align-items: flex-start;
-      gap: 0.85rem;
-      padding: 0.9rem 1rem;
+      gap: 0.65rem;
+      padding: 0.8rem 0.85rem;
       border-radius: 0.9rem;
       border: 1.5px solid var(--border);
       background-color: var(--bg-surface);
       cursor: pointer;
       transition: all 0.15s ease;
       position: relative;
+      min-width: 0;
+      max-width: 100%;
+      overflow-wrap: anywhere;
+      word-break: break-word;
+    }
+    @media (min-width: 640px) {
+      .quiz-opt-card {
+        gap: 0.85rem;
+        padding: 0.9rem 1rem;
+      }
+    }
+    #page-aula, #aulaRenderedContainer, #page-aula article {
+      min-width: 0;
+      max-width: 100%;
+      overflow-wrap: anywhere;
     }
     .quiz-opt-card:hover {
       border-color: var(--brand);
@@ -1253,25 +1315,25 @@
     <!-- ======================================================= -->
     <!-- PÁGINA 5: LEITOR INTERATIVO DE AULA & QUESTÕES (.MD)    -->
     <!-- ======================================================= -->
-    <section id="page-aula" class="page-view space-y-6 sm:space-y-8">
-      <!-- Barra Superior Fixa de Navegação da Aula -->
-      <div class="surface rounded-2xl p-4 sm:p-5 sticky top-2 z-30 shadow-md border border-tech flex flex-col gap-3">
-        <div class="flex flex-wrap items-center justify-between gap-3">
-          <button type="button" onclick="closeLessonReader()" class="btn-secondary !py-2 !px-3.5 !text-xs">
-            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
-            <span>Voltar para a Trilha</span>
+    <section id="page-aula" class="page-view space-y-4 sm:space-y-8">
+      <!-- Barra Superior de Navegação da Aula (Responsiva Mobile & Desktop) -->
+      <div class="surface rounded-2xl p-3 sm:p-5 sm:sticky sm:top-2 z-30 shadow-md border border-tech flex flex-col gap-2.5 sm:gap-3">
+        <div class="flex flex-wrap items-center justify-between gap-2">
+          <button type="button" onclick="closeLessonReader()" class="btn-secondary !py-1.5 sm:!py-2 !px-3 sm:!px-3.5 !text-xs">
+            <svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+            <span>Voltar à Trilha</span>
           </button>
 
-          <div class="flex flex-wrap items-center gap-2">
-            <span id="aulaWeekBadge" class="text-xs font-mono font-bold px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-600 dark:text-indigo-400">Semana 01</span>
-            <span id="aulaSubjBadge" class="text-xs font-mono font-bold px-3 py-1 rounded-full badge-port">Matéria</span>
+          <div class="flex flex-wrap items-center gap-1.5 sm:gap-2">
+            <span id="aulaWeekBadge" class="text-[11px] sm:text-xs font-mono font-bold px-2.5 py-0.5 sm:px-3 sm:py-1 rounded-full bg-indigo-500/10 text-indigo-600 dark:text-indigo-400">Semana 01</span>
+            <span id="aulaSubjBadge" class="text-[11px] sm:text-xs font-mono font-bold px-2.5 py-0.5 sm:px-3 sm:py-1 rounded-full badge-port">Matéria</span>
           </div>
 
-          <div class="flex items-center gap-2">
-            <button type="button" onclick="scrollToQuestionsSection()" id="btnJumpQuestions" class="btn-secondary !py-2 !px-3.5 !text-xs">
-              <span>✍️ Ir para Questões</span>
+          <div class="flex items-center gap-1.5 sm:gap-2 w-full sm:w-auto justify-end pt-1 sm:pt-0 border-t sm:border-t-0 border-tech">
+            <button type="button" onclick="scrollToQuestionsSection()" id="btnJumpQuestions" class="btn-secondary flex-1 sm:flex-initial !py-2 !px-3 !text-xs">
+              <span>✍️ Questões</span>
             </button>
-            <button type="button" onclick="toggleCurrentLessonBlockDone()" id="btnMarkLessonDone" class="btn-primary !py-2 !px-3.5 !text-xs">
+            <button type="button" onclick="toggleCurrentLessonBlockDone()" id="btnMarkLessonDone" class="btn-primary flex-1 sm:flex-initial !py-2 !px-3 !text-xs">
               <span>Concluir Bloco</span>
             </button>
           </div>
@@ -1279,8 +1341,8 @@
 
         <!-- Seletor de Arquivos quando a matéria tem 2+ materiais (ex: Matemática: Aula + Lista de Exercícios) -->
         <div id="aulaMultiDocBar" class="hidden pt-2 border-t border-tech flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-          <span class="text-xs font-mono text-mut font-semibold uppercase">Materiais desta matéria:</span>
-          <div id="aulaMultiDocTabs" class="surface-muted p-1 rounded-xl flex flex-wrap gap-1.5"></div>
+          <span class="text-[11px] font-mono text-mut font-semibold uppercase">Alternar Material:</span>
+          <div id="aulaMultiDocTabs" class="surface-muted p-1 rounded-xl grid grid-cols-1 sm:flex sm:flex-wrap gap-1.5 w-full sm:w-auto"></div>
         </div>
       </div>
 
@@ -2640,13 +2702,13 @@
           const optContentHtml = renderRichMarkdown(opt.textMd, `${doc.id}_q${q.num}_opt${opt.letter}`).replace(/^<p[^>]*>|<\/p>$/g, "");
 
           return `
-            <div class="flex items-center gap-2">
+            <div class="flex items-stretch sm:items-center gap-1.5 sm:gap-2 min-w-0">
               <div
                 onclick="selectMCOption('${doc.id}', ${q.num}, '${opt.letter}')"
-                class="${cardCls} flex-1"
+                class="${cardCls} flex-1 min-w-0"
               >
                 <span class="quiz-letter-pill">${opt.letter}</span>
-                <div class="flex-1 text-xs sm:text-sm leading-relaxed self-center">
+                <div class="flex-1 min-w-0 text-sm sm:text-[15px] leading-relaxed self-center break-words">
                   ${optContentHtml}
                 </div>
                 ${isEvaluated && opt.letter === q.answerLetter ? `<span class="text-[11px] font-mono font-bold text-emerald-700 dark:text-emerald-300 shrink-0">✓ Correta</span>` : ""}
