@@ -567,6 +567,12 @@ Ocorre quando o pronome **aponta para a frente, anunciando e criando expectativa
   *"A determinação da diretoria foi **esta**: todos os arquivos digitais devem ter backup diário."*  
   → **Análise:** Quem lê a palavra *"esta"* ainda não sabe qual foi a determinação. O pronome cria suspense e aponta para a frase seguinte. Esse movimento de antecipação chama-se **catáfora**.
 
+#### C) Endófora vs. Exófora (Papel Dêitico) — Termos Clássicos da Banca ACCESS:
+Nas provas do Instituto ACCESS e da Fundatec, as alternativas costumam trazer mais três nomes técnicos ao lado de *anafórico* e *catafórico*. Entenda a lógica simples de cada um:
+* **Referência Endofórica (*Endo* = dentro):** É toda referência que aponta para um termo que está **dentro do próprio texto**. Portanto, tanto a **anáfora** (quando o referente surge *antes* do pronome) quanto a **catáfora** (quando o referente surge *depois* do pronome) são mecanismos **endofóricos**.
+* **Referência Exofórica (*Exo* = fora) ou Papel Dêitico:** Ocorre quando a palavra não retoma nenhum termo escrito no texto, mas aponta **para fora do texto**, diretamente para a situação real de tempo ou lugar em que o autor e o leitor estão inseridos:
+  - *"Neste momento, no Brasil, milhões estão sob alerta de calor."* → A expressão *"Neste momento"* aponta diretamente para o instante presente da realidade exterior ao texto (**papel dêitico / exofórico**).
+
 ---
 
 ### 3. O Emprego Rigoroso dos Pronomes Demonstrativos
@@ -648,7 +654,19 @@ O pronome oblíquo *mim* não tem força sintática para ser sujeito. Ele só po
 
 ---
 
-### 5. Pronomes Relativos: O Conector Sagrado
+### 5. Pronomes Possessivos e Pronomes Indefinidos
+Antes de estudarmos os pronomes relativos, precisamos dominar duas famílias pronominais que atuam constantemente como determinantes dos substantivos:
+
+* **Pronomes Possessivos (*meu, minha, teu, tua, seu, sua, nosso, vosso* e plurais):** Indicam a qual pessoa do discurso pertence o substantivo (*"**Seus** documentos foram entregues à secretária"*).
+  - **Cuidado na Redação Oficial:** O pronome *seu/sua* pode gerar ambiguidade quando há duas pessoas de 3ª pessoa na frase (*"O chefe encontrou o servidor em sua sala"* — sala de quem?). Para eliminar a dúvida, usa-se **dele / dela**.
+* **Pronomes Indefinidos:** Referem-se à 3ª pessoa de modo vago, impreciso ou genérico, determinando ou substituindo o substantivo.
+  - **Variáveis (acompanham o substantivo como pronomes adjetivos):** *algum, alguns, nenhum, todo, outro, muito, pouco, vários, tanto, quanto, qualquer*.  
+    - *Exemplo real de prova:* *"Pesquisas associam essas substâncias a **alguns** tipos de câncer."* → *Alguns* é **pronome indefinido** que determina o substantivo *tipos*.
+  - **Invariáveis (substituem o substantivo como pronomes substantivos):** *alguém, ninguém, tudo, nada, outrem, cada, algo*.
+
+---
+
+### 6. Pronomes Relativos: O Conector Sagrado
 O pronome relativo é a ferramenta de conexão mais sofisticada da língua. Ele cumpre **dois papéis ao mesmo tempo**:
 1. **Morfossintático:** Substitui um termo substantivo antecedente para que ele não precise ser repetido.
 2. **Conectivo:** Liga duas orações independentes em um único período composto harmonioso.
@@ -958,7 +976,8 @@ O quadro abaixo resume as principais armadilhas de aplicação gramatical dos co
 ### Questão 01
 **Banca:** INSTITUTO ACCESS | **Órgão:** Universidade Federal do Pampa (UNIPAMPA) | **Ano:** 2026 | **Cargo:** Assistente em Administração (Prova Oficial ACCESS 01, Q04)  
 
-O resultado é um "semicondutor" capaz de detectar fótons de raios X e raios gama com grande "precisão".  
+Leia o trecho a seguir:  
+*"O resultado é um **'semicondutor'** capaz de detectar fótons de raios X e raios gama com grande **'precisão'**."*  
 Em relação à estrutura e à formação das palavras destacadas, analise as afirmações a seguir e assinale a alternativa CORRETA.  
 (A) A palavra "semicondutor" apresenta formação parassintética, e "precisão" resulta de conversão de classe sem alteração formal.  
 (B) A palavra "semicondutor" é formada por derivação prefixal, enquanto "precisão" resulta de derivação sufixal a partir de um adjetivo.  
@@ -972,13 +991,13 @@ Em relação à estrutura e à formação das palavras destacadas, analise as af
 
 **Comentário Passo a Passo:**  
 * **Análise de "semicondutor":**  
-  A palavra é formada pelo radical base *condutor* acrescido do prefixo *semi-* (que expressa metade ou parcialidade). Não houve junção de dois radicais autônomos da língua, mas sim aposição de prefixo morfológico. Trata-se, portanto, de **derivação prefixal**.
+  A palavra é formada pela base nominal *condutor* acrescida do prefixo *semi-* (que expressa metade ou parcialidade). Como a palavra *condutor* já existe de forma autônoma e recebeu apenas um prefixo, trata-se de **derivação prefixal**.
 * **Análise de "precisão":**  
-  Provém do adjetivo *preciso* (*precis-* + *-ão*). O acréscimo do sufixo nominalizador *-ão* (de valor abstrato de qualidade ou estado) transformou o adjetivo *preciso* no substantivo abstrato *precisão*. Trata-se, portanto, de **derivação sufixal**.
-* **Eliminação das alternativas incorretas:**
-  - (A) Incorreta. Não há parassíntese em *semicondutor* (a base *condutor* existe de forma independente) e *precisão* teve acréscimo de sufixo, não sendo conversão (derivação imprópria).
-  - (C) Incorreta. *Semi-* é prefixo, não radical nominal independente para caracterizar composição por justaposição.
-  - (D) Incorreta. Derivação regressiva forma substantivos a partir de verbos (ex: *combater → debate*), o que não é o caso de *semicondutor*.
+  Provém do adjetivo *preciso* (*precis-* + *-ão*). O acréscimo do sufixo nominalizador *-ão* transformou o adjetivo *preciso* no substantivo abstrato *precisão*. Trata-se de **derivação sufixal**.
+* **Eliminação das incorretas:**
+  - (A) Incorreta. Não há parassíntese em *semicondutor* nem derivação imprópria (conversão) em *precisão*.
+  - (C) Incorreta. *Semi-* é prefixo, e não radical autônomo para caracterizar composição por justaposição.
+  - (D) Incorreta. Derivação regressiva forma substantivos abstratos curtos a partir de verbos (ex: *combater → o combate*), o que não ocorre em *semicondutor*.
 * **Gabarito:** Letra **B**.
 </details>
 
@@ -987,7 +1006,7 @@ Em relação à estrutura e à formação das palavras destacadas, analise as af
 ### Questão 02
 **Banca:** INSTITUTO ACCESS | **Órgão:** Prefeitura Municipal de Rodeiro/MG | **Ano:** 2025/2026 | **Cargo:** Assistente Administrativo (Prova Oficial ACCESS 09, Q02)  
 
-Considerando a palavra "encontro" no trecho "A lua depois da chuva é poesia pura, é o encontro da alma com o eterno, do atávico com o futuro" e os processos de formação de palavras em língua portuguesa, assinale a alternativa correta quanto à sua estrutura morfológica e à classificação do processo de formação que a originou.  
+Considerando a palavra **"encontro"** no trecho *"A lua depois da chuva é poesia pura, é o **encontro** da alma com o eterno, do atávico com o futuro"* e os processos de formação de palavras em língua portuguesa, assinale a alternativa correta quanto à sua estrutura morfológica e à classificação do processo de formação que a originou.  
 (A) Trata-se de um substantivo abstrato formado por derivação regressiva a partir do verbo "encontrar", mediante supressão do sufixo flexional de infinitivo verbal.  
 (B) "Encontro" é um substantivo primitivo, pois não se deriva de nenhuma outra forma verbal ou nominal existente na língua, funcionando aqui como termo essencial à oração.  
 (C) A palavra "encontro" resulta da composição por justaposição dos radicais "em" e "contra", reunindo elementos autônomos para exprimir a ideia de oposição e convergência.  
@@ -1000,29 +1019,30 @@ Considerando a palavra "encontro" no trecho "A lua depois da chuva é poesia pur
 
 **Comentário Passo a Passo:**  
 * **A Lógica da Derivação Regressiva (Deverbal):**  
-  Quando um verbo que indica **ação** dá origem a um **substantivo abstrato** que indica o resultado ou o ato dessa ação, há perda/regressão de elementos morfológicos (em vez de acrescentar sufixos longos como *-mento* ou *-ção*, a terminação verbal infinitiva *-ar* é suprimida e substitui-se pela vogal temática nominal *-o, -a* ou *-e*):
+  Quando um verbo que indica **ação** dá origem a um **substantivo abstrato** que indica o ato ou resultado dessa ação, ocorre redução morfológica (a terminação verbal infinitiva *-ar* é removida e substituída pela vogal temática nominal *-o, -a* ou *-e*):
   - *encontrar* (verbo) → *o encontro* (substantivo abstrato derivado).
   - *debater* (verbo) → *o debate* (substantivo abstrato derivado).
   - *pescar* (verbo) → *a pesca* (substantivo abstrato derivado).
-* **Eliminando as alternativas:**
-  - (B) Incorreta. Não é primitivo; é derivado do verbo *encontrar*.
-  - (C) Incorreta. Não é composição de *em* + *contra*.
-  - (D) Incorreta. A vogal final *-o* é vogal temática nominal de derivação regressiva, e não um sufixo de agente (sufixo de agente seria *-dor*, como em *trabalhador*).
+* **Eliminando as demais alternativas:**
+  - (B) Incorreta. Não é substantivo primitivo; deriva do verbo *encontrar*.
+  - (C) Incorreta. Não há composição de *em + contra*.
+  - (D) Incorreta. A vogal *-o* é vogal temática nominal, e não sufixo de agente (sufixo de agente seria *-dor*, como em *trabalhador*).
 * **Gabarito:** Letra **A**.
 </details>
 
 ---
 
 ### Questão 03
-**Banca:** INSTITUTO ACCESS | **Órgão:** Prefeitura Municipal de Apiaí/SP | **Ano:** 2025 | **Cargo:** Escriturário / Administrativo (Prova Oficial ACCESS 07, Q09)  
+**Banca:** INSTITUTO ACCESS | **Órgão:** Universidade Federal do Acre (UFAC) | **Ano:** 2026 | **Cargo:** Assistente em Administração (Prova Oficial ACCESS 02, Q02)  
 
-Considerando as regras de concordância nominal na norma culta, analise o trecho a seguir:  
-"Os documentos _____ (1) devem ser enviados _____ (2) à diretoria, pois as informações estão _____ (3) atualizadas. Ressaltamos que versões incompletas ou desatualizadas serão rejeitadas imediatamente."  
-Assinale a alternativa que preenche correta e sequencialmente as lacunas, justificando sua escolha com base nas relações sintáticas e semânticas entre os termos:  
-(A) técnico-administrativo / anexo / meio  
-(B) técnico-administrativos / anexas / meia  
-(C) técnico-administrativos / anexos / meio  
-(D) técnicos-administrativos / anexos / meias  
+Leia o fragmento a seguir:  
+*"É o caso das descobertas de astros a bilhões de **'anos-luz'** de distância."*  
+Assinale a alternativa CORRETA quanto à classe gramatical e à estrutura de formação do termo destacado no trecho.  
+(A) Advérbio formado por substantivo + substantivo, com valor semântico ampliado no uso científico e categorias específicas espaciais.  
+(B) Substantivo composto formado por substantivo + adjetivo, em que o segundo elemento qualifica o primeiro dentro da unidade.  
+(C) Substantivo composto formado por substantivo + substantivo, constituindo uma unidade lexical com valor específico de medida.  
+(D) Locução substantiva formada por substantivo + substantivo, mantendo autonomia de cada elemento na estrutura.  
+(E) Substantivo composto formado por substantivo + advérbio, com o segundo elemento indicando ação associada ao primeiro, destacando-o.  
 
 <details>
 <summary><b>Ver Gabarito e Comentário Detalhado</b></summary>
@@ -1030,13 +1050,12 @@ Assinale a alternativa que preenche correta e sequencialmente as lacunas, justif
 **Gabarito Oficial: C**
 
 **Comentário Passo a Passo:**  
-* **Lacuna (1) — Adjetivo Composto:**  
-  Regra: Em adjetivos compostos (*técnico-administrativo*), apenas o **último elemento** flexiona para concordar em gênero e número com o substantivo a que se refere (*documentos* = masculino plural). Logo: *documentos técnico-administrativos*.
-* **Lacuna (2) — Anexo:**  
-  A palavra *anexo* é um adjetivo quando não precedida de preposição (diferente da locução prepositiva invariável *em anexo*). Como adjetivo, deve concordar diretamente com o substantivo que acompanha (*os documentos* = masculino plural): *devem ser enviados **anexos***.
-* **Lacuna (3) — Meio vs. Meia:**  
-  Na expressão *"estão _____ atualizadas"*, a palavra modifica o adjetivo *atualizadas*, funcionando como **advérbio de intensidade** (= um pouco, moderadamente). Advérbio é classe gramatical invariável! Portanto, não varia para o feminino: *estão **meio** atualizadas*. (Dizer *meia atualizada* seria dizer que metade está atualizada e a outra metade não!).
-* **Sequência correta:** *técnico-administrativos* / *anexos* / *meio*.
+* **Classe e Estrutura de "anos-luz":**  
+  - O vocábulo *ano-luz* (no plural, *anos-luz*) nomeia uma unidade astronômica de distância. Por dar nome a um ser/conceito mensurável e vir determinado pela preposição contraída/expressão quantitativa (*bilhões de anos-luz*), sua classe gramatical é **substantivo composto**.
+  - Quanto à formação interna de seus elementos: *ano* é **substantivo** e *luz* também é **substantivo** (aqui o segundo substantivo delimita/especifica o tipo de medida do primeiro, razão pela qual na norma culta tradicional também se admite a flexão de ambos ou prioritariamente do primeiro nas especificações).
+* **Por que as outras estão incorretas?**
+  - (A) Não é advérbio; é substantivo.
+  - (B) e (E) *Luz* não é adjetivo nem advérbio; sua classe original é substantivo.
 * **Gabarito:** Letra **C**.
 </details>
 
@@ -1045,7 +1064,8 @@ Assinale a alternativa que preenche correta e sequencialmente as lacunas, justif
 ### Questão 04
 **Banca:** INSTITUTO ACCESS | **Órgão:** Universidade Federal da Fronteira Sul (UFFS) | **Ano:** 2026 | **Cargo:** Assistente em Administração (Prova Oficial ACCESS 03, Q08)  
 
-A diversidade dessas bactérias pode ser comparada a um "ecossistema" natural: quanto maior a variedade de "microrganismos".  
+Leia o trecho a seguir:  
+*"A diversidade dessas bactérias pode ser comparada a um **'ecossistema'** natural: quanto maior a variedade de **'microrganismos'**."*  
 Considerando a estrutura e a formação das palavras destacadas no trecho, assinale a alternativa CORRETA.  
 (A) O vocábulo "ecossistema" resulta da composição de origem grega "eco-", enquanto "microrganismos" apresenta formação por derivação prefixal com acréscimo do prefixo "micro-".  
 (B) O vocábulo "ecossistema" apresenta formação parassintética, enquanto "microrganismos" se origina de processo de derivação regressiva a partir do substantivo "organismo".  
@@ -1060,23 +1080,80 @@ Considerando a estrutura e a formação das palavras destacadas no trecho, assin
 
 **Comentário Passo a Passo:**  
 * **Estrutura de "ecossistema":**  
-  *Eco-* é um elemento de origem grega (*oikos* = casa, hábitat, meio ambiente) que funciona como radical inicial de composição científica, juntando-se a *sistema* (composição por elementos eruditos/gregos).
+  *Eco-* é um radical erudito de origem grega (*oikos* = casa, hábitat, meio ambiente) que se une ao substantivo *sistema* (dobrando o *s* para manter o som de /s/ entre vogais).
 * **Estrutura de "microrganismos":**  
-  Formado pela base nominal *organismos* antecedida do prefixo de gradação/tamanho *micro-* (derivação prefixal).
+  Formado pela palavra base *organismos* antecedida do prefixo *micro-* (derivação prefixal).
 * **Eliminação das demais alternativas:**
-  - (B) Incorreta. Não existe parassíntese em *ecossistema*, nem regressão em *microrganismos*.
-  - (C) Incorreta. Não há derivação imprópria em *microrganismos* (a classe continuou sendo substantivo).
-  - (D) Incorreta. *Sistema* não é sufixo de *eco*.
+  - (B) Não existe parassíntese em *ecossistema*, nem regressão em *microrganismos*.
+  - (C) Não há derivação imprópria em *microrganismos* (continua sendo substantivo).
+  - (D) *Sistema* é radical, e não sufixo de *eco*.
 * **Gabarito:** Letra **A**.
 </details>
 
 ---
 
 ### Questão 05
-**Banca:** INSTITUTO ACCESS | **Órgão:** Prefeitura Municipal de Cataguases/MG | **Ano:** 2024 | **Cargo:** Oficial Administrativo (Simulado Oficial 01, Prova 1, Q04)  
+**Banca:** INSTITUTO ACCESS | **Órgão:** Universidade Federal da Fronteira Sul (UFFS) | **Ano:** 2026 | **Cargo:** Assistente em Administração (Prova Oficial ACCESS 03, Q01)  
 
-No texto, o narrador afirma: *"Eles acentuaram o azul apenas para revelar as características que podemos ver na atmosfera de Netuno, e é por isso que a imagem parece muito azul..."* (L.19).  
-Na linha 19, a palavra "isso" desempenha papel:  
+Leia o período a seguir:  
+*"Indivíduos mais expostos a emulsificantes apresentaram maior risco de desenvolver diabetes tipo 2 e alguns tipos **'de câncer'**."*  
+Considerando a estrutura morfológica e o papel qualificativo do segmento destacado (*"de câncer"*), assinale a alternativa CORRETA.  
+(A) O trecho "de câncer" constitui locução adverbial de especificação, indicando circunstância de tempo associada ao desenvolvimento da doença.  
+(B) O trecho "de câncer" constitui numeral fracionário que divide exatamente a quantidade do substantivo "tipos".  
+(C) O trecho "de câncer" constitui locução adjetiva com valor qualificativo, funcionando como modificador nominal que caracteriza o substantivo "tipos".  
+(D) O trecho "de câncer" constitui pronome demonstrativo invariável que substitui o substantivo anterior "diabetes".  
+(E) O trecho "de câncer" constitui artigo indefinido composto que generaliza o substantivo "tipos".  
+
+<details>
+<summary><b>Ver Gabarito e Comentário Detalhado</b></summary>
+
+**Gabarito Oficial: C**
+
+**Comentário Passo a Passo:**  
+* **O que é a Locução Adjetiva (Eixo 3):**  
+  Quando a estrutura **Preposição (*de, em, com, sem*) + Substantivo** atua conjuntamente para caracterizar, especificar ou qualificar um substantivo anterior, temos uma **locução adjetiva** (duas palavras exercendo o papel de um adjetivo).
+* **Análise no trecho:**  
+  Na expressão *"alguns tipos **de câncer**"*, o bloco preposicionado *"de câncer"* qualifica e especifica o substantivo *"tipos"* (equivale a *tipos cancerígenos / oncológicos*). Logo, trata-se de uma **locução adjetiva** que caracteriza o substantivo *"tipos"*.
+* **Gabarito:** Letra **C**.
+</details>
+
+---
+
+### Questão 06
+**Banca:** INSTITUTO ACCESS | **Órgão:** Universidade Federal da Fronteira Sul (UFFS) | **Ano:** 2026 | **Cargo:** Assistente em Administração (Prova Oficial ACCESS 03, Q02)  
+
+Leia atentamente o trecho a seguir:  
+*"Pesquisas associam **essas** substâncias a problemas como doenças inflamatórias intestinais, síndrome do intestino irritável e **alguns** tipos de câncer do sistema digestório."*  
+Considerando a classificação morfológica das palavras presentes no trecho acima, assinale a alternativa CORRETA.  
+(A) O termo "síndrome" constitui adjetivo qualificativo, enquanto "inflamatórias" funciona como substantivo abstrato.  
+(B) O termo "câncer" constitui adjetivo que caracteriza o substantivo "tipos", enquanto "sistema" funciona como numeral que ordena o substantivo subsequente.  
+(C) O termo "problemas" funciona como pronome indefinido no período, enquanto "doenças" constitui adjetivo pátrio.  
+(D) O termo "essas" constitui pronome demonstrativo que determina o substantivo "substâncias", enquanto "alguns" funciona como pronome indefinido que determina o substantivo "tipos".  
+(E) O termo "intestino" funciona como adjetivo que caracteriza o substantivo "síndrome", enquanto "irritável" constitui substantivo próprio.  
+
+<details>
+<summary><b>Ver Gabarito e Comentário Detalhado</b></summary>
+
+**Gabarito Oficial: D**
+
+**Comentário Passo a Passo:**  
+* **Análise de "essas" (em *"essas substâncias"*):**  
+  É um **pronome demonstrativo** feminino plural que acompanha e determina o substantivo *substâncias* (atuando como pronome adjetivo com valor anafórico, retomando as substâncias mencionadas antes).
+* **Análise de "alguns" (em *"alguns tipos"*):**  
+  É um **pronome indefinido** variável que acompanha e determina o substantivo masculino plural *tipos* de maneira vaga/indeterminada.
+* **Por que as outras estão incorretas?**
+  - *Síndrome, câncer, sistema, problemas, doenças* e *intestino* são todos **substantivos** (núcleos nomeadores de seres/conceitos), enquanto *inflamatórias, intestinais, irritável* e *digestório* são **adjetivos**.
+* **Gabarito:** Letra **D**.
+</details>
+
+---
+
+### Questão 07
+**Banca:** INSTITUTO ACCESS | **Órgão:** Câmara Municipal de Conquista/MG | **Ano:** 2024 | **Cargo:** Assistente Legislativo (Prova Oficial ACCESS 21, Q04)  
+
+Leia o trecho completo retirado do texto da prova:  
+*"A carga de responsabilidade de trabalho, mas também dentro de casa com múltiplas tarefas e cuidados com as crianças, recai sobre as mulheres. Diante **desse** cenário, 71% dos homens concordam que mulheres são as principais responsáveis pelos recém-nascidos e 67% das mulheres também concordam com a afirmação."*  
+No período acima, o pronome demonstrativo sublinhado em **"desse"** (*de + esse*) apresenta valor:  
 (A) anafórico.  
 (B) catafórico.  
 (C) dêitico.  
@@ -1088,57 +1165,59 @@ Na linha 19, a palavra "isso" desempenha papel:
 **Gabarito Oficial: A**
 
 **Comentário Passo a Passo:**  
-* **A Mecânica da Coesão Textual:**  
-  - O pronome demonstrativo neutro **"isso"** (com duas letras 's') tem como função textual primordial referir-se a uma oração, ideia ou fato que **já foi explicitado antes** no texto.  
-  - Na frase, o pronome *isso* retoma o fato de que os astrônomos *acentuaram o azul para revelar características*. Por causa desse fato anterior, a imagem parece muito azul.  
-  - Quando a referência aponta para trás (recupera termo antecedente), a coesão é classificada gramaticalmente como **anafórica** (do grego *aná* = para cima, para trás).
-* **Diferença conceitual das outras alternativas:**
-  - **Catafórico:** Aponta para a frente, antecipando algo que ainda será dito (*Só digo isto: estudem*).
-  - **Dêitico / Exofórico:** Aponta para fora do texto, para o contexto físico situacional da fala (*Pegue este copo aqui*).
+* **Análise da Coesão no Trecho:**  
+  1. Na primeira frase, o texto apresenta uma situação completa: *a carga de responsabilidade de trabalho e de cuidados com a casa e as crianças recai sobre as mulheres*.  
+  2. Na frase seguinte, o autor escreve: *"Diante **desse** cenário..."* (`de + esse`).  
+  3. O pronome demonstrativo **esse** (com dois *s*) olha para trás e **retoma a informação que acabou de ser dita na frase anterior**.  
+  4. Todo pronome que resgata um termo ou ideia antecedente expresso no texto exerce papel **anafórico**.
+* **Relembrando as demais alternativas:**
+  - **Catafórico:** Aponta para a frente, anunciando o que ainda vai ser dito (usa *este/isto*).
+  - **Dêitico / Exofórico:** Aponta para fora do texto, situando o momento ou lugar físico real do falante (*aqui, agora, neste momento*).
 * **Gabarito:** Letra **A**.
 </details>
 
 ---
 
-### Questão 06
-**Banca:** AVANÇA SP | **Órgão:** Câmara Municipal de Itapecerica da Serra/SP | **Ano:** 2024 | **Cargo:** Oficial Administrativo (Prova 30, Q03)  
+### Questão 08
+**Banca:** FUNDATEC | **Órgão:** Prefeitura Municipal de Getúlio Vargas/RS | **Ano:** 2026 | **Cargo:** Oficial Administrativo (Prova 13, Q10)  
 
-Analise o excerto a seguir quanto aos mecanismos de coesão textual: *"Ele, por sua vez, não conseguia nadar e era puxado para mais longe pelas ondas."*  
-Assinale a alternativa que classifica corretamente o tipo de coesão textual verificada no excerto apresentado, com base no emprego do pronome pessoal, bem como indica o elemento a que o pronome se refere no texto.  
-(A) coesão referencial anafórica, que retoma o referente "o filhote" anteriormente enunciado.  
-(B) coesão referencial catafórica, que introduz o referente "o filhote" no texto.  
-(C) coesão referencial anafórica, que retoma o referente "um macho" anteriormente enunciado.  
-(D) coesão por substituição, que retoma e atualiza com uma nova característica o referente "o filhote" anteriormente enunciado.  
-(E) coesão lexical, que retoma por meio de um hiperônimo o referente "o filhote" anteriormente enunciado.  
+No trecho retirado do texto:  
+*"Outra medida de impacto tem sido o uso de insetos estéreis, uma variedade modificada do Aedes. Conhecidos como wolbitos, **eles** são portadores de uma bactéria chamada Wolbachia [...]"*  
+A utilização do pronome pessoal **"eles"** é caracterizada como um mecanismo de referenciação _____________, pois o referente surge _____________ do termo que o substitui.  
+Assinale a alternativa que preenche, correta e respectivamente, as lacunas do trecho acima:  
+(A) catafórica – depois  
+(B) catafórica – antes  
+(C) anafórica – depois  
+(D) anafórica – antes  
 
 <details>
 <summary><b>Ver Gabarito e Comentário Detalhado</b></summary>
 
-**Gabarito Oficial: A**
+**Gabarito Oficial: D**
 
 **Comentário Passo a Passo:**  
-* **Identificação do Pronome Pessoal e sua Função:**  
-  O termo destacado é o pronome pessoal reto masculino singular **"Ele"**.  
-* **Verificação no Contexto:**  
-  No parágrafo anterior do texto da prova, narra-se que a fêmea de elefante-marinho protegia seu filhote, o qual se debatia nas ondas. Em seguida, o autor insere: *"Ele, por sua vez, não conseguia nadar..."*. O pronome *Ele* resgata exatamente o substantivo *o filhote*.
-* **Classificação Coesiva:**  
-  Como resgata um antecedente textual expresso nas linhas anteriores, trata-se de **coesão referencial anafórica**. Não é catafórica (pois não aponta para a frente) nem lexical (não usou sinônimo ou hiperônimo substantivo, usou pronome gramatical).
-* **Gabarito:** Letra **A**.
+* **Identificando o Referente no Trecho:**  
+  Quem são *"eles"* que são conhecidos como wolbitos e portadores da bactéria *Wolbachia*? São os **"insetos estéreis"** citados na primeira frase!
+* **Preenchendo as Lacunas com Lógica:**  
+  1. Como o termo *"insetos estéreis"* (o referente) apareceu **antes** do pronome *"eles"* no texto, a segunda lacuna é preenchida por **antes**.  
+  2. Quando o pronome retoma um referente que veio **antes** dele na linha do tempo da leitura, o mecanismo de referenciação chama-se **anafórica**.
+* **Sequência correta:** **anafórica – antes**.
+* **Gabarito:** Letra **D**.
 </details>
 
 ---
 
-### Questão 07
-**Banca:** LEGALLE CONCURSOS | **Órgão:** Prefeitura Municipal de Silveira Martins/RS | **Ano:** 2026 | **Cargo:** Oficial Administrativo (Simulado Oficial 12, Prova 12, Q09)  
+### Questão 09
+**Banca:** LEGALLE CONCURSOS | **Órgão:** Câmara Municipal de Silveira Martins/RS | **Ano:** 2026 | **Cargo:** Oficial Administrativo (Prova 14, Q09)  
 
-Muitas palavras do texto são formadas por processos morfológicos de acréscimo de afixos ao radical. A respeito da estrutura e formação de palavras no texto, analise as seguintes assertivas:  
-I. O substantivo *subsecretária* é formado por derivação prefixal, mediante anexação de afixo de valor hierárquico inferior à base.  
-II. O vocábulo *escolaridade* provém de derivação sufixal a partir do adjetivo *escolar*, com acréscimo de sufixo nominalizador.  
-III. A forma verbal *acumulou* é classificada como exemplo clássico de composição por hibridismo greco-latino.  
+As palavras podem ser formadas por diferentes processos de combinação de radicais e afixos. Diante disso, analise a estrutura morfológica dos vocábulos **indisponibilidade** e **enfrentamento** e avalie as seguintes assertivas:  
+I. O termo *indisponibilidade* é formado pelo processo de derivação prefixal e sufixal, a partir da junção independente dos afixos *in-* e *-idade* ao radical de base.  
+II. O vocábulo *enfrentamento* constitui um caso de derivação parassintética, pois a remoção do prefixo *en-* ou do sufixo *-mento* gera palavras inexistentes.  
+III. Ambos os termos são substantivos abstratos formados a partir de bases verbais ou adjetivas na evolução do léxico da Língua Portuguesa.  
 Está CORRETO o que se afirma em:  
 (A) Apenas I.  
 (B) Apenas II.  
-(C) Apenas I e II.  
+(C) Apenas I e III.  
 (D) Apenas II e III.  
 (E) I, II e III.  
 
@@ -1148,23 +1227,24 @@ Está CORRETO o que se afirma em:
 **Gabarito Oficial: C**
 
 **Comentário Passo a Passo:**  
-* **Assertiva I (Verdadeira):**  
-  *Subsecretária* tem como base o substantivo *secretária*, ao qual se acoplou o prefixo latino *sub-* (que semanticamente indica posição inferior, abaixo ou subordinação funcional na administração pública). Formação legítima por **derivação prefixal**.
-* **Assertiva II (Verdadeira):**  
-  A cadeia de derivação é: *escola* (substantivo) → *escolar* (adjetivo com sufixo *-ar*) → *escolaridade* (substantivo abstrato formado com o sufixo nominalizador *-idade*). Portanto, derivado por sufixação a partir do adjetivo.
-* **Assertiva III (Falsa):**  
-  O verbo *acumulou* vem diretamente do latim *accumulare* (*ad-* + *cumulare*, de *cumulus* = monte, amontoar). Não é composição nem hibridismo (hibridismo ocorre em palavras com raízes de línguas diferentes, como *automóvel* = grego + latim; *sociologia* = latim + grego).
-* **Conclusão:** Estão corretas apenas as assertivas I e II.
+* **Assertiva I (CORRETA):**  
+  Em *indisponibilidade*, temos o prefixo *in-* e o sufixo *-idade* acoplados à base *disponível*. Aplicando o **Teste do Descarte**: se taparmos o prefixo *in-*, sobra **disponibilidade** (que existe sozinha!). Se taparmos o sufixo *-idade*, sobra **indisponível** (que também existe!). Portanto, trata-se de **derivação prefixal e sufixal**.
+* **Assertiva II (INCORRETA — Pegadinha Clássica de Prova!):**  
+  Aplique o **Teste do Descarte** na palavra *enfrentamento*: se retirarmos o sufixo *-mento*, a base verbal **enfrentar** existe perfeitamente no dicionário! Logo, a palavra *enfrentamento* foi formada apenas pelo acréscimo do sufixo *-mento* ao verbo já existente *enfrentar* (**derivação sufixal**). *(Nota: o verbo "enfrentar" sim veio de parassíntese sobre "frente", mas "enfrentamento" já parte do verbo pronto "enfrentar" + "-mento"!).*
+* **Assertiva III (CORRETA):**  
+  *Indisponibilidade* é um substantivo abstrato formado a partir de base adjetiva (*disponível*), e *enfrentamento* é um substantivo abstrato formado a partir de base verbal (*enfrentar*).
+* **Conclusão:** Estão corretas apenas **I e III**.
 * **Gabarito:** Letra **C**.
 </details>
 
 ---
 
-### Questão 08
+### Questão 10
 **Banca:** IDCAP | **Órgão:** Câmara Municipal de Santa Leopoldina/ES | **Ano:** 2024 | **Cargo:** Oficial Administrativo (Prova 28, Q03)  
 
-A diretora-gerente do FMI, Kristalina Georgieva, afirma que na **'maioria'** dos cenários, a IA provavelmente piorará a **'desigualdade'** geral.  
-Os vocábulos destacados são formados pelos processos de, respectivamente:  
+Leia a frase a seguir:  
+*"A diretora-gerente do FMI, Kristalina Georgieva, afirma que, na **'maioria'** dos cenários, a IA provavelmente piorará a **'desigualdade'** geral."*  
+Os vocábulos destacados (**maioria** e **desigualdade**) são formados pelos processos de, respectivamente:  
 (A) Justaposição / derivação imprópria  
 (B) Sufixação / parassíntese  
 (C) Sufixação / prefixação e sufixação  
@@ -1177,78 +1257,11 @@ Os vocábulos destacados são formados pelos processos de, respectivamente:
 
 **Comentário Passo a Passo:**  
 * **Análise de 'maioria':**  
-  Deriva do adjetivo comparativo *maior* com a anexação do sufixo nominal *-ia* (*maior* + *-ia* → *maioria*). Processo: **derivação sufixal (sufixação)**.
+  Deriva do adjetivo comparativo *maior* com o acréscimo do sufixo nominal *-ia* (*maior* + *-ia* → *maioria*). Processo: **derivação sufixal (sufixação)**.
 * **Análise de 'desigualdade':**  
-  A raiz primitiva é o adjetivo *igual*.  
-  1. Acrescentou-se o prefixo de negação *des-* → *desigual*.  
-  2. Acrescentou-se o sufixo formador de substantivo *-dade* → *desigualdade*.  
-  - **Por que não é parassíntese?** Faça o teste do descarte: se removermos o prefixo *des-*, a palavra *igualdade* continua existindo na língua portuguesa com pleno sentido! Portanto, os afixos são independentes → **derivação prefixal e sufixal**.
+  A raiz primitiva é o adjetivo *igual*. Acrescentou-se o prefixo *des-* (*desigual*) e o sufixo *-dade* (*desigualdade*).  
+  - **Por que não é parassíntese?** Pelo **Teste do Descarte**, se removermos o prefixo *des-*, a palavra **igualdade** continua existindo na língua portuguesa! E se removermos o sufixo *-dade*, a palavra **desigual** também existe! Portanto, os afixos são independentes → **derivação prefixal e sufixal**.
 * **Gabarito:** Letra **C**.
-</details>
-
----
-
-### Questão 09
-**Banca:** VUNESP | **Órgão:** Câmara Municipal de Fernandópolis/SP | **Ano:** 2022 | **Cargo:** Oficial Administrativo (Simulado Oficial 02, Prova 2, Q08)  
-
-Assinale a alternativa em que a substituição do pronome "que", na frase do texto reescrita, mantém o sentido original e a correção gramatical da norma-padrão.  
-(A) "Um novo estudo finlandês concluiu que pessoas das quais sofrem de insônia têm um risco maior de desenvolver problemas cognitivos..."  
-(B) "A pesquisa envolveu 3.748 participantes, os quais foram acompanhados por cerca de 15 anos após suas avaliações originais..."  
-(C) "Alguns participantes em que estavam na meia-idade e empregados no início do estudo já haviam se aposentado na fase final da pesquisa..."  
-(D) "Nossos resultados mostraram cujos sintomas de insônia já na idade ativa podem aumentar o risco de declínio cognitivo..."  
-(E) "A equipe ressalta ainda onde existem várias maneiras de melhorar a qualidade do nosso sono..."  
-
-<details>
-<summary><b>Ver Gabarito e Comentário Detalhado</b></summary>
-
-**Gabarito Oficial: B**
-
-**Comentário Passo a Passo:**  
-* **O Papel do Pronome Relativo e suas Equivalências:**  
-  O pronome relativo **"que"** refere-se a coisas ou pessoas e pode ser substituído por **"o qual, a qual, os quais, as quais"**, concordando em gênero e número com o antecedente.  
-* **Análise da Alternativa (B):**  
-  - No texto original: *"A pesquisa envolveu 3.748 participantes **que** foram acompanhados..."*.  
-  - O pronome *que* retoma o antecedente *participantes* (masculino plural) e funciona como sujeito do verbo *foram acompanhados*.  
-  - A forma equivalente culta correspondente é exatamente **"os quais"** (*os participantes*). Não há preposição exigida pelo verbo, portanto a substituição mantém a correção e o sentido idêntico.
-* **Erros das outras alternativas:**
-  - (A) *"pessoas das quais sofrem"*: O verbo *sofrer* não pede a preposição *de* para seu sujeito! O correto seria apenas *as quais*.
-  - (C) *"participantes em que estavam"*: A preposição *em* é indevida como sujeito.
-  - (D) *"mostraram cujos sintomas"*: *Cujo* exige relação de posse entre dois substantivos (*pesquisadores cujos estudos...*). Aqui o verbo *mostraram* é transitivo direto e pedia conjunção integrante *que* (*mostraram que os sintomas...*).
-  - (E) *"ressalta ainda onde existem"*: O pronome *onde* só pode ser empregado para indicar **lugar físico palpável**, jamais ideias abstratas ou como conjunção integrante!
-* **Gabarito:** Letra **B**.
-</details>
-
----
-
-### Questão 10
-**Banca:** LEGALLE CONCURSOS | **Órgão:** Câmara Municipal de Silveira Martins/RS | **Ano:** 2026 | **Cargo:** Oficial Administrativo (Prova 14, Q08)  
-
-No texto da prova, lê-se: *"Para os responsáveis pelo relatório, os indicadores **que** apresentaram piora revelam **que** os principais mecanismos de reprodução das desigualdades permanecem ativos."*  
-Sobre a função sintática e morfológica dos dois termos **"que"** no fragmento acima, assinale a alternativa CORRETA.  
-(A) Ambos classificam-se como conjunções integrantes, exercendo o papel de conectar orações coordenadas explicativas.  
-(B) O primeiro *que* é uma conjunção integrante (sujeito); o segundo *que* é um pronome relativo que introduz uma oração restritiva.  
-(C) Ambos são pronomes relativos que retomam os antecedentes *indicadores* e *piora* no período.  
-(D) O primeiro *que* é um pronome relativo com função sintática de sujeito; o segundo *que* é uma conjunção integrante que introduz uma oração objetiva direta.  
-(E) O primeiro *que* funciona como objeto direto da oração adjetiva; o segundo *que* funciona como sujeito da oração subordinada substantiva.  
-
-<details>
-<summary><b>Ver Gabarito e Comentário Detalhado</b></summary>
-
-**Gabarito Oficial: D**
-
-**Comentário Passo a Passo:**  
-* **O Teste dos Dois "Que":**  
-  Esta é uma das questões mais clássicas e importantes de Língua Portuguesa em concursos de nível médio.  
-1. **Primeira ocorrência:** *"os indicadores [que apresentaram piora]"*  
-   - O termo *que* está posicionado logo após o substantivo *indicadores*.  
-   - Podemos substituí-lo por *os quais*: *"os indicadores os quais apresentaram piora"*.  
-   - Logo, trata-se de um **pronome relativo**.  
-   - Qual a sua função sintática interna? Substitua o pronome pelo seu antecedente na oração adjetiva: *[Os indicadores] apresentaram piora*. Quem apresentou piora? *Os indicadores*. Portanto, o pronome relativo exerce função de **sujeito**.
-2. **Segunda ocorrência:** *"...revelam [que os principais mecanismos (...) permanecem ativos]"*  
-   - O termo *que* está posicionado logo após o verbo transitivo direto *revelam* (*quem revela, revela alguma coisa*).  
-   - Podemos substituir toda a oração iniciada pelo *que* pela palavra **"isso"**: *"revelam [isso]"*.  
-   - Quando a oração pode ser substituída por *isso*, o conectivo é uma **conjunção integrante**, que introduz uma oração subordinada substantiva objetiva direta.
-* **Gabarito:** Letra **D**.
 </details>
 
 ---
@@ -1260,5 +1273,5 @@ Copie estas cinco perguntas-chave no seu caderno de resumos e responda em voz al
 1. [ ] Sei explicar a diferença entre substantivo concreto e abstrato sem cair na armadilha do "pegar com a mão" (critério da existência autônoma)?  
 2. [ ] Consigo aplicar o "Teste do Descarte" para provar quando uma palavra é parassintética e quando é derivação prefixal e sufixal independente?  
 3. [ ] Sei quando um substantivo abstrato nasce de um verbo por derivação regressiva (ex: *encontrar → o encontro*)?  
-4. [ ] Dominei o papel do pronome no texto, sabendo exatamente que *isso/esse* resgata o que já passou (anáfora) e *isto/este* anuncia o que vai ser dito (catáfora)?  
-5. [ ] Sei a regra lógica do plural dos adjetivos compostos (apenas o último varia) e por que expressões de cor com substantivo (*verde-oliva, amarelo-ouro*) ficam 100% invariáveis?
+4. [ ] Dominei o papel do pronome no texto, sabendo que *isso/esse* resgata o que veio antes (anáfora), *isto/este* anuncia o que vem depois (catáfora), e que o papel *dêitico/exofórico* aponta para fora do texto?  
+5. [ ] Sei a regra lógica do plural dos substantivos e adjetivos compostos e por que expressões de cor com substantivo (*verde-oliva, amarelo-ouro, azul-cobalto*) ficam 100% invariáveis?

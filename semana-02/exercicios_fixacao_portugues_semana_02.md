@@ -12,12 +12,13 @@
    - Antes de substantivo feminino (troca por *o* no masculino) → **Artigo Definido**.
    - Preso ao verbo substituindo um nome feminino (= *ela*) → **Pronome Pessoal Oblíquo**.
    - Exigido por um verbo ou nome para ligar termos (invariável) → **Preposição**.
-3. **Anáfora vs. Catáfora (Bússola da Coesão):**
-   - **Anáfora (Olha para trás):** Retoma termo já dito antes. Usa **ESSE / ESSA / ISSO** e pronomes como *ele, ela, o, a*.
-   - **Catáfora (Olha para a frente):** Anuncia termo que ainda será dito. Usa **ESTE / ESTA / ISTO**.
-4. **Duelo dos Dois "QUE" (Pronome Relativo vs. Conjunção Integrante):**
-   - Troca por **o qual / a qual / os quais / as quais**? → **Pronome Relativo** (retoma substantivo anterior).
-   - Troca a oração inteira por **ISSO**? → **Conjunção Integrante** (completa o sentido de um verbo).
+3. **Anáfora vs. Catáfora vs. Dêixis/Exófora (Bússola da Coesão):**
+   - **Endófora Anafórica (Olha para trás no texto):** Retoma termo já dito antes (o referente surge **antes** do pronome). Usa **ESSE / ESSA / ISSO** e pronomes como *ele, ela, eles, o, a*.
+   - **Endófora Catafórica (Olha para a frente no texto):** Anuncia termo que ainda será dito (o referente surge **depois** do pronome). Usa **ESTE / ESTA / ISTO**.
+   - **Exófora / Papel Dêitico (Aponta para fora do texto):** Aponta para a situação real de quem fala, o lugar ou o momento da fala (*eu, tu, aqui, agora, hoje*).
+4. **Locução Adjetiva e Pronomes Demonstrativos vs. Indefinidos:**
+   - **Locução Adjetiva:** Preposição (*de, em, com, sem*) + Substantivo com valor de adjetivo qualificativo (*amor de mãe = materno*, *tipos de câncer*, *água da chuva = pluvial*).
+   - **Demonstrativo vs. Indefinido:** *Este, esse, aquele* apontam/situam com precisão (**Demonstrativos**); *algum, alguns, nenhum, todo, outro, vários, cada, qualquer* indicam quantidade vaga (**Indefinidos**).
 5. **Pronomes Relativos Especiais:**
    - **ONDE:** Exclusivo para **lugar físico** (= *em que / no qual*).
    - **CUJO:** Indica **posse** entre dois substantivos e **jamais aceita artigo** depois (*cujo processo*, nunca *"cujo o processo"*).
@@ -111,15 +112,15 @@ A posição do adjetivo em relação ao substantivo pode alterar substancialment
 ---
 
 ### Questão 04
-**Banca:** Treino Preparatório (Preparativo Direto para a Questão 03 Real) | **Eixo 3 e 7:** Flexão de Adjetivos, Anexo e Meio  
+**Banca:** Treino Preparatório (Preparativo Direto para a Questão 05 Real) | **Eixo 3:** Locução Adjetiva e Graus do Adjetivo  
 
-No preenchimento de um despacho administrativo, o servidor redigiu:  
-*"Seguem _____ (1) as planilhas _____ (2), visto que a diretora ficou _____ (3) preocupada com os prazos."*  
-De acordo com a norma-padrão da língua portuguesa, as lacunas devem ser preenchidas, correta e respectivamente, por:  
-(A) anexo / econômico-financeiras / meia  
-(B) anexas / econômico-financeiras / meio  
-(C) anexas / econômicas-financeiras / meio  
-(D) em anexas / econômico-financeira / meia  
+Leia o trecho extraído de um relatório de fiscalização sanitária:  
+*"A inspeção constatou que o armazenamento **de alimentos** ocorria em condições **péssimas**, exigindo providências **de urgência** por parte da equipe **noturna**."*  
+Sobre a classificação morfológica e o grau das expressões destacadas, assinale a alternativa CORRETA:  
+(A) As expressões "de alimentos" e "de urgência" são locuções substantivas, pois ambas têm como núcleo um substantivo concreto.  
+(B) As expressões "de alimentos" e "de urgência" são locuções adjetivas (estruturas preposicionadas que qualificam os substantivos "armazenamento" e "providências"), e "péssimas" está no grau superlativo absoluto sintético.  
+(C) O adjetivo "péssimas" encontra-se no grau comparativo de superioridade analítico, e "noturna" é um substantivo abstrato.  
+(D) Apenas "noturna" desempenha papel qualificativo na frase, visto que "de urgência" não possui adjetivo equivalente na língua portuguesa.  
 
 <details>
 <summary><b>Ver Gabarito e Comentário Detalhado</b></summary>
@@ -127,9 +128,8 @@ De acordo com a norma-padrão da língua portuguesa, as lacunas devem ser preenc
 **Gabarito Oficial: B**
 
 **Comentário Passo a Passo:**  
-* **Lacuna (1) — Anexas:** A palavra *anexo* é um adjetivo e concorda em gênero e número com o substantivo a que se refere (*as planilhas* = feminino plural → *Seguem **anexas** as planilhas*). *(Nota: a expressão "em anexo" é invariável, mas jamais existe "em anexas").*
-* **Lacuna (2) — Adjetivo Composto:** Em *econômico-financeiras*, apenas o **último elemento** flexiona em gênero e número com *planilhas*, enquanto o primeiro fica no masculino singular com vogal de ligação *-o-* (**econômico-financeiras**).
-* **Lacuna (3) — Meio vs. Meia:** Antes do adjetivo *preocupada*, a palavra equivale a *"um pouco"* e funciona como **advérbio de intensidade** (classe invariável). Portanto: *ficou **meio** preocupada*.
+* **Locuções Adjetivas ("de alimentos" e "de urgência"):** Toda expressão formada por **Preposição + Substantivo** que caracteriza outro substantivo funciona como **locução adjetiva** (*armazenamento de alimentos = alimentício*; *providências de urgência = urgentes*). É exatamente esse o modelo cobrado pela Banca ACCESS na Questão 05 Real (*"tipos de câncer"*).
+* **Grau do Adjetivo ("péssimas"):** *Péssimo* é a forma erudita de uma só palavra para *"muito mau"* → **grau superlativo absoluto sintético** (assim como *ótimo, máximo, mínimo, célebre → celebérrimo*).
 * **Gabarito:** Letra **B**.
 </details>
 
@@ -238,7 +238,7 @@ Assinale a alternativa em que o emprego dos pronomes pessoais (retos e oblíquos
 ---
 
 ### Questão 09
-**Banca:** Treino Preparatório (Preparativo Direto para a Questão 09 Real) | **Eixo 5:** Pronomes Relativos (QUE, O QUAL, CUJO, ONDE)  
+**Banca:** Treino Preparatório (Foco VUNESP / ACCESS / Legalle) | **Eixo 5:** Pronomes Relativos (QUE, O QUAL, CUJO, ONDE)  
 
 Sobre o emprego culto dos pronomes relativos na construção de períodos, assinale a alternativa CORRETA.  
 (A) "Foi publicado o novo decreto municipal onde regulamenta o horário de atendimento ao público."  
@@ -252,7 +252,7 @@ Sobre o emprego culto dos pronomes relativos na construção de períodos, assin
 **Gabarito Oficial: C**
 
 **Comentário Passo a Passo:**  
-* **Por que a (C) está correta?** O pronome relativo composto **"os quais"** retoma perfeitamente o antecedente masculino plural *"os candidatos classificados"*, exercendo a função de sujeito da forma verbal *"deverão apresentar"*.
+* **Por que a (C) está correta?** O pronome relativo composto **"os quais"** retoma perfeitamente o antecedente masculino plural *"os candidatos classificados"*, mantendo a coesão sem ambiguidade.
 * **Erros clássicos nas outras alternativas:**
   - (A) **Onde** só pode ser usado para retomar **lugar físico**. *Decreto* é um documento jurídico, não um espaço físico; o correto é *"decreto **que** (ou **o qual**) regulamenta"*.
   - (B) O pronome relativo **cujo** já embute concordância com o substantivo seguinte e **jamais aceita artigo posposto**. O correto é *"cujo requerimento"* (sem o "o").
@@ -263,26 +263,26 @@ Sobre o emprego culto dos pronomes relativos na construção de períodos, assin
 ---
 
 ### Questão 10
-**Banca:** Treino Preparatório (Preparativo Direto para a Questão 10 Real) | **Eixo 5:** Duelo dos Dois "QUE"  
+**Banca:** Treino Preparatório (Preparativo Direto para as Questões 06, 07 e 08 Reais) | **Eixo 5:** Pronomes Demonstrativos, Indefinidos e Posição do Referente  
 
-Leia atentamente o período abaixo:  
-*"Os relatórios **que** (1) a comissão auditou comprovam **que** (2) as metas orçamentárias foram integralmente cumpridas."*  
-A respeito da classificação morfológica dos vocábulos **"que"** (1) e **"que"** (2), é CORRETO afirmar que:  
-(A) O primeiro é conjunção integrante; o segundo é pronome relativo.  
-(B) O primeiro é pronome relativo (substituível por "os quais"); o segundo é conjunção integrante (introduz oração substituível por "isso").  
-(C) Ambos são pronomes relativos que retomam o substantivo "relatórios".  
-(D) Ambos são conjunções integrantes que introduzem orações subordinadas substantivas.  
+Leia o trecho a seguir:  
+*"Os novos sistemas digitais reduziram o tempo de espera nos guichês municipais. Por causa **dessas** ferramentas e de **alguns** ajustes no fluxo de triagem, os cidadãos passaram a ser atendidos rapidamente, pois **eles** agora agendam o serviço pela internet."*  
+A respeito da classificação morfológica e do mecanismo de referenciação dos vocábulos destacados, assinale a alternativa CORRETA:  
+(A) "dessas" contém um pronome indefinido e "alguns" é um pronome demonstrativo.  
+(B) "eles" estabelece referenciação catafórica, pois seu referente ("os cidadãos") surge depois do pronome no texto.  
+(C) "dessas" (contração de *de + essas*, pronome demonstrativo) e "eles" (pronome pessoal reto) realizam referenciação endofórica anafórica, pois retomam referentes que surgem antes deles no texto, enquanto "alguns" é um pronome indefinido.  
+(D) "eles" exerce papel exclusivamente exofórico (dêitico), pois não possui referente expresso dentro do texto.  
 
 <details>
 <summary><b>Ver Gabarito e Comentário Detalhado</b></summary>
 
-**Gabarito Oficial: B**
+**Gabarito Oficial: C**
 
 **Comentário Passo a Passo:**  
-* **Aplicando o Teste Infalível nos dois "QUE":**
-  1. **Primeiro "que":** Está logo após o substantivo *relatórios*. Teste a troca por **os quais**: *"Os relatórios **os quais** a comissão auditou..."*. Faz sentido perfeito! Portanto, o primeiro *que* é **pronome relativo** (com função sintática de objeto direto de *auditou*).
-  2. **Segundo "que":** Está logo após o verbo *comprovam*. Teste trocar toda a oração seguinte pela palavra **ISSO**: *"...comprovam **ISSO**."* Encaixa perfeitamente! Portanto, o segundo *que* é **conjunção integrante** (introduz oração subordinada substantiva objetiva direta).
-* **Gabarito:** Letra **B**.
+* **1. "dessas" (*de + essas*) vs. "alguns":** *Essas* aponta especificamente para as ferramentas digitais recém-citadas (**pronome demonstrativo**); já *alguns* quantifica o substantivo *ajustes* de modo vago e impreciso (**pronome indefinido**).
+* **2. "eles" e a Posição do Referente:** O pronome pessoal **"eles"** retoma o termo *"os cidadãos"*, que apareceu **antes** do pronome na frase. Quando o referente surge **antes** do pronome dentro do texto, temos **referenciação endofórica anafórica**.
+* **Por que não é catafórica nem exofórica/dêitica?** Seria *catafórica* se o referente aparecesse *depois* do pronome; seria *exofórica/dêitica* se apontasse para fora do texto sem palavra antecedente escrita.
+* **Gabarito:** Letra **C**.
 </details>
 
 ---
