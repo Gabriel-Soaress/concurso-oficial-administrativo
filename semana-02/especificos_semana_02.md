@@ -30,26 +30,48 @@ Neste guia, você vai entender com precisão cirúrgica cada uma dessas engrenag
 
 Antes de aprofundar, observe este mapa mental estrutural. Todo o assunto da nossa semana cabe nesta organização visual:
 
-```mermaid
-flowchart TD
-    Estado["ADMINISTRAÇÃO PÚBLICA"] --> Direta["ADMINISTRAÇÃO DIRETA (Pessoas Políticas)\nUnião, Estados, DF e Municípios"]
-    Estado --> Indireta["ADMINISTRAÇÃO INDIRETA (Entidades Descentralizadas)\nAutarquias, Fundações, Empresas Públicas e Sociedades de Economia Mista"]
+```text
+┌──────────────────────────────────────────────────────────────────────────┐
+│                     ESTRUTURA DA ADMINISTRAÇÃO PÚBLICA                   │
+└────────────────────────────────────┬─────────────────────────────────────┘
+                                     │
+           ┌─────────────────────────┴─────────────────────────┐
+           ▼                                                   ▼
+┌──────────────────────────────────────┐   ┌──────────────────────────────────────┐
+│         ADMINISTRAÇÃO DIRETA         │   │        ADMINISTRAÇÃO INDIRETA        │
+│    (Pessoas Políticas Federativas)   │   │     (Entidades Descentralizadas)     │
+│   • União, Estados, DF e Municípios  │   │      Mnemônico F-A-S-E (Todas PJ)    │
+│   • Regime 100% Direito Público      │   │ • Autarquias (Direito Público)       │
+│   • Atuação Centralizada (da cúpula) │   │ • Fundações Públicas (Púb. ou Priv.) │
+└──────────────────┬───────────────────┘   │ • Empresas Públicas (Dir. Privado)   │
+                   │                       │ • Soc. de Economia Mista (Dir. Priv.)│
+                   │                       └──────────────────┬───────────────────┘
+                   │                                          │
+       [ DESCONCENTRAÇÃO INTERNA ]                [ DESCONCENTRAÇÃO INTERNA ]
+ (Cria ÓRGÃOS no MESMO CNPJ / HIERARQUIA)   (Cria ÓRGÃOS no MESMO CNPJ / HIERARQUIA)
+                   │                                          │
+                   ▼                                          ▼
+┌──────────────────────────────────────┐   ┌──────────────────────────────────────┐
+│            ÓRGÃOS DA DIRETA          │   │           ÓRGÃOS DA INDIRETA         │
+│ • Gabinete do Prefeito               │   │ • Presidência do SAAE                │
+│ • Secretaria de Administração        │   │ • Diretoria de Operações de Água     │
+│ • Secretaria de Finanças             │   │ • Departamento Financeiro do IPREV   │
+│ • Setor de Protocolo Geral           │   │ • Seção de Atendimento ao Segurado   │
+└──────────────────────────────────────┘   └──────────────────────────────────────┘
 
-    Direta -->|"Criação de Órgãos Internos\n(Mesmo CNPJ / Hierarquia)"| DesconcDireta["DESCONCENTRAÇÃO\n(Gabinete do Prefeito, Secretarias, Departamentos, Protocolo)"]
-    Indireta -->|"Criação de Órgãos Internos\n(Mesmo CNPJ da Entidade)"| DesconcIndireta["DESCONCENTRAÇÃO INTERNA\n(Diretorias, Seções do SAAE, etc.)"]
+════════════════════════════════════════════════════════════════════════════════
+               FORMAS DE DESCENTRALIZAÇÃO (OUTORGA vs. DELEGAÇÃO)
+════════════════════════════════════════════════════════════════════════════════
 
-    Direta -->|"Descentralização por Serviços / Outorga (Lei)\nTransfere Titularidade + Execução"| Indireta
-    Direta -->|"Descentralização por Delegação / Colaboração (Contrato/Ato)\nTransfere Apenas Execução"| Particulares["PARTICULARES CONCESSIONÁRIOS / PERMISSIONÁRIOS\n(Ex: Empresas de Ônibus, Coleta de Lixo)"]
+  1. DESCENTRALIZAÇÃO POR SERVIÇOS / OUTORGA (LEGAL):
+     Prefeitura (Direta) ──[ LEI ESPECÍFICA ]──► Administração Indireta (FASE)
+     • Transfere TITULARIDADE + EXECUÇÃO (para pessoas de direito público).
+     • Relação: VINCULAÇÃO / TUTELA (SEM subordinação hierárquica!).
 
-    classDef direta fill:#e8f4fd,stroke:#1a73e8,stroke-width:2px,color:#1a73e8;
-    classDef indireta fill:#e6f4ea,stroke:#137333,stroke-width:2px,color:#137333;
-    classDef descon fill:#fef7e0,stroke:#b06000,stroke-width:2px,color:#b06000;
-    classDef part fill:#fce8e6,stroke:#c5221f,stroke-width:2px,color:#c5221f;
-
-    class Direta direta;
-    class Indireta indireta;
-    class DesconcDireta,DesconcIndireta descon;
-    class Particulares part;
+  2. DESCENTRALIZAÇÃO POR COLABORAÇÃO / DELEGAÇÃO:
+     Prefeitura (Direta) ──[ CONTRATO DE CONCESSÃO / ATO ]──► Particulares Privados
+     • Transfere APENAS A EXECUÇÃO temporária (Titularidade fica com o Município).
+     • Ex: Concessionárias de Ônibus Coletivo, Empresas de Coleta de Lixo.
 ```
 
 ---
@@ -255,48 +277,42 @@ Percebeu a sutileza gramatical e jurídica?
 
 ### O Raio-X Detalhado das 4 Entidades
 
-```mermaid
-classDiagram
-    class EntidadesDaAdministracaoIndireta {
-        <<Abstrato>>
-        Personalidade Juridica Propria
-        Patrimonio Proprio
-        Vinculacao (Tutela)
-        Concurso Publico
-    }
-    class Autarquia {
-        Direito Publico
-        Criada por Lei Especifica
-        Atividades Tipicas de Estado
-        Bens Publicos Impenhoraveis
-        Ex: SAAE, IPREV, INSS
-    }
-    class FundacaoPublica {
-        Direito Publico ou Privado
-        Autorizada por Lei Especifica
-        Fins Sociais Sem Lucro
-        Areas definidas por LC
-        Ex: Fundacao Municipal de Saude
-    }
-    class EmpresaPublica {
-        Direito Privado
-        Capital 100% Publico
-        Qualquer forma societaria (LTDA, S/A)
-        Celetistas (CLT)
-        Ex: CEF, Correios, PRODAM
-    }
-    class SociedadeDeEconomiaMista {
-        Direito Privado
-        Capital Misto (Maioria Votante Publica)
-        Forma Obrigatoria: S/A
-        Celetistas (CLT)
-        Ex: Banco do Brasil, Petrobras
-    }
-
-    EntidadesDaAdministracaoIndireta <|-- Autarquia
-    EntidadesDaAdministracaoIndireta <|-- FundacaoPublica
-    EntidadesDaAdministracaoIndireta <|-- EmpresaPublica
-    EntidadesDaAdministracaoIndireta <|-- SociedadeDeEconomiaMista
+```text
+┌────────────────────────────────────────────────────────────────────────┐
+│           ANATOMIA DAS 4 ENTIDADES DA ADMINISTRAÇÃO INDIRETA           │
+│           (Todas possuem Personalidade Jurídica e Patrimônio Próprio)  │
+└───────┬──────────────────┬─────────────────────┬───────────────────────┘
+        │                  │                     │                       │
+        ▼                  ▼                     ▼                       ▼
+┌──────────────┐   ┌───────────────┐     ┌───────────────┐       ┌───────────────┐
+│  AUTARQUIA   │   │   FUNDAÇÃO    │     │EMPRESA PÚBLICA│       │SOC. ECONOMIA  │
+│              │   │    PÚBLICA    │     │     (EP)      │       │  MISTA (SEM)  │
+├──────────────┤   ├───────────────┤     ├───────────────┤       ├───────────────┤
+│ Personalid.: │   │ Personalid.:  │     │ Personalid.:  │       │ Personalid.:  │
+│ Dir. PÚBLICO │   │ Dir. PÚBLICO  │     │ Dir. PRIVADO  │       │ Dir. PRIVADO  │
+│              │   │ ou PRIVADO    │     │               │       │               │
+├──────────────┤   ├───────────────┤     ├───────────────┤       ├───────────────┤
+│ Criação:     │   │ Criação:      │     │ Criação:      │       │ Criação:      │
+│ DIRETAMENTE  │   │ Púb: por Lei  │     │ AUTORIZADA por│       │ AUTORIZADA por│
+│ por LEI      │   │ Priv: AUTORIZ.│     │ lei + registro│       │ lei + registro│
+│ específica   │   │ por lei + LC  │     │ na Junta/Cart.│       │ comercial     │
+├──────────────┤   ├───────────────┤     ├───────────────┤       ├───────────────┤
+│ Capital:     │   │ Capital:      │     │ Capital:      │       │ Capital:      │
+│ 100% Público │   │ 100% Público  │     │ 100% PÚBLICO  │       │ MISTO         │
+│ (Patrimônio) │   │ (Dotação)     │     │ (zero privado)│       │ (Voto público)│
+├──────────────┤   ├───────────────┤     ├───────────────┤       ├───────────────┤
+│ Formato:     │   │ Formato:      │     │ Formato:      │       │ Formato:      │
+│ Direito Púb. │   │ Fundação      │     │ QUALQUER forma│       │ OBRIGATÓRIO:  │
+│ (específico) │   │ sem fins luc. │     │ (Ltda., S/A)  │       │ Apenas S/A    │
+├──────────────┤   ├───────────────┤     ├───────────────┤       ├───────────────┤
+│ Pessoal:     │   │ Pessoal:      │     │ Pessoal:      │       │ Pessoal:      │
+│ Estatutário  │   │ Estatutário   │     │ CLT           │       │ CLT           │
+│ (concurso)   │   │ ou CLT        │     │ (concurso)    │       │ (concurso)    │
+├──────────────┤   ├───────────────┤     ├───────────────┤       ├───────────────┤
+│ Exemplo:     │   │ Exemplo:      │     │ Exemplo:      │       │ Exemplo:      │
+│ SAAE, IPREV, │   │ Fundação Mun. │     │ Caixa, Correio│       │ Banco Brasil, │
+│ INSS, IBAMA  │   │ de Cultura    │     │ PRODAM, EMURB │       │ Petrobras     │
+└──────────────┘   └───────────────┘     └───────────────┘       └───────────────┘
 ```
 
 ---
