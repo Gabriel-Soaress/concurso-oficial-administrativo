@@ -1454,7 +1454,7 @@
   </main>
   </div>
 
-  <script src="aulas-data.js?v=20261104_05"></script>
+  <script src="aulas-data.js?v=20261104_06"></script>
   <script>
     const DB_SQL_URL = "https://ep-muddy-thunder-ac0eoxn3-pooler.sa-east-1.aws.neon.tech/sql";
     const DB_CONN_STR = "postgresql://neondb_owner:npg_l2mWY5HINrgG@ep-muddy-thunder-ac0eoxn3-pooler.sa-east-1.aws.neon.tech/neondb?sslmode=require";
@@ -2127,11 +2127,14 @@
                     ? `<span class="px-2 py-0.5 rounded-md text-[11px] font-mono font-extrabold bg-white/20 text-white">🏆 ${qSaved.correct}/${qSaved.total}</span>`
                     : "";
                   const isWorksheet = doc.kind === "worksheet";
+                  const isFixation = !doc.isMain && doc.kind === "lesson";
                   const btnLabel = isWorksheet
                     ? `📝 Lista de Exercícios (${doc.questionCount || 43})`
+                    : isFixation
+                    ? `📝 Lista de Fixação (${doc.questionCount || 15} Questões)`
                     : `📖 Estudar Aula & Questões (${doc.questionCount || 10})`;
                   const btnVariant = dIdx === 0 ? "primary" : "secondary";
-                  const rightCall = isWorksheet ? "Abrir Lista →" : "Abrir Aula →";
+                  const rightCall = (isWorksheet || isFixation) ? "Abrir Lista →" : "Abrir Aula →";
                   return `
                     <button type="button" onclick="openLessonReader('${item.id}', ${dIdx})" class="lesson-launch-btn ${btnVariant}">
                       <span class="truncate">${btnLabel}</span>
@@ -2877,9 +2880,15 @@
     function renderMCQuestionsForm(doc, questions) {
       const store = getQuizStore();
       if (!store[doc.id]) {
-        store[doc.id] = { answers: {}, eliminated: {}, checkedMap: {}, submitted: false, correct: 0, total: questions.length };
+        store[doc.id] = { answers: {}, eliminated: {}, checkedMap: {}, hideCommMap: {}, submitted: false, correct: 0, total: questions.length };
       }
       const qState = store[doc.id];
+      if (!qState.checkedMap) qState.checkedMap = {};
+      if (!qState.hideCommMap) qState.hideCommMap = {};
+      // Migração de estado caso submitted já estivesse true sem checkedMap individual
+      if (qState.submitted && Object.keys(qState.checkedMap).length === 0) {
+        questions.forEach(q => { qState.checkedMap[q.num] = true; });
+      }
       qState.total = questions.length;
 
       const answeredCount = Object.keys(qState.answers || {}).length;
@@ -2920,7 +2929,8 @@
 
       const cardsHtml = questions.map(q => {
         const userAns = qState.answers[q.num] || null;
-        const isEvaluated = !!(qState.submitted || (qState.checkedMap && qState.checkedMap[q.num]));
+        const isEvaluated = !!(qState.checkedMap && qState.checkedMap[q.num]);
+        const isCommHidden = !!(qState.hideCommMap && qState.hideCommMap[q.num]);
         const isCorrect = isEvaluated && userAns === q.answerLetter;
         const isWrong = isEvaluated && userAns && userAns !== q.answerLetter;
         const isBlank = isEvaluated && !userAns;
@@ -2999,19 +3009,38 @@
             </div>
 
             <!-- Botão Individual + Gabarito Comentado -->
-            <div class="pt-3 border-t border-tech flex flex-wrap items-center justify-between gap-3">
-              <button
-                type="button"
-                onclick="checkSingleMCQuestion('${doc.id}', ${q.num})"
-                class="btn-secondary !py-2 !px-4 !text-xs"
-              >
-                <span>${isEvaluated ? '🔄 Rever Correção' : '✔️ Responder e Corrigir esta Questão'}</span>
-              </button>
+            <div class="pt-3 border-t border-tech flex flex-wrap items-center justify-between gap-2.5">
+              <div class="flex flex-wrap items-center gap-2">
+                ${!isEvaluated ? `
+                  <button
+                    type="button"
+                    onclick="checkSingleMCQuestion('${doc.id}', ${q.num})"
+                    class="btn-primary !py-2 !px-4 !text-xs"
+                  >
+                    <span>✔️ Responder e Corrigir esta Questão</span>
+                  </button>
+                ` : `
+                  <button
+                    type="button"
+                    onclick="toggleMCQuestionCommentary('${doc.id}', ${q.num})"
+                    class="btn-secondary !py-2 !px-3.5 !text-xs"
+                  >
+                    <span>${isCommHidden ? '📖 Rever Correção Comentada' : '🔼 Ocultar Correção'}</span>
+                  </button>
+                  <button
+                    type="button"
+                    onclick="resetSingleMCQuestion('${doc.id}', ${q.num})"
+                    class="btn-secondary !py-2 !px-3.5 !text-xs"
+                  >
+                    <span>🔄 Refazer esta Questão</span>
+                  </button>
+                `}
+              </div>
               ${isEvaluated ? `<span class="text-xs font-mono font-bold text-indigo-600 dark:text-indigo-400">Gabarito Oficial: Letra ${q.answerLetter} ${q.answerExtra}</span>` : ""}
             </div>
 
-            ${isEvaluated ? `
-              <div class="rounded-2xl p-4 sm:p-5 border ${isCorrect ? 'border-emerald-500/40 bg-emerald-500/5' : 'border-indigo-500/40 bg-indigo-500/5'} space-y-2.5">
+            ${(isEvaluated && !isCommHidden) ? `
+              <div id="qcomm_${doc.id}_${q.num}" class="rounded-2xl p-4 sm:p-5 border ${isCorrect ? 'border-emerald-500/40 bg-emerald-500/5' : 'border-indigo-500/40 bg-indigo-500/5'} space-y-2.5">
                 <div class="flex items-center justify-between gap-2">
                   <span class="text-xs font-mono uppercase font-extrabold text-indigo-600 dark:text-indigo-400">
                     📖 Gabarito Oficial: Letra ${q.answerLetter} ${q.answerExtra} — Comentário Passo a Passo
@@ -3030,8 +3059,8 @@
         <div id="interactiveQuestionsAnchor" class="space-y-6 pt-4">
           <div class="surface rounded-2xl p-5 sm:p-6 border-l-4 border-l-indigo-500 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
             <div class="space-y-1">
-              <div class="text-xs font-mono uppercase font-bold text-indigo-600 dark:text-indigo-400">🎯 Simulado Interativo da Aula</div>
-              <h3 class="text-lg sm:text-xl font-extrabold">Bateria de ${questions.length} Questões Reais de Concurso</h3>
+              <div class="text-xs font-mono uppercase font-bold text-indigo-600 dark:text-indigo-400">${!doc.isMain ? '📝 Treino Interativo de Fixação' : '🎯 Simulado Interativo da Aula'}</div>
+              <h3 class="text-lg sm:text-xl font-extrabold">${!doc.isMain ? `Bateria Preparatória de ${questions.length} Questões de Fixação` : `Bateria de ${questions.length} Questões Reais de Concurso`}</h3>
               <p class="text-xs sm:text-sm text-sec">
                 Selecione as alternativas abaixo e clique em <strong>Enviar Respostas e Corrigir Bateria</strong> (ou corrija questão por questão).
               </p>
@@ -3076,7 +3105,9 @@
 
     function selectMCOption(docId, qNum, letter) {
       const store = getQuizStore();
-      if (!store[docId]) store[docId] = { answers: {}, eliminated: {}, checkedMap: {}, submitted: false };
+      if (!store[docId]) store[docId] = { answers: {}, eliminated: {}, checkedMap: {}, hideCommMap: {}, submitted: false };
+      if (!store[docId].checkedMap) store[docId].checkedMap = {};
+      if (!store[docId].hideCommMap) store[docId].hideCommMap = {};
       store[docId].answers[qNum] = letter;
       saveQuizStore();
       rerenderActiveLessonKeepScroll();
@@ -3084,7 +3115,7 @@
 
     function toggleEliminateMCOption(docId, qNum, letter) {
       const store = getQuizStore();
-      if (!store[docId]) store[docId] = { answers: {}, eliminated: {}, checkedMap: {}, submitted: false };
+      if (!store[docId]) store[docId] = { answers: {}, eliminated: {}, checkedMap: {}, hideCommMap: {}, submitted: false };
       if (!store[docId].eliminated) store[docId].eliminated = {};
       const key = `${qNum}_${letter}`;
       store[docId].eliminated[key] = !store[docId].eliminated[key];
@@ -3094,24 +3125,60 @@
 
     function checkSingleMCQuestion(docId, qNum) {
       const store = getQuizStore();
-      if (!store[docId]) store[docId] = { answers: {}, eliminated: {}, checkedMap: {}, submitted: false };
+      if (!store[docId]) store[docId] = { answers: {}, eliminated: {}, checkedMap: {}, hideCommMap: {}, submitted: false };
       if (!store[docId].checkedMap) store[docId].checkedMap = {};
+      if (!store[docId].hideCommMap) store[docId].hideCommMap = {};
       store[docId].checkedMap[qNum] = true;
+      store[docId].hideCommMap[qNum] = false;
+      saveQuizStore();
+      rerenderActiveLessonKeepScroll();
+      setTimeout(() => {
+        const commEl = document.getElementById(`qcomm_${docId}_${qNum}`);
+        if (commEl) commEl.scrollIntoView({ behavior: "smooth", block: "nearest" });
+      }, 40);
+    }
+
+    function toggleMCQuestionCommentary(docId, qNum) {
+      const store = getQuizStore();
+      if (!store[docId]) store[docId] = { answers: {}, eliminated: {}, checkedMap: {}, hideCommMap: {}, submitted: false };
+      if (!store[docId].hideCommMap) store[docId].hideCommMap = {};
+      const nextHidden = !store[docId].hideCommMap[qNum];
+      store[docId].hideCommMap[qNum] = nextHidden;
+      saveQuizStore();
+      rerenderActiveLessonKeepScroll();
+      if (!nextHidden) {
+        setTimeout(() => {
+          const commEl = document.getElementById(`qcomm_${docId}_${qNum}`);
+          if (commEl) commEl.scrollIntoView({ behavior: "smooth", block: "nearest" });
+        }, 40);
+      }
+    }
+
+    function resetSingleMCQuestion(docId, qNum) {
+      const store = getQuizStore();
+      if (!store[docId]) return;
+      if (store[docId].answers) delete store[docId].answers[qNum];
+      if (store[docId].checkedMap) delete store[docId].checkedMap[qNum];
+      if (store[docId].hideCommMap) delete store[docId].hideCommMap[qNum];
       saveQuizStore();
       rerenderActiveLessonKeepScroll();
     }
 
     function submitAllMCQuestions(docId) {
       const store = getQuizStore();
-      if (!store[docId]) store[docId] = { answers: {}, eliminated: {}, checkedMap: {}, submitted: false };
+      if (!store[docId]) store[docId] = { answers: {}, eliminated: {}, checkedMap: {}, hideCommMap: {}, submitted: false };
+      if (!store[docId].checkedMap) store[docId].checkedMap = {};
+      if (!store[docId].hideCommMap) store[docId].hideCommMap = {};
       store[docId].submitted = true;
 
-      // Calcular placar final
+      // Calcular placar final e liberar correção de todas as questões
       const doc = findDocById(docId);
       if (doc) {
         const parsed = parseLessonWithMCQuestions(doc.content);
         let c = 0;
         parsed.questions.forEach(q => {
+          store[docId].checkedMap[q.num] = true;
+          store[docId].hideCommMap[q.num] = false;
           if (store[docId].answers[q.num] === q.answerLetter) c++;
         });
         store[docId].correct = c;
@@ -3125,7 +3192,7 @@
 
     function resetMCQuestions(docId) {
       const store = getQuizStore();
-      store[docId] = { answers: {}, eliminated: {}, checkedMap: {}, submitted: false, correct: 0, total: 0 };
+      store[docId] = { answers: {}, eliminated: {}, checkedMap: {}, hideCommMap: {}, submitted: false, correct: 0, total: 0 };
       saveQuizStore();
       rerenderActiveLessonKeepScroll();
     }
@@ -3199,10 +3266,14 @@
     function parseWorksheetMarkdown(mdText) {
       const norm = String(mdText || "").replace(/\r\n/g, "\n");
       const qMarker = "## 📝 Caderno de Questões";
-      const gMarker = "## 🔑 Gabarito Comentado";
+      const gMarker = norm.includes("## 🔑 Gabarito Comentado")
+        ? "## 🔑 Gabarito Comentado"
+        : norm.includes("## 💡 Respostas e Resoluções Passo a Passo")
+        ? "## 💡 Respostas e Resoluções Passo a Passo"
+        : null;
       const tMarker = "## 📊 Tabela de Lembretes";
 
-      if (!norm.includes(qMarker) || !norm.includes(gMarker)) {
+      if (!norm.includes(qMarker) || !gMarker) {
         return null;
       }
 
@@ -3247,7 +3318,7 @@
         const catTitle = lines[0].replace(/^###\s+/, "").trim();
         const items = [];
         for (let i = 1; i < lines.length; i++) {
-          const m = lines[i].trim().match(/^(\d+)\.\s+(.+?)\s+\\_.*$/);
+          const m = lines[i].trim().match(/^(\d+)\.\s+(.+?)\s+(?:\\_|_){2,}.*$/);
           if (m) {
             const num = parseInt(m[1], 10);
             const promptMd = m[2].trim();
@@ -3603,6 +3674,8 @@
             const active = idx === activeLessonDocIdx;
             const tabLabel = d.kind === "worksheet"
               ? `📝 Lista (${d.questionCount || 43} Exerc.)`
+              : !d.isMain
+              ? `📝 Lista de Fixação (${d.questionCount || 15} Questões)`
               : `📖 Aula + ${d.questionCount || 10} Questões`;
             return `
               <button

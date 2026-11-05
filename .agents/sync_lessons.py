@@ -59,12 +59,17 @@ def detect_kind_and_counts(filename, text):
 
 
 def build_short_title(filename, h1_text, kind, q_count):
+    fname_low = filename.lower()
     if kind == "worksheet":
-        if "fracoes" in filename.lower() or "frações" in h1_text.lower():
+        if "fracoes" in fname_low or "frações" in h1_text.lower():
             return f"Lista Prática: {q_count} Exercícios (Frações, Decimais e Dízimas)"
+        if "potencias" in fname_low or "potências" in h1_text.lower():
+            return f"Lista Prática: {q_count} Exercícios (Potências, Raízes e Expressões)"
         clean_h1 = re.sub(r'^#+\s*', '', h1_text).strip()
         return f"{clean_h1} ({q_count} Exercícios)"
     else:
+        if fname_low.startswith(("exercicios", "lista")):
+            return f"Lista de Fixação: {q_count} Questões Preparatórias"
         if q_count > 0:
             return f"Aula Completa + {q_count} Questões de Concurso"
         return "Aula Teórica Completa"
@@ -95,7 +100,7 @@ def scan_all_weeks():
 
             subj = classify_subject(fname, h1_text)
             kind, q_count = detect_kind_and_counts(fname, content)
-            is_main = ("_semana_" in fname.lower()) and (kind == "lesson")
+            is_main = ("_semana_" in fname.lower()) and not fname.lower().startswith(("exercicios", "lista")) and (kind == "lesson")
             short_title = build_short_title(fname, h1_text, kind, q_count)
 
             block_key = f"w{week_num}_{subj}"
