@@ -93,20 +93,21 @@ A gramática divide todas as palavras em **10 classes**. Na Semana 02, estudamos
 O **Substantivo** funciona como o **Sol** desse sistema: ele tem massa gravitacional própria, dá nome às coisas e atrai os outros quatro termos, chamados de **satélites** ou determinantes. Os satélites concordam obrigatoriamente com o substantivo em gênero e número:
 
 ```text
-                       ┌─────────────┐
-                       │   ARTIGO    │  (Determina / Especifica)
-                       └──────┬──────┘
-                              │
-                              ▼
-┌──────────────┐       ┌─────────────┐       ┌──────────────┐
-│   ADJETIVO   │ ────► │ SUBSTANTIVO │ ◄──── │   NUMERAL    │  (Quantifica / Ordena)
-│(Caracteriza) │       │  (O NÚCLEO) │       │ (Posiciona)  │
-└──────────────┘       └──────┬──────┘       └──────────────┘
-                              │
-                              ▼
-                       ┌─────────────┐
-                       │   PRONOME   │  (Substitui / Acompanha)
-                       └─────────────┘
+┌──────────────────────────────────┐
+│      SISTEMA SOLAR NOMINAL       │
+│                                  │
+│      ┌────────────────────┐      │
+│      │  SUBSTANTIVO (Sol) │      │
+│      │  Núcleo do Sentido │      │
+│      └─────────┬──────────┘      │
+│                │                 │
+│  ┌─────────────┴──────────────┐  │
+│  ▼ Satélites que Orbitam o Sol│  │
+│  • ARTIGO: Determina/Especifica  │
+│  • ADJETIVO: Caracteriza         │
+│  • NUMERAL: Quantifica/Ordena    │
+│  • PRONOME: Substitui/Acompanha  │
+└──────────────────────────────────┘
 ```
 
 > **💡 Síntese Feynman (Classes Nominais):**  
@@ -168,19 +169,20 @@ Essa definição ingênua desaba na primeira questão de concurso! Você consegu
   4. **Sentimentos / Sensações:** *amor, raiva, saudade, fome, calor, sede*.
 
 ```text
-┌────────────────────────────────────────────────────────────────────────┐
-│                   O TESTE MENTAL DO PLANETA DESERTO                    │
-├────────────────────────────────────────────────────────────────────────┤
-│ Pergunte-se: "Se todos os seres vivos desaparecessem da Terra agora,   │
-│ essa coisa continuaria flutuando e existindo no espaço vazio?"         │
-│                                                                        │
-│ • A PEDRA continua existindo? SIM ➔ CONCRETO.                          │
-│ • O VENTO continua existindo? SIM ➔ CONCRETO.                          │
-│ • A JUSTIÇA continua existindo? NÃO (depende de pessoas praticando     │
-│   atos justos) ➔ ABSTRATO.                                             │
-│ • O TRABALHO continua existindo? NÃO (depende de quem trabalhe)        │
-│   ➔ ABSTRATO.                                                          │
-└────────────────────────────────────────────────────────────────────────┘
+┌──────────────────────────────────┐
+│  TESTE MENTAL: PLANETA DESERTO   │
+├──────────────────────────────────┤
+│ "Se todos os seres vivos sumissem│
+│  da Terra agora, isso continuaria│
+│  existindo sozinho?"             │
+│                                  │
+│ • PEDRA / VENTO:                 │
+│   SIM ➔ SUBSTANTIVO CONCRETO     │
+│                                  │
+│ • JUSTIÇA / TRABALHO:            │
+│   NÃO (depende de alguém agir)   │
+│   ➔ SUBSTANTIVO ABSTRATO         │
+└──────────────────────────────────┘
 ```
 
 ---
@@ -223,7 +225,7 @@ Alguns substantivos mudam completamente de significado quando alteramos o artigo
 ---
 
 ### 5. Flexão de Número e o Fenômeno da Metafonia
-A regra geral de plural no português é o acréscimo da desinência **-s** aos nomes terminados em vogal (*processo $	o$ processos*). No entanto, há casos notáveis que exigem atenção:
+A regra geral de plural no português é o acréscimo da desinência **-s** aos nomes terminados em vogal (*processo → processos*). No entanto, há casos notáveis que exigem atenção:
 
 #### A) Substantivos Terminados em "-ão"
 A evolução histórica do latim gerou três terminações possíveis de plural:
@@ -236,11 +238,11 @@ A evolução histórica do latim gerou três terminações possíveis de plural:
 
 #### B) O Fenômeno Sonoro da Metafonia
 A **metafonia** é a mudança do timbre da vogal tônica **"o"**: ela é pronunciada de forma **fechada** (/ô/) no singular e passa a ser pronunciada de forma **aberta** (/ó/) no plural:
-- *o fogo* (/ô/) $	o$ *os fogos* (/ó/)
-- *o osso* (/ô/) $	o$ *os ossos* (/ó/)
-- *o olho* (/ô/) $	o$ *os olhos* (/ó/)
-- *o imposto* (/ô/) $	o$ *os impostos* (/ó/)
-- *o socorro* (/ô/) $	o$ *os socorros* (/ó/)
+- *o fogo* (/ô/) → *os fogos* (/ó/)
+- *o osso* (/ô/) → *os ossos* (/ó/)
+- *o olho* (/ô/) → *os olhos* (/ó/)
+- *o imposto* (/ô/) → *os impostos* (/ó/)
+- *o socorro* (/ô/) → *os socorros* (/ó/)
 
 ---
 
@@ -266,11 +268,11 @@ O adjetivo é a classe gramatical satélite encarregada de **caracterizar, quali
 ### 2. Adjetivo Explicativo vs. Adjetivo Restritivo
 Essa distinção é o alicerce fundamental para você dominar a pontuação das orações subordinadas adjetivas:
 * **Adjetivo Explicativo:** Expressa uma característica que é **inerente à própria essência de toda aquela espécie**. Ele não separa nem divide um subgrupo, apenas explicita algo natural:
-  - *O fogo **ardente** consumiu o arquivo.* $	o$ Todo fogo é ardente; arder é da natureza de qualquer fogo. Apenas explica.
-  - *O ser humano **mortal** teme o desconhecido.* $	o$ Todo ser humano é mortal.
+  - *O fogo **ardente** consumiu o arquivo.* → Todo fogo é ardente; arder é da natureza de qualquer fogo. Apenas explica.
+  - *O ser humano **mortal** teme o desconhecido.* → Todo ser humano é mortal.
 * **Adjetivo Restritivo:** Expressa uma característica que pertence **apenas a uma parcela daquele grupo**, limitando, individualizando e separando um subconjunto:
-  - *Os servidores **estáveis** não podem ser exonerados sem processo administrativo.* $	o$ Apenas os que possuem estabilidade; os outros servidores (comissionados ou em estágio probatório) não estão incluídos. O adjetivo restringe o universo dos servidores.
-  - *Os documentos **sigilosos** foram guardados no cofre.* $	o$ Não são todos os documentos da repartição, apenas os que têm a marca de sigilo.
+  - *Os servidores **estáveis** não podem ser exonerados sem processo administrativo.* → Apenas os que possuem estabilidade; os outros servidores (comissionados ou em estágio probatório) não estão incluídos. O adjetivo restringe o universo dos servidores.
+  - *Os documentos **sigilosos** foram guardados no cofre.* → Não são todos os documentos da repartição, apenas os que têm a marca de sigilo.
 
 ---
 
@@ -280,12 +282,12 @@ Na língua portuguesa, a ordem entre substantivo e adjetivo altera profundamente
 * **Adjetivo ANTES do substantivo:** Sentido **conotativo, subjetivo, afetivo e figurado**.
 
 Compare os pares abaixo:
-* *Ele é um **homem grande**.* $	o$ Sentido objetivo/físico: alto, encorpado, de grande estatura.
-* *Ele é um **grande homem**.* $	o$ Sentido subjetivo/moral: ilustre, honrado, digno de respeito.
-* *Encontrei um **amigo velho**.* $	o$ Sentido literal/físico: pessoa de idade avançada, idosa.
-* *Encontrei um **velho amigo**.* $	o$ Sentido afetivo: amigo de longa data, amizade antiga.
-* *O autor apresentou uma **simples solução**.* $	o$ Apenas uma solução qualquer, modesta.
-* *O autor apresentou uma **solução simples**.* $	o$ Solução sem complexidade técnica, fácil de executar.
+* *Ele é um **homem grande**.* → Sentido objetivo/físico: alto, encorpado, de grande estatura.
+* *Ele é um **grande homem**.* → Sentido subjetivo/moral: ilustre, honrado, digno de respeito.
+* *Encontrei um **amigo velho**.* → Sentido literal/físico: pessoa de idade avançada, idosa.
+* *Encontrei um **velho amigo**.* → Sentido afetivo: amigo de longa data, amizade antiga.
+* *O autor apresentou uma **simples solução**.* → Apenas uma solução qualquer, modesta.
+* *O autor apresentou uma **solução simples**.* → Solução sem complexidade técnica, fácil de executar.
 
 ---
 
@@ -322,13 +324,13 @@ Expressa a característica elevada ao grau mais intenso:
 2. **Superlativo Absoluto:** Intensifica o ser isoladamente, sem comparação com outros:
    - **Analítico:** Feito com auxílio de um advérbio de intensidade (*muito competente, extremamente rápido*).
    - **Sintético:** Feito com o acréscimo de sufixos eruditos intensificadores:
-     - *fácil $	o$ facílimo*
-     - *difícil $	o$ dificílimo*
-     - *pobre $	o$ paupérrimo* (ou *pobríssimo*)
-     - *nobre $	o$ nobilíssimo*
-     - *fiel $	o$ fidelíssimo*
-     - *amigo $	o$ amicíssimo*
-     - *amargo $	o$ amaríssimo*
+     - *fácil → facílimo*
+     - *difícil → dificílimo*
+     - *pobre → paupérrimo* (ou *pobríssimo*)
+     - *nobre → nobilíssimo*
+     - *fiel → fidelíssimo*
+     - *amigo → amicíssimo*
+     - *amargo → amaríssimo*
 
 > **💡 Síntese Feynman (Adjetivo):**  
 > *"O adjetivo é o pintor do texto: se vem antes do nome, expressa emoção ou opinião (um grande homem); se vem depois, expressa realidade física e técnica (um homem grande). Se for explicativo, serve para toda a espécie (fogo ardente); se for restritivo, separa só um pedaço do grupo (servidor concursado)."*
@@ -348,13 +350,13 @@ Além dessa função semântica (de sentido), o artigo cumpre um papel morfológ
 O artigo definido é usado quando o substantivo refere-se a um elemento **específico, já conhecido por quem fala e por quem ouve**, ou que já foi citado anteriormente no texto:
 - *Exemplo com contexto:*  
   *"O Oficial Administrativo assinou **o** parecer."*  
-  $\to$ **Análise:** Não é um parecer qualquer que estava perdido na mesa. Quem escreveu a frase e quem está lendo sabem exatamente a qual parecer específico ela se refere (por exemplo, o parecer do processo que já estava sendo discutido na repartição).
+  → **Análise:** Não é um parecer qualquer que estava perdido na mesa. Quem escreveu a frase e quem está lendo sabem exatamente a qual parecer específico ela se refere (por exemplo, o parecer do processo que já estava sendo discutido na repartição).
 
 #### B) Artigo Indefinido (*um, uma, uns, umas*) — A Generalização e a Primeira Menção
 O artigo indefinido é usado para introduzir um ser pela primeira vez no texto ou tratá-lo como um elemento **qualquer, não individualizado**, entre todos os da sua categoria:
 - *Exemplo com contexto:*  
   *"O Oficial Administrativo encontrou **um** parecer sobre a mesa."*  
-  $\to$ **Análise:** Trata-se de um parecer qualquer, genérico; ainda não sabemos do que trata, de quem é, nem qual é o seu número. Ele está sendo apresentado pela primeira vez ao interlocutor.
+  → **Análise:** Trata-se de um parecer qualquer, genérico; ainda não sabemos do que trata, de quem é, nem qual é o seu número. Ele está sendo apresentado pela primeira vez ao interlocutor.
 
 ---
 
@@ -364,26 +366,26 @@ O artigo não serve apenas para acompanhar substantivos mecanicamente; dependend
 #### I) Valor de Aproximação Numérica (Artigo Indefinido + Numeral)
 Quando o artigo indefinido no plural (*uns, umas*) antecede um numeral cardinal, ele perde o sentido de "alguns" e passa a significar **"aproximadamente"**, **"cerca de"**:
 - *"A reunião com os secretários municipais durou **umas** duas horas."*  
-  $\to$ Significado: Não foram exatamente duas horas cronometradas; foram **cerca de** duas horas (podendo ser 1h50 ou 2h10).
+  → Significado: Não foram exatamente duas horas cronometradas; foram **cerca de** duas horas (podendo ser 1h50 ou 2h10).
 - *"O arquivo do setor armazena **uns** cinquenta mil processos."*  
-  $\to$ Significado: Quantidade estimada, aproximada.
+  → Significado: Quantidade estimada, aproximada.
 
 #### II) Valor Enfático / Superlativo (Destaque Notório)
 O artigo definido pode ser usado com entonação enfática para destacar que aquele ser é especial, inigualável ou exemplar em sua categoria:
 - *"Ela não é apenas uma servidora competente; ela é **A** servidora do setor!"*  
-  $\to$ Significado: O artigo definido com ênfase equivale a "a melhor", "a mais destacada de todas".
+  → Significado: O artigo definido com ênfase equivale a "a melhor", "a mais destacada de todas".
 
 #### III) O Artigo com a Palavra "Todo" (Diferença Semântica Vital)
 Essa é uma das distinções conceituais mais importantes e frequentes da língua portuguesa:
 * **TODO + ARTIGO + SUBSTANTIVO:** Expressa **totalidade de um elemento inteiro**, do começo ao fim.
-  - *"O servidor leu **todo o** relatório."* $\to$ Leu o relatório **inteiro**, do início até a última página.
+  - *"O servidor leu **todo o** relatório."* → Leu o relatório **inteiro**, do início até a última página.
 * **TODO + SUBSTANTIVO (sem artigo):** Expressa **generalização**, equivalendo a "qualquer", "cada um".
-  - *"**Todo** servidor tem deveres éticos."* $\to$ **Qualquer** servidor, cada um dos servidores da repartição.
+  - *"**Todo** servidor tem deveres éticos."* → **Qualquer** servidor, cada um dos servidores da repartição.
 
 #### IV) O Artigo antes de Nomes Próprios e Possessivos
 * **Antes de nomes de pessoas:** O uso do artigo indica intimidade, proximidade afetiva ou regionalismo cultural.
-  - *"Conversei com **o** Carlos."* $\to$ Relação de proximidade, conhecimento pessoal.
-  - *"Conversei com Carlos."* $\to$ Tom mais neutro, distante ou formal (comum na redação de documentos oficiais).
+  - *"Conversei com **o** Carlos."* → Relação de proximidade, conhecimento pessoal.
+  - *"Conversei com Carlos."* → Tom mais neutro, distante ou formal (comum na redação de documentos oficiais).
 * **Antes de pronomes possessivos adjetivos:** O artigo é **facultativo** quando o substantivo está explícito ao lado:
   - *"Entreguei **o meu** relatório ao chefe."* (Correto)
   - *"Entreguei **meu** relatório ao chefe."* (Também correto, sem alteração de sentido).
@@ -395,24 +397,21 @@ Essa é uma das distinções conceituais mais importantes e frequentes da língu
 No português, a palavra **"a"** desempenha três funções morfológicas completamente distintas. Para nunca mais confundi-las, analise a função sintática e aplique o teste de substituição prático:
 
 ```text
-┌────────────────────────────────────────────────────────────────────────┐
-│                   A TRÍPLICE IDENTIDADE DA PALAVRA "A"                 │
-├──────────────┬─────────────────────────┬───────────────────────────────┤
-│ CLASSE       │ FUNÇÃO NA FRASE         │ TESTE DE SUBSTITUIÇÃO PRÁTICO │
-├──────────────┼─────────────────────────┼───────────────────────────────┤
-│ ARTIGO       │ Acompanha substantivo   │ Troque o substantivo por um   │
-│ DEFINIDO     │ feminino e concorda     │ masculino: o "a" vira "o".    │
-│              │ em gênero e número.     │                               │
-├──────────────┼─────────────────────────┼───────────────────────────────┤
-│ PRONOME      │ Substitui o substantivo │ Pode ser trocado mentalmente  │
-│ OBLÍQUO      │ feminino já citado; é o │ por "ela" (ou "a ela") como   │
-│              │ alvo de um verbo direto.│ objeto do verbo.              │
-├──────────────┼─────────────────────────┼───────────────────────────────┤
-│ PREPOSIÇÃO   │ Liga duas palavras por  │ Palavra invariável. Se trocar │
-│              │ exigência da regência de│ o termo seguinte por um       │
-│              │ um verbo ou de um nome. │ masculino, vira apenas "a"    │
-│              │                         │ (ou "ao" se houver artigo).   │
-└──────────────┴─────────────────────────┴───────────────────────────────┘
+┌──────────────────────────────────┐
+│  TRÍPLICE IDENTIDADE DO "A"      │
+├──────────────────────────────────┤
+│ 1. ARTIGO DEFINIDO               │
+│ • Acompanha substantivo feminino │
+│ • Teste: no masculino vira "o"   │
+├──────────────────────────────────┤
+│ 2. PRONOME OBLÍQUO               │
+│ • Substitui nome já citado       │
+│ • Teste: equivale a "ela"        │
+├──────────────────────────────────┤
+│ 3. PREPOSIÇÃO                    │
+│ • Liga palavras (invariável)     │
+│ • Teste: no masc. fica "a"/"ao"  │
+└──────────────────────────────────┘
 ```
 
 #### Exemplos com Análise Detalhada de Cada Caso:
@@ -424,7 +423,7 @@ No português, a palavra **"a"** desempenha três funções morfológicas comple
 
 2. **Como Pronome Pessoal Oblíquo:**
    - *Frase:* *"O diretor encontrou a portaria antiga e assinou-**a** imediatamente."*
-   - *Explicação:* A palavra "-a" ligada ao verbo "assinou" não está acompanhando substantivo algum; ela está **substituindo** o substantivo "portaria" para evitar repetição cansativa (*assinou a portaria $\to$ assinou-a*).
+   - *Explicação:* A palavra "-a" ligada ao verbo "assinou" não está acompanhando substantivo algum; ela está **substituindo** o substantivo "portaria" para evitar repetição cansativa (*assinou a portaria → assinou-a*).
    - *Teste:* Mentalmente equivale a: *"O diretor assinou **ela**."* Como atua como complemento direto do verbo, trata-se de um **pronome pessoal oblíquo átono**.
 
 3. **Como Preposição:**
@@ -465,12 +464,12 @@ A chave está na **intenção comunicativa da frase**:
   - *Teste prático:* Tente colocar a palavra "apenas" ou "somente" antes de "um", ou continue a contagem mentalmente ("um, e não dois"). Se a frase mantiver perfeito sentido de contagem, é numeral.
   - *Exemplo com contexto:*  
     *"O edital prevê apenas **uma** vaga para o cargo de Oficial Administrativo."*  
-    $\to$ O foco é a quantidade restrita: é exatamente 1 vaga (e não 2 ou 3). Logo, "uma" é **numeral**.
+    → O foco é a quantidade restrita: é exatamente 1 vaga (e não 2 ou 3). Logo, "uma" é **numeral**.
 * **É ARTIGO INDEFINIDO quando a ideia for APRESENTAR ou GENERALIZAR:** Quando o termo serve apenas para introduzir um elemento qualquer daquela espécie, sem nenhuma preocupação com contagem matemática.
   - *Teste prático:* Tente substituir "um" por "algum" ou "qualquer". Se fizer sentido, é artigo indefinido.
   - *Exemplo com contexto:*  
     *"Para entrar no fórum, você precisa apresentar **um** documento com foto."*  
-    $\to$ A mensagem não está preocupada se você tem 1, 2 ou 5 documentos na carteira; ela exige *qualquer* documento oficial (RG, CNH, carteira de trabalho). Logo, "um" é **artigo indefinido**.
+    → A mensagem não está preocupada se você tem 1, 2 ou 5 documentos na carteira; ela exige *qualquer* documento oficial (RG, CNH, carteira de trabalho). Logo, "um" é **artigo indefinido**.
 
 ---
 
@@ -480,13 +479,13 @@ Na rotina de redação oficial e na interpretação de leis e portarias, o uso c
 #### I) Leitura de Artigos de Leis, Decretos e Portarias:
 A redação legislativa brasileira (regulada pela Lei Complementar nº 95/1998) estabelece uma regra estrita:
 * **Do artigo 1 ao 9:** Usa-se obrigatoriamente a forma **ORDINAL** (com o símbolo º).
-  - *Art. 1º* $\to$ Lê-se: *"Artigo primeiro"* (nunca "artigo um").
-  - *Art. 5º* $\to$ Lê-se: *"Artigo quinto"*.
-  - *Art. 9º* $\to$ Lê-se: *"Artigo nono"*.
+  - *Art. 1º* → Lê-se: *"Artigo primeiro"* (nunca "artigo um").
+  - *Art. 5º* → Lê-se: *"Artigo quinto"*.
+  - *Art. 9º* → Lê-se: *"Artigo nono"*.
 * **Do artigo 10 em diante:** Usa-se obrigatoriamente a forma **CARDINAL** (sem o símbolo º).
-  - *Art. 10* $\to$ Lê-se: *"Artigo dez"* (e não "décimo").
-  - *Art. 37* $\to$ Lê-se: *"Artigo trinta e sete"*.
-  - *Art. 100* $\to$ Lê-se: *"Artigo cem"*.
+  - *Art. 10* → Lê-se: *"Artigo dez"* (e não "décimo").
+  - *Art. 37* → Lê-se: *"Artigo trinta e sete"*.
+  - *Art. 100* → Lê-se: *"Artigo cem"*.
 
 #### II) Séculos, Reis, Papas e Capítulos (com Algarismos Romanos):
 * **Se o algarismo romano vier DEPOIS do substantivo:**
@@ -530,10 +529,10 @@ Diferente do substantivo (que dá nome às coisas), o pronome não tem um signif
 #### Pronome Substantivo vs. Pronome Adjetivo:
 * **Pronome Substantivo:** É aquele que **assume o lugar** do substantivo, eliminando-o da frase para evitar repetições cansativas:
   - *"O relatório técnico foi concluído ontem. **Ele** já está na mesa do diretor."*  
-    $\to$ A palavra **"Ele"** substituiu completamente a expressão "O relatório técnico". Funciona como um pronome substantivo.
+    → A palavra **"Ele"** substituiu completamente a expressão "O relatório técnico". Funciona como um pronome substantivo.
 * **Pronome Adjetivo:** É aquele que **não substitui**, mas **acompanha** o substantivo que está ao seu lado, determinando o seu alcance:
   - *"**Este** relatório precisa de revisão."*  
-    $\to$ A palavra **"Este"** está ao lado do substantivo "relatório", qualificando-o e apontando para ele. Funciona como um pronome adjetivo.
+    → A palavra **"Este"** está ao lado do substantivo "relatório", qualificando-o e apontando para ele. Funciona como um pronome adjetivo.
 
 ---
 
@@ -543,30 +542,30 @@ Em redações oficiais e em textos de alto nível, a maior virtude de um escrito
 Dois termos técnicos que aparecem com frequência no estudo da coesão são **anáfora** e **catáfora**. Vamos desmistificá-los pela sua lógica natural:
 
 ```text
-┌────────────────────────────────────────────────────────────────────────┐
-│                   A LINHA DO TEMPO DA LEITURA                          │
-├────────────────────────────────────────────────────────────────────────┤
-│                                                                        │
-│   [TERMO ANTERIOR] ◄────── [PRONOME ANAFÓRICO]                         │
-│   (Olhar para trás: resgata o que já foi lido na página)               │
-│                                                                        │
-│   [PRONOME CATAFÓRICO] ──────► [TERMO SEGUINTE]                        │
-│   (Olhar para a frente: anuncia o que vai ser lido logo após)          │
-│                                                                        │
-└────────────────────────────────────────────────────────────────────────┘
+┌──────────────────────────────────┐
+│   LINHA DO TEMPO DA LEITURA      │
+├──────────────────────────────────┤
+│ ◄── ANÁFORA (Olha p/ trás)       │
+│ [Termo Anterior] ◄── [Pronome]   │
+│ Resgata o que já foi dito antes  │
+├──────────────────────────────────┤
+│ ──► CATÁFORA (Olha p/ frente)    │
+│ [Pronome] ──► [Termo Seguinte]   │
+│ Anuncia o que vai ser dito após  │
+└──────────────────────────────────┘
 ```
 
 #### A) Função Anafórica (O Olhar para Trás):
 Ocorre quando o pronome **resgata e retoma uma palavra ou ideia que já foi escrita anteriormente** no texto. Ele impede que você precise repetir o nome todo de novo:
 - *Exemplo com contexto administrativo:*  
   *"A prefeitura adquiriu novos computadores para o setor de protocolo. **Esses equipamentos** serão instalados na próxima semana."*  
-  $\to$ **Análise:** A expressão *"Esses equipamentos"* olha para trás e resgata *"novos computadores"*. Esse movimento retrógrado de resgate textual chama-se **anáfora**.
+  → **Análise:** A expressão *"Esses equipamentos"* olha para trás e resgata *"novos computadores"*. Esse movimento retrógrado de resgate textual chama-se **anáfora**.
 
 #### B) Função Catafórica (O Olhar para a Frente):
 Ocorre quando o pronome **aponta para a frente, anunciando e criando expectativa sobre algo que só vai ser revelado depois**:
 - *Exemplo com contexto administrativo:*  
   *"A determinação da diretoria foi **esta**: todos os arquivos digitais devem ter backup diário."*  
-  $\to$ **Análise:** Quem lê a palavra *"esta"* ainda não sabe qual foi a determinação. O pronome cria suspense e aponta para a frase seguinte. Esse movimento de antecipação chama-se **catáfora**.
+  → **Análise:** Quem lê a palavra *"esta"* ainda não sabe qual foi a determinação. O pronome cria suspense e aponta para a frase seguinte. Esse movimento de antecipação chama-se **catáfora**.
 
 ---
 
@@ -574,22 +573,24 @@ Ocorre quando o pronome **aponta para a frente, anunciando e criando expectativa
 Os pronomes demonstrativos (*este, esse, aquele* e suas variações) indicam a posição de seres em relação a três dimensões: **no espaço físico**, **na linha do tempo** e **dentro do próprio texto**.
 
 ```text
-┌─────────────────┬─────────────────────────┬─────────────────────────┬─────────────────────────┐
-│ DIMENSÃO        │ ESTE / ESTA / ISTO      │ ESSE / ESSA / ISSO      │ AQUELE / AQUELA / AQUILO│
-├─────────────────┼─────────────────────────┼─────────────────────────┼─────────────────────────┤
-│ NO ESPAÇO       │ Junto de quem fala      │ Junto de quem ouve      │ Longe de ambos          │
-│ FÍSICO          │ (1ª pessoa do discurso) │ (2ª pessoa do discurso) │ (3ª pessoa do discurso) │
-│                 │ "Este processo aqui na  │ "Esse documento aí na   │ "Aquele prédio lá no    │
-│                 │ minha mesa."            │ sua pasta."             │ fim da rua."            │
-├─────────────────┼─────────────────────────┼─────────────────────────┼─────────────────────────┤
-│ NA LINHA        │ Tempo PRESENTE ou       │ Tempo PASSADO RECENTE ou│ Tempo PASSADO REMOTO,   │
-│ DO TEMPO        │ ano/dia em curso        │ futuro próximo          │ histórico e distante    │
-│                 │ "Neste ano de 2026."    │ "Nesse último mês."     │ "Naquele ano de 1930."  │
-├─────────────────┼─────────────────────────┼─────────────────────────┼─────────────────────────┤
-│ DENTRO          │ CATÁFORA (aponta para   │ ANÁFORA (retoma o que   │ Distinção entre dois    │
-│ DO TEXTO        │ a frente / vai dizer)   │ já foi dito atrás)      │ termos já citados       │
-│                 │ "O aviso é este: ..."   │ "... e isso ocorreu."   │ (o mais distante)       │
-└─────────────────┴─────────────────────────┴─────────────────────────┴─────────────────────────┘
+┌──────────────────────────────────┐
+│   ESTE vs. ESSE vs. AQUELE       │
+├──────────────────────────────────┤
+│ 1. ESTE / ESTA / ISTO            │
+│ • Espaço: Perto de quem fala (1ª)│
+│ • Tempo: Presente ("Neste ano")  │
+│ • Texto: CATÁFORA (vai dizer)    │
+├──────────────────────────────────┤
+│ 2. ESSE / ESSA / ISSO            │
+│ • Espaço: Perto de quem ouve (2ª)│
+│ • Tempo: Passado/futuro próximo  │
+│ • Texto: ANÁFORA (já foi dito)   │
+├──────────────────────────────────┤
+│ 3. AQUELE / AQUELA / AQUILO      │
+│ • Espaço: Longe de ambos (3ª)    │
+│ • Tempo: Passado remoto/distante │
+│ • Texto: Retoma o termo distante │
+└──────────────────────────────────┘
 ```
 
 #### A Diferenciação entre Dois Termos Citados no Texto:
@@ -632,18 +633,18 @@ O pronome oblíquo *mim* não tem força sintática para ser sujeito. Ele só po
 #### Como Empregar Corretamente os Oblíquos Átonos:
 1. **Regra de Assimilação Fonética (-lo, -la, -los, -las):**  
    Quando o verbo termina nas consoantes **-r, -s ou -z**, essas letras desaparecem e o pronome *o/a* transforma-se em *-lo/-la*:
-   - *fazer + o* $	o$ *fazê-**lo*** (o 'r' cai e a oxítona terminada em 'e' recebe acento circunflexo).
-   - *analisar + a* $	o$ *analisá-**la***.
-   - *fizemos + o* $	o$ *fizemo-**lo*** (o 's' cai).
+   - *fazer + o* → *fazê-**lo*** (o 'r' cai e a oxítona terminada em 'e' recebe acento circunflexo).
+   - *analisar + a* → *analisá-**la***.
+   - *fizemos + o* → *fizemo-**lo*** (o 's' cai).
 2. **Regra de Assimilação Nasal (-no, -na, -nos, -nas):**  
    Quando o verbo termina em som nasal (**-m, -ão, -õe**), o pronome *o/a* ganha a consoante nasal 'n':
-   - *recolheram + os* $	o$ *recolheram-**nos***.
-   - *põe + a* $	o$ *põe-**na***.
+   - *recolheram + os* → *recolheram-**nos***.
+   - *põe + a* → *põe-**na***.
 3. **A Diferença Vital entre "O / A" e "LHE":**  
    * **O / A (e suas variações):** Funcionam como objeto direto (completam verbos que **não pedem preposição**).
-     - *"O diretor convocou **o servidor**."* $	o$ *"O diretor convocou-**o**."*
+     - *"O diretor convocou **o servidor**."* → *"O diretor convocou-**o**."*
    * **LHE / LHES:** Funcionam como objeto indireto (completam verbos que **exigem a preposição 'a'**; equivalem a "a ele" ou "a ela"):
-     - *"O diretor obedeceu **ao estatuto**."* $	o$ *"O diretor obedeceu-**lhe**."* (Pois quem obedece, obedece *a* algo).
+     - *"O diretor obedeceu **ao estatuto**."* → *"O diretor obedeceu-**lhe**."* (Pois quem obedece, obedece *a* algo).
 
 ---
 
@@ -655,11 +656,11 @@ O pronome relativo é a ferramenta de conexão mais sofisticada da língua. Ele 
 #### A) O Relativo Universal: "QUE"
 É o pronome relativo mais frequente. Pode retomar tanto coisas quanto pessoas:
 - *"Recebi o memorando. O memorando determinava a vistoria."*  
-  $\to$ Unindo as frases: *"Recebi o memorando **que** determinava a vistoria."*
+  → Unindo as frases: *"Recebi o memorando **que** determinava a vistoria."*
 
 #### B) O Relativo de Pessoa: "QUEM"
 Refere-se **estritamente a pessoas** ou entidades personificadas, e vem **obrigatoriamente antecedido de preposição**:
-- *"A servidora **a quem** solicitei as informações foi muito prestativa."* (Quem solicita a alguém $	o$ preposição "a" obrigatória).
+- *"A servidora **a quem** solicitei as informações foi muito prestativa."* (Quem solicita a alguém → preposição "a" obrigatória).
 
 #### C) O Relativo de Lugar Físico: "ONDE"
 Este é um dos erros mais cobrados pelas bancas examinadoras:  
@@ -691,32 +692,25 @@ As palavras não são blocos sólidos e indivisíveis. Elas são montadas a part
 Conhecer a anatomia de uma palavra permite decifrar o sentido de qualquer vocábulo novo que apareça no edital ou na prova:
 
 ```text
-┌────────────────────────────────────────────────────────────────────────┐
-│                   OS ELEMENTOS MÓRFICOS DE UMA PALAVRA                 │
-├─────────────────────┬──────────────────────────────────────────────────┤
-│ ELEMENTO            │ FUNÇÃO EXATA                                     │
-├─────────────────────┼──────────────────────────────────────────────────┤
-│ 1. RADICAL          │ A raiz da palavra; contém o significado básico.   │
-├─────────────────────┼──────────────────────────────────────────────────┤
-│ 2. VOGAL TEMÁTICA   │ Conecta-se ao radical para receber as desinências.│
-├─────────────────────┼──────────────────────────────────────────────────┤
-│ 3. TEMA             │ É a união do RADICAL + VOGAL TEMÁTICA.           │
-├─────────────────────┼──────────────────────────────────────────────────┤
-│ 4. DESINÊNCIAS      │ Indicam flexões gramaticais (gênero, número,     │
-│                     │ tempo, pessoa).                                  │
-├─────────────────────┼──────────────────────────────────────────────────┤
-│ 5. AFIXOS           │ Partículas que criam novas palavras:             │
-│                     │ • Prefixo (antes do radical)                     │
-│                     │ • Sufixo (depois do radical)                     │
-├─────────────────────┼──────────────────────────────────────────────────┤
-│ 6. ELEMENTOS DE     │ Letras colocadas apenas para soar bem aos ouvidos│
-│    LIGAÇÃO          │ (eufonia), sem nenhum significado próprio.       │
-└─────────────────────┴──────────────────────────────────────────────────┘
+┌──────────────────────────────────┐
+│  ELEMENTOS MÓRFICOS DA PALAVRA   │
+├──────────────────────────────────┤
+│ 1. RADICAL: Raiz de sentido base │
+│ 2. VOGAL TEMÁTICA: Liga ao tema  │
+│ 3. TEMA: Radical + Vogal Temática│
+│ 4. DESINÊNCIAS: Flexões (gênero, │
+│    número, modo/tempo, pessoa)   │
+│ 5. AFIXOS: Criam novas palavras  │
+│    • Prefixo (antes do radical)  │
+│    • Sufixo (depois do radical)  │
+│ 6. VOGAL/CONSOANTE DE LIGAÇÃO:   │
+│    Apenas p/ eufonia (bom som)   │
+└──────────────────────────────────┘
 ```
 
 #### Análise Detalhada de Cada Elemento:
 1. **Radical:** É o núcleo semântico irredutível da família de palavras cognatas (palavras irmãs que vêm da mesma raiz):
-   - Na família: *cert-o, cert-eza, in-cert-o, cert-idão, acert-ar* $	o$ o radical comum invariável é **cert-**.
+   - Na família: *cert-o, cert-eza, in-cert-o, cert-idão, acert-ar* → o radical comum invariável é **cert-**.
 2. **Vogal Temática:** É a vogal que se agrega ao radical para prepará-lo para ser flexionado:
    - **Em Verbos:** Indica a qual das 3 conjugações o verbo pertence:
      - 1ª conjugação (vogal temática **-a-**): *cant-**a**-r, protocol-**a**-r*.
@@ -727,14 +721,14 @@ Conhecer a anatomia de uma palavra permite decifrar o sentido de qualquer vocáb
    - No verbo *organizar*: Radical *organiz-* + Vogal Temática *-a-* = Tema **organiza-**.
 4. **Desinências:** São os marcadores de flexão gramatical:
    - **Desinências Nominais:** Indicam o **gênero** (*alun-**o** / alun-**a***) e o **número** (*aluno-**s***).
-   - **Desinências Verbais:** Indicam o **modo e o tempo** (*organiz-á-**va**-mos* $	o$ *-va-* indica pretérito imperfeito do indicativo) e o **número e a pessoa** (*organiz-á-va-**mos*** $	o$ *-mos* indica a 1ª pessoa do plural).
+   - **Desinências Verbais:** Indicam o **modo e o tempo** (*organiz-á-**va**-mos* → *-va-* indica pretérito imperfeito do indicativo) e o **número e a pessoa** (*organiz-á-va-**mos*** → *-mos* indica a 1ª pessoa do plural).
 5. **Afixos (Prefixos e Sufixos):** Partículas que mudam a classe gramatical ou o sentido básico da palavra:
    - **Prefixo:** Inserido **antes** do radical (*in-ativo, des-fazer, sub-secretário*).
    - **Sufixo:** Inserido **depois** do radical (*leal-dade, ativo-mente, fiscal-izar*).
 6. **Vogais e Consoantes de Ligação:** Letras inseridas sem valor de significado, usadas estritamente por razões de **eufonia** (para evitar sons ásperos ou difíceis de pronunciar):
-   - *chá + eira* $	o$ para não ficar "cháeira", insere-se a consoante de ligação **-l-**: *chá-**l**-eira*.
-   - *café + teira* $	o$ *caf-**e**-teira*.
-   - *gás + metro* $	o$ para não ficar "gásmetro", insere-se a vogal de ligação **-o-**: *gas-**ô**-metro*.
+   - *chá + eira* → para não ficar "cháeira", insere-se a consoante de ligação **-l-**: *chá-**l**-eira*.
+   - *café + teira* → *caf-**e**-teira*.
+   - *gás + metro* → para não ficar "gásmetro", insere-se a vogal de ligação **-o-**: *gas-**ô**-metro*.
 
 ---
 
@@ -743,15 +737,15 @@ A derivação ocorre quando partimos de **um único radical primitivo** e geramo
 
 #### A) Derivação Prefixal (ou Prefixação)
 Acréscimo de um prefixo antes da palavra primitiva, alterando seu sentido:
-- *leal $	o$ **des**leal* (sentido de negação).
-- *ativo $	o$ **in**ativo*.
-- *ver $	o$ **pre**ver*.
+- *leal → **des**leal* (sentido de negação).
+- *ativo → **in**ativo*.
+- *ver → **pre**ver*.
 
 #### B) Derivação Sufixal (ou Sufixação)
 Acréscimo de um sufixo após o radical, frequentemente mudando a sua classe gramatical:
-- *leal* (adjetivo) + *-dade* $	o$ *leal**dade*** (substantivo abstrato).
-- *rápido* (adjetivo) + *-mente* $	o$ *rapida**mente*** (advérbio de modo).
-- *alfabeto* (substantivo) + *-izar* $	o$ *alfabet**izar*** (verbo de ação).
+- *leal* (adjetivo) + *-dade* → *leal**dade*** (substantivo abstrato).
+- *rápido* (adjetivo) + *-mente* → *rapida**mente*** (advérbio de modo).
+- *alfabeto* (substantivo) + *-izar* → *alfabet**izar*** (verbo de ação).
 
 #### C) Derivação Prefixal e Sufixal (Processo Independente)
 Ocorre quando agregamos simultaneamente um prefixo e um sufixo a um radical, mas **de maneira independente**. Isso significa que, se você remover qualquer um dos dois, a palavra restante continuará existindo com pleno sentido no português:
@@ -771,24 +765,26 @@ Ocorre quando o prefixo e o sufixo são agregados ao radical **ao mesmo tempo e 
   - *es-clare-cer* (não existe "clarecer").
 
 ```text
-┌────────────────────────────────────────────────────────────────────────┐
-│               O TESTE DO DESCARTE: PREFIXAL/SUFIXAL vs. PARASSÍNTESE   │
-├────────────────────────────────────────────────────────────────────────┤
-│ 1. Isole o prefixo. A palavra restante existe no dicionário?           │
-│ 2. Isole o sufixo. A palavra restante existe no dicionário?            │
-│                                                                        │
-│ • Se as palavras continuam existindo sozinhas ➔ PREFIXAL E SUFIXAL.    │
-│ • Se a palavra restante NÃO EXISTE sem um deles ➔ PARASSINTÉTICA.      │
-└────────────────────────────────────────────────────────────────────────┘
+┌──────────────────────────────────┐
+│ TESTE DO DESCARTE (PARASSÍNTESE) │
+├──────────────────────────────────┤
+│ 1. Tape o prefixo: o que sobrou  │
+│    existe sozinho no dicionário? │
+│                                  │
+│ • SIM, existe sozinho:           │
+│   ➔ Derivação PREFIXAL E SUFIXAL │
+│ • NÃO existe sozinho:            │
+│   ➔ Derivação PARASSINTÉTICA     │
+└──────────────────────────────────┘
 ```
 
 #### E) Derivação Regressiva (Deverbal)
 Ocorre quando reduzimos uma palavra original. Quase sempre consiste na transformação de um **verbo que expressa ação** em um **substantivo abstrato** terminado nas vogais temáticas atonas **-o, -a ou -e**:
-- Do verbo *debater* (ação) $	o$ nasce o substantivo *o debate*.
-- Do verbo *comprar* (ação) $	o$ nasce o substantivo *a compra*.
-- Do verbo *sacar* (ação) $	o$ nasce o substantivo *o saque*.
-- Do verbo *pescar* (ação) $	o$ nasce o substantivo *a pesca*.
-*(Atenção: Não confunda com o processo inverso! Em "âncora $	o$ ancorar" e "planta $	o$ plantar", o substantivo veio primeiro e o verbo foi derivado dele por sufixação).*
+- Do verbo *debater* (ação) → nasce o substantivo *o debate*.
+- Do verbo *comprar* (ação) → nasce o substantivo *a compra*.
+- Do verbo *sacar* (ação) → nasce o substantivo *o saque*.
+- Do verbo *pescar* (ação) → nasce o substantivo *a pesca*.
+*(Atenção: Não confunda com o processo inverso! Em "âncora → ancorar" e "planta → plantar", o substantivo veio primeiro e o verbo foi derivado dele por sufixação).*
 
 #### F) Derivação Imprópria (Conversão)
 Ocorre quando uma palavra **muda de classe gramatical sem sofrer nenhuma alteração em suas letras ou fonemas**, apenas pelo papel que assume na frase:
@@ -803,18 +799,18 @@ Enquanto a derivação parte de apenas um radical, a composição consiste na **
 
 #### A) Justaposição (Sem Perda Sonora)
 Os radicais se unem lado a lado **sem que ocorra nenhuma perda fonética ou alteração ortográfica**. Cada palavra mantém sua pronúncia e integridade intactas:
-- *passa + tempo* $	o$ **passatempo**.
-- *guarda + chuva* $	o$ **guarda-chuva**.
-- *pé + de + moleque* $	o$ **pé de moleque**.
-- *gira + sol* $	o$ **girassol** *(o acréscimo de um 's' tem o único propósito fonético de manter o som de /s/ entre duas vogais, sem que nenhuma letra original tenha sido perdida)*.
+- *passa + tempo* → **passatempo**.
+- *guarda + chuva* → **guarda-chuva**.
+- *pé + de + moleque* → **pé de moleque**.
+- *gira + sol* → **girassol** *(o acréscimo de um 's' tem o único propósito fonético de manter o som de /s/ entre duas vogais, sem que nenhuma letra original tenha sido perdida)*.
 
 #### B) Aglutinação (Com Fusão e Perda Sonora)
 Os radicais se unem com choque fonético, ocorrendo **supressão de letras ou alteração de sons** na junção dos termos:
-- *plano + alto* $	o$ **planalto** (o "o" de plano foi eliminado).
-- *água + ardente* $	o$ **aguardente** (fusão das duas vogais 'a').
-- *em + boa + hora* $	o$ **embora**.
-- *filho + de + algo* $	o$ **fidalgo**.
-- *perna + alta* $	o$ **pernalta**.
+- *plano + alto* → **planalto** (o "o" de plano foi eliminado).
+- *água + ardente* → **aguardente** (fusão das duas vogais 'a').
+- *em + boa + hora* → **embora**.
+- *filho + de + algo* → **fidalgo**.
+- *perna + alta* → **pernalta**.
 
 ---
 
@@ -844,14 +840,16 @@ A língua é um organismo vivo que cria palavras por outros mecanismos complemen
 O plural de palavras compostas é um dos assuntos mais temidos pelos candidatos, mas ele obedece a uma **regra de ouro puramente lógica**:
 
 ```text
-┌────────────────────────────────────────────────────────────────────────┐
-│                   A REGRA DE OURO DA NATUREZA GRAMATICAL               │
-├────────────────────────────────────────────────────────────────────────┤
-│ Pergunte-se: "Qual é a classe gramatical de cada palavra formadora?"   │
-│                                                                        │
-│ • CLASSES VARIÁVEIS (Substantivo, Adjetivo, Numeral) ➔ FLEXIONAM EM 'S'│
-│ • CLASSES INVARIÁVEIS (Verbo, Advérbio, Prefixo) ➔ FICAM NO SINGULAR   │
-└────────────────────────────────────────────────────────────────────────┘
+┌──────────────────────────────────┐
+│  PLURAL DOS COMPOSTOS: REGRA     │
+├──────────────────────────────────┤
+│ Qual a classe de cada palavra?   │
+│                                  │
+│ • VARIÁVEIS (Subst., Adj., Num.):│
+│   ➔ VÃO PARA O PLURAL (+S)       │
+│ • INVARIÁVEIS (Verbo, Adv., Pref)│
+│   ➔ FICAM NO SINGULAR            │
+└──────────────────────────────────┘
 ```
 
 Por que o verbo não flexiona no plural de substantivos compostos?  
@@ -863,69 +861,69 @@ Pense na lógica: o plural de nomes em português é feito adicionando a letra *
 
 #### A) Classes Variáveis Unidas (Ambos vão para o Plural):
 * **Substantivo + Substantivo:**
-  - *couve-flor $	o$ couves-flores*
-  - *decreto-lei $	o$ decretos-leis*
-  - *tenente-coronel $	o$ tenentes-coronéis*
+  - *couve-flor → couves-flores*
+  - *decreto-lei → decretos-leis*
+  - *tenente-coronel → tenentes-coronéis*
 * **Substantivo + Adjetivo / Adjetivo + Substantivo:**
-  - *oficial-administrativo $	o$ oficiais-administrativos*
-  - *carta-bilhete $	o$ cartas-bilhetes*
-  - *alto-relevo $	o$ altos-relevos*
-  - *má-língua $	o$ más-línguas*
+  - *oficial-administrativo → oficiais-administrativos*
+  - *carta-bilhete → cartas-bilhetes*
+  - *alto-relevo → altos-relevos*
+  - *má-língua → más-línguas*
 * **Numeral + Substantivo:**
-  - *terça-feira $	o$ terças-feiras*
-  - *primeira-dama $	o$ primeiras-damas*
+  - *terça-feira → terças-feiras*
+  - *primeira-dama → primeiras-damas*
 
 #### B) Verbo ou Palavra Invariável na Composição (O primeiro fica congelado!):
 * **Verbo + Substantivo (Apenas o segundo flexiona):**
-  - *guarda-roupa $	o$ **guarda-roupas*** *(quem guarda é verbo guardar $	o$ fica no singular!).*
-  - *guarda-chuva $	o$ **guarda-chuvas***.
-  - *quebra-cabeça $	o$ **quebra-cabeças***.
-  - *arranha-céu $	o$ **arranha-céus***.
-  - *lança-perfume $	o$ **lança-perfumes***.
+  - *guarda-roupa → **guarda-roupas*** *(quem guarda é verbo guardar → fica no singular!).*
+  - *guarda-chuva → **guarda-chuvas***.
+  - *quebra-cabeça → **quebra-cabeças***.
+  - *arranha-céu → **arranha-céus***.
+  - *lança-perfume → **lança-perfumes***.
 * **Palavra Invariável (advérbio ou prefixo) + Substantivo:**
-  - *alto-falante $	o$ **alto-falantes*** *(alto aqui é advérbio de volume, significa "falar alto" $	o$ invariável!).*
-  - *abaixo-assinado $	o$ **abaixo-assinados*** *(abaixo é advérbio de lugar $	o$ invariável!).*
-  - *vice-diretor $	o$ **vice-diretores*** *(vice é prefixo $	o$ invariável!).*
-  - *ex-prefeito $	o$ **ex-prefeitos*** *(ex é prefixo $	o$ invariável!).*
+  - *alto-falante → **alto-falantes*** *(alto aqui é advérbio de volume, significa "falar alto" → invariável!).*
+  - *abaixo-assinado → **abaixo-assinados*** *(abaixo é advérbio de lugar → invariável!).*
+  - *vice-diretor → **vice-diretores*** *(vice é prefixo → invariável!).*
+  - *ex-prefeito → **ex-prefeitos*** *(ex é prefixo → invariável!).*
 
 #### C) A Exceção Lógica do Substantivo Delimitador:
 Quando o segundo substantivo serve para **limitar, restringir, indicar o tipo ou a finalidade do primeiro**, a norma-padrão consagra a flexão de **apenas o primeiro elemento**:
-* *salário-família $	o$ **salários-família*** (família é a finalidade do benefício).
-* *caneta-tinteiro $	o$ **canetas-tinteiro*** (tinteiro é o tipo da caneta).
-* *navio-escola $	o$ **navios-escola*** (escola é a função do navio).
-* *cidade-satélite $	o$ **cidades-satélite*** (satélite funciona como qualificativo restritivo).  
+* *salário-família → **salários-família*** (família é a finalidade do benefício).
+* *caneta-tinteiro → **canetas-tinteiro*** (tinteiro é o tipo da caneta).
+* *navio-escola → **navios-escola*** (escola é a função do navio).
+* *cidade-satélite → **cidades-satélite*** (satélite funciona como qualificativo restritivo).  
 *(Nota didática: embora a gramática moderna venha aceitando a flexão de ambos em alguns casos, as bancas examinadoras de concursos cobram prioritariamente a flexão exclusiva do primeiro elemento nesses compostos de especificação).*
 
 #### D) Compostos Ligados por Preposição:
 Quando os elementos estão ligados por preposição (explícita ou implícita), flexiona-se **apenas o primeiro elemento**, pois o restante é um termo preposicionado dependente:
-* *pé de moleque $	o$ **pés de moleque***
-* *mula sem cabeça $	o$ **mulas sem cabeça***
-* *general de brigada $	o$ **generais de brigada***
-* *pão de ló $	o$ **pães de ló***
+* *pé de moleque → **pés de moleque***
+* *mula sem cabeça → **mulas sem cabeça***
+* *general de brigada → **generais de brigada***
+* *pão de ló → **pães de ló***
 
 #### E) Palavras Repetidas ou Onomatopeias:
 Quando o composto é formado por palavras repetidas ou por sons onomatopéicos, flexiona-se **apenas o segundo elemento**:
-* *reco-reco $	o$ **reco-recos***
-* *tique-taque $	o$ **tique-taques***
-* *corre-corre $	o$ **corre-corres***
-* *pisca-pisca $	o$ **pisca-piscas***
+* *reco-reco → **reco-recos***
+* *tique-taque → **tique-taques***
+* *corre-corre → **corre-corres***
+* *pisca-pisca → **pisca-piscas***
 
 ---
 
 ### 3. Plural dos Adjetivos Compostos
 Nos adjetivos compostos, a regra geral é surpreendentemente simples: **apenas o último elemento vai para o plural e concorda em gênero e número com o substantivo**. O primeiro elemento permanece congelado na forma masculina singular:
-- *acordo político-econômico $	o$ acordos **político-econômicos***.
-- *causa médico-cirúrgica $	o$ causas **médico-cirúrgicas***.
-- *documento técnico-administrativo $	o$ documentos **técnico-administrativos***.
-- *instituição luso-brasileira $	o$ instituições **luso-brasileiras***.
+- *acordo político-econômico → acordos **político-econômicos***.
+- *causa médico-cirúrgica → causas **médico-cirúrgicas***.
+- *documento técnico-administrativo → documentos **técnico-administrativos***.
+- *instituição luso-brasileira → instituições **luso-brasileiras***.
 
 #### As Duas Regras de Ouro das Cores (Atenção Máxima em Concursos):
 1. **Adjetivo Composto Indicando Cor formado por SUBSTANTIVO:**  
    Se qualquer um dos elementos que dão nome à cor for originalmente um **substantivo** (fruta, flor, metal, pedra preciosa, animal), **o bloco inteiro fica 100% INVARIÁVEL**!
-   - *camisas **verde-oliva*** *(oliva é fruta/substantivo $	o$ nenhum elemento varia!).*
-   - *paredes **amarelo-ouro*** *(ouro é metal/substantivo $	o$ invariável!).*
-   - *olhos **verde-esmeralda*** *(esmeralda é pedra preciosa $	o$ invariável!).*
-   - *tecidos **vermelho-sangue*** *(sangue é substantivo $	o$ invariável!).*
+   - *camisas **verde-oliva*** *(oliva é fruta/substantivo → nenhum elemento varia!).*
+   - *paredes **amarelo-ouro*** *(ouro é metal/substantivo → invariável!).*
+   - *olhos **verde-esmeralda*** *(esmeralda é pedra preciosa → invariável!).*
+   - *tecidos **vermelho-sangue*** *(sangue é substantivo → invariável!).*
 2. **As Formas Consagradas Invariáveis por Tradição:**  
    As expressões *azul-marinho* e *azul-celeste* são consagradas como **totalmente invariáveis**:
    - *ternos **azul-marinho*** (nunca diga "azuis-marinhos"!).
@@ -980,7 +978,7 @@ Em relação à estrutura e à formação das palavras destacadas, analise as af
 * **Eliminação das alternativas incorretas:**
   - (A) Incorreta. Não há parassíntese em *semicondutor* (a base *condutor* existe de forma independente) e *precisão* teve acréscimo de sufixo, não sendo conversão (derivação imprópria).
   - (C) Incorreta. *Semi-* é prefixo, não radical nominal independente para caracterizar composição por justaposição.
-  - (D) Incorreta. Derivação regressiva forma substantivos a partir de verbos (ex: *combater $\to$ debate*), o que não é o caso de *semicondutor*.
+  - (D) Incorreta. Derivação regressiva forma substantivos a partir de verbos (ex: *combater → debate*), o que não é o caso de *semicondutor*.
 * **Gabarito:** Letra **B**.
 </details>
 
@@ -1003,9 +1001,9 @@ Considerando a palavra "encontro" no trecho "A lua depois da chuva é poesia pur
 **Comentário Passo a Passo:**  
 * **A Lógica da Derivação Regressiva (Deverbal):**  
   Quando um verbo que indica **ação** dá origem a um **substantivo abstrato** que indica o resultado ou o ato dessa ação, há perda/regressão de elementos morfológicos (em vez de acrescentar sufixos longos como *-mento* ou *-ção*, a terminação verbal infinitiva *-ar* é suprimida e substitui-se pela vogal temática nominal *-o, -a* ou *-e*):
-  - *encontrar* (verbo) $\to$ *o encontro* (substantivo abstrato derivado).
-  - *debater* (verbo) $\to$ *o debate* (substantivo abstrato derivado).
-  - *pescar* (verbo) $\to$ *a pesca* (substantivo abstrato derivado).
+  - *encontrar* (verbo) → *o encontro* (substantivo abstrato derivado).
+  - *debater* (verbo) → *o debate* (substantivo abstrato derivado).
+  - *pescar* (verbo) → *a pesca* (substantivo abstrato derivado).
 * **Eliminando as alternativas:**
   - (B) Incorreta. Não é primitivo; é derivado do verbo *encontrar*.
   - (C) Incorreta. Não é composição de *em* + *contra*.
@@ -1153,7 +1151,7 @@ Está CORRETO o que se afirma em:
 * **Assertiva I (Verdadeira):**  
   *Subsecretária* tem como base o substantivo *secretária*, ao qual se acoplou o prefixo latino *sub-* (que semanticamente indica posição inferior, abaixo ou subordinação funcional na administração pública). Formação legítima por **derivação prefixal**.
 * **Assertiva II (Verdadeira):**  
-  A cadeia de derivação é: *escola* (substantivo) $\to$ *escolar* (adjetivo com sufixo *-ar*) $\to$ *escolaridade* (substantivo abstrato formado com o sufixo nominalizador *-idade*). Portanto, derivado por sufixação a partir do adjetivo.
+  A cadeia de derivação é: *escola* (substantivo) → *escolar* (adjetivo com sufixo *-ar*) → *escolaridade* (substantivo abstrato formado com o sufixo nominalizador *-idade*). Portanto, derivado por sufixação a partir do adjetivo.
 * **Assertiva III (Falsa):**  
   O verbo *acumulou* vem diretamente do latim *accumulare* (*ad-* + *cumulare*, de *cumulus* = monte, amontoar). Não é composição nem hibridismo (hibridismo ocorre em palavras com raízes de línguas diferentes, como *automóvel* = grego + latim; *sociologia* = latim + grego).
 * **Conclusão:** Estão corretas apenas as assertivas I e II.
@@ -1179,12 +1177,12 @@ Os vocábulos destacados são formados pelos processos de, respectivamente:
 
 **Comentário Passo a Passo:**  
 * **Análise de 'maioria':**  
-  Deriva do adjetivo comparativo *maior* com a anexação do sufixo nominal *-ia* (*maior* + *-ia* $\to$ *maioria*). Processo: **derivação sufixal (sufixação)**.
+  Deriva do adjetivo comparativo *maior* com a anexação do sufixo nominal *-ia* (*maior* + *-ia* → *maioria*). Processo: **derivação sufixal (sufixação)**.
 * **Análise de 'desigualdade':**  
   A raiz primitiva é o adjetivo *igual*.  
-  1. Acrescentou-se o prefixo de negação *des-* $\to$ *desigual*.  
-  2. Acrescentou-se o sufixo formador de substantivo *-dade* $\to$ *desigualdade*.  
-  - **Por que não é parassíntese?** Faça o teste do descarte: se removermos o prefixo *des-*, a palavra *igualdade* continua existindo na língua portuguesa com pleno sentido! Portanto, os afixos são independentes $\to$ **derivação prefixal e sufixal**.
+  1. Acrescentou-se o prefixo de negação *des-* → *desigual*.  
+  2. Acrescentou-se o sufixo formador de substantivo *-dade* → *desigualdade*.  
+  - **Por que não é parassíntese?** Faça o teste do descarte: se removermos o prefixo *des-*, a palavra *igualdade* continua existindo na língua portuguesa com pleno sentido! Portanto, os afixos são independentes → **derivação prefixal e sufixal**.
 * **Gabarito:** Letra **C**.
 </details>
 
@@ -1261,6 +1259,6 @@ Copie estas cinco perguntas-chave no seu caderno de resumos e responda em voz al
 
 1. [ ] Sei explicar a diferença entre substantivo concreto e abstrato sem cair na armadilha do "pegar com a mão" (critério da existência autônoma)?  
 2. [ ] Consigo aplicar o "Teste do Descarte" para provar quando uma palavra é parassintética e quando é derivação prefixal e sufixal independente?  
-3. [ ] Sei quando um substantivo abstrato nasce de um verbo por derivação regressiva (ex: *encontrar $\to$ o encontro*)?  
+3. [ ] Sei quando um substantivo abstrato nasce de um verbo por derivação regressiva (ex: *encontrar → o encontro*)?  
 4. [ ] Dominei o papel do pronome no texto, sabendo exatamente que *isso/esse* resgata o que já passou (anáfora) e *isto/este* anuncia o que vai ser dito (catáfora)?  
 5. [ ] Sei a regra lógica do plural dos adjetivos compostos (apenas o último varia) e por que expressões de cor com substantivo (*verde-oliva, amarelo-ouro*) ficam 100% invariáveis?

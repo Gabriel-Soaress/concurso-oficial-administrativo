@@ -166,9 +166,9 @@ No idioma português, cada sílaba é uma emissão de voz única em torno de **u
 
 | Conceito | O que significa na prática? | Analogia Didática | Exemplos Comentados |
 | :--- | :--- | :--- | :--- |
-| **DITONGO** | Encontro de **uma Vogal (forte) + uma Semivogal (fraca)** na **mesma sílaba**. Podem ser: <br>• **Decrescente:** Vogal forte $\to$ Semivogal fraca.<br>• **Crescente:** Semivogal fraca $\to$ Vogal forte. | **Casal Inseparável:** Andam sempre de mãos dadas; na divisão silábica, continuam juntos no mesmo cômodo. | `PEI-XE` (e = forte, i = fraco $\to$ ditongo decrescente) <br>`HIS-TÓ-RIA` (i = fraco, a = forte $\to$ ditongo crescente) <br>`MUI-TO` (u = forte, i = fraco) |
+| **DITONGO** | Encontro de **uma Vogal (forte) + uma Semivogal (fraca)** na **mesma sílaba**. Podem ser: <br>• **Decrescente:** Vogal forte → Semivogal fraca.<br>• **Crescente:** Semivogal fraca → Vogal forte. | **Casal Inseparável:** Andam sempre de mãos dadas; na divisão silábica, continuam juntos no mesmo cômodo. | `PEI-XE` (e = forte, i = fraco → ditongo decrescente) <br>`HIS-TÓ-RIA` (i = fraco, a = forte → ditongo crescente) <br>`MUI-TO` (u = forte, i = fraco) |
 | **TRITONGO** | Encontro de **Semivogal + Vogal + Semivogal** na **mesma sílaba** (a vogal forte fica no meio de duas fracas). | **Sanduíche Fonético:** O recheio nutritivo (vogal forte) fica protegido por duas fatias de pão (semivogais). | `U-RU-GUAI` (u = semi, a = vogal, i = semi) <br>`SA-GUÃO` (u = semi, ã = vogal nasal, o = semi) |
-| **HIATO** | Encontro de **duas Vogais fortes** vizinhas na palavra, mas que **SE SEPARAM** na hora de falar e de dividir a sílaba! | **Dois Reis no Mesmo Trono:** O trono é pequeno demais para dois soberanos. Eles brigam e cada um vai morar no seu próprio castelo (sílabas separadas). | `SA-Ú-DE` (a = vogal forte, u = vogal forte $\to$ separam) <br>`DI-A` (i = vogal forte, a = vogal forte $\to$ separam) <br>`FA-ÍS-CA` (a = vogal, i = vogal tônica $\to$ separam) |
+| **HIATO** | Encontro de **duas Vogais fortes** vizinhas na palavra, mas que **SE SEPARAM** na hora de falar e de dividir a sílaba! | **Dois Reis no Mesmo Trono:** O trono é pequeno demais para dois soberanos. Eles brigam e cada um vai morar no seu próprio castelo (sílabas separadas). | `SA-Ú-DE` (a = vogal forte, u = vogal forte → separam) <br>`DI-A` (i = vogal forte, a = vogal forte → separam) <br>`FA-ÍS-CA` (a = vogal, i = vogal tônica → separam) |
 
 ---
 
@@ -285,8 +285,8 @@ A gramática segue a **lei do menor esforço gráfico**:
 > *"Se 80% das palavras terminadas em A, E, O, EM, ENS já são naturalmente pronunciadas no meio (paroxítonas), para que gastar tinta enchendo-as de acento?"*
 
 Dessa constatação surgem as duas regras espelhadas:
-1. **Paroxítonas terminadas em A, E, O, EM, ENS:** seguem o fluxo padrão $\to$ **NÃO levam acento** (*ca-sa, pei-xe, li-vro, i-tem, nu-vens*).
-2. **Oxítonas terminadas em A, E, O, EM, ENS:** desafiam o fluxo padrão $\to$ **PRECISAM DE ACENTO OBRIGATÓRIO** para sinalizar ao leitor que a força foi empurrada para a última sílaba (*so-fá, ca-fé, ci-pó, tam-bém, ar-ma-zéns*). Sem o acento, leríamos *"sófa", "cáfe", "támbem"*.
+1. **Paroxítonas terminadas em A, E, O, EM, ENS:** seguem o fluxo padrão → **NÃO levam acento** (*ca-sa, pei-xe, li-vro, i-tem, nu-vens*).
+2. **Oxítonas terminadas em A, E, O, EM, ENS:** desafiam o fluxo padrão → **PRECISAM DE ACENTO OBRIGATÓRIO** para sinalizar ao leitor que a força foi empurrada para a última sílaba (*so-fá, ca-fé, ci-pó, tam-bém, ar-ma-zéns*). Sem o acento, leríamos *"sófa", "cáfe", "támbem"*.
 
 | Se a palavra terminar em: | Se for PAROXÍTONA (força no meio) | Se for OXÍTONA (força no final) |
 | :--- | :--- | :--- |
@@ -350,8 +350,8 @@ Quando as letras **I** ou **U** forem as donas da força (tônicas), estiverem s
 - **A Pegadinha Cruel das Bancas:** Em palavras **oxítonas e monossílabos tônicos**, o acento **CONTINUA OBRIGATÓRIO**: *he-rói*, *tro-féu*, *a-néis*, *céus*, *dói*.
 
 #### C. Fim do Acento nas Vogais Duplicadas (EE e OO)
-- *crêem, dêem, lêem, vêem* $\to$ virou **creem, deem, leem, veem** (sem acento!).  
-- *vôo, enjôo* $\to$ virou **voo, enjoo** (sem acento!).
+- *crêem, dêem, lêem, vêem* → virou **creem, deem, leem, veem** (sem acento!).  
+- *vôo, enjôo* → virou **voo, enjoo** (sem acento!).
 
 #### D. O Acento Diferencial que Sobreviveu
 O Acordo extinguiu a maioria dos acentos diferenciais (*pára* virou *para*, *pêlo* virou *pelo*), mas **manteve expressamente dois casos vitais para evitar ambiguidade gramatical**:
@@ -362,8 +362,8 @@ O Acordo extinguiu a maioria dos acentos diferenciais (*pára* virou *para*, *p�
    - *Vou pôr o documento na pasta* (verbo colocar, leva acento circunflexo).  
    - *Vou por este caminho* (preposição, sem acento).
 3. **Formas Plurais dos Verbos Ter e Vir (Diferencial de Número):**  
-   - *Ele tem* (singular, sem acento) $\to$ *Eles **têm*** (plural, com acento circunflexo!).  
-   - *Ele vem* (singular, sem acento) $\to$ *Eles **vêm*** (plural, com acento circunflexo!).
+   - *Ele tem* (singular, sem acento) → *Eles **têm*** (plural, com acento circunflexo!).  
+   - *Ele vem* (singular, sem acento) → *Eles **vêm*** (plural, com acento circunflexo!).
 
 ---
 
@@ -393,9 +393,9 @@ A ortografia do português não foi inventada por sorteio. Ela segue duas força
    Palavras derivadas de línguas indígenas (tupi, guarani) ou africanas adotam naturalmente **X** e **J**: *abacaxi*, *pajé*, *jiboia*, *canjica*.  
 2. **Família de Palavras (Morfologia):**  
    Se a raiz primitiva tem uma letra, a família derivada preserva a mesma letra para manter a identidade visual:  
-   - *Análise* (com S) $\to$ *analisar*, *analisador*, *analisado*.  
-   - *Pesquisa* (com S) $\to$ *pesquisar*, *pesquisador*.  
-   - *(Mas atenção: se a palavra base não tem S, o sufixo formador de verbo "-izar" entra com Z: canal $\to$ canalizar; útil $\to$ utilizar).*
+   - *Análise* (com S) → *analisar*, *analisador*, *analisado*.  
+   - *Pesquisa* (com S) → *pesquisar*, *pesquisador*.  
+   - *(Mas atenção: se a palavra base não tem S, o sufixo formador de verbo "-izar" entra com Z: canal → canalizar; útil → utilizar).*
 
 ---
 
@@ -408,7 +408,7 @@ Em provas municipais, bancas adoram trocar X por CH. Veja as regras racionais qu
    *(Única exceção clássica de prova: recauchutar e seus derivados, pois vem do francês caoutchouc).*
 2. **Usa-se X após a sílaba inicial EN-:**  
    - *en-xa-da*, *en-xa-me*, *en-xer-gar*, *en-xa-queca*, *en-xe-rido*.  
-   *(Exceção lógica de família: se a palavra já nascer de um radical com CH, o prefixo EN- preserva o CH da família! Exemplo: de cheio $\to$ encher, enchente; de charco $\to$ encharcar).*
+   *(Exceção lógica de família: se a palavra já nascer de um radical com CH, o prefixo EN- preserva o CH da família! Exemplo: de cheio → encher, enchente; de charco → encharcar).*
 3. **Usa-se X após a sílaba inicial ME-:**  
    - *me-xi-co*, *me-xi-cano*, *me-xi-lhão*, *me-xe-ri-ca*.  
    *(Exceção clássica: mecha de cabelo).*
@@ -416,7 +416,7 @@ Em provas municipais, bancas adoram trocar X por CH. Veja as regras racionais qu
 ---
 
 ### 3. Síntese Feynman (Ortografia em 3 Linhas)
-> **1.** Palavra herda o DNA da família: se a mãe tem S (*pesquisa*), o filho terá S (*pesquisar*); se não tem S na base, o verbo recebe Z (*moderno $\to$ modernizar*).  
+> **1.** Palavra herda o DNA da família: se a mãe tem S (*pesquisa*), o filho terá S (*pesquisar*); se não tem S na base, o verbo recebe Z (*moderno → modernizar*).  
 > **2.** Depois de ditongo ou depois da sílaba inicial "en-", escreve-se quase sempre com X (*caixa, enxada*), a menos que a palavra primitiva venha de cheio (*encher*).  
 > **3.** Se a palavra tem raiz indígena ou africana, desconfie de CH e vá no X e no J (*pajé, canjica, abacaxi*).
 
@@ -534,19 +534,19 @@ Ao todo, quantas dessas palavras devem ser preenchidas com **X** para a correç�
 
 **Comentário Passo a Passo:**  
 Vamos preencher palavra por palavra aplicando as regras fonéticas e ortográficas:  
-1. `Enxergar` $\to$ com **X** (após sílaba inicial *en-*).  
-2. `Enxada` $\to$ com **X** (após sílaba inicial *en-*).  
-3. `Deboche` $\to$ com **CH** (palavra de origem francesa *débauche*, grafada tradicionalmente com CH, assim como debichar, debochado).  
-4. `Vexame` $\to$ com **X** (origem no latim *vexare*, família de vexatório).  
-5. `Cochilo` $\to$ com **CH** (grafia oficial fixada com CH, bem como cochilar).  
-6. `Enxerido` $\to$ com **X** (após sílaba inicial *en-*).  
+1. `Enxergar` → com **X** (após sílaba inicial *en-*).  
+2. `Enxada` → com **X** (após sílaba inicial *en-*).  
+3. `Deboche` → com **CH** (palavra de origem francesa *débauche*, grafada tradicionalmente com CH, assim como debichar, debochado).  
+4. `Vexame` → com **X** (origem no latim *vexare*, família de vexatório).  
+5. `Cochilo` → com **CH** (grafia oficial fixada com CH, bem como cochilar).  
+6. `Enxerido` → com **X** (após sílaba inicial *en-*).  
 
 * **Contagem de palavras com X:**  
   1. En**x**ergar  
   2. En**x**ada  
   3. Ve**x**ame  
   4. En**x**erido  
-  $\to$ Total: **4 palavras com X** e 2 com CH (*deboche* e *cochilo*).  
+  → Total: **4 palavras com X** e 2 com CH (*deboche* e *cochilo*).  
 * **Gabarito:** Letra **B**.
 </details>
 
@@ -653,7 +653,7 @@ Indique a alternativa em que todas as palavras são acentuadas graficamente, **s
 * **Análise da Alternativa A:**  
   - `Tó-rax`: A penúltima sílaba é a mais forte (*tó*); termina com a consoante **X**. É uma **paroxítona terminada em X**.  
   - `Ô-nix`: A penúltima sílaba é a mais forte (*ô*); termina com a consoante **X**. É uma **paroxítona terminada em X**.  
-  $\to$ Ambas recebem acento pela **mesma e exata regra gramatical**!  
+  → Ambas recebem acento pela **mesma e exata regra gramatical**!  
 * **Por que as outras não pertencem à mesma regra?**  
   - *(B) Sóis, lâmina:* `Sóis` é acentuado por ser monossílabo tônico com ditongo aberto (*ói*); `lâmina` é acentuada por ser **proparoxítona**. Regras distintas.  
   - *(C) Trôpego, avó:* `Trôpego` é **proparoxítona**; `avó` é acentuada por ser **oxítona** terminada em O. Regras distintas.  

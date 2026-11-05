@@ -491,7 +491,7 @@ Passo 3: CORTE AS VÍRGULAS e divida normalmente como números inteiros!
 
 Veja como a conta e armada e resolvida na chave passo a passo (como fazemos no papel):
 
-1. **Passo 1:** Olhamos o $8$ (menor que $36$, não dá). Pegamos o **$82$**. Quantas vezes o $36$ cabe em $82$? Como $36 	imes 2 = 72$, cabe **$2$ vezes** (sobra resto $10$):
+1. **Passo 1:** Olhamos o $8$ (menor que $36$, não dá). Pegamos o **$82$**. Quantas vezes o $36$ cabe em $82$? Como $36 \times 2 = 72$, cabe **$2$ vezes** (sobra resto $10$):
 
 ```text
    8 2 8 | 36
@@ -500,7 +500,7 @@ Veja como a conta e armada e resolvida na chave passo a passo (como fazemos no p
    1 0
 ```
 
-2. **Passo 2:** Abaixo do resto $10$, **desce o último algarismo ($8$)**, formando **$108$**. Quantas vezes o $36$ cabe em $108$? Como $36 	imes 3 = 108$, cabe **$3$ vezes** exatas:
+2. **Passo 2:** Abaixo do resto $10$, **desce o último algarismo ($8$)**, formando **$108$**. Quantas vezes o $36$ cabe em $108$? Como $36 \times 3 = 108$, cabe **$3$ vezes** exatas:
 
 ```text
    8 2 8 | 36
