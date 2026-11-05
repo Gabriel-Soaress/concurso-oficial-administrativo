@@ -1454,7 +1454,7 @@
   </main>
   </div>
 
-  <script src="aulas-data.js?v=20261105_10"></script>
+  <script src="aulas-data.js?v=20261105_11"></script>
   <script>
     const DB_SQL_URL = "https://ep-muddy-thunder-ac0eoxn3-pooler.sa-east-1.aws.neon.tech/sql";
     const DB_CONN_STR = "postgresql://neondb_owner:npg_l2mWY5HINrgG@ep-muddy-thunder-ac0eoxn3-pooler.sa-east-1.aws.neon.tech/neondb?sslmode=require";
@@ -2478,7 +2478,7 @@
       });
 
       // 2. Proteger símbolos monetários R$ e US$ antes de extrair $...$ do LaTeX
-      text = text.replace(/R\$/g, "@@CURR_BRL@@").replace(/US\$/g, "@@CURR_USD@@").replace(/\\\$/g, "@@ESC_DOLLAR@@");
+      text = text.replace(/(?<![a-zA-Z0-9_\\])R\$(?=\s*[\d\-])/g, "@@CURR_BRL@@").replace(/(?<![a-zA-Z0-9_\\])US\$(?=\s*[\d\-])/g, "@@CURR_USD@@").replace(/\\\$/g, "@@ESC_DOLLAR@@");
 
       // 3. Extrair blocos matemáticos Display $$...$$ (quebrando passos longos em itens flex para caber 100% na tela do celular sem scroll lateral)
       text = text.replace(/\$\$([\s\S]*?)\$\$/g, (_, tex) => {

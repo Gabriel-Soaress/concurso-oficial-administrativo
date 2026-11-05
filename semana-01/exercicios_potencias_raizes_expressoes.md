@@ -13,7 +13,7 @@
   - Expoente **ímpar**: resultado **negativo** (exemplo: $(-2)^3 = (-2) \times (-2) \times (-2) = -8$).
   - **Atenção ao parêntese:** $-3^2 = -(3 \times 3) = -9$, enquanto $(-3)^2 = +9$.
 * **Expoente Zero:** qualquer número diferente de zero elevado a zero é igual a **1** ($a^0 = 1$).
-* **Expoente Negativo:** inverte a base e torna o expoente positivo ($a^{-n} = \frac{1}{a^n}$ e $(\frac{a}{b})^{-n} = (\frac{b}{a})^n$).
+* **Expoente Negativo:** inverte a base e torna o expoente positivo ($a^{-n} = \frac{1}{a^n}$ e $\left(\frac{a}{b}\right)^{-n} = \left(\frac{b}{a}\right)^n$).
 * **Propriedades das Potências:**
   - Multiplicação de mesma base: conserva a base e **soma os expoentes** ($a^m \times a^n = a^{m+n}$).
   - Divisão de mesma base: conserva a base e **subtrai os expoentes** ($a^m \div a^n = a^{m-n}$).
@@ -45,9 +45,9 @@
 11. $2^{-1} =$ ______
 12. $5^{-2} =$ ______
 13. $10^{-3} =$ ______
-14. $(\frac{1}{3})^{-2} =$ ______
-15. $(\frac{2}{5})^{-1} =$ ______
-16. $(\frac{3}{4})^{-2} =$ ______
+14. $\left(\frac{1}{3}\right)^{-2} =$ ______
+15. $\left(\frac{2}{5}\right)^{-1} =$ ______
+16. $\left(\frac{3}{4}\right)^{-2} =$ ______
 
 ### 3. Propriedades das Potências
 17. $2^3 \times 2^4 =$ ______
@@ -86,8 +86,8 @@
 ### 7. Expressões Completas com Sinais de Agrupamento
 43. $10 + [5 \times (8 - 2) - 12] =$ ______
 44. $45 - [15 + (3^2 \times 2 - 4)] =$ ______
-45. $2 \times \{30 - [4 + 2 \times (10 - \sqrt{49})]\} =$ ______
-46. $\{[ (2^3 + \sqrt{16}) \div 3 ] \times 5\} - 10 =$ ______
+45. $2 \times \left\{30 - \left[4 + 2 \times (10 - \sqrt{49})\right]\right\} =$ ______
+46. $\left\{\left[ (2^3 + \sqrt{16}) \div 3 \right] \times 5\right\} - 10 =$ ______
 
 ---
 
@@ -114,9 +114,9 @@
 11. **$\frac{1}{2}$** (ou $0{,}5$) $\implies$ $2^{-1} = \frac{1}{2^1} = \frac{1}{2}$.
 12. **$\frac{1}{25}$** (ou $0{,}04$) $\implies$ $5^{-2} = \frac{1}{5^2} = \frac{1}{25}$.
 13. **$\frac{1}{1000}$** (ou $0{,}001$) $\implies$ $10^{-3} = \frac{1}{10^3} = \frac{1}{1000}$.
-14. **$9$** $\implies$ Inverte a fração e eleva ao quadrado: $(\frac{3}{1})^2 = 3^2 = 9$.
+14. **$9$** $\implies$ Inverte a fração e eleva ao quadrado: $\left(\frac{3}{1}\right)^2 = 3^2 = 9$.
 15. **$\frac{5}{2}$** (ou $2{,}5$) $\implies$ Inverte a fração: $(\frac{5}{2})^1 = \frac{5}{2}$.
-16. **$\frac{16}{9}$** $\implies$ Inverte a fração e eleva ao quadrado: $(\frac{4}{3})^2 = \frac{16}{9}$.
+16. **$\frac{16}{9}$** $\implies$ Inverte a fração e eleva ao quadrado: $\left(\frac{4}{3}\right)^2 = \frac{16}{9}$.
 
 ---
 
@@ -195,7 +195,7 @@
 | **Multiplicação Mesma Base** | Mantém a base e **soma os expoentes** | $2^3 \times 2^4 = 2^{3+4} = 2^7 = 128$ |
 | **Divisão Mesma Base** | Mantém a base e **subtrai os expoentes** | $5^6 \div 5^4 = 5^{6-4} = 5^2 = 25$ |
 | **Potência de Potência** | Mantém a base e **multiplica os expoentes** | $(3^2)^3 = 3^{2 \times 3} = 3^6 = 729$ |
-| **Expoente Negativo** | Inverte a base e troca o sinal do expoente | $(\frac{2}{3})^{-2} = (\frac{3}{2})^2 = \frac{9}{4}$ |
+| **Expoente Negativo** | Inverte a base e troca o sinal do expoente | $\left(\frac{2}{3}\right)^{-2} = \left(\frac{3}{2}\right)^2 = \frac{9}{4}$ |
 | **Expoente Zero** | Todo número diferente de 0 elevado a 0 vale 1 | $99^0 = 1$ |
 | **Base Negativa c/ Parêntese** | Par $\to$ positivo; Ímpar $\to$ negativo | $(-2)^4 = +16$ e $(-2)^3 = -8$ |
 | **Sinal sem Parêntese** | O menos fica de fora da potência | $-2^4 = -(2^4) = -16$ |
