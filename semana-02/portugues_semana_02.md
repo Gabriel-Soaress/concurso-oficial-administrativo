@@ -22,10 +22,13 @@
    - Locução Adjetiva: Duas palavras fazendo o trabalho de uma
    - Adjetivos compostos e o plural
 4. [Eixo 4: O Artigo e o Numeral — Delimitação e Quantificação](#eixo-4-o-artigo-e-o-numeral--delimitação-e-quantificação)
-   - Artigo Definido vs. Indefinido: O contrato de conhecimento prévio entre emissor e receptor
-   - Artigo substantivador e a diferença vital entre artigo e pronome/preposição
-   - Numerais: Cardinais, ordinais, multiplicativos e fracionários
-   - O uso administrativo dos numerais em editais, leis e portarias
+    - O Artigo: O farol delimitador do substantivo (Definido vs. Indefinido)
+    - Efeitos de Sentido: Aproximação numérica, valor enfático e o uso com "Todo"
+    - A Tríplice Função da Palavra "A": Artigo Definido vs. Pronome Oblíquo vs. Preposição
+    - O Numeral e suas Famílias (Cardinais, Ordinais, Multiplicativos, Fracionários e Coletivos)
+    - A Grande Distinção: "UM" Numeral vs. "UM" Artigo Indefinido
+    - Normas de Numerais em Documentos Oficiais e Leis (Art. 1º a 9º vs. Art. 10 em diante, Séculos, Reis e Papas)
+    - Tabela Comparativa (Aplicação Correta vs. Erro Comum) e Síntese Feynman
 5. [Eixo 5: O Pronome e a Mecânica da Coesão Textual (Papel Anafórico e Catafórico)](#eixo-5-o-pronome-e-a-mecânica-da-coesão-textual)
    - O Pronome como "Procurador" do Substantivo
    - Pronomes Pessoais do Caso Reto vs. Oblíquos (Por que "mim não faz nada"?)
@@ -142,24 +145,184 @@ Na língua portuguesa, o adjetivo após o substantivo tem valor objetivo/técnic
 
 ## EIXO 4: O Artigo e o Numeral — Delimitação e Quantificação
 
-### 1. O Artigo e o "Pacto de Conhecimento"
-* **Artigo Definido (*o, a, os, as*):** Individualiza um ser que já é de conhecimento prévio dos interlocutores ou que é único na situação.
-  - *O Oficial protocolou **o** processo.* $\to$ Trata-se de um processo específico e já conhecido na repartição.
-* **Artigo Indefinido (*um, uma, uns, umas*):** Apresenta o ser pela primeira vez no texto ou o trata como um elemento genérico de sua espécie.
-  - *O Oficial protocolou **um** processo.* $\to$ Um processo qualquer, não especificado anteriormente.
+### 1. O Artigo: O Farol Delimitador do Substantivo
+O artigo é a classe gramatical que se antepõe ao substantivo para **determiná-lo** (torná-lo específico, conhecido, único) ou **indeterminá-lo** (apresentá-lo de forma genérica, vaga, como um exemplar qualquer daquela espécie).
 
-### 2. A Diferença Crucial: Artigo vs. Pronome Oblíquo vs. Preposição
-Essa é a armadilha favorita da banca ACCESS (como vimos na questão 9 da Prova 1):
-- **Artigo:** Acompanha substantivo (*Entregou **a** folha*).
-- **Pronome Pessoal Oblíquo:** Substitui o substantivo feminino, atuando como complemento verbal (*Recebeu a intimação e assinou-**a*** = assinou a intimação).
-- **Preposição:** Liga termos exigida pela regência de um verbo ou nome (*Referiu-se **a** servidoras* - não tem artigo porque não está "às").
+Além dessa função semântica (de sentido), o artigo cumpre um papel morfológico vital: ele é o **marcador de gênero** (masculino/feminino) e de **número** (singular/plural) do substantivo que acompanha. Muitas palavras em português só têm seu gênero ou número identificados graças ao artigo:
+- *O estudante / A estudante* (substantivo comum de dois gêneros: só o artigo revela se é homem ou mulher).
+- *O lápis / Os lápis* (palavra terminada em "s" invariável: só o artigo revela se é um ou mais de um).
 
-### 3. Numerais nas Peças Administrativas
-* **Cardinais:** Quantidade bruta (*10 processos, 3 servidores*).
-* **Ordinais:** Ordem e hierarquia sequencial (*segundo andar, primeira seção*).
-* **Regra Prática de Numerais em Textos Oficiais e Leis:**
-  - Até o nono: usa-se ordinal (*Artigo 1º ao 9º*).
-  - Do dez em diante: usa-se cardinal (*Artigo 10, Artigo 25, Lei 14.133*).
+#### A) Artigo Definido (*o, a, os, as*) — O Contrato de Conhecimento Prévio
+O artigo definido é usado quando o substantivo refere-se a um elemento **específico, já conhecido por quem fala e por quem ouve**, ou que já foi citado anteriormente no texto:
+- *Exemplo com contexto:*  
+  *"O Oficial Administrativo assinou **o** parecer."*  
+  $\to$ **Análise:** Não é um parecer qualquer que estava perdido na mesa. Quem escreveu a frase e quem está lendo sabem exatamente a qual parecer específico ela se refere (por exemplo, o parecer do processo que já estava sendo discutido na repartição).
+
+#### B) Artigo Indefinido (*um, uma, uns, umas*) — A Generalização e a Primeira Menção
+O artigo indefinido é usado para introduzir um ser pela primeira vez no texto ou tratá-lo como um elemento **qualquer, não individualizado**, entre todos os da sua categoria:
+- *Exemplo com contexto:*  
+  *"O Oficial Administrativo encontrou **um** parecer sobre a mesa."*  
+  $\to$ **Análise:** Trata-se de um parecer qualquer, genérico; ainda não sabemos do que trata, de quem é, nem qual é o seu número. Ele está sendo apresentado pela primeira vez ao interlocutor.
+
+---
+
+### 2. Efeitos de Sentido e Sutilezas do Artigo
+O artigo não serve apenas para acompanhar substantivos mecanicamente; dependendo de como é empregado, ele altera profundamente o significado da frase:
+
+#### I) Valor de Aproximação Numérica (Artigo Indefinido + Numeral)
+Quando o artigo indefinido no plural (*uns, umas*) antecede um numeral cardinal, ele perde o sentido de "alguns" e passa a significar **"aproximadamente"**, **"cerca de"**:
+- *"A reunião com os secretários municipais durou **umas** duas horas."*  
+  $\to$ Significado: Não foram exatamente duas horas cronometradas; foram **cerca de** duas horas (podendo ser 1h50 ou 2h10).
+- *"O arquivo do setor armazena **uns** cinquenta mil processos."*  
+  $\to$ Significado: Quantidade estimada, aproximada.
+
+#### II) Valor Enfático / Superlativo (Destaque Notório)
+O artigo definido pode ser usado com entonação enfática para destacar que aquele ser é especial, inigualável ou exemplar em sua categoria:
+- *"Ela não é apenas uma servidora competente; ela é **A** servidora do setor!"*  
+  $\to$ Significado: O artigo definido com ênfase equivale a "a melhor", "a mais destacada de todas".
+
+#### III) O Artigo com a Palavra "Todo" (Diferença Semântica Vital)
+Essa é uma das distinções conceituais mais importantes e frequentes da língua portuguesa:
+* **TODO + ARTIGO + SUBSTANTIVO:** Expressa **totalidade de um elemento inteiro**, do começo ao fim.
+  - *"O servidor leu **todo o** relatório."* $\to$ Leu o relatório **inteiro**, do início até a última página.
+* **TODO + SUBSTANTIVO (sem artigo):** Expressa **generalização**, equivalendo a "qualquer", "cada um".
+  - *"**Todo** servidor tem deveres éticos."* $\to$ **Qualquer** servidor, cada um dos servidores da repartição.
+
+#### IV) O Artigo antes de Nomes Próprios e Possessivos
+* **Antes de nomes de pessoas:** O uso do artigo indica intimidade, proximidade afetiva ou regionalismo cultural.
+  - *"Conversei com **o** Carlos."* $\to$ Relação de proximidade, conhecimento pessoal.
+  - *"Conversei com Carlos."* $\to$ Tom mais neutro, distante ou formal (comum na redação de documentos oficiais).
+* **Antes de pronomes possessivos adjetivos:** O artigo é **facultativo** quando o substantivo está explícito ao lado:
+  - *"Entreguei **o meu** relatório ao chefe."* (Correto)
+  - *"Entreguei **meu** relatório ao chefe."* (Também correto, sem alteração de sentido).
+  - *Atenção:* Se o substantivo for ocultado (pronome possessivo substantivo), o artigo torna-se **obrigatório**: *"Li o meu parecer e **o seu**."* (Aqui "o" é obrigatório para sustentar o termo omitido).
+
+---
+
+### 3. A Tríplice Função da Palavra "A": Artigo, Pronome ou Preposição?
+No português, a palavra **"a"** desempenha três funções morfológicas completamente distintas. Para nunca mais confundi-las, analise a função sintática e aplique o teste de substituição prático:
+
+```text
+┌────────────────────────────────────────────────────────────────────────┐
+│                   A TRÍPLICE IDENTIDADE DA PALAVRA "A"                 │
+├──────────────┬─────────────────────────┬───────────────────────────────┤
+│ CLASSE       │ FUNÇÃO NA FRASE         │ TESTE DE SUBSTITUIÇÃO PRÁTICO │
+├──────────────┼─────────────────────────┼───────────────────────────────┤
+│ ARTIGO       │ Acompanha substantivo   │ Troque o substantivo por um   │
+│ DEFINIDO     │ feminino e concorda     │ masculino: o "a" vira "o".    │
+│              │ em gênero e número.     │                               │
+├──────────────┼─────────────────────────┼───────────────────────────────┤
+│ PRONOME      │ Substitui o substantivo │ Pode ser trocado mentalmente  │
+│ OBLÍQUO      │ feminino já citado; é o │ por "ela" (ou "a ela") como   │
+│              │ alvo de um verbo direto.│ objeto do verbo.              │
+├──────────────┼─────────────────────────┼───────────────────────────────┤
+│ PREPOSIÇÃO   │ Liga duas palavras por  │ Palavra invariável. Se trocar │
+│              │ exigência da regência de│ o termo seguinte por um       │
+│              │ um verbo ou de um nome. │ masculino, vira apenas "a"    │
+│              │                         │ (ou "ao" se houver artigo).   │
+└──────────────┴─────────────────────────┴───────────────────────────────┘
+```
+
+#### Exemplos com Análise Detalhada de Cada Caso:
+
+1. **Como Artigo Definido:**
+   - *Frase:* *"O secretário guardou **a** certidão na gaveta."*
+   - *Explicação:* A palavra "a" está acompanhando diretamente o substantivo feminino "certidão".
+   - *Teste:* Se trocarmos "certidão" pelo substantivo masculino "documento", a frase vira: *"O secretário guardou **o** documento na gaveta."* O "a" virou "o", provando que se trata de um **artigo definido**.
+
+2. **Como Pronome Pessoal Oblíquo:**
+   - *Frase:* *"O diretor encontrou a portaria antiga e assinou-**a** imediatamente."*
+   - *Explicação:* A palavra "-a" ligada ao verbo "assinou" não está acompanhando substantivo algum; ela está **substituindo** o substantivo "portaria" para evitar repetição cansativa (*assinou a portaria $\to$ assinou-a*).
+   - *Teste:* Mentalmente equivale a: *"O diretor assinou **ela**."* Como atua como complemento direto do verbo, trata-se de um **pronome pessoal oblíquo átono**.
+
+3. **Como Preposição:**
+   - *Frase:* *"O servidor compareceu **a** reuniões extraordinárias."*
+   - *Explicação:* Quem comparece, comparece **a** algum lugar. A palavra "a" é uma preposição pura exigida pela regência do verbo "comparecer". Observe que "reuniões" está no plural, mas o "a" permaneceu no singular invariável (se fosse artigo, teria que ser "às reuniões").
+   - *Teste:* Se trocarmos por um substantivo masculino no singular: *"O servidor compareceu **a** debates."* O "a" continua intacto como preposição invariável conectora.
+
+---
+
+### 4. O Numeral: A Metrologia e a Hierarquia da Língua
+O numeral é a classe de palavras encarregada de indicar a **quantidade numérica exata** de seres ou a **posição ordinal** que um ser ocupa dentro de uma série sequencial.
+
+Diferente do adjetivo (que qualifica de forma subjetiva: *documento extenso, reunião longa*), o numeral **mensura e ordena de forma exata e objetiva**: *dois documentos, terceira reunião*.
+
+#### A) As Famílias de Numerais e suas Aplicações:
+1. **Cardinais:** Expressam quantidade absoluta, contagem pura.
+   - *Exemplos:* *um, dois, três, quatro, dez, vinte e um, cem, mil*.
+   - *Contexto:* *"O setor conta com **cinco** técnicos e **duas** chefias."*
+2. **Ordinais:** Expressam ordenação, posição ou colocação em uma série sucessiva.
+   - *Exemplos:* *primeiro, segundo, terceiro, décimo, vigésimo, centésimo*.
+   - *Contexto:* *"O processo foi distribuído à **segunda** vara judicial."*
+3. **Multiplicativos:** Expressam aumentos proporcionais, múltiplos de uma quantidade.
+   - *Exemplos:* *dobro, triplo, quádruplo, sêxtuplo, décuplo*.
+   - *Contexto:* *"A prefeitura arrecadou o **dobro** do previsto neste trimestre."*
+4. **Fracionários:** Expressam divisões, frações e partes de um todo.
+   - *Exemplos:* *meio, metade, terço, quarto, décimo*.
+   - *Contexto:* *"O comitê utilizou um **terço** do orçamento disponível."*
+5. **Coletivos:** Substantivos que designam com exatidão matemática um conjunto de seres.
+   - *Exemplos:* *dúzia (12), dezena (10), centena (100), milhar (1.000), biênio (2 anos), triênio (3 anos), quinquênio (5 anos), década (10 anos), século (100 anos), milênio (1.000 anos).*
+
+---
+
+### 5. A Grande Distinção: "UM" Numeral vs. "UM" Artigo Indefinido
+Uma dúvida clássica ocorre com a palavra **"um"** (ou **"uma"**). Como distinguir quando é numeral e quando é artigo indefinido?
+
+A chave está na **intenção comunicativa da frase**:
+* **É NUMERAL quando a ideia central for QUANTIFICAR:** Quando o foco do enunciado é a precisão matemática da quantidade, em oposição a duas, três ou mais unidades.
+  - *Teste prático:* Tente colocar a palavra "apenas" ou "somente" antes de "um", ou continue a contagem mentalmente ("um, e não dois"). Se a frase mantiver perfeito sentido de contagem, é numeral.
+  - *Exemplo com contexto:*  
+    *"O edital prevê apenas **uma** vaga para o cargo de Oficial Administrativo."*  
+    $\to$ O foco é a quantidade restrita: é exatamente 1 vaga (e não 2 ou 3). Logo, "uma" é **numeral**.
+* **É ARTIGO INDEFINIDO quando a ideia for APRESENTAR ou GENERALIZAR:** Quando o termo serve apenas para introduzir um elemento qualquer daquela espécie, sem nenhuma preocupação com contagem matemática.
+  - *Teste prático:* Tente substituir "um" por "algum" ou "qualquer". Se fizer sentido, é artigo indefinido.
+  - *Exemplo com contexto:*  
+    *"Para entrar no fórum, você precisa apresentar **um** documento com foto."*  
+    $\to$ A mensagem não está preocupada se você tem 1, 2 ou 5 documentos na carteira; ela exige *qualquer* documento oficial (RG, CNH, carteira de trabalho). Logo, "um" é **artigo indefinido**.
+
+---
+
+### 6. Normas de Numerais em Documentos Oficiais e Textos Legais
+Na rotina de redação oficial e na interpretação de leis e portarias, o uso correto de numerais segue regras gramaticais e jurídicas consolidadas:
+
+#### I) Leitura de Artigos de Leis, Decretos e Portarias:
+A redação legislativa brasileira (regulada pela Lei Complementar nº 95/1998) estabelece uma regra estrita:
+* **Do artigo 1 ao 9:** Usa-se obrigatoriamente a forma **ORDINAL** (com o símbolo º).
+  - *Art. 1º* $\to$ Lê-se: *"Artigo primeiro"* (nunca "artigo um").
+  - *Art. 5º* $\to$ Lê-se: *"Artigo quinto"*.
+  - *Art. 9º* $\to$ Lê-se: *"Artigo nono"*.
+* **Do artigo 10 em diante:** Usa-se obrigatoriamente a forma **CARDINAL** (sem o símbolo º).
+  - *Art. 10* $\to$ Lê-se: *"Artigo dez"* (e não "décimo").
+  - *Art. 37* $\to$ Lê-se: *"Artigo trinta e sete"*.
+  - *Art. 100* $\to$ Lê-se: *"Artigo cem"*.
+
+#### II) Séculos, Reis, Papas e Capítulos (com Algarismos Romanos):
+* **Se o algarismo romano vier DEPOIS do substantivo:**
+  - De **I a X**: lê-se como **ordinal**. (*Século I = primeiro; D. Pedro II = segundo; Século X = décimo*).
+  - De **XI em diante**: lê-se como **cardinal**. (*Século XI = onze; Século XXI = vinte e um; Papa João Paulo II = segundo; Papa Bento XVI = dezesseis*).
+* **Se o algarismo romano vier ANTES do substantivo:**
+  - Lê-se **sempre como ordinal**, independentemente do número. (*XX Conferência = vigésima conferência; III Congresso = terceiro congresso*).
+
+#### III) O Emprego do Numeral Dual "Ambos / Ambas":
+"Ambos" significa "os dois ao mesmo tempo", "um e outro".
+* **Regra Gramatical de Ouro:** Quando "ambos" antecede um substantivo, o uso do artigo definido é **obrigatório**:
+  - *Correto:* *"O juiz convocou **ambos os** advogados para a audiência."*
+  - *Incorreto:* *"O juiz convocou ambos advogados..."* (Sem artigo é considerado erro gramatical).
+
+---
+
+### 7. Tabela Comparativa: Aplicação Correta vs. Erro Comum
+
+| Situação Prática | Frase Incorreta / Pegadinha | Frase Correta / Padrão Culto | Explicação Lógica |
+| :--- | :--- | :--- | :--- |
+| **Uso de "Todo" com Artigo** | *Leu todo processo ontem à noite.* | *Leu **todo o** processo ontem à noite.* | Sem artigo, "todo processo" significa "qualquer processo existente". Para significar o processo inteiro, o artigo é indispensável. |
+| **Uso de "Ambos"** | *O diretor elogiou ambos servidores.* | *O diretor elogiou **ambos os** servidores.* | O numeral "ambos" exige artigo definido imediatamente antes do substantivo que acompanha. |
+| **Leitura de Lei (Art. 1º)** | *Com base no artigo um da Constituição...* | *Com base no **artigo primeiro** da Constituição...* | Até o número 9, a leitura oficial de normas jurídicas é sempre em ordinal. |
+| **Leitura de Lei (Art. 10)** | *Conforme o artigo décimo do estatuto...* | *Conforme o **artigo dez** do estatuto...* | Do número 10 em diante, a leitura legal e formal é sempre em numeral cardinal. |
+| **Distinção A/O (Substituição)** | *A servidora leu a portaria e assinou a.* | *A servidora leu a portaria e **assinou-a**.* | Para evitar repetir o substantivo, usa-se o pronome oblíquo "-a" ligado ao verbo por hífen. |
+
+> **💡 Síntese Feynman (Artigo e Numeral):**  
+> *"O artigo é a lente de foco do substantivo: se for definido (o/a), foca em algo específico e conhecido; se for indefinido (um/uma), abre o plano para qualquer um da espécie. Já o numeral é a régua da língua: se for cardinal, conta quantos são (um, dois); se for ordinal, diz em que degrau da fila ele está (primeiro, décimo)."*
 
 ---
 
