@@ -1,26 +1,32 @@
 # Semana 02: Língua Portuguesa — Morfologia I (Classes Nominais e Determinantes) e Estrutura das Palavras
 **Cargo:** Oficial Administrativo  
 **Nível de Escolaridade:** Ensino Médio  
-**Foco:** Compreensão Lógica e Histórica, Mecânica das Regras e Exceções, Eliminação de Macetes Cegos, Comparativos (Frase Certa vs. Frase Errada) e Resolução Comentada de 10 Questões Reais de Concursos
+**Foco:** Didática Passo a Passo, Compreensão Lógica e Histórica, Mecânica das Regras e Exceções, Eliminação de Jargões sem Explicação, Exemplos Contextualizados da Prática Administrativa e Resolução Comentada de 10 Questões Reais de Concursos
 
 ---
 
 ## Sumário da Aula
 1. [Eixo 1: A Lógica da Morfologia e o "Sistema Solar" das Classes Nominais](#eixo-1-a-lógica-da-morfologia-e-o-sistema-solar-das-classes-nominais)
-   - Por que categorizar palavras? O papel de dar nome ao mundo
-   - O Substantivo: O Sol gravitacional da oração
-   - Os Quatro Satélites (Adjetivo, Artigo, Numeral e Pronome)
-   - Síntese Feynman (Classes Nominais)
-2. [Eixo 2: O Substantivo e suas Classificações Lógicas](#eixo-2-o-substantivo-e-suas-classificações-lógicas)
-   - Concreto vs. Abstrato: A lógica da existência autônoma (eliminando o mito de "pegar na mão")
-   - Primitivo vs. Derivado / Simples vs. Composto
-   - Substantivação (Derivação Imprópria): O poder do artigo transformador
-   - Flexões de Gênero e Número: Regras de plural e suas razões fonéticas históricas
+    - Por que categorizar palavras? A necessidade humana de organizar o pensamento
+    - Morfologia vs. Sintaxe: A diferença entre a identidade da palavra e o papel dela na frase
+    - O Diagrama Orbital das Classes Nominais (O Substantivo como Sol e seus quatro Satélites)
+    - Síntese Feynman (Classes Nominais)
+2. [Eixo 2: O Substantivo e suas Classificações Lógicas e Flexões](#eixo-2-o-substantivo-e-suas-classificações-lógicas-e-flexões)
+    - O que é o Substantivo? O batizador da realidade
+    - Classificações Essenciais: Comum vs. Próprio, Primitivo vs. Derivado, Simples vs. Composto e Coletivos
+    - Concreto vs. Abstrato: Desfazendo o mito de "pegar com a mão" (A lógica da existência autônoma)
+    - Flexões de Gênero: Biformes vs. Uniformes (Epicenos, Sobrecomuns e Comuns de dois gêneros)
+    - Mudança de Gênero com Mudança de Significado (*o capital* vs. *a capital*, *o grama* vs. *a grama*)
+    - Flexão de Número: Regras de plural, palavras em *-ão* e o fenômeno sonoro da Metafonia
+    - Substantivação (Derivação Imprópria): O poder do artigo transformador
+    - Síntese Feynman (Substantivo)
 3. [Eixo 3: O Adjetivo e a Caracterização do Ser](#eixo-3-o-adjetivo-e-a-caracterização-do-ser)
-   - Adjetivo Explicativo vs. Adjetivo Restritivo (A semente das orações subordinadas adjetivas)
-   - Mudança de Posição e Mudança Semântica (*Pobre homem* vs. *Homem pobre*)
-   - Locução Adjetiva: Duas palavras fazendo o trabalho de uma
-   - Adjetivos compostos e o plural
+    - O que é o Adjetivo? A pintura das características do ser
+    - Adjetivo Explicativo vs. Adjetivo Restritivo: A semente para não errar pontuação de orações adjetivas
+    - Mudança de Posição do Adjetivo e Alteração Semântica (*Pobre homem* vs. *Homem pobre*)
+    - Locução Adjetiva: Duas palavras cumprindo o papel de um adjetivo
+    - Os Graus do Adjetivo: Comparativo e Superlativo (Analítico e Sintético com formas eruditas)
+    - Síntese Feynman (Adjetivo)
 4. [Eixo 4: O Artigo e o Numeral — Delimitação e Quantificação](#eixo-4-o-artigo-e-o-numeral--delimitação-e-quantificação)
     - O Artigo: O farol delimitador do substantivo (Definido vs. Indefinido)
     - Efeitos de Sentido: Aproximação numérica, valor enfático e o uso com "Todo"
@@ -29,30 +35,35 @@
     - A Grande Distinção: "UM" Numeral vs. "UM" Artigo Indefinido
     - Normas de Numerais em Documentos Oficiais e Leis (Art. 1º a 9º vs. Art. 10 em diante, Séculos, Reis e Papas)
     - Tabela Comparativa (Aplicação Correta vs. Erro Comum) e Síntese Feynman
-5. [Eixo 5: O Pronome e a Mecânica da Coesão Textual (Papel Anafórico e Catafórico)](#eixo-5-o-pronome-e-a-mecânica-da-coesão-textual)
-   - O Pronome como "Procurador" do Substantivo
-   - Pronomes Pessoais do Caso Reto vs. Oblíquos (Por que "mim não faz nada"?)
-   - Pronomes Demonstrativos no Espaço, no Tempo e no Texto:
-     - **Este / Esta / Isto:** O presente, o perto de quem fala e o **catafórico** (vai ser dito)
-     - **Esse / Essa / Isso:** O passado recente, o perto do ouvinte e o **anafórico** (já foi dito)
-     - **Aquele / Aquela / Aquilo:** O passado remoto e o mais distante entre dois elementos
-   - Pronomes Relativos: O pronome com "dois empregos" (retoma termo e abre oração)
+5. [Eixo 5: Os Pronomes e a Mecânica da Coesão Textual](#eixo-5-os-pronomes-e-a-mecânica-da-coesão-textual)
+    - O que é o Pronome e qual sua missão no texto? (Pronome Substantivo vs. Pronome Adjetivo)
+    - Coesão Referencial: Como os pronomes evitam repetições cansativas
+    - A Mecânica do Tempo, Espaço e Texto: O que é Anáfora (olhar para trás) e Catáfora (olhar para a frente)
+    - O Uso Preciso dos Demonstrativos: *Este*, *Esse* e *Aquele* (No espaço físico, na linha do tempo e no texto)
+    - O Erro Gravíssimo do "O Mesmo" em Documentos Oficiais
+    - Pronomes Pessoais: Caso Reto (Sujeitos) vs. Caso Oblíquo (Complementos)
+    - Por que "Mim não conjuga verbo"? A regra do sujeito agente
+    - Os Oblíquos em Ação: As formas *-lo/-la* e *-no/-na*, e a diferença entre *o/a* e *lhe*
+    - Pronomes Relativos: O pronome com "dois empregos" (As regras sagradas de *que*, *quem*, *onde* e *cujo*)
+    - Síntese Feynman (Pronomes)
 6. [Eixo 6: Estrutura e Formação de Palavras](#eixo-6-estrutura-e-formação-de-palavras)
-   - Elementos mórficos: Radical, vogal temática, tema, desinências e afixos
-   - Derivação Prefixal, Sufixal, Prefixal e Sufixal (independente)
-   - **Derivação Parassintética:** A necessidade de simultaneidade (o teste do descarte)
-   - Derivação Regressiva (Deverbal): Do verbo de ação nasce o substantivo abstrato
-   - Derivação Imprópria: Mudança de classe sem mudar uma letra
-   - Composição: **Justaposição** (sem perda fonética) vs. **Aglutinação** (com fusão e perda sonora)
-   - Hibridismo, Neologismo e Siglonimização
+    - A Anatomia da Palavra: Radical, Vogal Temática, Tema, Desinências Nominais e Verbais, Afixos e Elementos de Ligação
+    - Processos de Derivação Passo a Passo: Prefixal, Sufixal, Prefixal e Sufixal (independente)
+    - O Teste do Descarte: Como distinguir Derivação Prefixal e Sufixal da Derivação Parassintética
+    - Derivação Regressiva (Deverbal): Do verbo de ação nasce o substantivo abstrato
+    - Derivação Imprópria: Mudança de classe sem alterar uma letra
+    - Processos de Composição: Justaposição (sem perda de som) vs. Aglutinação (com fusão sonora)
+    - Outros Processos Modernos: Hibridismo, Neologismo, Redução/Abreviação e Siglonimização
+    - Síntese Feynman (Estrutura e Formação de Palavras)
 7. [Eixo 7: O Plural dos Substantivos e Adjetivos Compostos](#eixo-7-o-plural-dos-substantivos-e-adjetivos-compostos)
-   - A Lógica Central do Plural dos Compostos: Quem varia e quem não varia?
-   - Regra Geral de Natureza Gramatical: Substantivo/Adjetivo variam; Verbo/Advérbio ficam parados
-   - Compostos ligados por preposição (explícita ou implícita)
-   - Casos especiais: Palavras repetidas, onomatopeias e palavras invariáveis
-   - Plural dos Adjetivos Compostos: A regra do último elemento flexionado
-   - As exceções famosas: *azul-marinho*, *azul-celeste* e cores com substantivos (*verde-oliva*, *amarelo-ouro*)
-8. [Eixo 8: Quadro Comparativo de Casos Reais (Frase Certa vs. Frase Errada)](#eixo-8-quadro-comparativo-de-casos-reais)
+    - A Lógica Central da Flexão: Variáveis flexionam em 's'; Invariáveis ficam congeladas
+    - A Mecânica dos Substantivos Compostos: Quem varia e quem não varia em cada combinação
+    - A Regra do Substantivo Delimitador de Finalidade (*salários-família*, *canetas-tinteiro*)
+    - Compostos com Preposição e Palavras Repetidas
+    - O Plural dos Adjetivos Compostos: A regra do último elemento flexionado
+    - As Duas Regras de Ouro das Cores (Substantivo como cor e as formas consagradas invariáveis)
+    - Síntese Feynman (Plural dos Compostos)
+8. [Eixo 8: Quadro Comparativo Geral (Frase Certa vs. Frase Errada)](#eixo-8-quadro-comparativo-geral-frase-certa-vs-frase-errada)
 9. [Bateria de 10 Questões Reais de Concursos Comentadas Passo a Passo](#bateria-de-10-questões-reais-de-concursos-comentadas)
 10. [Checklist de Fixação Ativa no Caderno](#checklist-de-fixação-ativa-para-o-aluno)
 
@@ -60,10 +71,26 @@
 
 ## EIXO 1: A Lógica da Morfologia e o "Sistema Solar" das Classes Nominais
 
-### 1. Por que categorizar palavras?
-A língua portuguesa conta com centenas de milhares de vocábulos no dicionário. Se tivéssemos de decorar a regra para cada palavra isolada, a comunicação seria inviável. A **Morfologia** (do grego *morphé* = forma + *logos* = estudo) resolve esse problema dividindo todas as palavras da língua em **10 classes gramaticais**, de acordo com a **natureza essencial** de cada uma.
+### 1. Por que Categorizar Palavras?
+A língua portuguesa conta com mais de 400 mil palavras no vocabulário oficial. Se tivéssemos de aprender e memorizar as regras de flexão e concordância para cada palavra isolada, a comunicação seria caótica. A mente humana precisa de **padrões organizados**.
 
-Na Semana 02, estudamos o bloco das **Classes Nominais** (aquelas que giram em torno do nome/substantivo):
+A **Morfologia** (do grego *morphé* = forma + *logos* = estudo/ciência) é a parte da gramática que estuda as palavras em si mesmas:
+* A sua **forma e estrutura interna** (como ela é construída por radicais, prefixos e sufixos).
+* A sua **família ou classe gramatical** (se ela dá nome, qualifica, quantifica, liga termos ou expressa ação).
+* As suas **flexões possíveis** (se varia em gênero masculino/feminino, em número singular/plural ou se é invariável).
+
+#### Morfologia vs. Sintaxe: A Distinção que Destrava o Aprendizado
+Para nunca confundir esses dois mundos que as bancas adoram misturar:
+* **Morfologia é a "carteira de identidade" da palavra:** É quem ela é em qualquer lugar, mesmo fora de um texto (um substantivo, um adjetivo, um verbo, uma preposição).
+* **Sintaxe é o "cargo de emprego" da palavra na frase:** É a função de trabalho que ela desempenha naquela oração específica (sujeito, objeto direto, adjunto adverbial).
+*(Analogia do mundo real: Você é um ser humano — essa é a sua morfologia. Quando entra na Prefeitura, assume a função de Oficial Administrativo — essa é a sua sintaxe).*
+
+---
+
+### 2. O Diagrama Orbital das Classes Nominais
+A gramática divide todas as palavras em **10 classes**. Na Semana 02, estudamos o bloco das **Classes Nominais** — aquelas que não são verbos nem conectores abstratos, mas que giram estritamente em torno dos nomes (seres e objetos da realidade).
+
+O **Substantivo** funciona como o **Sol** desse sistema: ele tem massa gravitacional própria, dá nome às coisas e atrai os outros quatro termos, chamados de **satélites** ou determinantes. Os satélites concordam obrigatoriamente com o substantivo em gênero e número:
 
 ```text
                        ┌─────────────┐
@@ -82,64 +109,229 @@ Na Semana 02, estudamos o bloco das **Classes Nominais** (aquelas que giram em t
                        └─────────────┘
 ```
 
-### 2. O Substantivo: O Sol Gravitacional
-O substantivo é a palavra nuclear. Ele tem o poder de **nomear os seres** (pessoas, lugares, objetos, sentimentos, ações e conceitos).  
-Todas as outras quatro classes nominais (**adjetivo, artigo, numeral e pronome**) comportam-se como planetas orbitando em torno do substantivo: elas concordam com ele em **gênero** (masculino/feminino) e em **número** (singular/plural).
-
 > **💡 Síntese Feynman (Classes Nominais):**  
-> *"O substantivo dá nome à realidade; o artigo avisa se ela é conhecida ou qualquer uma; o adjetivo pinta as características; o numeral conta as unidades; e o pronome entra em cena para não repetirmos o nome o tempo todo."*
+> *"O substantivo batiza o ser; o artigo avisa se ele é um conhecido íntimo ou qualquer um; o adjetivo pinta as suas características; o numeral conta as suas unidades; e o pronome entra em cena para substituir ou apontar esse ser sem cansar o leitor com repetições."*
 
 ---
 
-## EIXO 2: O Substantivo e suas Classificações Lógicas
+## EIXO 2: O Substantivo e suas Classificações Lógicas e Flexões
 
-### 1. Concreto vs. Abstrato: Desfazendo o Mito Escolar
-Na escola tradicional, costuma-se ensinar de forma equivocada que *"substantivo concreto é aquilo que se pode pegar com a mão e abstrato é o que não se pode pegar"*.  
-Essa definição ingênua cai por terra nos concursos em bancas como ACCESS, VUNESP e Legalle! Você consegue pegar o **ar** com a mão? Consegue tocar em um **fantasma**, em um **anjo** ou em um **duende**? Não. E todos eles são **substantivos concretos**.
+### 1. O que é o Substantivo?
+O substantivo é a classe gramatical nuclear que **nomeia os seres e as realidades**: pessoas (*Maria, servidor*), lugares (*Taubaté, repartição*), objetos (*computador, processo*), instituições (*Prefeitura, Tribunal*), sentimentos (*esperança, angústia*), estados (*vida, saúde*) e ações (*atendimento, fiscalização*).
+
+---
+
+### 2. As Classificações Essenciais dos Substantivos
+Todo substantivo na língua portuguesa se enquadra em critérios lógicos de classificação:
+
+#### A) Comum vs. Próprio
+* **Comum:** Nomeia qualquer elemento genérico de uma mesma espécie, sem individualizá-lo. Escreve-se com inicial minúscula.
+  - *Exemplos:* *cidade, funcionário, rio, protocolo, lei*.
+* **Próprio:** Individualiza um ser em particular dentro da sua espécie, tornando-o único. Escreve-se obrigatoriamente com inicial maiúscula.
+  - *Exemplos:* *Taubaté, Gabriel, Rio Paraíba do Sul, Constituição da República*.
+
+#### B) Primitivo vs. Derivado
+* **Primitivo:** É o substantivo-raiz, a palavra original que não se originou de nenhuma outra na língua portuguesa.
+  - *Exemplos:* *livro, pedra, ferro, folha, caixa*.
+* **Derivado:** É o substantivo formado a partir de uma palavra primitiva preexistente, por acréscimo de prefixos ou sufixos.
+  - *Exemplos:* *livraria* (de livro), *pedregulho* (de pedra), *ferragem* (de ferro), *folhagem* (de folha).
+
+#### C) Simples vs. Composto
+* **Simples:** Formado por **um único radical** (uma única palavra-base de significado).
+  - *Exemplos:* *tempo, chuva, papel, flor, cidadão*.
+* **Composto:** Formado pela união de **dois ou mais radicais**.
+  - *Exemplos:* *passatempo, guarda-chuva, papel-moeda, couve-flor*.
+
+#### D) Coletivo
+* É o substantivo que, mesmo estando gramaticalmente no **singular**, designa um **conjunto de seres da mesma espécie**:
+  - *arquipélago* (conjunto de ilhas).
+  - *cardume* (conjunto de peixes).
+  - *frota* (conjunto de veículos terrestres ou navios).
+  - *alcateia* (conjunto de lobos).
+  - *comitiva* (conjunto de pessoas que acompanham uma autoridade).
+  - *júri* (conjunto de jurados).
+  - *acervo* (conjunto de documentos, livros ou bens artísticos).
+
+---
+
+### 3. Concreto vs. Abstrato: A Lógica da Existência Autônoma
+Na escola tradicional, costuma-se ensinar de forma equivocada que *"concreto é aquilo que se pode pegar com a mão e abstrato é o que não se pode pegar"*.  
+Essa definição ingênua desaba na primeira questão de concurso! Você consegue pegar o **ar** ou o **vento** com a mão? Consegue tocar em um **anjo**, em um **fantasma** ou em uma **fada**? Não. E todos eles são gramaticalmente classificados como **substantivos concretos**.
 
 #### A Verdadeira Lógica:
-* **Substantivo Concreto:** É aquele que possui **existência própria (autônoma)**, real ou imaginária, no mundo físico ou no pensamento. Não depende de outro ser vivo para existir no momento.
-  - Exemplos: *mesa, oficial, vento, Deus, fada, alma, ar, relógio*.
-* **Substantivo Abstrato:** É aquele que **não possui existência autônoma**. Ele só existe **enquanto um ser o manifesta ou o sente**. Abrange:
-  1. **Ações:** *leitura* (só existe se alguém ler), *atendimento* (só existe se o servidor atender), *combate*.
-  2. **Estados:** *vida, velhice, morte, doença, sono*.
-  3. **Qualidades/Defeitos:** *beleza* (precisa de alguém belo), *honestidade, rapidez, eficiência*.
-  4. **Sentimentos/Sensações:** *amor, raiva, saudade, fome, calor*.
+* **Substantivo Concreto:** É aquele que possui **existência autônoma**. Ele existe por si só, no mundo físico real ou no imaginário/folclórico/espiritual, sem precisar que outro ser vivo o esteja manifestando ou sentindo naquele segundo.
+  - *Exemplos:* *mesa, servidor, computador, ar, vento, fantasma, alma, Deus, duende*. (Um fantasma, mesmo imaginário, é concebido como um ser autônomo).
+* **Substantivo Abstrato:** É aquele que **NÃO possui existência autônoma**. Ele só passa a existir **enquanto um ser o manifesta, o pratica ou o sente**. Se todos os seres vivos sumirem, o substantivo abstrato deixa de existir. Abrange 4 grupos:
+  1. **Ações:** *leitura* (só existe se alguém ler), *atendimento* (só existe se o servidor atender), *combate, fiscalização*.
+  2. **Estados:** *vida, morte, saúde, doença, velhice, sono*.
+  3. **Qualidades / Defeitos:** *honestidade* (precisa de alguém honesto), *beleza, rapidez, pontualidade*.
+  4. **Sentimentos / Sensações:** *amor, raiva, saudade, fome, calor, sede*.
 
-> **⚖️ Teste Prático de Concurso:**  
-> Pergunte-se: *"Se todos os seres vivos sumissem do planeta neste segundo, isso continuaria existindo no espaço?"*  
-> - Uma *pedra* continua existindo $\to$ **Concreto**.  
-> - A *justiça* continua existindo? Não, pois a justiça depende de seres praticando atos justos $\to$ **Abstrato**.
+```text
+┌────────────────────────────────────────────────────────────────────────┐
+│                   O TESTE MENTAL DO PLANETA DESERTO                    │
+├────────────────────────────────────────────────────────────────────────┤
+│ Pergunte-se: "Se todos os seres vivos desaparecessem da Terra agora,   │
+│ essa coisa continuaria flutuando e existindo no espaço vazio?"         │
+│                                                                        │
+│ • A PEDRA continua existindo? SIM ➔ CONCRETO.                          │
+│ • O VENTO continua existindo? SIM ➔ CONCRETO.                          │
+│ • A JUSTIÇA continua existindo? NÃO (depende de pessoas praticando     │
+│   atos justos) ➔ ABSTRATO.                                             │
+│ • O TRABALHO continua existindo? NÃO (depende de quem trabalhe)        │
+│   ➔ ABSTRATO.                                                          │
+└────────────────────────────────────────────────────────────────────────┘
+```
 
-### 2. Substantivação (Derivação Imprópria): O Poder do Artigo
-Qualquer palavra da língua portuguesa (um verbo, um adjetivo, um advérbio ou até uma conjunção) vira substantivo se colocarmos um determinante (artigo, pronome ou numeral) antes dela:
-- *O **olhar** daquela testemunha foi decisivo.* (*Olhar* é verbo no infinitivo, mas com o artigo "O" virou substantivo).
-- *Quero saber o **porquê** de sua ausência.* (*Porquê* era conjunção explicativa/causal; antecedido por "o", virou substantivo comum sinônimo de "motivo").
-- *O **não** ele já tem, agora busca o **sim**.* (*Não* e *sim* são advérbios que foram substantivados).
+---
+
+### 4. Flexões de Gênero do Substantivo
+O gênero gramatical na língua portuguesa divide-se em **masculino** e **feminino** (não existe gênero neutro em nomes).
+
+#### A) Substantivos Biformes
+Apresentam **duas formas distintas**, uma para o masculino e outra para o feminino:
+- *menino / menina*
+- *diretor / diretora*
+- *prefeito / prefeita*
+- *homem / mulher* (biformes heterônimos, com radicais diferentes).
+
+#### B) Substantivos Uniformes
+Apresentam **uma única forma invariável** para designar ambos os sexos. Dividem-se em 3 tipos:
+1. **Epicenos:** Aplicam-se a animais. A palavra não muda; a diferenciação do sexo é feita acrescentando as palavras *macho* ou *fêmea*:
+   - *A cobra macho / A cobra fêmea* (continua sendo "a cobra").
+   - *O jacaré macho / O jacaré fêmea* (continua sendo "o jacaré").
+2. **Sobrecomuns:** Têm um único gênero gramatical fixo e referem-se tanto a homens quanto a mulheres. O artigo e o substantivo não mudam jamais:
+   - *A criança* (seja menino ou menina).
+   - *A testemunha* (seja um homem ou uma mulher depondo).
+   - *A vítima* (seja homem ou mulher).
+   - *O indivíduo* (seja homem ou mulher).
+   - *O cônjuge* (seja o marido ou a esposa — dizer *"a cônjuge"* é erro gramatical!).
+3. **Comuns de Dois Gêneros:** A palavra substantiva mantém a mesma grafia para os dois sexos, mas o **artigo ou determinante externo** muda para indicar se é masculino ou feminino:
+   - *O estudante / A estudante*
+   - *O colega / A colega*
+   - *O agente / A agente*
+   - *O policial / A policial*
+
+#### C) Mudança de Gênero com Mudança Radical de Sentido
+Alguns substantivos mudam completamente de significado quando alteramos o artigo que os antecede:
+* **O capital** (recursos financeiros, dinheiro) vs. **A capital** (cidade-sede do governo).
+* **O cabeça** (o líder, o mentor do projeto) vs. **A cabeça** (parte física do corpo).
+* **O grama** (unidade de medida de massa: *"comprei duzentos gramas de queijo"*) vs. **A grama** (a vegetação, a relva do jardim).
+* **O guia** (a pessoa que conduz ou o livro/manual impresso) vs. **A guia** (o documento bancário de arrecadação ou a pedra do meio-fio da calçada).
+* **O moral** (estado de ânimo, disposição: *"o moral da equipe está alto"*) vs. **A moral** (conjunto de regras éticas ou a lição de uma fábula).
+
+---
+
+### 5. Flexão de Número e o Fenômeno da Metafonia
+A regra geral de plural no português é o acréscimo da desinência **-s** aos nomes terminados em vogal (*processo $	o$ processos*). No entanto, há casos notáveis que exigem atenção:
+
+#### A) Substantivos Terminados em "-ão"
+A evolução histórica do latim gerou três terminações possíveis de plural:
+1. Em **-ãos** (a maioria das paroxítonas e palavras de origem simples):
+   - *cidadãos, cristãos, irmãos, órgãos, órfãos, bênçãos*.
+2. Em **-ães** (grupo menor de palavras):
+   - *capitães, alemães, pães, escrivães, tabeliães*.
+3. Em **-ões** (a terminação mais comum e produtiva):
+   - *leões, eleições, reuniões, corações, certidões*.
+
+#### B) O Fenômeno Sonoro da Metafonia
+A **metafonia** é a mudança do timbre da vogal tônica **"o"**: ela é pronunciada de forma **fechada** (/ô/) no singular e passa a ser pronunciada de forma **aberta** (/ó/) no plural:
+- *o fogo* (/ô/) $	o$ *os fogos* (/ó/)
+- *o osso* (/ô/) $	o$ *os ossos* (/ó/)
+- *o olho* (/ô/) $	o$ *os olhos* (/ó/)
+- *o imposto* (/ô/) $	o$ *os impostos* (/ó/)
+- *o socorro* (/ô/) $	o$ *os socorros* (/ó/)
+
+---
+
+### 6. Substantivação (Derivação Imprópria): O Poder do Artigo
+Qualquer palavra de outra classe gramatical (um verbo, um adjetivo, um advérbio ou uma conjunção) **vira substantivo** no momento em que é antecedida por um artigo ou pronome determinante:
+- *O **olhar** daquela testemunha foi decisivo.* (*Olhar* é verbo no infinitivo, mas com o artigo "O" virou substantivo comum, sinônimo de "expressão visual").
+- *Quero saber o **porquê** de sua ausência.* (*Porquê* era conjunção causal/explicativa; com "o", virou substantivo comum, sinônimo de "o motivo").
+- *O **não** ele já tem, agora busca o **sim**.* (*Não* e *sim* são advérbios que foram transformados em substantivos).
+
+> **💡 Síntese Feynman (Substantivo):**  
+> *"O substantivo é o dono do nome: é concreto se existe por conta própria (mesmo que invisível como o ar) e é abstrato se precisa de alguém para senti-lo ou praticá-lo (como a justiça e o trabalho). Pode mudar de sentido se trocar o artigo (o grama é peso; a grama é mato) e tem o poder de adotar qualquer palavra que venha depois de um artigo."*
 
 ---
 
 ## EIXO 3: O Adjetivo e a Caracterização do Ser
 
-O adjetivo é a classe que expressa um estado, qualidade ou aspecto do substantivo.
+### 1. O que é o Adjetivo?
+O adjetivo é a classe gramatical satélite encarregada de **caracterizar, qualificar ou indicar o estado** do substantivo a que se refere. Ele concorda obrigatoriamente com o substantivo em gênero (masculino/feminino) e em número (singular/plural):
+- *servidor dedicado / servidora dedicada / servidores dedicados / servidoras dedicadas*.
 
-### 1. Adjetivo Restritivo vs. Adjetivo Explicativo
-Esta distinção é a base exata para você nunca mais errar pontuação de orações adjetivas na Semana 05 e Semana 09:
-* **Adjetivo Explicativo:** Expressa uma característica que é **inerente à própria natureza de todo aquele ser**. Não separa um subgrupo.
-  - Exemplo: *O **fogo ardente** destruiu o arquivo.* (Todo fogo é ardente; isso é inerente ao fogo, apenas explica).
-  - Exemplo: *O **homem mortal** busca a eternidade.* (Todo ser humano é mortal).
-* **Adjetivo Restritivo:** Expressa uma característica que pertence **apenas a uma parte daquele grupo**, limitando e individualizando o ser.
-  - Exemplo: *Os servidores **estáveis** não foram demitidos.* (Apenas os que possuem estabilidade; os outros servidores não estão incluídos).
-  - Exemplo: *Os documentos **sigilosos** foram guardados no cofre.* (Apenas uma parcela dos documentos, e não todos).
+---
 
-### 2. Mudança de Posição do Adjetivo e Alteração Semântica
-Na língua portuguesa, o adjetivo após o substantivo tem valor objetivo/técnico/denotativo. Colocado antes do substantivo, ganha valor subjetivo/afetivo/conotativo:
-- *Ele é um **homem grande**.* $\to$ Alto, encorpado (sentido físico, objetivo).
-- *Ele é um **grande homem**.* $\to$ Ilustre, nobre, honrado (sentido valorativo, subjetivo).
-- *Encontrei um **velho amigo**.* $\to$ Amigo de longa data (sentido afetivo).
-- *Encontrei um **amigo velho**.* $\to$ Amigo idoso (idade biológica avançada).
-- *A testemunha contou uma **simples história**.* $\to$ Apenas uma história qualquer, banal.
-- *A testemunha contou uma **história simples**.* $\to$ Uma história sem complexidade, fácil de entender.
+### 2. Adjetivo Explicativo vs. Adjetivo Restritivo
+Essa distinção é o alicerce fundamental para você dominar a pontuação das orações subordinadas adjetivas:
+* **Adjetivo Explicativo:** Expressa uma característica que é **inerente à própria essência de toda aquela espécie**. Ele não separa nem divide um subgrupo, apenas explicita algo natural:
+  - *O fogo **ardente** consumiu o arquivo.* $	o$ Todo fogo é ardente; arder é da natureza de qualquer fogo. Apenas explica.
+  - *O ser humano **mortal** teme o desconhecido.* $	o$ Todo ser humano é mortal.
+* **Adjetivo Restritivo:** Expressa uma característica que pertence **apenas a uma parcela daquele grupo**, limitando, individualizando e separando um subconjunto:
+  - *Os servidores **estáveis** não podem ser exonerados sem processo administrativo.* $	o$ Apenas os que possuem estabilidade; os outros servidores (comissionados ou em estágio probatório) não estão incluídos. O adjetivo restringe o universo dos servidores.
+  - *Os documentos **sigilosos** foram guardados no cofre.* $	o$ Não são todos os documentos da repartição, apenas os que têm a marca de sigilo.
+
+---
+
+### 3. Mudança de Posição do Adjetivo e Alteração de Sentido
+Na língua portuguesa, a ordem entre substantivo e adjetivo altera profundamente o significado da mensagem:
+* **Adjetivo DEPOIS do substantivo:** Sentido **denotativo, objetivo, técnico e literal**.
+* **Adjetivo ANTES do substantivo:** Sentido **conotativo, subjetivo, afetivo e figurado**.
+
+Compare os pares abaixo:
+* *Ele é um **homem grande**.* $	o$ Sentido objetivo/físico: alto, encorpado, de grande estatura.
+* *Ele é um **grande homem**.* $	o$ Sentido subjetivo/moral: ilustre, honrado, digno de respeito.
+* *Encontrei um **amigo velho**.* $	o$ Sentido literal/físico: pessoa de idade avançada, idosa.
+* *Encontrei um **velho amigo**.* $	o$ Sentido afetivo: amigo de longa data, amizade antiga.
+* *O autor apresentou uma **simples solução**.* $	o$ Apenas uma solução qualquer, modesta.
+* *O autor apresentou uma **solução simples**.* $	o$ Solução sem complexidade técnica, fácil de executar.
+
+---
+
+### 4. Locução Adjetiva: Duas Palavras Fazendo o Papel de Uma
+A locução adjetiva é uma expressão formada por **duas ou mais palavras** (geralmente uma preposição + um substantivo) que exerce exatamente a mesma função de um adjetivo:
+- *amor de mãe* = amor **materno**.
+- *atendimento de irmão* = atendimento **fraternal**.
+- *luz do sol* = luz **solar**.
+- *água de chuva* = água **pluvial**.
+- *água de rio* = água **fluvial** *(cuidado: pluvial = chuva; fluvial = rio!)*.
+- *doença de fígado* = doença **hepática**.
+- *faixa de idade* = faixa **etária**.
+- *período da tarde* = período **vespertino**.
+- *período da manhã* = período **matutino**.
+
+---
+
+### 5. Os Graus do Adjetivo
+O adjetivo pode variar em intensidade para expressar comparações ou níveis máximos de uma característica:
+
+#### A) Grau Comparativo
+Compara a mesma qualidade entre dois seres, ou duas qualidades no mesmo ser:
+1. **De Igualdade:** *O setor A é **tão eficiente quanto** o setor B.*
+2. **De Superioridade:**
+   - Analítico: *O setor A é **mais eficiente que** o setor B.*
+   - Sintético (formas herdadas do latim): *maior, menor, melhor, pior*. *(Dizer "mais bom" ou "mais grande" viola a norma-padrão, exceto se comparar duas qualidades no mesmo ser: "Ele é mais bom do que inteligente")*.
+3. **De Inferioridade:** *O setor A é **menos eficiente que** o setor B.*
+
+#### B) Grau Superlativo
+Expressa a característica elevada ao grau mais intenso:
+1. **Superlativo Relativo:** Intensifica o ser em relação a um grupo:
+   - De Superioridade: *Ele é **o mais experiente de** todos os servidores.*
+   - De Inferioridade: *Ele é **o menos burocrático da** repartição.*
+2. **Superlativo Absoluto:** Intensifica o ser isoladamente, sem comparação com outros:
+   - **Analítico:** Feito com auxílio de um advérbio de intensidade (*muito competente, extremamente rápido*).
+   - **Sintético:** Feito com o acréscimo de sufixos eruditos intensificadores:
+     - *fácil $	o$ facílimo*
+     - *difícil $	o$ dificílimo*
+     - *pobre $	o$ paupérrimo* (ou *pobríssimo*)
+     - *nobre $	o$ nobilíssimo*
+     - *fiel $	o$ fidelíssimo*
+     - *amigo $	o$ amicíssimo*
+     - *amargo $	o$ amaríssimo*
+
+> **💡 Síntese Feynman (Adjetivo):**  
+> *"O adjetivo é o pintor do texto: se vem antes do nome, expressa emoção ou opinião (um grande homem); se vem depois, expressa realidade física e técnica (um homem grande). Se for explicativo, serve para toda a espécie (fogo ardente); se for restritivo, separa só um pedaço do grupo (servidor concursado)."*
 
 ---
 
@@ -326,159 +518,440 @@ A redação legislativa brasileira (regulada pela Lei Complementar nº 95/1998) 
 
 ---
 
-## EIXO 5: O Pronome e a Mecânica da Coesão Textual
+---
 
-Os pronomes evitam que um texto administrativo pareça uma redação infantil cheia de repetições cansativas.
+## EIXO 5: Os Pronomes e a Mecânica da Coesão Textual
+
+### 1. O que é o Pronome e qual a sua Missão no Texto?
+O pronome é a classe de palavras encarregada de **substituir o substantivo** ou de **acompanhar o substantivo**, indicando a pessoa do discurso (quem fala, com quem se fala ou de quem se fala).
+
+Diferente do substantivo (que dá nome às coisas), o pronome não tem um significado fixo no dicionário: o seu sentido depende inteiramente de **a quem ele está apontando ou substituindo** no momento da fala.
+
+#### Pronome Substantivo vs. Pronome Adjetivo:
+* **Pronome Substantivo:** É aquele que **assume o lugar** do substantivo, eliminando-o da frase para evitar repetições cansativas:
+  - *"O relatório técnico foi concluído ontem. **Ele** já está na mesa do diretor."*  
+    $\to$ A palavra **"Ele"** substituiu completamente a expressão "O relatório técnico". Funciona como um pronome substantivo.
+* **Pronome Adjetivo:** É aquele que **não substitui**, mas **acompanha** o substantivo que está ao seu lado, determinando o seu alcance:
+  - *"**Este** relatório precisa de revisão."*  
+    $\to$ A palavra **"Este"** está ao lado do substantivo "relatório", qualificando-o e apontando para ele. Funciona como um pronome adjetivo.
+
+---
+
+### 2. A Mecânica da Coesão Textual: O que é Anáfora e Catáfora?
+Em redações oficiais e em textos de alto nível, a maior virtude de um escritor é a **coesão referencial**: a habilidade de costurar as frases para que o leitor nunca se perca sobre quem está fazendo o quê.
+
+Dois termos técnicos que aparecem com frequência no estudo da coesão são **anáfora** e **catáfora**. Vamos desmistificá-los pela sua lógica natural:
 
 ```text
-TEMPO / ESPAÇO / TEXTO COM OS DEMONSTRATIVOS
-
-[ ESTE / ESTA / ISTO ]
-  • Espaço: Junto de quem fala ("Este relatório em minhas mãos").
-  • Tempo: Presente ("Neste ano de 2026").
-  • Texto (CATÁFORA): Aponta para a frente, para o que VAI ser dito:
-    "A ordem foi esta: organizem todos os processos pendentes."
-
-[ ESSE / ESSA / ISSO ]
-  • Espaço: Junto do ouvinte ("Esse processo sobre a sua mesa").
-  • Tempo: Passado recente ou futuro próximo ("Nesse último mês").
-  • Texto (ANÁFORA): Aponta para trás, RETOMA o que JÁ foi dito:
-    "A organização dos processos foi concluída. Isso trouxe agilidade."
-
-[ AQUELE / AQUELA / AQUILO ]
-  • Espaço: Longe de ambos ("Aquele prédio da Prefeitura lá no fundo").
-  • Tempo: Passado remoto, histórico ("Naquela década de 1980").
-  • Texto (Diferenciação entre dois termos):
-    "O Secretário e o Prefeito assinaram o decreto: este (o Prefeito, mais próximo) viajou, aquele (o Secretário, mais distante) permaneceu."
+┌────────────────────────────────────────────────────────────────────────┐
+│                   A LINHA DO TEMPO DA LEITURA                          │
+├────────────────────────────────────────────────────────────────────────┤
+│                                                                        │
+│   [TERMO ANTERIOR] ◄────── [PRONOME ANAFÓRICO]                         │
+│   (Olhar para trás: resgata o que já foi lido na página)               │
+│                                                                        │
+│   [PRONOME CATAFÓRICO] ──────► [TERMO SEGUINTE]                        │
+│   (Olhar para a frente: anuncia o que vai ser lido logo após)          │
+│                                                                        │
+└────────────────────────────────────────────────────────────────────────┘
 ```
 
-### 1. Papel Anafórico vs. Catafórico (O Coração das Bancas)
-* **Função Anafórica (Retroativa):** O pronome resgata um termo, frase ou ideia já mencionada anteriormente no texto, garantindo a **coesão referencial**.
-  - Exemplo: *O município adquiriu novos computadores. **Esses equipamentos** chegarão amanhã.* (*Esses equipamentos* retoma *novos computadores*).
-  - Exemplo da Prova 1 da ACCESS: *"Eles ajustaram as cores (...), e é por **isso** que a imagem parece muito azul."* $\to$ *Isso* retoma a frase anterior de que ajustaram as cores (**papel anafórico**).
-* **Função Catafórica (Prospectiva):** O pronome antecipa algo que ainda não foi explicado e que será revelado logo em seguida.
-  - Exemplo: *Só desejo **isto**: a aprovação no concurso.* (*Isto* joga a expectativa para a frente, antecipando *a aprovação no concurso*).
+#### A) Função Anafórica (O Olhar para Trás):
+Ocorre quando o pronome **resgata e retoma uma palavra ou ideia que já foi escrita anteriormente** no texto. Ele impede que você precise repetir o nome todo de novo:
+- *Exemplo com contexto administrativo:*  
+  *"A prefeitura adquiriu novos computadores para o setor de protocolo. **Esses equipamentos** serão instalados na próxima semana."*  
+  $\to$ **Análise:** A expressão *"Esses equipamentos"* olha para trás e resgata *"novos computadores"*. Esse movimento retrógrado de resgate textual chama-se **anáfora**.
 
-### 2. Pronomes Pessoais: Retos vs. Oblíquos
-* **Caso Reto (*eu, tu, ele, nós, vós, eles*):** Exercem prioritariamente a função de **sujeito** da oração.
-* **Caso Oblíquo (*me, mim, te, ti, se, si, o, a, lhe, nos, vos...*):** Exercem a função de **complemento verbal** (objeto direto ou indireto).
-  - **A Regra de Ouro:** *Mim* e *ti* não conjugam verbo. Quem conjuga verbo é pronome reto!
-    - ❌ *Incorreto:* Entregue o processo para mim assinar.
-    - ✔️ *Correto:* Entregue o processo para **eu** assinar. (Pois *eu* sou o sujeito do verbo *assinar*).
-    - ✔️ *Correto:* O relatório foi entregue a **mim**. (Aqui *mim* é término de regência preposicionada, complemento).
+#### B) Função Catafórica (O Olhar para a Frente):
+Ocorre quando o pronome **aponta para a frente, anunciando e criando expectativa sobre algo que só vai ser revelado depois**:
+- *Exemplo com contexto administrativo:*  
+  *"A determinação da diretoria foi **esta**: todos os arquivos digitais devem ter backup diário."*  
+  $\to$ **Análise:** Quem lê a palavra *"esta"* ainda não sabe qual foi a determinação. O pronome cria suspense e aponta para a frase seguinte. Esse movimento de antecipação chama-se **catáfora**.
+
+---
+
+### 3. O Emprego Rigoroso dos Pronomes Demonstrativos
+Os pronomes demonstrativos (*este, esse, aquele* e suas variações) indicam a posição de seres em relação a três dimensões: **no espaço físico**, **na linha do tempo** e **dentro do próprio texto**.
+
+```text
+┌─────────────────┬─────────────────────────┬─────────────────────────┬─────────────────────────┐
+│ DIMENSÃO        │ ESTE / ESTA / ISTO      │ ESSE / ESSA / ISSO      │ AQUELE / AQUELA / AQUILO│
+├─────────────────┼─────────────────────────┼─────────────────────────┼─────────────────────────┤
+│ NO ESPAÇO       │ Junto de quem fala      │ Junto de quem ouve      │ Longe de ambos          │
+│ FÍSICO          │ (1ª pessoa do discurso) │ (2ª pessoa do discurso) │ (3ª pessoa do discurso) │
+│                 │ "Este processo aqui na  │ "Esse documento aí na   │ "Aquele prédio lá no    │
+│                 │ minha mesa."            │ sua pasta."             │ fim da rua."            │
+├─────────────────┼─────────────────────────┼─────────────────────────┼─────────────────────────┤
+│ NA LINHA        │ Tempo PRESENTE ou       │ Tempo PASSADO RECENTE ou│ Tempo PASSADO REMOTO,   │
+│ DO TEMPO        │ ano/dia em curso        │ futuro próximo          │ histórico e distante    │
+│                 │ "Neste ano de 2026."    │ "Nesse último mês."     │ "Naquele ano de 1930."  │
+├─────────────────┼─────────────────────────┼─────────────────────────┼─────────────────────────┤
+│ DENTRO          │ CATÁFORA (aponta para   │ ANÁFORA (retoma o que   │ Distinção entre dois    │
+│ DO TEXTO        │ a frente / vai dizer)   │ já foi dito atrás)      │ termos já citados       │
+│                 │ "O aviso é este: ..."   │ "... e isso ocorreu."   │ (o mais distante)       │
+└─────────────────┴─────────────────────────┴─────────────────────────┴─────────────────────────┘
+```
+
+#### A Diferenciação entre Dois Termos Citados no Texto:
+Quando você cita dois elementos em uma frase e quer retomar ambos sem repetir seus nomes:
+* **ESTE / ESTA / ISTO:** Retoma o termo que está **mais perto** (o último citado).
+* **AQUELE / AQUELA / AQUILO:** Retoma o termo que está **mais longe** (o primeiro citado).
+- *Exemplo prático:*  
+  *"O **Secretário** e o **Prefeito** assinaram o acordo de cooperação: **este** (o Prefeito, mais próximo) viajou para a capital, enquanto **aquele** (o Secretário, mais distante na frase) permaneceu no município fiscalizando as obras."*
+
+#### O Erro Fatal de Redação: O Uso Incorreto de "O Mesmo"
+Em documentos oficiais e petições, é muito comum cometer o seguinte vício de linguagem:  
+❌ *"O fiscal lavrou o auto de infração e encaminhou o mesmo ao secretário."*
+
+**Por que isso está errado perante a gramática culta?**  
+Na língua portuguesa, *"mesmo"* é palavra de reforço ou identidade (*o próprio*: "o fiscal mesmo assinou"), e **nunca deve funcionar como pronome pessoal** substituto de substantivos!  
+✔️ **Formas corretas:**  
+- *"O fiscal lavrou o auto de infração e **o** encaminhou ao secretário."*  
+- *"O fiscal lavrou o auto de infração e encaminhou-**o** ao secretário."*
+
+---
+
+### 4. Pronomes Pessoais: Caso Reto vs. Caso Oblíquo
+Os pronomes pessoais indicam as pessoas que participam da comunicação. Eles dividem-se em duas grandes categorias funcionais:
+
+#### A) Pronomes do Caso Reto (*eu, tu, ele, ela, nós, vós, eles, elas*)
+Sua função sintática primordial é a de **SUJEITO da oração**. Eles praticam ou comandam a ação verbal:
+- *"**Nós** analisamos os requerimentos dos munícipes."*
+
+#### B) Pronomes do Caso Oblíquo
+Sua função sintática primordial é a de **COMPLEMENTO do verbo** (eles recebem ou sofrem a ação):
+- Átonos (fracos, sem preposição): *me, te, se, o, a, lhe, nos, vos, os, as, lhes*.
+- Tônicos (fortes, sempre precedidos de preposição): *mim, ti, si, ele, ela, nós, vós, eles, elas*.
+
+#### A Regra de Ouro: Por que "Mim não conjuga verbo"?
+O pronome oblíquo *mim* não tem força sintática para ser sujeito. Ele só pode receber a ação ao final de uma preposição:
+* ❌ *Incorreto:* *"Entregue os documentos para mim analisar."* (Quem vai analisar? Analisar é verbo no infinitivo; quem pratica o ato de analisar precisa ser pronome reto sujeito!).
+* ✔️ *Correto:* *"Entregue os documentos para **eu** analisar."*
+* ✔️ *Correto:* *"Os documentos foram entregues a **mim**."* (Aqui não há verbo a ser conjugado depois; *mim* é o receptor preposicionado).
+
+#### Como Empregar Corretamente os Oblíquos Átonos:
+1. **Regra de Assimilação Fonética (-lo, -la, -los, -las):**  
+   Quando o verbo termina nas consoantes **-r, -s ou -z**, essas letras desaparecem e o pronome *o/a* transforma-se em *-lo/-la*:
+   - *fazer + o* $	o$ *fazê-**lo*** (o 'r' cai e a oxítona terminada em 'e' recebe acento circunflexo).
+   - *analisar + a* $	o$ *analisá-**la***.
+   - *fizemos + o* $	o$ *fizemo-**lo*** (o 's' cai).
+2. **Regra de Assimilação Nasal (-no, -na, -nos, -nas):**  
+   Quando o verbo termina em som nasal (**-m, -ão, -õe**), o pronome *o/a* ganha a consoante nasal 'n':
+   - *recolheram + os* $	o$ *recolheram-**nos***.
+   - *põe + a* $	o$ *põe-**na***.
+3. **A Diferença Vital entre "O / A" e "LHE":**  
+   * **O / A (e suas variações):** Funcionam como objeto direto (completam verbos que **não pedem preposição**).
+     - *"O diretor convocou **o servidor**."* $	o$ *"O diretor convocou-**o**."*
+   * **LHE / LHES:** Funcionam como objeto indireto (completam verbos que **exigem a preposição 'a'**; equivalem a "a ele" ou "a ela"):
+     - *"O diretor obedeceu **ao estatuto**."* $	o$ *"O diretor obedeceu-**lhe**."* (Pois quem obedece, obedece *a* algo).
+
+---
+
+### 5. Pronomes Relativos: O Conector Sagrado
+O pronome relativo é a ferramenta de conexão mais sofisticada da língua. Ele cumpre **dois papéis ao mesmo tempo**:
+1. **Morfossintático:** Substitui um termo substantivo antecedente para que ele não precise ser repetido.
+2. **Conectivo:** Liga duas orações independentes em um único período composto harmonioso.
+
+#### A) O Relativo Universal: "QUE"
+É o pronome relativo mais frequente. Pode retomar tanto coisas quanto pessoas:
+- *"Recebi o memorando. O memorando determinava a vistoria."*  
+  $\to$ Unindo as frases: *"Recebi o memorando **que** determinava a vistoria."*
+
+#### B) O Relativo de Pessoa: "QUEM"
+Refere-se **estritamente a pessoas** ou entidades personificadas, e vem **obrigatoriamente antecedido de preposição**:
+- *"A servidora **a quem** solicitei as informações foi muito prestativa."* (Quem solicita a alguém $	o$ preposição "a" obrigatória).
+
+#### C) O Relativo de Lugar Físico: "ONDE"
+Este é um dos erros mais cobrados pelas bancas examinadoras:  
+* A palavra **"onde"** só pode ser usada como pronome relativo para retomar **lugares físicos, espaciais e geográficos concretos** (com paredes, chão ou limites territoriais).
+* NUNCA use "onde" para retomar reuniões, situações, épocas, leis, projetos ou sentimentos!
+  - ❌ *Incorreto:* *"A reunião **onde** definimos as metas foi produtiva."* (Reunião não é lugar com piso e telhado; é um evento no tempo!).
+  - ✔️ *Correto:* *"A reunião **em que** (ou **na qual**) definimos as metas foi produtiva."*
+  - ✔️ *Correto:* *"A sala do arquivo **onde** guardamos os processos está organizada."* (Sala é lugar físico concreto).
+
+#### D) O Relativo Possessivo: "CUJO" (A Estrela dos Concursos)
+O pronome relativo **cujo** (e suas variações *cuja, cujos, cujas*) possui três regras inegociáveis que você deve gravar para sempre:
+1. **Indica relação de posse:** Fica ensanduichado entre o possuidor (termo anterior) e a coisa possuída (termo posterior).
+2. **NUNCA, JAMAIS aceita artigo após si:** Dizer *"cujo o"*, *"cuja a"*, *"cujos os"* ou *"cujas as"* é um erro gramatical gravíssimo!
+3. **Concorda sempre com a coisa possuída (com o termo que vem DEPOIS dele):**
+   - *"O cidadão **cujo processo** foi aprovado compareceu à Prefeitura."* (*Cujo* concorda com o substantivo masculino singular *processo*).
+   - *"O cidadão **cuja solicitação** foi aprovada compareceu à Prefeitura."* (*Cuja* concorda com o substantivo feminino singular *solicitação*).
+   - *"O cidadão **cujos pedidos** foram aprovados compareceu à Prefeitura."* (*Cujos* concorda com o substantivo masculino plural *pedidos*).
+
+> **💡 Síntese Feynman (Pronomes):**  
+> *"O pronome é o procurador do substantivo: se é reto (eu, nós), comanda o verbo como sujeito; se é oblíquo (me, o, lhe), recebe a ação verbal (e mim nunca conjuga verbo!). No texto, se olha para trás e resgata algo, faz anáfora (esse); se olha para a frente anunciando, faz catáfora (este). E lembre-se: onde só pisa em chão físico, e cujo nunca anda de mãos dadas com artigo!"*
 
 ---
 
 ## EIXO 6: Estrutura e Formação de Palavras
 
-### 1. Como as Palavras são Construídas
-* **Radical:** É o núcleo de significado invariável da família de palavras (*leal, lealdade, desleal* $\to$ radical *leal-*).
-* **Afixos:** Partículas agregadas ao radical:
-  - **Prefixo:** Antes do radical (*des-leal, sub-secretário, in-disponível*).
-  - **Sufixo:** Depois do radical (*leal-dade, escol-ar-idade, enfratamento* $\to$ *enfrenta-mento*).
+### 1. A Anatomia da Palavra: Os Elementos Mórficos
+As palavras não são blocos sólidos e indivisíveis. Elas são montadas a partir de pequenas unidades mínimas carregadas de som e de significado, chamadas de **morfemas** ou **elementos mórficos**.
 
-### 2. Processos de Derivação Passo a Passo
+Conhecer a anatomia de uma palavra permite decifrar o sentido de qualquer vocábulo novo que apareça no edital ou na prova:
 
 ```text
 ┌────────────────────────────────────────────────────────────────────────┐
-│                   PROCESSOS DE DERIVAÇÃO                               │
-├─────────────────────────┬──────────────────────────────────────────────┤
-│ 1. Prefixal             │ Acrescenta prefixo: in-útil, des-fazer       │
-├─────────────────────────┼──────────────────────────────────────────────┤
-│ 2. Sufixal              │ Acrescenta sufixo: útil-mente, leal-dade     │
-├─────────────────────────┼──────────────────────────────────────────────┤
-│ 3. Prefixal e Sufixal   │ Afixos independentes: des-leal-dade          │
-│    (NÃO simultânea)     │ (Se tirar o prefixo, 'lealdade' existe!)     │
-├─────────────────────────┼──────────────────────────────────────────────┤
-│ 4. Parassintética       │ Afixos SIMULTÂNEOS: a-noite-cer, en-tard-ecer │
-│    (O Teste do Descarte)│ (Se tirar o prefixo, 'noitecer' NÃO existe!) │
-├─────────────────────────┼──────────────────────────────────────────────┤
-│ 5. Regressiva (Deverbal)│ Do verbo de ação gera substantivo abstrato:  │
-│                         │ combater ➔ o debate; encontrar ➔ o encontro  │
-├─────────────────────────┼──────────────────────────────────────────────┤
-│ 6. Imprópria            │ Muda a classe sem mexer nas letras:          │
-│    (Conversão)          │ O olhar (verbo ➔ substantivo)                │
-└─────────────────────────┴──────────────────────────────────────────────┘
+│                   OS ELEMENTOS MÓRFICOS DE UMA PALAVRA                 │
+├─────────────────────┬──────────────────────────────────────────────────┤
+│ ELEMENTO            │ FUNÇÃO EXATA                                     │
+├─────────────────────┼──────────────────────────────────────────────────┤
+│ 1. RADICAL          │ A raiz da palavra; contém o significado básico.   │
+├─────────────────────┼──────────────────────────────────────────────────┤
+│ 2. VOGAL TEMÁTICA   │ Conecta-se ao radical para receber as desinências.│
+├─────────────────────┼──────────────────────────────────────────────────┤
+│ 3. TEMA             │ É a união do RADICAL + VOGAL TEMÁTICA.           │
+├─────────────────────┼──────────────────────────────────────────────────┤
+│ 4. DESINÊNCIAS      │ Indicam flexões gramaticais (gênero, número,     │
+│                     │ tempo, pessoa).                                  │
+├─────────────────────┼──────────────────────────────────────────────────┤
+│ 5. AFIXOS           │ Partículas que criam novas palavras:             │
+│                     │ • Prefixo (antes do radical)                     │
+│                     │ • Sufixo (depois do radical)                     │
+├─────────────────────┼──────────────────────────────────────────────────┤
+│ 6. ELEMENTOS DE     │ Letras colocadas apenas para soar bem aos ouvidos│
+│    LIGAÇÃO          │ (eufonia), sem nenhum significado próprio.       │
+└─────────────────────┴──────────────────────────────────────────────────┘
 ```
 
-#### O Pulo do Gato: Prefixal e Sufixal vs. Parassíntese
-Faça o **Teste do Descarte**:
-- Analise a palavra **desigualdade**: tire o prefixo *des-*, sobrou *igualdade* (palavra existente na língua portuguesa). Tire o sufixo *-dade*, sobrou *desigual* (palavra existente). Logo, é **Derivação Prefixal e Sufixal** (formação independente).
-- Agora analise a palavra **anoitecer**: tire o prefixo *a-*, sobrou *noitecer* (NÃO existe!). Tire o sufixo *-ecer*, sobrou *anoite* (NÃO existe como verbo). Como a palavra só existe com os dois colocados ao mesmo tempo, trata-se de **Derivação Parassintética**.
-- E a palavra **enfrentamento** (da Prova 14)?
-  - Cuidado com pegadinhas! *Enfrentar* já existe na língua. Dele deriva-se *enfrenta-mento* por acréscimo de sufixo nominalizador! Não é parassíntese direta, pois *enfrentar* é base verbal intermediária.
+#### Análise Detalhada de Cada Elemento:
+1. **Radical:** É o núcleo semântico irredutível da família de palavras cognatas (palavras irmãs que vêm da mesma raiz):
+   - Na família: *cert-o, cert-eza, in-cert-o, cert-idão, acert-ar* $	o$ o radical comum invariável é **cert-**.
+2. **Vogal Temática:** É a vogal que se agrega ao radical para prepará-lo para ser flexionado:
+   - **Em Verbos:** Indica a qual das 3 conjugações o verbo pertence:
+     - 1ª conjugação (vogal temática **-a-**): *cant-**a**-r, protocol-**a**-r*.
+     - 2ª conjugação (vogal temática **-e-**): *vend-**e**-r, atend-**e**-r*.
+     - 3ª conjugação (vogal temática **-i-**): *part-**i**-r, cumpr-**i**-r*.
+   - **Em Nomes:** Vogal final atona que não indica oposição masculino/feminino (*mes-**a**, livr-**o**, pont-**e**-s*).
+3. **Tema:** É o bloco pronto formado pela soma do **Radical + Vogal Temática**:
+   - No verbo *organizar*: Radical *organiz-* + Vogal Temática *-a-* = Tema **organiza-**.
+4. **Desinências:** São os marcadores de flexão gramatical:
+   - **Desinências Nominais:** Indicam o **gênero** (*alun-**o** / alun-**a***) e o **número** (*aluno-**s***).
+   - **Desinências Verbais:** Indicam o **modo e o tempo** (*organiz-á-**va**-mos* $	o$ *-va-* indica pretérito imperfeito do indicativo) e o **número e a pessoa** (*organiz-á-va-**mos*** $	o$ *-mos* indica a 1ª pessoa do plural).
+5. **Afixos (Prefixos e Sufixos):** Partículas que mudam a classe gramatical ou o sentido básico da palavra:
+   - **Prefixo:** Inserido **antes** do radical (*in-ativo, des-fazer, sub-secretário*).
+   - **Sufixo:** Inserido **depois** do radical (*leal-dade, ativo-mente, fiscal-izar*).
+6. **Vogais e Consoantes de Ligação:** Letras inseridas sem valor de significado, usadas estritamente por razões de **eufonia** (para evitar sons ásperos ou difíceis de pronunciar):
+   - *chá + eira* $	o$ para não ficar "cháeira", insere-se a consoante de ligação **-l-**: *chá-**l**-eira*.
+   - *café + teira* $	o$ *caf-**e**-teira*.
+   - *gás + metro* $	o$ para não ficar "gásmetro", insere-se a vogal de ligação **-o-**: *gas-**ô**-metro*.
 
-### 3. Composição: Justaposição vs. Aglutinação
-Enquanto a derivação parte de **um único radical** e adiciona afixos, a composição junta **dois ou mais radicais diferentes**:
-* **Justaposição:** Os radicais se unem **sem nenhuma perda fonética ou alteração de escrita**. Cada palavra mantém sua integridade sonora.
-  - Exemplos: *guarda-chuva, passatempo, pé-de-moleque, girassol* (o acréscimo de um "s" em girassol serve apenas para preservar o som de /s/, sem perda de letras).
-* **Aglutinação:** Há choque fonético, fusão e **perda de letras/sons** na junção dos radicais.
-  - Exemplos:
-    - *planalto* (plano + alto $\to$ perdeu o "o").
-    - *embora* (em + boa + hora).
-    - *fidalgo* (filho + de + algo).
-    - *aguardente* (água + ardente).
+---
+
+### 2. Processos de Formação de Palavras por Derivação
+A derivação ocorre quando partimos de **um único radical primitivo** e geramos palavras derivadas por acréscimo ou modificação de morfemas:
+
+#### A) Derivação Prefixal (ou Prefixação)
+Acréscimo de um prefixo antes da palavra primitiva, alterando seu sentido:
+- *leal $	o$ **des**leal* (sentido de negação).
+- *ativo $	o$ **in**ativo*.
+- *ver $	o$ **pre**ver*.
+
+#### B) Derivação Sufixal (ou Sufixação)
+Acréscimo de um sufixo após o radical, frequentemente mudando a sua classe gramatical:
+- *leal* (adjetivo) + *-dade* $	o$ *leal**dade*** (substantivo abstrato).
+- *rápido* (adjetivo) + *-mente* $	o$ *rapida**mente*** (advérbio de modo).
+- *alfabeto* (substantivo) + *-izar* $	o$ *alfabet**izar*** (verbo de ação).
+
+#### C) Derivação Prefixal e Sufixal (Processo Independente)
+Ocorre quando agregamos simultaneamente um prefixo e um sufixo a um radical, mas **de maneira independente**. Isso significa que, se você remover qualquer um dos dois, a palavra restante continuará existindo com pleno sentido no português:
+- *deslealdade:* Se retirar o prefixo *des-*, sobra **lealdade** (palavra real!). Se retirar o sufixo *-dade*, sobra **desleal** (palavra real!).
+- *infelizmente:* Se retirar *in-*, sobra **felizmente**. Se retirar *-mente*, sobra **infeliz**.
+
+#### D) Derivação Parassintética (O Teste do Descarte)
+Ocorre quando o prefixo e o sufixo são agregados ao radical **ao mesmo tempo e de forma inseparável**. Se você retirar o prefixo OU o sufixo, o vocábulo restante **não existe na língua portuguesa**:
+- Analise a palavra **anoitecer:**
+  - Se retirar o prefixo *a-*, sobra *"noitecer"* (essa palavra NÃO existe!).
+  - Se retirar o sufixo *-ecer*, sobra *"anoite"* (essa palavra NÃO existe como verbo!).
+  - Conclusão: Como a palavra só existe com ambos juntos, trata-se de **Derivação Parassintética**.
+- Outros exemplos parassintéticos clássicos:
+  - *en-tard-ecer* (não existe "tardecer" nem "entarde").
+  - *a-doç-ar* (não existe "doçar" nem "adoce" como base primitiva).
+  - *des-alm-ado* (não existe "almado" nem "desalma").
+  - *es-clare-cer* (não existe "clarecer").
+
+```text
+┌────────────────────────────────────────────────────────────────────────┐
+│               O TESTE DO DESCARTE: PREFIXAL/SUFIXAL vs. PARASSÍNTESE   │
+├────────────────────────────────────────────────────────────────────────┤
+│ 1. Isole o prefixo. A palavra restante existe no dicionário?           │
+│ 2. Isole o sufixo. A palavra restante existe no dicionário?            │
+│                                                                        │
+│ • Se as palavras continuam existindo sozinhas ➔ PREFIXAL E SUFIXAL.    │
+│ • Se a palavra restante NÃO EXISTE sem um deles ➔ PARASSINTÉTICA.      │
+└────────────────────────────────────────────────────────────────────────┘
+```
+
+#### E) Derivação Regressiva (Deverbal)
+Ocorre quando reduzimos uma palavra original. Quase sempre consiste na transformação de um **verbo que expressa ação** em um **substantivo abstrato** terminado nas vogais temáticas atonas **-o, -a ou -e**:
+- Do verbo *debater* (ação) $	o$ nasce o substantivo *o debate*.
+- Do verbo *comprar* (ação) $	o$ nasce o substantivo *a compra*.
+- Do verbo *sacar* (ação) $	o$ nasce o substantivo *o saque*.
+- Do verbo *pescar* (ação) $	o$ nasce o substantivo *a pesca*.
+*(Atenção: Não confunda com o processo inverso! Em "âncora $	o$ ancorar" e "planta $	o$ plantar", o substantivo veio primeiro e o verbo foi derivado dele por sufixação).*
+
+#### F) Derivação Imprópria (Conversão)
+Ocorre quando uma palavra **muda de classe gramatical sem sofrer nenhuma alteração em suas letras ou fonemas**, apenas pelo papel que assume na frase:
+- *O **jantar** foi servido.* (*jantar* é verbo no infinitivo, mas virou substantivo).
+- *Ele teve um **não** como resposta.* (*não* é advérbio, virou substantivo).
+- *O homem **monstro** assustou a cidade.* (*monstro* é substantivo, virou adjetivo caracterizador).
+
+---
+
+### 3. Processos de Formação de Palavras por Composição
+Enquanto a derivação parte de apenas um radical, a composição consiste na **união de dois ou mais radicais independentes** para criar uma nova palavra composta:
+
+#### A) Justaposição (Sem Perda Sonora)
+Os radicais se unem lado a lado **sem que ocorra nenhuma perda fonética ou alteração ortográfica**. Cada palavra mantém sua pronúncia e integridade intactas:
+- *passa + tempo* $	o$ **passatempo**.
+- *guarda + chuva* $	o$ **guarda-chuva**.
+- *pé + de + moleque* $	o$ **pé de moleque**.
+- *gira + sol* $	o$ **girassol** *(o acréscimo de um 's' tem o único propósito fonético de manter o som de /s/ entre duas vogais, sem que nenhuma letra original tenha sido perdida)*.
+
+#### B) Aglutinação (Com Fusão e Perda Sonora)
+Os radicais se unem com choque fonético, ocorrendo **supressão de letras ou alteração de sons** na junção dos termos:
+- *plano + alto* $	o$ **planalto** (o "o" de plano foi eliminado).
+- *água + ardente* $	o$ **aguardente** (fusão das duas vogais 'a').
+- *em + boa + hora* $	o$ **embora**.
+- *filho + de + algo* $	o$ **fidalgo**.
+- *perna + alta* $	o$ **pernalta**.
+
+---
+
+### 4. Outros Processos Modernos de Formação
+A língua é um organismo vivo que cria palavras por outros mecanismos complementares:
+* **Hibridismo:** União de elementos morfológicos pertencentes a idiomas diferentes:
+  - *televisão* (do grego *tēle* = longe + do latim *visio* = visão).
+  - *automóvel* (do grego *autos* = por si mesmo + do latim *mobilis* = que se move).
+  - *sociologia* (do latim *socius* = sociedade + do grego *logos* = estudo).
+* **Neologismo:** Criação deliberada de palavras novas para nomear novas tecnologias, hábitos e realidades culturais:
+  - *deletar, tuitar, escanear, cibernético, sextar*.
+* **Abreviação Vocabular (ou Redução):** Eliminação de parte da palavra para facilitar a fala rápida:
+  - *foto* (de fotografia), *moto* (de motocicleta), *pneu* (de pneumático), *cine* (de cinematógrafo).
+* **Siglonimização:** Formação de palavras a partir das letras iniciais de expressões compostas:
+  - *CPF* (Cadastro de Pessoas Físicas), *SUS* (Sistema Único de Saúde), *IPTU* (Imposto Predial e Territorial Urbano).
+* **Onomatopeia:** Palavras criadas para reproduzir sons e ruídos da natureza:
+  - *tique-taque, zumbido, sussurro, miado, estalo*.
+
+> **💡 Síntese Feynman (Estrutura e Formação de Palavras):**  
+> *"As palavras são montadas como blocos de lego: o radical é a base do significado; os afixos criam novos ramos da família. Na derivação, se o prefixo e o sufixo puderem viver separados, é prefixal e sufixal (deslealdade); se morrerem sem o par, é parassíntese (anoitecer). Na composição, se juntar sem perder pedaço, é justaposição (girassol); se perder letra pelo caminho, é aglutinação (planalto)."*
 
 ---
 
 ## EIXO 7: O Plural dos Substantivos e Adjetivos Compostos
 
-Este é o ponto em que candidatos mais erram por tentarem decorar listas secas. Vamos entender **a lógica mecânica da flexão**.
+### 1. A Lógica Central do Plural dos Compostos
+O plural de palavras compostas é um dos assuntos mais temidos pelos candidatos, mas ele obedece a uma **regra de ouro puramente lógica**:
 
-### 1. Plural dos Substantivos Compostos (A Lógica da Variabilidade)
-Pergunte-se: **qual é a classe gramatical de cada palavra formadora?**
-- As classes de natureza **variável** (substantivo, adjetivo, numeral) vão para o plural.
-- As classes de natureza **invariável** (verbo, advérbio, prefixo) ficam congeladas no singular.
+```text
+┌────────────────────────────────────────────────────────────────────────┐
+│                   A REGRA DE OURO DA NATUREZA GRAMATICAL               │
+├────────────────────────────────────────────────────────────────────────┤
+│ Pergunte-se: "Qual é a classe gramatical de cada palavra formadora?"   │
+│                                                                        │
+│ • CLASSES VARIÁVEIS (Substantivo, Adjetivo, Numeral) ➔ FLEXIONAM EM 'S'│
+│ • CLASSES INVARIÁVEIS (Verbo, Advérbio, Prefixo) ➔ FICAM NO SINGULAR   │
+└────────────────────────────────────────────────────────────────────────┘
+```
 
-| Estrutura | Regra Lógica | Exemplos Corretos |
-| :--- | :--- | :--- |
-| **Substantivo + Substantivo** | Ambos variam | *couves-flores, decretos-leis* |
-| **Substantivo + Adjetivo** | Ambos variam | *oficiais-administrativos, cartas-bilhetes* |
-| **Adjetivo + Substantivo** | Ambos variam | *altos-relevos, más-línguas* |
-| **Numeral + Substantivo** | Ambos variam | *terças-feiras, primeiras-damas* |
-| **Verbo + Substantivo** | **Verbo não varia** (não existe verbo no plural com 's' de nome!); o substantivo varia | *guarda-roupas, lança-perfumes, quebra-cabeças, arranha-céus* |
-| **Palavra Invariável + Substantivo** | Invariável fica parada; substantivo varia | *ex-diretores, vice-presidentes, alto-falantes* (*alto* aqui é advérbio de volume!) |
-
-#### A Exceção Lógica dos Dois Substantivos:
-Quando o **segundo substantivo limita, restringe ou indica a finalidade/tipo do primeiro**, a norma-padrão prefere flexionar **apenas o primeiro elemento**:
-- *canetas-tinteiro* (tinteiro é o tipo de caneta).
-- *salários-família* (família é a finalidade do salário).
-- *navios-escola* (escola é a função do navio).
-- *cidades-satélite* (satélite qualifica a cidade).  
-*(Nota: a gramática moderna admite a flexão de ambos nesses casos, mas bancas conservadoras e órgãos municipais priorizam flexionar apenas o primeiro elemento).*
-
-#### Compostos com Preposição (Explícita ou Implícita):
-Flexiona-se **apenas o primeiro elemento**, pois o restante é um adjunto preposicionado:
-- *pés de galinha, mulas sem cabeça, generais de divisão*.
-
-### 2. Plural dos Adjetivos Compostos: A Regra do Último Elemento
-Nos adjetivos compostos, a regra de ouro lógica é: **apenas o último elemento vai para o plural e concorda com o substantivo**. O primeiro permanece invariável na forma masculina singular.
-- *acordos político-econômicos* (apenas *econômicos* flexiona).
-- *causas médico-cirúrgicas* (apenas *cirúrgicas* flexiona).
-- *documentos técnico-administrativos* (como vimos na questão 9 da Prova de Apiaí/SP da banca ACCESS!).
-
-#### As Duas Exceções Clássicas de Concurso:
-1. **Adjetivo Composto Indicando Cor com Substantivo na Composição:**
-   Se qualquer um dos elementos for um substantivo usado para dar nome à cor, **o bloco inteiro fica 100% INVARIÁVEL**!
-   - *camisas verde-oliva* (oliva é fruta/substantivo $\to$ invariável!).
-   - *paredes amarelo-ouro* (ouro é metal/substantivo $\to$ invariável!).
-   - *olhos verde-esmeralda* (esmeralda é pedra/substantivo $\to$ invariável!).
-2. **As Formas Consagradas Invariáveis:**
-   - *ternos azul-marinho* (sempre invariável).
-   - *gravatas azul-celeste* (sempre invariável).
+Por que o verbo não flexiona no plural de substantivos compostos?  
+Pense na lógica: o plural de nomes em português é feito adicionando a letra **-s** de desinência nominal. Verbos não aceitam '-s' de nome! O verbo expressa ação, e quando vira peça de uma palavra composta, atua como elemento invariável.
 
 ---
 
-## EIXO 8: Quadro Comparativo de Casos Reais (Frase Certa vs. Frase Errada)
+### 2. Casos Práticos de Substantivos Compostos:
 
-| Conceito | ❌ Frase Errada (Pegadinha de Prova) | ✔️ Frase Correta (Norma-Padrão) | A Lógica da Regra / Exceção |
+#### A) Classes Variáveis Unidas (Ambos vão para o Plural):
+* **Substantivo + Substantivo:**
+  - *couve-flor $	o$ couves-flores*
+  - *decreto-lei $	o$ decretos-leis*
+  - *tenente-coronel $	o$ tenentes-coronéis*
+* **Substantivo + Adjetivo / Adjetivo + Substantivo:**
+  - *oficial-administrativo $	o$ oficiais-administrativos*
+  - *carta-bilhete $	o$ cartas-bilhetes*
+  - *alto-relevo $	o$ altos-relevos*
+  - *má-língua $	o$ más-línguas*
+* **Numeral + Substantivo:**
+  - *terça-feira $	o$ terças-feiras*
+  - *primeira-dama $	o$ primeiras-damas*
+
+#### B) Verbo ou Palavra Invariável na Composição (O primeiro fica congelado!):
+* **Verbo + Substantivo (Apenas o segundo flexiona):**
+  - *guarda-roupa $	o$ **guarda-roupas*** *(quem guarda é verbo guardar $	o$ fica no singular!).*
+  - *guarda-chuva $	o$ **guarda-chuvas***.
+  - *quebra-cabeça $	o$ **quebra-cabeças***.
+  - *arranha-céu $	o$ **arranha-céus***.
+  - *lança-perfume $	o$ **lança-perfumes***.
+* **Palavra Invariável (advérbio ou prefixo) + Substantivo:**
+  - *alto-falante $	o$ **alto-falantes*** *(alto aqui é advérbio de volume, significa "falar alto" $	o$ invariável!).*
+  - *abaixo-assinado $	o$ **abaixo-assinados*** *(abaixo é advérbio de lugar $	o$ invariável!).*
+  - *vice-diretor $	o$ **vice-diretores*** *(vice é prefixo $	o$ invariável!).*
+  - *ex-prefeito $	o$ **ex-prefeitos*** *(ex é prefixo $	o$ invariável!).*
+
+#### C) A Exceção Lógica do Substantivo Delimitador:
+Quando o segundo substantivo serve para **limitar, restringir, indicar o tipo ou a finalidade do primeiro**, a norma-padrão consagra a flexão de **apenas o primeiro elemento**:
+* *salário-família $	o$ **salários-família*** (família é a finalidade do benefício).
+* *caneta-tinteiro $	o$ **canetas-tinteiro*** (tinteiro é o tipo da caneta).
+* *navio-escola $	o$ **navios-escola*** (escola é a função do navio).
+* *cidade-satélite $	o$ **cidades-satélite*** (satélite funciona como qualificativo restritivo).  
+*(Nota didática: embora a gramática moderna venha aceitando a flexão de ambos em alguns casos, as bancas examinadoras de concursos cobram prioritariamente a flexão exclusiva do primeiro elemento nesses compostos de especificação).*
+
+#### D) Compostos Ligados por Preposição:
+Quando os elementos estão ligados por preposição (explícita ou implícita), flexiona-se **apenas o primeiro elemento**, pois o restante é um termo preposicionado dependente:
+* *pé de moleque $	o$ **pés de moleque***
+* *mula sem cabeça $	o$ **mulas sem cabeça***
+* *general de brigada $	o$ **generais de brigada***
+* *pão de ló $	o$ **pães de ló***
+
+#### E) Palavras Repetidas ou Onomatopeias:
+Quando o composto é formado por palavras repetidas ou por sons onomatopéicos, flexiona-se **apenas o segundo elemento**:
+* *reco-reco $	o$ **reco-recos***
+* *tique-taque $	o$ **tique-taques***
+* *corre-corre $	o$ **corre-corres***
+* *pisca-pisca $	o$ **pisca-piscas***
+
+---
+
+### 3. Plural dos Adjetivos Compostos
+Nos adjetivos compostos, a regra geral é surpreendentemente simples: **apenas o último elemento vai para o plural e concorda em gênero e número com o substantivo**. O primeiro elemento permanece congelado na forma masculina singular:
+- *acordo político-econômico $	o$ acordos **político-econômicos***.
+- *causa médico-cirúrgica $	o$ causas **médico-cirúrgicas***.
+- *documento técnico-administrativo $	o$ documentos **técnico-administrativos***.
+- *instituição luso-brasileira $	o$ instituições **luso-brasileiras***.
+
+#### As Duas Regras de Ouro das Cores (Atenção Máxima em Concursos):
+1. **Adjetivo Composto Indicando Cor formado por SUBSTANTIVO:**  
+   Se qualquer um dos elementos que dão nome à cor for originalmente um **substantivo** (fruta, flor, metal, pedra preciosa, animal), **o bloco inteiro fica 100% INVARIÁVEL**!
+   - *camisas **verde-oliva*** *(oliva é fruta/substantivo $	o$ nenhum elemento varia!).*
+   - *paredes **amarelo-ouro*** *(ouro é metal/substantivo $	o$ invariável!).*
+   - *olhos **verde-esmeralda*** *(esmeralda é pedra preciosa $	o$ invariável!).*
+   - *tecidos **vermelho-sangue*** *(sangue é substantivo $	o$ invariável!).*
+2. **As Formas Consagradas Invariáveis por Tradição:**  
+   As expressões *azul-marinho* e *azul-celeste* são consagradas como **totalmente invariáveis**:
+   - *ternos **azul-marinho*** (nunca diga "azuis-marinhos"!).
+   - *camisas **azul-celeste***.
+
+> **💡 Síntese Feynman (Plural dos Compostos):**  
+> *"Em substantivos compostos, palavra variável aceita 's' (oficiais-administrativos) e palavra invariável ou verbo fica no singular (guarda-roupas, alto-falantes). Se tiver preposição, só o primeiro varia (pés de moleque). Em adjetivos compostos, só o último varia (técnico-administrativos) — a não ser que tenha cor com nome de coisa no meio (verde-oliva) ou azul-marinho, que congelam e não mudam nunca!"*
+
+---
+
+## EIXO 8: Quadro Comparativo Geral (Frase Certa vs. Frase Errada)
+
+O quadro abaixo resume as principais armadilhas de aplicação gramatical dos conteúdos da Semana 02, confrontando o equívoco comum com a construção escorreita da norma-padrão:
+
+| Conceito Morfológico | ❌ Frase Incorreta (Equívoco Comum) | ✔️ Frase Correta (Norma-Padrão Culta) | Explicação Didática da Regra |
 | :--- | :--- | :--- | :--- |
-| **Plural de Substantivo Composto** | *Os guardas-roupas novos foram entregues.* | *Os **guarda-roupas** novos foram entregues.* | *Guarda* vem do verbo *guardar*. Verbo não aceita desinência de plural nominal em 's'. |
-| **Plural de Adjetivo Composto** | *Foram expedidos pareceres técnicos-administrativos.* | *Foram expedidos pareceres **técnico-administrativos**.* | Em adjetivos compostos, o primeiro elemento funciona como prefixoide adverbial e não varia. |
-| **Pronome Sujeito** | *Para mim redigir a ata da reunião, preciso da pauta.* | *Para **eu redigir** a ata da reunião, preciso da pauta.* | *Mim* é pronome oblíquo e não conjuga verbo. Quem pratica a ação de *redigir* é o sujeito *eu*. |
-| **Demonstrativo Anafórico** | *Houve corte no orçamento. Isto causou atrasos.* | *Houve corte no orçamento. **Isso** causou atrasos.* | *Isso* retoma algo já dito anteriormente (anáfora). *Isto* deve ser usado para anunciar o que virá. |
-| **Coesão com "O mesmo"** | *O Diretor assinou o ofício e encaminhou o mesmo.* | *O Diretor assinou o ofício e **o** encaminhou.* | *O mesmo* tem valor de reforço/identidade (*ele mesmo*), não deve ser usado como pronome pessoal anafórico. |
-| **Adjetivo de Cor** | *Comprei dois tecidos verdes-olivas para o gabinete.* | *Comprei dois tecidos **verde-oliva** para o gabinete.* | *Oliva* é substantivo. Quando há substantivo na composição da cor, todo o conjunto fica invariável. |
+| **Plural de Substantivo com Verbo** | *Os guardas-roupas foram entregues no almoxarifado.* | *Os **guarda-roupas** foram entregues no almoxarifado.* | *Guarda* vem do verbo guardar. Verbo indica ação e não aceita desinência nominal de plural em '-s'. |
+| **Plural de Adjetivo Composto** | *Foram expedidos pareceres técnicos-administrativos.* | *Foram expedidos pareceres **técnico-administrativos**.* | Em adjetivos compostos, apenas o último elemento varia e concorda com o substantivo. |
+| **Adjetivo de Cor com Substantivo** | *Compraram cortinas verdes-olivas para as salas.* | *Compraram cortinas **verde-oliva** para as salas.* | Quando um substantivo (*oliva*) é usado para designar cor, o composto inteiro torna-se 100% invariável. |
+| **Pronome Pessoal Sujeito** | *Entregue a planilha para mim conferir os dados.* | *Entregue a planilha para **eu conferir** os dados.* | *Mim* é pronome oblíquo e não conjuga verbo. Quem pratica a ação de conferir é o sujeito *eu*. |
+| **Demonstrativo Anafórico** | *Houve corte de verbas. Isto gerou atrasos.* | *Houve corte de verbas. **Isso** gerou atrasos.* | O pronome *isso* resgata algo já dito anteriormente (anáfora). *Isto* serve para anunciar o que virá. |
+| **Coesão com "O mesmo"** | *O Diretor assinou o ofício e encaminhou o mesmo.* | *O Diretor assinou o ofício e **o** encaminhou.* | *O mesmo* é termo de reforço/identidade (*ele mesmo*), não devendo substituir pronome pessoal. |
+| **Pronome Relativo de Lugar** | *Foi promulgada a lei onde prevê incentivos.* | *Foi promulgada a lei **que** (ou **na qual**) prevê incentivos.* | A palavra *onde* só pode retomar lugares físicos concretos. Lei é um conceito jurídico, não um local. |
+| **Pronome Relativo "Cujo"** | *O servidor cujo o processo foi deferido compareceu.* | *O servidor **cujo processo** foi deferido compareceu.* | O pronome relativo *cujo* nunca admite artigo (*o, a, os, as*) após si. |
+| **Uso de "Todo" com Artigo** | *O estagiário leu todo processo durante a tarde.* | *O estagiário leu **todo o** processo durante a tarde.* | *Todo processo* (sem artigo) significa qualquer processo. Para significar o processo inteiro, usa-se *todo o*. |
+| **Numeral em Início de Leis** | *Conforme o artigo um da Constituição Federal...* | *Conforme o **artigo primeiro** da Constituição Federal...* | Do número 1 ao 9, a leitura oficial e legal de artigos de leis é obrigatoriamente em ordinal. |
 
 ---
 
@@ -790,4 +1263,4 @@ Copie estas cinco perguntas-chave no seu caderno de resumos e responda em voz al
 2. [ ] Consigo aplicar o "Teste do Descarte" para provar quando uma palavra é parassintética e quando é derivação prefixal e sufixal independente?  
 3. [ ] Sei quando um substantivo abstrato nasce de um verbo por derivação regressiva (ex: *encontrar $\to$ o encontro*)?  
 4. [ ] Dominei o papel do pronome no texto, sabendo exatamente que *isso/esse* resgata o que já passou (anáfora) e *isto/este* anuncia o que vai ser dito (catáfora)?  
-5. [ ] Sei a regra lógica do plural dos adjetivos compostos (apenas o último varia) e por que expressões de cor com substantivo (*verde-oliva, amarelo-ouro*) ficam 100% invariáveis?  
+5. [ ] Sei a regra lógica do plural dos adjetivos compostos (apenas o último varia) e por que expressões de cor com substantivo (*verde-oliva, amarelo-ouro*) ficam 100% invariáveis?
