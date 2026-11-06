@@ -559,6 +559,171 @@
     .lesson-callout.callout-important { border-left-color: #8b5cf6; background-color: rgba(139, 92, 246, 0.06); }
     .lesson-callout.callout-warning { border-left-color: #f59e0b; background-color: rgba(245, 158, 11, 0.06); }
     .lesson-callout.callout-caution { border-left-color: #ef4444; background-color: rgba(239, 68, 68, 0.06); }
+
+    /* =========================================================
+       PIPELINE DIDÁTICO: CAUSA ➔ FATO ➔ CONSEQUÊNCIA (3 ESCALAS)
+       ========================================================= */
+    .cfc-pipeline {
+      margin: 1.5rem 0;
+      border-radius: 1.15rem;
+      border: 1px solid var(--border);
+      background-color: var(--bg-surface);
+      overflow: hidden;
+      box-shadow: 0 4px 18px -2px rgba(0, 0, 0, 0.05);
+    }
+    .cfc-header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+      padding: 0.75rem 1.15rem;
+      background: linear-gradient(135deg, rgba(99, 102, 241, 0.08) 0%, rgba(16, 185, 129, 0.08) 100%);
+      border-bottom: 1px solid var(--border);
+    }
+    .cfc-header-title {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.8rem;
+      font-family: var(--font-mono, monospace);
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--pri);
+    }
+    .cfc-header-badge {
+      font-size: 0.68rem;
+      font-family: var(--font-mono, monospace);
+      font-weight: 700;
+      padding: 0.2rem 0.6rem;
+      border-radius: 9999px;
+      background: rgba(99, 102, 241, 0.12);
+      color: #4f46e5;
+      border: 1px solid rgba(99, 102, 241, 0.25);
+    }
+    html.dark .cfc-header-badge {
+      color: #818cf8;
+      border-color: rgba(129, 140, 248, 0.3);
+    }
+    .cfc-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0.75rem;
+      padding: 1rem 1.15rem 1.15rem;
+    }
+    @media (min-width: 860px) {
+      .cfc-grid {
+        grid-template-columns: 1fr auto 1fr auto 1.15fr;
+        align-items: stretch;
+        gap: 0.65rem;
+        padding: 1.15rem;
+      }
+    }
+    .cfc-card {
+      border-radius: 0.9rem;
+      padding: 0.95rem 1.05rem;
+      border: 1.5px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      gap: 0.45rem;
+      background-color: var(--bg-elevated);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    .cfc-card:hover {
+      transform: translateY(-2px);
+    }
+    .cfc-card-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .cfc-card-label {
+      font-family: var(--font-mono, monospace);
+      font-size: 0.72rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .cfc-card-pill {
+      font-size: 0.62rem;
+      font-family: var(--font-mono, monospace);
+      font-weight: 700;
+      padding: 0.12rem 0.45rem;
+      border-radius: 0.35rem;
+    }
+    .cfc-card-text {
+      font-size: 0.84rem;
+      line-height: 1.55;
+      color: var(--pri);
+    }
+    .cfc-card.causa {
+      border-color: rgba(245, 158, 11, 0.35);
+      background: linear-gradient(180deg, rgba(245, 158, 11, 0.06) 0%, rgba(245, 158, 11, 0.01) 100%);
+    }
+    .cfc-card.causa .cfc-card-label { color: #d97706; }
+    html.dark .cfc-card.causa .cfc-card-label { color: #fbbf24; }
+    .cfc-card.causa .cfc-card-pill {
+      background: rgba(245, 158, 11, 0.15);
+      color: #b45309;
+    }
+    html.dark .cfc-card.causa .cfc-card-pill { color: #fde68a; }
+
+    .cfc-card.fato {
+      border-color: rgba(99, 102, 241, 0.35);
+      background: linear-gradient(180deg, rgba(99, 102, 241, 0.06) 0%, rgba(99, 102, 241, 0.01) 100%);
+    }
+    .cfc-card.fato .cfc-card-label { color: #4f46e5; }
+    html.dark .cfc-card.fato .cfc-card-label { color: #818cf8; }
+    .cfc-card.fato .cfc-card-pill {
+      background: rgba(99, 102, 241, 0.15);
+      color: #4338ca;
+    }
+    html.dark .cfc-card.fato .cfc-card-pill { color: #c7d2fe; }
+
+    .cfc-card.consequencia {
+      border-color: rgba(16, 185, 129, 0.4);
+      background: linear-gradient(180deg, rgba(16, 185, 129, 0.08) 0%, rgba(16, 185, 129, 0.02) 100%);
+      box-shadow: 0 4px 14px -2px rgba(16, 185, 129, 0.08);
+    }
+    .cfc-card.consequencia .cfc-card-label { color: #059669; }
+    html.dark .cfc-card.consequencia .cfc-card-label { color: #34d399; }
+    .cfc-card.consequencia .cfc-card-pill {
+      background: rgba(16, 185, 129, 0.15);
+      color: #047857;
+    }
+    html.dark .cfc-card.consequencia .cfc-card-pill { color: #a7f3d0; }
+
+    .cfc-arrow-divider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .cfc-arrow-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 1.85rem;
+      height: 1.85rem;
+      border-radius: 9999px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      color: #64748b;
+      font-size: 0.8rem;
+      font-weight: 800;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+    }
+    @media (max-width: 859px) {
+      .cfc-arrow-divider {
+        margin: -0.2rem 0;
+      }
+      .cfc-arrow-badge {
+        transform: rotate(90deg);
+      }
+    }
     .quiz-opt-card {
       display: flex;
       align-items: flex-start;
@@ -2401,6 +2566,131 @@
       }).join("");
     }
 
+    function parseCfcFromText(rawText) {
+      const lines = String(rawText || "").split("\n");
+      const cleaned = [];
+      let customTitle = "";
+      for (let l of lines) {
+        let c = l.replace(/^\s*[│>•*-]\s*|\s*│\s*$/g, "").trim();
+        if (/^M[ÉE]TODO DID[ÁA]TICO/i.test(c)) {
+          customTitle = c;
+          continue;
+        }
+        if (/^[┌┐└┘├┤┬┴┼─═]+$/.test(c)) continue;
+        if (c) cleaned.push(c);
+      }
+      const full = cleaned.join(" ");
+      const parts = full.split(/(?=•|\bCAUSA\b|\bFATO\b|\bCONSEQU[ÊE]NCIA\b)/i);
+      
+      const res = {
+        title: customTitle || "Método Didático: Causa ➔ Fato ➔ Consequência (3 Escalas)",
+        causa: { label: "1. Causa Macro", text: "" },
+        fato: { label: "2. Fato Político", text: "" },
+        conseq: { label: "3. Consequência Regional (SP & Birigui)", text: "" }
+      };
+
+      for (let p of parts) {
+        let trimmed = p.replace(/^•\s*/, "").trim();
+        if (/^CAUSA/i.test(trimmed)) {
+          const colonIdx = trimmed.indexOf(":");
+          if (colonIdx !== -1) {
+            res.causa.label = trimmed.slice(0, colonIdx).trim();
+            res.causa.text = trimmed.slice(colonIdx + 1).trim();
+          } else {
+            res.causa.text = trimmed.replace(/^CAUSA\s*/i, "");
+          }
+        } else if (/^FATO/i.test(trimmed)) {
+          const colonIdx = trimmed.indexOf(":");
+          if (colonIdx !== -1) {
+            res.fato.label = trimmed.slice(0, colonIdx).trim();
+            res.fato.text = trimmed.slice(colonIdx + 1).trim();
+          } else {
+            res.fato.text = trimmed.replace(/^FATO\s*/i, "");
+          }
+        } else if (/^CONSEQU/i.test(trimmed)) {
+          const colonIdx = trimmed.indexOf(":");
+          if (colonIdx !== -1) {
+            res.conseq.label = trimmed.slice(0, colonIdx).trim();
+            res.conseq.text = trimmed.slice(colonIdx + 1).trim();
+          } else {
+            res.conseq.text = trimmed.replace(/^CONSEQU[ÊE]NCIA\s*/i, "");
+          }
+        }
+      }
+      return res;
+    }
+
+    function buildCfcPipelineHtml(title, causa, fato, conseq) {
+      const cleanTitle = escapeHtml(title || "Método Didático: Causa ➔ Fato ➔ Consequência (3 Escalas)");
+      
+      const formatCardText = (txt) => {
+        let s = escapeHtml(txt || "").trim();
+        s = s.replace(/\*\*([^*]+)\*\*/g, '<strong class="font-extrabold text-pri">$1</strong>');
+        s = s.replace(/"([^"]+)"/g, '<span class="font-semibold text-indigo-600 dark:text-indigo-400">“$1”</span>');
+        return s;
+      };
+
+      const causaLabel = escapeHtml(causa.label || "1. Causa Macro");
+      const fatoLabel = escapeHtml(fato.label || "2. Fato Político");
+      const conseqLabel = escapeHtml(conseq.label || "3. Consequência (SP & Birigui)");
+
+      return `
+        <div class="cfc-pipeline my-5">
+          <div class="cfc-header">
+            <div class="cfc-header-title">
+              <span class="text-base sm:text-lg">🧭</span>
+              <span>${cleanTitle}</span>
+            </div>
+            <span class="cfc-header-badge">Conexão 3 Escalas</span>
+          </div>
+          <div class="cfc-grid">
+            <!-- 1. CAUSA -->
+            <div class="cfc-card causa">
+              <div class="cfc-card-top">
+                <span class="cfc-card-label">${causaLabel}</span>
+                <span class="cfc-card-pill">Origem</span>
+              </div>
+              <div class="cfc-card-text">
+                ${formatCardText(causa.text)}
+              </div>
+            </div>
+
+            <!-- Seta 1 -->
+            <div class="cfc-arrow-divider" aria-hidden="true">
+              <span class="cfc-arrow-badge">➔</span>
+            </div>
+
+            <!-- 2. FATO -->
+            <div class="cfc-card fato">
+              <div class="cfc-card-top">
+                <span class="cfc-card-label">${fatoLabel}</span>
+                <span class="cfc-card-pill">O Marco</span>
+              </div>
+              <div class="cfc-card-text">
+                ${formatCardText(fato.text)}
+              </div>
+            </div>
+
+            <!-- Seta 2 -->
+            <div class="cfc-arrow-divider" aria-hidden="true">
+              <span class="cfc-arrow-badge">➔</span>
+            </div>
+
+            <!-- 3. CONSEQUÊNCIA -->
+            <div class="cfc-card consequencia">
+              <div class="cfc-card-top">
+                <span class="cfc-card-label">${conseqLabel}</span>
+                <span class="cfc-card-pill">SP & Birigui</span>
+              </div>
+              <div class="cfc-card-text">
+                ${formatCardText(conseq.text)}
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
     // Transforma Markdown completo (com suporte a código ASCII, tabelas, callouts, listas, checklists e fórmulas KaTeX) em HTML limpo
     function renderRichMarkdown(mdText, contextId = "doc") {
       if (!mdText) return "";
@@ -2430,10 +2720,16 @@
           }
           const cIdx = calloutTokens.length;
           const firstLine = (qBlock[0] || "").trim();
-          const alertM = firstLine.match(/^\[!(NOTE|TIP|IMPORTANT|WARNING|CAUTION)\]\s*(.*)$/i);
+          const alertM = firstLine.match(/^\[!(NOTE|TIP|IMPORTANT|WARNING|CAUTION|ESCALAS|CFC|PIPELINE)\]\s*(.*)$/i);
           if (alertM) {
             const kind = alertM[1].toUpperCase();
             const restFirst = alertM[2];
+            if (kind === 'ESCALAS' || kind === 'CFC' || kind === 'PIPELINE') {
+              const parsed = parseCfcFromText([restFirst, ...qBlock.slice(1)].join('\n'));
+              calloutTokens.push(buildCfcPipelineHtml(parsed.title || restFirst, parsed.causa, parsed.fato, parsed.conseq));
+              normLines.push(`@@CALLOUT_BLOCK_${cIdx}@@`);
+              continue;
+            }
             const innerLines = restFirst ? [restFirst, ...qBlock.slice(1)] : qBlock.slice(1);
             const badges = {
               NOTE: { cls: "callout-note", label: "📌 Nota & Fixação Prática", color: "text-indigo-600 dark:text-indigo-400" },
@@ -2470,6 +2766,11 @@
       text = text.replace(/```([^\n]*)\n([\s\S]*?)```/g, (_, lang, codeBody) => {
         const idx = codeTokens.length;
         const rawCode = codeBody.replace(/\n$/, "");
+        if (rawCode.includes("MÉTODO DIDÁTICO") && rawCode.includes("CAUSA") && rawCode.includes("CONSEQU")) {
+          const parsed = parseCfcFromText(rawCode);
+          codeTokens.push(buildCfcPipelineHtml(parsed.title, parsed.causa, parsed.fato, parsed.conseq));
+          return `\n@@CODE_BLOCK_${idx}@@\n`;
+        }
         const hasBoxChars = /[┌┐└┘├┤┬┴┼│]/.test(rawCode);
         const cleanCode = escapeHtml(rawCode);
         const boxCls = hasBoxChars ? "ascii-diagram ascii-box" : "ascii-diagram";

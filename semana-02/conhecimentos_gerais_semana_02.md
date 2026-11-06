@@ -58,21 +58,10 @@
 
 ## EIXO 1: A República Velha (1889–1930) e a Geopolítica do Café com Leite
 
-```text
-┌─────────────────────────────────────────────────────────────────┐
-│     MÉTODO DIDÁTICO: CAUSA ➔ FATO ➔ CONSEQUÊNCIA (3 ESCALAS)    │
-├─────────────────────────────────────────────────────────────────┤
-│ • CAUSA NACIONAL: Esgotamento do Império, insatisfação militar e │
-│   perda de apoio dos cafeicultores com a Lei Áurea (1888).      │
-│ • FATO POLÍTICO: Proclamação da República (1889) e domínio das  │
-│   oligarquias agrárias paulistas e mineiras (1894–1930).         │
-│ • CONSEQUÊNCIA REGIONAL (SÃO PAULO E BIRIGUI):                  │
-│   Expansão feroz das ferrovias rumo ao Noroeste do Estado para  │
-│   escoar o "ouro verde"; inauguração da Estação Ferroviária da  │
-│   Estrada de Ferro Noroeste do Brasil (NOB) e fundação oficial   │
-│   do povoado de Birigui em 7 de dezembro de 1911.               │
-└─────────────────────────────────────────────────────────────────┘
-```
+> [!ESCALAS] MÉTODO DIDÁTICO: CAUSA ➔ FATO ➔ CONSEQUÊNCIA (3 ESCALAS)
+> • **CAUSA NACIONAL:** Esgotamento do Império, insatisfação militar e perda de apoio dos cafeicultores com a Lei Áurea (1888).
+> • **FATO POLÍTICO:** Proclamação da República (1889) e domínio das oligarquias agrárias paulistas e mineiras (1894–1930).
+> • **CONSEQUÊNCIA REGIONAL (SÃO PAULO E BIRIGUI):** Expansão feroz das ferrovias rumo ao Noroeste do Estado para escoar o "ouro verde"; inauguração da Estação Ferroviária da Estrada de Ferro Noroeste do Brasil (NOB) e fundação oficial do povoado de Birigui em 7 de dezembro de 1911.
 
 ### 1. Por que o Império Desmoronou?
 O Brasil foi uma monarquia hereditária governada pela família real portuguesa durante 67 anos (D. Pedro I e D. Pedro II). Esse regime parecia sólido, mas sustentava-se sobre três pilares institucionais:
@@ -144,20 +133,10 @@ A história do interior paulista e, especificamente, do município de **Birigui*
 
 ## EIXO 2: A Ruptura de 1930, a Era Vargas e a Revolução Constitucionalista de 1932
 
-```text
-┌─────────────────────────────────────────────────────────────────┐
-│     MÉTODO DIDÁTICO: CAUSA ➔ FATO ➔ CONSEQUÊNCIA (3 ESCALAS)    │
-├─────────────────────────────────────────────────────────────────┤
-│ • CAUSA MUNDIAL/NACIONAL: Quebra da Bolsa de Nova York (1929)   │
-│   e rompimento do acordo de sucessão entre SP e MG.            │
-│ • FATO POLÍTICO: A Revolução de 1930 depõe Washington Luís e   │
-│   empossa Getúlio Vargas, pondo fim à República Oligárquica.    │
-│ • CONSEQUÊNCIA ESTADUAL (SÃO PAULO) E REGIONAL (BIRIGUI):       │
-│   Revolução Constitucionalista de 1932: São Paulo pega em armas │
-│   contra a ditadura de Vargas exigindo Constituição e respeito; │
-│   batalhões de voluntários partem de Birigui para o combate.   │
-└─────────────────────────────────────────────────────────────────┘
-```
+> [!ESCALAS] MÉTODO DIDÁTICO: CAUSA ➔ FATO ➔ CONSEQUÊNCIA (3 ESCALAS)
+> • **CAUSA MUNDIAL/NACIONAL:** Quebra da Bolsa de Nova York (1929) e rompimento do acordo de sucessão entre SP e MG.
+> • **FATO POLÍTICO:** A Revolução de 1930 depõe Washington Luís e empossa Getúlio Vargas, pondo fim à República Oligárquica.
+> • **CONSEQUÊNCIA ESTADUAL (SÃO PAULO) E REGIONAL (BIRIGUI):** Revolução Constitucionalista de 1932: São Paulo pega em armas contra a ditadura de Vargas exigindo Constituição e respeito; batalhões de voluntários partem de Birigui para o combate.
 
 ### 1. O Colapso de 1929 e o Fim do Pacto Oligárquico
 Em outubro de 1929, a Bolsa de Valores de Nova York ruiu, deflagrando a **Grande Depressão**. Os Estados Unidos e os países europeus cortaram subitamente a importação de supérfluos, e o café brasileiro apodreceu nos armazéns do Porto de Santos.
@@ -239,21 +218,10 @@ Vargas é a figura central do século XX brasileiro, permanecendo 15 anos ininte
 
 ## EIXO 3: A Industrialização Nacional e a Mutação Econômica Regional
 
-```text
-┌─────────────────────────────────────────────────────────────────┐
-│     MÉTODO DIDÁTICO: CAUSA ➔ FATO ➔ CONSEQUÊNCIA (3 ESCALAS)    │
-├─────────────────────────────────────────────────────────────────┤
-│ • CAUSA MUNDIAL: 2ª Guerra Mundial (1939–1945) impediu a compra │
-│   de produtos manufaturados dos países ricos em guerra.         │
-│ • FATO ECONÔMICO: Adoção do modelo de "Substituição de          │
-│   Importações" e criação da indústria de base estatal (aço,      │
-│   energia, minério e petróleo).                                 │
-│ • CONSEQUÊNCIA REGIONAL (ESTADO DE SP E BIRIGUI):               │
-│   São Paulo torna-se a locomotiva industrial do Brasil; as      │
-│   antigas oficinas artesanais de Birigui evoluem na década de   │
-│   1960 para a maior concentração de calçados infantis do país.  │
-└─────────────────────────────────────────────────────────────────┘
-```
+> [!ESCALAS] MÉTODO DIDÁTICO: CAUSA ➔ FATO ➔ CONSEQUÊNCIA (3 ESCALAS)
+> • **CAUSA MUNDIAL:** 2ª Guerra Mundial (1939–1945) impediu a compra de produtos manufaturados dos países ricos em guerra.
+> • **FATO ECONÔMICO:** Adoção do modelo de "Substituição de Importações" e criação da indústria de base estatal (aço, energia, minério e petróleo).
+> • **CONSEQUÊNCIA REGIONAL (ESTADO DE SP E BIRIGUI):** São Paulo torna-se a locomotiva industrial do Brasil; as antigas oficinas artesanais de Birigui evoluem na década de 1960 para a maior concentração de calçados infantis do país.
 
 ### 1. Como o Brasil Deixou de ser Apenas Fazenda? A Indústria de Base
 Até a década de 1930, o Brasil vendia café no porto e comprava tudo de fora: de pregos e tecidos a trilhos e automóveis. Essa vulnerabilidade quebrou o país em duas ocasiões críticas: na quebra de 1929 e durante a **Segunda Guerra Mundial (1939–1945)**, quando os navios mercantes não conseguiam trazer produtos industriais.
@@ -296,20 +264,10 @@ Enquanto o ABC Paulista atraía metalúrgicas e montadoras, o que ocorria no int
 
 ## EIXO 4: Da Ditadura Militar (1964–1985) à Redemocratização: As "Diretas Já" e a Transição Democrática
 
-```text
-┌─────────────────────────────────────────────────────────────────┐
-│     MÉTODO DIDÁTICO: CAUSA ➔ FATO ➔ CONSEQUÊNCIA (3 ESCALAS)    │
-├─────────────────────────────────────────────────────────────────┤
-│ • CAUSA NACIONAL/GLOBAL: Guerra Fria, crise econômica de 1963   │
-│   e medo das reformas de base do presidente João Goulart.       │
-│ • FATO POLÍTICO: Golpe Civil-Militar de 1964 instala regime     │
-│   autoritário que dura 21 anos (1964–1985).                     │
-│ • CONSEQUÊNCIA CÍVICA E INSTITUCIONAL:                          │
-│   Campanha das "Diretas Já" (1983–1984) unifica o povo nas      │
-│   ruas, derrota o continuísmo militar e deságua na Nova         │
-│   República (1985) e na Assembleia Nacional Constituinte.       │
-└─────────────────────────────────────────────────────────────────┘
-```
+> [!ESCALAS] MÉTODO DIDÁTICO: CAUSA ➔ FATO ➔ CONSEQUÊNCIA (3 ESCALAS)
+> • **CAUSA NACIONAL/GLOBAL:** Guerra Fria, crise econômica de 1963 e medo das reformas de base do presidente João Goulart.
+> • **FATO POLÍTICO:** Golpe Civil-Militar de 1964 instala regime autoritário que dura 21 anos (1964–1985).
+> • **CONSEQUÊNCIA CÍVICA E INSTITUCIONAL:** Campanha das "Diretas Já" (1983–1984) unifica o povo nas ruas, derrota o continuísmo militar e deságua na Nova República (1985) e na Assembleia Nacional Constituinte.
 
 ### 1. O Golpe de 1964 e o Regime Militar
 Em meio à polarização da Guerra Fria (EUA vs. União Soviética), o presidente **João Goulart ("Jango")** propôs as chamadas *Reformas de Base* (reforma agrária, tributária e educacional). Setores empresariais, grandes proprietários de terras, a cúpula da Igreja Católica e setores das Forças Armadas, apoiados logisticamente pelos Estados Unidos, articularam a derrubada do governo em **31 de março de 1964**.
@@ -344,21 +302,10 @@ Mesmo com a derrota da eleição direta nas urnas populares, o regime militar n�
 
 ## EIXO 5: A Constituição Cidadã de 1988, a Federação e o Pacto Democrático
 
-```text
-┌─────────────────────────────────────────────────────────────────┐
-│     MÉTODO DIDÁTICO: CAUSA ➔ FATO ➔ CONSEQUÊNCIA (3 ESCALAS)    │
-├─────────────────────────────────────────────────────────────────┤
-│ • CAUSA HISTÓRICA: Necessidade inadiável de reconstruir o       │
-│   Estado de Direito e garantir que nunca mais houvesse ditadura. │
-│ • FATO POLÍTICO: Promulgação da Constituição Federal em 5 de    │
-│   outubro de 1988 pelo presidente da Constituinte, Ulysses      │
-│   Guimarães ("A Constituição Cidadã").                          │
-│ • CONSEQUÊNCIA JURÍDICA E MUNICIPAL (BIRIGUI):                  │
-│   Pela primeira vez na história, o Município é alçado a ENTE    │
-│   FEDERATIVO AUTÔNOMO (com governo, leis e orçamento próprios), │
-│   criando a Lei Orgânica do Município de Birigui.               │
-└─────────────────────────────────────────────────────────────────┘
-```
+> [!ESCALAS] MÉTODO DIDÁTICO: CAUSA ➔ FATO ➔ CONSEQUÊNCIA (3 ESCALAS)
+> • **CAUSA HISTÓRICA:** Necessidade inadiável de reconstruir o Estado de Direito e garantir que nunca mais houvesse ditadura.
+> • **FATO POLÍTICO:** Promulgação da Constituição Federal em 5 de outubro de 1988 pelo presidente da Constituinte, Ulysses Guimarães ("A Constituição Cidadã").
+> • **CONSEQUÊNCIA JURÍDICA E MUNICIPAL (BIRIGUI):** Pela primeira vez na história, o Município é alçado a ENTE FEDERATIVO AUTÔNOMO (com governo, leis e orçamento próprios), criando a Lei Orgânica do Município de Birigui.
 
 ### 1. Por que "Constituição Cidadã"?
 Em **5 de outubro de 1988**, o deputado paulista **Ulysses Guimarães** ergueu o livro encadernado em plenário e declarou perante a nação:  
@@ -407,21 +354,10 @@ Cada ente federativo goza de **Tríplice Autonomia**:
 
 ## EIXO 6: A Teoria dos Três Poderes (Tripartição de Montesquieu) e o Equilíbrio Federativo
 
-```text
-┌─────────────────────────────────────────────────────────────────┐
-│     MÉTODO DIDÁTICO: CAUSA ➔ FATO ➔ CONSEQUÊNCIA (3 ESCALAS)    │
-├─────────────────────────────────────────────────────────────────┤
-│ • CAUSA TEÓRICA: Se uma mesma pessoa faz a lei, cobra a lei e   │
-│   julga quem descumpriu, a liberdade morre na tirania.          │
-│ • FATO JURÍDICO: Artigo 2º da CF/88: "São Poderes da União,     │
-│   independentes e harmônicos entre si, o Legislativo, o         │
-│   Executivo e o Judiciário".                                    │
-│ • CONSEQUÊNCIA NO DIA A DIA MUNICIPAL (BIRIGUI):                │
-│   No Município existem APENAS DOIS PODERES (Executivo e         │
-│   Legislativo). O Judiciário presente no Fórum de Birigui é um  │
-│   órgão do Estado de São Paulo (TJ-SP), e não da Prefeitura!    │
-└─────────────────────────────────────────────────────────────────┘
-```
+> [!ESCALAS] MÉTODO DIDÁTICO: CAUSA ➔ FATO ➔ CONSEQUÊNCIA (3 ESCALAS)
+> • **CAUSA TEÓRICA:** Se uma mesma pessoa faz a lei, cobra a lei e julga quem descumpriu, a liberdade morre na tirania.
+> • **FATO JURÍDICO:** Artigo 2º da CF/88: "São Poderes da União, independentes e harmônicos entre si, o Legislativo, o Executivo e o Judiciário".
+> • **CONSEQUÊNCIA NO DIA A DIA MUNICIPAL (BIRIGUI):** No Município existem APENAS DOIS PODERES (Executivo e Legislativo). O Judiciário presente no Fórum de Birigui é um órgão do Estado de São Paulo (TJ-SP), e não da Prefeitura!
 
 ### 1. A Lógica de Montesquieu: Freios e Contrapesos (*Checks and Balances*)
 O iluminista francês Montesquieu, em sua obra prima *"O Espírito das Leis"* (1748), ensinou:  
@@ -477,20 +413,10 @@ Embora cada poder tenha sua vocação principal (**função típica**), a Consti
 
 ## EIXO 7: Cidadania, Direitos Fundamentais e a Função Pública Administrativa
 
-```text
-┌─────────────────────────────────────────────────────────────────┐
-│     MÉTODO DIDÁTICO: CAUSA ➔ FATO ➔ CONSEQUÊNCIA (3 ESCALAS)    │
-├─────────────────────────────────────────────────────────────────┤
-│ • CAUSA: O cidadão não é mero súdito pagador de impostos, mas   │
-│   o legítimo titular soberano da res publica (coisa pública).   │
-│ • FATO JURÍDICO: O Título II da CF/88 consagra os Direitos e     │
-│   Garantias Fundamentais individuais, sociais e políticos.       │
-│ • CONSEQUÊNCIA NO SERVIÇO PÚBLICO DE BIRIGUI:                   │
-│   O Oficial Administrativo municipal materializa os direitos da │
-│   cidadania: tratar o munícipe com urbanidade, publicidade,     │
-│   eficiência e estrita legalidade.                              │
-└─────────────────────────────────────────────────────────────────┘
-```
+> [!ESCALAS] MÉTODO DIDÁTICO: CAUSA ➔ FATO ➔ CONSEQUÊNCIA (3 ESCALAS)
+> • **CAUSA:** O cidadão não é mero súdito pagador de impostos, mas o legítimo titular soberano da res publica (coisa pública).
+> • **FATO JURÍDICO:** O Título II da CF/88 consagra os Direitos e Garantias Fundamentais individuais, sociais e políticos.
+> • **CONSEQUÊNCIA NO SERVIÇO PÚBLICO DE BIRIGUI:** O Oficial Administrativo municipal materializa os direitos da cidadania: tratar o munícipe com urbanidade, publicidade, eficiência e estrita legalidade.
 
 ### 1. As Três Dimensões (Gerações) dos Direitos Humanos
 A evolução histórica dos direitos do cidadão espelha o lema da Revolução Francesa:
