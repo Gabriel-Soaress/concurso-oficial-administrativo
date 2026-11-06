@@ -97,13 +97,13 @@ Quando o usuário enviar o Prompt Matriz da Semana $X$:
 
 #### Semana 1: Os Alicerces (`semana-01/`)
 - [x] **Português (Sem 1):** Leitura/Interpretação (ideia central, inferência, implícitos) + Fonologia básica, sílabas, lógica da tonicidade/acentuação e ortografia.
-- [ ] **Matemática/RLM (Sem 1):** Conjuntos numéricos ($\mathbb{N}, \mathbb{Z}, \mathbb{Q}, \mathbb{R}$), operações fundamentais, lógica das frações, decimais, potências, raízes e expressões numéricas.
+- [x] **Matemática/RLM (Sem 1):** Conjuntos numéricos ($\mathbb{N}, \mathbb{Z}, \mathbb{Q}, \mathbb{R}$), operações fundamentais, lógica das frações, decimais, potências, raízes e expressões numéricas.
 - [x] **Específicos (Sem 1):** O que é Estado, Governo e Administração Pública; Princípios (LIMPE + implícitos) e serviço público.
 - [x] **Conhecimentos Gerais (Sem 1):** Formação histórica, territorial e econômica do Brasil (grandes ciclos e regiões).
 - [ ] **Simulado de Sábado 1:** Prova `prova-auto/1.pdf` (Gabarito `g1.pdf` - ACCESS - Pref. Cataguases/MG) — *Nota/Acertos: ___/40*
 
 #### Semana 2: Dando Nome e Proporção às Coisas (`semana-02/`)
-- [ ] **Português (Sem 2):** Morfologia I (Substantivo, Adjetivo, Artigo, Numeral e Pronome — anáfora/catáfora) + Estrutura e Formação das palavras (derivação e composição).
+- [x] **Português (Sem 2):** Morfologia I (Substantivo, Adjetivo, Artigo, Numeral e Pronome — anáfora/catáfora) + Estrutura e Formação das palavras (derivação e composição).
 - [ ] **Matemática/RLM (Sem 2):** Teoria dos Conjuntos (união, interseção, diferença, Diagramas de Venn) + Razões e Divisão Diretamente/Inversamente Proporcional.
 - [ ] **Específicos (Sem 2):** Organização Administrativa (Centralização, Descentralização, Concentração, Desconcentração; Administração Direta e Indireta).
 - [ ] **Conhecimentos Gerais (Sem 2):** Brasil Republicano, Constituição de 1988, Três Poderes, Federação e Cidadania.
