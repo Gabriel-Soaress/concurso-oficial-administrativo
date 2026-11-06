@@ -92,15 +92,69 @@ Como essa elite conseguia vencer todas as eleições presidenciais durante mais 
 A resposta reside na engrenagem articulada pelo presidente Campos Sales (1898–1902), estruturada em três degraus inabaláveis:
 
 ```text
-> [!NOTE] ESTRUTURA DE PODER: A PIRÂMIDE DO CORONELISMO
-> **1. TOPO: O GOVERNO FEDERAL**
-> Concede verbas, obras e prestígio aos governadores de SP e MG em troca de apoio parlamentar absoluto no Congresso Nacional.
->
-> **2. MEIO: OS GOVERNADORES DE ESTADO (*Política dos Governadores*)**
-> Entregam bancadas fiéis ao Presidente da República e repassam recursos e cargos aos chefes políticos nos municípios.
->
-> **3. BASE: O CORONEL MUNICIPAL (*Chefe Político Local*)**
-> Grande proprietário de terras que controla a população vulnerável mediante favores, empregos ou coerção física, garantindo a vitória da oligarquia pelo **voto de cabresto** (eleição aberta e fraudada).
+<div class="edu-component my-6">
+  <div class="edu-comp-header">
+    <div class="edu-comp-title">
+      <span class="edu-comp-icon">🏛️</span>
+      <span>A PIRÂMIDE DO CORONELISMO NA REPÚBLICA VELHA</span>
+    </div>
+    <span class="edu-comp-badge">Estrutura de Poder</span>
+  </div>
+  <div class="edu-pyramid-container">
+    <!-- Nível 1: Topo -->
+    <div class="edu-pyramid-tier tier-topo">
+      <div class="tier-header">
+        <span class="tier-pill">1. O TOPO DA PIRÂMIDE</span>
+        <h4 class="tier-title">O GOVERNO FEDERAL (Presidência da República)</h4>
+      </div>
+      <p class="tier-desc">Concede verbas orçamentárias, obras públicas e prestígio político exclusivo aos governadores de <strong>São Paulo</strong> e <strong>Minas Gerais</strong> (a aliança do Café com Leite).</p>
+      <div class="tier-exchange">
+        <span class="exchange-tag">🔄 O que recebe em troca:</span>
+        <span>Apoio parlamentar absoluto no Congresso Nacional para aprovar todas as leis e orçamentos do Presidente sem oposição.</span>
+      </div>
+    </div>
+
+    <!-- Conector 1 -->
+    <div class="edu-pyramid-connector">
+      <div class="connector-arrow">↓</div>
+      <span>Verbas Federais e Cargos Públicos</span>
+    </div>
+
+    <!-- Nível 2: Meio -->
+    <div class="edu-pyramid-tier tier-meio">
+      <div class="tier-header">
+        <span class="tier-pill">2. O MEIO DA PIRÂMIDE</span>
+        <h4 class="tier-title">OS GOVERNADORES DE ESTADO (A Política dos Governadores)</h4>
+      </div>
+      <p class="tier-desc">Articulam as oligarquias estaduais. Entregam deputados submissos ao Presidente e repassam recursos estaduais, segurança e poder de mando aos chefes políticos municipais.</p>
+      <div class="tier-exchange">
+        <span class="exchange-tag">🔄 O que repassam à base:</span>
+        <span>Garantia de impunidade policial, cargos locais e apoio judicial para os grandes fazendeiros no interior dos municípios.</span>
+      </div>
+    </div>
+
+    <!-- Conector 2 -->
+    <div class="edu-pyramid-connector">
+      <div class="connector-arrow">↓</div>
+      <span>Impunidade e Recursos Locais</span>
+    </div>
+
+    <!-- Nível 3: Base -->
+    <div class="edu-pyramid-tier tier-base">
+      <div class="tier-header">
+        <span class="tier-pill">3. A BASE DA PIRÂMIDE</span>
+        <h4 class="tier-title">O CORONEL MUNICIPAL E O VOTO DE CABRESTO</h4>
+      </div>
+      <p class="tier-desc">Grande latifundiário rural com poder de mando supremo sobre a população pobre da cidade. Controla os moradores por favores (remédios, empregos) ou ameaça armada de jagunços.</p>
+      <div class="tier-alert">
+        <span class="alert-icon">⚠️</span>
+        <div>
+          <strong class="text-rose-600 dark:text-rose-400">O Voto de Cabresto (Ponto Crítico de Prova):</strong> Como o voto era <em>aberto e cantado em voz alta</em> (não existia voto secreto), o coronel sabia exatamente em quem cada eleitor votava. Quem desobedecesse era demitido, expulso das terras ou assassinado.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 ```
 
 * **Voto Aberto:** A Constituição de 1891 estabelecia o voto livre, porém **não secreto**. Na seção eleitoral, o eleitor declarava seu voto em voz alta ou entregava uma cédula impressa fornecida pelo próprio coronel. Se votasse contra o candidato indicado, perdia o pedaço de terra onde morava, o emprego, o atendimento médico ou sofria violência dos jagunços (capangas) armados do coronel. Esse curral de eleitores domesticados é o que a história chamou de **voto de cabresto**.
@@ -154,10 +208,46 @@ O estopim ocorreu em **23 de maio de 1932**, no centro da capital paulista: dura
 Em **9 de julho de 1932**, São Paulo declarou guerra aberta contra o governo federal de Vargas, iniciando a **Revolução Constitucionalista de 1932**.
 
 ```text
-> [!IMPORTANT] DESTAQUE REGIONAL: O PAPEL DE BIRIGUI E DA ALTA NOROESTE EM 1932
-> • **A Mobilização Civil:** Na praça central de Birigui e no clube local, comitês do MMDC recolheram ouro e doações populares na histórica campanha *"Ouro para o Bem de São Paulo"*.
-> • **Voluntários nas Linhas de Frente:** Jovens biriguienses e de toda a comarca alistaram-se nos batalhões constitucionalistas da Estrada de Ferro Noroeste, guardando as pontes estratégicas sobre o Rio Tietê e as divisas com Mato Grosso e Minas Gerais.
-> • **Vitória Moral e Política:** Militarmente, após 3 meses de combates ferozes, São Paulo rendeu-se perante o poderio bélico federal. Entretanto, **politicamente São Paulo venceu**: pressionado pela revolta popular paulista, Vargas convocou a Constituinte e promulgou a moderna Constituição de 1934.
+<div class="edu-component my-6">
+  <div class="edu-comp-header">
+    <div class="edu-comp-title">
+      <span class="edu-comp-icon">🚂</span>
+      <span>O PAPEL DE BIRIGUI E DA ALTA NOROESTE EM 1932</span>
+    </div>
+    <span class="edu-comp-badge">Destaque Regional</span>
+  </div>
+  <div class="edu-cards-grid grid-3">
+    <!-- Card 1 -->
+    <div class="edu-card card-amber">
+      <div class="edu-card-top">
+        <span class="card-icon">💍</span>
+        <span class="card-badge">Frente Civil</span>
+      </div>
+      <h4 class="card-title">A Mobilização Civil</h4>
+      <p class="card-text">Na praça central de Birigui e no clube local, comitês civis do <strong>MMDC</strong> recolheram alianças de ouro, joias e doações populares na histórica campanha <em>"Ouro para o Bem de São Paulo"</em> para financiar o esforço de guerra dos combatentes.</p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="edu-card card-indigo">
+      <div class="edu-card-top">
+        <span class="card-icon">🎖️</span>
+        <span class="card-badge">Frente Bélica</span>
+      </div>
+      <h4 class="card-title">Voluntários na Linha de Frente</h4>
+      <p class="card-text">Jovens biriguienses e de toda a Alta Noroeste alistaram-se nos <strong>batalhões da Estrada de Ferro Noroeste (NOB)</strong>, defendendo as pontes estratégicas sobre o Rio Tietê e as divisas com Mato Grosso e Minas Gerais contra a invasão das tropas federais.</p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="edu-card card-emerald">
+      <div class="edu-card-top">
+        <span class="card-icon">📜</span>
+        <span class="card-badge">Desfecho Histórico</span>
+      </div>
+      <h4 class="card-title">Vitória Moral e Política</h4>
+      <p class="card-text">Militarmente, após 3 meses de combates ferozes, São Paulo rendeu-se cercado pelo poder de fogo do Exército. Entretanto, <strong>politicamente São Paulo venceu</strong>: acuado pela bravura do povo paulista, Vargas convocou a Constituinte e promulgou a moderna <strong>Constituição de 1934</strong>.</p>
+    </div>
+  </div>
+</div>
 ```
 
 ---
@@ -166,15 +256,59 @@ Em **9 de julho de 1932**, São Paulo declarou guerra aberta contra o governo fe
 Vargas é a figura central do século XX brasileiro, permanecendo 15 anos ininterruptos no poder em seu primeiro ciclo (1930–1945), dividido pedagogicamente em três momentos:
 
 ```text
-> [!TIP] LINHA DO TEMPO: AS TRÊS FASES DA ERA VARGAS (1930–1945)
-> **1. Governo Provisório (1930–1934)**
-> Governa por decretos sem Constituição; queima sacas de café para sustentar preços; enfrenta a Revolução Constitucionalista de 1932; cria o Ministério do Trabalho, Indústria e Comércio.
->
-> **2. Governo Constitucional (1934–1937)**
-> Constituição de 1934: institui o **voto secreto**, o **voto feminino** e cria a Justiça Eleitoral (sepultando as fraudes da República Velha). Período de forte polarização ideológica: AIB (integralistas de extrema-direita) vs. ANL (aliancistas/comunistas).
->
-> **3. O Estado Novo (1937–1945) — A Ditadura Varguista**
-> Golpe do *Plano Cohen* (falso complô comunista forjado para fechar o Congresso e censurar a imprensa via DIP). Cria a CLT (1943) e o salário mínimo. Impulsiona a indústria pesada (CSN e Vale). O envio da FEB para lutar contra o fascismo na 2ª Guerra Mundial tornou a ditadura interna indefensável, culminando na queda de Vargas em 1945.
+<div class="edu-component my-6">
+  <div class="edu-comp-header">
+    <div class="edu-comp-title">
+      <span class="edu-comp-icon">⏳</span>
+      <span>LINHA DO TEMPO: AS TRÊS FASES DA ERA VARGAS (1930–1945)</span>
+    </div>
+    <span class="edu-comp-badge">Cronologia Histórica</span>
+  </div>
+  <div class="edu-cards-grid grid-3">
+    <!-- Fase 1 -->
+    <div class="edu-card card-sky">
+      <div class="edu-card-top">
+        <span class="card-year-pill">1930 – 1934</span>
+        <span class="card-badge">Fase 1</span>
+      </div>
+      <h4 class="card-title">Governo Provisório</h4>
+      <ul class="card-checklist">
+        <li><span>🔥</span> <div><strong>Sem Constituição:</strong> Governa por decretos; queima milhões de sacas de café para sustentar preços no mercado internacional.</div></li>
+        <li><span>⚔️</span> <div><strong>Revolução de 1932:</strong> Enfrenta a rebelião armada do povo paulista exigindo uma nova Carta Magna.</div></li>
+        <li><span>👷</span> <div><strong>Trabalhismo Inicial:</strong> Cria o Ministério do Trabalho, Indústria e Comércio.</div></li>
+      </ul>
+    </div>
+
+    <!-- Fase 2 -->
+    <div class="edu-card card-purple">
+      <div class="edu-card-top">
+        <span class="card-year-pill">1934 – 1937</span>
+        <span class="card-badge">Fase 2</span>
+      </div>
+      <h4 class="card-title">Governo Constitucional</h4>
+      <ul class="card-checklist">
+        <li><span>🗳️</span> <div><strong>Constituição de 1934:</strong> Cria a Justiça Eleitoral, o <strong>voto secreto</strong> e o <strong>voto feminino</strong> (sepultando as fraudes antigas).</div></li>
+        <li><span>⚡</span> <div><strong>Polarização Ideológica:</strong> Confronto entre a AIB (integralistas/fascistas) e a ANL (aliancistas/comunistas).</div></li>
+        <li><span>🛡️</span> <div><strong>Intentona Comunista (1935):</strong> Tentativa fracassada de insurreição usada como pretexto para arrocho político.</div></li>
+      </ul>
+    </div>
+
+    <!-- Fase 3 -->
+    <div class="edu-card card-rose">
+      <div class="edu-card-top">
+        <span class="card-year-pill">1937 – 1945</span>
+        <span class="card-badge">Fase 3 (Ditadura)</span>
+      </div>
+      <h4 class="card-title">O Estado Novo</h4>
+      <ul class="card-checklist">
+        <li><span>🎭</span> <div><strong>Golpe do Plano Cohen:</strong> Falso complô comunista forjado para fechar o Congresso e censurar jornais e rádios (DIP).</div></li>
+        <li><span>📘</span> <div><strong>CLT e Salário Mínimo:</strong> Promulga a Consolidação das Leis do Trabalho (1943) com paternalismo estatal.</div></li>
+        <li><span>🏭</span> <div><strong>Indústria Pesada:</strong> Fundação da CSN (aço) e da Companhia Vale do Rio Doce.</div></li>
+        <li><span>🪖</span> <div><strong>FEB na 2ª Guerra:</strong> Tropas brasileiras combatem o fascismo na Itália, tornando a ditadura de Vargas insustentável.</div></li>
+      </ul>
+    </div>
+  </div>
+</div>
 ```
 
 > **💡 Síntese Feynman (Era Vargas e 1932):**  
@@ -285,12 +419,47 @@ Ela foi batizada de **Constituição Cidadã** porque foi a primeira Carta Magna
 A República Federativa do Brasil, formada pela união indissolúvel dos Estados e Municípios e do Distrito Federal, constitui-se em Estado Democrático de Direito e tem como fundamentos:
 
 ```text
-> [!TIP] MNEMÔNICO INFALÍVEL DE PROVA: SO-CI-DI-VA-PLU (CF/88, ART. 1º)
-> • **SO** ➔ **Soberania:** Independência nacional e autoridade suprema do Estado brasileiro perante outros países.
-> • **CI** ➔ **Cidadania:** Direitos de participação política e intervenção direta do povo nas decisões da sociedade.
-> • **DI** ➔ **Dignidade da Pessoa Humana:** O ser humano como valor supremo e finalidade máxima de todas as leis e do Estado.
-> • **VA** ➔ **Valores Sociais do Trabalho e da Livre Iniciativa:** Garantia dos direitos trabalhistas sem sufocar o empreendedorismo e a produção econômica.
-> • **PLU** ➔ **Pluralismo Político:** Convivência pacífica de diferentes ideias, correntes políticas, visões de mundo e partidos.
+<div class="edu-component my-6">
+  <div class="edu-comp-header">
+    <div class="edu-comp-title">
+      <span class="edu-comp-icon">🧠</span>
+      <span>O MNEMÔNICO INFALÍVEL: SO-CI-DI-VA-PLU (CF/88, ART. 1º)</span>
+    </div>
+    <span class="edu-comp-badge">Fundamentos da República</span>
+  </div>
+  <div class="edu-mnemonic-grid">
+    <!-- SO -->
+    <div class="mnemonic-card m-blue">
+      <div class="m-letter">SO</div>
+      <h4 class="m-title">Soberania</h4>
+      <p class="m-desc">O Brasil não se subordina a nenhum país e tem autoridade máxima em todo o território nacional.</p>
+    </div>
+    <!-- CI -->
+    <div class="mnemonic-card m-emerald">
+      <div class="m-letter">CI</div>
+      <h4 class="m-title">Cidadania</h4>
+      <p class="m-desc">Direito do povo de participar ativamente das decisões políticas e exercer direitos e deveres sociais.</p>
+    </div>
+    <!-- DI -->
+    <div class="mnemonic-card m-purple">
+      <div class="m-letter">DI</div>
+      <h4 class="m-title">Dignidade</h4>
+      <p class="m-desc">O ser humano é o centro de todo o Direito. Nenhuma autoridade pode violar sua integridade física ou moral.</p>
+    </div>
+    <!-- VA -->
+    <div class="mnemonic-card m-amber">
+      <div class="m-letter">VA</div>
+      <h4 class="m-title">Valores Sociais</h4>
+      <p class="m-desc">Do trabalho e da livre iniciativa: proteção dos direitos trabalhistas aliada ao estímulo à produção e ao comércio.</p>
+    </div>
+    <!-- PLU -->
+    <div class="mnemonic-card m-rose">
+      <div class="m-letter">PLU</div>
+      <h4 class="m-title">Pluralismo</h4>
+      <p class="m-desc">Político: livre circulação de ideias, crenças, partidos e visões de mundo (não confunda com pluralismo partidário!).</p>
+    </div>
+  </div>
+</div>
 ```
 
 E o Parágrafo Único do Artigo 1º crava o pilar da democracia moderna:  
@@ -329,16 +498,68 @@ O iluminista francês Montesquieu, em sua obra prima *"O Espírito das Leis"* (1
 Assim, o poder estatal uno é fracionado em três funções precípuas, operando em mútua vigilância:
 
 ```text
-> [!IMPORTANT] QUADRO COMPARATIVO: A DIVISÃO DOS TRÊS PODERES (FUNÇÕES E ESFERAS)
->
-> | Poder | Função Típica | Esfera Federal | Esfera Estadual | Esfera Municipal |
-> | :--- | :--- | :--- | :--- | :--- |
-> | **Executivo** | Administrar a coisa pública e executar as leis | Presidente da República + Ministros | Governador do Estado + Secretários | Prefeito Municipal + Secretários |
-> | **Legislativo** | Criar as leis e fiscalizar o Executivo | Congresso Nacional (Câmara + Senado - *Bicameral*) | Assembleia Legislativa (ALESP - *Unicameral*) | Câmara Municipal (Vereadores - *Unicameral*) |
-> | **Judiciário** | Julgar litígios aplicando a lei aos casos concretos | STF, STJ, TST, TSE, STM, TRFs e Juízes Federais | Tribunal de Justiça (TJ-SP) e Juízes de Direito | 🚨 **NÃO EXISTE PODER JUDICIÁRIO MUNICIPAL!** |
->
-> > [!CAUTION] REGRA DE OURO DAS BANCAS (VUNESP / ACCESS)
-> > **Não existe Poder Judiciário nem Ministério Público Municipal!** As comarcas judiciais sediadas em cidades do interior (como Birigui) pertencem à estrutura do Poder Judiciário Estadual ou Federal.
+<div class="edu-component my-6">
+  <div class="edu-comp-header">
+    <div class="edu-comp-title">
+      <span class="edu-comp-icon">⚖️</span>
+      <span>A DIVISÃO DOS TRÊS PODERES: FUNÇÕES E ESFERAS</span>
+    </div>
+    <span class="edu-comp-badge">Artigo 2º da CF/88</span>
+  </div>
+  <div class="edu-cards-grid grid-3">
+    <!-- Executivo -->
+    <div class="edu-card card-indigo">
+      <div class="edu-card-top">
+        <span class="card-icon">🏛️</span>
+        <span class="card-badge">Poder 1</span>
+      </div>
+      <h4 class="card-title">Poder Executivo</h4>
+      <p class="card-role"><strong>Função Típica:</strong> Administrar a coisa pública, executar as leis vigentes e prestar serviços contínuos aos munícipes.</p>
+      <div class="card-levels">
+        <div class="level-row"><span>Federal:</span> <strong>Presidente + Ministros</strong></div>
+        <div class="level-row"><span>Estadual:</span> <strong>Governador + Secretários</strong></div>
+        <div class="level-row"><span>Municipal:</span> <strong>Prefeito + Secretários</strong></div>
+      </div>
+    </div>
+
+    <!-- Legislativo -->
+    <div class="edu-card card-purple">
+      <div class="edu-card-top">
+        <span class="card-icon">📜</span>
+        <span class="card-badge">Poder 2</span>
+      </div>
+      <h4 class="card-title">Poder Legislativo</h4>
+      <p class="card-role"><strong>Função Típica:</strong> Criar e alterar as leis gerais e fiscalizar o uso do dinheiro público pelo Poder Executivo.</p>
+      <div class="card-levels">
+        <div class="level-row"><span>Federal:</span> <strong>Congresso Nacional (Bicameral)</strong></div>
+        <div class="level-row"><span>Estadual:</span> <strong>Assembleia Legislativa (ALESP)</strong></div>
+        <div class="level-row"><span>Municipal:</span> <strong>Câmara Municipal de Vereadores</strong></div>
+      </div>
+    </div>
+
+    <!-- Judiciário -->
+    <div class="edu-card card-rose">
+      <div class="edu-card-top">
+        <span class="card-icon">⚖️</span>
+        <span class="card-badge">Poder 3</span>
+      </div>
+      <h4 class="card-title">Poder Judiciário</h4>
+      <p class="card-role"><strong>Função Típica:</strong> Julgar litígios aplicando a lei com imparcialidade e força definitiva de coisa julgada.</p>
+      <div class="card-levels">
+        <div class="level-row"><span>Federal:</span> <strong>STF, STJ, TST, TSE, TRFs</strong></div>
+        <div class="level-row"><span>Estadual:</span> <strong>Tribunal de Justiça (TJ-SP) e Juízes</strong></div>
+        <div class="level-row highlight-danger"><span>Municipal:</span> <strong>NÃO EXISTE JUDICIÁRIO MUNICIPAL!</strong></div>
+      </div>
+    </div>
+  </div>
+  <!-- Banner Alerta de Pegadinha -->
+  <div class="edu-banner-warning">
+    <span class="banner-icon">🚨</span>
+    <div>
+      <strong>REGRA DE OURO DAS BANCAS (VUNESP / ACCESS):</strong> Nos Municípios só existem <strong>dois Poderes: Executivo e Legislativo</strong>. O Fórum da comarca da sua cidade pertence à Justiça Estadual ou Federal, NUNCA à Prefeitura ou ao Município!
+    </div>
+  </div>
+</div>
 ```
 
 > **⚠️ A Pegadinha Mais Cruel das Bancas de Concurso:**  
@@ -370,21 +591,70 @@ Embora cada poder tenha sua vocação principal (**função típica**), a Consti
 A evolução histórica dos direitos do cidadão espelha o lema da Revolução Francesa:
 
 ```text
-> [!IMPORTANT] QUADRO SÍNTESE: AS TRÊS GERAÇÕES DOS DIREITOS FUNDAMENTAIS
-> **1. Primeira Geração: LIBERDADE (*Direitos Civis e Políticos*)**
-> • **Origem:** Séculos XVII e XVIII (Revoluções Francesa e Americana).
-> • **Conceito:** O indivíduo exige que o Estado *não intervenha* arbitrariamente em sua vida privada ("liberdades negativas" / abstenção estatal).
-> • **Exemplos:** Direito à vida, à liberdade de locomoção e de crença, à propriedade privada, à livre manifestação do pensamento e ao voto.
->
-> **2. Segunda Geração: IGUALDADE (*Direitos Sociais, Econômicos e Culturais*)**
-> • **Origem:** Início do Século XX (Constituições do México, de Weimar e Era Vargas).
-> • **Conceito:** A liberdade formal não basta se houver miséria; o Estado *deve agir positivamente* para garantir igualdade material ("prestações positivas").
-> • **Exemplos:** Direito à saúde pública, educação gratuita, previdência social, moradia, trabalho digno e lazer (Art. 6º da CF/88).
->
-> **3. Terceira Geração: FRATERNIDADE / SOLIDARIEDADE (*Direitos Coletivos e Difusos*)**
-> • **Origem:** Pós-Segunda Guerra Mundial e final do Século XX.
-> • **Conceito:** Direitos que não pertencem a uma única pessoa ou grupo específico, mas a toda a coletividade humana presente e futura.
-> • **Exemplos:** Meio ambiente ecologicamente equilibrado (Art. 225 da CF/88), direito à paz, ao desenvolvimento sustentável e à proteção do consumidor.
+<div class="edu-component my-6">
+  <div class="edu-comp-header">
+    <div class="edu-comp-title">
+      <span class="edu-comp-icon">🌐</span>
+      <span>AS TRÊS GERAÇÕES DOS DIREITOS FUNDAMENTAIS</span>
+    </div>
+    <span class="edu-comp-badge">Lema da Rev. Francesa</span>
+  </div>
+  <div class="edu-cards-grid grid-3">
+    <!-- 1ª Geração -->
+    <div class="edu-card card-sky">
+      <div class="edu-card-top">
+        <span class="card-icon">🕊️</span>
+        <span class="card-badge">1ª Geração</span>
+      </div>
+      <div class="gen-pillar">LIBERDADE</div>
+      <h4 class="card-title">Direitos Civis e Políticos</h4>
+      <p class="card-period"><strong>Origem:</strong> Séculos XVII e XVIII (Revoluções Francesa e Americana).</p>
+      <p class="card-core"><strong>O que exige:</strong> Que o Estado <em>NÃO se intrometa</em> na vida do cidadão (abstenção / liberdades negativas).</p>
+      <div class="card-examples">
+        <span class="ex-tag">Vida</span>
+        <span class="ex-tag">Liberdade</span>
+        <span class="ex-tag">Propriedade</span>
+        <span class="ex-tag">Voto</span>
+      </div>
+    </div>
+
+    <!-- 2ª Geração -->
+    <div class="edu-card card-amber">
+      <div class="edu-card-top">
+        <span class="card-icon">⚖️</span>
+        <span class="card-badge">2ª Geração</span>
+      </div>
+      <div class="gen-pillar">IGUALDADE</div>
+      <h4 class="card-title">Direitos Sociais e Econômicos</h4>
+      <p class="card-period"><strong>Origem:</strong> Século XX (Constituição de Weimar e Era Vargas no Brasil).</p>
+      <p class="card-core"><strong>O que exige:</strong> Que o Estado <em>AJA prestando serviços</em> aos desfavorecidos (prestações positivas).</p>
+      <div class="card-examples">
+        <span class="ex-tag">Saúde Pública</span>
+        <span class="ex-tag">Educação</span>
+        <span class="ex-tag">Trabalho</span>
+        <span class="ex-tag">Previdência</span>
+      </div>
+    </div>
+
+    <!-- 3ª Geração -->
+    <div class="edu-card card-emerald">
+      <div class="edu-card-top">
+        <span class="card-icon">🌍</span>
+        <span class="card-badge">3ª Geração</span>
+      </div>
+      <div class="gen-pillar">FRATERNIDADE</div>
+      <h4 class="card-title">Direitos Coletivos e Difusos</h4>
+      <p class="card-period"><strong>Origem:</strong> Pós-Segunda Guerra Mundial (solidariedade planetária).</p>
+      <p class="card-core"><strong>O que exige:</strong> Proteção de bens que pertencem a toda a humanidade, transpassando o indivíduo.</p>
+      <div class="card-examples">
+        <span class="ex-tag">Meio Ambiente</span>
+        <span class="ex-tag">Paz</span>
+        <span class="ex-tag">Consumidor</span>
+        <span class="ex-tag">Patrimônio</span>
+      </div>
+    </div>
+  </div>
+</div>
 ```
 
 ---
