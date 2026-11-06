@@ -1619,7 +1619,7 @@
   </main>
   </div>
 
-  <script src="aulas-data.js?v=20261106_15"></script>
+  <script src="aulas-data.js?v=20261106_16"></script>
   <script>
     const DB_SQL_URL = "https://ep-muddy-thunder-ac0eoxn3-pooler.sa-east-1.aws.neon.tech/sql";
     const DB_CONN_STR = "postgresql://neondb_owner:npg_l2mWY5HINrgG@ep-muddy-thunder-ac0eoxn3-pooler.sa-east-1.aws.neon.tech/neondb?sslmode=require";
@@ -2624,9 +2624,15 @@
       const cleanTitle = escapeHtml(title || "Método Didático: Causa ➔ Fato ➔ Consequência (3 Escalas)");
       
       const formatCardText = (txt) => {
-        let s = escapeHtml(txt || "").trim();
+        if (!txt) return "";
+        let s = escapeHtml(txt).trim();
+        // Converte aspas do texto antes de injetar tags HTML
+        s = s.replace(/&quot;([^&]+?)&quot;/g, '“$1”');
+        s = s.replace(/"([^"]+?)"/g, '“$1”');
+        // Formata negrito, italico e codigo inline sem quebrar atributos HTML
         s = s.replace(/\*\*([^*]+)\*\*/g, '<strong class="font-extrabold text-pri">$1</strong>');
-        s = s.replace(/"([^"]+)"/g, '<span class="font-semibold text-indigo-600 dark:text-indigo-400">“$1”</span>');
+        s = s.replace(/\*([^*\n]+)\*/g, '<em class="italic text-pri">$1</em>');
+        s = s.replace(/`([^`]+)`/g, '<code class="font-mono text-xs px-1.5 py-0.5 rounded surface-muted text-indigo-600 dark:text-indigo-400">$1</code>');
         return s;
       };
 
@@ -2686,6 +2692,30 @@
                 ${formatCardText(conseq.text)}
               </div>
             </div>
+          </div>
+        </div>
+      `;
+    }
+
+    function parseAsciiBoxHtml(rawBox) {
+      const lines = rawBox.split(/\r?\n/).map(l => l.trim()).filter(Boolean);
+      let title = "";
+      const items = [];
+      for (let l of lines) {
+        if (/^[┌└├]/.test(l)) continue;
+        l = l.replace(/^│\s*/, "").replace(/\s*│$/, "").trim();
+        if (!l) continue;
+        if (!title) {
+          title = l;
+        } else {
+          items.push(l);
+        }
+      }
+      return `
+        <div class="lesson-callout callout-important my-4 p-4 rounded-xl border border-tech bg-surface space-y-2.5 shadow-sm">
+          ${title ? `<div class="text-xs sm:text-sm font-mono font-extrabold uppercase text-indigo-600 dark:text-indigo-400 flex items-center gap-1.5"><span>📌</span> <span>${escapeHtml(title)}</span></div>` : ''}
+          <div class="space-y-1.5 text-xs sm:text-sm leading-relaxed text-pri">
+            ${items.map(it => `<div>${escapeHtml(it)}</div>`).join('')}
           </div>
         </div>
       `;
@@ -2761,6 +2791,18 @@
         }
       }
       text = normLines.join("\n");
+
+      // 0-B. Detectar caixas ASCII soltas no texto e transformar em cards estruturados
+      text = text.replace(/(?:^|\n)(┌[^\n]*\n(?:[│├\s][^\n]*\n)*└[^\n]*)/g, (_, boxBody) => {
+        const cIdx = calloutTokens.length;
+        if (boxBody.includes("MÉTODO DIDÁTICO") && boxBody.includes("CAUSA") && boxBody.includes("CONSEQU")) {
+          const parsed = parseCfcFromText(boxBody);
+          calloutTokens.push(buildCfcPipelineHtml(parsed.title, parsed.causa, parsed.fato, parsed.conseq));
+        } else {
+          calloutTokens.push(parseAsciiBoxHtml(boxBody));
+        }
+        return `\n@@CALLOUT_BLOCK_${cIdx}@@\n`;
+      });
 
       // 1. Proteger blocos de código ```...``` (diagramas ASCII, fatoração MMC/MDC, passos destacados)
       text = text.replace(/```([^\n]*)\n([\s\S]*?)```/g, (_, lang, codeBody) => {

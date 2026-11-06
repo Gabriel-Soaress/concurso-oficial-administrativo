@@ -92,22 +92,15 @@ Como essa elite conseguia vencer todas as eleições presidenciais durante mais 
 A resposta reside na engrenagem articulada pelo presidente Campos Sales (1898–1902), estruturada em três degraus inabaláveis:
 
 ```text
-┌───────────────────────────────────────────────────────────────┐
-│                 A PIRÂMIDE DO CORONELISMO                     │
-├───────────────────────────────────────────────────────────────┤
-│ 1. TOPO: O GOVERNO FEDERAL                                    │
-│    • Concede verbas, obras e prestígio aos governadores de SP │
-│      e MG em troca de apoio parlamentar absoluto no Congresso. │
-│                                                               │
-│ 2. MEIO: OS GOVERNADORES DE ESTADO (Política dos Governadores)│
-│    • Entregam apoio ao Presidente e repassam recursos aos     │
-│      chefes políticos locais nos municípios (os coronéis).    │
-│                                                               │
-│ 3. BASE: O CORONEL MUNICIPAL (O Chefe Político Local)         │
-│    • Grande proprietário de terras que controla a população   │
-│      pobre mediante favores, empregos ou violência física.    │
-│    • Executa o VOTO DE CABRESTO (eleição aberta e fraudada).  │
-└───────────────────────────────────────────────────────────────┘
+> [!NOTE] ESTRUTURA DE PODER: A PIRÂMIDE DO CORONELISMO
+> **1. TOPO: O GOVERNO FEDERAL**
+> Concede verbas, obras e prestígio aos governadores de SP e MG em troca de apoio parlamentar absoluto no Congresso Nacional.
+>
+> **2. MEIO: OS GOVERNADORES DE ESTADO (*Política dos Governadores*)**
+> Entregam bancadas fiéis ao Presidente da República e repassam recursos e cargos aos chefes políticos nos municípios.
+>
+> **3. BASE: O CORONEL MUNICIPAL (*Chefe Político Local*)**
+> Grande proprietário de terras que controla a população vulnerável mediante favores, empregos ou coerção física, garantindo a vitória da oligarquia pelo **voto de cabresto** (eleição aberta e fraudada).
 ```
 
 * **Voto Aberto:** A Constituição de 1891 estabelecia o voto livre, porém **não secreto**. Na seção eleitoral, o eleitor declarava seu voto em voz alta ou entregava uma cédula impressa fornecida pelo próprio coronel. Se votasse contra o candidato indicado, perdia o pedaço de terra onde morava, o emprego, o atendimento médico ou sofria violência dos jagunços (capangas) armados do coronel. Esse curral de eleitores domesticados é o que a história chamou de **voto de cabresto**.
@@ -161,23 +154,10 @@ O estopim ocorreu em **23 de maio de 1932**, no centro da capital paulista: dura
 Em **9 de julho de 1932**, São Paulo declarou guerra aberta contra o governo federal de Vargas, iniciando a **Revolução Constitucionalista de 1932**.
 
 ```text
-┌───────────────────────────────────────────────────────────────┐
-│               O PAPEL DE BIRIGUI E DA ALTA NOROESTE EM 1932   │
-├───────────────────────────────────────────────────────────────┤
-│ • A Mobilização Civil: Na praça central de Birigui e no clube │
-│   local, comitês do MMDC recolheram ouro e doações populares  │
-│   na histórica campanha "Ouro para o Bem de São Paulo".       │
-│ • Voluntários nas Linhas de Frente: Jovens biriguienses e de  │
-│   toda a comarca alistaram-se nos batalhões constitucionalistas│
-│   da Estrada de Ferro Noroeste, guardando as pontes sobre o   │
-│   Rio Tietê e as divisas com Mato Grosso e Minas Gerais.      │
-│ • Vitória Moral e Política: Militarmente, após 3 meses de     │
-│   batalhas ferozes, São Paulo foi cercado e rendeu-se perante │
-│   o poder de fogo esmagador das Forças Armadas federais.      │
-│   Entretanto, POLÍTICAMENTE SÃO PAULO VENCEU: acuado pela     │
-│   bravura paulista, Vargas foi obrigado a convocar a          │
-│   Constituinte, promulgando a moderna Constituição de 1934.   │
-└───────────────────────────────────────────────────────────────┘
+> [!IMPORTANT] DESTAQUE REGIONAL: O PAPEL DE BIRIGUI E DA ALTA NOROESTE EM 1932
+> • **A Mobilização Civil:** Na praça central de Birigui e no clube local, comitês do MMDC recolheram ouro e doações populares na histórica campanha *"Ouro para o Bem de São Paulo"*.
+> • **Voluntários nas Linhas de Frente:** Jovens biriguienses e de toda a comarca alistaram-se nos batalhões constitucionalistas da Estrada de Ferro Noroeste, guardando as pontes estratégicas sobre o Rio Tietê e as divisas com Mato Grosso e Minas Gerais.
+> • **Vitória Moral e Política:** Militarmente, após 3 meses de combates ferozes, São Paulo rendeu-se perante o poderio bélico federal. Entretanto, **politicamente São Paulo venceu**: pressionado pela revolta popular paulista, Vargas convocou a Constituinte e promulgou a moderna Constituição de 1934.
 ```
 
 ---
@@ -186,29 +166,15 @@ Em **9 de julho de 1932**, São Paulo declarou guerra aberta contra o governo fe
 Vargas é a figura central do século XX brasileiro, permanecendo 15 anos ininterruptos no poder em seu primeiro ciclo (1930–1945), dividido pedagogicamente em três momentos:
 
 ```text
-┌────────────────────────────────────────────────────────────────────────┐
-│                        AS TRÊS FASES DA ERA VARGAS                     │
-├────────────────────────────────────────────────────────────────────────┤
-│ 1. GOVERNO PROVISÓRIO (1930–1934)                                      │
-│    • Governa por decretos sem Constituição; queima sacas de café para   │
-│      sustentar os produtores; enfrenta a Revolução de 1932.            │
-│    • Cria o Ministério do Trabalho, Indústria e Comércio.             │
-│                                                                        │
-│ 2. GOVERNO CONSTITUCIONAL (1934–1937)                                  │
-│    • Constituição de 1934: institui o VOTO SECRETO, o VOTO FEMININO    │
-│      e cria a Justiça Eleitoral (sepultando o voto de cabresto).       │
-│    • Polarização ideológica: AIB (Fascistas/Integralistas) vs. ANL     │
-│      (Comunistas). Tentativa da "Intentona Comunista" em 1935.         │
-│                                                                        │
-│ 3. O ESTADO NOVO (1937–1945) — A Ditadura Varguista                   │
-│    • Golpe do Plano Cohen: falso complô comunista forjado para         │
-│      cancelar as eleições de 1938 e fechar o Congresso Nacional.       │
-│    • Censura e propaganda oficial com o DIP (Departamento de Imprensa  │
-│      e Propaganda) e criação da "Hora do Brasil" no rádio.             │
-│    • A Consolidação das Leis do Trabalho (CLT) em 1º de Maio de 1943:  │
-│      carteira assinada, jornada de 8 horas, descanso semanal, salário  │
-│      mínimo e férias remuneradas (a figura do "Pai dos Pobres").       │
-└────────────────────────────────────────────────────────────────────────┘
+> [!TIP] LINHA DO TEMPO: AS TRÊS FASES DA ERA VARGAS (1930–1945)
+> **1. Governo Provisório (1930–1934)**
+> Governa por decretos sem Constituição; queima sacas de café para sustentar preços; enfrenta a Revolução Constitucionalista de 1932; cria o Ministério do Trabalho, Indústria e Comércio.
+>
+> **2. Governo Constitucional (1934–1937)**
+> Constituição de 1934: institui o **voto secreto**, o **voto feminino** e cria a Justiça Eleitoral (sepultando as fraudes da República Velha). Período de forte polarização ideológica: AIB (integralistas de extrema-direita) vs. ANL (aliancistas/comunistas).
+>
+> **3. O Estado Novo (1937–1945) — A Ditadura Varguista**
+> Golpe do *Plano Cohen* (falso complô comunista forjado para fechar o Congresso e censurar a imprensa via DIP). Cria a CLT (1943) e o salário mínimo. Impulsiona a indústria pesada (CSN e Vale). O envio da FEB para lutar contra o fascismo na 2ª Guerra Mundial tornou a ditadura interna indefensável, culminando na queda de Vargas em 1945.
 ```
 
 > **💡 Síntese Feynman (Era Vargas e 1932):**  
@@ -319,15 +285,12 @@ Ela foi batizada de **Constituição Cidadã** porque foi a primeira Carta Magna
 A República Federativa do Brasil, formada pela união indissolúvel dos Estados e Municípios e do Distrito Federal, constitui-se em Estado Democrático de Direito e tem como fundamentos:
 
 ```text
-┌───────────────────────────────────────────────────────────────┐
-│        O MNEMÔNICO INFALÍVEL DAS BANCAS: SO-CI-DI-VA-PLU      │
-├───────────────────────────────────────────────────────────────┤
-│ 1. SO - Soberania (independência nacional e autoridade suprema)│
-│ 2. CI - Cidadania (participação política ativa do povo)       │
-│ 3. DI - Dignidade da Pessoa Humana (o indivíduo no centro)    │
-│ 4. VA - Valores Sociais do Trabalho e da Livre Iniciativa     │
-│ 5. PLU - Pluralismo Político (liberdade de ideias e crenças)  │
-└───────────────────────────────────────────────────────────────┘
+> [!TIP] MNEMÔNICO INFALÍVEL DE PROVA: SO-CI-DI-VA-PLU (CF/88, ART. 1º)
+> • **SO** ➔ **Soberania:** Independência nacional e autoridade suprema do Estado brasileiro perante outros países.
+> • **CI** ➔ **Cidadania:** Direitos de participação política e intervenção direta do povo nas decisões da sociedade.
+> • **DI** ➔ **Dignidade da Pessoa Humana:** O ser humano como valor supremo e finalidade máxima de todas as leis e do Estado.
+> • **VA** ➔ **Valores Sociais do Trabalho e da Livre Iniciativa:** Garantia dos direitos trabalhistas sem sufocar o empreendedorismo e a produção econômica.
+> • **PLU** ➔ **Pluralismo Político:** Convivência pacífica de diferentes ideias, correntes políticas, visões de mundo e partidos.
 ```
 
 E o Parágrafo Único do Artigo 1º crava o pilar da democracia moderna:  
@@ -366,31 +329,16 @@ O iluminista francês Montesquieu, em sua obra prima *"O Espírito das Leis"* (1
 Assim, o poder estatal uno é fracionado em três funções precípuas, operando em mútua vigilância:
 
 ```text
-┌─────────────────────────────────────────────────────────────────┐
-│                O QUADRO DEFINITIVO DOS TRÊS PODERES             │
-├─────────────────────────────────────────────────────────────────┤
-│ • PODER EXECUTIVO:                                              │
-│   - Função Típica: Administrar a coisa pública, executar as     │
-│     leis vigentes, recolher tributos e prestar serviços sociais.│
-│   - Nível Federal: Presidente da República + Ministros de Estado│
-│   - Nível Estadual: Governador de Estado + Secretários de Estado│
-│   - Nível Municipal: Prefeito Municipal + Secretários Municipais│
-├─────────────────────────────────────────────────────────────────┤
-│ • PODER LEGISLATIVO:                                            │
-│   - Função Típica: Criar e alterar as leis gerais e FISCALIZAR  │
-│     as contas e ações do Poder Executivo.                       │
-│   - Nível Federal (Bicameral): Congresso Nacional               │
-│     [Câmara dos Deputados (povo) + Senado Federal (estados)]     │
-│   - Nível Estadual (Unicameral): Assembleia Legislativa (ALESP) │
-│   - Nível Municipal (Unicameral): Câmara Municipal de Vereadores│
-├─────────────────────────────────────────────────────────────────┤
-│ • PODER JUDICIÁRIO:                                             │
-│   - Função Típica: Julgar conflitos de interesses com base no   │
-│     ordenamento jurídico, com imparcialidade e força de decisão.│
-│   - Nível Federal: STF, STJ, TST, TSE, TRFs, TRTs etc.          │
-│   - Nível Estadual: Tribunais de Justiça (ex: TJ-SP) e Juízes.  │
-│   - NÍVEL MUNICIPAL: NÃO EXISTE PODER JUDICIÁRIO MUNICIPAL!     │
-└─────────────────────────────────────────────────────────────────┘
+> [!IMPORTANT] QUADRO COMPARATIVO: A DIVISÃO DOS TRÊS PODERES (FUNÇÕES E ESFERAS)
+>
+> | Poder | Função Típica | Esfera Federal | Esfera Estadual | Esfera Municipal |
+> | :--- | :--- | :--- | :--- | :--- |
+> | **Executivo** | Administrar a coisa pública e executar as leis | Presidente da República + Ministros | Governador do Estado + Secretários | Prefeito Municipal + Secretários |
+> | **Legislativo** | Criar as leis e fiscalizar o Executivo | Congresso Nacional (Câmara + Senado - *Bicameral*) | Assembleia Legislativa (ALESP - *Unicameral*) | Câmara Municipal (Vereadores - *Unicameral*) |
+> | **Judiciário** | Julgar litígios aplicando a lei aos casos concretos | STF, STJ, TST, TSE, STM, TRFs e Juízes Federais | Tribunal de Justiça (TJ-SP) e Juízes de Direito | 🚨 **NÃO EXISTE PODER JUDICIÁRIO MUNICIPAL!** |
+>
+> > [!CAUTION] REGRA DE OURO DAS BANCAS (VUNESP / ACCESS)
+> > **Não existe Poder Judiciário nem Ministério Público Municipal!** As comarcas judiciais sediadas em cidades do interior (como Birigui) pertencem à estrutura do Poder Judiciário Estadual ou Federal.
 ```
 
 > **⚠️ A Pegadinha Mais Cruel das Bancas de Concurso:**  
@@ -422,30 +370,21 @@ Embora cada poder tenha sua vocação principal (**função típica**), a Consti
 A evolução histórica dos direitos do cidadão espelha o lema da Revolução Francesa:
 
 ```text
-┌────────────────────────────────────────────────────────────────────────┐
-│               AS GERAÇÕES DOS DIREITOS FUNDAMENTAIS                    │
-├────────────────────────────────────────────────────────────────────────┤
-│ 1. PRIMEIRA GERAÇÃO: LIBERDADE (Direitos Civis e Políticos)            │
-│    • Séculos XVII e XVIII: O indivíduo exige que o Estado NÃO se       │
-│      intrometa na sua vida privada.                                    │
-│    • Exemplos: Direito à vida, à liberdade de locomoção e de crença,   │
-│      à propriedade privada e ao voto. São chamadas de "liberdades      │
-│      negativas" (o Estado deve abster-se de oprimir).                  │
-│                                                                        │
-│ 2. SEGUNDA GERAÇÃO: IGUALDADE (Direitos Sociais, Econômicos e Culturais│
-│    • Século XX (Constituição de Weimar e Era Vargas): O indivíduo      │
-│      percebe que a liberdade formal não enche a barriga de quem tem    │
-│      fome. O Estado DEVE agir prestando serviços básicos aos pobres.   │
-│    • Exemplos: Direito à saúde pública, educação gratuita, previdência │
-│      social, moradia, trabalho e lazer (Artigo 6º da CF/88). São as    │
-│      "prestações positivas" do Estado.                                 │
-│                                                                        │
-│ 3. TERCEIRA GERAÇÃO: FRATERNIDADE / SOLIDARIEDADE (Direitos Coletivos) │
-│    • Pós-Segunda Guerra Mundial: Direitos que não pertencem a uma só   │
-│      pessoa, mas a toda a coletividade humana (direitos difusos).      │
-│    • Exemplos: Meio ambiente ecologicamente equilibrado (Art. 225),    │
-│      direito ao desenvolvimento, à paz e aos direitos do consumidor.   │
-└────────────────────────────────────────────────────────────────────────┘
+> [!IMPORTANT] QUADRO SÍNTESE: AS TRÊS GERAÇÕES DOS DIREITOS FUNDAMENTAIS
+> **1. Primeira Geração: LIBERDADE (*Direitos Civis e Políticos*)**
+> • **Origem:** Séculos XVII e XVIII (Revoluções Francesa e Americana).
+> • **Conceito:** O indivíduo exige que o Estado *não intervenha* arbitrariamente em sua vida privada ("liberdades negativas" / abstenção estatal).
+> • **Exemplos:** Direito à vida, à liberdade de locomoção e de crença, à propriedade privada, à livre manifestação do pensamento e ao voto.
+>
+> **2. Segunda Geração: IGUALDADE (*Direitos Sociais, Econômicos e Culturais*)**
+> • **Origem:** Início do Século XX (Constituições do México, de Weimar e Era Vargas).
+> • **Conceito:** A liberdade formal não basta se houver miséria; o Estado *deve agir positivamente* para garantir igualdade material ("prestações positivas").
+> • **Exemplos:** Direito à saúde pública, educação gratuita, previdência social, moradia, trabalho digno e lazer (Art. 6º da CF/88).
+>
+> **3. Terceira Geração: FRATERNIDADE / SOLIDARIEDADE (*Direitos Coletivos e Difusos*)**
+> • **Origem:** Pós-Segunda Guerra Mundial e final do Século XX.
+> • **Conceito:** Direitos que não pertencem a uma única pessoa ou grupo específico, mas a toda a coletividade humana presente e futura.
+> • **Exemplos:** Meio ambiente ecologicamente equilibrado (Art. 225 da CF/88), direito à paz, ao desenvolvimento sustentável e à proteção do consumidor.
 ```
 
 ---
