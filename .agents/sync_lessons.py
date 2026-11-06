@@ -68,6 +68,8 @@ def build_short_title(filename, h1_text, kind, q_count):
         clean_h1 = re.sub(r'^#+\s*', '', h1_text).strip()
         return f"{clean_h1} ({q_count} Exercícios)"
     else:
+        if "access" in fname_low:
+            return f"Banco ACCESS Oficial: {q_count} Questões Reais"
         if "estudo_dirigido" in fname_low or "estudo dirigido" in h1_text.lower():
             return f"Estudo Dirigido: {q_count} Questões por Ponto da Aula"
         if "revisao_geral" in fname_low or "revisão geral" in h1_text.lower():
