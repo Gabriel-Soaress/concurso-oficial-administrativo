@@ -105,8 +105,8 @@ Quando o usuário enviar o Prompt Matriz da Semana $X$:
 #### Semana 2: Dando Nome e Proporção às Coisas (`semana-02/`)
 - [x] **Português (Sem 2):** Morfologia I (Substantivo, Adjetivo, Artigo, Numeral e Pronome — anáfora/catáfora) + Estrutura e Formação das palavras (derivação e composição).
 - [ ] **Matemática/RLM (Sem 2):** Teoria dos Conjuntos (união, interseção, diferença, Diagramas de Venn) + Razões e Divisão Diretamente/Inversamente Proporcional.
-- [ ] **Específicos (Sem 2):** Organização Administrativa (Centralização, Descentralização, Concentração, Desconcentração; Administração Direta e Indireta).
-- [ ] **Conhecimentos Gerais (Sem 2):** Brasil Republicano, Constituição de 1988, Três Poderes, Federação e Cidadania.
+- [x] **Específicos (Sem 2):** Organização Administrativa (Centralização, Descentralização, Concentração, Desconcentração; Administração Direta e Indireta).
+- [x] **Conhecimentos Gerais (Sem 2):** Brasil Republicano, Constituição de 1988, Três Poderes, Federação e Cidadania.
 - [ ] **Simulado de Sábado 2:** Prova `prova-auto/2.pdf` (Gabarito `g2.pdf` - VUNESP - Câmara de Fernandópolis/SP) — *Nota/Acertos: ___*
 
 #### Semana 3: Ações, Conexões e Regras de Proporção (`semana-03/`)
