@@ -91,7 +91,6 @@ Os dois estados combinavam nos bastidores a indicação do Presidente da Repúbl
 Como essa elite conseguia vencer todas as eleições presidenciais durante mais de 30 anos sem ser derrubada pelas urnas?  
 A resposta reside na engrenagem articulada pelo presidente Campos Sales (1898–1902), estruturada em três degraus inabaláveis:
 
-```text
 <div class="edu-component my-6">
   <div class="edu-comp-header">
     <div class="edu-comp-title">
@@ -155,7 +154,6 @@ A resposta reside na engrenagem articulada pelo presidente Campos Sales (1898–
     </div>
   </div>
 </div>
-```
 
 * **Voto Aberto:** A Constituição de 1891 estabelecia o voto livre, porém **não secreto**. Na seção eleitoral, o eleitor declarava seu voto em voz alta ou entregava uma cédula impressa fornecida pelo próprio coronel. Se votasse contra o candidato indicado, perdia o pedaço de terra onde morava, o emprego, o atendimento médico ou sofria violência dos jagunços (capangas) armados do coronel. Esse curral de eleitores domesticados é o que a história chamou de **voto de cabresto**.
 * **Comissão Verificadora de Poderes:** Se, por milagre, um candidato de oposição vencesse a eleição no município, o Congresso Nacional acionava a comissão que diplomava os eleitos e simplesmente anulava o mandato do opositor alegando "irregularidades". Esse golpe formal era chamado de **degola**.
@@ -207,7 +205,6 @@ O estopim ocorreu em **23 de maio de 1932**, no centro da capital paulista: dura
 
 Em **9 de julho de 1932**, São Paulo declarou guerra aberta contra o governo federal de Vargas, iniciando a **Revolução Constitucionalista de 1932**.
 
-```text
 <div class="edu-component my-6">
   <div class="edu-comp-header">
     <div class="edu-comp-title">
@@ -248,14 +245,12 @@ Em **9 de julho de 1932**, São Paulo declarou guerra aberta contra o governo fe
     </div>
   </div>
 </div>
-```
 
 ---
 
 ### 3. A Trajetória de Vargas: As Três Fases e a Herança Trabalhista
 Vargas é a figura central do século XX brasileiro, permanecendo 15 anos ininterruptos no poder em seu primeiro ciclo (1930–1945), dividido pedagogicamente em três momentos:
 
-```text
 <div class="edu-component my-6">
   <div class="edu-comp-header">
     <div class="edu-comp-title">
@@ -309,7 +304,6 @@ Vargas é a figura central do século XX brasileiro, permanecendo 15 anos ininte
     </div>
   </div>
 </div>
-```
 
 > **💡 Síntese Feynman (Era Vargas e 1932):**  
 > *"Vargas enterrou os barões do café em 1930 e centralizou o poder. São Paulo se revoltou em 1932, pegou em armas com voluntários de todo o interior (inclusive Birigui) e, mesmo perdendo no campo de batalha, forçou a criação da Constituição de 1934 com voto secreto e feminino. Depois, em 1937, Vargas fechou tudo no Estado Novo, mas construiu a legislação trabalhista da CLT que vigora até hoje."*
@@ -418,7 +412,6 @@ Ela foi batizada de **Constituição Cidadã** porque foi a primeira Carta Magna
 ### 2. Os Fundamentos Sagrados da República (Artigo 1º da CF/88)
 A República Federativa do Brasil, formada pela união indissolúvel dos Estados e Municípios e do Distrito Federal, constitui-se em Estado Democrático de Direito e tem como fundamentos:
 
-```text
 <div class="edu-component my-6">
   <div class="edu-comp-header">
     <div class="edu-comp-title">
@@ -460,7 +453,6 @@ A República Federativa do Brasil, formada pela união indissolúvel dos Estados
     </div>
   </div>
 </div>
-```
 
 E o Parágrafo Único do Artigo 1º crava o pilar da democracia moderna:  
 > *"Todo o poder emana do povo, que o exerce por meio de representantes eleitos ou diretamente, nos termos desta Constituição."*
@@ -497,7 +489,6 @@ O iluminista francês Montesquieu, em sua obra prima *"O Espírito das Leis"* (1
 
 Assim, o poder estatal uno é fracionado em três funções precípuas, operando em mútua vigilância:
 
-```text
 <div class="edu-component my-6">
   <div class="edu-comp-header">
     <div class="edu-comp-title">
@@ -560,7 +551,6 @@ Assim, o poder estatal uno é fracionado em três funções precípuas, operando
     </div>
   </div>
 </div>
-```
 
 > **⚠️ A Pegadinha Mais Cruel das Bancas de Concurso:**  
 > A banca vai perguntar: *"Assinale a autoridade máxima do Poder Judiciário do Município de Birigui"*.  
@@ -590,7 +580,6 @@ Embora cada poder tenha sua vocação principal (**função típica**), a Consti
 ### 1. As Três Dimensões (Gerações) dos Direitos Humanos
 A evolução histórica dos direitos do cidadão espelha o lema da Revolução Francesa:
 
-```text
 <div class="edu-component my-6">
   <div class="edu-comp-header">
     <div class="edu-comp-title">
@@ -655,7 +644,6 @@ A evolução histórica dos direitos do cidadão espelha o lema da Revolução F
     </div>
   </div>
 </div>
-```
 
 ---
 

@@ -2041,7 +2041,7 @@
   </main>
   </div>
 
-  <script src="aulas-data.js?v=20261106_17"></script>
+  <script src="aulas-data.js?v=20261106_18"></script>
   <script>
     const DB_SQL_URL = "https://ep-muddy-thunder-ac0eoxn3-pooler.sa-east-1.aws.neon.tech/sql";
     const DB_CONN_STR = "postgresql://neondb_owner:npg_l2mWY5HINrgG@ep-muddy-thunder-ac0eoxn3-pooler.sa-east-1.aws.neon.tech/neondb?sslmode=require";
@@ -3368,7 +3368,7 @@
         }
 
         // Placeholders diretos de bloco
-        if (/^@@(CALLOUT_BLOCK|CODE_BLOCK|DETAILS_BLOCK)_\d+@@$/.test(trimmed)) {
+        if (/^@@(CALLOUT_BLOCK|CODE_BLOCK|DETAILS_BLOCK|RAW_HTML_TOKEN)_\d+@@$/.test(trimmed)) {
           out.push(trimmed);
           i++;
           continue;
