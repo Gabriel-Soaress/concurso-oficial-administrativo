@@ -172,7 +172,7 @@ Está CORRETO o que se afirma em:
   - **Item I (Verdadeiro):** A inflação generalizada reduz o salário real e aumenta o custo dos investimentos empresariais.  
   - **Item II (Falso):** A balança comercial registra a diferença entre **exportações e importações de mercadorias/bens físicos** (a balança de serviços integra a conta de serviços do balanço de pagamentos).  
   - **Item III (Verdadeiro):** É a missão precípua do Banco Central (definir a taxa Selic-Meta via Copom e emitir moeda).  
-  - **Item IV (Verdadeiro):** Definição exata de PIB per capita: $	ext{PIB} \div 	ext{População Total}$.  
+  - **Item IV (Verdadeiro):** Definição exata de PIB per capita: **PIB ÷ População Total**.  
 * Logo, estão corretos os itens I, III e IV.
 * **Gabarito:** Letra **B**.
 </details>

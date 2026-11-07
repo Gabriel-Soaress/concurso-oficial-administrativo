@@ -464,7 +464,41 @@ Antes de 1988, os municípios eram tratados como meros "apêndices" ou distritos
 
 A Constituição de 1988 operou uma revolução descentralizadora: incluiu expressamente o **Município como Ente da Federação** (Artigo 18 da CF/88).  
 Hoje, o Brasil é uma federação composta por:  
-$$	ext{União (Federal)} \quad + \quad 26 	ext{ Estados} \quad + \quad 	ext{Distrito Federal} \quad + \quad \mathbf{5.570 	ext{ Municípios}}$$
+<div class="edu-component my-6">
+  <div class="edu-comp-header">
+    <div class="edu-comp-title">
+      <span class="edu-comp-icon">🇧🇷</span>
+      <span>A COMPOSIÇÃO DA FEDERAÇÃO BRASILEIRA (ARTIGO 18 DA CF/88)</span>
+    </div>
+    <span class="edu-comp-badge">Pacto Federativo</span>
+  </div>
+  <div class="edu-mnemonic-grid">
+    <!-- União -->
+    <div class="mnemonic-card m-blue">
+      <div class="m-letter">🏛️</div>
+      <h4 class="m-title">1 UNIÃO</h4>
+      <p class="m-desc">Esfera Federal: personifica a soberania nacional e os interesses da República.</p>
+    </div>
+    <!-- Estados -->
+    <div class="mnemonic-card m-emerald">
+      <div class="m-letter">🏢</div>
+      <h4 class="m-title">26 ESTADOS</h4>
+      <p class="m-desc">Esfera Regional: entes autônomos com governo e constituição próprios (ex: São Paulo).</p>
+    </div>
+    <!-- DF -->
+    <div class="mnemonic-card m-purple">
+      <div class="m-letter">🏛️</div>
+      <h4 class="m-title">1 DISTRITO FEDERAL</h4>
+      <p class="m-desc">Brasília: ente híbrido com competências estaduais e municipais (não se divide em municípios).</p>
+    </div>
+    <!-- Municípios -->
+    <div class="mnemonic-card m-rose">
+      <div class="m-letter">📍</div>
+      <h4 class="m-title">5.570 MUNICÍPIOS</h4>
+      <p class="m-desc">Esfera Local (ex: <strong>Birigui</strong>): a grande revolução de 1988, elevado a Ente Federativo com autogoverno e Lei Orgânica.</p>
+    </div>
+  </div>
+</div>
 
 Cada ente federativo goza de **Tríplice Autonomia**:
 1. **Auto-organização e Normatização:** Birigui organiza-se por sua própria **Lei Orgânica Municipal** (que funciona como a "Constituição de Birigui"), votada e aprovada pela Câmara Municipal em dois turnos.
