@@ -274,7 +274,7 @@ O setor de suprimentos de uma autarquia municipal adquiriu 18 resmas de papel su
   - $2475 \times 10 = 24750$  
   - Soma: $19800 + 24750 = 44550$.  
 * Como $24{,}75$ tem 2 casas decimais, recuamos 2 casas decimais no resultado:  
-  $$445{,}50 \implies \text{R\$ } 445{,}50$$
+  $$445{,}50 \implies \text{R\$} 445{,}50$$
 * **Gabarito:** Letra **B**.
 </details>
 

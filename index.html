@@ -2578,7 +2578,7 @@
   </main>
   </div>
 
-  <script src="aulas-data.js?v=20261107_03"></script>
+  <script src="aulas-data.js?v=20261107_04"></script>
   <script>
     const DB_SQL_URL = "https://ep-muddy-thunder-ac0eoxn3-pooler.sa-east-1.aws.neon.tech/sql";
     const DB_CONN_STR = "postgresql://neondb_owner:npg_l2mWY5HINrgG@ep-muddy-thunder-ac0eoxn3-pooler.sa-east-1.aws.neon.tech/neondb?sslmode=require";
@@ -3422,7 +3422,11 @@
     }
 
     function renderKaTeXSafe(tex, displayMode) {
-      const cleanTex = String(tex || "").trim();
+      let cleanTex = String(tex || "")
+        .replace(/@@ESC_DOLLAR@@/g, "\$")
+        .replace(/@@CURR_BRL@@/g, "R$")
+        .replace(/@@CURR_USD@@/g, "US$")
+        .trim();
       if (window.katex && typeof window.katex.renderToString === "function") {
         try {
           return window.katex.renderToString(cleanTex, {
@@ -3680,6 +3684,25 @@
       `;
     }
 
+
+    function formatRawHtmlComponent(rawHtml) {
+      if (!rawHtml) return "";
+      let s = String(rawHtml);
+      // Processar display math $...$ dentro do card HTML
+      s = s.replace(/\$\$([\s\S]*?)\$\$/g, (_, tex) => renderDisplayMathResponsive(tex));
+      // Processar inline math $...$ dentro do card HTML
+      s = s.replace(/\$([^\$\n]+?)\$/g, (_, tex) => renderInlineMathResponsive(tex));
+      // Processar formatações básicas de markdown fora de tags HTML
+      s = s.replace(/(>|^)([^<]+)(<|$)/g, (match, prefix, content, suffix) => {
+        let fmt = content;
+        fmt = fmt.replace(/\*\*([^*]+)\*\*/g, '<strong class="font-bold text-pri">$1</strong>');
+        fmt = fmt.replace(/(^|[^*])\*([^*\n]+)\*([^*]|$)/g, '$1<em>$2</em>$3');
+        fmt = fmt.replace(/`([^`]+)`/g, '<code class="font-mono text-xs px-1.5 py-0.5 rounded surface-muted text-indigo-600 dark:text-indigo-400">$1</code>');
+        return prefix + fmt + suffix;
+      });
+      return s;
+    }
+
     // Transforma Markdown completo (com suporte a código ASCII, tabelas, callouts, listas, checklists e fórmulas KaTeX) em HTML limpo
     function renderRichMarkdown(mdText, contextId = "doc") {
       if (!mdText) return "";
@@ -3713,7 +3736,7 @@
         if (end !== -1) {
           const rawBlock = text.slice(start, end);
           const hIdx = rawHtmlTokens.length;
-          rawHtmlTokens.push(rawBlock);
+          rawHtmlTokens.push(formatRawHtmlComponent(rawBlock));
           text = text.slice(0, start) + `\n@@RAW_HTML_TOKEN_${hIdx}@@\n` + text.slice(end);
           searchIdx = start + `\n@@RAW_HTML_TOKEN_${hIdx}@@\n`.length;
         } else {
@@ -3845,7 +3868,8 @@
           calloutTokens,
           codeTokens,
           mathTokens,
-          []
+          [],
+          rawHtmlTokens
         );
         const idx = detailsTokens.length;
         detailsTokens.push(`
@@ -4008,7 +4032,7 @@
           !lines[i].trim().startsWith("|") &&
           !/^---+$/.test(lines[i].trim()) &&
           !/^(\*|-|\d+\.)\s+/.test(lines[i].trim()) &&
-          !/^@@(CALLOUT_BLOCK|CODE_BLOCK|DETAILS_BLOCK)_\d+@@$/.test(lines[i].trim())
+          !/^@@(CALLOUT_BLOCK|CODE_BLOCK|DETAILS_BLOCK|RAW_HTML_TOKEN)_\d+@@$/.test(lines[i].trim())
         ) {
           paraLines.push(formatInlineMd(lines[i].trim()));
           i++;
@@ -4100,6 +4124,7 @@
       calloutTokens.forEach((tok, idx) => {
         res = res.replace(new RegExp(`@@CALLOUT_BLOCK_${idx}@@`, "g"), () => tok);
       });
+      res = res.replace(/@@ESC_DOLLAR@@/g, "$").replace(/@@CURR_BRL@@/g, "R$").replace(/@@CURR_USD@@/g, "US$");
       return res;
     }
 

@@ -125,13 +125,11 @@ As bancas adoram tentar confundir você trocando os símbolos de **pertinência*
         <span class="card-icon">🔗</span>
         <span class="card-badge">Elemento ➔ Conjunto</span>
       </div>
-      <h4 class="card-title">Relação de Pertinência ($\in$ e $
-otin$)</h4>
+      <h4 class="card-title">Relação de Pertinência ($\in$ e $\notin$)</h4>
       <p class="card-text">Liga <strong>UM ELEMENTO</strong> a <strong>UM CONJUNTO</strong>. Significa "pertence" ou "não pertence".</p>
       <ul class="card-checklist">
         <li><span>✅</span> <div>$2 \in \{1, 2, 3\}$ (O número 2 <strong>pertence</strong> ao conjunto).</div></li>
-        <li><span>✅</span> <div>$5 
-otin \{1, 2, 3\}$ (O número 5 <strong>não pertence</strong> ao conjunto).</div></li>
+        <li><span>✅</span> <div>$5 \notin \{1, 2, 3\}$ (O número 5 <strong>não pertence</strong> ao conjunto).</div></li>
         <li><span>❌</span> <div><strong>ERRO DE BANCA:</strong> $\{2\} \in \{1, 2, 3\}$ (Errado! $\{2\}$ com chaves é conjunto, não elemento solto!).</div></li>
       </ul>
     </div>
@@ -142,8 +140,7 @@ otin \{1, 2, 3\}$ (O número 5 <strong>não pertence</strong> ao conjunto).</div
         <span class="card-icon">📦</span>
         <span class="card-badge">Conjunto ➔ Conjunto</span>
       </div>
-      <h4 class="card-title">Relação de Inclusão ($\subset, \subseteq, 
-ot\subset$)</h4>
+      <h4 class="card-title">Relação de Inclusão ($\subset, \subseteq, \not\subset$)</h4>
       <p class="card-text">Liga <strong>UM CONJUNTO (subconjunto)</strong> a <strong>OUTRO CONJUNTO</strong>. Significa "está contido" ou "não está contido".</p>
       <ul class="card-checklist">
         <li><span>✅</span> <div>$\{2\} \subset \{1, 2, 3\}$ (O conjunto $\{2\}$ <strong>está contido</strong> no conjunto maior).</div></li>
@@ -328,8 +325,7 @@ No dia a dia, para comparar duas coisas, você pode usar uma subtração ou uma 
 * **Comparação por quociente (razão / divisão):** "Para cada 3 homens concursados, há 2 mulheres concursadas."
 
 A **razão** é o quociente (divisão) entre duas grandezas na mesma escala ou em escalas correlatas:
-$$\text{Razão} = rac{a}{b} \quad (b 
-eq 0)$$
+$$\text{Razão} = \frac{a}{b} \quad (b \neq 0)$$
 * O número de cima ($a$) chama-se **Antecedente**.
 * O número de baixo ($b$) chama-se **Consequente**.
 
@@ -342,7 +338,7 @@ eq 0)$$
 
 ### 2. O que é uma Proporção?
 Uma **proporção** nada mais é do que uma **igualdade entre duas razões equivalentes**:
-$$rac{a}{b} = rac{c}{d} \quad \text{lê-se: "a está para b, assim como c está para d"}$$
+$$\frac{a}{b} = \frac{c}{d} \quad \text{lê-se: "a está para b, assim como c está para d"}$$
 
 <div class="edu-component my-6">
   <div class="edu-comp-header">
@@ -362,9 +358,9 @@ $$rac{a}{b} = rac{c}{d} \quad \text{lê-se: "a está para b, assim como c est�
       <p class="card-text">Em qualquer proporção válida, a multiplicação cruzada é sempre idêntica:</p>
       <div class="tier-exchange">
         <span class="exchange-tag">Regra:</span>
-        <strong>$rac{a}{b} = rac{c}{d} \iff a \cdot d = b \cdot c$</strong>
+        <strong>$\frac{a}{b} = \frac{c}{d} \iff a \cdot d = b \cdot c$</strong>
       </div>
-      <p class="card-text text-xs">Exemplo: $rac{2}{5} = rac{6}{15} \implies 2 \times 15 = 5 \times 6 = 30$.</p>
+      <p class="card-text text-xs">Exemplo: $\frac{2}{5} = \frac{6}{15} \implies 2 \times 15 = 5 \times 6 = 30$.</p>
     </div>
 
     <div class="edu-card card-emerald">
@@ -376,7 +372,7 @@ $$rac{a}{b} = rac{c}{d} \quad \text{lê-se: "a está para b, assim como c est�
       <p class="card-text">Se 3 Oficiais Administrativos arquivam 120 processos, quantos processos 5 Oficiais arquivarão no mesmo ritmo?</p>
       <div class="tier-exchange">
         <span class="exchange-tag">Equação:</span>
-        <strong>$rac{3}{5} = rac{120}{x} \implies 3x = 600 \implies x = 200$</strong>
+        <strong>$\frac{3}{5} = \frac{120}{x} \implies 3x = 600 \implies x = 200$</strong>
       </div>
     </div>
   </div>
@@ -457,7 +453,7 @@ Pense em $k$ como o **valor de UMA ÚNICA COTA (ou uma fatia da pizza)**.
 ### 3. Divisão INVERSAMENTE Proporcional Passo a Passo
 > **O Desafio:** Quem tem o peso maior deve receber a menor fatia!  
 > **O Mecanismo:** Dividir em partes inversamente proporcionais a $a, b, c$ é **exatamente a mesma coisa que dividir em partes diretamente proporcionais aos seus INVERSOS**:  
-> $$rac{1}{a}, \quad rac{1}{b}, \quad rac{1}{c}$$  
+> $$\frac{1}{a}, \quad \frac{1}{b}, \quad \frac{1}{c}$$  
 > **Como fugir das frações:**  
 > 1. Tire o **MMC** dos denominadores.  
 > 2. Reduza as frações ao mesmo denominador.  
@@ -478,7 +474,7 @@ Pense em $k$ como o **valor de UMA ÚNICA COTA (ou uma fatia da pizza)**.
         <span class="card-badge">Passo 1</span>
       </div>
       <h4 class="card-title">Inverta os Pesos</h4>
-      <p class="card-text">Se os pesos forem 2 e 3, inverta para as frações: $rac{1}{2}$ e $rac{1}{3}$.</p>
+      <p class="card-text">Se os pesos forem 2 e 3, inverta para as frações: $\frac{1}{2}$ e $\frac{1}{3}$.</p>
     </div>
     <div class="edu-card card-sky">
       <div class="edu-card-top">
@@ -486,7 +482,7 @@ Pense em $k$ como o **valor de UMA ÚNICA COTA (ou uma fatia da pizza)**.
         <span class="card-badge">Passo 2</span>
       </div>
       <h4 class="card-title">Tire o MMC</h4>
-      <p class="card-text">$\text{MMC}(2, 3) = 6$. Reduzindo: $rac{3}{6}$ e $rac{2}{6}$.</p>
+      <p class="card-text">$\text{MMC}(2, 3) = 6$. Reduzindo: $\frac{3}{6}$ e $\frac{2}{6}$.</p>
     </div>
     <div class="edu-card card-emerald">
       <div class="edu-card-top">
@@ -546,7 +542,7 @@ Pense em $k$ como o **valor de UMA ÚNICA COTA (ou uma fatia da pizza)**.
 
 * **Desmontagem Passo a Passo:**  
   1. *Tradução da Razão:*  
-     $$rac{\text{Certidões}}{\text{Recursos}} = rac{5}{3}$$  
+     $$\frac{\text{Certidões}}{\text{Recursos}} = \frac{5}{3}$$  
      Isso significa que para cada 5 certidões, há 3 recursos.  
   2. *Uso do Fator $k$:*  
      - $\text{Certidões} = 5k$  
@@ -554,7 +550,7 @@ Pense em $k$ como o **valor de UMA ÚNICA COTA (ou uma fatia da pizza)**.
   3. *Equação da Soma:*  
      $$\text{Certidões} + \text{Recursos} = 240$$  
      $$5k + 3k = 240 \implies 8k = 240$$  
-     $$k = rac{240}{8} = \mathbf{30}$$  
+     $$k = \frac{240}{8} = \mathbf{30}$$  
   4. *Calculando as Certidões:*  
      $$\text{Certidões} = 5k = 5 \times 30 = \mathbf{150 \text{ certidões}}$$  
      *(Para conferir: Recursos = $3 \times 30 = 90$. Total = $150 + 90 = 240$. Razão = $150/90 = 5/3$. Perfeito!)*
@@ -568,17 +564,17 @@ Pense em $k$ como o **valor de UMA ÚNICA COTA (ou uma fatia da pizza)**.
 * **Desmontagem Passo a Passo:**  
   1. *Entendendo a Lógica da Justiça:* Bruno faltou menos (2 faltas), logo ele deve receber **MAIS** dinheiro do que Carla (3 faltas).  
   2. *Invertendo os Pesos:*  
-     - Peso de Bruno: $rac{1}{2}$  
-     - Peso de Carla: $rac{1}{3}$  
+     - Peso de Bruno: $\frac{1}{2}$  
+     - Peso de Carla: $\frac{1}{3}$  
   3. *Tirando o MMC dos denominadores (2 e 3):* $\text{MMC}(2, 3) = 6$.  
-     - Bruno: $rac{1 \times 3}{6} = rac{3}{6}$  
-     - Carla: $rac{1 \times 2}{6} = rac{2}{6}$  
+     - Bruno: $\frac{1 \times 3}{6} = \frac{3}{6}$  
+     - Carla: $\frac{1 \times 2}{6} = \frac{2}{6}$  
   4. *Eliminando os denominadores:* Agora Bruno tem peso **3** e Carla tem peso **2**!  
      - Bruno $= 3k$  
      - Carla $= 2k$  
   5. *Somando e Igualando ao Prêmio:*  
      $$3k + 2k = 6.200 \implies 5k = 6.200$$  
-     $$k = rac{6.200}{5} = \mathbf{1.240}$$  
+     $$k = \frac{6.200}{5} = \mathbf{1.240}$$  
   6. *Calculando a Parte de Bruno:*  
      $$\text{Parte de Bruno} = 3k = 3 \times 1.240 = \mathbf{\text{R$ } 3.720,00}$$  
      *(Carla receberá $2 \times 1.240 = \text{\text{R$ } } 2.480,00$. Total = $3.720 + 2.480 = 6.200$. Bruno faltou menos e recebeu mais!).*
@@ -648,15 +644,15 @@ Pense em $k$ como o **valor de UMA ÚNICA COTA (ou uma fatia da pizza)**.
 **Banca:** Instituto ACCESS | **Órgão:** Prefeitura Municipal de Pirapora/MG | **Ano:** 2024 | **Cargo:** Oficial de Administração (Prova Oficial 16, Q44)  
 
 Em um concurso há 900 candidatos inscritos para o cargo de auxiliar administrativo, sendo 540 deles do sexo feminino. A razão de inscritos do sexo masculino para o cargo de auxiliar administrativo neste concurso é igual a:  
-(A) $rac{1}{3}$  
-(B) $rac{2}{5}$  
-(C) $rac{3}{5}$  
-(D) $rac{2}{3}$  
+(A) $\frac{1}{3}$  
+(B) $\frac{2}{5}$  
+(C) $\frac{3}{5}$  
+(D) $\frac{2}{3}$  
 
 <details>
 <summary><b>Ver Gabarito e Resolução Passo a Passo</b></summary>
 
-**Gabarito Oficial: B ($rac{2}{5}$)**
+**Gabarito Oficial: B ($\frac{2}{5}$)**
 
 **Resolução Detalhada:**  
 * **Passo 1: Identificar os dados do enunciado:**  
@@ -667,11 +663,11 @@ Em um concurso há 900 candidatos inscritos para o cargo de auxiliar administrat
   $$\text{Masculino} = 900 - 540 = \mathbf{360}$$  
 * **Passo 3: Montar a razão pedida pelo enunciado:**  
   O enunciado pede: *"A razão de inscritos do sexo masculino para o cargo [total]"*:  
-  $$\text{Razão} = rac{\text{Masculino}}{\text{Total}} = rac{360}{900}$$  
+  $$\text{Razão} = \frac{\text{Masculino}}{\text{Total}} = \frac{360}{900}$$  
 * **Passo 4: Simplificar a fração:**  
-  - Cortando o zero final: $rac{36}{90}$  
-  - Dividindo numerador e denominador por 9: $rac{36 \div 9}{90 \div 9} = rac{4}{10}$  
-  - Dividindo por 2: $rac{4 \div 2}{10 \div 2} = \mathbf{rac{2}{5}}$  
+  - Cortando o zero final: $\frac{36}{90}$  
+  - Dividindo numerador e denominador por 9: $\frac{36 \div 9}{90 \div 9} = \frac{4}{10}$  
+  - Dividindo por 2: $\frac{4 \div 2}{10 \div 2} = \mathbf{\frac{2}{5}}$  
 * **Gabarito:** Letra **B**.
 </details>
 
@@ -701,7 +697,7 @@ Uma herança de R$ 90.000,00 precisa ser dividida entre André, Bruno e Carlos, 
   $$18k + 15k + 12k = 90.000$$  
   $$45k = 90.000$$  
 * **Passo 3: Achar o valor da cota $k$:**  
-  $$k = rac{90.000}{45} = \mathbf{2.000}$$  
+  $$k = \frac{90.000}{45} = \mathbf{2.000}$$  
 * **Passo 4: Calcular a quantia de André:**  
   $$\text{André} = 18k = 18 \times 2.000 = \mathbf{\text{R$ } 36.000,00}$$  
 * *(Para checagem: Bruno $= 15 \times 2.000 = 30.000$; Carlos $= 12 \times 2.000 = 24.000$. Soma $= 36.000 + 30.000 + 24.000 = 90.000$).*  
@@ -733,7 +729,7 @@ Antônio deixou de herança para seus três filhos, Arthur, Clara e Alice, a qua
   $$5k + 3k + 4k = 360.000$$  
   $$12k = 360.000$$  
 * **Passo 3: Encontrar o fator $k$:**  
-  $$k = rac{360.000}{12} = \mathbf{30.000}$$  
+  $$k = \frac{360.000}{12} = \mathbf{30.000}$$  
 * **Passo 4: Calcular o valor de Clara:**  
   $$\text{Clara} = 3k = 3 \times 30.000 = \mathbf{\text{R$ } 90.000,00}$$  
 * **Gabarito:** Letra **B**.
@@ -792,15 +788,15 @@ Três funcionários de uma repartição municipal devem protocolar um total de 2
 * **Passo 1: Entender a inversão:**  
   Quem atrasou menos (funcionário A com 2 atrasos) deve protocolar **mais** processos.  
 * **Passo 2: Inverter os pesos:**  
-  - Funcionário A: $rac{1}{2}$  
-  - Funcionário B: $rac{1}{3}$  
-  - Funcionário C: $rac{1}{6}$  
+  - Funcionário A: $\frac{1}{2}$  
+  - Funcionário B: $\frac{1}{3}$  
+  - Funcionário C: $\frac{1}{6}$  
 * **Passo 3: Tirar o MMC dos denominadores (2, 3, 6):**  
   $\text{MMC}(2, 3, 6) = 6$.  
   Reduzindo as frações ao mesmo denominador:  
-  - A: $rac{6 \div 2 \times 1}{6} = rac{3}{6}$  
-  - B: $rac{6 \div 3 \times 1}{6} = rac{2}{6}$  
-  - C: $rac{6 \div 6 \times 1}{6} = rac{1}{6}$  
+  - A: $\frac{6 \div 2 \times 1}{6} = \frac{3}{6}$  
+  - B: $\frac{6 \div 3 \times 1}{6} = \frac{2}{6}$  
+  - C: $\frac{6 \div 6 \times 1}{6} = \frac{1}{6}$  
 * **Passo 4: Eliminar o denominador 6 e usar o método do $k$:**  
   Os novos pesos diretos são **3, 2 e 1**:  
   - $A = 3k$  
@@ -808,7 +804,7 @@ Três funcionários de uma repartição municipal devem protocolar um total de 2
   - $C = 1k$  
 * **Passo 5: Somar e igualar ao total:**  
   $$3k + 2k + 1k = 270 \implies 6k = 270$$  
-  $$k = rac{270}{6} = \mathbf{45}$$  
+  $$k = \frac{270}{6} = \mathbf{45}$$  
 * **Passo 6: Calcular a quantia do funcionário A:**  
   $$\text{Processos de A} = 3k = 3 \times 45 = \mathbf{135 \text{ processos}}$$  
 * *(Para checagem: $B = 2 \times 45 = 90$; $C = 1 \times 45 = 45$. Total = $135 + 90 + 45 = 270$).*  
@@ -871,7 +867,7 @@ Um bônus de produtividade no valor de R$ 3.850,00 foi distribuído entre três 
 * **Passo 2: Somar as partes e achar o fator $k$:**  
   $$2k + 4k + 5k = 3.850$$  
   $$11k = 3.850$$  
-  $$k = rac{3.850}{11} = \mathbf{350}$$  
+  $$k = \frac{3.850}{11} = \mathbf{350}$$  
 * **Passo 3: O que a questão pede?**  
   Pede a **diferença** entre o mais antigo ($5k$) e o mais novo ($2k$):  
   $$\text{Diferença} = 5k - 2k = 3k$$  
