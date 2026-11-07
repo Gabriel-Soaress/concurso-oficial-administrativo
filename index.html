@@ -2708,7 +2708,7 @@
   </main>
   </div>
 
-  <script src="aulas-data.js?v=20261107_05"></script>
+  <script src="aulas-data.js?v=20261107_06"></script>
   <script>
     const DB_SQL_URL = "https://ep-muddy-thunder-ac0eoxn3-pooler.sa-east-1.aws.neon.tech/sql";
     const DB_CONN_STR = "postgresql://neondb_owner:npg_l2mWY5HINrgG@ep-muddy-thunder-ac0eoxn3-pooler.sa-east-1.aws.neon.tech/neondb?sslmode=require";
@@ -3542,20 +3542,28 @@
     }
 
     function fallbackMathFormat(tex) {
-      let s = escapeHtml(tex);
-      s = s.replace(/\\mathbf\{([^{}]+)\}/g, "<strong>$1</strong>");
-      s = s.replace(/\\text\{([^{}]+)\}/g, "$1");
-      s = s.replace(/\\frac\{([^{}]+)\}\{([^{}]+)\}/g, "($1)/($2)");
-      s = s.replace(/\\times/g, "×").replace(/\\div/g, "÷").replace(/\\implies/g, "⇒").replace(/\\dots/g, "...");
+      let s = escapeHtml(String(tex || "").replace(/\\\$/g, "$"));
+      s = s.replace(/\\text\{([^{}]*)\}/g, "$1");
+      s = s.replace(/\\mathbf\{([^{}]*)\}/g, "<strong>$1</strong>");
+      s = s.replace(/\\mathbb\{U\}/g, "𝕌").replace(/\\mathbb\{N\}/g, "ℕ").replace(/\\mathbb\{Z\}/g, "ℤ").replace(/\\mathbb\{Q\}/g, "ℚ").replace(/\\mathbb\{I\}/g, "𝕀").replace(/\\mathbb\{R\}/g, "ℝ");
+      s = s.replace(/\\frac\{([^{}]*)\}\{([^{}]*)\}/g, "($1)/($2)");
+      s = s.replace(/\\times/g, "×").replace(/\\cdot/g, "·").replace(/\\div/g, "÷").replace(/\\implies/g, "⇒").replace(/\\iff/g, "⇔").replace(/\\to/g, "→").replace(/\\leftrightarrow/g, "↔").replace(/\\dots/g, "...");
+      s = s.replace(/\\cup/g, "∪").replace(/\\cap/g, "∩").replace(/\\in/g, "∈").replace(/\\notin/g, "∉").replace(/\\subset/g, "⊂").replace(/\\subseteq/g, "⊆").replace(/\\not\\subset/g, "⊄").replace(/\\emptyset/g, "∅").replace(/\\neq/g, "≠").replace(/\\le/g, "≤").replace(/\\ge/g, "≥");
+      s = s.replace(/\\\{/g, "{").replace(/\\\}/g, "}");
       s = s.replace(/\{,\}/g, ",");
-      return `<code class="font-mono font-bold text-indigo-600 dark:text-indigo-400">${s}</code>`;
+      return '<code class="font-mono font-bold text-indigo-600 dark:text-indigo-400">' + s + '</code>';
     }
 
     function renderKaTeXSafe(tex, displayMode) {
       let cleanTex = String(tex || "")
-        .replace(/@@ESC_DOLLAR@@/g, "\$")
-        .replace(/@@CURR_BRL@@/g, "R$")
-        .replace(/@@CURR_USD@@/g, "US$")
+        .replace(/\x09ext\{/g, "\\text{")
+        .replace(/\x0crac\{/g, "\\frac{")
+        .replace(/(^|[^\\])mathbf\{/g, "$1\\mathbf{")
+        .replace(/(^|[^\\])implies/g, "$1\\implies")
+        .replace(/@@ESC_DOLLAR@@/g, "\\$")
+        .replace(/@@CURR_BRL@@/g, "R\\$")
+        .replace(/@@CURR_USD@@/g, "US\\$")
+        .replace(/(^|[^\\])\$/g, "$1\\$")
         .trim();
       if (window.katex && typeof window.katex.renderToString === "function") {
         try {
@@ -3818,16 +3826,18 @@
     function formatRawHtmlComponent(rawHtml) {
       if (!rawHtml) return "";
       let s = String(rawHtml);
-      // Processar display math $...$ dentro do card HTML
+      s = s.replace(/(?<![a-zA-Z0-9_\\])R\$/g, "@@CURR_BRL@@").replace(/(?<![a-zA-Z0-9_\\])US\$/g, "@@CURR_USD@@").replace(/\\\$/g, "@@ESC_DOLLAR@@");
+      // Processar display math $$...$$ dentro do card HTML
       s = s.replace(/\$\$([\s\S]*?)\$\$/g, (_, tex) => renderDisplayMathResponsive(tex));
       // Processar inline math $...$ dentro do card HTML
       s = s.replace(/\$([^\$\n]+?)\$/g, (_, tex) => renderInlineMathResponsive(tex));
+      s = s.replace(/@@CURR_BRL@@/g, "R$").replace(/@@CURR_USD@@/g, "US$").replace(/@@ESC_DOLLAR@@/g, "$");
       // Processar formatações básicas de markdown fora de tags HTML
       s = s.replace(/(>|^)([^<]+)(<|$)/g, (match, prefix, content, suffix) => {
         let fmt = content;
         fmt = fmt.replace(/\*\*([^*]+)\*\*/g, '<strong class="font-bold text-pri">$1</strong>');
         fmt = fmt.replace(/(^|[^*])\*([^*\n]+)\*([^*]|$)/g, '$1<em>$2</em>$3');
-        fmt = fmt.replace(/`([^`]+)`/g, '<code class="font-mono text-xs px-1.5 py-0.5 rounded surface-muted text-indigo-600 dark:text-indigo-400">$1</code>');
+        fmt = fmt.replace(/\x60([^\x60]+)\x60/g, '<code class="font-mono text-xs px-1.5 py-0.5 rounded surface-muted text-indigo-600 dark:text-indigo-400">$1</code>');
         return prefix + fmt + suffix;
       });
       return s;
@@ -3968,7 +3978,7 @@
       });
 
       // 2. Proteger símbolos monetários R$ e US$ antes de extrair $...$ do LaTeX
-      text = text.replace(/(?<![a-zA-Z0-9_\\])R\$(?=\s*[\d\-])/g, "@@CURR_BRL@@").replace(/(?<![a-zA-Z0-9_\\])US\$(?=\s*[\d\-])/g, "@@CURR_USD@@").replace(/\\\$/g, "@@ESC_DOLLAR@@");
+      text = text.replace(/(?<![a-zA-Z0-9_\\])R\$/g, "@@CURR_BRL@@").replace(/(?<![a-zA-Z0-9_\\])US\$/g, "@@CURR_USD@@").replace(/\\\$/g, "@@ESC_DOLLAR@@");
 
       // 3. Extrair blocos matemáticos Display $$...$$ (quebrando passos longos em itens flex para caber 100% na tela do celular sem scroll lateral)
       text = text.replace(/\$\$([\s\S]*?)\$\$/g, (_, tex) => {
