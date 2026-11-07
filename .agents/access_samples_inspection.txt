@@ -1,0 +1,302 @@
+=== AMOSTRAS REAIS EXTRAÍDAS DAS PROVAS ACCESS ===
+
+
+================ CATEGORIA: NEGATIVE (3 amostras) ================
+
+----------------------------------------
+[prova-auto/provas-access\access_08_Conselho_Regional_de_Biol_PROVA_OBJETIVA_-_ASSISTENTE_ADMINIS.pdf Q07]
+Questão 07 
+Analise as frases apresentadas. Em qual das frases a seguir a 
+concordância verbal está INCORRETA? 
+(A) Há muitas pessoas interessadas em participar do curso de 
+língua portuguesa. 
+(B) A cada uma das alunas foi entregue seu certificado. 
+(C) O grupo de estudantes fizeram um trabalho excelente. 
+(D) Nenhum dos candidatos compareceu à entrevista marcada.
+
+----------------------------------------
+[prova-auto/provas-access\access_10_Prefeitura_Municipal_de_C_PROVA_OBJETIVA_-_ASSISTENTE_ADMINIS.pdf Q38]
+Questão 38 
+Em uma repartição pública, foi elaborado um 
+organograma vertical para representar a estrutura 
+hierárquica dos setores e cargos. O objetivo era deixar 
+clara a relação de subordinação e o fluxo de 
+comunicação entre os diferentes níveis da instituição. 
+Com base nas características desse tipo de 
+organograma, assinale a alternativa INCORRETA: 
+(A) O organograma vertical favorece a des
+
+----------------------------------------
+[prova-auto/provas-access\access_10_Prefeitura_Municipal_de_C_PROVA_OBJETIVA_-_ASSISTENTE_ADMINIS.pdf Q40]
+Questão 40 
+De acordo com o art. 124 da Lei nº 14.133/2021, os 
+contratos administrativos podem ser alterados, desde 
+que haja justificativas adequadas, em hipóteses 
+específicas. 
+Considerando essas disposições legais, assinale a
+alternativa INCORRETA: 
+(A) A Administração pode unilateralmente reescolher o
+objeto do contrato por completo, substituindo-o por 
+outro distinto, desde que haja justifi
+
+================ CATEGORIA: ROMAN (6 amostras) ================
+
+----------------------------------------
+[prova-auto/1.pdf Q1]
+Questão 1 
+A respeito das ideias do texto, analise as afirmativas a seguir: 
+I. A humanidade foi enganada por não saber que as imagens de 
+astros sofriam tratamento tecnológico antes de serem 
+divulgadas. 
+II. Embora se tenha corrigido a cor de Netuno e Urano para o mais 
+próximo do observado, ainda assim há variações dependendo de 
+fatores como ângulo de incidência do Sol. 
+III. Em 1980, a percep
+
+----------------------------------------
+[prova-auto/1.pdf Q17]
+Questão 17 
+A planilha da figura foi criada no Excel do pacote MS Office 2019 BR 
+(x64), tendo sido realizados os procedimentos abaixo: 
+I. Em E5 foi inserida uma fórmula que determina o maior número 
+dentre todos os números mostrados nas células A3, B3, C3, D3 e 
+E3. 
+II. Em E7 foi inserida uma fórmula que determina a média 
+aritmética entre todos os números mostrados nas células A3, B3, 
+C3, D3
+
+----------------------------------------
+[prova-auto/1.pdf Q28]
+Questão 28 
+Em relação à gestão de resultados, analise as afirmativas a seguir: 
+I. Gestão de resultados é um modelo de administração que visa 
+priorizar os resultados em todos os processos da empresa, sendo 
+que todas as decisões e ações dos profissionais são voltadas para 
+esse objetivo, com o intuito de alavancar o desempenho 
+organizacional, tendo como foco principal os resultados 
+concretos e
+
+----------------------------------------
+[prova-auto/1.pdf Q30]
+Questão 30 
+Com relação ao servidor público e sua natureza, analise as 
+afirmativas a seguir: 
+I. A responsabilidade do servidor público é muito maior do que se 
+imagina, tornando -se um privilégio por tratar- se de agente 
+transformador do Estado. 
+II. O papel do servidor público não é apenas o de ser estável. É 
+muito mais do que isso, pois a sua atuação está necessariamente 
+voltada para os ans
+
+----------------------------------------
+[prova-auto/1.pdf Q34]
+Questão 34 
+Em relação às áreas de protocolo e arquivo, analise as afirmativas a 
+seguir: 
+I. As atividades de protocolo compreendem basicamente as 
+operações de recepção, classificação, registro, distribuição, 
+digitalização, tramitação e expedição, que visam ao controle dos 
+documentos produzidos e recebidos, assegurando sua 
+localização e acesso.  
+II. Por sua vez, as atividades de arquivo comp
+
+----------------------------------------
+[prova-auto/1.pdf Q36]
+Questão 36 
+A respeito das atividades de classificação de arquivos, analise as 
+afirmativas a seguir: 
+I. Na classificação de documentos de arquivo, o Estudo consiste na 
+leitura de cada documento, a fim de se verificar sob que assunto 
+deverá ser classificado e que referências cruzadas lhe 
+corresponderão. A referência cruzada é um mecanismo adotado 
+quando o conteúdo do documento se refere a doi
+
+================ CATEGORIA: TRUE_FALSE (6 amostras) ================
+
+----------------------------------------
+[prova-auto/6.pdf Q21]
+Questão 21
+Os         motores         de         busca,         como         o         Google,         são         usados         para
+encontrar         informações         de         forma         rápida.         Eles         ajudam         a
+localizar         páginas,         imagens         e         documentos         na         internet.
+Sobre         o         assunto,         julgue
+
+----------------------------------------
+[prova-auto/6.pdf Q25]
+Questão 25
+O         Microsoft         Windows         7         oferece         várias         ferramentas         para
+organizar         e         acessar         arquivos         no         computador.         O         sistema
+é         amplamente         utilizado         para         tarefas         cotidianas,         como
+criar         e         armazenar         documentos.         Sobre
+
+----------------------------------------
+[prova-auto/6.pdf Q28]
+Questão 28
+O         Microsoft         Windows         7         oferece         diversas         funções         que
+facilitam         o         uso         diário,         como         a         personalização         da         área         de
+trabalho,         a         criação         de         atalhos         e         a         execução         de         múltiplos
+programas         ao
+
+----------------------------------------
+[prova-auto/provas-access\access_01_Universidade_Federal_do_P_PROVA_OBJETIVA_-_ASSISTENTE_EM_ADMI.pdf Q27]
+Questão 27 
+No contexto do Governo Digital e do uso de tecnologias 
+na Administração Pública brasileira, avalie as assertivas 
+a seguir, considerando aspectos relacionados aos 
+serviços de governo eletrônico (e-Gov), aos sistemas 
+informatizados de gestão pública, à assinatura e
+certificação digital e aos conceitos de acessibilidade 
+digital, e assinale V (verdadeiro) ou F (falso). 
+(__)Serviços d
+
+----------------------------------------
+[prova-auto/provas-access\access_05_Prefeitura_Municipal_de_P_PROVA_OBJETIVA_-_ESCRITURRIO_A_15_0.pdf Q12]
+Questão 12
+Relatórios         de         produtividade         de         uma         central         de
+atendimento         indicam         que         o         número         de         chamados
+atendidos         diariamente         por         um         novo         software         cresce
+segundo         uma         progressão         aritmética.         No         3°         dia         de
+
+----------------------------------------
+[prova-auto/provas-access\access_05_Prefeitura_Municipal_de_P_PROVA_OBJETIVA_-_ESCRITURRIO_A_15_0.pdf Q23]
+Questão 23
+Debates         contemporâneos         sobre         desenvolvimento
+sustentável         no         Brasil         envolvem         a         conciliação         entre
+crescimento         econômico         e         preservação         ambiental,
+especialmente         na         Amazônia.         Pressões         internacionais         e
+compromissos         assumidos         em
+
+================ CATEGORIA: GAP_FILL (1 amostras) ================
+
+----------------------------------------
+[prova-auto/provas-access\access_11_UFFS_-_Universidade_Feder_Prova_Objetiva_-_Assistente_em_Admi.pdf Q5]
+Questão 5 
+Embora os arcos correspondentes não tenham sido achados, 
+trata-se de uma lacuna natural, uma vez que a madeira e os 
+tendões de animais usados na fabricação das armas se 
+decompõem com relativa facilidade. (L.59-63)  
+Assinale a alternativa que pode substituir o sublinhado no período 
+acima, sem provocar grave alteração de sentido. 
+(A) Como 
+(B) Porquanto 
+(C) Conquanto 
+(D) Uma vez q
+
+================ CATEGORIA: COLUMN_MATCHING (5 amostras) ================
+
+----------------------------------------
+[prova-auto/provas-access\access_01_Universidade_Federal_do_P_PROVA_OBJETIVA_-_ASSISTENTE_EM_ADMI.pdf Q36]
+Questão 36 
+No âmbito da Administração Pública, o planejamento 
+governamental, as finanças públicas e o orçamento 
+público estão interligados e estruturam a atuação estatal, 
+orientando a alocação de recursos e a execução das 
+políticas públicas. Relacione os instrumentos e conceitos 
+da Coluna I com suas respectivas características na 
+Coluna II. 
+Coluna I: 
+1.Plano Plurianual (PPA).
+2.Lei de Dir
+
+----------------------------------------
+[prova-auto/provas-access\access_02_Universidade_Federal_do_A_PROVA_OBJETIVA_-_ASSISTENTE_EM_ADMI.pdf Q20]
+Questão 20
+O         estado         do         Acre         possui         limites         territoriais         com         unidades
+federativas         brasileiras         e         países         sul-americanos,         o         que
+influencia         sua         inserção         regional.         Relacione         corretamente
+os         elementos         da         Coluna         I         co
+
+----------------------------------------
+[prova-auto/provas-access\access_07_Prefeitura_Municipal_de_A_PROVA_OBJETIVA_-_ESCRITURRIO_-_TIPO.pdf Q08]
+Questão 08
+Leia         com         atenção         as         colunas         a         seguir:
+Coluna         01:
+(__)         O         equipamento         foi         submetido         a         testes         rigorosos         e
+aprovado         pelos         engenheiros.
+(__)         Seja         por         erro         de         configuração,         seja         por         desgaste
+
+----------------------------------------
+[prova-auto/provas-access\access_07_Prefeitura_Municipal_de_A_PROVA_OBJETIVA_-_ESCRITURRIO_-_TIPO.pdf Q34]
+Questão 34
+Relacione         os         termos         da         coluna         1         com         suas         respectivas
+definições         na         coluna         2,         de         acordo         com         as         práticas         de
+gestão         documental         na         administração         pública:
+Coluna         1         −         Atividade         documental
+1.
+
+----------------------------------------
+[prova-auto/provas-access\access_17_Universidade_Federal_de_J_Prova_Objetiva_-_Assistente_em_Admi.pdf Q33]
+Questão 33 
+Relacione os Princípios da Administração Pública com suas 
+respectivas definições. 
+1. Finalidade  
+2. Legalidade 
+3. Moralidade 
+4. Publicidade 
+(     ) Impõe-se à administração pública a prática de atos 
+voltados para o interesse público. 
+(     ) Dever de tornar obrigatóri a a divulgação de atos e 
+contratos da administração pública. 
+(     ) Está associado à gestão pública em toda
+
+================ CATEGORIA: HYPOTHETICAL (6 amostras) ================
+
+----------------------------------------
+[prova-auto/1.pdf Q14]
+Questão 14 
+Cláudio, Leonardo e Marcos foram a um mercado. Cláudio pagou R$ 
+40,00 por cinco pacotes de biscoito e Leonardo pagou R$ 36,00 por 
+três garrafas de suco de uva. Sabe -se que Marcos comprou os 
+mesmos produtos que Clá udio e Leonardo, mas comprou três 
+pacotes de biscoito e duas garrafas de suco de uva. 
+Marcos gastou, em reais, pela compra que realizou o valor igual a  
+(A) R$ 24,00.
+
+----------------------------------------
+[prova-auto/1.pdf Q30]
+Questão 30 
+Com relação ao servidor público e sua natureza, analise as 
+afirmativas a seguir: 
+I. A responsabilidade do servidor público é muito maior do que se 
+imagina, tornando -se um privilégio por tratar- se de agente 
+transformador do Estado. 
+II. O papel do servidor público não é apenas o de ser estável. É 
+muito mais do que isso, pois a sua atuação está necessariamente 
+voltada para os ans
+
+----------------------------------------
+[prova-auto/6.pdf Q13]
+Questão 13
+Cinco         amigos         (Lucas,         Marta,         Pedro,         Sara         e         Tiago)
+moram         em         cinco         casas         coloridas         (azul,         verde,         vermelha,
+amarela         e         branca).         Cada         um         tem         um         animal         de
+estimação         diferente         (cachorro,         gato,
+
+----------------------------------------
+[prova-auto/6.pdf Q14]
+Questão 14
+Carlos         tem         60         balas         e         quer         dividir         entre         seus         três
+sobrinhos         de         forma         proporcional,         de         acordo         com         as
+idades:         3,         4         e         5         anos.         Quantas         balas         o         sobrinho         mais
+novo         vai         re
+
+----------------------------------------
+[prova-auto/6.pdf Q17]
+Questão 17
+Ana,         Bruno,         Carlos         e         Daniela         trabalham         em         um         escritório
+e         têm         diferentes         horários         de         chegada         ao         trabalho.         A
+rotina         deles         é         a         seguinte:
+ Ana         chega         15         minutos         antes         de         Bruno.
+ Bruno
+
+----------------------------------------
+[prova-auto/6.pdf Q42]
+Questão 42
+João         é         responsável         por         organizar         as         folhas         de         ponto         dos
+funcionários         de         um         órgão         público.         Ele         percebeu         que
+alguns         colaboradores         estão         registrando         suas         presenças
+incorretamente,         o         que         prejudica
+
+================ CATEGORIA: MATH_PROBLEM (0 amostras) ================
+
+================ CATEGORIA: PORTUGUESE_COMMAND (0 amostras) ================

@@ -12,6 +12,7 @@
 >      - `python .agents/sync_db.py mark <chave>` (chaves: `w1_port`, `w1_rlm`, `w1_esp`, `w1_ger`, `w1_sim` ... até `w12_sim`)
 >      - `python .agents/sync_db.py exam <numero_da_prova>` (ex: `1` a `93`)
 > 5. Ao ensinar qualquer conteúdo ao usuário, siga rigorosamente o **Perfil Cognitivo e Didático do Aluno (Seção 2)** — nunca jogue regras secas ou fórmulas decoradas sem antes explicar **o porquê lógico/histórico** daquilo existir.
+> 6. **PADRÃO ESTRUTURAL DA BANCA INSTITUTO ACCESS (CRIAÇÃO E ADAPTAÇÃO):** Consulte e aplique rigorosamente as diretrizes documentadas em `.agents/PADRAO_QUESTOES_BANCA_ACCESS.md` para qualquer criação ou adaptação de questões, garantindo formato idêntico (4 alternativas A-D em prefeituras, comandos em CAIXA ALTA, situações hipotéticas de repartição pública e distratores conceituais).
 
 ---
 
@@ -24,6 +25,7 @@
   * **Provas `1.pdf` a `12.pdf` (`g1.pdf` a `g12.pdf`):** São os **12 Simulados Oficiais de Sábado**, renumerados exatamente na ordem da **Semana 01 até a Semana 12**!
   * **Provas `13.pdf` a `93.pdf` (`g13.pdf` a `g93.pdf`):** São as **81 provas de Treino Diário** (para usar de segunda a sexta nas baterias de questões por matéria).
   * `prova-auto/indice_provas.txt`: Índice completo mapeando `Nº | Tipo | Ano | Órgão | Banca | Prova | Gabarito | URL`.
+* `.agents/PADRAO_QUESTOES_BANCA_ACCESS.md`: Manual mestre de engenharia reversa e adaptação de questões, contendo a radiografia estrutural completa de mais de 1.000 questões reais do Instituto ACCESS (formatos de enunciados, itens romanos, V/F, colunas, personificação e algoritmo de adaptação de outras bancas).
 
 > [!IMPORTANT]
 > **PRESERVAÇÃO TOTAL DOS 12 SIMULADOS DE SÁBADO (PROVAS 1 A 12):**

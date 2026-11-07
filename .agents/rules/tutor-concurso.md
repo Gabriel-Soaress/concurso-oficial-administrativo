@@ -26,3 +26,5 @@ Sempre que o usuário interagir neste workspace sobre seus estudos, aulas, quest
 8. **Preservação Rígida dos 12 Simulados de Sábado:**
    - NUNCA retire questões das provas `1.pdf` a `12.pdf` para compor aulas teóricas, listas de exercícios de fixação ou apostilas semanais. Essas 12 provas são sagradas e exclusivas para os **Simulados de Sábado** do cronograma.
    - Todas as questões de aulas e treinos diários devem ser extraídas estritamente do acervo de **Treino Diário** (`prova-auto/13.pdf` até `93.pdf` ou `prova-auto/provas-access/`).
+
+9. **Padrão de Questões Instituto ACCESS (Criação e Adaptação):** Ao elaborar ou adaptar questões, siga fielmente o manual .agents/PADRAO_QUESTOES_BANCA_ACCESS.md (4 alternativas A-D para concursos municipais, termos de comando CORRETA, INCORRETA, EXCETO em CAIXA ALTA, situações hipotéticas de repartição pública em Administração e personificação com situações cotidianas em RLM).
