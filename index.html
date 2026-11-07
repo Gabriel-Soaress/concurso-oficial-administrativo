@@ -24,6 +24,9 @@
       --text-primary: #090d16;
       --text-secondary: #1e293b;
       --text-muted: #475569;
+      --pri: var(--text-primary);
+      --sec: var(--text-secondary);
+      --mut: var(--text-muted);
       --brand: #4f46e5;
       --brand-hover: #4338ca;
       --brand-soft: #eef2ff;
@@ -41,6 +44,9 @@
       --text-primary: #ffffff;
       --text-secondary: #cbd5e1;
       --text-muted: #94a3b8;
+      --pri: var(--text-primary);
+      --sec: var(--text-secondary);
+      --mut: var(--text-muted);
       --brand: #6366f1;
       --brand-hover: #818cf8;
       --brand-soft: rgba(99, 102, 241, 0.14);
@@ -547,6 +553,10 @@
       border: 1px solid var(--border);
       border-left-width: 4px;
       background-color: var(--bg-elevated);
+      color: var(--text-primary);
+    }
+    .lesson-callout p, .lesson-callout li, .lesson-callout div {
+      color: var(--text-primary);
     }
     @media (min-width: 640px) {
       .lesson-callout {
@@ -559,17 +569,25 @@
     .lesson-callout.callout-important { border-left-color: #8b5cf6; background-color: rgba(139, 92, 246, 0.06); }
     .lesson-callout.callout-warning { border-left-color: #f59e0b; background-color: rgba(245, 158, 11, 0.06); }
     .lesson-callout.callout-caution { border-left-color: #ef4444; background-color: rgba(239, 68, 68, 0.06); }
+    
+    html.dark .lesson-callout { background-color: var(--bg-elevated); border-color: var(--border); }
+    html.dark .lesson-callout.callout-note { background-color: rgba(79, 70, 229, 0.12); border-color: rgba(99, 102, 241, 0.35); }
+    html.dark .lesson-callout.callout-tip { background-color: rgba(16, 185, 129, 0.12); border-color: rgba(16, 185, 129, 0.35); }
+    html.dark .lesson-callout.callout-important { background-color: rgba(139, 92, 246, 0.12); border-color: rgba(168, 85, 247, 0.35); }
+    html.dark .lesson-callout.callout-warning { background-color: rgba(245, 158, 11, 0.12); border-color: rgba(245, 158, 11, 0.35); }
+    html.dark .lesson-callout.callout-caution { background-color: rgba(239, 68, 68, 0.12); border-color: rgba(239, 68, 68, 0.35); }
 
     /* =========================================================
        PIPELINE DIDÁTICO: CAUSA ➔ FATO ➔ CONSEQUÊNCIA (3 ESCALAS)
        ========================================================= */
     .cfc-pipeline {
-      margin: 1.5rem 0;
+      margin: 1.25rem 0;
       border-radius: 1.15rem;
       border: 1px solid var(--border);
       background-color: var(--bg-surface);
       overflow: hidden;
       box-shadow: 0 4px 18px -2px rgba(0, 0, 0, 0.05);
+      max-width: 100%;
     }
     .cfc-header {
       display: flex;
@@ -590,7 +608,7 @@
       font-weight: 800;
       text-transform: uppercase;
       letter-spacing: 0.04em;
-      color: var(--pri);
+      color: var(--text-primary);
     }
     .cfc-header-badge {
       font-size: 0.68rem;
@@ -658,11 +676,15 @@
     .cfc-card-text {
       font-size: 0.84rem;
       line-height: 1.55;
-      color: var(--pri);
+      color: var(--text-primary);
+      font-weight: 500;
+    }
+    html.dark .cfc-card-text {
+      color: #f1f5f9;
     }
     .cfc-card.causa {
       border-color: rgba(245, 158, 11, 0.35);
-      background: linear-gradient(180deg, rgba(245, 158, 11, 0.06) 0%, rgba(245, 158, 11, 0.01) 100%);
+      background: linear-gradient(180deg, rgba(245, 158, 11, 0.08) 0%, var(--bg-elevated) 100%);
     }
     .cfc-card.causa .cfc-card-label { color: #d97706; }
     html.dark .cfc-card.causa .cfc-card-label { color: #fbbf24; }
@@ -674,7 +696,7 @@
 
     .cfc-card.fato {
       border-color: rgba(99, 102, 241, 0.35);
-      background: linear-gradient(180deg, rgba(99, 102, 241, 0.06) 0%, rgba(99, 102, 241, 0.01) 100%);
+      background: linear-gradient(180deg, rgba(99, 102, 241, 0.08) 0%, var(--bg-elevated) 100%);
     }
     .cfc-card.fato .cfc-card-label { color: #4f46e5; }
     html.dark .cfc-card.fato .cfc-card-label { color: #818cf8; }
@@ -686,7 +708,7 @@
 
     .cfc-card.consequencia {
       border-color: rgba(16, 185, 129, 0.4);
-      background: linear-gradient(180deg, rgba(16, 185, 129, 0.08) 0%, rgba(16, 185, 129, 0.02) 100%);
+      background: linear-gradient(180deg, rgba(16, 185, 129, 0.08) 0%, var(--bg-elevated) 100%);
       box-shadow: 0 4px 14px -2px rgba(16, 185, 129, 0.08);
     }
     .cfc-card.consequencia .cfc-card-label { color: #059669; }
@@ -696,6 +718,19 @@
       color: #047857;
     }
     html.dark .cfc-card.consequencia .cfc-card-pill { color: #a7f3d0; }
+
+    html.dark .cfc-card.causa {
+      background: linear-gradient(180deg, rgba(245, 158, 11, 0.12) 0%, var(--bg-elevated) 100%);
+      border-color: rgba(245, 158, 11, 0.45);
+    }
+    html.dark .cfc-card.fato {
+      background: linear-gradient(180deg, rgba(99, 102, 241, 0.12) 0%, var(--bg-elevated) 100%);
+      border-color: rgba(99, 102, 241, 0.45);
+    }
+    html.dark .cfc-card.consequencia {
+      background: linear-gradient(180deg, rgba(16, 185, 129, 0.12) 0%, var(--bg-elevated) 100%);
+      border-color: rgba(16, 185, 129, 0.45);
+    }
 
     .cfc-arrow-divider {
       display: flex;
@@ -716,6 +751,11 @@
       font-weight: 800;
       box-shadow: 0 2px 6px rgba(0,0,0,0.04);
     }
+    html.dark .cfc-arrow-badge {
+      background: var(--bg-elevated);
+      border-color: var(--border-strong);
+      color: #cbd5e1;
+    }
     @media (max-width: 859px) {
       .cfc-arrow-divider {
         margin: -0.2rem 0;
@@ -729,12 +769,13 @@
        SISTEMA DE COMPONENTES EDUCATIVOS DE ALTO NÍVEL (UI/UX)
        ========================================================= */
     .edu-component {
-      margin: 1.75rem 0;
-      border-radius: 1.25rem;
+      margin: 1.25rem 0;
+      border-radius: 1.15rem;
       border: 1px solid var(--border);
       background-color: var(--bg-surface);
       overflow: hidden;
       box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
+      max-width: 100%;
     }
     .edu-comp-header {
       display: flex;
@@ -755,7 +796,10 @@
       font-weight: 800;
       text-transform: uppercase;
       letter-spacing: 0.04em;
-      color: var(--pri);
+      color: var(--text-primary);
+    }
+    html.dark .edu-comp-title {
+      color: #ffffff;
     }
     .edu-comp-badge {
       font-size: 0.68rem;
@@ -823,42 +867,73 @@
     .card-title {
       font-size: 0.95rem;
       font-weight: 800;
-      color: var(--pri);
+      color: var(--text-primary);
       margin: 0;
+    }
+    html.dark .card-title {
+      color: #ffffff;
     }
     .card-text {
       font-size: 0.82rem;
       line-height: 1.55;
-      color: var(--sec);
+      color: var(--text-secondary);
       margin: 0;
+    }
+    html.dark .card-text {
+      color: #cbd5e1;
     }
     
     /* Variações de cor dos cards */
     .edu-card.card-amber {
       border-color: rgba(245, 158, 11, 0.35);
-      background: linear-gradient(180deg, rgba(245, 158, 11, 0.05) 0%, var(--bg-elevated) 100%);
+      background: linear-gradient(180deg, rgba(245, 158, 11, 0.06) 0%, var(--bg-elevated) 100%);
     }
     .edu-card.card-indigo {
       border-color: rgba(99, 102, 241, 0.35);
-      background: linear-gradient(180deg, rgba(99, 102, 241, 0.05) 0%, var(--bg-elevated) 100%);
+      background: linear-gradient(180deg, rgba(99, 102, 241, 0.06) 0%, var(--bg-elevated) 100%);
     }
     .edu-card.card-emerald {
       border-color: rgba(16, 185, 129, 0.35);
-      background: linear-gradient(180deg, rgba(16, 185, 129, 0.05) 0%, var(--bg-elevated) 100%);
+      background: linear-gradient(180deg, rgba(16, 185, 129, 0.06) 0%, var(--bg-elevated) 100%);
     }
     .edu-card.card-sky {
       border-color: rgba(14, 165, 233, 0.35);
-      background: linear-gradient(180deg, rgba(14, 165, 233, 0.05) 0%, var(--bg-elevated) 100%);
+      background: linear-gradient(180deg, rgba(14, 165, 233, 0.06) 0%, var(--bg-elevated) 100%);
     }
     .edu-card.card-purple {
       border-color: rgba(168, 85, 247, 0.35);
-      background: linear-gradient(180deg, rgba(168, 85, 247, 0.05) 0%, var(--bg-elevated) 100%);
+      background: linear-gradient(180deg, rgba(168, 85, 247, 0.06) 0%, var(--bg-elevated) 100%);
     }
     .edu-card.card-rose {
       border-color: rgba(244, 63, 94, 0.35);
-      background: linear-gradient(180deg, rgba(244, 63, 94, 0.05) 0%, var(--bg-elevated) 100%);
+      background: linear-gradient(180deg, rgba(244, 63, 94, 0.06) 0%, var(--bg-elevated) 100%);
     }
     
+    html.dark .edu-card.card-amber {
+      border-color: rgba(245, 158, 11, 0.45);
+      background: linear-gradient(180deg, rgba(245, 158, 11, 0.12) 0%, var(--bg-elevated) 100%);
+    }
+    html.dark .edu-card.card-indigo {
+      border-color: rgba(99, 102, 241, 0.45);
+      background: linear-gradient(180deg, rgba(99, 102, 241, 0.12) 0%, var(--bg-elevated) 100%);
+    }
+    html.dark .edu-card.card-emerald {
+      border-color: rgba(16, 185, 129, 0.45);
+      background: linear-gradient(180deg, rgba(16, 185, 129, 0.12) 0%, var(--bg-elevated) 100%);
+    }
+    html.dark .edu-card.card-sky {
+      border-color: rgba(14, 165, 233, 0.45);
+      background: linear-gradient(180deg, rgba(14, 165, 233, 0.12) 0%, var(--bg-elevated) 100%);
+    }
+    html.dark .edu-card.card-purple {
+      border-color: rgba(168, 85, 247, 0.45);
+      background: linear-gradient(180deg, rgba(168, 85, 247, 0.12) 0%, var(--bg-elevated) 100%);
+    }
+    html.dark .edu-card.card-rose {
+      border-color: rgba(244, 63, 94, 0.45);
+      background: linear-gradient(180deg, rgba(244, 63, 94, 0.12) 0%, var(--bg-elevated) 100%);
+    }
+
     /* Timeline Cards */
     .card-year-pill {
       font-family: var(--font-mono, monospace);
@@ -885,13 +960,16 @@
       gap: 0.45rem;
       font-size: 0.8rem;
       line-height: 1.5;
-      color: var(--pri);
+      color: var(--text-primary);
+    }
+    html.dark .card-checklist li {
+      color: #f1f5f9;
     }
     
     /* Flashcards Mnemônicos SO-CI-DI-VA-PLU */
     .edu-mnemonic-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
       gap: 0.85rem;
       padding: 1.15rem;
     }
@@ -922,14 +1000,20 @@
     .m-title {
       font-size: 0.88rem;
       font-weight: 800;
-      color: var(--pri);
+      color: var(--text-primary);
       margin: 0;
+    }
+    html.dark .m-title {
+      color: #ffffff;
     }
     .m-desc {
       font-size: 0.76rem;
       line-height: 1.45;
-      color: var(--sec);
+      color: var(--text-secondary);
       margin: 0;
+    }
+    html.dark .m-desc {
+      color: #cbd5e1;
     }
     .mnemonic-card.m-blue { border-color: rgba(59, 130, 246, 0.35); }
     .mnemonic-card.m-blue .m-letter { background: rgba(59, 130, 246, 0.15); color: #2563eb; }
@@ -998,21 +1082,27 @@
     .tier-title {
       font-size: 0.92rem;
       font-weight: 800;
-      color: var(--pri);
+      color: var(--text-primary);
       margin: 0;
+    }
+    html.dark .tier-title {
+      color: #ffffff;
     }
     .tier-desc {
       font-size: 0.82rem;
       line-height: 1.55;
-      color: var(--pri);
+      color: var(--text-primary);
       margin: 0;
+    }
+    html.dark .tier-desc {
+      color: #f1f5f9;
     }
     .tier-exchange {
       display: flex;
       align-items: flex-start;
       gap: 0.45rem;
       font-size: 0.78rem;
-      color: var(--sec);
+      color: var(--text-secondary);
       padding: 0.45rem 0.65rem;
       border-radius: 0.5rem;
       background: var(--bg-surface);
@@ -1020,9 +1110,18 @@
     }
     .exchange-tag {
       font-weight: 700;
-      color: var(--pri);
+      color: var(--text-primary);
       white-space: nowrap;
     }
+    html.dark .tier-exchange {
+      background: #1e293b;
+      border-color: #334155;
+      color: #e2e8f0;
+    }
+    html.dark .tier-exchange .exchange-tag {
+      color: #ffffff;
+    }
+
     .tier-alert {
       display: flex;
       align-items: flex-start;
@@ -1033,8 +1132,17 @@
       border-radius: 0.65rem;
       background: rgba(244, 63, 94, 0.08);
       border: 1px solid rgba(244, 63, 94, 0.25);
-      color: var(--pri);
+      color: var(--text-primary);
     }
+    html.dark .tier-alert {
+      background: rgba(244, 63, 94, 0.16);
+      border-color: rgba(244, 63, 94, 0.4);
+      color: #ffe4e6;
+    }
+    html.dark .tier-alert strong {
+      color: #ffffff;
+    }
+
     .edu-pyramid-connector {
       display: flex;
       align-items: center;
@@ -1042,7 +1150,10 @@
       font-size: 0.72rem;
       font-family: var(--font-mono, monospace);
       font-weight: 700;
-      color: var(--sec);
+      color: var(--text-secondary);
+    }
+    html.dark .edu-pyramid-connector {
+      color: #94a3b8;
     }
     .connector-arrow {
       width: 1.6rem;
@@ -1055,13 +1166,21 @@
       justify-content: center;
       font-size: 0.85rem;
     }
+    html.dark .connector-arrow {
+      background: var(--bg-elevated);
+      border-color: var(--border-strong);
+      color: #f1f5f9;
+    }
     
     /* Quadro dos Três Poderes */
     .card-role {
       font-size: 0.8rem;
       line-height: 1.5;
-      color: var(--sec);
+      color: var(--text-secondary);
       margin: 0;
+    }
+    html.dark .card-role {
+      color: #cbd5e1;
     }
     .card-levels {
       display: flex;
@@ -1080,8 +1199,12 @@
       border-radius: 0.35rem;
       background: var(--bg-surface);
     }
-    .level-row span { color: var(--sec); font-size: 0.72rem; text-transform: uppercase; font-family: var(--font-mono, monospace); }
-    .level-row strong { color: var(--pri); font-size: 0.78rem; }
+    .level-row span { color: var(--text-secondary); font-size: 0.72rem; text-transform: uppercase; font-family: var(--font-mono, monospace); }
+    .level-row strong { color: var(--text-primary); font-size: 0.78rem; }
+    html.dark .level-row { background: #131926; border: 1px solid #263147; }
+    html.dark .level-row span { color: #94a3b8; }
+    html.dark .level-row strong { color: #ffffff; }
+
     .level-row.highlight-danger {
       background: rgba(244, 63, 94, 0.12);
       border: 1px solid rgba(244, 63, 94, 0.3);
@@ -1103,7 +1226,15 @@
       border: 1.5px solid rgba(239, 68, 68, 0.35);
       font-size: 0.82rem;
       line-height: 1.55;
-      color: var(--pri);
+      color: var(--text-primary);
+    }
+    html.dark .edu-banner-warning {
+      background: rgba(239, 68, 68, 0.16);
+      border-color: rgba(239, 68, 68, 0.45);
+      color: #fee2e2;
+    }
+    html.dark .edu-banner-warning strong {
+      color: #ffffff;
     }
     .banner-icon {
       font-size: 1.25rem;
@@ -1126,8 +1257,11 @@
     .card-period, .card-core {
       font-size: 0.8rem;
       line-height: 1.5;
-      color: var(--sec);
+      color: var(--text-secondary);
       margin: 0;
+    }
+    html.dark .card-period, html.dark .card-core {
+      color: #cbd5e1;
     }
     .card-examples {
       display: flex;
@@ -1143,9 +1277,61 @@
       border-radius: 0.35rem;
       background: var(--bg-surface);
       border: 1px solid var(--border);
-      color: var(--pri);
+      color: var(--text-primary);
     }
-    
+    html.dark .ex-tag {
+      background: #1e273b;
+      border-color: #354463;
+      color: #f1f5f9;
+    }
+
+    /* Regras Mobile Específicas para Evitar Cortes e Cores Escuras */
+    @media (max-width: 639px) {
+      .cfc-pipeline, .edu-component {
+        margin: 1.1rem 0;
+        border-radius: 0.95rem;
+      }
+      .cfc-header, .edu-comp-header {
+        padding: 0.7rem 0.85rem;
+      }
+      .cfc-grid {
+        padding: 0.75rem 0.85rem;
+        gap: 0.65rem;
+      }
+      .cfc-card {
+        padding: 0.85rem;
+      }
+      .cfc-card-text {
+        font-size: 0.82rem;
+      }
+      .edu-cards-grid {
+        padding: 0.75rem 0.85rem;
+        gap: 0.65rem;
+      }
+      .edu-card {
+        padding: 0.85rem;
+      }
+      .edu-pyramid-container {
+        padding: 0.75rem 0.85rem;
+        gap: 0.55rem;
+      }
+      .edu-pyramid-tier {
+        padding: 0.85rem;
+      }
+      .edu-mnemonic-grid {
+        padding: 0.75rem 0.85rem;
+        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+        gap: 0.65rem;
+      }
+      .mnemonic-card {
+        padding: 0.75rem 0.6rem;
+      }
+      .edu-banner-warning {
+        margin: 0 0.85rem 0.85rem;
+        padding: 0.75rem 0.85rem;
+      }
+    }
+
     .quiz-opt-card {
       display: flex;
       align-items: flex-start;
@@ -2041,7 +2227,7 @@
   </main>
   </div>
 
-  <script src="aulas-data.js?v=20261106_20"></script>
+  <script src="aulas-data.js?v=20261107_01"></script>
   <script>
     const DB_SQL_URL = "https://ep-muddy-thunder-ac0eoxn3-pooler.sa-east-1.aws.neon.tech/sql";
     const DB_CONN_STR = "postgresql://neondb_owner:npg_l2mWY5HINrgG@ep-muddy-thunder-ac0eoxn3-pooler.sa-east-1.aws.neon.tech/neondb?sslmode=require";
