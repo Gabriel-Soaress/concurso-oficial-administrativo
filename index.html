@@ -387,27 +387,34 @@
     .ascii-diagram-wrap {
       margin: 0.9rem 0;
       border-radius: 0.9rem;
-      background-color: #0f172a;
-      color: #ffffff;
-      border: 1.5px solid #334155;
-      padding: 0.85rem 0.8rem;
+      background-color: var(--bg-elevated);
+      color: var(--text-primary);
+      border: 1.5px solid var(--border-strong);
+      border-left: 4px solid var(--brand);
+      padding: 0.9rem 1rem;
       max-width: 100%;
-      overflow-x: hidden;
-      box-shadow: inset 0 2px 4px rgba(0,0,0,0.25);
+      overflow-x: auto;
+      box-shadow: var(--shadow-sm);
     }
     html.dark .ascii-diagram-wrap {
-      background-color: #090d16;
-      border-color: #334155;
+      background-color: #182032;
+      border-color: #354463;
+      border-left-color: #818cf8;
+      color: #f8fafc;
     }
-    .ascii-diagram {
+    .ascii-diagram, .ascii-diagram code {
       margin: 0;
       font-family: 'JetBrains Mono', Consolas, Monaco, monospace;
-      font-size: clamp(0.68rem, 2.6vw, 0.92rem);
+      font-size: clamp(0.74rem, 2.6vw, 0.92rem);
       font-weight: 600;
-      line-height: 1.5;
+      line-height: 1.55;
       white-space: pre-wrap;
       word-break: break-word;
-      color: #f8fafc;
+      color: var(--text-primary) !important;
+      background: transparent !important;
+    }
+    html.dark .ascii-diagram, html.dark .ascii-diagram code {
+      color: #f8fafc !important;
     }
     .ascii-diagram.ascii-box {
       white-space: pre;
@@ -822,12 +829,27 @@
       gap: 0.85rem;
       padding: 1.15rem;
     }
-    .edu-cards-grid.grid-3 {
+    .edu-cards-grid.grid-2,
+    .edu-cards-grid.grid-3,
+    .edu-cards-grid.grid-4 {
       grid-template-columns: 1fr;
+    }
+    @media (min-width: 680px) {
+      .edu-cards-grid.grid-2 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .edu-cards-grid.grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
     @media (min-width: 820px) {
       .edu-cards-grid.grid-3 {
         grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    @media (min-width: 1100px) {
+      .edu-cards-grid.grid-4 {
+        grid-template-columns: repeat(4, 1fr);
       }
     }
     .edu-card {
@@ -1285,6 +1307,307 @@
       color: #f1f5f9;
     }
 
+    /* Prompt Banner p/ Testes Mentais */
+    .edu-prompt-banner {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      margin: 1rem 1.15rem 0;
+      padding: 0.9rem 1.15rem;
+      border-radius: 0.9rem;
+      background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(14, 165, 233, 0.08) 100%);
+      border: 1.5px solid rgba(99, 102, 241, 0.3);
+      font-size: 0.85rem;
+      line-height: 1.55;
+      color: var(--text-primary);
+    }
+    html.dark .edu-prompt-banner {
+      background: linear-gradient(135deg, rgba(99, 102, 241, 0.18) 0%, rgba(14, 165, 233, 0.14) 100%);
+      border-color: rgba(129, 140, 248, 0.4);
+      color: #f8fafc;
+    }
+
+    /* =========================================================
+       SISTEMA SOLAR NOMINAL (DIAGRAMA ORBITAL 360°)
+       ========================================================= */
+    .edu-orbital-stage {
+      position: relative;
+      padding: 1.5rem 1.15rem;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-template-areas:
+        "sat1 sat2"
+        "sun  sun"
+        "sat3 sat4";
+      gap: 1rem;
+      align-items: center;
+      justify-items: stretch;
+      overflow: hidden;
+      background: radial-gradient(circle at 50% 50%, rgba(245, 158, 11, 0.08) 0%, rgba(99, 102, 241, 0.04) 48%, transparent 75%);
+    }
+    html.dark .edu-orbital-stage {
+      background: radial-gradient(circle at 50% 50%, rgba(245, 158, 11, 0.14) 0%, rgba(99, 102, 241, 0.07) 50%, transparent 78%);
+    }
+    .orbit-ring {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 9999px;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .orbit-ring.ring-inner {
+      width: min(340px, 78%);
+      height: min(310px, 72%);
+      border: 2px dashed rgba(245, 158, 11, 0.38);
+      box-shadow: 0 0 25px rgba(245, 158, 11, 0.08) inset;
+    }
+    .orbit-ring.ring-outer {
+      width: min(560px, 94%);
+      height: min(460px, 90%);
+      border: 1.5px dashed rgba(99, 102, 241, 0.3);
+    }
+    html.dark .orbit-ring.ring-inner {
+      border-color: rgba(251, 191, 36, 0.42);
+    }
+    html.dark .orbit-ring.ring-outer {
+      border-color: rgba(129, 140, 248, 0.35);
+    }
+    .orbital-sun-wrap {
+      grid-area: sun;
+      position: relative;
+      z-index: 2;
+      display: flex;
+      justify-content: center;
+      margin: 0.25rem 0;
+    }
+    .orbital-sun {
+      width: 100%;
+      max-width: 430px;
+      border-radius: 1.35rem;
+      padding: 1.15rem 1.3rem;
+      border: 2.5px solid #f59e0b;
+      background: linear-gradient(135deg, rgba(245, 158, 11, 0.16) 0%, var(--bg-elevated) 60%, rgba(245, 158, 11, 0.1) 100%);
+      box-shadow: 0 0 32px -4px rgba(245, 158, 11, 0.32), 0 8px 20px -4px rgba(0, 0, 0, 0.08);
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.45rem;
+    }
+    html.dark .orbital-sun {
+      border-color: #fbbf24;
+      background: linear-gradient(135deg, rgba(245, 158, 11, 0.24) 0%, #1e293b 65%, rgba(245, 158, 11, 0.16) 100%);
+      box-shadow: 0 0 38px -4px rgba(251, 191, 36, 0.35), 0 10px 25px -4px rgba(0, 0, 0, 0.45);
+    }
+    .sun-core-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-family: var(--font-mono, monospace);
+      font-size: 0.68rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 0.2rem 0.7rem;
+      border-radius: 9999px;
+      background: rgba(245, 158, 11, 0.2);
+      color: #b45309;
+      border: 1px solid rgba(245, 158, 11, 0.4);
+    }
+    html.dark .sun-core-badge {
+      background: rgba(251, 191, 36, 0.22);
+      color: #fde68a;
+      border-color: rgba(251, 191, 36, 0.45);
+    }
+    .sun-title {
+      font-size: 1.1rem;
+      font-weight: 900;
+      color: var(--text-primary);
+      margin: 0;
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+    }
+    html.dark .sun-title {
+      color: #ffffff;
+    }
+    .sun-desc {
+      font-size: 0.8rem;
+      line-height: 1.5;
+      color: var(--text-secondary);
+      margin: 0;
+    }
+    html.dark .sun-desc {
+      color: #e2e8f0;
+    }
+    .sun-gravity-rays {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.35rem;
+      margin-top: 0.2rem;
+    }
+    .gravity-pill {
+      font-family: var(--font-mono, monospace);
+      font-size: 0.66rem;
+      font-weight: 800;
+      padding: 0.15rem 0.5rem;
+      border-radius: 0.4rem;
+      background: var(--bg-surface);
+      border: 1px solid rgba(245, 158, 11, 0.35);
+      color: var(--text-primary);
+    }
+    html.dark .gravity-pill {
+      background: #0f172a;
+      border-color: rgba(251, 191, 36, 0.4);
+      color: #fde68a;
+    }
+    .orbital-planet {
+      position: relative;
+      z-index: 2;
+      border-radius: 1rem;
+      padding: 0.95rem 1rem;
+      border: 1.5px solid var(--border);
+      background-color: var(--bg-elevated);
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      box-shadow: 0 4px 14px -2px rgba(0, 0, 0, 0.06);
+      transition: transform 0.18s ease;
+    }
+    .orbital-planet:hover {
+      transform: translateY(-3px);
+    }
+    .orbital-planet.sat-1 { grid-area: sat1; border-color: rgba(14, 165, 233, 0.4); background: linear-gradient(180deg, rgba(14, 165, 233, 0.07) 0%, var(--bg-elevated) 100%); }
+    .orbital-planet.sat-2 { grid-area: sat2; border-color: rgba(16, 185, 129, 0.4); background: linear-gradient(180deg, rgba(16, 185, 129, 0.07) 0%, var(--bg-elevated) 100%); }
+    .orbital-planet.sat-3 { grid-area: sat3; border-color: rgba(168, 85, 247, 0.4); background: linear-gradient(180deg, rgba(168, 85, 247, 0.07) 0%, var(--bg-elevated) 100%); }
+    .orbital-planet.sat-4 { grid-area: sat4; border-color: rgba(244, 63, 94, 0.4); background: linear-gradient(180deg, rgba(244, 63, 94, 0.07) 0%, var(--bg-elevated) 100%); }
+
+    html.dark .orbital-planet.sat-1 { border-color: rgba(56, 189, 248, 0.45); background: linear-gradient(180deg, rgba(14, 165, 233, 0.14) 0%, var(--bg-elevated) 100%); }
+    html.dark .orbital-planet.sat-2 { border-color: rgba(52, 211, 153, 0.45); background: linear-gradient(180deg, rgba(16, 185, 129, 0.14) 0%, var(--bg-elevated) 100%); }
+    html.dark .orbital-planet.sat-3 { border-color: rgba(192, 132, 252, 0.45); background: linear-gradient(180deg, rgba(168, 85, 247, 0.14) 0%, var(--bg-elevated) 100%); }
+    html.dark .orbital-planet.sat-4 { border-color: rgba(251, 113, 133, 0.45); background: linear-gradient(180deg, rgba(244, 63, 94, 0.14) 0%, var(--bg-elevated) 100%); }
+
+    .planet-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.4rem;
+    }
+    .planet-orb {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 1.9rem;
+      height: 1.9rem;
+      border-radius: 9999px;
+      font-size: 1rem;
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+    }
+    .planet-orbit-tag {
+      font-family: var(--font-mono, monospace);
+      font-size: 0.62rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      padding: 0.12rem 0.45rem;
+      border-radius: 0.35rem;
+      background: rgba(99, 102, 241, 0.12);
+      color: #4f46e5;
+    }
+    html.dark .planet-orbit-tag {
+      color: #a5b4fc;
+      background: rgba(99, 102, 241, 0.2);
+    }
+    .planet-title {
+      font-size: 0.9rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      margin: 0;
+    }
+    html.dark .planet-title {
+      color: #ffffff;
+    }
+    .planet-desc {
+      font-size: 0.78rem;
+      line-height: 1.45;
+      color: var(--text-secondary);
+      margin: 0;
+    }
+    html.dark .planet-desc {
+      color: #cbd5e1;
+    }
+
+    /* =========================================================
+       DIAGRAMA DE CAIXAS CONCÊNTRICAS (MATRIOSHKA / CONJUNTOS)
+       ========================================================= */
+    .edu-nested-wrap {
+      padding: 1.15rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+    }
+    .nested-box {
+      border-radius: 1rem;
+      padding: 1rem 1.1rem;
+      border: 2px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+    }
+    .nested-box.box-outer {
+      border-color: rgba(99, 102, 241, 0.45);
+      background: rgba(99, 102, 241, 0.04);
+    }
+    .nested-box.box-mid {
+      border-color: rgba(14, 165, 233, 0.45);
+      background: rgba(14, 165, 233, 0.05);
+      margin-left: 0.5rem;
+    }
+    .nested-box.box-inner {
+      border-color: rgba(16, 185, 129, 0.5);
+      background: rgba(16, 185, 129, 0.06);
+      margin-left: 0.5rem;
+    }
+    .nested-box.box-core {
+      border-color: rgba(245, 158, 11, 0.55);
+      background: rgba(245, 158, 11, 0.08);
+      margin-left: 0.5rem;
+    }
+    .nested-box.box-island {
+      border-color: rgba(244, 63, 94, 0.45);
+      background: rgba(244, 63, 94, 0.06);
+    }
+    html.dark .nested-box.box-outer { background: rgba(99, 102, 241, 0.09); border-color: rgba(129, 140, 248, 0.45); }
+    html.dark .nested-box.box-mid { background: rgba(14, 165, 233, 0.1); border-color: rgba(56, 189, 248, 0.45); }
+    html.dark .nested-box.box-inner { background: rgba(16, 185, 129, 0.11); border-color: rgba(52, 211, 153, 0.5); }
+    html.dark .nested-box.box-core { background: rgba(245, 158, 11, 0.13); border-color: rgba(251, 191, 36, 0.55); }
+    html.dark .nested-box.box-island { background: rgba(244, 63, 94, 0.11); border-color: rgba(251, 113, 133, 0.45); }
+
+    .nested-header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.45rem;
+    }
+    .nested-title {
+      font-size: 0.9rem;
+      font-weight: 800;
+      color: var(--text-primary);
+      margin: 0;
+    }
+    html.dark .nested-title { color: #ffffff; }
+    .nested-desc {
+      font-size: 0.8rem;
+      line-height: 1.5;
+      color: var(--text-secondary);
+      margin: 0;
+    }
+    html.dark .nested-desc { color: #cbd5e1; }
+
     /* Regras Mobile Específicas para Evitar Cortes e Cores Escuras */
     @media (max-width: 639px) {
       .cfc-pipeline, .edu-component {
@@ -1326,9 +1649,37 @@
       .mnemonic-card {
         padding: 0.75rem 0.6rem;
       }
-      .edu-banner-warning {
-        margin: 0 0.85rem 0.85rem;
+      .edu-banner-warning, .edu-prompt-banner {
+        margin: 0.75rem 0.85rem 0.5rem;
         padding: 0.75rem 0.85rem;
+      }
+      .edu-orbital-stage {
+        padding: 1rem 0.7rem;
+        gap: 0.65rem;
+      }
+      .orbital-sun {
+        padding: 0.9rem 0.85rem;
+      }
+      .sun-title {
+        font-size: 0.96rem;
+      }
+      .orbital-planet {
+        padding: 0.75rem 0.65rem;
+      }
+      .planet-title {
+        font-size: 0.8rem;
+      }
+      .planet-desc {
+        font-size: 0.72rem;
+      }
+      .edu-nested-wrap {
+        padding: 0.75rem 0.85rem;
+      }
+      .nested-box {
+        padding: 0.8rem;
+      }
+      .nested-box.box-mid, .nested-box.box-inner, .nested-box.box-core {
+        margin-left: 0.25rem;
       }
     }
 
@@ -2227,7 +2578,7 @@
   </main>
   </div>
 
-  <script src="aulas-data.js?v=20261107_01"></script>
+  <script src="aulas-data.js?v=20261107_02"></script>
   <script>
     const DB_SQL_URL = "https://ep-muddy-thunder-ac0eoxn3-pooler.sa-east-1.aws.neon.tech/sql";
     const DB_CONN_STR = "postgresql://neondb_owner:npg_l2mWY5HINrgG@ep-muddy-thunder-ac0eoxn3-pooler.sa-east-1.aws.neon.tech/neondb?sslmode=require";

@@ -52,21 +52,40 @@
 Para quem vai prestar concurso para **Oficial Administrativo**, compreender a diferença entre Estado, Governo e Administração Pública é o primeiro degrau obrigatório.  
 Na vida comum, as pessoas dizem: *"o governo aumentou o IPTU"*, *"o Estado não cuida da saúde"*, *"a prefeitura demorou para protocolar meu pedido"*, tratando tudo como sinônimo. Para a sua banca de concurso, são três conceitos jurídicos completamente distintos e complementares.
 
-```text
-┌────────────────────────────────────┐
-│ ESTADO (Pessoa Jurídica Soberana)  │
-│ Povo + Território + Soberania      │
-│  ┌──────────────────────────────┐  │
-│  │ GOVERNO (Cúpula Política)    │  │
-│  │ Temporário: Mandatos e Metas │  │
-│  │  ┌────────────────────────┐  │  │
-│  │  │ ADMINISTRAÇÃO PÚBLICA  │  │  │
-│  │  │ Máquina Técnica Fixa   │  │  │
-│  │  │ (Servidores e Órgãos)  │  │  │
-│  │  └────────────────────────┘  │  │
-│  └──────────────────────────────┘  │
-└────────────────────────────────────┘
-```
+<div class="edu-component my-6">
+  <div class="edu-comp-header">
+    <div class="edu-comp-title">
+      <span>🏛️</span>
+      <span>ARQUITETURA CONCÊNTRICA: ESTADO ⊃ GOVERNO ⊃ ADMINISTRAÇÃO PÚBLICA</span>
+    </div>
+    <span class="edu-comp-badge">Distinção Conceitual</span>
+  </div>
+  <div class="edu-nested-wrap">
+    <div class="nested-box box-outer">
+      <div class="nested-header">
+        <h4 class="nested-title">🌐 1. ESTADO (A Pessoa Jurídica Soberana)</h4>
+        <span class="card-badge">Permanente • Povo + Território + Soberania</span>
+      </div>
+      <p class="nested-desc">É a nação politicamente organizada (República Federativa do Brasil), dotada de personalidade jurídica própria para contrair direitos e obrigações.</p>
+
+      <div class="nested-box box-mid">
+        <div class="nested-header">
+          <h4 class="nested-title">🧭 2. GOVERNO (A Cúpula Política e Diretiva)</h4>
+          <span class="card-badge">Transitório • Mandatos Eleitorais e Metas</span>
+        </div>
+        <p class="nested-desc">É o comando político temporário (Presidente, Governador, Prefeito) que define as prioridades e políticas públicas durante o mandato.</p>
+
+        <div class="nested-box box-inner">
+          <div class="nested-header">
+            <h4 class="nested-title">⚙️ 3. ADMINISTRAÇÃO PÚBLICA (A Máquina Técnica Executora)</h4>
+            <span class="card-badge">Estável • Neutro • Servidores, Órgãos e Entidades</span>
+          </div>
+          <p class="nested-desc">É o aparelho técnico e permanente que executa os serviços públicos no dia a dia (Oficiais Administrativos, médicos, escolas, prefeituras), independentemente de quem ganhou a eleição.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 ---
 
@@ -145,21 +164,35 @@ No entanto, quando a Prefeitura precisa passar uma avenida por um terreno para l
 
 O mestre Celso Antônio Bandeira de Mello sintetizou esse regime em **duas grandes pedras de toque** (dois pilares indissociáveis):
 
-```text
-┌────────────────────────────────────┐
-│ BALANÇA DO REGIME ADMINISTRATIVO   │
-├────────────────────────────────────┤
-│ ⚖️ PILAR 1: PRERROGATIVAS          │
-│ (Supremacia do Interesse Público)  │
-│ -> Poderes especiais p/ agir pela  │
-│    coletividade.                   │
-├────────────────────────────────────┤
-│ ⚖️ PILAR 2: SUJEIÇÕES (LIMITES)    │
-│ (Indisponibilidade do Interesse)   │
-│ -> Amarras legais: o gestor não é  │
-│    dono da coisa pública.          │
-└────────────────────────────────────┘
-```
+<div class="edu-component my-6">
+  <div class="edu-comp-header">
+    <div class="edu-comp-title">
+      <span>⚖️</span>
+      <span>A BALANÇA DO REGIME JURÍDICO-ADMINISTRATIVO (PEDRAS DE TOQUE)</span>
+    </div>
+    <span class="edu-comp-badge">Prerrogativas vs. Sujeições</span>
+  </div>
+  <div class="edu-cards-grid grid-2">
+    <div class="edu-card card-indigo">
+      <div class="edu-card-top">
+        <span class="card-icon">🛡️</span>
+        <span class="card-badge">Pilar 01 • Poderes Especiais</span>
+      </div>
+      <h4 class="card-title">PRERROGATIVAS PÚBLICAS</h4>
+      <p class="card-role"><strong>Base: Supremacia do Interesse Público sobre o Privado</strong></p>
+      <p class="card-text">Confere à Administração poderes que o cidadão comum não tem (desapropriar imóveis, interditar estabelecimentos, aplicar multas) para proteger a coletividade.</p>
+    </div>
+    <div class="edu-card card-amber">
+      <div class="edu-card-top">
+        <span class="card-icon">🔒</span>
+        <span class="card-badge">Pilar 02 • Limites e Deveres</span>
+      </div>
+      <h4 class="card-title">SUJEIÇÕES (RESTRIÇÕES LEGAIS)</h4>
+      <p class="card-role"><strong>Base: Indisponibilidade do Interesse Público</strong></p>
+      <p class="card-text">Amarras que impedem o gestor de agir como dono do patrimônio público: obrigação de licitar antes de comprar, fazer concurso para contratar e prestar contas.</p>
+    </div>
+  </div>
+</div>
 
 ---
 
@@ -207,13 +240,42 @@ O **Artigo 37, *caput*, da Constituição Federal de 1988** é o dispositivo mai
 
 O mnemônico clássico forma a palavra **L I M P E**:
 
-```text
-  L ───► LEGALIDADE     (Só faz o que a lei manda ou autoriza)
-  I ───► IMPESSOALIDADE  (Finalidade pública; zero autopromoção ou favorecimento)
-  M ───► MORALIDADE      (Honestidade, probidade, boa-fé e padrões éticos)
-  P ───► PUBLICIDADE     (Transparência obrigatória; eficácia dos atos oficiais)
-  E ───► EFICIÊNCIA      (Qualidade, agilidade e otimização do dinheiro público)
-```
+<div class="edu-component my-6">
+  <div class="edu-comp-header">
+    <div class="edu-comp-title">
+      <span>🧠</span>
+      <span>OS 5 PRINCÍPIOS EXPRESSOS DA ADMINISTRAÇÃO PÚBLICA (ART. 37, CAPUT, CF/88)</span>
+    </div>
+    <span class="edu-comp-badge">Mnemônico LIMPE</span>
+  </div>
+  <div class="edu-mnemonic-grid">
+    <div class="mnemonic-card m-blue">
+      <div class="m-letter">L</div>
+      <h4 class="m-title">Legalidade</h4>
+      <p class="m-desc">O agente público <strong>só pode fazer o que a lei expressamente autoriza</strong> ou determina.</p>
+    </div>
+    <div class="mnemonic-card m-emerald">
+      <div class="m-letter">I</div>
+      <h4 class="m-title">Impessoalidade</h4>
+      <p class="m-desc">Tratamento isonômico a todos e <strong>proibição absoluta de promoção pessoal</strong> (Art. 37, § 1º).</p>
+    </div>
+    <div class="mnemonic-card m-purple">
+      <div class="m-letter">M</div>
+      <h4 class="m-title">Moralidade</h4>
+      <p class="m-desc">Exige <strong>honestidade, boa-fé, probidade</strong> e ética objetiva (Súmula Vinculante 13 - Nepotismo).</p>
+    </div>
+    <div class="mnemonic-card m-amber">
+      <div class="m-letter">P</div>
+      <h4 class="m-title">Publicidade</h4>
+      <p class="m-desc">Transparência como regra geral e <strong>requisito de eficácia</strong> dos atos oficiais.</p>
+    </div>
+    <div class="mnemonic-card m-rose">
+      <div class="m-letter">E</div>
+      <h4 class="m-title">Eficiência</h4>
+      <p class="m-desc">Incluído pela <strong>EC 19/1998</strong>: exige presteza, qualidade, rendimento e economia de recursos.</p>
+    </div>
+  </div>
+</div>
 
 ---
 
@@ -323,16 +385,49 @@ O agente público tem o dever de expor de forma clara **os motivos de fato** (o 
 No Brasil, a **Lei Federal nº 8.987/1995** (Lei Geral de Concessões e Permissões de Serviços Públicos) estabelece no seu Art. 6º que toda prestação de serviço público deve ser **adequada**.
 
 Um serviço é considerado adequado quando cumpre 8 requisitos fundamentais:
-```text
-  1. REGULARIDADE    ──► Prestado com constância e sem oscilações bruscas.
-  2. CONTINUIDADE    ──► Sem interrupções indevidas; pleno funcionamento.
-  3. EFICIÊNCIA      ──► Prestado com presteza, qualidade e menor custo.
-  4. SEGURANÇA       ──► Sem colocar em risco a vida ou patrimônio do usuário.
-  5. ATUALIDADE      ──► Utilização de técnicas e equipamentos modernos.
-  6. GENERALIDADE    ──► Oferecido a todos sem discriminações injustas.
-  7. CORTESIA        ──► Urbanidade, respeito e educação no atendimento humano.
-  8. MODICIDADE      ──► Tarifas módicas (preços justos e acessíveis à população).
-```
+<div class="edu-component my-6">
+  <div class="edu-comp-header">
+    <div class="edu-comp-title">
+      <span>⚡</span>
+      <span>OS 8 REQUISITOS DO SERVIÇO PÚBLICO ADEQUADO (ART. 6º, § 1º, LEI 8.987/95)</span>
+    </div>
+    <span class="edu-comp-badge">Serviço Adequado</span>
+  </div>
+  <div class="edu-cards-grid grid-4">
+    <div class="edu-card card-indigo">
+      <h4 class="card-title">1. Regularidade</h4>
+      <p class="card-text">Prestado com constância, padrão técnico e sem oscilações bruscas.</p>
+    </div>
+    <div class="edu-card card-emerald">
+      <h4 class="card-title">2. Continuidade</h4>
+      <p class="card-text">Sem interrupções indevidas (salvo urgência técnica ou inadimplemento com aviso prévio).</p>
+    </div>
+    <div class="edu-card card-sky">
+      <h4 class="card-title">3. Eficiência</h4>
+      <p class="card-text">Prestado com presteza, qualidade máxima e menor desperdício.</p>
+    </div>
+    <div class="edu-card card-rose">
+      <h4 class="card-title">4. Segurança</h4>
+      <p class="card-text">Sem colocar em risco a vida, a saúde ou o patrimônio dos usuários.</p>
+    </div>
+    <div class="edu-card card-purple">
+      <h4 class="card-title">5. Atualidade</h4>
+      <p class="card-text">Modernidade das técnicas, equipamentos, instalações e conservação.</p>
+    </div>
+    <div class="edu-card card-amber">
+      <h4 class="card-title">6. Generalidade</h4>
+      <p class="card-text">Universalidade: oferecido a todos os cidadãos sem discriminações.</p>
+    </div>
+    <div class="edu-card card-emerald">
+      <h4 class="card-title">7. Cortesia</h4>
+      <p class="card-text">Urbanidade, respeito e educação no atendimento ao público.</p>
+    </div>
+    <div class="edu-card card-indigo">
+      <h4 class="card-title">8. Modicidade</h4>
+      <p class="card-text">Tarifas módicas (preços justos e acessíveis ao bolso da população).</p>
+    </div>
+  </div>
+</div>
 
 ---
 

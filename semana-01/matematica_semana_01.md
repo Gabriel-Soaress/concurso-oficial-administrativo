@@ -63,23 +63,62 @@
 ### 1. Por que o Ser Humano Precisou Inventar os Números?
 Nenhum símbolo matemático nasceu pronto na natureza. Todos os conjuntos numéricos surgiram para responder a **problemas práticos de convivência, comércio, medição e administração de recursos**.
 
-```text
-┌────────────────────────────────────┐
-│ CONJUNTOS NUMÉRICOS REAIS (ℝ)      │
-│ ┌────────────────────────────────┐ │
-│ │ RACIONAIS (ℚ): 1/2, 0,75, 0,33…│ │
-│ │ ┌────────────────────────────┐ │ │
-│ │ │ INTEIROS (ℤ): ...-2, -1    │ │ │
-│ │ │ ┌────────────────────────┐ │ │ │
-│ │ │ │ NATURAIS (ℕ): 0, 1, 2… │ │ │ │
-│ │ │ └────────────────────────┘ │ │ │
-│ │ └────────────────────────────┘ │ │
-│ └────────────────────────────────┘ │
-│ ┌────────────────────────────────┐ │
-│ │ IRRACIONAIS (𝕀): √2, √3, π, e  │ │
-│ └────────────────────────────────┘ │
-└────────────────────────────────────┘
-```
+<div class="edu-component my-6">
+  <div class="edu-comp-header">
+    <div class="edu-comp-title">
+      <span>🔢</span>
+      <span>MAPA VISUAL DOS CONJUNTOS NUMÉRICOS — REAIS (ℝ = ℚ ∪ 𝕀)</span>
+    </div>
+    <span class="edu-comp-badge">Inclusão Hierárquica</span>
+  </div>
+  <div class="edu-nested-wrap">
+    <div class="nested-box box-outer">
+      <div class="nested-header">
+        <h4 class="nested-title">🌐 CONJUNTO DOS NÚMEROS REAIS (ℝ)</h4>
+        <span class="card-badge">União de Racionais + Irracionais</span>
+      </div>
+      <p class="nested-desc">Engloba todos os números que podem ser marcados na reta numérica contínua (positivos, negativos, zero, frações, dízimas e raízes não exatas).</p>
+
+      <div class="nested-box box-mid">
+        <div class="nested-header">
+          <h4 class="nested-title">➗ RACIONAIS (ℚ) — Podem virar Fração a/b</h4>
+          <span class="card-badge">Inteiros + Decimais Exatos + Dízimas Periódicas</span>
+        </div>
+        <p class="nested-desc">Exemplos: <code>1/2</code>, <code>-3/4</code>, <code>0,75</code>, <code>0,333...</code> (dízima periódica tem período repetitivo e geratriz).</p>
+
+        <div class="nested-box box-inner">
+          <div class="nested-header">
+            <h4 class="nested-title">➖ INTEIROS (ℤ) — Sem casas decimais</h4>
+            <span class="card-badge">Negativos + Zero + Positivos</span>
+          </div>
+          <p class="nested-desc">Exemplos: <code>... -3, -2, -1, 0, 1, 2, 3 ...</code></p>
+
+          <div class="nested-box box-core">
+            <div class="nested-header">
+              <h4 class="nested-title">🌱 NATURAIS (ℕ) — Contagem pura</h4>
+              <span class="card-badge">Inteiros Não Negativos</span>
+            </div>
+            <p class="nested-desc">Exemplos: <code>0, 1, 2, 3, 4, 5 ...</code> (Nota: <code>ℕ*</code> exclui o zero).</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="nested-box box-island">
+        <div class="nested-header">
+          <h4 class="nested-title">🌀 IRRACIONAIS (𝕀) — Decimais Infinitos e NÃO Periódicos</h4>
+          <span class="card-badge">Isolados dos Racionais (ℚ ∩ 𝕀 = ∅)</span>
+        </div>
+        <p class="nested-desc">Números que <strong>JAMAIS podem ser escritos na forma de fração</strong> de inteiros: raízes não exatas e constantes transcendentes.</p>
+        <div class="card-examples">
+          <span class="ex-tag">√2 ≈ 1,414213...</span>
+          <span class="ex-tag">√3 ≈ 1,732050...</span>
+          <span class="ex-tag">π ≈ 3,141592...</span>
+          <span class="ex-tag">e ≈ 2,718281...</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 ---
 

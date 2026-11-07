@@ -92,23 +92,89 @@ A gramática divide todas as palavras em **10 classes**. Na Semana 02, estudamos
 
 O **Substantivo** funciona como o **Sol** desse sistema: ele tem massa gravitacional própria, dá nome às coisas e atrai os outros quatro termos, chamados de **satélites** ou determinantes. Os satélites concordam obrigatoriamente com o substantivo em gênero e número:
 
-```text
-┌──────────────────────────────────┐
-│      SISTEMA SOLAR NOMINAL       │
-│                                  │
-│      ┌────────────────────┐      │
-│      │  SUBSTANTIVO (Sol) │      │
-│      │  Núcleo do Sentido │      │
-│      └─────────┬──────────┘      │
-│                │                 │
-│  ┌─────────────┴──────────────┐  │
-│  ▼ Satélites que Orbitam o Sol│  │
-│  • ARTIGO: Determina/Especifica  │
-│  • ADJETIVO: Caracteriza         │
-│  • NUMERAL: Quantifica/Ordena    │
-│  • PRONOME: Substitui/Acompanha  │
-└──────────────────────────────────┘
-```
+<div class="edu-component my-6">
+  <div class="edu-comp-header">
+    <div class="edu-comp-title">
+      <span>🪐</span>
+      <span>SISTEMA SOLAR NOMINAL — O SUBSTANTIVO E SEUS 4 SATÉLITES</span>
+    </div>
+    <span class="edu-comp-badge">Órbita de Concordância</span>
+  </div>
+  <div class="edu-orbital-stage">
+    <div class="orbit-ring ring-outer" aria-hidden="true"></div>
+    <div class="orbit-ring ring-inner" aria-hidden="true"></div>
+
+    <div class="orbital-planet sat-1">
+      <div class="planet-top">
+        <span class="planet-orb">🎯</span>
+        <span class="planet-orbit-tag">Satélite 01</span>
+      </div>
+      <h4 class="planet-title">ARTIGO</h4>
+      <p class="planet-desc"><strong>Determina ou indefini</strong> o ser, anunciando seu gênero e número antes mesmo de ele aparecer.</p>
+      <div class="card-examples">
+        <span class="ex-tag">o / a</span>
+        <span class="ex-tag">os / as</span>
+        <span class="ex-tag">um / uma</span>
+      </div>
+    </div>
+
+    <div class="orbital-planet sat-2">
+      <div class="planet-top">
+        <span class="planet-orb">🎨</span>
+        <span class="planet-orbit-tag">Satélite 02</span>
+      </div>
+      <h4 class="planet-title">ADJETIVO</h4>
+      <p class="planet-desc"><strong>Caracteriza e qualifica</strong> o substantivo, atribuindo qualidade, estado, origem ou aspecto.</p>
+      <div class="card-examples">
+        <span class="ex-tag">eficiente</span>
+        <span class="ex-tag">público</span>
+        <span class="ex-tag">urgente</span>
+      </div>
+    </div>
+
+    <div class="orbital-sun-wrap">
+      <div class="orbital-sun">
+        <span class="sun-core-badge">☀️ Estrela Central • Núcleo do Sentido</span>
+        <h3 class="sun-title">SUBSTANTIVO (O Sol)</h3>
+        <p class="sun-desc">Batiza os seres, objetos, ideias e ações. Possui <strong>massa gravitacional própria</strong>: os 4 satélites giram ao seu redor e são obrigados a concordar com ele em gênero e número.</p>
+        <div class="sun-gravity-rays">
+          <span class="gravity-pill">↖ Atrai o Artigo</span>
+          <span class="gravity-pill">↗ Atrai o Adjetivo</span>
+          <span class="gravity-pill">↙ Atrai o Numeral</span>
+          <span class="gravity-pill">↘ Atrai o Pronome</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="orbital-planet sat-3">
+      <div class="planet-top">
+        <span class="planet-orb">🔢</span>
+        <span class="planet-orbit-tag">Satélite 03</span>
+      </div>
+      <h4 class="planet-title">NUMERAL</h4>
+      <p class="planet-desc"><strong>Quantifica com exatidão</strong> ou indica a posição, multiplicação e fração do substantivo.</p>
+      <div class="card-examples">
+        <span class="ex-tag">dois</span>
+        <span class="ex-tag">primeiro</span>
+        <span class="ex-tag">dobro</span>
+      </div>
+    </div>
+
+    <div class="orbital-planet sat-4">
+      <div class="planet-top">
+        <span class="planet-orb">🔄</span>
+        <span class="planet-orbit-tag">Satélite 04</span>
+      </div>
+      <h4 class="planet-title">PRONOME</h4>
+      <p class="planet-desc"><strong>Substitui ou acompanha</strong> o nome para evitar repetições e apontar as pessoas do discurso.</p>
+      <div class="card-examples">
+        <span class="ex-tag">este</span>
+        <span class="ex-tag">nosso</span>
+        <span class="ex-tag">ele / que</span>
+      </div>
+    </div>
+  </div>
+</div>
 
 > **💡 Síntese Feynman (Classes Nominais):**  
 > *"O substantivo batiza o ser; o artigo avisa se ele é um conhecido íntimo ou qualquer um; o adjetivo pinta as suas características; o numeral conta as suas unidades; e o pronome entra em cena para substituir ou apontar esse ser sem cansar o leitor com repetições."*
@@ -168,22 +234,51 @@ Essa definição ingênua desaba na primeira questão de concurso! Você consegu
   3. **Qualidades / Defeitos:** *honestidade* (precisa de alguém honesto), *beleza, rapidez, pontualidade*.
   4. **Sentimentos / Sensações:** *amor, raiva, saudade, fome, calor, sede*.
 
-```text
-┌──────────────────────────────────┐
-│  TESTE MENTAL: PLANETA DESERTO   │
-├──────────────────────────────────┤
-│ "Se todos os seres vivos sumissem│
-│  da Terra agora, isso continuaria│
-│  existindo sozinho?"             │
-│                                  │
-│ • PEDRA / VENTO:                 │
-│   SIM ➔ SUBSTANTIVO CONCRETO     │
-│                                  │
-│ • JUSTIÇA / TRABALHO:            │
-│   NÃO (depende de alguém agir)   │
-│   ➔ SUBSTANTIVO ABSTRATO         │
-└──────────────────────────────────┘
-```
+<div class="edu-component my-6">
+  <div class="edu-comp-header">
+    <div class="edu-comp-title">
+      <span>🌍</span>
+      <span>TESTE MENTAL DO PLANETA DESERTO (CONCRETO vs. ABSTRATO)</span>
+    </div>
+    <span class="edu-comp-badge">Existência Autônoma</span>
+  </div>
+  <div class="edu-prompt-banner">
+    <span class="banner-icon">💡</span>
+    <div><strong>Pergunta-Gatilho de Prova:</strong> <em>"Se todos os seres vivos sumissem da Terra neste exato segundo, esse elemento continuaria existindo por conta própria (no mundo físico ou no imaginário)?"</em></div>
+  </div>
+  <div class="edu-cards-grid grid-2">
+    <div class="edu-card card-emerald">
+      <div class="edu-card-top">
+        <span class="card-icon">🪨</span>
+        <span class="card-badge">Resposta: SIM</span>
+      </div>
+      <h4 class="card-title">SUBSTANTIVO CONCRETO</h4>
+      <p class="card-text">Possui <strong>existência autônoma e independente</strong>. Não precisa que ninguém esteja agindo ou sentindo para existir (seja material, natural ou folclórico/espiritual).</p>
+      <div class="card-examples">
+        <span class="ex-tag">pedra</span>
+        <span class="ex-tag">vento / ar</span>
+        <span class="ex-tag">computador</span>
+        <span class="ex-tag">fantasma / fada</span>
+        <span class="ex-tag">Deus / alma</span>
+      </div>
+    </div>
+    <div class="edu-card card-purple">
+      <div class="edu-card-top">
+        <span class="card-icon">💭</span>
+        <span class="card-badge">Resposta: NÃO</span>
+      </div>
+      <h4 class="card-title">SUBSTANTIVO ABSTRATO</h4>
+      <p class="card-text"><strong>Depende de um ser vivo</strong> para existir (ações, estados, qualidades e sentimentos). Sem alguém que pratique a ação ou sinta, ele desaparece.</p>
+      <div class="card-examples">
+        <span class="ex-tag">justiça</span>
+        <span class="ex-tag">trabalho / leitura</span>
+        <span class="ex-tag">honestidade</span>
+        <span class="ex-tag">saúde / velhice</span>
+        <span class="ex-tag">saudade / amor</span>
+      </div>
+    </div>
+  </div>
+</div>
 
 ---
 
@@ -396,23 +491,53 @@ Essa é uma das distinções conceituais mais importantes e frequentes da língu
 ### 3. A Tríplice Função da Palavra "A": Artigo, Pronome ou Preposição?
 No português, a palavra **"a"** desempenha três funções morfológicas completamente distintas. Para nunca mais confundi-las, analise a função sintática e aplique o teste de substituição prático:
 
-```text
-┌──────────────────────────────────┐
-│  TRÍPLICE IDENTIDADE DO "A"      │
-├──────────────────────────────────┤
-│ 1. ARTIGO DEFINIDO               │
-│ • Acompanha substantivo feminino │
-│ • Teste: no masculino vira "o"   │
-├──────────────────────────────────┤
-│ 2. PRONOME OBLÍQUO               │
-│ • Substitui nome já citado       │
-│ • Teste: equivale a "ela"        │
-├──────────────────────────────────┤
-│ 3. PREPOSIÇÃO                    │
-│ • Liga palavras (invariável)     │
-│ • Teste: no masc. fica "a"/"ao"  │
-└──────────────────────────────────┘
-```
+<div class="edu-component my-6">
+  <div class="edu-comp-header">
+    <div class="edu-comp-title">
+      <span>🔍</span>
+      <span>A TRÍPLICE IDENTIDADE DA PALAVRA "A" EM PROVAS</span>
+    </div>
+    <span class="edu-comp-badge">Diferenciação Morfológica</span>
+  </div>
+  <div class="edu-cards-grid grid-3">
+    <div class="edu-card card-indigo">
+      <div class="edu-card-top">
+        <span class="card-icon">📌</span>
+        <span class="card-badge">1. Determinante</span>
+      </div>
+      <h4 class="card-title">ARTIGO DEFINIDO</h4>
+      <p class="card-text">Vem <strong>antes de um substantivo feminino</strong>, determinando-o e concordando com ele.</p>
+      <div class="card-levels">
+        <div class="level-row"><span>Teste</span> <strong>No masc. vira "O"</strong></div>
+        <div class="level-row"><span>Exemplo</span> <strong>Assinei a portaria</strong></div>
+      </div>
+    </div>
+    <div class="edu-card card-emerald">
+      <div class="edu-card-top">
+        <span class="card-icon">🔄</span>
+        <span class="card-badge">2. Substituto</span>
+      </div>
+      <h4 class="card-title">PRONOME OBLÍQUO</h4>
+      <p class="card-text">Fica <strong>ao lado de um verbo</strong>, substituindo um nome feminino já dito (objeto direto).</p>
+      <div class="card-levels">
+        <div class="level-row"><span>Teste</span> <strong>Equivale a "ELA"</strong></div>
+        <div class="level-row"><span>Exemplo</span> <strong>Eu a encontrei ontem</strong></div>
+      </div>
+    </div>
+    <div class="edu-card card-amber">
+      <div class="edu-card-top">
+        <span class="card-icon">🔗</span>
+        <span class="card-badge">3. Conector</span>
+      </div>
+      <h4 class="card-title">PREPOSIÇÃO</h4>
+      <p class="card-text">Apenas <strong>liga duas palavras</strong> (exigida por um verbo ou nome) ou antecede verbo no infinitivo. É invariável.</p>
+      <div class="card-levels">
+        <div class="level-row"><span>Teste</span> <strong>No masc. vira "A" ou "AO"</strong></div>
+        <div class="level-row"><span>Exemplo</span> <strong>Começou a trabalhar</strong></div>
+      </div>
+    </div>
+  </div>
+</div>
 
 #### Exemplos com Análise Detalhada de Cada Caso:
 
@@ -541,19 +666,41 @@ Em redações oficiais e em textos de alto nível, a maior virtude de um escrito
 
 Dois termos técnicos que aparecem com frequência no estudo da coesão são **anáfora** e **catáfora**. Vamos desmistificá-los pela sua lógica natural:
 
-```text
-┌──────────────────────────────────┐
-│   LINHA DO TEMPO DA LEITURA      │
-├──────────────────────────────────┤
-│ ◄── ANÁFORA (Olha p/ trás)       │
-│ [Termo Anterior] ◄── [Pronome]   │
-│ Resgata o que já foi dito antes  │
-├──────────────────────────────────┤
-│ ──► CATÁFORA (Olha p/ frente)    │
-│ [Pronome] ──► [Termo Seguinte]   │
-│ Anuncia o que vai ser dito após  │
-└──────────────────────────────────┘
-```
+<div class="edu-component my-6">
+  <div class="edu-comp-header">
+    <div class="edu-comp-title">
+      <span>🧭</span>
+      <span>DIREÇÃO DA COESÃO TEXTUAL — ANÁFORA vs. CATÁFORA</span>
+    </div>
+    <span class="edu-comp-badge">Referenciação</span>
+  </div>
+  <div class="edu-cards-grid grid-2">
+    <div class="edu-card card-indigo">
+      <div class="edu-card-top">
+        <span class="card-icon">⏪</span>
+        <span class="card-badge">Olha para Trás (Passado do Texto)</span>
+      </div>
+      <h4 class="card-title">ANÁFORA (Retomada)</h4>
+      <p class="card-text">O pronome aponta para a esquerda, <strong>resgatando um termo que já foi escrito anteriormente</strong> no texto.</p>
+      <div class="card-levels">
+        <div class="level-row"><span>Esquema</span> <strong>[Termo Anterior] ◄── [Pronome]</strong></div>
+        <div class="level-row"><span>Pronomes</span> <strong>ESSE, ESSA, ISSO, ELE, O/A</strong></div>
+      </div>
+    </div>
+    <div class="edu-card card-amber">
+      <div class="edu-card-top">
+        <span class="card-icon">⏩</span>
+        <span class="card-badge">Olha para Frente (Futuro do Texto)</span>
+      </div>
+      <h4 class="card-title">CATÁFORA (Antecipação)</h4>
+      <p class="card-text">O pronome aponta para a direita, <strong>anunciando algo que ainda vai ser revelado</strong> logo adiante (comum antes de dois-pontos).</p>
+      <div class="card-levels">
+        <div class="level-row"><span>Esquema</span> <strong>[Pronome] ──► [Termo Seguinte]</strong></div>
+        <div class="level-row"><span>Pronomes</span> <strong>ESTE, ESTA, ISTO</strong></div>
+      </div>
+    </div>
+  </div>
+</div>
 
 #### A) Função Anafórica (O Olhar para Trás):
 Ocorre quando o pronome **resgata e retoma uma palavra ou ideia que já foi escrita anteriormente** no texto. Ele impede que você precise repetir o nome todo de novo:
@@ -578,26 +725,56 @@ Nas provas do Instituto ACCESS e da Fundatec, as alternativas costumam trazer ma
 ### 3. O Emprego Rigoroso dos Pronomes Demonstrativos
 Os pronomes demonstrativos (*este, esse, aquele* e suas variações) indicam a posição de seres em relação a três dimensões: **no espaço físico**, **na linha do tempo** e **dentro do próprio texto**.
 
-```text
-┌──────────────────────────────────┐
-│   ESTE vs. ESSE vs. AQUELE       │
-├──────────────────────────────────┤
-│ 1. ESTE / ESTA / ISTO            │
-│ • Espaço: Perto de quem fala (1ª)│
-│ • Tempo: Presente ("Neste ano")  │
-│ • Texto: CATÁFORA (vai dizer)    │
-├──────────────────────────────────┤
-│ 2. ESSE / ESSA / ISSO            │
-│ • Espaço: Perto de quem ouve (2ª)│
-│ • Tempo: Passado/futuro próximo  │
-│ • Texto: ANÁFORA (já foi dito)   │
-├──────────────────────────────────┤
-│ 3. AQUELE / AQUELA / AQUILO      │
-│ • Espaço: Longe de ambos (3ª)    │
-│ • Tempo: Passado remoto/distante │
-│ • Texto: Retoma o termo distante │
-└──────────────────────────────────┘
-```
+<div class="edu-component my-6">
+  <div class="edu-comp-header">
+    <div class="edu-comp-title">
+      <span>📍</span>
+      <span>PAINEL DEFINITIVO: ESTE vs. ESSE vs. AQUELE</span>
+    </div>
+    <span class="edu-comp-badge">Espaço • Tempo • Texto</span>
+  </div>
+  <div class="edu-cards-grid grid-3">
+    <div class="edu-card card-emerald">
+      <div class="edu-card-top">
+        <span class="card-icon">🙋‍♂️</span>
+        <span class="card-badge">1ª Pessoa (Aqui)</span>
+      </div>
+      <h4 class="card-title">ESTE / ESTA / ISTO</h4>
+      <div class="card-levels">
+        <div class="level-row"><span>Espaço</span> <strong>Perto de quem fala</strong></div>
+        <div class="level-row"><span>Tempo</span> <strong>Presente atual ("Neste ano")</strong></div>
+        <div class="level-row"><span>Texto</span> <strong>CATÁFORA (vai anunciar)</strong></div>
+        <div class="level-row"><span>Retomada</span> <strong>O último termo citado</strong></div>
+      </div>
+    </div>
+    <div class="edu-card card-indigo">
+      <div class="edu-card-top">
+        <span class="card-icon">🗣️</span>
+        <span class="card-badge">2ª Pessoa (Aí)</span>
+      </div>
+      <h4 class="card-title">ESSE / ESSA / ISSO</h4>
+      <div class="card-levels">
+        <div class="level-row"><span>Espaço</span> <strong>Perto de quem ouve</strong></div>
+        <div class="level-row"><span>Tempo</span> <strong>Passado/futuro próximos</strong></div>
+        <div class="level-row"><span>Texto</span> <strong>ANÁFORA (já foi dito)</strong></div>
+        <div class="level-row"><span>Uso Geral</span> <strong>Retoma ideias anteriores</strong></div>
+      </div>
+    </div>
+    <div class="edu-card card-purple">
+      <div class="edu-card-top">
+        <span class="card-icon">🔭</span>
+        <span class="card-badge">3ª Pessoa (Lá)</span>
+      </div>
+      <h4 class="card-title">AQUELE / AQUELA / AQUILO</h4>
+      <div class="card-levels">
+        <div class="level-row"><span>Espaço</span> <strong>Longe de ambos</strong></div>
+        <div class="level-row"><span>Tempo</span> <strong>Passado remoto/distante</strong></div>
+        <div class="level-row"><span>Texto</span> <strong>Retoma o 1º termo (distante)</strong></div>
+        <div class="level-row"><span>Contraste</span> <strong>Opõe-se a "este" (último)</strong></div>
+      </div>
+    </div>
+  </div>
+</div>
 
 #### A Diferenciação entre Dois Termos Citados no Texto:
 Quando você cita dois elementos em uma frase e quer retomar ambos sem repetir seus nomes:
@@ -709,22 +886,89 @@ As palavras não são blocos sólidos e indivisíveis. Elas são montadas a part
 
 Conhecer a anatomia de uma palavra permite decifrar o sentido de qualquer vocábulo novo que apareça no edital ou na prova:
 
-```text
-┌──────────────────────────────────┐
-│  ELEMENTOS MÓRFICOS DA PALAVRA   │
-├──────────────────────────────────┤
-│ 1. RADICAL: Raiz de sentido base │
-│ 2. VOGAL TEMÁTICA: Liga ao tema  │
-│ 3. TEMA: Radical + Vogal Temática│
-│ 4. DESINÊNCIAS: Flexões (gênero, │
-│    número, modo/tempo, pessoa)   │
-│ 5. AFIXOS: Criam novas palavras  │
-│    • Prefixo (antes do radical)  │
-│    • Sufixo (depois do radical)  │
-│ 6. VOGAL/CONSOANTE DE LIGAÇÃO:   │
-│    Apenas p/ eufonia (bom som)   │
-└──────────────────────────────────┘
-```
+<div class="edu-component my-6">
+  <div class="edu-comp-header">
+    <div class="edu-comp-title">
+      <span>🧬</span>
+      <span>ANATOMIA DA PALAVRA — OS 6 ELEMENTOS MÓRFICOS</span>
+    </div>
+    <span class="edu-comp-badge">Estrutura Interna</span>
+  </div>
+  <div class="edu-cards-grid grid-3">
+    <div class="edu-card card-indigo">
+      <div class="edu-card-top">
+        <span class="card-icon">🌱</span>
+        <span class="card-badge">1. Núcleo</span>
+      </div>
+      <h4 class="card-title">RADICAL</h4>
+      <p class="card-text">A raiz que guarda o <strong>sentido básico</strong> comum a toda a família de palavras.</p>
+      <div class="card-examples">
+        <span class="ex-tag">pedr- (pedra)</span>
+        <span class="ex-tag">cant- (cantar)</span>
+      </div>
+    </div>
+    <div class="edu-card card-sky">
+      <div class="edu-card-top">
+        <span class="card-icon">🔗</span>
+        <span class="card-badge">2. Elo</span>
+      </div>
+      <h4 class="card-title">VOGAL TEMÁTICA</h4>
+      <p class="card-text">Vogal que se une ao radical para preparar a palavra e indicar a conjugação verbal (1ª <strong>-a</strong>, 2ª <strong>-e</strong>, 3ª <strong>-i</strong>).</p>
+      <div class="card-examples">
+        <span class="ex-tag">cant-A-r</span>
+        <span class="ex-tag">vend-E-r</span>
+      </div>
+    </div>
+    <div class="edu-card card-emerald">
+      <div class="edu-card-top">
+        <span class="card-icon">🧱</span>
+        <span class="card-badge">3. Base Pronta</span>
+      </div>
+      <h4 class="card-title">TEMA</h4>
+      <p class="card-text">É a soma do <strong>Radical + Vogal Temática</strong>, pronta para receber as desinências.</p>
+      <div class="card-examples">
+        <span class="ex-tag">canta-</span>
+        <span class="ex-tag">vende-</span>
+      </div>
+    </div>
+    <div class="edu-card card-amber">
+      <div class="edu-card-top">
+        <span class="card-icon">⚙️</span>
+        <span class="card-badge">4. Flexões</span>
+      </div>
+      <h4 class="card-title">DESINÊNCIAS</h4>
+      <p class="card-text">Terminações que indicam <strong>gênero e número</strong> (nominais) ou <strong>modo/tempo e número/pessoa</strong> (verbais).</p>
+      <div class="card-examples">
+        <span class="ex-tag">menina-s</span>
+        <span class="ex-tag">cantá-va-mos</span>
+      </div>
+    </div>
+    <div class="edu-card card-purple">
+      <div class="edu-card-top">
+        <span class="card-icon">✨</span>
+        <span class="card-badge">5. Derivação</span>
+      </div>
+      <h4 class="card-title">AFIXOS (Prefixo / Sufixo)</h4>
+      <p class="card-text">Peças que criam novas palavras: <strong>Prefixo</strong> vem antes do radical; <strong>Sufixo</strong> vem depois.</p>
+      <div class="card-examples">
+        <span class="ex-tag">IN-feliz-MENTE</span>
+        <span class="ex-tag">RE-fazer</span>
+      </div>
+    </div>
+    <div class="edu-card card-rose">
+      <div class="edu-card-top">
+        <span class="card-icon">🎵</span>
+        <span class="card-badge">6. Eufonia</span>
+      </div>
+      <h4 class="card-title">VOGAL / CONS. DE LIGAÇÃO</h4>
+      <p class="card-text">Entram apenas para <strong>facilitar a pronúncia</strong> (bom som), sem acrescentar sentido novo.</p>
+      <div class="card-examples">
+        <span class="ex-tag">gas-Ô-metro</span>
+        <span class="ex-tag">cafe-T-eira</span>
+      </div>
+    </div>
+  </div>
+</div>
 
 #### Análise Detalhada de Cada Elemento:
 1. **Radical:** É o núcleo semântico irredutível da família de palavras cognatas (palavras irmãs que vêm da mesma raiz):
@@ -782,19 +1026,45 @@ Ocorre quando o prefixo e o sufixo são agregados ao radical **ao mesmo tempo e 
   - *des-alm-ado* (não existe "almado" nem "desalma").
   - *es-clare-cer* (não existe "clarecer").
 
-```text
-┌──────────────────────────────────┐
-│ TESTE DO DESCARTE (PARASSÍNTESE) │
-├──────────────────────────────────┤
-│ 1. Tape o prefixo: o que sobrou  │
-│    existe sozinho no dicionário? │
-│                                  │
-│ • SIM, existe sozinho:           │
-│   ➔ Derivação PREFIXAL E SUFIXAL │
-│ • NÃO existe sozinho:            │
-│   ➔ Derivação PARASSINTÉTICA     │
-└──────────────────────────────────┘
-```
+<div class="edu-component my-6">
+  <div class="edu-comp-header">
+    <div class="edu-comp-title">
+      <span>🧪</span>
+      <span>TESTE DO DESCARTE — PREFIXAL E SUFIXAL vs. PARASSINTÉTICA</span>
+    </div>
+    <span class="edu-comp-badge">Método Infalível</span>
+  </div>
+  <div class="edu-prompt-banner">
+    <span class="banner-icon">👆</span>
+    <div><strong>Como fazer na prova:</strong> Tape o prefixo com o dedo e leia apenas o que sobrou (<em>Radical + Sufixo</em>). Essa palavra que sobrou existe sozinha no dicionário da língua portuguesa?</div>
+  </div>
+  <div class="edu-cards-grid grid-2">
+    <div class="edu-card card-sky">
+      <div class="edu-card-top">
+        <span class="card-icon">✅</span>
+        <span class="card-badge">SIM, existe sozinha!</span>
+      </div>
+      <h4 class="card-title">DERIVAÇÃO PREFIXAL E SUFIXAL</h4>
+      <p class="card-text">O prefixo e o sufixo são <strong>independentes</strong> (entraram em momentos separados). Se tirar um, a palavra continua viva.</p>
+      <div class="card-examples">
+        <span class="ex-tag">in + felizmente (existe "felizmente")</span>
+        <span class="ex-tag">des + lealdade (existe "lealdade")</span>
+      </div>
+    </div>
+    <div class="edu-card card-rose">
+      <div class="edu-card-top">
+        <span class="card-icon">💍</span>
+        <span class="card-badge">NÃO existe sozinha!</span>
+      </div>
+      <h4 class="card-title">DERIVAÇÃO PARASSINTÉTICA</h4>
+      <p class="card-text">O prefixo e o sufixo entraram <strong>juntos e simultaneamente</strong>. Se tirar o prefixo, a palavra morre.</p>
+      <div class="card-examples">
+        <span class="ex-tag">a + noite + ecer (não existe "noitecer")</span>
+        <span class="ex-tag">en + triste + ecer (não existe "tristecer")</span>
+      </div>
+    </div>
+  </div>
+</div>
 
 #### E) Derivação Regressiva (Deverbal)
 Ocorre quando reduzimos uma palavra original. Quase sempre consiste na transformação de um **verbo que expressa ação** em um **substantivo abstrato** terminado nas vogais temáticas atonas **-o, -a ou -e**:
@@ -857,18 +1127,43 @@ A língua é um organismo vivo que cria palavras por outros mecanismos complemen
 ### 1. A Lógica Central do Plural dos Compostos
 O plural de palavras compostas é um dos assuntos mais temidos pelos candidatos, mas ele obedece a uma **regra de ouro puramente lógica**:
 
-```text
-┌──────────────────────────────────┐
-│  PLURAL DOS COMPOSTOS: REGRA     │
-├──────────────────────────────────┤
-│ Qual a classe de cada palavra?   │
-│                                  │
-│ • VARIÁVEIS (Subst., Adj., Num.):│
-│   ➔ VÃO PARA O PLURAL (+S)       │
-│ • INVARIÁVEIS (Verbo, Adv., Pref)│
-│   ➔ FICAM NO SINGULAR            │
-└──────────────────────────────────┘
-```
+<div class="edu-component my-6">
+  <div class="edu-comp-header">
+    <div class="edu-comp-title">
+      <span>⚖️</span>
+      <span>REGRA-MATRIZ DO PLURAL DOS SUBSTANTIVOS COMPOSTOS</span>
+    </div>
+    <span class="edu-comp-badge">Quem varia vs. Quem congela</span>
+  </div>
+  <div class="edu-cards-grid grid-2">
+    <div class="edu-card card-emerald">
+      <div class="edu-card-top">
+        <span class="card-icon">📈</span>
+        <span class="card-badge">Classes Variáveis</span>
+      </div>
+      <h4 class="card-title">VÃO PARA O PLURAL (+S)</h4>
+      <p class="card-text"><strong>Substantivo, Adjetivo, Numeral e Pronome</strong> possuem plural próprio e flexionam normalmente dentro do composto.</p>
+      <div class="card-examples">
+        <span class="ex-tag">couves-flores (Subst + Subst)</span>
+        <span class="ex-tag">obras-primas (Subst + Adj)</span>
+        <span class="ex-tag">segundas-feiras (Num + Subst)</span>
+      </div>
+    </div>
+    <div class="edu-card card-amber">
+      <div class="edu-card-top">
+        <span class="card-icon">🧊</span>
+        <span class="card-badge">Classes Invariáveis</span>
+      </div>
+      <h4 class="card-title">FICAM NO SINGULAR (Congeladas)</h4>
+      <p class="card-text"><strong>Verbo, Advérbio, Preposição e Prefixo</strong> nunca recebem "-s" de plural quando formam substantivos compostos.</p>
+      <div class="card-examples">
+        <span class="ex-tag">guarda-chuvas (Verbo + Subst)</span>
+        <span class="ex-tag">abaixo-assinados (Adv + Adj)</span>
+        <span class="ex-tag">ex-diretores (Pref + Subst)</span>
+      </div>
+    </div>
+  </div>
+</div>
 
 Por que o verbo não flexiona no plural de substantivos compostos?  
 Pense na lógica: o plural de nomes em português é feito adicionando a letra **-s** de desinência nominal. Verbos não aceitam '-s' de nome! O verbo expressa ação, e quando vira peça de uma palavra composta, atua como elemento invariável.

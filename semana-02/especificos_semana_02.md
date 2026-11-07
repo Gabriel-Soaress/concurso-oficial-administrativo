@@ -32,35 +32,65 @@ Para você nunca mais se perder nem achar este assunto abstrato, vamos usar uma 
 
 Pense na **Prefeitura Municipal** como se fosse a **sua própria casa**:
 
-```text
-┌────────────────────────────────────────────────────────────────────────┐
-│                        A GRANDE FAMÍLIA ESTATAL                        │
-├────────────────────────────────────────────────────────────────────────┤
-│ 🏠 1. A SUA CASA (Administração Direta):                                │
-│    É o Município em si. Todas as contas estão no mesmo nome (mesmo     │
-│    CNPJ). O Prefeito é o chefe da casa.                                │
-│                                                                        │
-│ 🚪 2. OS CÔMODOS DA CASA (Desconcentração = Órgãos):                   │
-│    Cozinha, quarto, sala, garagem. Você dividiu a casa em cômodos      │
-│    para organizar a vida, mas a casa continua sendo UMA SÓ.            │
-│    -> Exemplos: Secretaria de Saúde, de Obras, Setor de Protocolo.     │
-│    -> Regra: Quem está no quarto obedece ao chefe da casa (HIERARQUIA).│
-│                                                                        │
-│ 🏢 3. UMA FILIAL COM CNPJ PRÓPRIO (Descentralização por Outorga):      │
-│    A casa ficou pequena para cuidar de água e esgoto. O Município      │
-│    cria por lei uma entidade separada, com sede própria e conta        │
-│    bancária própria (a Administração Indireta - FASE).                 │
-│    -> Exemplos: SAAE (Autarquia de água), IPREV (Aposentadorias).      │
-│    -> Regra: É outra pessoa jurídica. Não há hierarquia, só controle!  │
-│                                                                        │
-│ 🛵 4. O ENTREGADOR DE FORA (Descentralização por Delegação):           │
-│    Para entregar as compras, a casa não compra motos; ela contrata     │
-│    uma empresa privada por contrato para fazer a entrega.              │
-│    -> Exemplos: Concessionária de Ônibus Coletivo, Coleta de Lixo.     │
-│    -> Regra: O serviço continua sendo público, mas quem opera é o      │
-│              empresário particular sob fiscalização da Prefeitura.     │
-└────────────────────────────────────────────────────────────────────────┘
-```
+<div class="edu-component my-6">
+  <div class="edu-comp-header">
+    <div class="edu-comp-title">
+      <span>🏛️</span>
+      <span>ANALOGIA MESTRA: A GRANDE FAMÍLIA ESTATAL</span>
+    </div>
+    <span class="edu-comp-badge">Organização Administrativa</span>
+  </div>
+  <div class="edu-cards-grid grid-2">
+    <div class="edu-card card-indigo">
+      <div class="edu-card-top">
+        <span class="card-icon">🏠</span>
+        <span class="card-badge">1. Administração Direta</span>
+      </div>
+      <h4 class="card-title">A SUA CASA (Ente Político)</h4>
+      <p class="card-text">É o Município em si (União, Estado, DF ou Município). Todas as contas estão sob o <strong>mesmo CNPJ central</strong>, chefiado pelo Prefeito.</p>
+      <div class="card-levels">
+        <div class="level-row"><span>Personalidade</span> <strong>Pessoa Jurídica de Dir. Público</strong></div>
+        <div class="level-row"><span>Exemplo</span> <strong>Município de Birigui/SP</strong></div>
+      </div>
+    </div>
+    <div class="edu-card card-sky">
+      <div class="edu-card-top">
+        <span class="card-icon">🚪</span>
+        <span class="card-badge">2. Desconcentração (Órgãos)</span>
+      </div>
+      <h4 class="card-title">OS CÔMODOS DA CASA</h4>
+      <p class="card-text">Cozinha, sala e quartos: você dividiu a casa internamente para organizar as tarefas, mas <strong>a casa continua sendo uma só</strong> (sem CNPJ próprio).</p>
+      <div class="card-levels">
+        <div class="level-row"><span>Vínculo</span> <strong>HIERARQUIA e Subordinação</strong></div>
+        <div class="level-row"><span>Exemplos</span> <strong>Secretarias, Diretorias, Protocolo</strong></div>
+      </div>
+    </div>
+    <div class="edu-card card-emerald">
+      <div class="edu-card-top">
+        <span class="card-icon">🏢</span>
+        <span class="card-badge">3. Descentralização por Outorga</span>
+      </div>
+      <h4 class="card-title">UMA FILIAL COM CNPJ PRÓPRIO</h4>
+      <p class="card-text">O Município cria por lei uma entidade separada, com <strong>CNPJ, sede e patrimônio próprios</strong>: nasce a Administração Indireta (FASE).</p>
+      <div class="card-levels">
+        <div class="level-row"><span>Vínculo</span> <strong>CONTROLE FINALÍSTICO (Sem hierarquia!)</strong></div>
+        <div class="level-row"><span>Exemplos</span> <strong>Autarquias (SAAE, BIRIGUIPREV), EP, SEM</strong></div>
+      </div>
+    </div>
+    <div class="edu-card card-amber">
+      <div class="edu-card-top">
+        <span class="card-icon">🛵</span>
+        <span class="card-badge">4. Descentralização por Delegação</span>
+      </div>
+      <h4 class="card-title">O ENTREGADOR CONTRATADO</h4>
+      <p class="card-text">A Prefeitura mantém a titularidade do serviço, mas transfere apenas a <strong>execução por contrato</strong> (concessão ou permissão) a uma empresa particular.</p>
+      <div class="card-levels">
+        <div class="level-row"><span>Vínculo</span> <strong>Contrato + Fiscalização Tarifária</strong></div>
+        <div class="level-row"><span>Exemplos</span> <strong>Ônibus Coletivo, Pedágios, Energia</strong></div>
+      </div>
+    </div>
+  </div>
+</div>
 
 ### 🎯 Os 4 Gatilhos de Ouro para a Prova:
 
@@ -280,43 +310,80 @@ Percebeu a sutileza gramatical e jurídica?
 
 ### O Raio-X Detalhado das 4 Entidades
 
-```text
-┌────────────────────────────────────────────────────────────────────────┐
-│           ANATOMIA DAS 4 ENTIDADES DA ADMINISTRAÇÃO INDIRETA           │
-│           (Todas possuem Personalidade Jurídica e Patrimônio Próprio)  │
-└───────┬──────────────────┬─────────────────────┬───────────────────────┘
-        │                  │                     │                       │
-        ▼                  ▼                     ▼                       ▼
-┌──────────────┐   ┌───────────────┐     ┌───────────────┐       ┌───────────────┐
-│  AUTARQUIA   │   │   FUNDAÇÃO    │     │EMPRESA PÚBLICA│       │SOC. ECONOMIA  │
-│              │   │    PÚBLICA    │     │     (EP)      │       │  MISTA (SEM)  │
-├──────────────┤   ├───────────────┤     ├───────────────┤       ├───────────────┤
-│ Personalid.: │   │ Personalid.:  │     │ Personalid.:  │       │ Personalid.:  │
-│ Dir. PÚBLICO │   │ Dir. PÚBLICO  │     │ Dir. PRIVADO  │       │ Dir. PRIVADO  │
-│              │   │ ou PRIVADO    │     │               │       │               │
-├──────────────┤   ├───────────────┤     ├───────────────┤       ├───────────────┤
-│ Criação:     │   │ Criação:      │     │ Criação:      │       │ Criação:      │
-│ DIRETAMENTE  │   │ Púb: por Lei  │     │ AUTORIZADA por│       │ AUTORIZADA por│
-│ por LEI      │   │ Priv: AUTORIZ.│     │ lei + registro│       │ lei + registro│
-│ específica   │   │ por lei + LC  │     │ na Junta/Cart.│       │ comercial     │
-├──────────────┤   ├───────────────┤     ├───────────────┤       ├───────────────┤
-│ Capital:     │   │ Capital:      │     │ Capital:      │       │ Capital:      │
-│ 100% Público │   │ 100% Público  │     │ 100% PÚBLICO  │       │ MISTO         │
-│ (Patrimônio) │   │ (Dotação)     │     │ (zero privado)│       │ (Voto público)│
-├──────────────┤   ├───────────────┤     ├───────────────┤       ├───────────────┤
-│ Formato:     │   │ Formato:      │     │ Formato:      │       │ Formato:      │
-│ Direito Púb. │   │ Fundação      │     │ QUALQUER forma│       │ OBRIGATÓRIO:  │
-│ (específico) │   │ sem fins luc. │     │ (Ltda., S/A)  │       │ Apenas S/A    │
-├──────────────┤   ├───────────────┤     ├───────────────┤       ├───────────────┤
-│ Pessoal:     │   │ Pessoal:      │     │ Pessoal:      │       │ Pessoal:      │
-│ Estatutário  │   │ Estatutário   │     │ CLT           │       │ CLT           │
-│ (concurso)   │   │ ou CLT        │     │ (concurso)    │       │ (concurso)    │
-├──────────────┤   ├───────────────┤     ├───────────────┤       ├───────────────┤
-│ Exemplo:     │   │ Exemplo:      │     │ Exemplo:      │       │ Exemplo:      │
-│ SAAE, IPREV, │   │ Fundação Mun. │     │ Caixa, Correio│       │ Banco Brasil, │
-│ INSS, IBAMA  │   │ de Cultura    │     │ PRODAM, EMURB │       │ Petrobras     │
-└──────────────┘   └───────────────┘     └───────────────┘       └───────────────┘
-```
+<div class="edu-component my-6">
+  <div class="edu-comp-header">
+    <div class="edu-comp-title">
+      <span>🧬</span>
+      <span>RAIO-X COMPARATIVO DAS 4 ENTIDADES DA ADMINISTRAÇÃO INDIRETA (FASE)</span>
+    </div>
+    <span class="edu-comp-badge">Personalidade e Patrimônio Próprios</span>
+  </div>
+  <div class="edu-cards-grid grid-2">
+    <div class="edu-card card-indigo">
+      <div class="edu-card-top">
+        <span class="card-icon">🏛️</span>
+        <span class="card-badge">1. Serviço Típico de Estado</span>
+      </div>
+      <h4 class="card-title">AUTARQUIA</h4>
+      <div class="card-levels">
+        <div class="level-row"><span>Personalidade</span> <strong>Direito PÚBLICO</strong></div>
+        <div class="level-row"><span>Criação</span> <strong>CRIADA diretamente por Lei</strong></div>
+        <div class="level-row"><span>Capital</span> <strong>100% Público</strong></div>
+        <div class="level-row"><span>Forma Jurídica</span> <strong>Típica de Direito Público</strong></div>
+        <div class="level-row"><span>Regime Pessoal</span> <strong>Estatutário (Concurso)</strong></div>
+        <div class="level-row"><span>Exemplos</span> <strong>INSS, IBAMA, SAAE, BIRIGUIPREV</strong></div>
+      </div>
+    </div>
+
+    <div class="edu-card card-sky">
+      <div class="edu-card-top">
+        <span class="card-icon">🎓</span>
+        <span class="card-badge">2. Fim Social / Cultural / Pesquisa</span>
+      </div>
+      <h4 class="card-title">FUNDAÇÃO PÚBLICA</h4>
+      <div class="card-levels">
+        <div class="level-row"><span>Personalidade</span> <strong>Dir. PÚBLICO ou PRIVADO</strong></div>
+        <div class="level-row"><span>Criação</span> <strong>Púb: Criada | Priv: Autorizada + LC</strong></div>
+        <div class="level-row"><span>Capital</span> <strong>100% Público (Dotação)</strong></div>
+        <div class="level-row"><span>Forma Jurídica</span> <strong>Fundação sem fins lucrativos</strong></div>
+        <div class="level-row"><span>Regime Pessoal</span> <strong>Estatutário ou CLT (Concurso)</strong></div>
+        <div class="level-row"><span>Exemplos</span> <strong>IBGE, FUNAI, Fundação Cultural</strong></div>
+      </div>
+    </div>
+
+    <div class="edu-card card-emerald">
+      <div class="edu-card-top">
+        <span class="card-icon">🏦</span>
+        <span class="card-badge">3. Estatal 100% Pública</span>
+      </div>
+      <h4 class="card-title">EMPRESA PÚBLICA (EP)</h4>
+      <div class="card-levels">
+        <div class="level-row"><span>Personalidade</span> <strong>Direito PRIVADO</strong></div>
+        <div class="level-row"><span>Criação</span> <strong>AUTORIZADA por Lei + Registro</strong></div>
+        <div class="level-row"><span>Capital</span> <strong>100% PÚBLICO (Zero privado)</strong></div>
+        <div class="level-row highlight-danger"><span>Forma Jurídica</span> <strong>QUALQUER forma (S/A, Ltda.)</strong></div>
+        <div class="level-row"><span>Regime Pessoal</span> <strong>CLT — Empregado Público (Concurso)</strong></div>
+        <div class="level-row"><span>Exemplos</span> <strong>Caixa (CEF), Correios, BNDES</strong></div>
+      </div>
+    </div>
+
+    <div class="edu-card card-amber">
+      <div class="edu-card-top">
+        <span class="card-icon">📈</span>
+        <span class="card-badge">4. Estatal com Ações na Bolsa</span>
+      </div>
+      <h4 class="card-title">SOCIEDADE DE ECONOMIA MISTA (SEM)</h4>
+      <div class="card-levels">
+        <div class="level-row"><span>Personalidade</span> <strong>Direito PRIVADO</strong></div>
+        <div class="level-row"><span>Criação</span> <strong>AUTORIZADA por Lei + Registro</strong></div>
+        <div class="level-row"><span>Capital</span> <strong>MISTO (+50% ações voto ao Estado)</strong></div>
+        <div class="level-row highlight-danger"><span>Forma Jurídica</span> <strong>OBRIGATORIAMENTE S/A</strong></div>
+        <div class="level-row"><span>Regime Pessoal</span> <strong>CLT — Empregado Público (Concurso)</strong></div>
+        <div class="level-row"><span>Exemplos</span> <strong>Banco do Brasil, Petrobras, Sabesp</strong></div>
+      </div>
+    </div>
+  </div>
+</div>
 
 ---
 

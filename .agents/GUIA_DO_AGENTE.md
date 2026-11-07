@@ -50,6 +50,7 @@
       * **O Porquê e a Lógica:** Explicar qual problema prático da comunicação escrita ou acústica a regra resolve e a lógica das exceções.
       * **Analogias e Comparativos (Certo vs. Errado):** Sempre ilustrar com analogias da vida real e quadros comparativos entre a frase correta e o erro clássico que a banca cria.
       * **Síntese Feynman de 3 Linhas:** Finalizar cada tópico com um resumo conciso para fixação no caderno.
+      * **Quadros e Diagramas em Destaque com CSS Rico (Proibido Caixas ASCII ┌───┐):** Todos os conteúdos destacáveis, esquemas visuais, comparações, mnemônicos, pirâmides, órbitas e mapas mentais nas aulas .md devem ser construídos com os componentes HTML/CSS nativos do sistema (<div class="edu-component my-6"> com .edu-cards-grid, .edu-mnemonic-grid, .edu-pyramid-container, .edu-orbital-stage, .edu-nested-wrap ou > [!ESCALAS]), garantindo visual moderno, responsivo no mobile e alto contraste nos modos claro e escuro.
    3. **Nível Inicial por Grande Grupo:**
    * **Grupo 01 (Português) e Grupo 02 (Matemática/RLM):** Já viu no Ensino Médio, mas precisa relembrar desde a base com explicação lógica passo a passo até chegar nos tópicos avançados.
    * **Grupo 03 (Conhecimentos Gerais):** Exige atenção especial à **História Municipal (Birigui/SP e região), História Nacional, Geografia e Política**, sempre conectando causa, fato e consequência nas 3 escalas (Municipal $\leftrightarrow$ Estadual $\leftrightarrow$ Nacional/Global).

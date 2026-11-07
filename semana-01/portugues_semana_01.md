@@ -89,20 +89,41 @@ Quando lemos nas entrelinhas, nosso cérebro não pode inventar suposições sol
 ### 4. Os 3 Pecados Capitais da Interpretação em Concursos
 Ao analisar as 4 ou 5 alternativas de uma questão de interpretação, 90% dos erros cometidos pelos candidatos caem em uma destas três armadilhas:
 
-```text
-┌────────────────────────────────────┐
-│ OS 3 ERROS DE INTERPRETAÇÃO        │
-├────────────────────────────────────┤
-│ 1. EXTRAPOLAÇÃO (Ir além do texto) │
-│    Inventa fatos de fora do texto. │
-├────────────────────────────────────┤
-│ 2. REDUÇÃO (Olhar só a parte)      │
-│    Pega um detalhe e generaliza.   │
-├────────────────────────────────────┤
-│ 3. CONTRADIÇÃO (Dizer o oposto)    │
-│    Inverte causa/efeito ou nega.   │
-└────────────────────────────────────┘
-```
+<div class="edu-component my-6">
+  <div class="edu-comp-header">
+    <div class="edu-comp-title">
+      <span>🎯</span>
+      <span>AS 3 ARMADILHAS CLÁSSICAS DE INTERPRETAÇÃO DE TEXTO EM CONCURSOS</span>
+    </div>
+    <span class="edu-comp-badge">Blindagem de Prova</span>
+  </div>
+  <div class="edu-cards-grid grid-3">
+    <div class="edu-card card-amber">
+      <div class="edu-card-top">
+        <span class="card-icon">🚀</span>
+        <span class="card-badge">Armadilha 01</span>
+      </div>
+      <h4 class="card-title">EXTRAPOLAÇÃO (Viajar além do texto)</h4>
+      <p class="card-text">A alternativa <strong>inventa fatos, causas ou previsões</strong> que até parecem bonitos no mundo real, mas não foram ditos pelo autor.</p>
+    </div>
+    <div class="edu-card card-indigo">
+      <div class="edu-card-top">
+        <span class="card-icon">🔍</span>
+        <span class="card-badge">Armadilha 02</span>
+      </div>
+      <h4 class="card-title">REDUÇÃO (Olhar só a parte)</h4>
+      <p class="card-text">Pega um <strong>detalhe secundário ou exemplo isolado</strong> e afirma que ele é o tema central ou a única verdade do texto (usa <em>apenas, somente, nunca</em>).</p>
+    </div>
+    <div class="edu-card card-rose">
+      <div class="edu-card-top">
+        <span class="card-icon">🔄</span>
+        <span class="card-badge">Armadilha 03</span>
+      </div>
+      <h4 class="card-title">CONTRADIÇÃO (Dizer o oposto)</h4>
+      <p class="card-text">Usa as mesmas palavras do texto, mas <strong>inverte a relação de causa e efeito</strong> ou nega sutilmente a tese defendida pelo autor.</p>
+    </div>
+  </div>
+</div>
 
 ---
 
@@ -224,18 +245,56 @@ O acento gráfico no papel **não** existe para complicar a vida do estudante: e
 ### 2. A Classificação Natural (Contando do Fim para o Começo)
 Para classificar a posição da sílaba tônica, contamos sempre **da direita para a esquerda** (do final da palavra para trás):
 
-```text
-┌────────────────────────────────────┐
-│ POSIÇÃO DA SÍLABA TÔNICA (MÁ-GI-CA)│
-├────────────────────────────────────┤
-│ 3ª Antepenúltima -> Proparoxítona  │
-│                     (MÁ-)          │
-│ 2ª Penúltima     -> Paroxítona     │
-│                     (-GI-)         │
-│ 1ª Última        -> Oxítona        │
-│                     (-CA)          │
-└────────────────────────────────────┘
-```
+<div class="edu-component my-6">
+  <div class="edu-comp-header">
+    <div class="edu-comp-title">
+      <span>🎵</span>
+      <span>CONTAGEM REGRESSIVA DA SÍLABA TÔNICA (SEMPRE DE TRÁS PARA FRENTE!)</span>
+    </div>
+    <span class="edu-comp-badge">3ª ◄── 2ª ◄── 1ª</span>
+  </div>
+  <div class="edu-cards-grid grid-3">
+    <div class="edu-card card-purple">
+      <div class="edu-card-top">
+        <span class="card-year-pill">3ª Sílaba (Antepenúltima)</span>
+        <span class="card-badge">100% Acentuadas</span>
+      </div>
+      <h4 class="card-title">PROPAROXÍTONA</h4>
+      <p class="card-text">A força recai na antepenúltima sílaba. <strong>Regra de Ouro:</strong> todas as proparoxítonas da língua portuguesa recebem acento!</p>
+      <div class="card-examples">
+        <span class="ex-tag"><strong>MÁ</strong> - gi - ca</span>
+        <span class="ex-tag"><strong>LÂM</strong> - pa - da</span>
+        <span class="ex-tag"><strong>PÚ</strong> - bli - co</span>
+      </div>
+    </div>
+    <div class="edu-card card-indigo">
+      <div class="edu-card-top">
+        <span class="card-year-pill">2ª Sílaba (Penúltima)</span>
+        <span class="card-badge">Maioria do Idioma</span>
+      </div>
+      <h4 class="card-title">PAROXÍTONA</h4>
+      <p class="card-text">A força recai na penúltima sílaba. São acentuadas quando <strong>NÃO</strong> terminam em A, E, O, EM/ENS (ou quando terminam em ditongo).</p>
+      <div class="card-examples">
+        <span class="ex-tag">ca - <strong>RÁ</strong> - ter</span>
+        <span class="ex-tag"><strong>TÓ</strong> - rax</span>
+        <span class="ex-tag">ofí - <strong>CI</strong> - o</span>
+      </div>
+    </div>
+    <div class="edu-card card-emerald">
+      <div class="edu-card-top">
+        <span class="card-year-pill">1ª Sílaba (Última)</span>
+        <span class="card-badge">Final Forte</span>
+      </div>
+      <h4 class="card-title">OXÍTONA</h4>
+      <p class="card-text">A força recai na última sílaba da palavra. São acentuadas quando terminam em <strong>A(s), E(s), O(s), EM, ENS</strong> ou ditongos abertos <em>éi, éu, ói</em>.</p>
+      <div class="card-examples">
+        <span class="ex-tag">ca - <strong>FÉ</strong></span>
+        <span class="ex-tag">ci - <strong>PÓ</strong></span>
+        <span class="ex-tag">pa - ra - <strong>BÉNS</strong></span>
+      </div>
+    </div>
+  </div>
+</div>
 
 1. **Oxítona:** A última sílaba é a mais forte (*ca-fé*, *ci-pó*, *a-mor*, *tam-bém*).  
 2. **Paroxítona:** A penúltima sílaba é a mais forte (*me-sa*, *ca-der-no*, *re-mê-dio*, *fá-cil*).  

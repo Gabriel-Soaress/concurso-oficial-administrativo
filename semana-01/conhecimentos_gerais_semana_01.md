@@ -47,23 +47,41 @@ O Brasil que conhecemos hoje, com seus 8,5 milhões de km², **não nasceu com e
 
 Para entender como essa fronteira explodiu para o interior, precisamos conhecer 3 mecanismos fundamentais:
 
-```text
-┌────────────────────────────────────┐
-│ EVOLUÇÃO DAS FRONTEIRAS DO BRASIL  │
-├────────────────────────────────────┤
-│ 1. TORDESILHAS (1494)              │
-│    Linha imaginária que restringia │
-│    Portugal apenas ao litoral.     │
-├────────────────────────────────────┤
-│ 2. EXPANSÃO (SÉC. XVII)            │
-│    Bandeirantes, pecuária e missões│
-│    avançam para o interior.        │
-├────────────────────────────────────┤
-│ 3. TRATADO DE MADRI (1750)         │
-│    Princípio do Uti Possidetis:    │
-│    quem ocupou fica com a terra.   │
-└────────────────────────────────────┘
-```
+<div class="edu-component my-6">
+  <div class="edu-comp-header">
+    <div class="edu-comp-title">
+      <span>🗺️</span>
+      <span>LINHA DO TEMPO: A FORMAÇÃO DAS FRONTEIRAS DO BRASIL</span>
+    </div>
+    <span class="edu-comp-badge">Expansão Territorial</span>
+  </div>
+  <div class="edu-cards-grid grid-3">
+    <div class="edu-card card-amber">
+      <div class="edu-card-top">
+        <span class="card-year-pill">1494</span>
+        <span class="card-badge">Limite Litorâneo</span>
+      </div>
+      <h4 class="card-title">1. Tratado de Tordesilhas</h4>
+      <p class="card-text">Linha imaginária a 370 léguas de Cabo Verde que <strong>restringia Portugal apenas à faixa litorânea</strong>, deixando o interior para a Espanha.</p>
+    </div>
+    <div class="edu-card card-indigo">
+      <div class="edu-card-top">
+        <span class="card-year-pill">Sécs. XVII–XVIII</span>
+        <span class="card-badge">Marcha ao Interior</span>
+      </div>
+      <h4 class="card-title">2. Expansão e Interiorização</h4>
+      <p class="card-text"><strong>Bandeirantes paulistas</strong>, pecuária no sertão, drogas do sertão na Amazônia e missões jesuíticas rompem Tordesilhas na prática.</p>
+    </div>
+    <div class="edu-card card-emerald">
+      <div class="edu-card-top">
+        <span class="card-year-pill">1750</span>
+        <span class="card-badge">Posse Efetiva</span>
+      </div>
+      <h4 class="card-title">3. Tratado de Madri</h4>
+      <p class="card-text">Consagra o princípio jurídico do <strong><em>Uti Possidetis</em></strong> ("quem ocupa de fato é o dono"), dando ao Brasil seu contorno continental atual.</p>
+    </div>
+  </div>
+</div>
 
 ---
 
@@ -127,25 +145,56 @@ A economia brasileira funcionou, durante séculos, por meio de **ciclos econômi
 
 Cada ciclo econômico mudou a geografia do Brasil, criando cidades e deslocando populações:
 
-```text
-┌────────────────────────────────────┐
-│ OS 3 GRANDES CICLOS ECONÔMICOS     │
-├────────────────────────────────────┤
-│ 1. AÇÚCAR (Séculos XVI–XVII)       │
-│ • Polo: Litoral do Nordeste        │
-│ • Latifúndio, engenho e escravidão │
-│ • Capital: Salvador                │
-├────────────────────────────────────┤
-│ 2. OURO (Século XVIII)             │
-│ • Polo: Minas Gerais / Sudeste     │
-│ • Interiorização e rede urbana     │
-│ • Capital muda para o Rio (1763)   │
-├────────────────────────────────────┤
-│ 3. CAFÉ (Séculos XIX–XX)           │
-│ • Polo: Vale do Paraíba e Oeste/SP │
-│ • Ferrovias, imigrantes e indústria│
-└────────────────────────────────────┘
-```
+<div class="edu-component my-6">
+  <div class="edu-comp-header">
+    <div class="edu-comp-title">
+      <span>⚙️</span>
+      <span>OS 3 GRANDES CICLOS ECONÔMICOS E O DESLOCAMENTO DO EIXO DE PODER</span>
+    </div>
+    <span class="edu-comp-badge">Geografia Histórica</span>
+  </div>
+  <div class="edu-cards-grid grid-3">
+    <div class="edu-card card-amber">
+      <div class="edu-card-top">
+        <span class="card-icon">🍬</span>
+        <span class="card-badge">Séculos XVI–XVII</span>
+      </div>
+      <h4 class="card-title">1. Ciclo da Cana-de-Açúcar</h4>
+      <div class="card-levels">
+        <div class="level-row"><span>Polo</span> <strong>Litoral do Nordeste (PE/BA)</strong></div>
+        <div class="level-row"><span>Solo</span> <strong>Massapê (fértil e úmido)</strong></div>
+        <div class="level-row"><span>Base</span> <strong>Latifúndio, Engenho e Escravidão</strong></div>
+        <div class="level-row"><span>Capital</span> <strong>Salvador (até 1763)</strong></div>
+      </div>
+    </div>
+    <div class="edu-card card-indigo">
+      <div class="edu-card-top">
+        <span class="card-icon">⛏️</span>
+        <span class="card-badge">Século XVIII</span>
+      </div>
+      <h4 class="card-title">2. Ciclo do Ouro e Diamantes</h4>
+      <div class="card-levels">
+        <div class="level-row"><span>Polo</span> <strong>Minas Gerais, Goiás e MT</strong></div>
+        <div class="level-row"><span>Efeito</span> <strong>1º Surto de Urbanização e Comércio</strong></div>
+        <div class="level-row"><span>Integração</span> <strong>Tropeiros ligam o Sul ao Sudeste</strong></div>
+        <div class="level-row"><span>Capital</span> <strong>Transferida p/ o Rio de Janeiro (1763)</strong></div>
+      </div>
+    </div>
+    <div class="edu-card card-emerald">
+      <div class="edu-card-top">
+        <span class="card-icon">☕</span>
+        <span class="card-badge">Séculos XIX–XX</span>
+      </div>
+      <h4 class="card-title">3. Ciclo do Café e Indústria</h4>
+      <div class="card-levels">
+        <div class="level-row"><span>Polo</span> <strong>Vale do Paraíba ➔ Oeste Paulista</strong></div>
+        <div class="level-row"><span>Solo</span> <strong>Terra Roxa (interior de SP)</strong></div>
+        <div class="level-row"><span>Impulso</span> <strong>Ferrovias + Imigrantes Assalariados</strong></div>
+        <div class="level-row"><span>Legado</span> <strong>Financiou a Industrialização de SP</strong></div>
+      </div>
+    </div>
+  </div>
+</div>
 
 ---
 
@@ -223,27 +272,72 @@ Estabelecida em 1969 pelo Instituto Brasileiro de Geografia e Estatística (IBGE
 
 * **Critério Fundamental:** Respeita **estritamente os limites políticos e as fronteiras estaduais**. Nenhum estado tem um pedaço numa região e outro pedaço em outra!
 
-```text
-┌────────────────────────────────────┐
-│ AS 5 MACRORREGIÕES DO IBGE         │
-├────────────────────────────────────┤
-│ 1. NORTE (7 Estados):              │
-│    AC, AP, AM, PA, RO, RR, TO      │
-├────────────────────────────────────┤
-│ 2. NORDESTE (9 Estados):           │
-│    AL, BA, CE, MA, PB, PE, PI, RN, │
-│    SE                              │
-├────────────────────────────────────┤
-│ 3. SUDESTE (4 Estados):            │
-│    SP, MG, RJ, ES                  │
-├────────────────────────────────────┤
-│ 4. SUL (3 Estados):                │
-│    PR, SC, RS                      │
-├────────────────────────────────────┤
-│ 5. CENTRO-OESTE (3 Estados + DF):  │
-│    GO, MT, MS + Distrito Federal   │
-└────────────────────────────────────┘
-```
+<div class="edu-component my-6">
+  <div class="edu-comp-header">
+    <div class="edu-comp-title">
+      <span>🇧🇷</span>
+      <span>DIVISÃO REGIONAL OFICIAL DO BRASIL — AS 5 MACRORREGIÕES DO IBGE (26 ESTADOS + DF)</span>
+    </div>
+    <span class="edu-comp-badge">Geografia Oficial IBGE</span>
+  </div>
+  <div class="edu-cards-grid grid-3">
+    <div class="edu-card card-emerald">
+      <div class="edu-card-top">
+        <span class="card-icon">🌳</span>
+        <span class="card-badge">7 Estados • Maior Área</span>
+      </div>
+      <h4 class="card-title">1. Região Norte</h4>
+      <p class="card-text">Maior extensão territorial do país (45% do território) e menor densidade demográfica relativa.</p>
+      <div class="card-examples">
+        <span class="ex-tag">AC</span><span class="ex-tag">AP</span><span class="ex-tag">AM</span><span class="ex-tag">PA</span><span class="ex-tag">RO</span><span class="ex-tag">RR</span><span class="ex-tag">TO</span>
+      </div>
+    </div>
+    <div class="edu-card card-amber">
+      <div class="edu-card-top">
+        <span class="card-icon">☀️</span>
+        <span class="card-badge">9 Estados • Maior Nº de UFs</span>
+      </div>
+      <h4 class="card-title">2. Região Nordeste</h4>
+      <p class="card-text">Região com o maior número de estados (9 UFs) e a 2ª maior população absoluta do Brasil.</p>
+      <div class="card-examples">
+        <span class="ex-tag">AL</span><span class="ex-tag">BA</span><span class="ex-tag">CE</span><span class="ex-tag">MA</span><span class="ex-tag">PB</span><span class="ex-tag">PE</span><span class="ex-tag">PI</span><span class="ex-tag">RN</span><span class="ex-tag">SE</span>
+      </div>
+    </div>
+    <div class="edu-card card-indigo">
+      <div class="edu-card-top">
+        <span class="card-icon">🏙️</span>
+        <span class="card-badge">4 Estados • Mais Populosa</span>
+      </div>
+      <h4 class="card-title">3. Região Sudeste</h4>
+      <p class="card-text">A região <strong>mais populosa</strong> (~84,8 milhões de hab.) e de maior PIB industrial e financeiro do país.</p>
+      <div class="card-examples">
+        <span class="ex-tag">SP</span><span class="ex-tag">MG</span><span class="ex-tag">RJ</span><span class="ex-tag">ES</span>
+      </div>
+    </div>
+    <div class="edu-card card-sky">
+      <div class="edu-card-top">
+        <span class="card-icon">❄️</span>
+        <span class="card-badge">3 Estados • Menor Área</span>
+      </div>
+      <h4 class="card-title">4. Região Sul</h4>
+      <p class="card-text">Menor área territorial entre as regiões, clima subtropical e elevados indicadores sociais.</p>
+      <div class="card-examples">
+        <span class="ex-tag">PR</span><span class="ex-tag">SC</span><span class="ex-tag">RS</span>
+      </div>
+    </div>
+    <div class="edu-card card-purple">
+      <div class="edu-card-top">
+        <span class="card-icon">🌾</span>
+        <span class="card-badge">3 Estados + DF • Menos Populosa</span>
+      </div>
+      <h4 class="card-title">5. Região Centro-Oeste</h4>
+      <p class="card-text">A região <strong>menos populosa</strong> em números absolutos (~16,3 milhões), sede da Capital Federal e potência agropecuária.</p>
+      <div class="card-examples">
+        <span class="ex-tag">GO</span><span class="ex-tag">MT</span><span class="ex-tag">MS</span><span class="ex-tag">DF (Brasília)</span>
+      </div>
+    </div>
+  </div>
+</div>
 
 ---
 
