@@ -247,54 +247,138 @@ Conjunto B = { 3, 4, 5, 6 }   (Processos analisados à tarde)
 
 ## EIXO 2: Diagramas de Venn — Como Desatar Problemas de Grupos Sobrepostos
 
-### 1. Por que Subtraímos a Interseção? A Lógica da Fila Dupla
-Considere que na repartição municipal:
-* 30 servidores tomam **Café**.
-* 20 servidores tomam **Chá**.
-* 10 servidores tomam **ambos (Café e Chá)**.
+### 1. A Situação Real: A Triagem do RH na Prefeitura de Birigui
+Para entender de uma vez por todas o Diagrama de Venn sem decorar fórmulas cegas, imagine uma situação real e prática do dia a dia do serviço público:
 
-Se você simplesmente somar $30 + 20 = 50$, você errou a conta! Por quê?  
-Porque as 10 pessoas que tomam ambos foram contadas **duas vezes**: uma na fila do café e outra na fila do chá!  
+A Secretaria de Administração de Birigui convocou **100 candidatos aprovados** na primeira fase para um teste de aptidão operacional em duas mesas de atendimento:
+* **Mesa Azul ($A$):** Teste prático do **SEI** (Sistema Eletrônico de Informações e Redação de Ofícios).
+* **Mesa Verde ($B$):** Teste de **Atendimento ao Cidadão no Balcão de Protocolo**.
 
-Para corrigir a contagem, subtraímos a duplicação uma vez:
-$$n(\text{Café} \cup \text{Chá}) = n(\text{Café}) + n(\text{Chá}) - n(\text{Ambos})$$
-$$n(\text{Total}) = 30 + 20 - 10 = \mathbf{40 \text{ pessoas}}$$
+Ao final da triagem, o RH computou as listas de presença assinadas:
+1. **65 candidatos** assinaram a folha do teste de **SEI**.
+2. **45 candidatos** assinaram a folha do teste de **Balcão**.
+3. **20 candidatos** ficaram sentados no saguão porque eram novatos e **não tinham experiência em nenhum dos dois**.
+
+#### O Mistério da "Fila Dupla" (A Pegadinha das Bancas)
+Se você agir no piloto automático e somar os números brutos do relatório:
+$65 + 45 + 20 = mathbf{130 	ext{ assinaturas}}$
+
+> [!CAUTION]
+> **O ALERTA DA REALIDADE:** Como podem existir 130 assinaturas se **havia apenas 100 candidatos dentro do prédio**?  
+> Surgiram 30 fantasmas na Prefeitura? **Não!**  
+> Essas 30 pessoas a mais são candidatos competentes que levantaram as **duas mãos** e assinaram **as duas listas**! Elas foram contadas **duas vezes**: uma na fila do SEI e outra na fila do Balcão!
+
+Para a conta fechar na realidade, quem assinou duas vezes precisa ter sua duplicidade eliminada:
+$n(	ext{Universo}) = n(	ext{SEI}) + n(	ext{Balcão}) - n(	ext{Ambos}) + n(	ext{Nenhum})$
+$100 = 65 + 45 - x + 20 implies 100 = 130 - x implies x = mathbf{30 	ext{ candidatos (Ambos)}}$
+
+---
+
+### 2. O Diagrama Visual de Venn: A Representação das Quatro Regiões Sagradas
+
+Veja abaixo o mapa visual exato do que aconteceu dentro da Prefeitura de Birigui. Observe como os círculos se cruzam formando quatro fatias independentes:
 
 <div class="edu-component my-6">
   <div class="edu-comp-header">
     <div class="edu-comp-title">
       <span class="edu-comp-icon">📊</span>
-      <span>ANATOMIA DE UM DIAGRAMA DE VENN DE 2 CONJUNTOS</span>
+      <span>DIAGRAMA DE VENN REAL: TRIAGEM DE 100 CANDIDATOS NA PREFEITURA</span>
     </div>
-    <span class="edu-comp-badge">Estrutura Visual</span>
+    <span class="edu-comp-badge">Espaço Amostral Visual</span>
   </div>
-  <div class="edu-mnemonic-grid">
-    <!-- Região 1 -->
-    <div class="mnemonic-card m-blue">
-      <div class="m-letter">A</div>
-      <h4 class="m-title">Apenas A</h4>
-      <p class="m-desc">Pessoas que fazem <strong>somente</strong> A. Calculado como $n(A) - n(A \cap B)$.</p>
+  
+  <div class="edu-venn-stage">
+    <!-- Caixa do Universo Retangular -->
+    <div class="venn-universe-box">
+      <div class="venn-universe-header">
+        <span class="venn-universe-badge">🏛️ Prédio da Prefeitura • Universo Total $\mathbb{U} = 100$</span>
+        <span class="text-xs font-mono font-bold text-sec">Área Retangular = 100% dos entrevistados</span>
+      </div>
+
+      <!-- SVG do Diagrama de Círculos Sobrepostos -->
+      <div class="venn-svg-wrap">
+        <svg viewBox="0 0 540 280" role="img" aria-label="Diagrama de Venn com dois círculos sobrepostos">
+          <!-- Círculo A (SEI / Processos) -->
+          <circle cx="210" cy="140" r="95" fill="rgba(59, 130, 246, 0.16)" stroke="#3b82f6" stroke-width="2.5" />
+          
+          <!-- Círculo B (Balcão de Atendimento) -->
+          <circle cx="330" cy="140" r="95" fill="rgba(16, 185, 129, 0.16)" stroke="#10b981" stroke-width="2.5" />
+          
+          <!-- Lente Central de Sobreposição (Miolo / Interseção) -->
+          <ellipse cx="270" cy="140" rx="35" ry="65" fill="rgba(147, 51, 234, 0.22)" stroke="#9333ea" stroke-width="2" />
+
+          <!-- Título Círculo A -->
+          <text x="145" y="45" font-size="12" font-weight="900" fill="#2563eb" text-anchor="middle">CONJUNTO A: SEI (Total: 65)</text>
+          
+          <!-- Título Círculo B -->
+          <text x="395" y="45" font-size="12" font-weight="900" fill="#059669" text-anchor="middle">CONJUNTO B: BALCÃO (Total: 45)</text>
+
+          <!-- Zona 1: Apenas SEI (Esquerda) -->
+          <text x="155" y="130" text-anchor="middle" font-size="30" font-weight="900" fill="#2563eb" class="venn-svg-txt-main">35</text>
+          <text x="155" y="153" text-anchor="middle" font-size="12" font-weight="800" class="venn-svg-txt-sub">Apenas SEI</text>
+          <text x="155" y="171" text-anchor="middle" font-size="11" class="venn-svg-txt-calc">(65 − 30)</text>
+
+          <!-- Zona 2: O Miolo Central (Interseção A ∩ B) -->
+          <rect x="232" y="58" width="76" height="20" rx="10" fill="#7c3aed" />
+          <text x="270" y="72" text-anchor="middle" font-size="9" font-weight="900" fill="#ffffff">O MIOLO</text>
+          <text x="270" y="132" text-anchor="middle" font-size="34" font-weight="900" fill="#7c3aed" class="venn-svg-txt-main">30</text>
+          <text x="270" y="154" text-anchor="middle" font-size="12" font-weight="800" fill="#6d28d9">Ambos</text>
+          <text x="270" y="170" text-anchor="middle" font-size="10" font-weight="700" fill="#7c3aed">($A \cap B$)</text>
+
+          <!-- Zona 3: Apenas Balcão (Direita) -->
+          <text x="385" y="130" text-anchor="middle" font-size="30" font-weight="900" fill="#059669" class="venn-svg-txt-main">15</text>
+          <text x="385" y="153" text-anchor="middle" font-size="12" font-weight="800" class="venn-svg-txt-sub">Apenas Balcão</text>
+          <text x="385" y="171" text-anchor="middle" font-size="11" class="venn-svg-txt-calc">(45 − 30)</text>
+
+          <!-- Zona 4: Nenhum dos dois (Saguão de Espera) -->
+          <rect x="375" y="222" width="150" height="42" rx="8" fill="rgba(244, 63, 94, 0.12)" stroke="rgba(244, 63, 94, 0.35)" />
+          <text x="450" y="240" text-anchor="middle" font-size="15" font-weight="900" fill="#e11d48">20 Candidatos</text>
+          <text x="450" y="254" text-anchor="middle" font-size="10" font-weight="700" fill="#be123c">Nenhum dos dois (Saguão)</text>
+        </svg>
+      </div>
     </div>
-    <!-- Região 2 -->
-    <div class="mnemonic-card m-purple">
-      <div class="m-letter">A ∩ B</div>
-      <h4 class="m-title">Interseção</h4>
-      <p class="m-desc">Pessoas que fazem <strong>ambos</strong> simultaneamente. É o coração do cálculo!</p>
-    </div>
-    <!-- Região 3 -->
-    <div class="mnemonic-card m-emerald">
-      <div class="m-letter">B</div>
-      <h4 class="m-title">Apenas B</h4>
-      <p class="m-desc">Pessoas que fazem <strong>somente</strong> B. Calculado como $n(B) - n(A \cap B)$.</p>
-    </div>
-    <!-- Região 4 -->
-    <div class="mnemonic-card m-rose">
-      <div class="m-letter">NENHUM</div>
-      <h4 class="m-title">Fora dos Círculos</h4>
-      <p class="m-desc">Pessoas que não fazem nem A nem B, mas estão dentro do Universo total ($\mathbb{U}$).</p>
+
+    <!-- Grid com os 4 Cards Explicativos -->
+    <div class="venn-step-grid">
+      <!-- Card 1 -->
+      <div class="venn-step-card venn-card-blue">
+        <span class="venn-step-num">Região 1 • Exclusivo A</span>
+        <div class="venn-step-val">35</div>
+        <div class="venn-step-label">Apenas Processo SEI</div>
+        <div class="venn-step-desc">Calculado subtraindo o miolo do total do SEI: $65 - 30 = 35$. Dominam apenas a parte digital.</div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="venn-step-card venn-card-purple">
+        <span class="venn-step-num">Região 2 • O Miolo ($A \cap B$)</span>
+        <div class="venn-step-val">30</div>
+        <div class="venn-step-label">Ambos os Serviços</div>
+        <div class="venn-step-desc">A interseção sagrada. Candidatos versáteis que atendem ao balcão e redigem ofícios no SEI.</div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="venn-step-card venn-card-emerald">
+        <span class="venn-step-num">Região 3 • Exclusivo B</span>
+        <div class="venn-step-val">15</div>
+        <div class="venn-step-label">Apenas Balcão</div>
+        <div class="venn-step-desc">Calculado subtraindo o miolo do total do Balcão: $45 - 30 = 15$. Atendem somente ao público presencial.</div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="venn-step-card venn-card-rose">
+        <span class="venn-step-num">Região 4 • Fora dos Círculos</span>
+        <div class="venn-step-val">20</div>
+        <div class="venn-step-label">Nenhum dos Dois</div>
+        <div class="venn-step-desc">Estão dentro do prédio (Universo), mas fora dos círculos de teste. São os novatos sem experiência prévia.</div>
+      </div>
     </div>
   </div>
 </div>
+
+#### A "Prova Real da Repartição" (Soma que Nunca Falha)
+Depois de fatiar o diagrama nas 4 zonas isoladas, some cada região independente:
+$mathbf{35} 	ext{ (só SEI)} + mathbf{30} 	ext{ (ambos)} + mathbf{15} 	ext{ (só Balcão)} + mathbf{20} 	ext{ (nenhum)} = mathbf{100 	ext{ candidatos}}$
+A conta fecha exatamente nos 100 candidatos do prédio, sem sobrar nem faltar ninguém!
 
 ---
 

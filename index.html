@@ -1608,6 +1608,136 @@
     }
     html.dark .nested-desc { color: #cbd5e1; }
 
+    /* =========================================================
+       DIAGRAMA DE VENN RESPONSIVO (TEORIA DOS CONJUNTOS)
+       ========================================================= */
+    .edu-venn-stage {
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+    .venn-universe-box {
+      position: relative;
+      background: var(--bg-surface);
+      border: 2px dashed rgba(99, 102, 241, 0.4);
+      border-radius: 1.25rem;
+      padding: 1rem 1.2rem;
+      box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.03);
+    }
+    html.dark .venn-universe-box {
+      border-color: rgba(129, 140, 248, 0.4);
+      background: rgba(15, 23, 42, 0.6);
+    }
+    .venn-universe-header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .venn-svg-wrap {
+      width: 100%;
+      max-width: 560px;
+      margin: 0.5rem auto 1rem auto;
+      display: block;
+    }
+    .venn-svg-wrap svg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .venn-svg-txt-main { font-family: var(--font-sans, sans-serif); font-weight: 900; }
+    .venn-svg-txt-sub { font-family: var(--font-sans, sans-serif); font-weight: 700; fill: #475569; }
+    .venn-svg-txt-calc { font-family: var(--font-mono, monospace); font-weight: 600; fill: #64748b; }
+    html.dark .venn-svg-txt-sub { fill: #cbd5e1; }
+    html.dark .venn-svg-txt-calc { fill: #94a3b8; }
+
+    .venn-step-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0.85rem;
+    }
+    @media (min-width: 640px) {
+      .venn-step-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (min-width: 1024px) {
+      .venn-step-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+    .venn-step-card {
+      border-radius: 0.95rem;
+      padding: 0.9rem 1rem;
+      border: 1.5px solid var(--border);
+      background: var(--bg-elevated);
+      display: flex;
+      flex-direction: column;
+      gap: 0.45rem;
+      transition: transform 0.15s ease;
+    }
+    .venn-step-card:hover {
+      transform: translateY(-2px);
+    }
+    .venn-step-num {
+      font-size: 0.68rem;
+      font-family: var(--font-mono, monospace);
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .venn-step-val {
+      font-size: 1.35rem;
+      font-weight: 900;
+      line-height: 1.1;
+      font-family: var(--font-mono, monospace);
+    }
+    .venn-step-label {
+      font-size: 0.84rem;
+      font-weight: 800;
+      color: var(--text-primary);
+    }
+    html.dark .venn-step-label { color: #f8fafc; }
+    .venn-step-desc {
+      font-size: 0.77rem;
+      line-height: 1.45;
+      color: var(--text-secondary);
+    }
+    html.dark .venn-step-desc { color: #cbd5e1; }
+    html.dark .venn-step-card { background: #1e293b; }
+
+    .venn-card-blue { border-color: rgba(59, 130, 246, 0.45); }
+    .venn-card-blue .venn-step-num { color: #2563eb; }
+    .venn-card-blue .venn-step-val { color: #1d4ed8; }
+    html.dark .venn-card-blue { border-color: rgba(96, 165, 250, 0.4); }
+    html.dark .venn-card-blue .venn-step-num { color: #93c5fd; }
+    html.dark .venn-card-blue .venn-step-val { color: #60a5fa; }
+
+    .venn-card-purple { border-color: rgba(147, 51, 234, 0.5); background: rgba(147, 51, 234, 0.04); }
+    .venn-card-purple .venn-step-num { color: #7c3aed; }
+    .venn-card-purple .venn-step-val { color: #6d28d9; }
+    html.dark .venn-card-purple { border-color: rgba(192, 132, 252, 0.45); background: rgba(147, 51, 234, 0.1); }
+    html.dark .venn-card-purple .venn-step-num { color: #d8b4fe; }
+    html.dark .venn-card-purple .venn-step-val { color: #c084fc; }
+
+    .venn-card-emerald { border-color: rgba(16, 185, 129, 0.45); }
+    .venn-card-emerald .venn-step-num { color: #059669; }
+    .venn-card-emerald .venn-step-val { color: #047857; }
+    html.dark .venn-card-emerald { border-color: rgba(52, 211, 153, 0.4); }
+    html.dark .venn-card-emerald .venn-step-num { color: #6ee7b7; }
+    html.dark .venn-card-emerald .venn-step-val { color: #34d399; }
+
+    .venn-card-rose { border-color: rgba(244, 63, 94, 0.45); }
+    .venn-card-rose .venn-step-num { color: #e11d48; }
+    .venn-card-rose .venn-step-val { color: #be123c; }
+    html.dark .venn-card-rose { border-color: rgba(251, 113, 133, 0.4); }
+    html.dark .venn-card-rose .venn-step-num { color: #fda4af; }
+    html.dark .venn-card-rose .venn-step-val { color: #fb7185; }
+
+
     /* Regras Mobile Específicas para Evitar Cortes e Cores Escuras */
     @media (max-width: 639px) {
       .cfc-pipeline, .edu-component {
@@ -2578,7 +2708,7 @@
   </main>
   </div>
 
-  <script src="aulas-data.js?v=20261107_04"></script>
+  <script src="aulas-data.js?v=20261107_05"></script>
   <script>
     const DB_SQL_URL = "https://ep-muddy-thunder-ac0eoxn3-pooler.sa-east-1.aws.neon.tech/sql";
     const DB_CONN_STR = "postgresql://neondb_owner:npg_l2mWY5HINrgG@ep-muddy-thunder-ac0eoxn3-pooler.sa-east-1.aws.neon.tech/neondb?sslmode=require";
