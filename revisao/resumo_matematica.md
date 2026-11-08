@@ -695,6 +695,8 @@
           </div>
         </div>
       </div>
+    </div>
+
     <div class="guided-card">
       <div class="guided-card-head head-emerald">Op. 6C • Caso Guiado 3: Venn com 3 Conjuntos (Método da Cebola: De Dentro para Fora)</div>
       <div class="formula-banner">
@@ -719,8 +721,8 @@
           <div class="step-content">
             <div class="step-desc">Subtrair o miolo ($10$) das interseções duplas que envolvem o Word:</div>
             <div class="step-math">
-              $	ext{Apenas (Word e Excel)} = 25 - 10 = \mathbf{15}$<br/>
-              $	ext{Apenas (Word e PowerPoint)} = 20 - 10 = \mathbf{10}$
+              $\text{Apenas (Word e Excel)} = 25 - 10 = \mathbf{15}$<br/>
+              $\text{Apenas (Word e PowerPoint)} = 20 - 10 = \mathbf{10}$
             </div>
           </div>
         </div>
@@ -728,7 +730,7 @@
           <span class="step-badge badge-ok">Passo 3 (Exclusivo)</span>
           <div class="step-content">
             <div class="step-desc">Subtrair do total do Word ($60$) todas as três partes compartilhadas:</div>
-            <div class="step-math">$	ext{Apenas Word} = 60 - [\, 10	ext{ (miolo)} + 15	ext{ (com Excel)} + 10	ext{ (com PPT)} \,] = 60 - 35 = \mathbf{25	ext{ servidores}}$</div>
+            <div class="step-math">$\text{Apenas Word} = 60 - [\, 10\text{ (miolo)} + 15\text{ (com Excel)} + 10\text{ (com PPT)} \,] = 60 - 35 = \mathbf{25\text{ servidores}}$</div>
           </div>
         </div>
       </div>
