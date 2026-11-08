@@ -695,6 +695,43 @@
           </div>
         </div>
       </div>
+    <div class="guided-card">
+      <div class="guided-card-head head-emerald">Op. 6C • Caso Guiado 3: Venn com 3 Conjuntos (Método da Cebola: De Dentro para Fora)</div>
+      <div class="formula-banner">
+        <strong>A Regra de Ouro dos 3 Conjuntos:</strong> Nunca coloque os valores brutos do enunciado nas pétalas! Preencha obrigatoriamente na ordem: <strong>1º</strong> O miolo dos 3 ($A \cap B \cap C$) ➔ <strong>2º</strong> As interseções duplas (subtraindo o miolo) ➔ <strong>3º</strong> Os exclusivos de cada um (subtraindo todas as interseções) ➔ <strong>4º</strong> O exterior (Nenhum).
+      </div>
+      <div class="guided-steps">
+        <div class="step-row">
+          <span class="step-badge">Enunciado</span>
+          <div class="step-content">
+            <div class="step-desc">Numa pesquisa com <strong>120 servidores</strong>: $60$ usam Word, $50$ usam Excel, $40$ usam PowerPoint; $25$ usam Word e Excel, $20$ usam Word e PowerPoint, $15$ usam Excel e PowerPoint; e <strong>$10$ usam os três sistemas ($W \cap E \cap P$)</strong>. Quantos servidores usam <strong>APENAS Word</strong>?</div>
+          </div>
+        </div>
+        <div class="step-row">
+          <span class="step-badge">Passo 1 (Miolo)</span>
+          <div class="step-content">
+            <div class="step-desc">Fixar o miolo central que usa os 3 sistemas:</div>
+            <div class="step-math">$n(W \cap E \cap P) = \mathbf{10}$</div>
+          </div>
+        </div>
+        <div class="step-row">
+          <span class="step-badge">Passo 2 (Duplas)</span>
+          <div class="step-content">
+            <div class="step-desc">Subtrair o miolo ($10$) das interseções duplas que envolvem o Word:</div>
+            <div class="step-math">
+              $	ext{Apenas (Word e Excel)} = 25 - 10 = \mathbf{15}$<br/>
+              $	ext{Apenas (Word e PowerPoint)} = 20 - 10 = \mathbf{10}$
+            </div>
+          </div>
+        </div>
+        <div class="step-row">
+          <span class="step-badge badge-ok">Passo 3 (Exclusivo)</span>
+          <div class="step-content">
+            <div class="step-desc">Subtrair do total do Word ($60$) todas as três partes compartilhadas:</div>
+            <div class="step-math">$	ext{Apenas Word} = 60 - [\, 10	ext{ (miolo)} + 15	ext{ (com Excel)} + 10	ext{ (com PPT)} \,] = 60 - 35 = \mathbf{25	ext{ servidores}}$</div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
