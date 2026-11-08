@@ -4317,6 +4317,19 @@
           localStorage.setItem(STORAGE_KEY, JSON.stringify(checklistState));
           localStorage.setItem(EXAMS_STORAGE_KEY, JSON.stringify(examsDoneState));
 
+          if (checklistState._simulados && typeof checklistState._simulados === "object") {
+            try {
+              for (const [simKey, sState] of Object.entries(checklistState._simulados)) {
+                if (sState) {
+                  localStorage.setItem("concurso_simulado_state_" + simKey, JSON.stringify(sState));
+                  if (simKey === "simulado-sem-01-02") {
+                    localStorage.setItem("revisao_simulado_v1", JSON.stringify(sState));
+                  }
+                }
+              }
+            } catch (e) {}
+          }
+
           if (row.notas_dificuldade && !document.getElementById("difficultyInput").value) {
             document.getElementById("difficultyInput").value = row.notas_dificuldade;
           }
@@ -4606,6 +4619,24 @@
       renderMonthWeeks();
       pushProgressToCloud();
     }
+
+    function saveSimuladoToCloud(simId, simState) {
+      if (!checklistState._simulados || typeof checklistState._simulados !== "object") {
+        checklistState._simulados = {};
+      }
+      checklistState._simulados[simId] = simState;
+      if (simId === "simulado-sem-01-02") {
+        checklistState._simulados["revisao_simulado_v1"] = simState;
+        checklistState["w1_sim"] = true;
+      }
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(checklistState));
+      } catch (e) {}
+      if (typeof pushProgressToCloud === "function") {
+        pushProgressToCloud();
+      }
+    }
+    window.saveSimuladoToCloud = saveSimuladoToCloud;
 
     function escapeHtml(str) {
       return String(str || "")

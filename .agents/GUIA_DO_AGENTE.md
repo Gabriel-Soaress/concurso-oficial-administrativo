@@ -103,7 +103,7 @@ Quando o usuário enviar o Prompt Matriz da Semana $X$:
 - [x] **Matemática/RLM (Sem 1):** Conjuntos numéricos ($\mathbb{N}, \mathbb{Z}, \mathbb{Q}, \mathbb{R}$), operações fundamentais, lógica das frações, decimais, potências, raízes e expressões numéricas.
 - [x] **Específicos (Sem 1):** O que é Estado, Governo e Administração Pública; Princípios (LIMPE + implícitos) e serviço público.
 - [x] **Conhecimentos Gerais (Sem 1):** Formação histórica, territorial e econômica do Brasil (grandes ciclos e regiões).
-- [ ] **Simulado de Sábado 1:** Prova `prova-auto/1.pdf` (Gabarito `g1.pdf` - ACCESS - Pref. Cataguases/MG) — *Nota/Acertos: ___/40*
+- [x] **Simulado de Sábado 1:** Simulado Adaptado Semanas 01-02 (74 Questões) — *Acertos: 43/56 respondidas (76,8%) | Português: 12/18, Gerais: 14/18, Específicos: 17/20*
 
 #### Semana 2: Dando Nome e Proporção às Coisas (`semana-02/`)
 - [x] **Português (Sem 2):** Morfologia I (Substantivo, Adjetivo, Artigo, Numeral e Pronome — anáfora/catáfora) + Estrutura e Formação das palavras (derivação e composição).

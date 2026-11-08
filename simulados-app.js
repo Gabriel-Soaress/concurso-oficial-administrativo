@@ -99,6 +99,22 @@
       } catch (e) {}
     }
 
+    // Sincronização em nuvem: se checklistState._simulados tiver dados, restaura
+    if (root.checklistState && root.checklistState._simulados && root.checklistState._simulados[simId]) {
+      var cloud = root.checklistState._simulados[simId];
+      if (cloud && typeof cloud === "object") {
+        return {
+          answers: cloud.answers || {},
+          eliminated: cloud.eliminated || {},
+          correctedMaterias: cloud.correctedMaterias || {},
+          corrected: !!cloud.corrected,
+          elapsedSeconds: typeof cloud.elapsedSeconds === "number" ? cloud.elapsedSeconds : 0,
+          startedAt: cloud.startedAt || null,
+          finishedAt: cloud.finishedAt || null
+        };
+      }
+    }
+
     return {
       answers: {},
       eliminated: {},
@@ -115,6 +131,11 @@
     try {
       root.localStorage.setItem(STORE_PREFIX + simId, JSON.stringify(state));
     } catch (e) { /* ignora */ }
+    if (typeof root.saveSimuladoToCloud === "function") {
+      try {
+        root.saveSimuladoToCloud(simId, state);
+      } catch (e) { /* ignora */ }
+    }
   }
 
   function getSimEntry(simId) {
