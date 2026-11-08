@@ -1,12 +1,13 @@
 /* ==========================================================================
    SIMULADO DE REVISÃO — Semanas 01 e 02
    - Aba isolada (1ª aba ativa ao abrir revisao/index.html)
-   - Todas as 74 questões juntas na mesma aba, na ordem oficial da prova:
+   - Todas as 74 questões organizadas na ordem oficial da prova:
      Português -> Raciocínio Lógico -> Conhecimentos Gerais -> Específicos
-   - Ao clicar em uma das 4 abas de resumo, o simulado é ocultado e só o
-     resumo aparece; ao clicar na aba Simulado, os resumos são ocultados
-   - Origem (ACCESS / Adaptada · Guia ACCESS) + assunto + gabarito ficam
-     ESCONDIDOS até o aluno clicar em "Corrigir simulado"
+   - Permite verificar/corrigir TODAS as 74 questões de uma vez OU
+     verificar/corrigir cada MATÉRIA SEPARADAMENTE
+   - Filtro no topo para VISUALIZAR todas ou cada matéria isoladamente
+   - Origem (ACCESS / Adaptada) + assunto + gabarito + comentários ficam
+     OCULTOS até a matéria ou o simulado ser corrigido
    ========================================================================== */
 (function (root) {
   "use strict";
@@ -59,7 +60,23 @@
           '<div class="sim-timer" id="simTimer" title="Tempo decorrido desde a 1ª resposta">⏱ 00:00</div>' +
         '</div>' +
         '<p class="sim-intro-text">As questões abaixo seguem a ordem oficial das provas do Instituto ACCESS: <strong>Língua Portuguesa → Raciocínio Lógico e Matemático → Conhecimentos Gerais → Conhecimentos Específicos</strong>. ' +
-        'A tag indicando se a questão é <strong>original da ACCESS</strong> ou <strong>adaptada pelo nosso Guia</strong>, bem como o gabarito e a resolução comentada, <strong>ficam ocultos</strong> e só são revelados após clicar em <strong>Corrigir simulado</strong> no final da prova.</p>' +
+        'Você pode <strong>resolver tudo junto</strong> ou <strong>focar em uma matéria por vez</strong>. O selo de origem (<strong>Original ACCESS</strong> ou <strong>Adaptada</strong>), o gabarito e a resolução comentada ficam ocultos até você clicar em <strong>Verificar</strong> ao final da matéria ou no botão geral no fim da prova.</p>' +
+        
+        '<!-- Filtro de Visualização por Matéria -->' +
+        '<div class="sim-filter-wrap">' +
+          '<div class="sim-filter-title">Visualizar Caderno por Matéria:</div>' +
+          '<div class="sim-filter-chips">' +
+            '<button type="button" class="sim-filter-chip active" data-filter="all" onclick="SIMULADO.filterSubject(\'all\')">' +
+              '📋 Todas as Matérias <span class="sim-filter-count">' + total + '</span>' +
+            '</button>' +
+            (data.materias || []).map(function (m) {
+              return '<button type="button" class="sim-filter-chip chip-' + esc(m.key) + '" data-filter="' + esc(m.key) + '" onclick="SIMULADO.filterSubject(\'' + esc(m.key) + '\')">' +
+                esc(m.icone) + " " + esc(m.titulo) + ' <span class="sim-filter-count">' + (m.questoes || []).length + '</span>' +
+              '</button>';
+            }).join("") +
+          '</div>' +
+        '</div>' +
+
         '<div class="sim-index">' +
           (data.materias || []).map(function (m) {
             return '<a href="#sim-sec-' + esc(m.key) + '" class="sim-index-chip chip-' + esc(m.key) + '" onclick="return SIMULADO.goTo(\'sim-sec-' + esc(m.key) + '\')">' +
@@ -85,7 +102,7 @@
       });
 
       html.push(
-        '<div class="sim-section sec-' + esc(mat.key) + '" id="sim-sec-' + esc(mat.key) + '">' +
+        '<div class="sim-section sec-' + esc(mat.key) + '" id="sim-sec-' + esc(mat.key) + '" data-mat="' + esc(mat.key) + '">' +
           '<header class="sim-section-head">' +
             '<span class="sim-section-icon">' + esc(mat.icone) + "</span>" +
             '<div><h3 class="sim-section-title">' + esc(mat.titulo) + "</h3>" +
@@ -116,7 +133,7 @@
         var rInfo = q.texto_id && textRange[q.texto_id] ? textRange[q.texto_id] : null;
 
         html.push(
-          '<article class="sim-q" id="' + qid + '" data-qid="' + qid + '" data-gab="' + esc(q.gabarito) + '" data-mat="' + esc(mat.key) + '">' +
+          '<article class="sim-q" id="' + qid + '" data-qid="' + qid + '" data-gab="' + esc(q.gabarito) + '" data-mat="' + esc(mat.key) + '" data-origem="' + (origemAccess ? "access" : "adapt") + '">' +
             '<div class="sim-q-head">' +
               '<span class="sim-q-num">Questão ' + pad(num) + "</span>" +
               '<span class="sim-reveal sim-origin ' + (origemAccess ? "origin-access" : "origin-adapt") + '">' +
@@ -142,17 +159,53 @@
           "</article>"
         );
       });
-      html.push("</div>");
+
+      /* Rodapé exclusivo da matéria: progresso, botão de verificar a matéria e refazer */
+      html.push(
+        '<div class="sim-sec-footer" id="sim-sec-footer-' + esc(mat.key) + '">' +
+          '<div class="sim-sec-footer-top">' +
+            '<div class="sim-sec-footer-info">' +
+              '<span class="sim-sec-footer-badge">' + esc(mat.icone) + " " + esc(mat.titulo) + '</span>' +
+              '<span class="sim-sec-progress" id="simSecProg-' + esc(mat.key) + '"><strong>0</strong> de ' + qs.length + ' respondidas</span>' +
+            '</div>' +
+            '<div class="sim-sec-actions">' +
+              '<button type="button" class="sim-btn sim-btn-sec-correct" id="simSecCorrectBtn-' + esc(mat.key) + '" onclick="SIMULADO.correctSubject(\'' + esc(mat.key) + '\')">' +
+                '✅ Verificar ' + esc(mat.titulo) + ' (' + qs.length + ' questões)' +
+              '</button>' +
+              '<button type="button" class="sim-btn sim-btn-ghost sim-btn-sm" id="simSecResetBtn-' + esc(mat.key) + '" style="display:none;" onclick="SIMULADO.resetSubject(\'' + esc(mat.key) + '\')">' +
+                '↺ Refazer ' + esc(mat.titulo) +
+              '</button>' +
+            '</div>' +
+          '</div>' +
+          '<div class="sim-sec-result" id="simSecResult-' + esc(mat.key) + '"></div>' +
+        '</div>'
+      );
+
+      html.push("</div>"); // fecha sim-section
     });
 
     html.push(
       '<div class="sim-footer-card" id="simFooter">' +
-        '<div class="sim-progress-line">Progresso do Simulado: <strong><span id="simAnswered">0</span> de ' + total + '</strong> questões respondidas</div>' +
+        '<div class="sim-progress-line">Progresso Geral do Simulado: <strong><span id="simAnswered">0</span> de ' + total + '</strong> questões respondidas</div>' +
         '<div class="sim-progress-bar"><div id="simProgressFill" style="width:0%"></div></div>' +
         '<div class="sim-actions">' +
-          '<button type="button" class="sim-btn sim-btn-primary" id="simCorrectBtn" onclick="SIMULADO.correct()">✅ Corrigir Simulado e Revelar Origem/Gabarito</button>' +
-          '<button type="button" class="sim-btn sim-btn-ghost" onclick="SIMULADO.reset()">↺ Limpar Respostas e Refazer</button>' +
+          '<button type="button" class="sim-btn sim-btn-primary" id="simCorrectBtn" onclick="SIMULADO.correct()">✅ Corrigir Simulado Completo (Todas as ' + total + ' Questões)</button>' +
+          '<button type="button" class="sim-btn sim-btn-ghost" onclick="SIMULADO.reset()">↺ Limpar Todas as Respostas e Refazer</button>' +
         "</div>" +
+
+        '<!-- Bloco de Verificação por Matéria no Rodapé Geral -->' +
+        '<div class="sim-by-mat-box">' +
+          '<div class="sim-by-mat-heading">Ou verifique / revise cada matéria individualmente:</div>' +
+          '<div class="sim-by-mat-grid" id="simByMatGrid">' +
+            (data.materias || []).map(function (m) {
+              return '<button type="button" class="sim-by-mat-btn" id="simByMatBtn-' + esc(m.key) + '" onclick="SIMULADO.onMatBtnClick(\'' + esc(m.key) + '\')">' +
+                '<span>' + esc(m.icone) + ' ' + esc(m.titulo) + '</span>' +
+                '<span class="sim-by-mat-tag" id="simByMatTag-' + esc(m.key) + '">' + (m.questoes || []).length + ' q.</span>' +
+              '</button>';
+            }).join("") +
+          '</div>' +
+        '</div>' +
+
         '<div class="sim-result" id="simResult"></div>' +
       "</div>"
     );
@@ -160,12 +213,23 @@
   }
 
   /* ----------------------------- STATE ----------------------------------- */
-  var state = { answers: {}, corrected: false, startedAt: null, finishedAt: null };
+  var state = {
+    answers: {},
+    corrected: false,
+    correctedMaterias: {},
+    activeFilter: "all",
+    startedAt: null,
+    finishedAt: null
+  };
 
   function load() {
     try {
       var s = JSON.parse(root.localStorage.getItem(STORE_KEY) || "null");
-      if (s && typeof s === "object") state = Object.assign(state, s);
+      if (s && typeof s === "object") {
+        state = Object.assign(state, s);
+        if (!state.correctedMaterias) state.correctedMaterias = {};
+        if (!state.activeFilter) state.activeFilter = "all";
+      }
     } catch (e) { /* ignora */ }
   }
   function save() {
@@ -174,66 +238,216 @@
 
   function area() { return root.document && root.document.getElementById("simuladoArea"); }
 
+  function isMatCorrected(matKey) {
+    return !!state.corrected || !!(state.correctedMaterias && state.correctedMaterias[matKey]);
+  }
+
+  function applyFilter() {
+    var el = area();
+    if (!el) return;
+    var filter = state.activeFilter || "all";
+    var secs = el.querySelectorAll(".sim-section");
+    for (var i = 0; i < secs.length; i++) {
+      var sec = secs[i];
+      var mKey = sec.getAttribute("data-mat") || sec.id.replace("sim-sec-", "");
+      if (filter === "all" || filter === mKey) {
+        sec.style.display = "";
+      } else {
+        sec.style.display = "none";
+      }
+    }
+    var chips = el.querySelectorAll(".sim-filter-chip");
+    for (var j = 0; j < chips.length; j++) {
+      var c = chips[j];
+      c.classList.toggle("active", c.getAttribute("data-filter") === filter);
+    }
+  }
+
   function applyState() {
     var el = area();
     if (!el) return;
     el.classList.toggle("sim-corrected", !!state.corrected);
+
+    var data = root.SIMULADO_DATA || { materias: [] };
     var qs = el.querySelectorAll(".sim-q");
-    var answered = 0;
+    var totalAnswered = 0;
+
+    // Estatísticas por matéria
+    var matStats = {};
+    (data.materias || []).forEach(function (m) {
+      matStats[m.key] = { total: 0, answered: 0, ok: 0, okAccess: 0, totAccess: 0, okAdapt: 0, totAdapt: 0 };
+    });
+
     for (var i = 0; i < qs.length; i++) {
-      var qEl = qs[i], qid = qEl.getAttribute("data-qid"), gab = qEl.getAttribute("data-gab");
+      var qEl = qs[i];
+      var qid = qEl.getAttribute("data-qid");
+      var gab = qEl.getAttribute("data-gab");
+      var matKey = qEl.getAttribute("data-mat");
+      var isAccess = qEl.getAttribute("data-origem") === "access";
+      var mCorr = isMatCorrected(matKey);
       var mine = state.answers[qid];
-      if (mine) answered++;
+
+      if (matStats[matKey]) {
+        matStats[matKey].total++;
+        if (isAccess) matStats[matKey].totAccess++; else matStats[matKey].totAdapt++;
+        if (mine) matStats[matKey].answered++;
+      }
+      if (mine) totalAnswered++;
+
+      // Alternativas
       var btns = qEl.querySelectorAll(".sim-alt");
       for (var j = 0; j < btns.length; j++) {
         var b = btns[j], L = b.getAttribute("data-letter");
         b.classList.toggle("selected", mine === L);
-        b.classList.toggle("is-correct", !!state.corrected && L === gab);
-        b.classList.toggle("is-wrong", !!state.corrected && mine === L && L !== gab);
-        b.disabled = !!state.corrected;
+        b.classList.toggle("is-correct", mCorr && L === gab);
+        b.classList.toggle("is-wrong", mCorr && mine === L && L !== gab);
+        b.disabled = mCorr;
       }
-      qEl.classList.remove("q-right", "q-wrong", "q-blank");
+
+      qEl.classList.remove("q-right", "q-wrong", "q-blank", "q-corrected");
       var verdict = qEl.querySelector(".sim-verdict");
-      if (state.corrected) {
-        var cls = !mine ? "q-blank" : (mine === gab ? "q-right" : "q-wrong");
+
+      if (mCorr) {
+        qEl.classList.add("q-corrected");
+        var isRight = mine === gab;
+        var cls = !mine ? "q-blank" : (isRight ? "q-right" : "q-wrong");
         qEl.classList.add(cls);
-        if (verdict) verdict.textContent = !mine ? "⚪ Em branco" : (mine === gab ? "✔ Acertou" : "✘ Errou (marcou " + mine + ")");
+        if (isRight && matStats[matKey]) {
+          matStats[matKey].ok++;
+          if (isAccess) matStats[matKey].okAccess++; else matStats[matKey].okAdapt++;
+        }
+        if (verdict) {
+          verdict.textContent = !mine ? "⚪ Em branco" : (isRight ? "✔ Acertou" : "✘ Errou (marcou " + mine + ")");
+        }
       } else if (verdict) {
         verdict.textContent = "";
       }
     }
+
+    // Atualiza cada seção de matéria
+    (data.materias || []).forEach(function (m) {
+      var mKey = m.key;
+      var secEl = el.querySelector('#sim-sec-' + mKey);
+      var mCorr = isMatCorrected(mKey);
+      if (secEl) {
+        secEl.classList.toggle("sim-corrected", mCorr);
+      }
+
+      var stat = matStats[mKey] || { total: (m.questoes || []).length, answered: 0, ok: 0 };
+      var progEl = root.document.getElementById("simSecProg-" + mKey);
+      if (progEl) {
+        progEl.innerHTML = "<strong>" + stat.answered + "</strong> de " + stat.total + " respondidas";
+      }
+
+      var corBtn = root.document.getElementById("simSecCorrectBtn-" + mKey);
+      var rstBtn = root.document.getElementById("simSecResetBtn-" + mKey);
+      var resEl = root.document.getElementById("simSecResult-" + mKey);
+
+      if (corBtn) {
+        if (mCorr) {
+          corBtn.textContent = "✔ " + m.titulo + " Verificada (" + stat.ok + "/" + stat.total + ")";
+          corBtn.classList.add("sim-btn-done");
+          corBtn.disabled = true;
+        } else {
+          corBtn.textContent = "✅ Verificar " + m.titulo + " (" + stat.total + " questões)";
+          corBtn.classList.remove("sim-btn-done");
+          corBtn.disabled = false;
+        }
+      }
+
+      if (rstBtn) {
+        rstBtn.style.display = mCorr ? "" : "none";
+      }
+
+      if (resEl) {
+        if (mCorr) {
+          var pct = stat.total ? Math.round(stat.ok / stat.total * 100) : 0;
+          resEl.innerHTML =
+            '<div class="sim-sec-score-card">' +
+              '<div class="sim-sec-score-header">' +
+                '<div class="sim-sec-score-badge">' + esc(m.icone) + ' Desempenho em ' + esc(m.titulo) + '</div>' +
+                '<div class="sim-sec-score-val">' + stat.ok + ' de ' + stat.total + ' <span>(' + pct + '% de acerto)</span></div>' +
+              '</div>' +
+              '<div class="sim-sec-score-bar"><div style="width:' + pct + '%"></div></div>' +
+              '<div class="sim-sec-score-details">' +
+                '<span>🏛️ Originais ACCESS: <strong>' + stat.okAccess + '/' + stat.totAccess + '</strong></span>' +
+                '<span>🛠️ Adaptadas pelo Guia: <strong>' + stat.okAdapt + '/' + stat.totAdapt + '</strong></span>' +
+              '</div>' +
+              '<p class="sim-sec-score-msg">✨ Gabarito e resoluções passo a passo de ' + esc(m.titulo) + ' liberados acima! Confira seus erros e acertos.</p>' +
+            '</div>';
+        } else {
+          resEl.innerHTML = "";
+        }
+      }
+
+      // Atualiza botão correspondente no rodapé geral
+      var matBtn = root.document.getElementById("simByMatBtn-" + mKey);
+      var matTag = root.document.getElementById("simByMatTag-" + mKey);
+      if (matBtn && matTag) {
+        matBtn.classList.toggle("is-corr", mCorr);
+        if (mCorr) {
+          matTag.textContent = stat.ok + "/" + stat.total + " ✔";
+        } else {
+          matTag.textContent = stat.answered + "/" + stat.total;
+        }
+      }
+    });
+
+    // Progresso Geral
     var total = qs.length;
     var a = root.document.getElementById("simAnswered");
-    if (a) a.textContent = answered;
+    if (a) a.textContent = totalAnswered;
     var f = root.document.getElementById("simProgressFill");
-    if (f) f.style.width = (total ? Math.round(answered / total * 100) : 0) + "%";
+    if (f) f.style.width = (total ? Math.round(totalAnswered / total * 100) : 0) + "%";
     var btn = root.document.getElementById("simCorrectBtn");
     if (btn) btn.style.display = state.corrected ? "none" : "";
+
+    applyFilter();
     renderResult();
   }
 
   function renderResult() {
     var box = root.document.getElementById("simResult");
     if (!box) return;
-    if (!state.corrected) { box.innerHTML = ""; return; }
+
     var data = root.SIMULADO_DATA || { materias: [] };
+    var anyCorr = state.corrected || Object.keys(state.correctedMaterias || {}).some(function (k) {
+      return state.correctedMaterias[k];
+    });
+
+    if (!anyCorr) {
+      box.innerHTML = "";
+      return;
+    }
+
     var el = area();
     var rows = [], tot = 0, totOk = 0;
     (data.materias || []).forEach(function (m) {
       var qEls = el.querySelectorAll('.sim-q[data-mat="' + m.key + '"]');
       var ok = 0;
-      for (var i = 0; i < qEls.length; i++) if (qEls[i].classList.contains("q-right")) ok++;
-      tot += qEls.length; totOk += ok;
+      for (var i = 0; i < qEls.length; i++) {
+        if (qEls[i].classList.contains("q-right")) ok++;
+      }
+      tot += qEls.length;
+      totOk += ok;
       var pct = qEls.length ? Math.round(ok / qEls.length * 100) : 0;
-      rows.push('<div class="sim-score-row"><span>' + esc(m.icone) + " " + esc(m.titulo) + '</span><div class="sim-score-bar"><div style="width:' + pct + '%"></div></div><strong>' + ok + "/" + qEls.length + " (" + pct + "%)</strong></div>");
+      var isCorr = isMatCorrected(m.key);
+      rows.push(
+        '<div class="sim-score-row">' +
+          '<span>' + esc(m.icone) + " " + esc(m.titulo) + " " + (isCorr ? '<em style="font-size:0.75rem;color:#10b981;">(verificada)</em>' : '<em style="font-size:0.75rem;color:#f59e0b;">(pendente)</em>') + '</span>' +
+          '<div class="sim-score-bar"><div style="width:' + (isCorr ? pct : 0) + '%"></div></div>' +
+          '<strong>' + (isCorr ? (ok + "/" + qEls.length + " (" + pct + "%)") : "—") + '</strong>' +
+        '</div>'
+      );
     });
+
     var pctTot = tot ? Math.round(totOk / tot * 100) : 0;
     var tempo = (state.startedAt && state.finishedAt) ? fmtTime(state.finishedAt - state.startedAt) : null;
     box.innerHTML =
-      '<div class="sim-score-total">Nota Final: ' + totOk + " de " + tot + " <span>(" + pctTot + "% de aproveitamento)</span></div>" +
+      '<div class="sim-score-total">Aproveitamento Geral: ' + totOk + " de " + tot + " <span>(" + pctTot + "% de acertos)</span></div>" +
       (tempo ? '<div class="sim-score-time">⏱ Tempo de resolução: ' + tempo + "</div>" : "") +
       '<div class="sim-score-grid">' + rows.join("") + "</div>" +
-      '<p class="sim-score-tip">✨ <strong>Correção liberada!</strong> Role as questões acima para conferir em cada uma o selo de origem (<strong>🏛️ Original ACCESS</strong> ou <strong>🛠️ Adaptada · Guia ACCESS</strong>), o assunto cobrado e o comentário passo a passo.</p>';
+      '<p class="sim-score-tip">✨ <strong>Correções em tempo real liberadas!</strong> Role pelas questões de cada matéria verificada para conferir a origem oficial/adaptada, o tópico do edital e o comentário passo a passo.</p>';
   }
 
   function fmtTime(ms) {
@@ -269,22 +483,139 @@
       applyState();
     },
     pick: function (qid, L) {
+      var el = area();
+      if (!el) return;
+      var qEl = el.querySelector('#' + qid);
+      var matKey = qEl ? qEl.getAttribute("data-mat") : null;
+      if (matKey && isMatCorrected(matKey)) return;
       if (state.corrected) return;
+
       if (!state.startedAt) state.startedAt = Date.now();
       if (!timerHandle) timerHandle = root.setInterval(tick, 1000);
       state.answers[qid] = state.answers[qid] === L ? undefined : L;
       if (!state.answers[qid]) delete state.answers[qid];
       save(); applyState();
     },
+
+    /* Filtra a visualização das questões por matéria ou exibe todas */
+    filterSubject: function (key) {
+      state.activeFilter = key || "all";
+      save();
+      applyFilter();
+      if (key && key !== "all") {
+        var t = root.document.getElementById("sim-sec-" + key);
+        if (t && t.scrollIntoView) {
+          t.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }
+      return false;
+    },
+
+    /* Ação ao clicar no botão de matéria no rodapé geral */
+    onMatBtnClick: function (matKey) {
+      if (isMatCorrected(matKey)) {
+        // Se já está corrigida, rola até ela para conferir
+        API.goTo("sim-sec-" + matKey);
+      } else {
+        // Se ainda não está corrigida, pergunta se quer verificar
+        API.correctSubject(matKey);
+      }
+    },
+
+    /* Corrige apenas uma matéria específica e libera seus gabaritos */
+    correctSubject: function (matKey) {
+      var data = root.SIMULADO_DATA || { materias: [] };
+      var mat = (data.materias || []).filter(function (m) { return m.key === matKey; })[0];
+      var qs = (mat && mat.questoes) || [];
+      var el = area();
+      var qEls = el.querySelectorAll('.sim-q[data-mat="' + matKey + '"]');
+      var answered = 0;
+      for (var i = 0; i < qEls.length; i++) {
+        var qid = qEls[i].getAttribute("data-qid");
+        if (state.answers[qid]) answered++;
+      }
+
+      if (answered < qEls.length && typeof root.confirm === "function") {
+        var matTitle = mat ? mat.titulo : matKey;
+        if (!root.confirm("Você deixou " + (qEls.length - answered) + " questão(ões) de " + matTitle + " em branco.\nDeseja verificar esta matéria mesmo assim?")) {
+          return;
+        }
+      }
+
+      if (!state.startedAt) state.startedAt = Date.now();
+      if (!state.correctedMaterias) state.correctedMaterias = {};
+      state.correctedMaterias[matKey] = true;
+
+      // Verifica se todas as matérias agora foram corrigidas
+      var allDone = true;
+      (data.materias || []).forEach(function (m) {
+        if (!state.correctedMaterias[m.key]) allDone = false;
+      });
+      if (allDone) {
+        state.corrected = true;
+        state.finishedAt = Date.now();
+      }
+
+      save(); applyState(); tick();
+
+      var foot = root.document.getElementById("sim-sec-footer-" + matKey);
+      if (foot && foot.scrollIntoView) {
+        foot.scrollIntoView({ behavior: "smooth", block: "center" });
+      }
+
+      if (typeof root.confetti === "function") {
+        var ok = 0;
+        for (var k = 0; k < qEls.length; k++) {
+          if (qEls[k].classList.contains("q-right")) ok++;
+        }
+        if (qEls.length && ok / qEls.length >= 0.7) {
+          root.confetti({ particleCount: 75, spread: 65, origin: { y: 0.65 } });
+        }
+      }
+    },
+
+    /* Limpa e permite refazer apenas as questões de uma matéria */
+    resetSubject: function (matKey) {
+      var data = root.SIMULADO_DATA || { materias: [] };
+      var mat = (data.materias || []).filter(function (m) { return m.key === matKey; })[0];
+      var matTitle = mat ? mat.titulo : matKey;
+
+      if (typeof root.confirm === "function" && !root.confirm("Limpar as respostas e refazer as questões de " + matTitle + "?")) return;
+
+      var el = area();
+      var qEls = el.querySelectorAll('.sim-q[data-mat="' + matKey + '"]');
+      for (var i = 0; i < qEls.length; i++) {
+        var qid = qEls[i].getAttribute("data-qid");
+        delete state.answers[qid];
+      }
+
+      if (state.correctedMaterias) delete state.correctedMaterias[matKey];
+      state.corrected = false; // Simulado não é mais 100% corrigido
+      save(); applyState(); tick();
+
+      var sec = root.document.getElementById("sim-sec-" + matKey);
+      if (sec && sec.scrollIntoView) {
+        sec.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    },
+
+    /* Corrige o simulado inteiro (todas as matérias) */
     correct: function () {
       var total = area().querySelectorAll(".sim-q").length;
       var answered = Object.keys(state.answers).length;
       if (answered < total && typeof root.confirm === "function") {
-        if (!root.confirm("Você deixou " + (total - answered) + " questão(ões) em branco. Deseja corrigir o simulado mesmo assim?")) return;
+        if (!root.confirm("Você deixou " + (total - answered) + " questão(ões) em branco no total. Deseja corrigir o simulado completo mesmo assim?")) return;
       }
       state.corrected = true;
       state.finishedAt = Date.now();
       if (!state.startedAt) state.startedAt = state.finishedAt;
+
+      var data = root.SIMULADO_DATA || { materias: [] };
+      if (!state.correctedMaterias) state.correctedMaterias = {};
+      (data.materias || []).forEach(function (m) {
+        state.correctedMaterias[m.key] = true;
+      });
+
       save(); applyState(); tick();
       var r = root.document.getElementById("simFooter");
       if (r && r.scrollIntoView) r.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -293,17 +624,28 @@
         if (ok / total >= 0.7) root.confetti({ particleCount: 120, spread: 80, origin: { y: 0.7 } });
       }
     },
+
+    /* Limpa todas as respostas do simulado completo */
     reset: function () {
       if (typeof root.confirm === "function" && !root.confirm("Apagar todas as respostas e recomeçar o simulado do zero?")) return;
-      state = { answers: {}, corrected: false, startedAt: null, finishedAt: null };
+      state = { answers: {}, corrected: false, correctedMaterias: {}, activeFilter: "all", startedAt: null, finishedAt: null };
       save(); applyState(); tick();
       if (typeof root.scrollTo === "function") root.scrollTo({ top: 0, behavior: "smooth" });
     },
+
     goTo: function (id) {
+      // Se a matéria estiver filtrada/oculta, reabre todas ou muda o filtro
+      if (id.indexOf("sim-sec-") === 0) {
+        var targetKey = id.replace("sim-sec-", "");
+        if (state.activeFilter !== "all" && state.activeFilter !== targetKey) {
+          API.filterSubject("all");
+        }
+      }
       var t = root.document.getElementById(id);
       if (t && t.scrollIntoView) t.scrollIntoView({ behavior: "smooth", block: "start" });
       return false;
     },
+
     /* Mostra SOMENTE a aba isolada do Simulado e esconde os resumos */
     show: function () {
       var d = root.document;
@@ -330,6 +672,7 @@
       tick();
       if (typeof root.scrollTo === "function") root.scrollTo({ top: 0, behavior: "smooth" });
     },
+
     /* Esconde a aba do Simulado e mostra o resumo selecionado */
     hide: function () {
       var d = root.document;
