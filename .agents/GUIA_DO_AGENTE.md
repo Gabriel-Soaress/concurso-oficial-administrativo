@@ -114,7 +114,7 @@ Quando o usuário enviar o Prompt Matriz da Semana $X$:
 
 #### Semana 3: Ações, Conexões e Regras de Proporção (`semana-03/`)
 - [ ] **Português (Sem 3):** Morfologia II (Verbos: lógica dos tempos/modos; Advérbios, Preposições vs. Artigos, e Conjunções) + Semântica em contexto.
-- [ ] **Matemática/RLM (Sem 3):** Regra de Três Simples e Composta (lógica das grandezas) + Porcentagem (aumentos e descontos sucessivos).
+- [ ] **Matemática/RLM (Sem 3):** Radiciação completa (complemento: índices, expoente fracionário, simplificação, operações e racionalização) + Regra de Três Simples e Composta (lógica das grandezas) + Porcentagem (aumentos e descontos sucessivos).
 - [ ] **Específicos (Sem 3):** Funções da Administração (PODC), Estruturas Organizacionais (Linear, Funcional, Linha-Staff, Matricial) e Ciclo PDCA.
 - [ ] **Conhecimentos Gerais (Sem 3):** Formação histórica, geográfica e econômica do Estado de São Paulo e do interior paulista.
 - [ ] **Simulado de Sábado 3:** Prova `prova-auto/3.pdf` (Gabarito `g3.pdf` - Avança SP - Câmara de Francisco Morato/SP) — *Nota/Acertos: ___*

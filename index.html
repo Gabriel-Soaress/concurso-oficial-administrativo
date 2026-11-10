@@ -4010,7 +4010,7 @@
         folder: "semana-03",
         prereq: "Requer Semana 02 (Classes nominais, Razão/Proporção e Organização Administrativa).",
         port: "Morfologia II (Verbos: lógica dos tempos e modos; Advérbios; diferença entre Preposição e Artigo; Conjunções) + Semântica em contexto (sinônimos, antônimos, homônimos e parônimos).",
-        rlm: "Regra de Três Simples e Composta (entendendo a lógica das grandezas diretas e inversas) + Porcentagem (aumentos e descontos sucessivos).",
+        rlm: "Radiciação Completa (complemento) + Regra de Três Simples e Composta (grandezas diretas e inversas) + Porcentagem (aumentos e descontos sucessivos).",
         esp: "Funções da Administração (PODC: Planejar, Organizar, Dirigir e Controlar), Estruturas Organizacionais (Linear, Funcional, Linha-Staff, Matricial) e Ciclo PDCA.",
         ger: "Formação histórica, geográfica, demográfica e econômica do Estado de São Paulo e do interior paulista.",
         simulado: "Prova 3.pdf (Gabarito g3.pdf — Banca Avança SP - Câmara de Francisco Morato/SP)",
@@ -5823,15 +5823,26 @@
     // (Ex: 43 Exercícios de Frações, Decimais e Dízimas)
     // =========================================================
     function normalizeMathAnswerString(raw) {
-      return String(raw || "")
+      let s = String(raw || "")
         .trim()
         .replace(/\$/g, "")
+        .replace(/\\left\(/g, "(")
+        .replace(/\\right\)/g, ")")
+        .replace(/\\sqrt\[(\d+)\]\{([^{}]+)\}/g, "r$1($2)")
+        .replace(/\\sqrt\{([^{}]+)\}/g, "r($1)")
         .replace(/\\frac\{(\d+)\}\{(\d+)\}/g, "$1/$2")
         .replace(/\{,\}/g, ",")
+        .replace(/(\d)\.(\d{3})(?!\d)/g, "$1$2")
         .replace(/\./g, ",")
         .replace(/\s+/g, " ")
         .replace(/\s*\/\s*/g, "/")
         .toLowerCase();
+      s = s
+        .replace(/(?:cbrt|raiz3)\s*(?:\(\s*(\d+)\s*\)|(\d+))/g, (_, a, b) => `r3(${a || b})`)
+        .replace(/(?:√|raiz(?:\s+de)?)\s*(?:\(\s*(\d+)\s*\)|(\d+))/g, (_, a, b) => `r(${a || b})`)
+        .replace(/(\d)\s*\*?\s*r/g, "$1r")
+        .replace(/\s*([+\-])\s*/g, "$1");
+      return s;
     }
 
     function evalMathStringToFloat(str) {

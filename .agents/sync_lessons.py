@@ -23,7 +23,7 @@ def classify_subject(filename, h1_text):
 
     if any(k in fname for k in ["portugues", "port_", "gramatica", "interpretacao"]):
         return "port"
-    if any(k in fname for k in ["matematica", "rlm", "raciocinio", "fracoes", "decimais", "dizimas", "equac", "geometr", "aritmetica"]):
+    if any(k in fname for k in ["matematica", "rlm", "raciocinio", "fracoes", "decimais", "dizimas", "radiciacao", "regra_de_tres", "porcentagem", "equac", "geometr", "aritmetica"]):
         return "rlm"
     if any(k in fname for k in ["especifico", "administrac", "lei_", "lai", "lgpd", "protocolo", "arquivo", "redacao_oficial"]):
         return "esp"
@@ -65,6 +65,8 @@ def build_short_title(filename, h1_text, kind, q_count):
             return f"Lista Prática: {q_count} Exercícios (Frações, Decimais e Dízimas)"
         if "potencias" in fname_low or "potências" in h1_text.lower():
             return f"Lista Prática: {q_count} Exercícios (Potências, Raízes e Expressões)"
+        if "radiciacao" in fname_low or "regra_de_tres" in fname_low or "porcentagem" in fname_low:
+            return f"Lista Prática: {q_count} Exercícios (Radiciação, Regra de Três e Porcentagem)"
         clean_h1 = re.sub(r'^#+\s*', '', h1_text).strip()
         return f"{clean_h1} ({q_count} Exercícios)"
     else:
