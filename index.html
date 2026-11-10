@@ -298,6 +298,73 @@
       color: var(--brand);
       border-color: var(--brand);
     }
+    /* Cards Expansíveis da Trilha + Abreviações */
+    .week-collapse-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 2.35rem;
+      height: 2.35rem;
+      border-radius: 0.7rem;
+      background-color: var(--bg-elevated);
+      border: 1px solid var(--border-strong);
+      color: var(--text-secondary);
+      cursor: pointer;
+      transition: all 0.16s ease;
+      flex-shrink: 0;
+    }
+    .week-collapse-btn:hover {
+      background-color: var(--bg-muted);
+      border-color: var(--brand);
+      color: var(--brand);
+    }
+    .week-abbr-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+      padding: 0.25rem 0.62rem;
+      border-radius: 0.5rem;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.03em;
+      border: 1px solid var(--border-strong);
+      background-color: var(--bg-muted);
+      color: var(--text-secondary);
+      transition: all 0.15s ease;
+    }
+    .week-abbr-pill.is-done {
+      background-color: rgba(16, 185, 129, 0.14);
+      border-color: rgba(16, 185, 129, 0.45);
+      color: #047857;
+      text-decoration: line-through;
+      text-decoration-thickness: 2px;
+    }
+    html.dark .week-abbr-pill.is-done {
+      background-color: rgba(16, 185, 129, 0.16);
+      border-color: rgba(16, 185, 129, 0.4);
+      color: #6ee7b7;
+    }
+    .week-pct-badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.2rem 0.6rem;
+      border-radius: 9999px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.74rem;
+      font-weight: 800;
+      background-color: var(--bg-muted);
+      color: var(--text-secondary);
+      border: 1px solid var(--border);
+    }
+    .week-pct-badge.is-full {
+      background-color: rgba(16, 185, 129, 0.15);
+      border-color: rgba(16, 185, 129, 0.45);
+      color: #047857;
+    }
+    html.dark .week-pct-badge.is-full {
+      color: #6ee7b7;
+    }
     /* Custom Checkbox */
     .check-custom {
       appearance: none;
@@ -4414,6 +4481,33 @@
       renderMonthWeeks();
     }
 
+    const COLLAPSED_WEEKS_KEY = "concurso_collapsed_weeks_v1";
+    let collapsedWeeksState = {};
+    try {
+      collapsedWeeksState = JSON.parse(localStorage.getItem(COLLAPSED_WEEKS_KEY) || "{}");
+    } catch (e) {
+      collapsedWeeksState = {};
+    }
+
+    function toggleWeekCollapse(weekNum) {
+      collapsedWeeksState[weekNum] = !collapsedWeeksState[weekNum];
+      try {
+        localStorage.setItem(COLLAPSED_WEEKS_KEY, JSON.stringify(collapsedWeeksState));
+      } catch (e) {}
+      renderMonthWeeks();
+    }
+
+    function toggleAllMonthWeeks(collapse) {
+      const mWeeks = weeksData.filter(w => w.monthNum === activeMonth);
+      mWeeks.forEach(w => {
+        collapsedWeeksState[w.num] = !!collapse;
+      });
+      try {
+        localStorage.setItem(COLLAPSED_WEEKS_KEY, JSON.stringify(collapsedWeeksState));
+      } catch (e) {}
+      renderMonthWeeks();
+    }
+
     function renderMonthWeeks() {
       const mWeeks = weeksData.filter(w => w.monthNum === activeMonth);
       const banner = document.getElementById("monthBanner");
@@ -4423,9 +4517,15 @@
         3: "Objetivo do Mês 3: Fechar pontuação, combinatória/matrizes/geometria analítica, dominar LAI e LGPD na prática e lapidar o Caderno de Erros."
       };
       banner.innerHTML = `
-        <div class="space-y-1">
-          <div class="font-bold text-sm sm:text-base">${mWeeks[0].monthTitle}</div>
-          <div class="text-xs sm:text-sm text-sec">${descriptions[activeMonth]}</div>
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <div class="space-y-1">
+            <div class="font-bold text-sm sm:text-base">${mWeeks[0].monthTitle}</div>
+            <div class="text-xs sm:text-sm text-sec">${descriptions[activeMonth]}</div>
+          </div>
+          <div class="flex items-center gap-2 shrink-0">
+            <button type="button" onclick="toggleAllMonthWeeks(true)" class="btn-secondary !py-1.5 !px-3 !text-xs">Comprimir Todas</button>
+            <button type="button" onclick="toggleAllMonthWeeks(false)" class="btn-secondary !py-1.5 !px-3 !text-xs">Expandir Todas</button>
+          </div>
         </div>
       `;
 
@@ -4435,35 +4535,35 @@
       const container = document.getElementById("weeksListContainer");
       container.innerHTML = mWeeks.map(w => {
         const items = [
-          { id: `w${w.num}_port`, subj: "port", badgeClass: "badge-port", tag: "Português", name: "Língua Portuguesa", text: w.port },
-          { id: `w${w.num}_rlm`, subj: "rlm", badgeClass: "badge-rlm", tag: "Matemática & RLM", name: "Raciocínio Lógico e Matemático", text: w.rlm },
-          { id: `w${w.num}_esp`, subj: "esp", badgeClass: "badge-esp", tag: "Específicos", name: "Conhecimentos Específicos", text: w.esp },
-          { id: `w${w.num}_ger`, subj: "ger", badgeClass: "badge-ger", tag: "Gerais", name: "Conhecimentos Gerais", text: w.ger },
-          { id: `w${w.num}_sim`, subj: "sim", badgeClass: "badge-sim", tag: "Simulado de Sábado", name: "Simulado Fixo", text: w.simulado }
+          { id: `w${w.num}_port`, subj: "port", abbr: "PORT", badgeClass: "badge-port", tag: "Português", name: "Língua Portuguesa", text: w.port },
+          { id: `w${w.num}_rlm`, subj: "rlm", abbr: "MAT/RLM", badgeClass: "badge-rlm", tag: "Matemática & RLM", name: "Raciocínio Lógico e Matemático", text: w.rlm },
+          { id: `w${w.num}_esp`, subj: "esp", abbr: "ESP", badgeClass: "badge-esp", tag: "Específicos", name: "Conhecimentos Específicos", text: w.esp },
+          { id: `w${w.num}_ger`, subj: "ger", abbr: "GER", badgeClass: "badge-ger", tag: "Gerais", name: "Conhecimentos Gerais", text: w.ger },
+          { id: `w${w.num}_sim`, subj: "sim", abbr: "SIM", badgeClass: "badge-sim", tag: "Simulado de Sábado", name: "Simulado Fixo", text: w.simulado }
         ];
         const doneCount = items.filter(i => checklistState[i.id]).length;
         const weekPct = Math.round((doneCount / 5) * 100);
         const totalWeekDocs = items.reduce((acc, it) => acc + ((lessonsMap[it.id] || []).length), 0);
+        const isCollapsed = !!collapsedWeeksState[w.num];
 
-        return `
-          <div id="week-card-${w.num}" class="surface rounded-2xl sm:rounded-3xl p-5 sm:p-8 space-y-5 sm:space-y-6 shadow-sm">
-            <!-- Header da Semana -->
-            <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 pb-4 sm:pb-5 border-b border-tech">
-              <div class="space-y-1.5 min-w-0">
-                <div class="flex flex-wrap items-center gap-2">
-                  <span class="text-xs font-mono font-bold px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-600 dark:text-indigo-400">${w.folder}/</span>
-                  <span class="text-xs font-mono font-semibold text-mut">${doneCount}/5 concluídas (${weekPct}%)</span>
-                  ${totalWeekDocs > 0 ? `<span class="text-xs font-mono font-bold px-2.5 py-0.5 rounded-full bg-emerald-500/12 text-emerald-600 dark:text-emerald-400">📚 ${totalWeekDocs} ${totalWeekDocs === 1 ? 'material interativo' : 'materiais interativos'}</span>` : ""}
-                </div>
-                <h3 class="text-base sm:text-xl font-extrabold leading-snug">${w.title}</h3>
-                <p class="text-xs sm:text-sm text-sec">${w.prereq}</p>
-              </div>
-              <button type="button" onclick="openGeneratorForWeek(${w.num})" class="btn-primary w-full sm:w-auto shrink-0 self-start lg:self-center">
-                <span>Gerar Aula (Semana ${String(w.num).padStart(2, '0')})</span>
-                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-              </button>
+        const collapsedSummaryHtml = isCollapsed ? `
+          <div onclick="toggleWeekCollapse(${w.num})" class="pt-3 border-t border-tech flex flex-col sm:flex-row sm:items-center justify-between gap-3 cursor-pointer select-none">
+            <div class="flex flex-wrap items-center gap-1.5">
+              ${items.map(item => {
+                const checked = !!checklistState[item.id];
+                return `<span class="week-abbr-pill ${checked ? 'is-done' : ''}" title="${item.name}: ${checked ? 'Concluída' : 'Pendente'}">${item.abbr}</span>`;
+              }).join("")}
             </div>
+            <div class="flex items-center gap-2.5 shrink-0">
+              <div class="flex-1 sm:flex-initial w-full sm:w-28 h-2 rounded-full bg-slate-200 dark:bg-slate-700/70 overflow-hidden">
+                <div class="h-full rounded-full transition-all duration-300 ${weekPct === 100 ? 'bg-emerald-500' : 'bg-indigo-500'}" style="width: ${weekPct}%"></div>
+              </div>
+              <span class="text-xs font-mono font-extrabold ${weekPct === 100 ? 'text-emerald-600 dark:text-emerald-400' : 'text-pri'} shrink-0">${weekPct}% feito</span>
+            </div>
+          </div>
+        ` : "";
 
+        const expandedBodyHtml = !isCollapsed ? `
             <!-- Lista de Matérias da Semana -->
             <div class="space-y-3 sm:space-y-3.5">
               ${items.map(item => {
@@ -4542,6 +4642,44 @@
                 `;
               }).join("")}
             </div>
+        ` : "";
+
+        return `
+          <div id="week-card-${w.num}" class="surface rounded-2xl sm:rounded-3xl ${isCollapsed ? 'p-4 sm:p-6 space-y-3' : 'p-5 sm:p-8 space-y-5 sm:space-y-6'} shadow-sm transition-all">
+            <!-- Header da Semana -->
+            <div class="${isCollapsed ? '' : 'pb-4 sm:pb-5 border-b border-tech'}">
+              <div class="flex items-start justify-between gap-3">
+                <div onclick="toggleWeekCollapse(${w.num})" class="space-y-1.5 min-w-0 flex-1 cursor-pointer select-none">
+                  <div class="flex flex-wrap items-center gap-2">
+                    <span class="text-xs font-mono font-bold px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-600 dark:text-indigo-400">${w.folder}/</span>
+                    <span class="week-pct-badge ${weekPct === 100 ? 'is-full' : ''}">${doneCount}/5 (${weekPct}%)</span>
+                    ${(!isCollapsed && totalWeekDocs > 0) ? `<span class="text-xs font-mono font-bold px-2.5 py-0.5 rounded-full bg-emerald-500/12 text-emerald-600 dark:text-emerald-400">📚 ${totalWeekDocs} ${totalWeekDocs === 1 ? 'material interativo' : 'materiais interativos'}</span>` : ""}
+                  </div>
+                  <h3 class="text-base sm:text-xl font-extrabold leading-snug">${w.title}</h3>
+                  ${!isCollapsed ? `<p class="text-xs sm:text-sm text-sec">${w.prereq}</p>` : ""}
+                </div>
+                <div class="flex items-center gap-2 shrink-0">
+                  ${!isCollapsed ? `
+                    <button type="button" onclick="event.stopPropagation(); openGeneratorForWeek(${w.num})" class="btn-primary hidden sm:inline-flex">
+                      <span>Gerar Aula (Semana ${String(w.num).padStart(2, '0')})</span>
+                      <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                    </button>
+                  ` : ""}
+                  <button type="button" onclick="event.stopPropagation(); toggleWeekCollapse(${w.num})" class="week-collapse-btn" title="${isCollapsed ? 'Expandir semana' : 'Comprimir semana'}" aria-expanded="${!isCollapsed}">
+                    <svg class="w-4 h-4 transition-transform duration-200 ${isCollapsed ? '' : 'rotate-180'}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+                  </button>
+                </div>
+              </div>
+              ${!isCollapsed ? `
+                <button type="button" onclick="openGeneratorForWeek(${w.num})" class="btn-primary w-full sm:hidden mt-3">
+                  <span>Gerar Aula (Semana ${String(w.num).padStart(2, '0')})</span>
+                  <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </button>
+              ` : ""}
+            </div>
+
+            ${collapsedSummaryHtml}
+            ${expandedBodyHtml}
           </div>
         `;
       }).join("");
