@@ -4384,6 +4384,20 @@
           localStorage.setItem(STORAGE_KEY, JSON.stringify(checklistState));
           localStorage.setItem(EXAMS_STORAGE_KEY, JSON.stringify(examsDoneState));
 
+          if (checklistState._collapsedWeeks && typeof checklistState._collapsedWeeks === "object") {
+            collapsedWeeksState = { ...checklistState._collapsedWeeks };
+            try { localStorage.setItem(COLLAPSED_WEEKS_KEY, JSON.stringify(collapsedWeeksState)); } catch (e) {}
+          } else if (Object.keys(collapsedWeeksState).length > 0) {
+            checklistState._collapsedWeeks = { ...collapsedWeeksState };
+          }
+
+          if (checklistState._theme === "dark" || checklistState._theme === "light") {
+            document.documentElement.classList.toggle("dark", checklistState._theme === "dark");
+            try { localStorage.setItem("app_theme", checklistState._theme); } catch (e) {}
+          } else {
+            checklistState._theme = document.documentElement.classList.contains("dark") ? "dark" : "light";
+          }
+
           if (checklistState._simulados && typeof checklistState._simulados === "object") {
             try {
               for (const [simKey, sState] of Object.entries(checklistState._simulados)) {
@@ -4407,6 +4421,10 @@
           updateGeneratorPrompt();
           await pushProgressToCloud();
         } else {
+          if (Object.keys(collapsedWeeksState).length > 0) {
+            checklistState._collapsedWeeks = { ...collapsedWeeksState };
+          }
+          checklistState._theme = document.documentElement.classList.contains("dark") ? "dark" : "light";
           await pushProgressToCloud();
         }
       } catch (err) {
@@ -4485,16 +4503,22 @@
     let collapsedWeeksState = {};
     try {
       collapsedWeeksState = JSON.parse(localStorage.getItem(COLLAPSED_WEEKS_KEY) || "{}");
+      if (checklistState._collapsedWeeks && typeof checklistState._collapsedWeeks === "object") {
+        collapsedWeeksState = { ...collapsedWeeksState, ...checklistState._collapsedWeeks };
+      }
     } catch (e) {
       collapsedWeeksState = {};
     }
 
     function toggleWeekCollapse(weekNum) {
       collapsedWeeksState[weekNum] = !collapsedWeeksState[weekNum];
+      checklistState._collapsedWeeks = { ...collapsedWeeksState };
       try {
         localStorage.setItem(COLLAPSED_WEEKS_KEY, JSON.stringify(collapsedWeeksState));
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(checklistState));
       } catch (e) {}
       renderMonthWeeks();
+      pushProgressToCloud();
     }
 
     function toggleAllMonthWeeks(collapse) {
@@ -4502,10 +4526,13 @@
       mWeeks.forEach(w => {
         collapsedWeeksState[w.num] = !!collapse;
       });
+      checklistState._collapsedWeeks = { ...collapsedWeeksState };
       try {
         localStorage.setItem(COLLAPSED_WEEKS_KEY, JSON.stringify(collapsedWeeksState));
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(checklistState));
       } catch (e) {}
       renderMonthWeeks();
+      pushProgressToCloud();
     }
 
     function renderMonthWeeks() {
@@ -7148,9 +7175,13 @@ MEU PERFIL E MÉTODO DIDÁTICO ("A LÓGICA DE ORIGEM"):
 
     function toggleTheme() {
       const isDark = document.documentElement.classList.toggle("dark");
+      const themeVal = isDark ? "dark" : "light";
+      checklistState._theme = themeVal;
       try {
-        localStorage.setItem("app_theme", isDark ? "dark" : "light");
+        localStorage.setItem("app_theme", themeVal);
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(checklistState));
       } catch (e) {}
+      pushProgressToCloud();
     }
     document.getElementById("themeToggle").addEventListener("click", toggleTheme);
     document.getElementById("themeToggleMob").addEventListener("click", toggleTheme);
