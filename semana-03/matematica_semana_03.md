@@ -268,22 +268,91 @@ O erro nº 1 do candidato apressado é montar a tabela e sair **multiplicando cr
 
 ---
 
-### 3. Regra de Três Composta (3 ou mais Grandezas)
-Quando aparecem $3$, $4$ ou $5$ grandezas na mesma situação (ex.: *operários, horas por dia, dias e metros de muro*), seguimos uma receita cirúrgica à prova de falhas:
+### 3. Regra de Três Composta (3 ou mais Grandezas) — Passo a Passo com Exemplo Real
+Na rotina de um órgão público, um prazo quase nunca depende de apenas um fator. Ele costuma depender ao mesmo tempo de **quantos servidores trabalham**, **quantas horas por dia eles rendem** e **qual o tamanho da pilha de processos**. Quando temos **3 ou mais grandezas** juntas, usamos a **Regra de Três Composta**.
 
-1. **Organize em colunas:** Cada grandeza ganha uma coluna; coloque a **grandeza com o $x$** isolada na ponta (ex.: à direita ou à esquerda).
-2. **Anote a fração da coluna do $x$ sozinha antes do sinal de `=`:** ex.: $\frac{12}{x} = \dots$
-3. **Compare CADA outra coluna individualmente APENAS com a coluna do $x$** *(finja que as demais colunas estão congeladas!)*:
-   * Se for **DIRETA** com o $x$: copie a fração **do jeito que está** na tabela.
-   * Se for **INVERSA** com o $x$: copie a fração **invertida** (de cabeça para baixo).
-4. **Multiplique todas as colunas comparadas do lado direito do `=`** e resolva a proporção simples!
+#### Exemplo Real Passo a Passo (Digitalização na Prefeitura de Birigui)
+> **Problema:** Na Prefeitura de Birigui, **$6$ servidores**, trabalhando **$4$ horas por dia**, digitalizam **$1.200$ processos** em **$5$ dias**. Se a chefia realocar a equipe para **$5$ servidores**, mas ampliar a jornada para **$6$ horas por dia**, em **quantos dias** eles digitalizarão **$3.600$ processos**?
+
+Vamos desmontar a solução em **4 passos sem pular nenhum raciocínio**:
+
+**Passo 1 — Montar a tabela organizada em colunas (uma coluna para cada grandeza):**
+
+| Servidores | Horas por dia | Processos | **Dias (Incógnita)** |
+| :---: | :---: | :---: | :---: |
+| $6$ | $4$ | $1.200$ | **$5$** |
+| $5$ | $6$ | $3.600$ | **$x$** |
+
+**Passo 2 — Isolar a coluna do $x$ ANTES do sinal de igual (`=`):**  
+Escolha uma direção de seta para a coluna do $x$ (por padrão, **aponte para baixo $\downarrow$**) e escreva essa razão sozinha do lado esquerdo:
+$$\frac{5}{x} = \text{(produto das outras colunas comparadas)}$$
+
+**Passo 3 — Comparar CADA coluna individualmente APENAS com a coluna do $x$:**  
+*Regra de ouro:* Ao analisar uma coluna, **finja que todas as outras estão congeladas!** Nunca compare *Servidores* com *Processos* entre si — compare tudo sempre com **Dias ($x$)**:
+
+<div class="edu-component my-6">
+  <div class="edu-comp-header">
+    <div class="edu-comp-title">
+      <span class="edu-comp-icon">🧭</span>
+      <span>ANÁLISE COLUNA POR COLUNA (SEMPRE EM RELAÇÃO AOS DIAS $\downarrow$)</span>
+    </div>
+    <span class="edu-comp-badge">Regra de Três Composta</span>
+  </div>
+  <div class="edu-cards-grid grid-3">
+    <div class="edu-card card-amber">
+      <div class="edu-card-top">
+        <span class="card-icon">👥</span>
+        <span class="card-badge">1ª Comparação: INVERSA</span>
+      </div>
+      <h4 class="card-title">Servidores ($6 \to 5$) vs. Dias ($\downarrow$)</h4>
+      <p class="card-text"><em>Pergunta:</em> Se eu <strong>DIMINUO</strong> o nº de servidores, o mesmo serviço demora <strong>MAIS</strong> ou menos dias?</p>
+      <div class="card-levels">
+        <div class="level-row"><span>Sentido</span> <strong>$\downarrow$ Servidores $\implies$ $\uparrow$ Dias</strong></div>
+        <div class="level-row highlight-danger"><span>Ação</span> <strong>INVERSA $\implies$ INVERTE: $\dfrac{5}{6}$</strong></div>
+      </div>
+    </div>
+    <div class="edu-card card-amber">
+      <div class="edu-card-top">
+        <span class="card-icon">⏰</span>
+        <span class="card-badge">2ª Comparação: INVERSA</span>
+      </div>
+      <h4 class="card-title">Horas/dia ($4 \to 6$) vs. Dias ($\downarrow$)</h4>
+      <p class="card-text"><em>Pergunta:</em> Se a equipe trabalha <strong>MAIS</strong> horas por dia, termina em mais ou <strong>MENOS</strong> dias?</p>
+      <div class="card-levels">
+        <div class="level-row"><span>Sentido</span> <strong>$\uparrow$ Horas/dia $\implies$ $\downarrow$ Dias</strong></div>
+        <div class="level-row highlight-danger"><span>Ação</span> <strong>INVERSA $\implies$ INVERTE: $\dfrac{6}{4}$</strong></div>
+      </div>
+    </div>
+    <div class="edu-card card-emerald">
+      <div class="edu-card-top">
+        <span class="card-icon">📂</span>
+        <span class="card-badge">3ª Comparação: DIRETA</span>
+      </div>
+      <h4 class="card-title">Processos ($1.200 \to 3.600$) vs. Dias ($\downarrow$)</h4>
+      <p class="card-text"><em>Pergunta:</em> Se temos <strong>MAIS</strong> processos para digitalizar, precisamos de <strong>MAIS</strong> ou menos dias?</p>
+      <div class="card-levels">
+        <div class="level-row"><span>Sentido</span> <strong>$\uparrow$ Processos $\implies$ $\uparrow$ Dias</strong></div>
+        <div class="level-row"><span>Ação</span> <strong>DIRETA $\implies$ MANTÉM: $\dfrac{1.200}{3.600} = \dfrac{1}{3}$</strong></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+**Passo 4 — Juntar as frações multiplicando do lado direito do `=` e simplificar antes de multiplicar:**
+$$\frac{5}{x} = \underbrace{\frac{5}{6}}_{\text{Servidores (inv.)}} \times \underbrace{\frac{6}{4}}_{\text{Horas/dia (inv.)}} \times \underbrace{\frac{1}{3}}_{\text{Processos (dir.)}}$$
+
+1. **Simplifique cortando o $6$ de baixo com o $6$ de cima:** $\frac{5}{6} \times \frac{6}{4} \times \frac{1}{3} = \frac{5}{4} \times \frac{1}{3} = \mathbf{\frac{5}{12}}$.
+2. **Resolva a proporção final:**
+   $$\frac{5}{x} = \frac{5}{12} \implies 5x = 60 \implies x = \mathbf{12\text{ dias}}$$
+*(Conferência lógica: a pilha de processos triplicou de $1.200$ para $3.600$, o que exigiria $15$ dias; como a equipe encolheu um pouco mas compensou trabalhando mais horas por dia, fechou em $12$ dias — totalmente coerente!)*
 
 > [!TIP]
-> **Conferência de Ouro pelo Método "Processo × Produto":**  
-> Toda situação de trabalho divide o mundo em **CAUSA / PROCESSO** *(quem trabalha: máquinas, operários, dias, horas/dia, eficiência)* e **EFEITO / PRODUTO** *(o que é entregue/consumido: peças produzidas, páginas impressas, metros de muro, ração consumida)*.  
-> A regra física é sempre:  
+> **Atalho de Conferência "Processo × Produto" (Causas ÷ Efeitos):**  
+> Em qualquer problema de produção/trabalho, separe quem **trabalha/produz (Processo = Causas)** do que **foi entregue (Produto = Efeito)**:  
 > $$\frac{\text{Processo}_1}{\text{Produto}_1} = \frac{\text{Processo}_2}{\text{Produto}_2}$$  
-> Esse atalho elimina a chance de errar uma seta inversa no calor da prova! *(Veja no Laboratório de Casos Guiados os dois métodos resolvendo a mesma questão lado a lado).*
+> Aplicando no mesmo exemplo da Prefeitura (**Processo:** Servidores $\times$ Horas/dia $\times$ Dias | **Produto:** Processos digitalizados):  
+> $$\frac{6 \times 4 \times 5}{1.200} = \frac{5 \times 6 \times x}{3.600} \implies \frac{120}{1.200} = \frac{30x}{3.600} \implies \frac{1}{10} = \frac{x}{120} \implies x = \mathbf{12\text{ dias}}$$  
+> *(Use as setas como método principal e o Processo $\div$ Produto para conferir em 15 segundos se você não inverteu nenhuma seta sem querer!)*
 
 > **Síntese Feynman (Regra de Três em 3 Linhas):**
 > 1. Antes de cruzar números, pergunte à realidade: se a grandeza cresce e o resultado cresce junto, é direta (mantém); se um cresce e o outro encolhe, é inversa (inverte).
