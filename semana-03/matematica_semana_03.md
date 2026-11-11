@@ -354,6 +354,38 @@ $$\frac{5}{x} = \underbrace{\frac{5}{6}}_{\text{Servidores (inv.)}} \times \unde
 > $$\frac{6 \times 4 \times 5}{1.200} = \frac{5 \times 6 \times x}{3.600} \implies \frac{120}{1.200} = \frac{30x}{3.600} \implies \frac{1}{10} = \frac{x}{120} \implies x = \mathbf{12\text{ dias}}$$  
 > *(Use as setas como método principal e o Processo $\div$ Produto para conferir em 15 segundos se você não inverteu nenhuma seta sem querer!)*
 
+---
+
+#### ✏️ Sua Vez Agora: Exercício de Regra de Três Composta para Você Resolver
+Pegue papel e caneta, monte as 4 colunas, compare cada uma **apenas com a coluna do $x$** e tente chegar à resposta antes de abrir o gabarito abaixo:
+
+> **Desafio:** Para reformar as salas de uma escola municipal, **$4$ pintores**, trabalhando **$6$ horas por dia**, pintam **$180\text{ m}^2$** de parede em **$5$ dias**. Se a Prefeitura contratar mais $2$ pintores *(ficando **$6$ pintores** no total)* e ajustar a jornada para **$5$ horas por dia**, em **quantos dias** eles pintarão **$270\text{ m}^2$** de parede?
+
+<details>
+<summary><b>Ver Gabarito e Conferência Passo a Passo (só abra depois de tentar!)</b></summary>
+
+**Resposta: $6$ dias**
+
+1. **Passo 1 — Montar a tabela organizada:**
+   - **Pintores:** $4 \longrightarrow 6$
+   - **Horas/dia:** $6 \longrightarrow 5$
+   - **Área ($\text{m}^2$):** $180 \longrightarrow 270$
+   - **Dias ($x$):** $5 \longrightarrow x$
+
+2. **Passo 2 — Comparar cada coluna SEMPRE com Dias ($x$):**
+   - **Pintores ($4 \to 6$) vs. Dias:** *Mais* pintores trabalham *menos* dias $\implies$ **INVERSA** (inverte: $\frac{6}{4}$).
+   - **Horas/dia ($6 \to 5$) vs. Dias:** *Menos* horas por dia exige *mais* dias $\implies$ **INVERSA** (inverte: $\frac{5}{6}$).
+   - **Área ($180 \to 270$) vs. Dias:** *Maior* área para pintar exige *mais* dias $\implies$ **DIRETA** (mantém: $\frac{180}{270} = \frac{2}{3}$).
+
+3. **Passo 3 — Montar a equação e simplificar:**
+   $$\frac{5}{x} = \frac{6}{4} \times \frac{5}{6} \times \frac{2}{3}$$
+   - Corta o $6$ de cima com o $6$ de baixo: $\frac{5}{x} = \frac{5}{4} \times \frac{2}{3} = \frac{10}{12} = \frac{5}{6}$.
+   - Logo: $\frac{5}{x} = \frac{5}{6} \implies x = \mathbf{6\text{ dias}}$.
+
+4. **Conferência pelo atalho Processo ÷ Produto:**
+   $$\frac{4 \times 6 \times 5}{180} = \frac{6 \times 5 \times x}{270} \implies \frac{120}{180} = \frac{30x}{270} \implies \frac{2}{3} = \frac{x}{9} \implies 3x = 18 \implies x = \mathbf{6\text{ dias}}$$
+</details>
+
 > **Síntese Feynman (Regra de Três em 3 Linhas):**
 > 1. Antes de cruzar números, pergunte à realidade: se a grandeza cresce e o resultado cresce junto, é direta (mantém); se um cresce e o outro encolhe, é inversa (inverte).
 > 2. Na Regra de Três Composta, isole a fração do $x$ antes do `=` e compare cada outra coluna individualmente apenas com a do $x$, multiplicando todas depois do `=`.
