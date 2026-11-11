@@ -18,15 +18,15 @@
 
 O valor da expressão $\dfrac{6}{\sqrt{54}} - \dfrac{\sqrt{216}}{18} + \dfrac{1}{2} - 2$ é:
 
-- **A)** $0$
-- **B)** $\dfrac{\sqrt{6}}{3}$
-- **C)** $\dfrac{2\sqrt{6} - 9}{6}$
-- **D)** $-\dfrac{3}{2}$
+(A) $0$
+(B) $\dfrac{\sqrt{6}}{3}$
+(C) $\dfrac{2\sqrt{6} - 9}{6}$
+(D) $-\dfrac{3}{2}$
 
 <details>
 <summary><b>Ver Gabarito e Comentário Detalhado</b></summary>
 
-**Gabarito Oficial: Letra D ($-\dfrac{3}{2}$)**
+**Gabarito Oficial: D ($-\dfrac{3}{2}$)**
 
 * **Passo 1 — Fatorar e simplificar $\sqrt{54}$ e $\sqrt{216}$:**
   - $54 = 9 \times 6 = 3^2 \times 6 \implies \sqrt{54} = \mathbf{3\sqrt{6}}$
@@ -50,15 +50,15 @@ O valor da expressão $\dfrac{6}{\sqrt{54}} - \dfrac{\sqrt{216}}{18} + \dfrac{1}
 
 Trabalhando $5\text{h}30\text{min}$ por dia, um programador cria um determinado programa em $29$ dias. Quantos dias o programador levaria para criar esse mesmo programa se trabalhasse $435$ minutos por dia?
 
-- **A)** $22$.
-- **B)** $35$.
-- **C)** $36$.
-- **D)** $38$.
+(A) $22$.
+(B) $35$.
+(C) $36$.
+(D) $38$.
 
 <details>
 <summary><b>Ver Gabarito e Comentário Detalhado</b></summary>
 
-**Gabarito Oficial: Letra A ($22$)**
+**Gabarito Oficial: A ($22$)**
 
 * **Passo 1 — Padronizar tudo em minutos (nunca misture `horas` com `minutos` na mesma coluna!):**
   - $5\text{ horas e } 30\text{ minutos} = (5 \times 60) + 30 = 300 + 30 = \mathbf{330\text{ minutos/dia}}$.
@@ -81,15 +81,15 @@ Trabalhando $5\text{h}30\text{min}$ por dia, um programador cria um determinado 
 
 Uma construtora designou um grupo de $8$ operários para construir o muro da quadra poliesportiva de uma comunidade, e a previsão é de que, trabalhando $6$ horas por dia, eles entreguem o serviço em $12$ dias. Porém, antes da obra começar, foi necessário deslocar $4$ destes operários para uma outra empreitada. Se para suprir a falta de funcionários a empresa resolveu aumentar o turno para $8$ horas por dia, em quantos dias o muro será concluído?
 
-- **A)** O muro será concluído em $24$ dias.
-- **B)** O muro será concluído em $18$ dias.
-- **C)** O muro será concluído em $12$ dias.
-- **D)** O muro será concluído em $9$ dias.
+(A) O muro será concluído em $24$ dias.
+(B) O muro será concluído em $18$ dias.
+(C) O muro será concluído em $12$ dias.
+(D) O muro será concluído em $9$ dias.
 
 <details>
 <summary><b>Ver Gabarito e Comentário Detalhado</b></summary>
 
-**Gabarito Oficial: Letra B (O muro será concluído em $18$ dias)**
+**Gabarito Oficial: B (O muro será concluído em $18$ dias)**
 
 * **Passo 1 — Cuidado com a leitura ("deslocar 4 DESTES operários"):**  
   Se havia $8$ operários e $4$ foram deslocados, **restaram $8 - 4 = 4$ operários** na obra.
@@ -111,15 +111,15 @@ Uma construtora designou um grupo de $8$ operários para construir o muro da qua
 
 Em uma gráfica, $4$ impressoras imprimem $2.400$ folhetos em $6$ horas. Mantendo a mesma eficiência, em quantas horas $6$ impressoras imprimem $5.400$ folhetos?
 
-- **A)** Em $5$ horas.
-- **B)** Em $6$ horas.
-- **C)** Em $8$ horas.
-- **D)** Em $9$ horas.
+(A) Em $5$ horas.
+(B) Em $6$ horas.
+(C) Em $8$ horas.
+(D) Em $9$ horas.
 
 <details>
 <summary><b>Ver Gabarito e Comentário Detalhado</b></summary>
 
-**Gabarito Oficial: Letra D (Em $9$ horas)**
+**Gabarito Oficial: D (Em $9$ horas)**
 
 * **Passo 1 — Montar a tabela comparando tudo com a coluna do $x$ (Horas):**
   - Impressoras: $4 \longrightarrow 6$ (*Mais* impressoras $\implies$ *menos* horas = **INVERSA** $\to \frac{6}{4}$)
@@ -140,15 +140,15 @@ Em uma gráfica, $4$ impressoras imprimem $2.400$ folhetos em $6$ horas. Mantend
 Um laboratório de pesquisa farmacológica usava $2{,}4\text{ kg}$ de ração para alimentar $120$ ratos de laboratório durante $45$ dias. Com o fim da pesquisa, alguns ratos foram remanejados para outro laboratório, e passou-se a usar $1{,}2\text{ kg}$ de ração para a quantidade de ratos restantes. Essa quantidade passou a durar $90$ dias.  
 Sabendo que não houve morte ou nascimento na população de ratos nesse período, quantos ratos foram remanejados para o outro laboratório?
 
-- **A)** $30$.
-- **B)** $60$.
-- **C)** $90$.
-- **D)** $120$.
+(A) $30$.
+(B) $60$.
+(C) $90$.
+(D) $120$.
 
 <details>
 <summary><b>Ver Gabarito e Comentário Detalhado</b></summary>
 
-**Gabarito Oficial: Letra C ($90$)**
+**Gabarito Oficial: C ($90$)**
 
 * **Passo 1 — Montar a Regra de Três Composta para achar quantos ratos RESTARAM ($r$):**
   - Ração: $2{,}4\text{ kg} \longrightarrow 1{,}2\text{ kg}$ (*Menos* ração $\implies$ alimenta *menos* ratos = **DIRETA** $\to \frac{2{,}4}{1{,}2} = 2$)
@@ -170,15 +170,15 @@ Sabendo que não houve morte ou nascimento na população de ratos nesse períod
 
 Na prefeitura de uma certa cidade brasileira, $36\%$ dos servidores são mulheres. Se nessa prefeitura há $480$ servidores homens, o número total de servidores é igual a
 
-- **A)** $750$.
-- **B)** $585$.
-- **C)** $400$.
-- **D)** $320$.
+(A) $750$.
+(B) $585$.
+(C) $400$.
+(D) $320$.
 
 <details>
 <summary><b>Ver Gabarito e Comentário Detalhado</b></summary>
 
-**Gabarito Oficial: Letra A ($750$)**
+**Gabarito Oficial: A ($750$)**
 
 * **Passo 1 — Achar o percentual dos homens (complemento até $100\%$):**  
   Se $36\%$ são mulheres, então os homens correspondem a:
@@ -199,16 +199,16 @@ Na prefeitura de uma certa cidade brasileira, $36\%$ dos servidores são mulhere
 Um supermercado neste último fim de semana colocou a seguinte promoção: *"Na compra de $4$ pacotes de biscoitos iguais, pague apenas $3$"*, ou seja, realizou a oferta *"leve $4$ e pague $3$"*.  
 Outra promoção que o supermercado poderia fazer oferecendo o mesmo desconto percentual seria
 
-- **A)** ao levar dois biscoitos iguais, pague a segunda unidade com $25\%$ de desconto.
-- **B)** ao levar dois biscoitos iguais, pague a segunda unidade com $30\%$ de desconto.
-- **C)** ao levar dois biscoitos iguais, pague a segunda unidade com $40\%$ de desconto.
-- **D)** ao levar dois biscoitos iguais, pague a segunda unidade com $50\%$ de desconto.
-- **E)** ao levar dois biscoitos iguais, pague a segunda unidade com $60\%$ de desconto.
+(A) ao levar dois biscoitos iguais, pague a segunda unidade com $25\%$ de desconto.
+(B) ao levar dois biscoitos iguais, pague a segunda unidade com $30\%$ de desconto.
+(C) ao levar dois biscoitos iguais, pague a segunda unidade com $40\%$ de desconto.
+(D) ao levar dois biscoitos iguais, pague a segunda unidade com $50\%$ de desconto.
+(E) ao levar dois biscoitos iguais, pague a segunda unidade com $60\%$ de desconto.
 
 <details>
 <summary><b>Ver Gabarito e Comentário Detalhado</b></summary>
 
-**Gabarito Oficial: Letra D (ao levar dois biscoitos iguais, pague a segunda unidade com $50\%$ de desconto)**
+**Gabarito Oficial: D (ao levar dois biscoitos iguais, pague a segunda unidade com $50\%$ de desconto)**
 
 * **Passo 1 — Descobrir qual é o desconto real da oferta "leve $4$, pague $3$":**  
   Suponha que cada pacote custe $\text{R\$ } 1{,}00$ (ou $\text{R\$ } 10{,}00$).  
@@ -229,15 +229,15 @@ Outra promoção que o supermercado poderia fazer oferecendo o mesmo desconto pe
 
 Uma taxa administrativa sofreu duas alterações sucessivas ao longo de dois anos. Inicialmente, a taxa era de $10\%$. No primeiro ajuste, houve aumento de $30\%$ sobre o valor da taxa. No segundo ajuste, ocorreu redução de $20\%$ sobre a taxa já reajustada. Qual é a taxa final após essas modificações?
 
-- **A)** A taxa final é de $11\%$.
-- **B)** A taxa final é de $10{,}4\%$.
-- **C)** A taxa final é de $12{,}5\%$.
-- **D)** A taxa final é de $9{,}6\%$.
+(A) A taxa final é de $11\%$.
+(B) A taxa final é de $10{,}4\%$.
+(C) A taxa final é de $12{,}5\%$.
+(D) A taxa final é de $9{,}6\%$.
 
 <details>
 <summary><b>Ver Gabarito e Comentário Detalhado</b></summary>
 
-**Gabarito Oficial: Letra B (A taxa final é de $10{,}4\%$)**
+**Gabarito Oficial: B (A taxa final é de $10{,}4\%$)**
 
 * **Passo 1 — Aplicar os fatores sucessivos sobre o valor inicial ($10\%$):**
   - 1º ajuste (**aumento de $30\%$**, fator $1{,}30$): $10\% \times 1{,}30 = \mathbf{13\%}$ *(ou $10 + 3 = 13\%$)*.
@@ -257,15 +257,15 @@ Uma taxa administrativa sofreu duas alterações sucessivas ao longo de dois ano
 
 Tiago queria comprar um fone de ouvido e começou a pesquisar os preços com antecedência, mas só comprou $3$ meses depois. Assim, ele notou que na cidade onde mora, uma loja onde o objeto custava $\text{R\$ } 100{,}00$, aumentou o preço do fone em $10\%$ ao mês durante o período da pesquisa. Quanto passou a custar o fone no terceiro mês?
 
-- **A)** O preço será de $\text{R\$ } 130{,}00$.
-- **B)** O preço será de $\text{R\$ } 142{,}30$.
-- **C)** O preço será de $\text{R\$ } 150{,}00$.
-- **D)** O preço será de $\text{R\$ } 133{,}10$.
+(A) O preço será de $\text{R\$ } 130{,}00$.
+(B) O preço será de $\text{R\$ } 142{,}30$.
+(C) O preço será de $\text{R\$ } 150{,}00$.
+(D) O preço será de $\text{R\$ } 133{,}10$.
 
 <details>
 <summary><b>Ver Gabarito e Comentário Detalhado</b></summary>
 
-**Gabarito Oficial: Letra D (O preço será de $\text{R\$ } 133{,}10$)**
+**Gabarito Oficial: D (O preço será de $\text{R\$ } 133{,}10$)**
 
 * **Passo 1 — Entender o crescimento acumulado mês a mês (fator $\times 1{,}10$ três vezes):**
   - Valor inicial: $\text{R\$ } 100{,}00$.
@@ -284,15 +284,15 @@ Tiago queria comprar um fone de ouvido e começou a pesquisar os preços com ant
 
 Debêntures são títulos de crédito emitidos por empresas e negociados no mercado de capitais. As debêntures de uma determinada empresa desvalorizaram $10\%$ a cada mês por três meses seguidos. A desvalorização total nesses três meses foi de
 
-- **A)** $16{,}6\%$.
-- **B)** $27{,}1\%$.
-- **C)** $48{,}8\%$.
-- **D)** $72{,}9\%$.
+(A) $16{,}6\%$.
+(B) $27{,}1\%$.
+(C) $48{,}8\%$.
+(D) $72{,}9\%$.
 
 <details>
 <summary><b>Ver Gabarito e Comentário Detalhado</b></summary>
 
-**Gabarito Oficial: Letra B ($27{,}1\%$)**
+**Gabarito Oficial: B ($27{,}1\%$)**
 
 * **Passo 1 — Multiplicar os fatores de redução ($1 - 0{,}10 = 0{,}90$) três vezes (ou simular com Base $100$):**
   - Mês 0 (início): $100$

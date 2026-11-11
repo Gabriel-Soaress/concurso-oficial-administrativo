@@ -556,15 +556,15 @@ $$\frac{\sqrt{1764}}{\sqrt{7}} + \sqrt{70} \cdot \sqrt{10} - \sqrt{1575}$$
 
 Realizando corretamente as propriedades da radiciação e a racionalização de denominadores, assinale a alternativa que apresenta o resultado CORRETO da expressão:
 
-- **A)** $\sqrt{7}$
-- **B)** $2\sqrt{7}$
-- **C)** $7$
-- **D)** $5\sqrt{7}$
+(A) $\sqrt{7}$
+(B) $2\sqrt{7}$
+(C) $7$
+(D) $5\sqrt{7}$
 
 <details>
 <summary>Ver Gabarito e Resolução Passo a Passo</summary>
 
-**Gabarito Oficial: Letra A ($\sqrt{7}$)**
+**Gabarito Oficial: A ($\sqrt{7}$)**
 
 * **Passo 1 — Resolver $\frac{\sqrt{1764}}{\sqrt{7}}$:**  
   Fatorando $1764$: $1764 = 2^2 \times 3^2 \times 7^2 \implies \sqrt{1764} = 2 \times 3 \times 7 = \mathbf{42}$.  
@@ -586,16 +586,16 @@ Realizando corretamente as propriedades da radiciação e a racionalização de 
 ### Questão 02 (Instituto ACCESS — UFJ — 2023 — Assistente em Administração)
 Uma pequena empresa possui duas máquinas que produzem igualmente $120$ peças cada uma no período de $8$ horas. Se a taxa de produção permanecer constante nas duas máquinas, quantas peças elas irão produzir ao todo num período de $15$ horas?
 
-- **A)** $225$.
-- **B)** $240$.
-- **C)** $360$.
-- **D)** $450$.
-- **E)** $480$.
+(A) $225$.
+(B) $240$.
+(C) $360$.
+(D) $450$.
+(E) $480$.
 
 <details>
 <summary>Ver Gabarito e Resolução Passo a Passo</summary>
 
-**Gabarito Oficial: Letra D ($450$)**
+**Gabarito Oficial: D ($450$)**
 
 * **Atenção à leitura do enunciado ("120 peças CADA UMA" vs. "ao todo"):**  
   Se são **duas máquinas** produzindo $120$ peças **cada uma**, em $8$ horas **as duas juntas** produzem:
@@ -614,15 +614,15 @@ Uma pequena empresa possui duas máquinas que produzem igualmente $120$ peças c
 ### Questão 03 (OBJETIVA — Pref. Ilópolis/RS — 2025 — Auxiliar de Administração)
 Uma construtora iniciou a construção de um muro e, para isso, designou $12$ operários, que trabalham $6$ horas por dia. Com essa organização, o muro foi finalizado em $20$ dias. Agora, a empresa precisa construir um novo muro com as mesmas dimensões, mas precisou reduzir a equipe para $10$ funcionários. No intuito de compensar a redução de funcionários, eles aumentaram a jornada de trabalho para $8$ horas diárias. Com base nos dados apresentados, em quantos dias o novo muro será finalizado?
 
-- **A)** $18$ dias.
-- **B)** $20$ dias.
-- **C)** $22$ dias.
-- **D)** $24$ dias.
+(A) $18$ dias.
+(B) $20$ dias.
+(C) $22$ dias.
+(D) $24$ dias.
 
 <details>
 <summary>Ver Gabarito e Resolução Passo a Passo</summary>
 
-**Gabarito Oficial: Letra A ($18$ dias)**
+**Gabarito Oficial: A ($18$ dias)**
 
 * **Análise da Regra de Três Composta (colocando o $x$ = Dias isolado):**
   - $12$ operários $\cdot$ $6$ h/dia $\longrightarrow 20$ dias
@@ -640,15 +640,15 @@ Uma construtora iniciou a construção de um muro e, para isso, designou $12$ op
 ### Questão 04 (Instituto ACCESS — Pref. Passos/MG — 2023 — Oficial de Administração)
 Uma empresa vai aumentar o salário de todos os seus funcionários em $5\%$. Sabe-se que um dos seus funcionários ganha hoje $\text{R\$ } 3.000{,}00$. Para ele calcular o seu salário com o aumento, ele vai precisar
 
-- **A)** multiplicar por $1{,}05$.
-- **B)** multiplicar por $1{,}15$.
-- **C)** multiplicar por $1{,}25$.
-- **D)** multiplicar por $1{,}50$.
+(A) multiplicar por $1{,}05$.
+(B) multiplicar por $1{,}15$.
+(C) multiplicar por $1{,}25$.
+(D) multiplicar por $1{,}50$.
 
 <details>
 <summary>Ver Gabarito e Resolução Passo a Passo</summary>
 
-**Gabarito Oficial: Letra A (multiplicar por $1{,}05$)**
+**Gabarito Oficial: A (multiplicar por $1{,}05$)**
 
 * **Aplicação direta do Fator de Multiplicação ($1 + i$):**  
   - O salário atual corresponde a $100\% = 1{,}00$.
@@ -664,15 +664,15 @@ Uma empresa vai aumentar o salário de todos os seus funcionários em $5\%$. Sab
 ### Questão 05 (Instituto ACCESS — Pref. Domingos Martins/ES — 2024 — Auxiliar Administrativo)
 Em 2024 o salário mínimo passou para o valor de $\text{R\$ } 1.412{,}00$. Um trabalhador que recebe exatamente $1{,}5$ salário mínimo de salário bruto e tem como desconto apenas os $9\%$ de previdência tem o salário líquido, em reais, igual a
 
-- **A)** $\text{R\$ } 1.885{,}02$.
-- **B)** $\text{R\$ } 1.906{,}20$.
-- **C)** $\text{R\$ } 1.927{,}38$.
-- **D)** $\text{R\$ } 2.012{,}10$.
+(A) $\text{R\$ } 1.885{,}02$.
+(B) $\text{R\$ } 1.906{,}20$.
+(C) $\text{R\$ } 1.927{,}38$.
+(D) $\text{R\$ } 2.012{,}10$.
 
 <details>
 <summary>Ver Gabarito e Resolução Passo a Passo</summary>
 
-**Gabarito Oficial: Letra C ($\text{R\$ } 1.927{,}38$)**
+**Gabarito Oficial: C ($\text{R\$ } 1.927{,}38$)**
 
 * **Passo 1 — Achar o salário bruto ($1{,}5$ salário mínimo = $1$ salário + metade):**
   $$1.412{,}00 + 706{,}00 = \mathbf{\text{R\$ } 2.118{,}00}$$
@@ -691,15 +691,15 @@ Em 2024 o salário mínimo passou para o valor de $\text{R\$ } 1.412{,}00$. Um t
 ### Questão 06 (Instituto ACCESS — Pref. Promissão/SP — 2026 — Escriturário)
 Um engenheiro civil projeta um reservatório de água em formato de paralelepípedo retângulo com $8$ metros de comprimento, $6$ metros de largura e $3$ metros de profundidade. Por questões estruturais, decide-se aumentar o comprimento em $20\%$, dobrar a largura e reduzir a profundidade em um terço da medida original. Com base nas novas dimensões, calcule a capacidade final de armazenamento desse reservatório após as alterações.
 
-- **A)** O volume do novo reservatório é de $115{,}2\text{ m}^3$.
-- **B)** O volume do novo reservatório é de $192{,}0\text{ m}^3$.
-- **C)** O volume do novo reservatório é de $460{,}8\text{ m}^3$.
-- **D)** O volume do novo reservatório é de $230{,}4\text{ m}^3$.
+(A) O volume do novo reservatório é de $115{,}2\text{ m}^3$.
+(B) O volume do novo reservatório é de $192{,}0\text{ m}^3$.
+(C) O volume do novo reservatório é de $460{,}8\text{ m}^3$.
+(D) O volume do novo reservatório é de $230{,}4\text{ m}^3$.
 
 <details>
 <summary>Ver Gabarito e Resolução Passo a Passo</summary>
 
-**Gabarito Oficial: Letra D ($230{,}4\text{ m}^3$)**
+**Gabarito Oficial: D ($230{,}4\text{ m}^3$)**
 
 * **Passo 1 — Aplicar cada alteração às dimensões originais ($C = 8$, $L = 6$, $P = 3$):**
   - **Comprimento (+20%, fator $1{,}20$):** $8 \times 1{,}20 = \mathbf{9{,}6\text{ m}}$ *(ou $8 + 1{,}6 = 9{,}6$)*.

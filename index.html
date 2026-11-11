@@ -5644,15 +5644,15 @@
         const options = [];
         for (let l = startStemIdx; l < lines.length; l++) {
           const lineStr = lines[l].trim();
-          const optMatch = lineStr.match(/^\(([A-E])\)\s+(.+)$/);
+          const optMatch = lineStr.match(/^(?:\(([A-E])\)|[-*]\s+\*\*([A-E])\)\*\*)\s+(.+)$/);
           if (optMatch) {
-            options.push({ letter: optMatch[1], textMd: optMatch[2].trim() });
+            options.push({ letter: optMatch[1] || optMatch[2], textMd: optMatch[3].trim() });
           } else if (options.length === 0) {
             stemLines.push(lines[l]);
           }
         }
 
-        const gabMatch = detContent.match(/\*\*Gabarito Oficial:\s*([A-E])([^*]*)\*\*/i);
+        const gabMatch = detContent.match(/\*\*Gabarito Oficial:\s*(?:Letra\s+)?([A-E])([^*]*)\*\*/i);
         const answerLetter = gabMatch ? gabMatch[1].toUpperCase() : "A";
         const answerExtra = gabMatch && gabMatch[2] ? gabMatch[2].trim() : "";
 
