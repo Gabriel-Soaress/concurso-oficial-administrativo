@@ -956,18 +956,18 @@
       font-size: 1.35rem;
     }
     .card-badge {
-      font-size: 0.65rem;
+      font-size: 0.78rem;
       font-family: var(--font-mono, monospace);
       font-weight: 800;
       text-transform: uppercase;
-      padding: 0.15rem 0.5rem;
+      padding: 0.22rem 0.6rem;
       border-radius: 0.4rem;
       background: rgba(99, 102, 241, 0.1);
       color: #4f46e5;
     }
     html.dark .card-badge { color: #818cf8; }
     .card-title {
-      font-size: 0.95rem;
+      font-size: 1.12rem;
       font-weight: 800;
       color: var(--text-primary);
       margin: 0;
@@ -976,8 +976,8 @@
       color: #ffffff;
     }
     .card-text {
-      font-size: 0.82rem;
-      line-height: 1.55;
+      font-size: 0.94rem;
+      line-height: 1.62;
       color: var(--text-secondary);
       margin: 0;
     }
@@ -1109,8 +1109,8 @@
       color: #ffffff;
     }
     .m-desc {
-      font-size: 0.76rem;
-      line-height: 1.45;
+      font-size: 0.88rem;
+      line-height: 1.52;
       color: var(--text-secondary);
       margin: 0;
     }
@@ -1295,14 +1295,15 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 0.5rem;
-      font-size: 0.78rem;
-      padding: 0.25rem 0.45rem;
-      border-radius: 0.35rem;
+      flex-wrap: wrap;
+      gap: 0.55rem;
+      font-size: 0.94rem;
+      padding: 0.48rem 0.7rem;
+      border-radius: 0.45rem;
       background: var(--bg-surface);
     }
-    .level-row span { color: var(--text-secondary); font-size: 0.72rem; text-transform: uppercase; font-family: var(--font-mono, monospace); }
-    .level-row strong { color: var(--text-primary); font-size: 0.78rem; }
+    .level-row span { color: var(--text-secondary); font-size: 0.8rem; font-weight: 700; text-transform: uppercase; font-family: var(--font-mono, monospace); }
+    .level-row strong { color: var(--text-primary); font-size: 0.98rem; line-height: 1.55; }
     html.dark .level-row { background: #131926; border: 1px solid #263147; }
     html.dark .level-row span { color: #94a3b8; }
     html.dark .level-row strong { color: #ffffff; }
@@ -1372,14 +1373,27 @@
       margin-top: 0.2rem;
     }
     .ex-tag {
-      font-size: 0.7rem;
-      font-family: var(--font-mono, monospace);
+      font-size: 1.08rem;
+      font-family: inherit;
       font-weight: 700;
-      padding: 0.18rem 0.5rem;
-      border-radius: 0.35rem;
+      line-height: 1.55;
+      padding: 0.45rem 0.85rem;
+      border-radius: 0.55rem;
       background: var(--bg-surface);
-      border: 1px solid var(--border);
+      border: 1px solid var(--border-strong);
       color: var(--text-primary);
+    }
+    .edu-component .ex-tag .katex,
+    .edu-component .level-row .katex,
+    .edu-component .card-title .katex {
+      font-size: 1.42em !important;
+    }
+    .edu-component .card-text .katex,
+    .edu-component .step-math .katex {
+      font-size: 1.32em !important;
+    }
+    .edu-component .katex .sqrt .root {
+      font-size: 0.75em !important;
     }
     html.dark .ex-tag {
       background: #1e273b;
@@ -1681,8 +1695,8 @@
     }
     html.dark .nested-title { color: #ffffff; }
     .nested-desc {
-      font-size: 0.8rem;
-      line-height: 1.5;
+      font-size: 0.92rem;
+      line-height: 1.58;
       color: var(--text-secondary);
       margin: 0;
     }
@@ -2900,7 +2914,7 @@
       line-height: 1.5;
     }
     .step-math {
-      font-size: 1rem;
+      font-size: 1.12rem;
       font-weight: 700;
       color: var(--text-primary);
       line-height: 1.85;
