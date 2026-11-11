@@ -101,16 +101,65 @@ Nascia assim o acrônimo mais cobrado em provas de concurso em todo o Brasil: **
 > **Atenção à Característica do Processo Administrativo:**  
 > O PODC **não é estático nem isolado em caixinhas separadas**. Ele é **dinâmico, cíclico, contínuo e interativo**. Quando você está no controle avaliando um desvio, essa informação alimenta imediatamente um novo planejamento.
 
-```
-       ┌────────────────────────────────────────────────────────┐
-       │                                                        ▼
-┌──────────────┐         ┌──────────────┐         ┌──────────────┐         ┌──────────────┐
-│  1. PLANEJAR │ ──────► │ 2. ORGANIZAR │ ──────► │  3. DIRIGIR  │ ──────► │ 4. CONTROLAR │
-└──────────────┘         └──────────────┘         └──────────────┘         └──────────────┘
-  Onde queremos            Como fazer e             Liderar as               Avaliar os
-     chegar?               com quais                pessoas na               resultados
-                           recursos?                 execução                e corrigir
-```
+<div class="edu-component my-6">
+  <div class="edu-comp-header">
+    <div class="edu-comp-title">
+      <span>🔄</span>
+      <span>O FLUXO CONTÍNUO DO PROCESSO ADMINISTRATIVO (PODC)</span>
+    </div>
+    <span class="edu-comp-badge">Ciclo Interativo</span>
+  </div>
+  <div class="edu-cards-grid grid-4">
+    <div class="edu-card card-indigo">
+      <div class="edu-card-top">
+        <span class="card-icon">1️⃣</span>
+        <span class="card-badge">Fase 1</span>
+      </div>
+      <h4 class="card-title">PLANEJAR</h4>
+      <p class="card-text">Define o futuro desejado, fixa objetivos, metas e estratégias de ação.</p>
+      <div class="card-levels">
+        <div class="level-row"><span>Pergunta</span> <strong>O que fazer?</strong></div>
+        <div class="level-row"><span>Foco</span> <strong>Ideias e Rumos</strong></div>
+      </div>
+    </div>
+    <div class="edu-card card-sky">
+      <div class="edu-card-top">
+        <span class="card-icon">2️⃣</span>
+        <span class="card-badge">Fase 2</span>
+      </div>
+      <h4 class="card-title">ORGANIZAR</h4>
+      <p class="card-text">Divide o trabalho, estrutura os cargos e distribui recursos materiais e humanos.</p>
+      <div class="card-levels">
+        <div class="level-row"><span>Pergunta</span> <strong>Como fazer?</strong></div>
+        <div class="level-row"><span>Foco</span> <strong>Recursos e Estrutura</strong></div>
+      </div>
+    </div>
+    <div class="edu-card card-emerald">
+      <div class="edu-card-top">
+        <span class="card-icon">3️⃣</span>
+        <span class="card-badge">Fase 3</span>
+      </div>
+      <h4 class="card-title">DIRIGIR</h4>
+      <p class="card-text">Conduz pessoas, exerce liderança, comunicação interpessoal e motivação.</p>
+      <div class="card-levels">
+        <div class="level-row"><span>Pergunta</span> <strong>Como engajar?</strong></div>
+        <div class="level-row"><span>Foco</span> <strong>Pessoas em Ação</strong></div>
+      </div>
+    </div>
+    <div class="edu-card card-rose">
+      <div class="edu-card-top">
+        <span class="card-icon">4️⃣</span>
+        <span class="card-badge">Fase 4</span>
+      </div>
+      <h4 class="card-title">CONTROLAR</h4>
+      <p class="card-text">Mede resultados, compara o real com os padrões e corrige desvios.</p>
+      <div class="card-levels">
+        <div class="level-row"><span>Pergunta</span> <strong>Saiu certo?</strong></div>
+        <div class="level-row"><span>Foco</span> <strong>Padrões e Ajustes</strong></div>
+      </div>
+    </div>
+  </div>
+</div>
 
 Vamos dissecar cada uma dessas quatro funções como se você estivesse vivenciando um grande projeto municipal: **A Implantação da Campanha de Combate à Dengue e Limpeza Urbana em Birigui**.
 
@@ -248,23 +297,61 @@ Controlar é a função administrativa que consiste em **monitorar as atividades
 
 O Controle fecha o ciclo administrativo clássico e possui **4 etapas canônicas e sequenciais**:
 
-```
-┌─────────────────────────────────┐
-│ 1. Estabelecer Padrões          │ ──► Ex: "Atender cada munícipe em no máximo 10 minutos"
-└────────────────┬────────────────┘
-                 ▼
-┌─────────────────────────────────┐
-│ 2. Medir o Desempenho Real      │ ──► Ex: Relatório do sistema mostra tempo médio de 18 minutos
-└────────────────┬────────────────┘
-                 ▼
-┌─────────────────────────────────┐
-│ 3. Comparar Real vs. Padrão     │ ──► Ex: Desvio negativo de 8 minutos acima do tolerável!
-└────────────────┬────────────────┘
-                 ▼
-┌─────────────────────────────────┐
-│ 4. Adotar Ação Corretiva        │ ──► Ex: Abrir mais 2 guichês e treinar os atendentes
-└─────────────────────────────────┘
-```
+<div class="edu-component my-6">
+  <div class="edu-comp-header">
+    <div class="edu-comp-title">
+      <span>🎯</span>
+      <span>AS 4 ETAPAS SEQUENCIAIS DO PROCESSO DE CONTROLE</span>
+    </div>
+    <span class="edu-comp-badge">Sequência Canônica</span>
+  </div>
+  <div class="edu-cards-grid grid-4">
+    <div class="edu-card card-indigo">
+      <div class="edu-card-top">
+        <span class="card-icon">📏</span>
+        <span class="card-badge">Etapa 1</span>
+      </div>
+      <h4 class="card-title">1. Fixar Padrões</h4>
+      <p class="card-text">Define a régua de excelência, meta ou tempo máximo esperado.</p>
+      <div class="card-levels">
+        <div class="level-row"><span>Exemplo Prático</span> <strong>Atender em no máximo 10 min</strong></div>
+      </div>
+    </div>
+    <div class="edu-card card-sky">
+      <div class="edu-card-top">
+        <span class="card-icon">⏱️</span>
+        <span class="card-badge">Etapa 2</span>
+      </div>
+      <h4 class="card-title">2. Medir o Real</h4>
+      <p class="card-text">Coleta dados reais de execução diretamente da rotina de atendimento.</p>
+      <div class="card-levels">
+        <div class="level-row"><span>Exemplo Prático</span> <strong>Relatório apontou média de 18 min</strong></div>
+      </div>
+    </div>
+    <div class="edu-card card-amber">
+      <div class="edu-card-top">
+        <span class="card-icon">⚖️</span>
+        <span class="card-badge">Etapa 3</span>
+      </div>
+      <h4 class="card-title">3. Comparar</h4>
+      <p class="card-text">Confronta o real com o padrão para calcular a variação e desvios.</p>
+      <div class="card-levels">
+        <div class="level-row"><span>Exemplo Prático</span> <strong>Desvio de +8 min acima da meta</strong></div>
+      </div>
+    </div>
+    <div class="edu-card card-rose">
+      <div class="edu-card-top">
+        <span class="card-icon">🛠️</span>
+        <span class="card-badge">Etapa 4</span>
+      </div>
+      <h4 class="card-title">4. Agir Corretivo</h4>
+      <p class="card-text">Aplica medidas corretivas para sanar o gargalo e recuperar a meta.</p>
+      <div class="card-levels">
+        <div class="level-row"><span>Exemplo Prático</span> <strong>Abrir mais 2 guichês no balcão</strong></div>
+      </div>
+    </div>
+  </div>
+</div>
 
 #### Tipos de Padrões de Controle Mais Cobrados em Concurso:
 Para medir qualquer coisa em uma repartição, você precisa de um padrão de comparação. Os padrões dividem-se em:
@@ -320,18 +407,40 @@ A estrutura linear é a forma mais antiga e simples de organização, herdada do
 * **Linhas Formais e Retas:** A autoridade desce em linha reta, do topo da pirâmide até a base (Prefeito $\rightarrow$ Secretário $\rightarrow$ Diretor de Departamento $\rightarrow$ Chefe de Setor $\rightarrow$ Oficial Administrativo).
 * **Centralização Extrema:** As decisões importantes ficam concentradas exclusivamente na cúpula.
 
-```
-       [ PREFEITO ]
-            │
-            ▼
-     [ SECRETÁRIO ]
-            │
-            ▼
-    [ DIRETOR DE SETOR ]
-            │
-            ▼
-  [ OFICIAL ADMINISTRATIVO ]
-```
+<div class="edu-component my-6">
+  <div class="edu-comp-header">
+    <div class="edu-comp-title">
+      <span>🏛️</span>
+      <span>ORGANOGRAMA DA ESTRUTURA LINEAR: LINHA DIRETA DE MANDO</span>
+    </div>
+    <span class="edu-comp-badge">Piramidal Rígida</span>
+  </div>
+  <div class="edu-cards-grid grid-1" style="max-width: 520px; margin: 0 auto;">
+    <div class="edu-card card-indigo" style="text-align: center; align-items: center;">
+      <span class="card-badge">Topo da Pirâmide</span>
+      <h4 class="card-title">PREFEITO MUNICIPAL</h4>
+      <p class="card-text">Autoridade máxima e centralizada</p>
+    </div>
+    <div style="text-align: center; font-size: 1.4rem; color: #6366f1; margin: -0.25rem 0;">⬇️</div>
+    <div class="edu-card card-sky" style="text-align: center; align-items: center;">
+      <span class="card-badge">Nível Gerencial</span>
+      <h4 class="card-title">SECRETÁRIO DE ADMINISTRAÇÃO</h4>
+      <p class="card-text">Recebe ordens diretas do Prefeito</p>
+    </div>
+    <div style="text-align: center; font-size: 1.4rem; color: #0ea5e9; margin: -0.25rem 0;">⬇️</div>
+    <div class="edu-card card-emerald" style="text-align: center; align-items: center;">
+      <span class="card-badge">Supervisão Direta</span>
+      <h4 class="card-title">DIRETOR DE PROTOCOLO</h4>
+      <p class="card-text">Único superior hierárquico do setor</p>
+    </div>
+    <div style="text-align: center; font-size: 1.4rem; color: #10b981; margin: -0.25rem 0;">⬇️</div>
+    <div class="edu-card card-amber" style="text-align: center; align-items: center;">
+      <span class="card-badge">Execução (Chão da Repartição)</span>
+      <h4 class="card-title">OFICIAL ADMINISTRATIVO</h4>
+      <p class="card-text"><strong>Unidade de Comando:</strong> Reporta-se exclusivamente ao seu Diretor</p>
+    </div>
+  </div>
+</div>
 
 * **Vantagens:** Clareza absoluta (todo mundo sabe quem manda e quem obedece); rapidez em ordens diretas; fácil controle disciplinar.
 * **Desvantagens:** Rigidez e lentidão burocrática; sobrecarga da chefia (o chefe central precisa saber e resolver tudo); comunicação horizontal truncada (para um Oficial de Obras falar com um Oficial de Finanças, a conversa precisa subir até o Secretário e descer tudo de novo).
@@ -355,14 +464,51 @@ Idealizada por **Frederick Taylor**, a estrutura funcional abandona a ideia do "
   * O **Supervisor de TI** manda na forma como você deve usar o sistema e os backups.
   * O **Supervisor Financeiro** manda na conferência dos comprovantes de pagamento.
 
-```
-   [ SUPERVISOR RH ]      [ SUPERVISOR TI ]      [ SUPERVISOR FINANÇAS ]
-           │                      │                         │
-           └──────────────┬───────┴─────────────────────────┘
-                          ▼
-             [ OFICIAL ADMINISTRATIVO ]
-           (Subordinação Múltipla a 3 Chefes!)
-```
+<div class="edu-component my-6">
+  <div class="edu-comp-header">
+    <div class="edu-comp-title">
+      <span>⚙️</span>
+      <span>ORGANOGRAMA DA ESTRUTURA FUNCIONAL: SUBORDINAÇÃO MÚLTIPLA</span>
+    </div>
+    <span class="edu-comp-badge">Taylor (Especialização)</span>
+  </div>
+  <div class="edu-cards-grid grid-3">
+    <div class="edu-card card-indigo">
+      <div class="edu-card-top">
+        <span class="card-icon">👥</span>
+        <span class="card-badge">Chefe Técnico 1</span>
+      </div>
+      <h4 class="card-title">SUPERVISOR DE RH</h4>
+      <p class="card-text">Manda em ponto, férias e conduta funcional.</p>
+    </div>
+    <div class="edu-card card-sky">
+      <div class="edu-card-top">
+        <span class="card-icon">💻</span>
+        <span class="card-badge">Chefe Técnico 2</span>
+      </div>
+      <h4 class="card-title">SUPERVISOR DE TI</h4>
+      <p class="card-text">Manda em sistemas, senhas e segurança digital.</p>
+    </div>
+    <div class="edu-card card-emerald">
+      <div class="edu-card-top">
+        <span class="card-icon">💰</span>
+        <span class="card-badge">Chefe Técnico 3</span>
+      </div>
+      <h4 class="card-title">SUPERVISOR FINANCEIRO</h4>
+      <p class="card-text">Manda em empenhos, taxas e conferência contábil.</p>
+    </div>
+  </div>
+  <div style="text-align: center; font-size: 1.3rem; margin: 0.25rem 0 0.5rem; color: #f43f5e; font-weight: 800;">
+    ⬇️ Subordinação Múltipla Direta ⬇️
+  </div>
+  <div style="padding: 0 1.15rem 1.15rem;">
+    <div class="edu-card card-rose" style="text-align: center; align-items: center;">
+      <span class="card-badge" style="background: rgba(244, 63, 94, 0.15); color: #e11d48;">Ponto de Ruptura da Unidade de Comando</span>
+      <h4 class="card-title">OFICIAL ADMINISTRATIVO</h4>
+      <p class="card-text">O servidor responde simultaneamente aos 3 supervisores técnicos diferentes. <strong>Risco:</strong> Ordens concorrentes e conflito de prioridades!</p>
+    </div>
+  </div>
+</div>
 
 * **Vantagens:** Máxima especialização técnica; cada assunto é supervisionado por quem realmente é especialista no ramo; comunicação direta sem intermediários.
 * **Desvantagens (O Perigo para Concurso!):** **Perda da unidade de comando**; conflito de ordens entre chefes diferentes (*"O chefe de TI mandou formatar o computador agora, mas o chefe financeiro mandou fechar a planilha agora: quem eu atendo primeiro?"*); tendência de cada departamento defender seu próprio território, esquecendo o objetivo geral da Prefeitura.
@@ -389,18 +535,45 @@ Ela junta o melhor dos dois mundos:
 * **Assessoria de Imprensa / Comunicação Social:** Auxilia o Prefeito na divulgação dos atos oficiais, redige notas para o jornal e gerencia as redes sociais.
 * **Controladoria-Geral do Município:** Órgão de assessoramento e auditoria interna.
 
-```
-                    [ PREFEITO ] ◄══════ [ ASSESSORIA JURÍDICA ] (Staff: Parecer / Consulta)
-                         │
-                         ▼
-               [ SECRETÁRIO MUNICIPAL ] ◄═ [ ASSESSORIA TÉCNICA ] (Staff)
-                         │
-                         ▼
-              [ DIRETOR DE DEPARTAMENTO ] (Linha: Comando)
-                         │
-                         ▼
-             [ OFICIAL ADMINISTRATIVO ] (Linha: Execução)
-```
+<div class="edu-component my-6">
+  <div class="edu-comp-header">
+    <div class="edu-comp-title">
+      <span>🤝</span>
+      <span>ESTRUTURA LINHA-STAFF: COMANDO LINEAR + ASSESSORIA TÉCNICA</span>
+    </div>
+    <span class="edu-comp-badge">Padrão Municipal Moderno</span>
+  </div>
+  <div class="edu-cards-grid grid-2">
+    <div class="edu-card card-indigo">
+      <div class="edu-card-top">
+        <span class="card-icon">⚡</span>
+        <span class="card-badge">ÓRGÃOS DE LINHA</span>
+      </div>
+      <h4 class="card-title">Autoridade de Comando e Execução</h4>
+      <p class="card-text">Possuem a linha hierárquica direta de mando e decisão sobre a rotina da repartição.</p>
+      <div class="card-levels">
+        <div class="level-row"><span>Cúpula</span> <strong>Prefeito Municipal</strong></div>
+        <div class="level-row"><span>Secretaria</span> <strong>Secretário de Administração</strong></div>
+        <div class="level-row"><span>Diretoria</span> <strong>Diretor de Departamento</strong></div>
+        <div class="level-row"><span>Base</span> <strong>Oficial Administrativo (Executor)</strong></div>
+      </div>
+    </div>
+    <div class="edu-card card-purple">
+      <div class="edu-card-top">
+        <span class="card-icon">💡</span>
+        <span class="card-badge">ÓRGÃOS DE STAFF (Assessoria)</span>
+      </div>
+      <h4 class="card-title">Autoridade Consultiva e Apoio Técnico</h4>
+      <p class="card-text">Especialistas que emitem laudos, pareceres e orientam as chefias, <strong>sem poder de mando sobre a base</strong>.</p>
+      <div class="card-levels">
+        <div class="level-row"><span>Jurídico</span> <strong>Procuradoria-Geral do Município</strong></div>
+        <div class="level-row"><span>Auditoria</span> <strong>Controladoria-Geral Municipal</strong></div>
+        <div class="level-row"><span>Mídia</span> <strong>Assessoria de Imprensa e Comunicação</strong></div>
+        <div class="level-row"><span>Tecnologia</span> <strong>Assessoria Especial de TI</strong></div>
+      </div>
+    </div>
+  </div>
+</div>
 
 > [!IMPORTANT]
 > **A Regra de Ouro da Linha-Staff para a Banca ACCESS:**  
@@ -427,13 +600,40 @@ Para tocar esse projeto, forma-se uma equipe multidisciplinar:
   1. O seu **Chefe Funcional Permanente** (o Diretor do Protocolo Geral), que cuida da sua lotação, férias e atribuições permanentes do cargo.
   2. O seu **Gerente de Projeto Temporário** (o Coordenador do Projeto Digital), que define as metas do projeto, os prazos das entregas digitais e as reuniões diárias da equipe.
 
-```
-                      GERENTE DO PROJETO "PREFEITURA DIGITAL"
-                                     │
-                                     ▼
-DIRETOR DE PROTOCOLO  ──►  [ OFICIAL ADMINISTRATIVO ]
-(Chefe Funcional)          (DUPLA SUBORDINAÇÃO OFICIAL!)
-```
+<div class="edu-component my-6">
+  <div class="edu-comp-header">
+    <div class="edu-comp-title">
+      <span>🔀</span>
+      <span>ESTRUTURA MATRICIAL: O CRUZAMENTO DE DUAS AUTORIDADES</span>
+    </div>
+    <span class="edu-comp-badge">Dupla Subordinação</span>
+  </div>
+  <div class="edu-cards-grid grid-2">
+    <div class="edu-card card-indigo">
+      <div class="edu-card-top">
+        <span class="card-icon">🏢</span>
+        <span class="card-badge">Eixo Vertical (Permanente)</span>
+      </div>
+      <h4 class="card-title">CHEFE FUNCIONAL</h4>
+      <p class="card-text"><strong>Diretor de Protocolo:</strong> Cuida da lotação fixa, escala de trabalho, férias, avaliação funcional e rotina permanente do setor.</p>
+    </div>
+    <div class="edu-card card-emerald">
+      <div class="edu-card-top">
+        <span class="card-icon">🚀</span>
+        <span class="card-badge">Eixo Horizontal (Temporário)</span>
+      </div>
+      <h4 class="card-title">GERENTE DE PROJETO</h4>
+      <p class="card-text"><strong>Coordenador do Projeto "Cidade Digital":</strong> Define metas temporárias, prazos de entrega e condução dos trabalhos da força-tarefa.</p>
+    </div>
+  </div>
+  <div style="padding: 0 1.15rem 1.15rem;">
+    <div class="edu-card card-amber" style="text-align: center; align-items: center;">
+      <span class="card-badge">O Vínculo do Servidor</span>
+      <h4 class="card-title">OFICIAL ADMINISTRATIVO DESIGNADO</h4>
+      <p class="card-text">O servidor atua na intersecção da matriz: responde ao Diretor de Protocolo (como membro do setor) e ao Gerente de Projeto (como integrante da equipe de inovação).</p>
+    </div>
+  </div>
+</div>
 
 * **Vantagens:** Altíssima flexibilidade, comunicação rápida entre setores diferentes, foco absoluto em metas complexas e inovadoras.
 * **Desvantagens:** Conflito constante de poder entre o Gerente Funcional e o Gerente de Projeto (*"Quem manda mais?"*); estresse emocional do servidor submetido a dupla cobrança simultânea.
@@ -473,28 +673,61 @@ As quatro letras do acrônimo vêm do inglês:
 3. **C — CHECK (Checar / Verificar):** Medir os resultados reais obtidos e compará-los com o planejado.
 4. **A — ACT / ADJUST (Agir Corretivamente / Ajustar / Padronizar):** Se atingiu a meta, padronizar o processo e torná-lo permanente; se não atingiu, adotar ações corretivas e reiniciar o ciclo.
 
-```
-                 ┌─────────────────────────────────┐
-                 │      P — PLAN (Planejar)        │
-                 │  • Identificar problemas/gargalos│
-                 │  • Definir metas e indicadores  │
-                 │  • Elaborar o plano de ação     │
-                 └────────────────┬────────────────┘
-                                  │
-                                  ▼
-┌─────────────────────────────────┐         ┌─────────────────────────────────┐
-│   A — ACT (Agir/Ajustar)        │         │        D — DO (Fazer/Executar)  │
-│  • Padronizar o que deu certo   │ ◄────── │  • Treinar os servidores        │
-│  • Corrigir falhas e desvios    │         │  • Executar o plano piloto      │
-│  • Reiniciar o ciclo contínuo   │         │  • Coletar dados da execução    │
-└─────────────────────────────────┘         └────────────────┬────────────────┘
-                 ▲                                           │
-                 │       C — CHECK (Checar)                  │
-                 └───────────────────────────────────────────┘
-                         • Medir o desempenho real
-                         • Comparar com as metas do Plan
-                         • Detectar discrepâncias
-```
+<div class="edu-component my-6">
+  <div class="edu-comp-header">
+    <div class="edu-comp-title">
+      <span>🔄</span>
+      <span>O CICLO PDCA (DEMING / SHEWHART): AS 4 FASES DA MELHORIA CONTÍNUA</span>
+    </div>
+    <span class="edu-comp-badge">Qualidade Total</span>
+  </div>
+  <div class="edu-cards-grid grid-4">
+    <div class="edu-card card-indigo">
+      <div class="edu-card-top">
+        <span class="card-icon">1️⃣</span>
+        <span class="card-badge">P — PLAN</span>
+      </div>
+      <h4 class="card-title">PLANEJAR</h4>
+      <p class="card-text">Identificar problemas, definir metas mensuráveis e desenhar o plano de ação (5W2H).</p>
+      <div class="card-levels">
+        <div class="level-row"><span>Foco Principal</span> <strong>Metas e Métodos</strong></div>
+      </div>
+    </div>
+    <div class="edu-card card-sky">
+      <div class="edu-card-top">
+        <span class="card-icon">2️⃣</span>
+        <span class="card-badge">D — DO</span>
+      </div>
+      <h4 class="card-title">FAZER / EXECUTAR</h4>
+      <p class="card-text">Treinar a equipe, executar o projeto piloto na prática e coletar dados operacionais.</p>
+      <div class="card-levels">
+        <div class="level-row"><span>Foco Principal</span> <strong>Treinar e Rodar Ação</strong></div>
+      </div>
+    </div>
+    <div class="edu-card card-amber">
+      <div class="edu-card-top">
+        <span class="card-icon">3️⃣</span>
+        <span class="card-badge">C — CHECK</span>
+      </div>
+      <h4 class="card-title">CHECAR / VERIFICAR</h4>
+      <p class="card-text">Medir resultados reais alcançados, confrontar com a meta e detectar divergências.</p>
+      <div class="card-levels">
+        <div class="level-row"><span>Foco Principal</span> <strong>Comparar Meta vs. Real</strong></div>
+      </div>
+    </div>
+    <div class="edu-card card-emerald">
+      <div class="edu-card-top">
+        <span class="card-icon">4️⃣</span>
+        <span class="card-badge">A — ACT / ADJUST</span>
+      </div>
+      <h4 class="card-title">AGIR / AJUSTAR</h4>
+      <p class="card-text">Se deu certo, padronizar o processo e treinar a todos; se falhou, corrigir e reiniciar o ciclo.</p>
+      <div class="card-levels">
+        <div class="level-row"><span>Foco Principal</span> <strong>Padronizar ou Corrigir</strong></div>
+      </div>
+    </div>
+  </div>
+</div>
 
 ---
 
