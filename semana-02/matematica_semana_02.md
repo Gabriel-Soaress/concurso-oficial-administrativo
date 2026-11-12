@@ -40,10 +40,19 @@
    - Desmontando o Truque do MMC nos Bastidores: Como Sumir com as Frações na Divisão Inversa
    - **Bateria de Fixação do Eixo 4 (5 Contas Rápidas + 3 Questões de Fixação)**
    - Síntese Feynman (Divisão Proporcional)
-5. [Laboratório de Casos Guiados: Traduzindo do Português para a Matemática](#laboratório-de-casos-guiados-traduzindo-do-português-para-a-matemática)
-6. [Armadilhas Clássicas das Bancas (Onde o Candidato Desatento Escorrega)](#armadilhas-clássicas-das-bancas-onde-o-candidato-desatento-escorrega)
-7. [Bateria de 8 Questões Reais de Concurso Comentadas Linha por Linha](#bateria-de-8-questões-reais-de-concurso-comentadas-linha-por-linha)
-8. [Checklist de Fixação Ativa para o Aluno](#checklist-de-fixação-ativa-para-o-aluno)
+5. [Eixo 5: Radiciação — Da Raiz Não Exata à Simplificação, Operações e Racionalização](#eixo-5-radiciação--da-raiz-não-exata-à-simplificação-operações-e-racionalização)
+   - Por que a Radiciação Existe e Qual Problema Prático Ela Resolve?
+   - Anatomia do Radical, Raízes de Índice $n$ e a Lógica dos Sinais
+   - A Ponte Secreta Entre Potência e Raiz: Expoente Fracionário ($a^{\frac{m}{n}} = \sqrt[n]{a^m}$)
+   - Simplificação de Radicais Não Exatos: A Técnica da "Fuga da Prisão"
+   - As 4 Operações com Radicais (e o Erro Fatal da Soma: $\sqrt{a+b} \neq \sqrt{a} + \sqrt{b}$)
+   - Racionalização de Denominadores: Como Tirar a Raiz de Baixo da Fração (3 Casos)
+   - **Bateria de Fixação do Eixo 5 (5 Contas Rápidas + 3 Questões de Fixação)**
+   - Síntese Feynman (Radiciação)
+6. [Laboratório de Casos Guiados: Traduzindo do Português para a Matemática](#laboratório-de-casos-guiados-traduzindo-do-português-para-a-matemática)
+7. [Armadilhas Clássicas das Bancas (Onde o Candidato Desatento Escorrega)](#armadilhas-clássicas-das-bancas-onde-o-candidato-desatento-escorrega)
+8. [Bateria de 8 Questões Reais de Concurso Comentadas Linha por Linha](#bateria-de-8-questões-reais-de-concurso-comentadas-linha-por-linha)
+9. [Checklist de Fixação Ativa para o Aluno](#checklist-de-fixação-ativa-para-o-aluno)
 
 ---
 
@@ -1448,6 +1457,349 @@ Uma gratificação foi dividida entre dois servidores em partes **inversamente p
 
 ---
 
+## EIXO 5: Radiciação — Da Raiz Não Exata à Simplificação, Operações e Racionalização
+
+### 1. Por que a Radiciação Existe e Qual Problema Prático Ela Resolve?
+Na Semana 01, nós demos o primeiro passo: aprendemos que a **raiz quadrada exata** faz o caminho de volta da multiplicação de um número por ele mesmo ($\sqrt{49} = 7$, porque $7 \times 7 = 49$).
+
+Mas e quando saímos dos casos perfeitos e entramos na Matemática real das provas de concurso (como nas questões de expressões com radicais e geometria)? Surge um conjunto de **três problemas reais** que o cálculo básico não resolve sozinho:
+1. **Voltar mais de duas multiplicações (Raízes de Índice $n$):** Imagine que a Prefeitura comprou uma caixa-d'água cúbica com volume de $64\text{ m}^3$ e precisa saber quanto mede a aresta ($L \times L \times L = 64$). Aqui você não quer voltar $2$ multiplicações, mas sim **$3$ multiplicações** ($\sqrt[3]{64} = 4$, pois $4 \times 4 \times 4 = 64$)!
+2. **Lidar com números que NÃO são quadrados perfeitos (Simplificação):** E se a prova trouxer $\sqrt{54} + \sqrt{24}$? Nenhum número inteiro ao quadrado dá $54$ ou $24$. Se você tentar calcular na marra sem simplificar, trava!
+3. **Tirar a raiz irracional debaixo da fração (Racionalização):** Como você dividiria $6 \div \sqrt{3}$ na mão durante a prova? Dividir por $1{,}7320508\dots$ é impossível sem calculadora. A **racionalização** transforma o denominador irracional em um número inteiro limpo, sem mudar o valor da fração!
+
+---
+
+### 2. Anatomia do Radical, Raízes de Índice $n$ e a Lógica dos Sinais
+Antes de operar qualquer radical, você precisa dominar exatamente o nome e a função de cada peça da expressão $\sqrt[n]{a} = b$:
+
+<div class="edu-component my-6">
+  <div class="edu-comp-header">
+    <div class="edu-comp-title">
+      <span class="edu-comp-icon">🔬</span>
+      <span>ANATOMIA DO RADICAL ($\sqrt[n]{a} = b \iff b^n = a$)</span>
+    </div>
+    <span class="edu-comp-badge">Conceitos Fundamentais</span>
+  </div>
+  <div class="edu-cards-grid grid-3">
+    <div class="edu-card card-indigo">
+      <div class="edu-card-top">
+        <span class="card-icon">🔢</span>
+        <span class="card-badge">Índice ($n$)</span>
+      </div>
+      <h4 class="card-title">1. O Índice Manda no Grupo</h4>
+      <p class="card-text">É o número pequeno em cima do "V". Ele diz <strong>quantas vezes</strong> a resposta ($b$) se multiplica por ela mesma. Quando não aparece nada escrito, o índice é <strong>$2$</strong> (raiz quadrada).</p>
+      <div class="card-examples">
+        <span class="ex-tag">Ex: $\sqrt[3]{27} = 3$ (pois $3^3 = 27$)</span>
+        <span class="ex-tag">Ex: $\sqrt[4]{16} = 2$ (pois $2^4 = 16$)</span>
+      </div>
+    </div>
+
+    <div class="edu-card card-sky">
+      <div class="edu-card-top">
+        <span class="card-icon">🏠</span>
+        <span class="card-badge">Radical e Radicando</span>
+      </div>
+      <h4 class="card-title">2. A "Casa" e o "Morador"</h4>
+      <p class="card-text">O símbolo $\sqrt{\phantom{x}}$ é o <strong>radical</strong> (a "casa"). O número $a$ guardado debaixo do telhado é o <strong>radicando</strong>.</p>
+      <div class="card-examples">
+        <span class="ex-tag">Em $\sqrt[3]{125}$: radicando $= 125$</span>
+      </div>
+    </div>
+
+    <div class="edu-card card-emerald">
+      <div class="edu-card-top">
+        <span class="card-icon">⚖️</span>
+        <span class="card-badge">Regra dos Sinais</span>
+      </div>
+      <h4 class="card-title">3. Índice Par vs. Índice Ímpar</h4>
+      <p class="card-text">Nos números reais ($\mathbb{R}$), <strong>NÃO existe raiz de índice PAR de número negativo</strong>! Mas de índice <strong>ÍMPAR existe normalmente</strong>.</p>
+      <div class="card-examples">
+        <span class="ex-tag">$\sqrt{-9} \notin \mathbb{R}$</span>
+        <span class="ex-tag">$\sqrt[3]{-8} = -2$</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+#### Por que a Regra dos Sinais Funciona Assim? (Sem Decoreba!)
+* **Por que $\sqrt{-9}$ não existe nos Reais ($\mathbb{R}$)?**  
+  Tente achar um número real que multiplicado por ele mesmo dê $-9$:
+  - Se testar $+3$: $(+3) \times (+3) = +9$ (deu positivo!).
+  - Se testar $-3$: $(-3) \times (-3) = +9$ (também deu positivo, porque menos com menos na multiplicação dá mais!).
+  Logo, é **matematicamente impossível** um número real elevado ao quadrado (ou a qualquer expoente **par**) dar resultado negativo!
+* **E por que $\sqrt[3]{-8} = -2$ existe?**  
+  Porque o índice $3$ é **ímpar**! Multiplique $-2$ três vezes:
+  $$(-2) \times (-2) \times (-2) = (+4) \times (-2) = \mathbf{-8}$$
+  Como sobrou um sinal de menos na 3ª multiplicação, o resultado fecha perfeitamente em $-8$!
+
+---
+
+### 3. A Ponte Secreta Entre Potência e Raiz: Expoente Fracionário
+Já se perguntou o que significa quando aparece uma potência com **fração no expoente**, do tipo **$16^{\frac{1}{2}}$** ou **$8^{\frac{2}{3}}$**?
+
+Vamos desmontar a lógica nos bastidores:
+* Sabemos pelas propriedades da Semana 01 que, ao multiplicar potências de mesma base, **somamos os expoentes**.
+* Então, quanto dá $9^{\frac{1}{2}} \times 9^{\frac{1}{2}}$?
+  $$9^{\frac{1}{2}} \times 9^{\frac{1}{2}} = 9^{\frac{1}{2} + \frac{1}{2}} = 9^1 = \mathbf{9}$$
+* Ora, qual é o número positivo que multiplicado por ele mesmo dá $9$? É **$\sqrt{9} = 3$**!
+* Isso prova que **$9^{\frac{1}{2}}$ e $\sqrt{9}$ são exatamente a MESMA coisa!** Toda raiz nada mais é do que uma potência com expoente fracionário disfarçada:
+
+$$a^{\frac{m}{n}} = \sqrt[n]{a^m} \qquad (a > 0)$$
+
+> [!TIP]
+> **Analogia Visual do "Sol e Sombra" (Para Nunca Trocar Quem Vai Em Cima ou Embaixo):**  
+> Imagine o símbolo da raiz $\sqrt{\phantom{x}}$ como um **telhado**:  
+> - O expoente **$m$** está lá dentro, **protegido na sombra** $\implies$ na fração, ele vai para cima (**para o sol**: numerador $m$).  
+> - O índice **$n$** está lá fora, **tomando sol** $\implies$ na fração, ele vai para baixo (**para a sombra**: denominador $n$).  
+>
+> *Exemplos práticos passo a passo:*
+> 1. $25^{\frac{1}{2}} = \sqrt[2]{25^1} = \sqrt{25} = \mathbf{5}$.
+> 2. $27^{\frac{2}{3}} = \sqrt[3]{27^2} = (\sqrt[3]{27})^2 = 3^2 = \mathbf{9}$ *(Dica esperta: tire a raiz primeiro para o número diminuir, depois eleve ao quadrado!)*.
+> 3. $8^{-\frac{1}{3}}$: o sinal negativo inverte a base ($\frac{1}{8}$) e o expoente $\frac{1}{3}$ vira raiz cúbica: $\sqrt[3]{\frac{1}{8}} = \mathbf{\frac{1}{2}}$.
+
+---
+
+### 4. Simplificação de Radicais Não Exatos: A Técnica da "Fuga da Prisão"
+Quando uma prova traz **$\sqrt{54}$**, **$\sqrt{72}$** ou **$\sqrt[3]{16}$**, a raiz não é exata. Você não vai calcular decimal aproximado! Você vai **simplificar (reduzir)** o radical retirando de dentro dele tudo o que conseguir formar grupo completo.
+
+Pense no radical $\sqrt[n]{\phantom{x}}$ como uma **prisão com segurança de nível $n$**:
+* Se a raiz é **quadrada ($n=2$)**, só consegue fugir da raiz quem formar **DUPLA idêntica** (dois fatores iguais viram $1$ representante do lado de fora, porque $\sqrt{3^2} = 3$).
+* Se a raiz é **cúbica ($n=3$)**, só consegue fugir quem formar **TRIO idêntico** (três fatores iguais viram $1$ representante fora, porque $\sqrt[3]{2^3} = 2$).
+* Quem **ficar solteiro (sem par ou sem trio)** continua preso lá dentro da raiz! Se sobrar mais de um preso, eles se multiplicam entre si dentro da raiz.
+
+#### Exemplo Guiado 1 — Simplificar $\sqrt{54}$ e $\sqrt{216}$ (Nível Real de Concurso!):
+Vamos fatorar $54$ e $216$ em números primos:
+```text
+   54 | 2   (sozinho!)       216 | 2 ──┐ (par de 2!)
+   27 | 3 ──┐                108 | 2 ──┘
+    9 | 3 ──┘ (par de 3!)     54 | 2   (sozinho!)
+    3 | 3   (sozinho!)        27 | 3 ──┐ (par de 3!)
+    1 |                        9 | 3 ──┘
+                               3 | 3   (sozinho!)
+                               1 |
+```
+Olhe o que aconteceu na "fuga da prisão" de cada um:
+1. Em **$\sqrt{54}$**:
+   - Saiu $1$ par de **$3$** $\implies$ o **$3$** fica do lado de fora.
+   - Ficaram presos um $2$ e um $3$ sozinhos $\implies$ eles se multiplicam lá dentro: $2 \times 3 = 6$.
+   $$\sqrt{54} = \mathbf{3\sqrt{6}}$$
+2. Em **$\sqrt{216}$**:
+   - Saiu $1$ par de **$2$** e $1$ par de **$3$** $\implies$ eles se multiplicam do lado de fora: $2 \times 3 = 6$.
+   - Ficaram presos um $2$ e um $3$ sozinhos $\implies$ multiplicam-se lá dentro: $2 \times 3 = 6$.
+   $$\sqrt{216} = \mathbf{6\sqrt{6}}$$
+
+#### Exemplo Guiado 2 — Simplificar Raiz Cúbica: $\sqrt[3]{16}$ e $\sqrt[3]{54}$
+Como agora o índice é **$3$**, precisamos juntar **TRIOS** para sair:
+* $16 = 2 \times 2 \times 2 \times 2 = \mathbf{2^3} \times 2$. Um trio de $2$ escapa da prisão cúbica e sobra um $2$ lá dentro: $\sqrt[3]{16} = \mathbf{2\sqrt[3]{2}}$.
+* $54 = 2 \times \mathbf{3^3}$. Um trio de $3$ escapa da prisão cúbica e sobra o $2$ lá dentro: $\sqrt[3]{54} = \mathbf{3\sqrt[3]{2}}$.
+
+---
+
+### 5. As 4 Operações com Radicais (e o Erro Fatal da Soma!)
+Entender o que se pode e o que **NÃO** se pode fazer ao operar raízes evita $90\%$ dos erros em provas:
+
+<div class="edu-component my-6">
+  <div class="edu-comp-header">
+    <div class="edu-comp-title">
+      <span class="edu-comp-icon">🧮</span>
+      <span>AS 4 OPERAÇÕES COM RADICAIS E A REGRA DA SEMELHANÇA</span>
+    </div>
+    <span class="edu-comp-badge">Regras Operatórias</span>
+  </div>
+  <div class="edu-cards-grid grid-2">
+    <div class="edu-card card-amber">
+      <div class="edu-card-top">
+        <span class="card-icon">➕</span>
+        <span class="card-badge">Soma e Subtração</span>
+      </div>
+      <h4 class="card-title">Só Soma/Subtrai "Moedas Iguais"!</h4>
+      <p class="card-text">Radicais só podem ser somados ou subtraídos quando têm o <strong>mesmo índice e o mesmo radicando</strong>. Pense no $\sqrt{2}$ como uma moeda ("dindin"): $3\text{ dindins} + 5\text{ dindins} = 8\text{ dindins}$. Basta somar os números de fora e conservar o radical!</p>
+      <div class="card-examples">
+        <span class="ex-tag">Ex: $3\sqrt{2} + 5\sqrt{2} - \sqrt{2} = 7\sqrt{2}$</span>
+        <span class="ex-tag">Ex: $\sqrt{50} + \sqrt{18} = 5\sqrt{2} + 3\sqrt{2} = 8\sqrt{2}$</span>
+      </div>
+    </div>
+
+    <div class="edu-card card-rose">
+      <div class="edu-card-top">
+        <span class="card-icon">🚫</span>
+        <span class="card-badge">Proibição Absoluta!</span>
+      </div>
+      <h4 class="card-title">NUNCA Quebre Raiz na Soma ou Subtração!</h4>
+      <p class="card-text">A maior armadilha da história é achar que $\sqrt{9 + 16}$ é igual a $\sqrt{9} + \sqrt{16}$. Veja a prova: $\sqrt{9 + 16} = \sqrt{25} = \mathbf{5}$, ao passo que $\sqrt{9} + \sqrt{16} = 3 + 4 = \mathbf{7}$! Como $5 \neq 7$, se houver $+$ ou $-$ dentro da raiz, resolva a conta lá dentro primeiro!</p>
+      <div class="card-examples">
+        <span class="ex-tag">ERRADO: $\sqrt{a + b} = \sqrt{a} + \sqrt{b}$</span>
+        <span class="ex-tag">CERTO: $\sqrt{9 + 16} = \sqrt{25} = 5$</span>
+      </div>
+    </div>
+
+    <div class="edu-card card-emerald">
+      <div class="edu-card-top">
+        <span class="card-icon">✖️</span>
+        <span class="card-badge">Multiplicação e Divisão</span>
+      </div>
+      <h4 class="card-title">Mesmo Índice? Pode Juntar ou Separar!</h4>
+      <p class="card-text">Na multiplicação e na divisão de radicais de <strong>mesmo índice</strong>, a raiz obedece perfeitamente à união ou separação: multiplica fora com fora, dentro com dentro!</p>
+      <div class="card-examples">
+        <span class="ex-tag">$\sqrt{2} \times \sqrt{8} = \sqrt{16} = 4$</span>
+        <span class="ex-tag">$\frac{\sqrt{72}}{\sqrt{2}} = \sqrt{\frac{72}{2}} = \sqrt{36} = 6$</span>
+      </div>
+    </div>
+
+    <div class="edu-card card-indigo">
+      <div class="edu-card-top">
+        <span class="card-icon">🔁</span>
+        <span class="card-badge">Raiz de Raiz &amp; Potência</span>
+      </div>
+      <h4 class="card-title">Multiplique os Índices!</h4>
+      <p class="card-text">Quando houver uma raiz dentro de outra raiz ($\sqrt[m]{\sqrt[n]{a}}$), basta manter o radicando e <strong>multiplicar os índices</strong> ($m \times n$). Já na potência de raiz: $(\sqrt[n]{a})^k = \sqrt[n]{a^k}$.</p>
+      <div class="card-examples">
+        <span class="ex-tag">$\sqrt{\sqrt{81}} = \sqrt[2 \times 2]{81} = \sqrt[4]{81} = 3$</span>
+        <span class="ex-tag">$(2\sqrt{3})^2 = 2^2 \cdot (\sqrt{3})^2 = 4 \cdot 3 = 12$</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+---
+
+### 6. Racionalização de Denominadores: Como Tirar a Raiz de Baixo da Fração
+Imagine que, no meio de uma expressão de concurso, você encontrou a fração **$\frac{6}{\sqrt{3}}$** ou **$\frac{6}{\sqrt{54}}$**, mas olha para as alternativas da prova (A, B, C, D) e **NENHUMA** alternativa tem raiz no denominador!
+
+Por que os matemáticos e as bancas nunca deixam raiz embaixo da fração?
+1. **Praticidade histórica:** Antes das calculadoras, dividir $6$ por $\sqrt{3} \approx 1{,}73205\dots$ exigia fazer uma divisão interminável na chave com infinitas casas decimais. Já dividir $6 \times 1{,}73205$ por **$3$** (um número inteiro!) era rápido e exato.
+2. **Padronização das alternativas:** Toda fração com raiz embaixo pode ser transformada em uma fração **equivalente** com denominador inteiro através do truque da multiplicação pelo número **$1$ disfarçado**!
+
+Lembre-se: multiplicar qualquer número por $1$ não muda o valor dele. E toda fração com numerador e denominador iguais vale $1$ (ex: $\frac{\sqrt{3}}{\sqrt{3}} = 1$).
+
+#### Caso 1 — Raiz Quadrada Sozinha no Denominador ($\frac{k}{\sqrt{a}}$)
+Multiplique em cima e embaixo pela própria raiz $\sqrt{a}$. Por quê? Porque $\sqrt{a} \times \sqrt{a} = \sqrt{a^2} = a$ (a raiz se autodestrói!).
+* **Exemplo A:** Racionalize $\frac{6}{\sqrt{3}}$:
+  $$\frac{6}{\sqrt{3}} \times \frac{\sqrt{3}}{\sqrt{3}} = \frac{6\sqrt{3}}{\sqrt{9}} = \frac{6\sqrt{3}}{3} = \mathbf{2\sqrt{3}}$$
+* **Exemplo B (Estilo Real de Concurso!):** Racionalize e simplifique $\frac{6}{\sqrt{54}}$:
+  1. Primeiro simplifique $\sqrt{54}$ como aprendemos acima: $\sqrt{54} = 3\sqrt{6}$.
+  2. Substitua na fração e simplifique os inteiros de fora ($6 \div 3 = 2$):
+     $$\frac{6}{3\sqrt{6}} = \frac{2}{\sqrt{6}}$$
+  3. Agora racionalize multiplicando em cima e embaixo apenas por $\sqrt{6}$:
+     $$\frac{2}{\sqrt{6}} \times \frac{\sqrt{6}}{\sqrt{6}} = \frac{2\sqrt{6}}{6} \xrightarrow{\text{simplifica por } 2} \mathbf{\frac{\sqrt{6}}{3}}$$
+
+#### Caso 2 — Raiz de Índice Maior que 2 no Denominador ($\frac{k}{\sqrt[n]{a^m}}$)
+Aqui não basta multiplicar por $\sqrt[3]{2}$ uma única vez, pois $\sqrt[3]{2} \times \sqrt[3]{2} = \sqrt[3]{2^2}$ (ainda falta um $2$ para completar o trio e sair da raiz!). Você deve multiplicar pelo que **falta** para completar o índice $n$:
+* **Exemplo:** Racionalize $\frac{4}{\sqrt[3]{2}}$:
+  Como já temos $2^1$ dentro da raiz cúbica e precisamos de $2^3$, multiplicamos em cima e embaixo por $\sqrt[3]{2^2}$ ($= \sqrt[3]{4}$):
+  $$\frac{4}{\sqrt[3]{2^1}} \times \frac{\sqrt[3]{2^2}}{\sqrt[3]{2^2}} = \frac{4\sqrt[3]{4}}{\sqrt[3]{2^3}} = \frac{4\sqrt[3]{4}}{2} = \mathbf{2\sqrt[3]{4}}$$
+
+#### Caso 3 — Soma ou Subtração com Raiz no Denominador ($\frac{k}{\sqrt{a} \pm \sqrt{b}}$)
+Se aparecer $\frac{4}{\sqrt{5} - \sqrt{3}}$ e você multiplicar só por $\sqrt{5}$, a raiz de $\sqrt{3}$ sobra! Como destruir as duas raízes ao mesmo tempo? Usando o **Conjugado** (mesmos termos, com o **sinal do meio trocado**)!
+* Por que funciona? Por causa do produto notável da diferença de dois quadrados: $(x - y)(x + y) = x^2 - y^2$. Cada termo fica ao quadrado e ambas as raízes somem!
+* **Exemplo:** Racionalize $\frac{4}{\sqrt{5} - \sqrt{3}}$:
+  Multiplicamos em cima e embaixo pelo conjugado ($\sqrt{5} + \sqrt{3}$):
+  $$\frac{4}{\sqrt{5} - \sqrt{3}} \times \frac{\sqrt{5} + \sqrt{3}}{\sqrt{5} + \sqrt{3}} = \frac{4(\sqrt{5} + \sqrt{3})}{(\sqrt{5})^2 - (\sqrt{3})^2} = \frac{4(\sqrt{5} + \sqrt{3})}{5 - 3} = \frac{4(\sqrt{5} + \sqrt{3})}{2} = \mathbf{2(\sqrt{5} + \sqrt{3})}$$
+
+---
+
+### 🎯 Bateria de Fixação do Eixo 5 (5 Contas Rápidas + 3 Questões de Fixação)
+
+> [!NOTE]
+> **Parte A — 5 Contas Rápidas de Radiciação (Treino no Rascunho):**  
+> Pratique a conversão, simplificação, operações e racionalização antes das questões de múltipla escolha:
+> 1. Converta e calcule o valor numérico de $64^{\frac{1}{3}}$ e $16^{\frac{3}{4}}$.
+> 2. Simplifique os radicais não exatos: $\sqrt{72}$ e $\sqrt[3]{24}$.
+> 3. Calcule a soma após simplificar: $\sqrt{12} + \sqrt{27}$.
+> 4. Resolva o produto e a divisão: $\sqrt{3} \times \sqrt{12}$ e $\frac{\sqrt{98}}{\sqrt{2}}$.
+> 5. Racionalize o denominador da fração $\frac{12}{\sqrt{6}}$ até a forma mais simples.
+>
+> <details>
+> <summary><b>Ver Resolução Passo a Passo das 5 Contas</b></summary>
+>
+> 1. **Expoente fracionário (Sol e Sombra):**  
+>    - $64^{\frac{1}{3}} = \sqrt[3]{64} = \mathbf{4}$ (pois $4 \times 4 \times 4 = 64$).  
+>    - $16^{\frac{3}{4}} = (\sqrt[4]{16})^3 = 2^3 = \mathbf{8}$ (pois $2^4 = 16$).  
+> 2. **Simplificação por fatoração:**  
+>    - $72 = 2^3 \times 3^2 = (2^2 \times 3^2) \times 2 \implies$ saem $2$ e $3$, fica preso o $2$: $\sqrt{72} = 6\sqrt{2}$.  
+>    - $24 = 2^3 \times 3 \implies$ sai um trio de $2$, fica preso o $3$: $\sqrt[3]{24} = 2\sqrt[3]{3}$.  
+> 3. **Soma de radicais semelhantes:**  
+>    - $\sqrt{12} = \sqrt{4 \times 3} = 2\sqrt{3}$.  
+>    - $\sqrt{27} = \sqrt{9 \times 3} = 3\sqrt{3}$.  
+>    - Somando as "moedas iguais": $2\sqrt{3} + 3\sqrt{3} = \mathbf{5\sqrt{3}}$.  
+> 4. **Produto e divisão:**  
+>    - $\sqrt{3} \times \sqrt{12} = \sqrt{3 \times 12} = \sqrt{36} = \mathbf{6}$.  
+>    - $\frac{\sqrt{98}}{\sqrt{2}} = \sqrt{\frac{98}{2}} = \sqrt{49} = \mathbf{7}$.  
+> 5. **Racionalização:**  
+>    $$\frac{12}{\sqrt{6}} \times \frac{\sqrt{6}}{\sqrt{6}} = \frac{12\sqrt{6}}{6} = \mathbf{2\sqrt{6}}$$
+> </details>
+
+#### Exercício de Fixação do Eixo 5.1 (Padrão Concurso)
+Simplificando ao máximo a expressão numérica $M = \sqrt{50} + \sqrt{32} - \sqrt{8}$, obtém-se como resultado exato:  
+(A) $\sqrt{74}$  
+(B) $7\sqrt{2}$  
+(C) $9\sqrt{2}$  
+(D) $11\sqrt{2}$  
+
+<details>
+<summary><b>Ver Gabarito e Resolução Passo a Passo</b></summary>
+
+* **Passo 1: Cuidado com a pegadinha (Letra A)!**  
+  Jamais some ou subtraia os radicandos direto ($50 + 32 - 8 = 74$)! Isso viola a regra dos radicais.
+* **Passo 2: Simplificar cada radical fatorando em quadrados perfeitos:**  
+  - $\sqrt{50} = \sqrt{25 \times 2} = \mathbf{5\sqrt{2}}$  
+  - $\sqrt{32} = \sqrt{16 \times 2} = \mathbf{4\sqrt{2}}$  
+  - $\sqrt{8} = \sqrt{4 \times 2} = \mathbf{2\sqrt{2}}$  
+* **Passo 3: Operar os números de fora (todos ficaram com $\sqrt{2}$!):**  
+  $$M = 5\sqrt{2} + 4\sqrt{2} - 2\sqrt{2} = (5 + 4 - 2)\sqrt{2} = \mathbf{7\sqrt{2}}$$
+* **Gabarito:** Letra **B**.
+</details>
+
+#### Exercício de Fixação do Eixo 5.2 (Padrão Concurso)
+Ao efetuar a racionalização e a simplificação da expressão $K = \frac{10}{\sqrt{5}} + \sqrt{45} - \sqrt{20}$, um candidato encontrou corretamente o valor:  
+(A) $3\sqrt{5}$  
+(B) $4\sqrt{5}$  
+(C) $5\sqrt{5}$  
+(D) $7\sqrt{5}$  
+
+<details>
+<summary><b>Ver Gabarito e Resolução Passo a Passo</b></summary>
+
+* **Passo 1: Racionalizar a fração $\frac{10}{\sqrt{5}}$:**  
+  $$\frac{10}{\sqrt{5}} \times \frac{\sqrt{5}}{\sqrt{5}} = \frac{10\sqrt{5}}{5} = \mathbf{2\sqrt{5}}$$
+* **Passo 2: Simplificar $\sqrt{45}$ e $\sqrt{20}$:**  
+  - $\sqrt{45} = \sqrt{9 \times 5} = \mathbf{3\sqrt{5}}$  
+  - $\sqrt{20} = \sqrt{4 \times 5} = \mathbf{2\sqrt{5}}$  
+* **Passo 3: Juntar tudo (todos têm $\sqrt{5}$!):**  
+  $$K = 2\sqrt{5} + 3\sqrt{5} - 2\sqrt{5} = \mathbf{3\sqrt{5}}$$
+* **Gabarito:** Letra **A**.
+</details>
+
+#### Exercício de Fixação do Eixo 5.3 (Padrão Concurso)
+Considere a expressão numérica $P = 25^{\frac{1}{2}} + 8^{\frac{2}{3}} - \sqrt[3]{-27}$. O valor numérico de $P$ pertence ao conjunto dos números naturais e é igual a:  
+(A) $6$  
+(B) $9$  
+(C) $12$  
+(D) $15$  
+
+<details>
+<summary><b>Ver Gabarito e Resolução Passo a Passo</b></summary>
+
+* **Passo 1: Converter e resolver cada parcela separadamente:**  
+  - $25^{\frac{1}{2}} = \sqrt{25} = \mathbf{5}$  
+  - $8^{\frac{2}{3}} = (\sqrt[3]{8})^2 = 2^2 = \mathbf{4}$  
+  - $\sqrt[3]{-27} = \mathbf{-3}$ *(pois $(-3) \times (-3) \times (-3) = -27$, índice ímpar aceita negativo!)*  
+* **Passo 2: Atenção máxima ao jogo de sinais na subtração (`- (-3)`):**  
+  $$P = 5 + 4 - (-3) = 9 + 3 = \mathbf{12}$$
+  *(Cuidado para não marcar $6$ na Letra A esquecendo que menos com menos vira mais!)*
+* **Gabarito:** Letra **C**.
+</details>
+
+---
+
+> [!TIP]
+> **Síntese Feynman (Radiciação em 3 Linhas):**  
+> 1. Toda raiz é uma potência fracionária ($a^{\frac{m}{n}} = \sqrt[n]{a^m}$): índice **par** não aceita radicando negativo nos Reais, mas índice **ímpar** aceita.  
+> 2. Para simplificar uma raiz não exata, fatore em primos: grupos de $n$ fatores iguais fogem da raiz, e o que sobrar sem grupo fica multiplicando lá dentro.  
+> 3. **Só some/subtraia radicais idênticos** (nunca quebre $\sqrt{a+b}$!); e se houver raiz no denominador, multiplique em cima e embaixo pelo fator que completa o índice (ou pelo conjugado se houver soma/subtração).
+
+---
+
 ## Laboratório de Casos Guiados: Traduzindo do Português para a Matemática
 
 Aqui vamos treinar a habilidade mais importante para quem sente dificuldade em Matemática: **ler um texto longo em português e traduzi-lo frase por frase para a conta certa**.
@@ -1508,13 +1860,30 @@ Aqui vamos treinar a habilidade mais importante para quem sente dificuldade em M
 
 ---
 
+### Caso Guiado 4: Desmontando uma Expressão Completa com Radicais (Questão Real — FUNDATEC 2024)
+* **Expressão da Prova:**  
+  Simplifique a expressão numérica $\sqrt{1764} \div \sqrt{7} + \sqrt{70} \cdot \sqrt{10} - \sqrt{1575}$.
+
+* **Tradução e Desmontagem Passo a Passo:**  
+  1. *1º Bloco ($\sqrt{1764} \div \sqrt{7}$):* Em vez de perder tempo fatorando $1764$ sozinho, use a propriedade da divisão de radicais de mesmo índice e **divida dentro de uma única raiz**:  
+     $$\frac{\sqrt{1764}}{\sqrt{7}} = \sqrt{\frac{1764}{7}} = \sqrt{252}$$  
+     Agora fatore $252$: $252 = 36 \times 7 = 6^2 \times 7 \implies \sqrt{252} = \mathbf{6\sqrt{7}}$.  
+  2. *2º Bloco ($\sqrt{70} \cdot \sqrt{10}$):* Use a propriedade da multiplicação e junte tudo embaixo do mesmo telhado:  
+     $$\sqrt{70 \times 10} = \sqrt{700} = \sqrt{100 \times 7} = \mathbf{10\sqrt{7}}$$  
+  3. *3º Bloco ($\sqrt{1575}$):* Divida $1575$ por $7$ (já desconfiando que toda a família tem $\sqrt{7}$!): $1575 \div 7 = 225 = 15^2$:  
+     $$\sqrt{1575} = \sqrt{225 \times 7} = \mathbf{15\sqrt{7}}$$  
+  4. *Operação Final (Todas as "moedas" viraram $\sqrt{7}$!):*  
+     $$6\sqrt{7} + 10\sqrt{7} - 15\sqrt{7} = (6 + 10 - 15)\sqrt{7} = \mathbf{\sqrt{7}}$$
+
+---
+
 ## Armadilhas Clássicas das Bancas (Onde o Candidato Desatento Escorrega)
 
 <div class="edu-component my-6">
   <div class="edu-comp-header">
     <div class="edu-comp-title">
       <span class="edu-comp-icon">⚠️</span>
-      <span>AS 4 MAIORES CASCAS DE BANANA EM CONJUNTOS, RAZÃO E PROPORÇÃO</span>
+      <span>AS 6 MAIORES CASCAS DE BANANA DA SEMANA 02</span>
     </div>
     <span class="edu-comp-badge">Alerta de Prova</span>
   </div>
@@ -1553,6 +1922,24 @@ Aqui vamos treinar a habilidade mais importante para quem sente dificuldade em M
       </div>
       <h4 class="card-title">Parar a Conta no Valor de $k$</h4>
       <p class="card-text">A banca sempre coloca o valor de $k$ na Letra (A) para pegar o candidato apressado! Descobrir o $k$ é só o meio do caminho: lembre-se de multiplicar o $k$ pelo peso de quem a pergunta pediu!</p>
+    </div>
+
+    <div class="edu-card card-rose">
+      <div class="edu-card-top">
+        <span class="card-icon">💣</span>
+        <span class="card-badge">Armadilha 5</span>
+      </div>
+      <h4 class="card-title">Quebrar a Raiz na Soma ($\sqrt{a + b}$)</h4>
+      <p class="card-text">Só se pode separar raiz na <strong>multiplicação e divisão</strong>. Na soma e subtração é <strong>proibido</strong>: $\sqrt{9 + 16} = \sqrt{25} = 5$, e nunca $3 + 4 = 7$!</p>
+    </div>
+
+    <div class="edu-card card-emerald">
+      <div class="edu-card-top">
+        <span class="card-icon">🔍</span>
+        <span class="card-badge">Armadilha 6</span>
+      </div>
+      <h4 class="card-title">Achar que $\sqrt{-9}$ Vale $-3$ ou Esquecer de Racionalizar</h4>
+      <p class="card-text">Raiz de índice <strong>par</strong> de número negativo <strong>não existe em $\mathbb{R}$</strong> (só índice ímpar aceita negativo, ex: $\sqrt[3]{-8} = -2$). E se sobrar raiz no denominador, racionalize antes de procurar a alternativa!</p>
     </div>
   </div>
 </div>
@@ -1822,3 +2209,5 @@ Marque cada item abaixo à medida que sentir firmeza real no conteúdo desta aul
 - [ ] Entendo que Razão é uma divisão onde a ordem do texto manda (Antecedente em cima, Consequente embaixo) e não confundo "parte para parte" com "parte para o total".
 - [ ] Sei resolver qualquer Proporção multiplicando em cruz e sei diferenciar grandezas Diretamente Proporcionais de Inversamente Proporcionais.
 - [ ] Domino o Método das Fichas ($k$) para resolver Divisão Diretamente Proporcional e uso o truque do MMC para eliminar as frações na Divisão Inversamente Proporcional!
+- [ ] Consigo converter qualquer raiz em potência com expoente fracionário ($a^{\frac{m}{n}} = \sqrt[n]{a^m}$) e simplificar radicais não exatos ($\sqrt{54} = 3\sqrt{6}$, $\sqrt[3]{16} = 2\sqrt[3]{2}$) pela fatoração prima.
+- [ ] Sei operar radicais sem cair na armadilha da soma ($\sqrt{a+b} \neq \sqrt{a}+\sqrt{b}$) e sei racionalizar denominadores simples e com conjugado!
