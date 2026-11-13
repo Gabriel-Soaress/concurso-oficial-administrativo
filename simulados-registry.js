@@ -28,6 +28,28 @@
       getResumos: function () {
         return root.REVISAO_DATA || null;
       }
+    },
+    {
+      id: "simulado-sem-01-03",
+      titulo: "Simulado Adaptado · Semanas 01 a 03",
+      subtitulo: "Caderno de Prova Padrão Instituto ACCESS — Nível Médio",
+      descricao: "Simulado acumulativo das Semanas 01, 02 e 03 (60 questões iniciais: Conhecimentos Gerais, Matemática/RLM e Conhecimentos Específicos — Língua Portuguesa será adicionada após a Semana 03).",
+      semanas: "Semanas 01 a 03",
+      badge: "Padrão Instituto ACCESS",
+      icone: "📝",
+      totalQuestoes: 60,
+      tempoSugeridoMinutos: 180, // 3h00
+      materias: [
+        { key: "gerais", titulo: "Conhecimentos Gerais", icone: "🌍", count: 20 },
+        { key: "matematica", titulo: "Raciocínio Lógico e Mat.", icone: "🧮", count: 20 },
+        { key: "especificos", titulo: "Conhecimentos Específicos", icone: "⚖️", count: 20 }
+      ],
+      getData: function () {
+        return root.SIMULADO_02_DATA || null;
+      },
+      getResumos: function () {
+        return root.REVISAO_02_DATA || null;
+      }
     }
   ];
 })(typeof window !== "undefined" ? window : globalThis);
