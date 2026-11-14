@@ -6597,6 +6597,16 @@
       const weekStr = String(w.num).padStart(2, "0");
       const isAgent = mode === "agent";
 
+      const accessGuidePrompt = `
+DIRETRIZ OBRIGATÓRIA DE QUESTÕES (PADRÃO BANCA INSTITUTO ACCESS):
+Consulte o manual de engenharia reversa ".agents/PADRAO_QUESTOES_BANCA_ACCESS.md".
+- Todas as questões (sejam extraídas de "prova-auto/provas-access/" ou adaptadas das 81 provas de outras bancas em "prova-auto/") DEVEM seguir rigorosamente o padrão estrutural do Instituto ACCESS:
+  1. Concurso Municipal: exatamente 4 alternativas (A, B, C, D). Se a questão original de outra banca tiver 5 alternativas (A a E), elimine a alternativa mais fraca/redundante e adapte para 4 opções.
+  2. Termos de comando obrigatoriamente em CAIXA ALTA: "CORRETA", "INCORRETA", "EXCETO", "NÃO", "FALSA".
+  3. Formatos canônicos da ACCESS: alterne entre Múltipla Escolha contextualizada, Afirmativas Romanas (I, II, III com comando "Está(ão) correta(s) apenas..."), V ou F com julgamento de sequência e Associação de Colunas (Coluna I e Coluna II).
+  4. Contexto Prático da Repartição: em Conhecimentos Específicos/Administração, NUNCA traga lei seca pura solta; elabore sempre uma situação hipotética / estudo de caso de órgão público ("Durante auditoria interna...", "Em uma unidade de atendimento...", "O servidor João..."). Em RLM, personifique os problemas com nomes próprios e situações cotidianas.
+  5. Padrão do Formulário Interativo: estruture cada questão iniciando com "### Questão XX", linha "**Banca:** Adaptada para o Padrão Instituto ACCESS | ...", alternativas "(A) ", "(B) ", "(C) ", "(D) " e o bloco "<details><summary><b>Ver Gabarito e Comentário Detalhado</b></summary> **Gabarito Oficial: X** ... </details>" para que o script "python .agents/sync_lessons.py" gere o formulário interativo no site.`;
+
       // 1. MODELO EXCLUSIVO: LÍNGUA PORTUGUESA
       if (subj === "port") {
         const customDoubt = diff
@@ -6620,10 +6630,11 @@ Tenho Ensino Médio completo, mas vi essa base há bastante tempo. Eu aprendo mu
 2. Por que as exceções dessa regra existem (qual a lógica sonora, histórica ou sintática por trás delas)?
 3. Mostre a mecânica funcionando em frases reais (comparando o uso correto com as pegadinhas clássicas de prova).
 4. Ao final da explicação, crie uma **"Síntese Feynman de 3 Linhas"** para eu copiar no meu caderno.
+${accessGuidePrompt}
 
 TAREFA PARA O AGENTE LOCAL:
 1. Consulte ".agents/GUIA_DO_AGENTE.md" e verifique se meu e-mail já está vinculado rodando "python .agents/sync_db.py status" (caso não esteja, pergunte meu e-mail da plataforma e vincule com "python .agents/sync_db.py set-user <email>").
-2. Crie (se não existir) a pasta "${w.folder}/" e salve o arquivo "${w.folder}/portugues_semana_${weekStr}.md" com esta aula completa e uma bateria de 10 questões reais de Língua Portuguesa extraídas do acervo local "prova-auto/" (use "prova-auto/indice_provas.txt") sobre este tema, com gabarito comentado alternativa por alternativa.
+2. Crie (se não existir) a pasta "${w.folder}/" e salve o arquivo "${w.folder}/portugues_semana_${weekStr}.md" com esta aula completa e uma bateria de 10 questões de Língua Portuguesa formatadas rigorosamente no Padrão Instituto ACCESS (extraídas das provas em "prova-auto/provas-access/" ou adaptadas das provas de treino de "prova-auto/indice_provas.txt" conforme o guia mestre), com gabarito comentado alternativa por alternativa.
 3. Imediatamente após criar ou editar o arquivo ".md", rode OBRIGATORIAMENTE "python .agents/sync_lessons.py" para incorporar a aula e o formulário interativo de questões na Trilha do site ("aulas-data.js").
 4. Quando eu confirmar a conclusão, marque "[x]" em ".agents/GUIA_DO_AGENTE.md" e atualize meu progresso no site com "python .agents/sync_db.py mark w${w.num}_port".`;
         } else {
@@ -6636,9 +6647,9 @@ COMO EU APRENDO MELHOR (DIRETRIZ OBRIGATÓRIA):
 Tenho Ensino Médio, mas vi a gramática há bastante tempo. Não quero listas secas de regras nem macetes soltos para decorar. Quero entender **a lógica e o porquê por trás da regra e das exceções**:
 1. Construa a base degrau por degrau (do básico ao nível de prova): para que serve esse mecanismo na língua e como ele evita ambiguidade no texto?
 2. Explique a razão lógica (e, quando útil, histórica/fonética) das regras e principalmente das **exceções** cobradas nesse tema.
-3. Mostre exemplos práticos comentados das pegadinhas mais comuns em bancas de concursos municipais (como Instituto ACCESS, VUNESP e Consulplan).
+3. Mostre exemplos práticos comentados das pegadinhas mais comuns em bancas municipais no estilo Instituto ACCESS.
 4. Inclua uma **"Síntese Feynman de 3 Linhas"** (como explicar a lógica central desse assunto para um amigo em 1 minuto).
-5. Ao final, elabore **8 questões de múltipla escolha (A a D)** focadas exclusivamente neste tópico de Português, com gabarito comentado detalhando o erro de cada alternativa incorreta.`;
+5. Ao final, elabore **8 questões no Padrão Instituto ACCESS (exatamente 4 alternativas A a D, comandos em CAIXA ALTA com CORRETA/INCORRETA e fragmentos reais entre aspas)**, com gabarito comentado detalhando o erro de cada alternativa incorreta.`;
         }
       }
 
@@ -6665,10 +6676,11 @@ Tenho Ensino Médio, mas faz tempo que vi Matemática. Meu bloqueio acontece qua
 2. Mostre de onde vem a fórmula ou regra operacional para que eu não dependa de decoreba cega.
 3. Resolva exemplos progressivos (nível básico, intermediário e questão de concurso) sem pular passagens algébricas.
 4. Inclua uma **"Síntese Feynman de 3 Linhas"** resumindo o coração lógico desse cálculo.
+${accessGuidePrompt}
 
 TAREFA PARA O AGENTE LOCAL:
 1. Consulte ".agents/GUIA_DO_AGENTE.md" e verifique se meu e-mail já está vinculado com "python .agents/sync_db.py status" (se não estiver, pergunte meu e-mail e registre com "python .agents/sync_db.py set-user <email>").
-2. Salve na pasta "${w.folder}/" o arquivo "${w.folder}/matematica_semana_${weekStr}.md" contendo a explicação completa + 10 questões reais de Matemática/RLM retiradas das provas em "prova-auto/" sobre este assunto, resolvidas passo a passo (e se houver lista extra de exercícios de fixação, salve como segundo ".md" na mesma pasta).
+2. Salve na pasta "${w.folder}/" o arquivo "${w.folder}/matematica_semana_${weekStr}.md" contendo a explicação completa + 10 questões de Matemática/RLM no Padrão Instituto ACCESS (problemas contextualizados com nomes próprios e situações cotidianas, retiradas de "prova-auto/provas-access/" ou adaptadas com perfeição das provas de "prova-auto/" conforme o manual mestre), resolvidas passo a passo (e se houver lista extra de exercícios de fixação, salve como segundo ".md" na mesma pasta).
 3. Imediatamente após criar ou editar qualquer arquivo ".md", rode OBRIGATORIAMENTE "python .agents/sync_lessons.py" para incorporar a aula, as fórmulas e os formulários interativos de questões na Trilha do site ("aulas-data.js").
 4. Ao final do meu estudo, marque "[x]" em ".agents/GUIA_DO_AGENTE.md" e sincronize no site com "python .agents/sync_db.py mark w${w.num}_rlm".`;
         } else {
@@ -6683,7 +6695,7 @@ Tenho Ensino Médio, mas vi Matemática há bastante tempo. Não me jogue fórmu
 2. Demonstre de forma simples por que a regra/fórmula funciona assim (para que eu entenda o mecanismo em vez de apenas decorar).
 3. Resolva 3 exemplos guiados passo a passo (mostrando como traduzir o enunciado em português para a linguagem matemática).
 4. Destaque os erros de conta mais comuns que as bancas usam nas alternativas incorretas e entregue uma **"Síntese Feynman de 3 Linhas"** para meu caderno.
-5. Ao final, proponha **8 questões de múltipla escolha** no padrão de concursos de Oficial Administrativo sobre este tema, com resolução comentada linha por linha.`;
+5. Ao final, proponha **8 questões no Padrão Instituto ACCESS (exatamente 4 alternativas A a D, comandos em CAIXA ALTA e enunciados personificados com nomes próprios e situações do dia a dia)** sobre este tema, com resolução comentada linha por linha.`;
         }
       }
 
@@ -6709,10 +6721,11 @@ Tirando a parte de Informática, todo o conteúdo de Conhecimentos Específicos 
 1. Não use juridiquês solto. Ensine este tópico como uma **história contínua do funcionamento prático de uma Prefeitura Municipal** (eu sou o Oficial Administrativo sentado na repartição: por que essa regra/procedimento existe e como ela funciona no meu dia a dia?).
 2. Diferencie claramente os conceitos parecidos que as bancas trocam para confundir o candidato (usando quadros comparativos e exemplos reais).
 3. Ao final de cada subtópico, crie uma **"Síntese Feynman de 3 Linhas"**.
+${accessGuidePrompt}
 
 TAREFA PARA O AGENTE LOCAL:
 1. Consulte ".agents/GUIA_DO_AGENTE.md" e verifique se meu e-mail já está vinculado com "python .agents/sync_db.py status" (se não estiver, pergunte meu e-mail e registre com "python .agents/sync_db.py set-user <email>").
-2. Crie na pasta "${w.folder}/" o arquivo "${w.folder}/especificos_semana_${weekStr}.md" com o guia teórico-prático completo + 10 questões reais de Conhecimentos Específicos extraídas de "prova-auto/" sobre este tema, comentadas alternativa por alternativa.
+2. Crie na pasta "${w.folder}/" o arquivo "${w.folder}/especificos_semana_${weekStr}.md" com o guia teórico-prático completo + 10 questões no Padrão Instituto ACCESS (estudos de caso práticos de repartição municipal, rotinas de protocolo, arquivo e atos, adaptando as questões de outras bancas do "prova-auto/" para a estrutura da ACCESS conforme o manual mestre), comentadas alternativa por alternativa.
 3. Imediatamente após criar ou editar o arquivo ".md", rode OBRIGATORIAMENTE "python .agents/sync_lessons.py" para linkar a aula e o formulário interativo de questões na Trilha do site ("aulas-data.js").
 4. Quando eu avisar que finalizei, marque "[x]" em ".agents/GUIA_DO_AGENTE.md" e sincronize no site com "python .agents/sync_db.py mark w${w.num}_esp".`;
         } else {
@@ -6726,7 +6739,7 @@ Para mim, a matéria de Conhecimentos Específicos (exceto Informática) é um *
 1. Explique do básico ao avançado sem jargões soltos: conte o conteúdo como **o funcionamento lógico e real do dia a dia de uma Prefeitura Municipal** (por que esse instituto, documento, rotina ou lei foi criado e qual problema prático ele evita no serviço público).
 2. Use exemplos concretos do trabalho de um Oficial Administrativo e monte quadros comparativos entre os termos que as bancas costumam inverter nas provas.
 3. Inclua uma **"Síntese Feynman de 3 Linhas"** ao final da teoria para eu anotar no caderno.
-4. Elabore **8 questões de múltipla escolha** focadas exatamente neste tópico de Conhecimentos Específicos, com gabarito comentado explicando por que a correta está certa e qual o erro conceitual das demais.`;
+4. Elabore **8 questões no Padrão Instituto ACCESS (4 alternativas A a D, comandos em CAIXA ALTA com CORRETA/INCORRETA e formulação em estudos de caso práticos de repartição pública)**, com gabarito comentado explicando por que a correta está certa e qual o erro conceitual das demais.`;
         }
       }
 
@@ -6749,10 +6762,11 @@ MÉTODO DIDÁTICO ("CAUSA -> FATO -> CONSEQUÊNCIA NAS 3 ESCALAS"):
 1. Explique o tema como uma linha histórica e geográfica lógica (Causa -> Fato -> Consequência), sem listas soltas de datas ou nomes desconexos.
 2. Conecte sempre que aplicável as **Três Escalas Territoriais**: Brasil/Mundo <-> Estado de São Paulo <-> Município de Birigui e Região Noroeste Paulista.
 3. Destaque os dados oficiais (IBGE, marcos históricos, matriz econômica e política) mais cobrados em provas municipais e feche com uma **"Síntese Feynman de 3 Linhas"**.
+${accessGuidePrompt}
 
 TAREFA PARA O AGENTE LOCAL:
 1. Verifique meu e-mail vinculado com "python .agents/sync_db.py status" (se não houver, pergunte meu e-mail e registre com "python .agents/sync_db.py set-user <email>").
-2. Crie na pasta "${w.folder}/" o arquivo "${w.folder}/conhecimentos_gerais_semana_${weekStr}.md" com este dossiê didático e 8 questões comentadas (extraídas de "prova-auto/" + inéditas sobre Birigui/SP e atualidades).
+2. Crie na pasta "${w.folder}/" o arquivo "${w.folder}/conhecimentos_gerais_semana_${weekStr}.md" com este dossiê didático e 8 questões no Padrão Instituto ACCESS (4 alternativas A-D, comandos em CAIXA ALTA, abordando Birigui/SP, Noroeste Paulista, história e atualidades adaptadas conforme o guia), comentadas alternativa por alternativa.
 3. Imediatamente após criar ou editar o arquivo ".md", rode OBRIGATORIAMENTE "python .agents/sync_lessons.py" para linkar a aula e o formulário interativo de questões na Trilha do site ("aulas-data.js").
 4. Quando eu concluir a leitura, marque "[x]" em ".agents/GUIA_DO_AGENTE.md" e sincronize no site com "python .agents/sync_db.py mark w${w.num}_ger".`;
         } else {
@@ -6765,7 +6779,7 @@ COMO EU APRENDO MELHOR (DIRETRIZ OBRIGATÓRIA):
 1. Construa uma narrativa lógica de **Causa -> Fato -> Consequência**, explicando como os processos históricos, econômicos e geográficos se conectam até chegar ao cenário atual.
 2. Articule o conteúdo nas **Três Escalas**: Nacional (Brasil) -> Estadual (São Paulo) -> Municipal/Regional (Birigui e Noroeste Paulista).
 3. Entregue uma **"Síntese Feynman de 3 Linhas"** com os pontos-chave indispensáveis para a prova.
-4. Elabore **8 questões de múltipla escolha** sobre o tema com gabarito comentado.`;
+4. Elabore **8 questões de múltipla escolha no Padrão Instituto ACCESS (4 alternativas A a D, comandos em CAIXA ALTA)** sobre o tema com gabarito comentado.`;
         }
       }
 
@@ -6787,11 +6801,13 @@ PROVA ALVO DESTE SÁBADO NO ACERVO LOCAL:
 - Referência: ${w.simBanca}
 - Conteúdos acumulados na minha trilha até esta Semana ${weekStr}: ${w.title}
 ${customDoubt}
+${accessGuidePrompt}
+
 TAREFA PARA O AGENTE LOCAL:
 1. Verifique meu e-mail vinculado com "python .agents/sync_db.py status" (se não houver, pergunte meu e-mail e registre com "python .agents/sync_db.py set-user <email>").
 2. Abra e analise a prova "prova-auto/${w.simNum}.pdf" e seu gabarito "prova-auto/g${w.simNum}.pdf".
 3. Mapeie quais questões dessa prova cobram os assuntos que já estudei até a Semana ${weekStr} e quais cobram tópicos das próximas semanas.
-4. Para as questões que eu indicar que errei (ou para as 10 questões mais estratégicas da prova), faça a **Engenharia Reversa**: explique a lógica da resposta certa, aponte a pegadinha das alternativas incorretas e gere a frase de 1 linha para o meu **Caderno de Erros** em "${w.folder}/caderno_erros_semana_${weekStr}.md".
+4. Para as questões que eu indicar que errei (ou para as 10 questões mais estratégicas da prova), faça a **Engenharia Reversa no estilo ACCESS**: explique a lógica da resposta certa, aponte a pegadinha das alternativas incorretas e gere a frase de 1 linha para o meu **Caderno de Erros** em "${w.folder}/caderno_erros_semana_${weekStr}.md". Se formular questões de reforço ou treino adicional, estruture-as 100% no Padrão Instituto ACCESS (4 alternativas A-D, comandos em CAIXA ALTA e casos práticos).
 5. Atualize o checklist do Simulado em ".agents/GUIA_DO_AGENTE.md" e sincronize no site com "python .agents/sync_db.py mark w${w.num}_sim" e "python .agents/sync_db.py exam ${w.simNum}".`;
         } else {
           return `Atue como meu Avaliador de Simulado e Mentor de Engenharia Reversa para o concurso de Oficial Administrativo (Sábado da Semana ${weekStr}).
@@ -6804,7 +6820,7 @@ ESCOPO DO SIMULADO DESTA SEMANA (PADRÃO ${w.simBanca.toUpperCase()}):
 ${customDoubt}
 COMO CONDUZIR ESTA SESSÃO DE SIMULADO E CORREÇÃO:
 1. Se eu tiver colado acima as questões que errei no meu treino, faça a dissecação lógica de cada uma: explique por que a alternativa certa é verdadeira, qual a pegadinha que me atraiu na incorreta e escreva **1 linha de ouro para o meu Caderno de Erros**.
-2. Caso eu ainda não tenha enviado questões específicas, monte agora um **Mini-Simulado Oficial de Sábado com 15 questões inéditas/adaptadas** (5 de Português, 4 de Matemática/RLM, 4 de Conhecimentos Específicos e 2 de Conhecimentos Gerais) calibradas exatamente nos temas desta Semana ${weekStr}, seguidas do Gabarito Comentado pela Lógica de Origem.`;
+2. Caso eu ainda não tenha enviado questões específicas, monte agora um **Mini-Simulado Oficial no Padrão Instituto ACCESS com 15 questões (exatamente 4 alternativas A a D, comandos em CAIXA ALTA com CORRETA/INCORRETA e casos práticos de repartição pública)**: 5 de Português, 4 de Matemática/RLM, 4 de Conhecimentos Específicos e 2 de Conhecimentos Gerais, calibradas exatamente nos temas desta Semana ${weekStr}, seguidas do Gabarito Comentado pela Lógica de Origem.`;
         }
       }
 
@@ -6833,10 +6849,11 @@ DIRETRIZ DIDÁTICA ("A LÓGICA DE ORIGEM"):
 - Em Conhecimentos Específicos (contato novo): explique como a história prática das rotinas dentro de uma Prefeitura Municipal.
 - Em Conhecimentos Gerais: conecte Causa -> Fato -> Consequência nas 3 escalas (Birigui/Região <-> SP <-> Brasil).
 - Inclua ao final de cada matéria uma **"Síntese Feynman de 3 Linhas"**.
+${accessGuidePrompt}
 
 TAREFA PARA O AGENTE LOCAL:
 1. Leia ".agents/GUIA_DO_AGENTE.md" e verifique se meu e-mail da plataforma já está vinculado rodando "python .agents/sync_db.py status" (caso não esteja, pergunte meu e-mail e vincule com "python .agents/sync_db.py set-user <email>").
-2. Crie a pasta "${w.folder}/" na raiz do projeto e gere os materiais de estudo organizados para meus blocos diários de 1h30 (Segunda a Sexta: 60 min teoria lógica + 30 min questões reais extraídas de "prova-auto/").
+2. Crie a pasta "${w.folder}/" na raiz do projeto e gere os materiais de estudo organizados para meus blocos diários de 1h30 (Segunda a Sexta: 60 min teoria lógica + 30 min questões formatadas rigorosamente no Padrão Instituto ACCESS conforme ".agents/PADRAO_QUESTOES_BANCA_ACCESS.md", adaptando sempre que vierem de outras bancas do "prova-auto/").
 3. Para cada arquivo ".md" criado ou atualizado em "${w.folder}/", execute OBRIGATORIAMENTE "python .agents/sync_lessons.py" para publicá-lo diretamente na Trilha interativa do site ("aulas-data.js").
 4. Ao final de cada etapa que eu concluir, atualize o checklist em ".agents/GUIA_DO_AGENTE.md" e sincronize no site usando "python .agents/sync_db.py mark w${w.num}_<bloco>".`;
       } else {
@@ -6855,7 +6872,7 @@ ${customDoubtAll}
 MEU PERFIL E MÉTODO DIDÁTICO ("A LÓGICA DE ORIGEM"):
 - Tenho Ensino Médio em Português e Matemática (mas vi há bastante tempo), e em Conhecimentos Específicos o contato é novo (do zero).
 - Não me entregue resumos secos para decorar: explique **a lógica e a origem de cada regra/exceção em Português**, **o que cada conta faz na prática em Matemática** e **como os conceitos de Específicos funcionam no dia a dia real de uma Prefeitura**.
-- Estruture a resposta dividindo claramente os blocos da semana (do básico ao avançado), inclua uma **"Síntese Feynman de 3 Linhas"** por matéria e feche com uma bateria de **12 questões comentadas** cobrindo os 4 eixos da semana.`;
+- Estruture a resposta dividindo claramente os blocos da semana (do básico ao avançado), inclua uma **"Síntese Feynman de 3 Linhas"** por matéria e feche com uma bateria de **12 questões no Padrão Instituto ACCESS (exatamente 4 alternativas A a D, comandos em CAIXA ALTA com CORRETA/INCORRETA e casos práticos de repartição)** cobrindo os 4 eixos da semana.`;
       }
     }
 
