@@ -6598,14 +6598,15 @@
       const isAgent = mode === "agent";
 
       const accessGuidePrompt = `
-DIRETRIZ OBRIGATÓRIA DE QUESTÕES (PADRÃO BANCA INSTITUTO ACCESS):
+DIRETRIZ OBRIGATÓRIA DE QUESTÕES (BANCA INSTITUTO ACCESS):
 Consulte o manual de engenharia reversa ".agents/PADRAO_QUESTOES_BANCA_ACCESS.md".
-- Todas as questões (sejam extraídas de "prova-auto/provas-access/" ou adaptadas das 81 provas de outras bancas em "prova-auto/") DEVEM seguir rigorosamente o padrão estrutural do Instituto ACCESS:
+- QUESTÕES OFICIAIS DO INSTITUTO ACCESS (acervo local "prova-auto/provas-access/"): Mantenha os enunciados e alternativas 100% originais e autênticos à prova (NÃO precisam ser adaptados, pois já são da banca). Apenas formate nos padrões de formulário interativo do site.
+- QUESTÕES DE OUTRAS BANCAS (provas 13 a 93 do "prova-auto/") OU INÉDITAS CRIADAS: DEVEM SER OBRIGATORIAMENTE ADAPTADAS para o padrão e estilo do Instituto ACCESS:
   1. Concurso Municipal: exatamente 4 alternativas (A, B, C, D). Se a questão original de outra banca tiver 5 alternativas (A a E), elimine a alternativa mais fraca/redundante e adapte para 4 opções.
   2. Termos de comando obrigatoriamente em CAIXA ALTA: "CORRETA", "INCORRETA", "EXCETO", "NÃO", "FALSA".
   3. Formatos canônicos da ACCESS: alterne entre Múltipla Escolha contextualizada, Afirmativas Romanas (I, II, III com comando "Está(ão) correta(s) apenas..."), V ou F com julgamento de sequência e Associação de Colunas (Coluna I e Coluna II).
   4. Contexto Prático da Repartição: em Conhecimentos Específicos/Administração, NUNCA traga lei seca pura solta; elabore sempre uma situação hipotética / estudo de caso de órgão público ("Durante auditoria interna...", "Em uma unidade de atendimento...", "O servidor João..."). Em RLM, personifique os problemas com nomes próprios e situações cotidianas.
-  5. Padrão do Formulário Interativo: estruture cada questão iniciando com "### Questão XX", linha "**Banca:** Adaptada para o Padrão Instituto ACCESS | ...", alternativas "(A) ", "(B) ", "(C) ", "(D) " e o bloco "<details><summary><b>Ver Gabarito e Comentário Detalhado</b></summary> **Gabarito Oficial: X** ... </details>" para que o script "python .agents/sync_lessons.py" gere o formulário interativo no site.`;
+  5. Padrão do Formulário Interativo: estruture cada questão iniciando com "### Questão XX", linha identificadora ("**Banca:** Instituto ACCESS (Ano — Órgão)" para originais ou "**Banca:** Adaptada para o Padrão Instituto ACCESS | Cargo: Oficial Administrativo" para adaptadas/inéditas), alternativas "(A) ", "(B) ", "(C) ", "(D) " e o bloco "<details><summary><b>Ver Gabarito e Comentário Detalhado</b></summary> **Gabarito Oficial: X** ... </details>" para que o script "python .agents/sync_lessons.py" gere o formulário interativo no site.`;
 
       // 1. MODELO EXCLUSIVO: LÍNGUA PORTUGUESA
       if (subj === "port") {

@@ -12,7 +12,7 @@
 >      - `python .agents/sync_db.py mark <chave>` (chaves: `w1_port`, `w1_rlm`, `w1_esp`, `w1_ger`, `w1_sim` ... até `w12_sim`)
 >      - `python .agents/sync_db.py exam <numero_da_prova>` (ex: `1` a `93`)
 > 5. Ao ensinar qualquer conteúdo ao usuário, siga rigorosamente o **Perfil Cognitivo e Didático do Aluno (Seção 2)** — nunca jogue regras secas ou fórmulas decoradas sem antes explicar **o porquê lógico/histórico** daquilo existir.
-> 6. **PADRÃO ESTRUTURAL DA BANCA INSTITUTO ACCESS (CRIAÇÃO E ADAPTAÇÃO):** Consulte e aplique rigorosamente as diretrizes documentadas em `.agents/PADRAO_QUESTOES_BANCA_ACCESS.md` para qualquer criação ou adaptação de questões, garantindo formato idêntico (4 alternativas A-D em prefeituras, comandos em CAIXA ALTA, situações hipotéticas de repartição pública e distratores conceituais).
+> 6. **PADRÃO ESTRUTURAL DA BANCA INSTITUTO ACCESS:** Consulte `.agents/PADRAO_QUESTOES_BANCA_ACCESS.md`. As questões oficiais do Instituto ACCESS (`prova-auto/provas-access/`) são mantidas 100% autênticas e originais (não precisam de adaptação). Já as questões extraídas de outras bancas (`prova-auto/13.pdf` a `93.pdf`) ou criadas de forma inédita DEVEM ser adaptadas obrigatoriamente para o estilo e estrutura da ACCESS (4 alternativas A-D, comandos em CAIXA ALTA como CORRETA/INCORRETA, casos práticos de repartição e personificação em RLM).
 
 ---
 
