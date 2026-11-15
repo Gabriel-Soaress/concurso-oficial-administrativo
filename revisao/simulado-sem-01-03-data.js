@@ -1,7 +1,378 @@
 window.SIMULADO_02_DATA = {
   "titulo": "Simulado Adaptado · Semanas 01 a 03",
-  "total": 60,
+  "total": 80,
   "materias": [
+    {
+      "key": "portugues",
+      "titulo": "Língua Portuguesa",
+      "icone": "📚",
+      "textos": [
+        {
+          "id": "pt2_t1",
+          "titulo": "Texto I — Computador em sala de aula está emburrecendo as crianças? (Questões 01 a 06)",
+          "conteudo": "Computadores e tablets se tornaram uma parte importante do ensino dentro da sala de aula. Segundo dados da ONU, 46,7% das turmas de ensino básico (até o quarto ano) em todo o mundo têm acesso a computadores. Na União Europeia (UE), esse índice é o dobro: chega a 98%.\n\nApesar do uso já difundido dessa tecnologia nas escolas, nem todos os especialistas em educação compartilham da opinião de que computadores dentro da sala de aula resultam em vantagens. Ralf Lankau, professor de teoria da comunicação da Escola Superior de Offenbach, afirma: \"Tablets e notebooks não tornam as crianças mais espertas, e sim mais burras.\"\n\nLankau se refere às crianças de até dez anos. Ele está entre os 40 pesquisadores que iniciaram uma petição por meio da Gesellschaft für Bildung und Wissen (sociedade para a educação e conhecimento), com o objetivo de levar a público a preocupação sobre o efeito das tecnologias digitais no desenvolvimento de crianças.\n\nEles exigem o adiamento da digitalização nas escolas primárias e creches alemãs para crianças entre 4 e 11 anos. \"Não queremos a proibição da digitalização. Queremos mais responsabilidade com a sala de aula\", diz Lankau à DW. \"Precisamos nos perguntar: qual o objetivo de aprendizado que temos e como podemos usar mídias digitais e analógicas para nos ajudar a alcançar esse objetivo? E não: qual a nova tecnologia e como podemos usá-la na escola?\"\n\nA petição chega no momento em que escolas alemãs são criticadas pelo atraso na digitalização. Lankau e os outros pesquisadores, porém, querem que o Ministério de Educação alemão repense esse processo. Segundo ele, o sistema escolar alemão não se concentra o suficiente nas demandas individuais de aprendizado e nos benefícios educacionais da socialização em sala de aula.\n\n\"Instituições de ensino devem se concentrar em como desenvolver indivíduos com seus próprios interesses e talentos e, ao mesmo tempo, torná-los parte da sociedade\", diz Lankau. Na opinião do pesquisador, o problema principal é que, há 40 anos, a tecnologia de informação e as associações comerciais determinam o que acontece na escola, enquanto, na verdade, deveríamos nos perguntar: o que precisamos localmente na escola, em termos de recursos humanos e até de tecnologias de mídia?\n\nA iniciativa causou pouca simpatia por parte de outros pesquisadores. Maria Hatzigianni, especialista em educação infantil e tecnologias digitais na Universidade da Ática Ocidental, na Grécia, considera a opinião de Lankau uma velha tendência \"tecnofóbica\". \"As pessoas fazem críticas sobre os computadores desde 1990. Toda vez que uma nova tecnologia chega ao mercado, elas entram em pânico. Sócrates já dizia há quase 2.500 anos que anotar as coisas nos torna esquecidos\", afirma Hatzigianni à DW.\n\nMas quão nocivo é realmente o uso do computador para crianças? É mais um caso em que adultos querem dizer às crianças o que elas devem fazer, como se afastar das telas, ou é uma preocupação com fundamento?\n\nSegundo Prakash Ranganathan, diretor do Centro de Pesquisa de Segurança Cibernética da Universidade de Dakota do Norte, nos Estados Unidos, os resultados científicos sobre o impacto das tecnologias digitais no desenvolvimento das crianças são diversos. \"Há algumas evidências de impacto no desenvolvimento cognitivo. Depois de muito tempo de uso de tela, perdemos capacidade de concentração. Isso pode nos levar a uma experiência passiva de aprendizado e que pode impedir o pensamento crítico e a aptidão em resolver problemas. Mas ainda não está claro se esse efeito negativo em potencial é de curto ou longo prazo\", explica Ranganathan.\n\nAlguns estudos apontam que o uso excessivo do computador afeta a saúde por causa do sedentarismo, podendo levar à obesidade, a distúrbios do sono e à ansiedade. Muitas dessas preocupações estão vinculadas ao medo do impacto da internet e das mídias sociais em crianças e jovens. Ranganathan, entretanto, pondera que é preciso mais estudos para reconhecer essas conexões.\n\nDe acordo com Ranganathan, há também muitos aspectos positivos no uso dessas tecnologias. Tanto ele quanto Hatzigianni apontam para os resultados de pesquisas que indicam que o uso delas em um contexto de ensino tem ganhos no desenvolvimento da leitura, da escrita, das habilidades de cálculos e manuais e da memória visual-espacial. Estudos descobriram que o uso de tecnologias digitais interativas pelas crianças melhora a aquisição da linguagem, a função executiva (a capacidade de concentração e realização de tarefas) e a memória.\n\n\"Existe a robótica, a linguagem de programação, o aprendizado de idiomas, a alfabetização e a matemática. A tecnologia é uma ferramenta que facilita o acesso à informação e nos ajuda a sermos criativos. Isso ajuda imensamente na metacognição\", diz Hatzigianni. Metacognição é o conhecimento que um indivíduo tem acerca dos próprios processos cognitivos (por exemplo, pensamentos, opiniões, atitudes, atenção e criatividade).\n\nHatzigianni trabalhou em conjunto com o governo grego para desenvolver aplicativos de aprendizagem para crianças de 4 a 6 anos. Para ela, o trabalho foi bem-sucedido porque, no processo de criação da plataforma, todos foram envolvidos: crianças, professores e pais. Segundo Hatzigianni, a pergunta certa seria: como podemos melhorar o aprendizado e a aula, usando a tecnologia adequada e sem temê-la?",
+          "fonte": "Deutsche Welle / Folha de S.Paulo (Adaptado — Instituto ACCESS, Pref. de Passos/MG — Oficial de Administração)."
+        },
+        {
+          "id": "pt2_t2",
+          "titulo": "Texto II — Patentes do início do século 20 revelam achados como máquina de votar e patins aquáticos (Questões 07 a 10)",
+          "conteudo": "Um cofre iluminado que flutua em caso de acidente náutico pode fazer pouco sentido nos dias atuais, mas provavelmente seria útil no início do século 20, quando o mar era temido e as viagens longas eram realizadas exclusivamente por navios. Ou, ainda, um assento de vaso sanitário que se esterilizava chegando a 250 °C, já que uma das preocupações da época eram bactérias e cuidados com a higiene.\n\nEssas são algumas das 3.200 patentes históricas digitalizadas pelo INPI (Instituto Nacional da Propriedade Industrial), reveladas pela Folha na série Invenções do Brasil, que chega ao seu segundo capítulo.\n\nDatados de 1895 a 1929, os achados também incluem uma variedade de curiosidades. Um hidropatins para caminhar sobre o mar; um projetor de propaganda, ao estilo Batman; e um umidificador de edifícios que pulveriza a água são alguns exemplos.\n\nForam encontrados também registros de coisas mais cotidianas, similares com as da atualidade, como máquina de lavar roupas ou louças, cadeira de dentista, pincel para fazer barba e saboneteira líquida de parede.\n\nPara a servidora Flávia Romano Villa Verde, chefe da Divisão de Documentação Patentária do INPI, esses registros revelam os anseios daquela sociedade e quais eram as necessidades cotidianas da época. Ela citou como exemplo a máquina de lavar roupas, batizada de Eureka, que teve a patente concedida no Brasil ao industrial espanhol Luís Soria y Hernandez em 1923.\n\n\"Ela é curiosa porque tinha dois tambores e um fogareiro embaixo, muito diferente das atuais. Mas tinha semelhanças, como um sistema de água circulante e de regulagem de temperatura de lavagem. Outros registros também são peculiares pelas similaridades surpreendentes com os produtos modernos.\"\n\nA pesquisadora também destacou inventos que retratavam temores da época, como o cofre flutuante com farol que acendia automaticamente em caso de emergência, com patente concedida ao engenheiro italiano Nicola Santo em 1919, sete anos depois da tragédia do transatlântico Titanic.\n\nOutro invento foi o chamado hidropatins, espécie de bota com rodas que permitia deslizar pela água. Essa é a patente brasileira de número 10 mil, concedida em 1918 ao comerciário brasileiro Franklin Barroco.\n\nEm 1906, a preocupação com uma votação mais prática já existia, a ponto de o industrial italiano Eugenio Boggiano patentear uma máquina de votar, que prometia garantir sigilo da escolha com um mecanismo que envolvia uma ficha de metal colocada em fendas e que depois eram misturadas a outras para garantir o sigilo.\n\nDe acordo com Ricardo Nunes, advogado especializado em patentes, \"alguns inventos parecem estranhos. Mas, mesmo que não se viabilizem comercialmente, mostram como a inovação pode ser surpreendente.\"",
+          "fonte": "Tatiana Cavalcanti, Folha de S.Paulo, jan. 2024 (Adaptado — Instituto ACCESS, Pref. de Domingos Martins/ES — Auxiliar Administrativo)."
+        }
+      ],
+      "questoes": [
+        {
+          "qid": "pt2_q01",
+          "numero": 1,
+          "origem": "ACCESS",
+          "ref_interna": "Instituto ACCESS — Pref. de Passos/MG — Oficial de Administração — Q01",
+          "semana": 1,
+          "assunto": "Leitura, Compreensão e Inferência Textual",
+          "texto_id": "pt2_t1",
+          "enunciado": "Em relação à leitura do Texto I e suas corretas inferências, analise as afirmativas a seguir:\n\nI. A Alemanha se encontra decidida a frear a inserção dos avanços tecnológicos nas escolas por conta de dados descobertos em pesquisas de que tal contato com as crianças vem se revelando extremamente prejudicial.\nII. É fato apontado pelos estudos citados que o excesso de horas em interação com o computador pode provocar malefícios vinculados ao sedentarismo e à falta de concentração.\nIII. A preocupação com o excesso de tecnologias nas salas de aula reside no questionamento se haveria perda da formação do pensamento crítico, seja no curto ou no longo prazo.\n\nAssinale a alternativa CORRETA:",
+          "alternativas": {
+            "A": "Apenas as afirmativas I e II estão corretas.",
+            "B": "Apenas as afirmativas I e III estão corretas.",
+            "C": "Apenas as afirmativas II e III estão corretas.",
+            "D": "Todas as afirmativas estão corretas."
+          },
+          "gabarito": "C",
+          "comentario": "Gabarito: C.\n- Afirmativa I INCORRETA (Extrapolação): Não é a Alemanha (o governo/país como um todo) que está decidida a frear a tecnologia; pelo contrário, o texto afirma que as escolas alemãs são criticadas pelo atraso na digitalização, e apenas um grupo de 40 pesquisadores liderados por Ralf Lankau iniciou uma petição pedindo ao Ministério que repense o processo.\n- Afirmativa II CORRETA: O 9º e o 10º parágrafos apontam expressamente que o uso excessivo de tela reduz a capacidade de concentração e afeta a saúde por causa do sedentarismo (obesidade, distúrbios do sono e ansiedade).\n- Afirmativa III CORRETA: No 9º parágrafo, Prakash Ranganathan destaca que a experiência passiva pode impedir o pensamento crítico e a aptidão para resolver problemas, ponderando que ainda não está claro se esse efeito negativo é de curto ou longo prazo."
+        },
+        {
+          "qid": "pt2_q02",
+          "numero": 2,
+          "origem": "ACCESS",
+          "ref_interna": "Instituto ACCESS — Pref. de Passos/MG — Oficial de Administração — Q02",
+          "semana": 1,
+          "assunto": "Tipologia Textual e Estrutura Comunicativa",
+          "texto_id": "pt2_t1",
+          "enunciado": "Considerando a finalidade comunicativa predominante, a organização das informações e o modo como o Texto I apresenta diferentes pontos de vista de especialistas sem assumir uma tese autoral única em primeira pessoa, o texto classifica-se, em sua tipologia, como:",
+          "alternativas": {
+            "A": "dissertativo-expositivo.",
+            "B": "dissertativo-argumentativo.",
+            "C": "narrativo.",
+            "D": "descritivo."
+          },
+          "gabarito": "A",
+          "comentario": "Gabarito: A.\n- Alternativa (A) CORRETA: O texto é uma reportagem de divulgação científica de natureza dissertativo-expositiva. Ele expõe dados estatísticos (ONU, União Europeia) e contrapõe, de maneira imparcial e informativa, diferentes vozes de especialistas (Ralf Lankau, Maria Hatzigianni e Prakash Ranganathan) sobre o tema, sem que o jornalista defenda uma tese própria para persuadir o leitor.\n- Alternativa (B) INCORRETA: No texto dissertativo-argumentativo predominam a tomada de posição do autor do texto e a articulação de argumentos para convencer o leitor de uma tese única.\n- Alternativa (C) INCORRETA: Não há enredo ficcional ou sucessão cronológica de ações com narrador e personagens em conflito.\n- Alternativa (D) INCORRETA: O objetivo central é informar e discutir ideias/estudos, e não retratar estaticamente características físicas de um objeto ou cena."
+        },
+        {
+          "qid": "pt2_q03",
+          "numero": 3,
+          "origem": "ACCESS",
+          "ref_interna": "Instituto ACCESS — Pref. de Passos/MG — Oficial de Administração — Q03",
+          "semana": 2,
+          "assunto": "Morfologia I: Pronomes Demonstrativos e Coesão Referencial (Anáfora e Catáfora)",
+          "texto_id": "pt2_t1",
+          "enunciado": "Releia o seguinte trecho do 9º parágrafo do Texto I:\n\n\"Depois de muito tempo de uso de tela, perdemos capacidade de concentração. **Isso** pode nos levar a uma experiência passiva de aprendizado e que pode impedir o pensamento crítico e a aptidão em resolver problemas.\"\n\nO pronome demonstrativo destacado no período acima desempenha, na construção da coesão do texto, papel:",
+          "alternativas": {
+            "A": "dêitico espacial.",
+            "B": "anafórico.",
+            "C": "catafórico.",
+            "D": "exofórico."
+          },
+          "gabarito": "B",
+          "comentario": "Gabarito: B.\n- Alternativa (B) CORRETA: O pronome demonstrativo neutro \"Isso\" retoma toda a ideia expressa na oração imediatamente anterior (\"perdemos capacidade de concentração depois de muito tempo de uso de tela\"). Quando um pronome aponta para trás no texto, recuperando um termo ou oração já enunciada, exerce função **anafórica** (anáfora).\n- Alternativa (A) INCORRETA: A dêixis espacial aponta para a posição física de um objeto em relação às pessoas do discurso (aqui, aí, ali).\n- Alternativa (C) INCORRETA: O papel catafórico ocorre quando o pronome aponta para a frente, anunciando algo que ainda será dito (onde o padrão culto prefere \"isto\").\n- Alternativa (D) INCORRETA: A referência exofórica aponta para fora do texto (para a situação extralinguística), enquanto aqui o referente está explícito na frase anterior (endofórico anafórico)."
+        },
+        {
+          "qid": "pt2_q04",
+          "numero": 4,
+          "origem": "ACCESS",
+          "ref_interna": "Instituto ACCESS — Pref. de Passos/MG — Oficial de Administração — Q08",
+          "semana": 1,
+          "assunto": "Tonicidade, Acentuação Gráfica e Acento Diferencial",
+          "texto_id": "pt2_t1",
+          "enunciado": "No Texto I, são empregados diversos vocábulos monossílabos tônicos acentuados graficamente. Assinale a alternativa em que a palavra retirada do texto foi acentuada seguindo uma regra DISTINTA da regra que justifica a acentuação das demais:",
+          "alternativas": {
+            "A": "têm (1º parágrafo).",
+            "B": "é (1º parágrafo).",
+            "C": "já (2º parágrafo).",
+            "D": "há (6º parágrafo)."
+          },
+          "gabarito": "A",
+          "comentario": "Gabarito: A.\n- Alternativa (A) CORRETA: A forma verbal \"têm\" (3ª pessoa do plural do presente do indicativo do verbo *ter*, concordando com \"46,7% das turmas\") recebe acento circunflexo por força da regra do **acento diferencial de número** (para distinguir o plural *eles têm* do singular *ele tem*). Monossílabos tônicos terminados em *-em* não são acentuados pela regra geral.\n- Alternativas (B), (C) e (D) INCORRETAS: Os vocábulos \"é\", \"já\" e \"há\" são acentuados exatamente pela mesma regra geral: são **monossílabos tônicos terminados nas vogais abertas -a(s), -e(s), -o(s)**."
+        },
+        {
+          "qid": "pt2_q05",
+          "numero": 5,
+          "origem": "ACCESS",
+          "ref_interna": "Instituto ACCESS — Pref. de Passos/MG — Oficial de Administração — Q10 e Q14 (Adaptada)",
+          "semana": 2,
+          "assunto": "Estrutura e Formação de Palavras (Derivação e Composição)",
+          "texto_id": "pt2_t1",
+          "enunciado": "Releia o seguinte trecho do 13º parágrafo do Texto I:\n\n\"Para ela, o trabalho foi **bem-sucedido** porque, no processo de **criação** da plataforma, todos foram **envolvidos**: crianças, professores e pais.\"\n\nA respeito da estrutura, da ortografia e dos processos de formação de palavras presentes no Texto I, assinale a alternativa CORRETA:",
+          "alternativas": {
+            "A": "O antônimo da palavra composta \"bem-sucedido\", segundo o Novo Acordo Ortográfico, deve ser grafado sem hífen: \"malsucedido\".",
+            "B": "O vocábulo \"alfabetização\" (12º parágrafo) é formado pelo processo de composição por aglutinação de dois radicais livres.",
+            "C": "A palavra \"tecnofóbica\" (7º parágrafo) é formada exclusivamente por derivação regressiva a partir de um verbo de ação.",
+            "D": "O substantivo \"criação\" é palavra primitiva, não apresentando sufixo derivacional em sua estrutura."
+          },
+          "gabarito": "A",
+          "comentario": "Gabarito: A.\n- Alternativa (A) CORRETA: Enquanto o advérbio *bem* exige hífen em compostos como *bem-sucedido*, *bem-humorado* e *bem-estar*, o elemento *mal* só exige hífen antes de palavras iniciadas por **vogal, H ou L** (*mal-estar, mal-humorado, mal-limpo*). Antes de consoante (como *s*), escreve-se junto e sem hífen: **malsucedido** (questão clássica cobrada na prova de Passos/MG da ACCESS).\n- Alternativa (B) INCORRETA: \"Alfabetização\" forma-se por **derivação sufixal** (*alfabetizar + -ção*), e não por composição.\n- Alternativa (C) INCORRETA: \"Tecnofóbica\" envolve composição de radicais eruditos (*tecno + fobo*) + sufixo *-ica*, jamais derivação regressiva.\n- Alternativa (D) INCORRETA: \"Criação\" é substantivo derivado sufixal do verbo *criar* (*cria- + -ção*)."
+        },
+        {
+          "qid": "pt2_q06",
+          "numero": 6,
+          "origem": "ACCESS",
+          "ref_interna": "Instituto ACCESS — Pref. de Passos/MG — Oficial de Administração — Q07 e Q19",
+          "semana": 3,
+          "assunto": "Morfologia II: Conectivos e Relações Semânticas (Conformidade e Adversidade)",
+          "texto_id": "pt2_t1",
+          "enunciado": "Considere os dois fragmentos abaixo, retirados do Texto I:\n\n1. \"**Segundo** ele, o sistema escolar alemão não se concentra o suficiente nas demandas individuais de aprendizado...\" (5º parágrafo)\n2. \"Tablets e notebooks não tornam as crianças mais espertas, **e sim** mais burras.\" (2º parágrafo)\n\nOs elementos coesivos destacados em 1 (\"Segundo\") e em 2 (\"e sim\") estabelecem nos respectivos períodos valores semânticos de:",
+          "alternativas": {
+            "A": "causalidade e adição.",
+            "B": "conformidade e adversidade (oposição).",
+            "C": "comparação e conclusão.",
+            "D": "concessão e explicação."
+          },
+          "gabarito": "B",
+          "comentario": "Gabarito: B.\n- Em (1), \"Segundo ele\" equivale a *conforme ele, consoante ele, de acordo com ele*, exprimindo valor semântico de **conformidade**.\n- Em (2), a estrutura correlativa \"não [X], **e sim** [Y]\" (equivalente a *mas sim*) estabelece oposição direta e retificação em relação ao segmento negado anteriormente, tendo valor **adversativo** (adversidade/contraste)."
+        },
+        {
+          "qid": "pt2_q07",
+          "numero": 7,
+          "origem": "ACCESS",
+          "ref_interna": "Instituto ACCESS — Pref. de Domingos Martins/ES — Auxiliar Administrativo — Q01",
+          "semana": 1,
+          "assunto": "Leitura, Compreensão e Inferência Textual",
+          "texto_id": "pt2_t2",
+          "enunciado": "Em relação à leitura do Texto II e suas possíveis inferências, analise as afirmativas a seguir:\n\nI. Com a análise dos registros históricos de patente digitalizados pelo INPI, é possível identificar anseios cotidianos e temores da sociedade da época observada.\nII. Algumas invenções patenteadas no início do século 20, embora diferentes em seu funcionamento técnico original, guardam similaridades surpreendentes com produtos utilizados na atualidade.\nIII. Segundo o advogado entrevistado ao final do texto, uma invenção só demonstra potencial inovador quando alcança imediata viabilidade comercial no mercado.\n\nAssinale a alternativa CORRETA:",
+          "alternativas": {
+            "A": "Apenas as afirmativas I e II estão corretas.",
+            "B": "Apenas as afirmativas I e III estão corretas.",
+            "C": "Apenas as afirmativas II e III estão corretas.",
+            "D": "Todas as afirmativas estão corretas."
+          },
+          "gabarito": "A",
+          "comentario": "Gabarito: A.\n- Afirmativa I CORRETA: Confirmada no 5º e 7º parágrafos: a chefe da Divisão de Documentação Patentária do INPI destaca que os registros revelam os anseios, as necessidades cotidianas e os temores daquela sociedade (como o medo de naufrágios pós-Titanic e a preocupação com bactérias).\n- Afirmativa II CORRETA: Confirmada no 4º e 6º parágrafos, ao exemplificar a máquina de lavar Eureka (1923), que tinha fogareiro embaixo, mas já contava com água circulante e regulagem de temperatura, similar às atuais.\n- Afirmativa III INCORRETA (Contradição): No último parágrafo, o advogado Ricardo Nunes afirma exatamente o oposto: \"mesmo que não se viabilizem comercialmente, mostram como a inovação pode ser surpreendente\"."
+        },
+        {
+          "qid": "pt2_q08",
+          "numero": 8,
+          "origem": "ACCESS",
+          "ref_interna": "Instituto ACCESS — Pref. de Domingos Martins/ES — Auxiliar Administrativo — Q09",
+          "semana": 2,
+          "assunto": "Morfologia I: Identificação de Papel Adjetivo em Contexto",
+          "texto_id": "pt2_t2",
+          "enunciado": "As palavras podem desempenhar papel substantivo ou papel adjetivo (determinante/modificador de um substantivo) a depender do contexto frasal em que se inserem no Texto II. Assinale a alternativa em que o vocábulo destacado desempenha, no trecho transcrito, papel morfológico ADJETIVO:",
+          "alternativas": {
+            "A": "\"...provavelmente seria útil no **início** do século 20...\" (1º parágrafo).",
+            "B": "\"...já que uma das preocupações da época eram **bactérias**...\" (1º parágrafo).",
+            "C": "\"...reveladas pela Folha na série Invenções do Brasil, que chega ao seu **segundo** capítulo.\" (2º parágrafo).",
+            "D": "\"Foram encontrados também **registros** de coisas mais cotidianas...\" (4º parágrafo)."
+          },
+          "gabarito": "C",
+          "comentario": "Gabarito: C.\n- Alternativa (C) CORRETA: Em \"seu **segundo** capítulo\", o numeral ordinal \"segundo\" acompanha, determina e modifica o substantivo \"capítulo\", exercendo função de **numeral adjetivo** (papel adjetivo / adjunto adnominal).\n- Alternativas (A), (B) e (D) INCORRETAS: Os vocábulos \"início\", \"bactérias\" e \"registros\" são núcleos nominais e desempenham papel puramente **substantivo**."
+        },
+        {
+          "qid": "pt2_q09",
+          "numero": 9,
+          "origem": "ACCESS",
+          "ref_interna": "Instituto ACCESS — Pref. de Domingos Martins/ES — Auxiliar Administrativo — Q07",
+          "semana": 3,
+          "assunto": "Morfologia II: Conjunções Subordinativas Concessivas vs. Causais/Explicativas",
+          "texto_id": "pt2_t2",
+          "enunciado": "Releia o período final do Texto II:\n\n\"Mas, **mesmo que** não se viabilizem comercialmente, mostram como a inovação pode ser surpreendente.\"\n\nA locução conjuntiva sublinhada no período acima NÃO poderia ser substituída, sob pena de grave alteração de sentido e de relação lógica, por:",
+          "alternativas": {
+            "A": "posto que.",
+            "B": "conquanto.",
+            "C": "porquanto.",
+            "D": "ainda que."
+          },
+          "gabarito": "C",
+          "comentario": "Gabarito: C.\n- Alternativa (C) CORRETA (é a que NÃO pode substituir): A locução \"mesmo que\" é uma conjunção subordinativa adverbial **concessiva** (admite uma ressalva sem impedir o fato principal, levando o verbo \"viabilizem\" ao modo subjuntivo). Já o conectivo **\"porquanto\"** é conjunção **explicativa/causal** (equivale a *porque, visto que, já que*), o que alteraria completamente o sentido para causa!\n- Alternativas (A), (B) e (D) INCORRETAS: Na tradição gramatical de concursos (inclusive ACCESS), \"posto que\", \"conquanto\" e \"ainda que\" são todas conjunções subordinativas **concessivas** equivalentes a *embora* e *mesmo que*."
+        },
+        {
+          "qid": "pt2_q10",
+          "numero": 10,
+          "origem": "ACCESS",
+          "ref_interna": "Instituto ACCESS — Pref. de Domingos Martins/ES — Auxiliar Administrativo — Q08",
+          "semana": 3,
+          "assunto": "Morfologia II: Distinção e Contagem de Artigos e Preposições no Período",
+          "texto_id": "pt2_t2",
+          "enunciado": "Analise atentamente o quarto parágrafo do Texto II:\n\n\"Foram encontrados também registros de coisas mais cotidianas, similares com as da atualidade, como máquina de lavar roupas ou louças, cadeira de dentista, pincel para fazer barba e saboneteira líquida de parede.\"\n\nContabilizando os artigos definidos e as preposições essenciais (incluindo aquelas presentes em contrações) nesse período, verifica-se a presença exata de:",
+          "alternativas": {
+            "A": "um artigo e seis preposições.",
+            "B": "um artigo e sete preposições.",
+            "C": "dois artigos e seis preposições.",
+            "D": "dois artigos e sete preposições."
+          },
+          "gabarito": "B",
+          "comentario": "Gabarito: B.\n- Passo 1 — Contagem dos Artigos:\n  Observe que quase todos os substantivos estão no sentido genérico sem artigo (*registros, coisas, máquina, cadeira, pincel, saboneteira*). Em \"similares com **as** [coisas] **da** [*de + a*] atualidade\", a palavra \"as\" antes de \"da atualidade\" é **pronome demonstrativo** (equivale a *aquelas*). O único **artigo definido** do período está contraído em **\"da\"** (*de + **a** atualidade*)! Portanto, há **1 artigo**.\n- Passo 2 — Contagem das Preposições:\n  1. registros **de** coisas\n  2. similares **com** as\n  3. **da** (*de* + a) atualidade\n  4. máquina **de** lavar\n  5. cadeira **de** dentista\n  6. pincel **para** fazer\n  7. saboneteira líquida **de** parede\n  Total = **7 preposições**! Logo: **um artigo e sete preposições** (Alternativa B)."
+        },
+        {
+          "qid": "pt2_q11",
+          "numero": 11,
+          "origem": "ADAPTADA",
+          "ref_interna": "Padrão ACCESS — Fonologia: Letras, Fonemas, Dígrafos e Encontros Vocálicos",
+          "semana": 1,
+          "assunto": "Fonologia: Letras, Fonemas, Dígrafos e Encontros Vocálicos",
+          "enunciado": "Durante a revisão de uma minuta de portaria na Secretaria de Administração, foram analisados os aspectos fonológicos dos vocábulos **\"PROTOCOLO\"**, **\"DESPACHO\"**, **\"ARQUIVO\"** e **\"SAGUÃO\"**.\n\nSobre a estrutura fonética e silábica dessas palavras, avalie as assertivas a seguir e assinale V (verdadeiro) ou F (falso):\n(__) O vocábulo \"DESPACHO\" possui 8 letras e 7 fonemas, pois apresenta o dígrafo consonantal \"ch\", que representa um único som.\n(__) Na palavra \"ARQUIVO\", o grupo \"qu\" antes da vogal \"i\" atua como dígrafo consonantal, uma vez que a letra \"u\" não é pronunciada.\n(__) O vocábulo \"SAGUÃO\" apresenta um tritongo nasal na última sílaba, pois o \"u\" é semivogal audível acompanhada de \"ã\" (vogal) e \"o\" (semivogal).\n(__) Na palavra \"PROTOCOLO\", o grupo \"pr\" constitui um dígrafo consonantal inseparável na divisão silábica.\n\nA sequência CORRETA, de cima para baixo, é:",
+          "alternativas": {
+            "A": "V – V – V – F.",
+            "B": "V – F – V – V.",
+            "C": "F – V – F – F.",
+            "D": "V – V – F – V."
+          },
+          "gabarito": "A",
+          "comentario": "Gabarito: A.\n- 1ª assertiva (V): \"DESPACHO\" tem 8 letras (d-e-s-p-a-c-h-o) e 7 fonemas (/d/ /e/ /s/ /p/ /a/ /x/ /o/), pois \"ch\" é dígrafo consonantal (2 letras = 1 som).\n- 2ª assertiva (V): Em \"ARQUIVO\" (/a/ /r/ /k/ /i/ /v/ /o/), a letra \"u\" após \"q\" não é pronunciada antes de \"i\"; logo, \"qu\" forma dígrafo consonantal (7 letras e 6 fonemas).\n- 3ª assertiva (V): Em \"SA-GUÃO\", pronunciam-se nitidamente os três sons vocálicos na mesma sílaba (/u/ semivogal + /ã/ vogal + /w/ semivogal), configurando um **tritongo nasal**.\n- 4ª assertiva (F): Em \"PROTOCOLO\", o grupo \"pr\" não é dígrafo, mas sim um **encontro consonantal perfeito**, pois tanto o /p/ quanto o /r/ são pronunciados (9 letras e 9 fonemas)."
+        },
+        {
+          "qid": "pt2_q12",
+          "numero": 12,
+          "origem": "ADAPTADA",
+          "ref_interna": "Padrão ACCESS — Divisão Silábica (Translineação) e Ortografia Oficial",
+          "semana": 1,
+          "assunto": "Divisão Silábica e Ortografia Oficial",
+          "enunciado": "No trabalho de diagramação do Diário Oficial do Município, o Oficial Administrativo precisa observar rigorosamente as regras de divisão silábica (translineação) e de ortografia oficial da Língua Portuguesa.\n\nAnalise as alternativas a seguir e assinale aquela que apresenta informação INCORRETA:",
+          "alternativas": {
+            "A": "Os vocábulos \"sub-ro-gar\", \"in-ter-ur-ba-no\" e \"ab-rup-to\" admitem a separação silábica apresentada segundo o padrão ortográfico.",
+            "B": "Em \"ca-a-tin-ga\", \"vo-o\" e \"du-e-lo\", ocorre separação obrigatória das vogais contíguas por constituírem hiatos.",
+            "C": "Em \"ex-ce-ção\", \"con-ces-são\" e \"par-ale-le-pí-pe-do\", todas as separações silábicas respeitam integralmente o padrão ortográfico oficial.",
+            "D": "As palavras \"paralisação\" (com S), \"beneficente\" (sem I antes do C) e \"privilégio\" (com I na segunda sílaba) estão grafadas em perfeita conformidade com a ortografia oficial."
+          },
+          "gabarito": "C",
+          "comentario": "Gabarito: C.\n- Alternativa (C) INCORRETA (Gabarito): Na palavra \"paralelepípedo\", a separação correta é **pa-ra-le-le-pí-pe-do** (a consoante intervocálica \"r\" forma sílaba obrigatoriamente com a vogal seguinte \"a\", jamais ficando presa à primeira sílaba como \"par-ale...\").\n- Alternativa (A) CORRETA: Em \"sub-ro-gar\", \"in-ter-ur-ba-no\" e \"ab-rup-to\", as partições silábicas apresentadas estão corretas.\n- Alternativa (B) CORRETA: Vogais idênticas (\"aa\", \"oo\") e hiatos (\"u-e\") ficam sempre em sílabas separadas.\n- Alternativa (D) CORRETA: *Paralisar / paralisação* escrevem-se com S (derivadas de *paralisia*); *beneficente* não tem \"i\" (assim como *beneficência*); e *privilégio* grafa-se com \"i\"."
+        },
+        {
+          "qid": "pt2_q13",
+          "numero": 13,
+          "origem": "ADAPTADA",
+          "ref_interna": "Padrão ACCESS — Morfologia I: Flexão de Substantivos Simples e Compostos",
+          "semana": 2,
+          "assunto": "Morfologia I: Substantivo (Gênero, Número e Plural dos Compostos)",
+          "enunciado": "No almoxarifado e no setor de patrimônio da Prefeitura, o registro de bens e expedientes exige domínio das regras de flexão de gênero e de número dos substantivos simples e compostos.\n\nCom base na norma-padrão da Língua Portuguesa, assinale a alternativa CORRETA:",
+          "alternativas": {
+            "A": "Nos substantivos compostos \"guarda-civil\" e \"guarda-roupa\", ambos os elementos variam no plural: \"guardas-civis\" e \"guardas-roupas\".",
+            "B": "A mudança de gênero em \"o cabeça\" (o líder do movimento) e \"a cabeça\" (parte do corpo) altera o significado da palavra, assim como ocorre em \"o capital\" (bens financeiros) e \"a capital\" (sede administrativa).",
+            "C": "Os compostos unidos por preposição, como \"pão-de-ló\" e \"pé de moleque\", flexionam apenas o segundo elemento no plural.",
+            "D": "O plural de \"cidadão\" é \"cidadões\", seguindo a mesma regra de formação dos substantivos \"órfão\" e \"acórdão\"."
+          },
+          "gabarito": "B",
+          "comentario": "Gabarito: B.\n- Alternativa (B) CORRETA: Certos substantivos mudam de significado ao mudarem de gênero gramatical (heterosemânticos de gênero): *o cabeça* = chefe/líder vs. *a cabeça* = parte anatômica; *o capital* = recurso financeiro vs. *a capital* = cidade principal; *o caixa* = funcionário vs. *a caixa* = objeto/instituição.\n- Alternativa (A) INCORRETA: Em \"guarda-civil\", *guarda* é substantivo e *civil* é adjetivo $\\rightarrow$ **guardas-civis**. Porém, em \"guarda-roupa\", *guarda* é forma do verbo *guardar* (invariável) e *roupa* é substantivo $\\rightarrow$ **guarda-roupas** (só varia o segundo).\n- Alternativa (C) INCORRETA: Nos compostos ligados por preposição, varia **apenas o primeiro elemento**: *pães-de-ló*, *pés de moleque*.\n- Alternativa (D) INCORRETA: O plural de *cidadão* é **cidadãos** (assim como *órfãos* e *acórdãos*)."
+        },
+        {
+          "qid": "pt2_q14",
+          "numero": 14,
+          "origem": "ADAPTADA",
+          "ref_interna": "Padrão ACCESS — Morfologia I: Emprego de Pronomes Pessoais, Demonstrativos e Relativos",
+          "semana": 2,
+          "assunto": "Morfologia I: Pronomes (Pessoais, Demonstrativos e Relativos)",
+          "enunciado": "Na elaboração de ofícios e pareceres administrativos, o emprego adequado dos pronomes garante clareza, coesão e correção sintática. Analise as construções a seguir:\n\nI. \"Encaminhamos os autos do processo para **eu** analisar e emitir o despacho final.\"\nII. \"O contribuinte **cuja** certidão negativa venceu ontem deverá comparecer ao setor de tributos.\"\nIII. \"Antes de **o** servidor assinar o termo de posse, verificou-se a autenticidade do diploma.\"\nIV. \"Solicitamos que o munícipe verifique a lista de documentos; **o mesmo** deverá entregá-la no protocolo central.\"\n\nDe acordo com a norma culta e com as diretrizes do Manual de Redação da Presidência da República, estão CORRETAS:",
+          "alternativas": {
+            "A": "apenas as construções I, II e III.",
+            "B": "apenas as construções I e IV.",
+            "C": "apenas as construções II, III e IV.",
+            "D": "todas as construções."
+          },
+          "gabarito": "A",
+          "comentario": "Gabarito: A.\n- Item I CORRETO: Antes de verbo no infinitivo, quando o pronome exerce a função de sujeito agente desse verbo (*quem vai analisar? Eu*), usa-se o pronome pessoal do caso reto **\"eu\"** (\"para eu analisar\"), pois \"mim\" não conjuga verbo.\n- Item II CORRETO: O pronome relativo **\"cuja\"** expressa posse entre dois substantivos (*contribuinte* e *certidão negativa*) e nunca admite artigo depois de si (*cuja certidão*, e jamais *cuja a certidão*).\n- Item III CORRETO: Não se contrai a preposição \"de\" com o artigo \"o\" quando este acompanha o sujeito de um verbo no infinitivo (\"Antes **de o** servidor assinar\", e não \"do servidor assinar\").\n- Item IV INCORRETO: Empregar \"o mesmo\" como pronome substantivo para substituir pessoa (\"o contribuinte / ele\") é condenado pela gramática normativa e pelo Manual de Redação da Presidência da República."
+        },
+        {
+          "qid": "pt2_q15",
+          "numero": 15,
+          "origem": "ADAPTADA",
+          "ref_interna": "Padrão ACCESS — Morfologia II: Semântica dos Tempos e Modos Verbais",
+          "semana": 3,
+          "assunto": "Morfologia II: Verbos (Tempos e Modos Verbais)",
+          "enunciado": "Relacione os trechos administrativos da Coluna I com a classificação e o valor semântico das formas verbais destacadas na Coluna II:\n\nColuna I:\n1. \"Quando a auditoria chegou à secretaria, o contador já **concluíra** o balancete trimestral.\"\n2. \"**Gostaria** de solicitar a Vossa Senhoria a prorrogação do prazo para entrega do inventário.\"\n3. \"Antigamente, os requerimentos **tramitavam** apenas em papel físico pelos setores.\"\n4. \"Se a comissão **analisasse** o recurso hoje, o resultado sairia ainda nesta semana.\"\n\nColuna II:\n( ) Pretérito Imperfeito do Indicativo — expressa ação contínua, duradoura ou habitual no passado.\n( ) Pretérito Mais-que-perfeito do Indicativo — indica ação passada ocorrida antes de outra ação também passada.\n( ) Pretérito Imperfeito do Subjuntivo — exprime condição ou hipótese vinculada ao futuro do pretérito.\n( ) Futuro do Pretérito do Indicativo — empregado com valor modal de polidez e cortesia na comunicação oficial.\n\nA sequência CORRETA da Coluna II, de cima para baixo, é:",
+          "alternativas": {
+            "A": "3 – 1 – 4 – 2.",
+            "B": "1 – 3 – 2 – 4.",
+            "C": "3 – 4 – 1 – 2.",
+            "D": "2 – 1 – 4 – 3."
+          },
+          "gabarito": "A",
+          "comentario": "Gabarito: A.\n- 1º parêntese = **3** (\"**tramitavam**\" — terminação *-vam* do Pretérito Imperfeito do Indicativo: expressa o \"filme do passado\", um hábito ou rotina antiga).\n- 2º parêntese = **1** (\"**concluíra**\" — terminação átona *-ra* do Pretérito Mais-que-perfeito simples do Indicativo, equivalente a *tinha concluído*: o passado antes de outro passado *chegou*).\n- 3º parêntese = **4** (\"**analisasse**\" — terminação *-sse* do Pretérito Imperfeito do Subjuntivo: expressa hipótese/condição combinada com *sairia*).\n- 4º parêntese = **2** (\"**Gostaria**\" — terminação *-ria* do Futuro do Pretérito do Indicativo: usado em ofícios para formular pedidos com polidez/cortesia).\nSequência correta: **3 – 1 – 4 – 2**."
+        },
+        {
+          "qid": "pt2_q16",
+          "numero": 16,
+          "origem": "ADAPTADA",
+          "ref_interna": "Padrão ACCESS — Morfologia II: Flexão de Verbos Irregulares (Pôr, Ver, Vir e Ter)",
+          "semana": 3,
+          "assunto": "Morfologia II: Verbos Irregulares Críticos (Famílias Pôr, Ver, Vir e Ter)",
+          "enunciado": "Leia o despacho redigido no setor de licitações da Prefeitura:\n\n\"Quando o pregoeiro ________ (repor) os anexos que faltavam no edital e os licitantes ________ (ver) as novas especificações técnicas, a procuradoria jurídica ________ (manter - presente do indicativo) o cronograma original, desde que nenhum interessado ________ (intervir - presente do subjuntivo) com pedido de impugnação.\"\n\nAssinale a alternativa que preenche, correta e respectivamente, as lacunas do período acima de acordo com a norma-padrão:",
+          "alternativas": {
+            "A": "repor — verem — mantém — intervenha",
+            "B": "repuser — virem — mantém — intervenha",
+            "C": "repuser — verem — mantêm — intervia",
+            "D": "repor — virem — mantêm — intervenha"
+          },
+          "gabarito": "B",
+          "comentario": "Gabarito: B.\n- 1ª lacuna (**repuser**): O verbo *repor* é derivado de *pôr*. No Futuro do Subjuntivo (*Quando ele...*), conjuga-se como *puser*: **Quando o pregoeiro repuser** (dizer \"quando ele repor\" é erro crasso de prova, pois *repor* é infinitivo!).\n- 2ª lacuna (**virem**): O verbo *ver* no Futuro do Subjuntivo tem radical *vir-* (*quando eu vir, quando eles **virem***).\n- 3ª lacuna (**mantém**): O sujeito é singular (*\"a procuradoria jurídica\"*), logo o verbo derivado de *ter* leva acento agudo no singular: **mantém** (se fosse plural, seria *mantêm*).\n- 4ª lacuna (**intervenha**): A locução condicional *\"desde que\"* exige o Presente do Subjuntivo. Como *intervir* segue o verbo *vir* (*que ele venha*), a forma correta é **intervenha**."
+        },
+        {
+          "qid": "pt2_q17",
+          "numero": 17,
+          "origem": "ACCESS",
+          "ref_interna": "Instituto ACCESS — Pref. de Passos/MG e Domingos Martins/ES (Adaptada) — Vozes Verbais e Partícula SE",
+          "semana": 3,
+          "assunto": "Morfologia II: Vozes Verbais e Funções da Partícula SE",
+          "enunciado": "O emprego da partícula \"se\" e a correta identificação das vozes verbais são essenciais na redação técnica. Analise os três períodos a seguir:\n\n1. \"**Homologaram-se** os resultados finais do concurso público para Oficial Administrativo após o prazo recursal.\"\n2. \"Na reunião da comissão disciplinar, **procedeu-se** à leitura integral das atas de sindicância.\"\n3. \"Um assento de vaso sanitário que **se** esterilizava chegando a 250 °C foi patenteado no início do século 20.\"\n\nA respeito da estrutura sintático-morfológica das formas verbais e da palavra \"se\" nos períodos 1, 2 e 3, assinale a alternativa CORRETA:",
+          "alternativas": {
+            "A": "No período 1, a oração está na voz ativa com sujeito indeterminado, razão pela qual o verbo poderia ficar facultativamente no singular (\"Homologou-se os resultados\").",
+            "B": "No período 1, a oração está na voz passiva sintética (pronome apassivador \"se\"), equivalendo à voz passiva analítica \"Os resultados finais do concurso público foram homologados\".",
+            "C": "No período 2, a partícula \"se\" é apassivadora, devendo o verbo ir para o plural caso o termo preposicionado passe para \"às leituras integrais\".",
+            "D": "Nos períodos 1 e 2, o pronome \"se\" exerce função reflexiva recíproca, indicando que os documentos praticam a ação sobre si mesmos."
+          },
+          "gabarito": "B",
+          "comentario": "Gabarito: B.\n- Alternativa (B) CORRETA: No período 1, o verbo *homologar* é Transitivo Direto (*quem homologa, homologa algo*). Associado ao pronome apassivador \"se\", forma a **voz passiva sintética**, em que \"os resultados finais\" é o sujeito paciente plural (equivalendo a *\"Os resultados finais foram homologados\"*), exigindo obrigatoriamente o verbo no plural (*Homologaram-se*).\n- Alternativa (A) INCORRETA: O sujeito não é indeterminado; é paciente e expresso no plural (*os resultados finais*), sendo proibido o verbo no singular.\n- Alternativa (C) INCORRETA: No período 2, o verbo *proceder* com sentido de dar início/realizar é Transitivo Indireto (*proceder a algo*). Com verbo transitivo indireto, o \"se\" é **índice de indeterminação do sujeito**, e o verbo fica obrigatoriamente congelado na 3ª pessoa do singular (*procedeu-se às leituras*).\n- Alternativa (D) INCORRETA: Não há reciprocidade nem reflexividade nos períodos 1 e 2."
+        },
+        {
+          "qid": "pt2_q18",
+          "numero": 18,
+          "origem": "ACCESS",
+          "ref_interna": "Instituto ACCESS — Pref. de Contagem/MG — Assistente Administrativo — Q07 (Adaptada)",
+          "semana": 3,
+          "assunto": "Morfologia II: Advérbios, Locuções Adverbiais e Invariabilidade",
+          "enunciado": "Analise o emprego e a classificação das palavras invariáveis e modificadores nos períodos abaixo:\n\nI. \"**Já** um pescoço muito fino, embora considerado esteticamente atraente em algumas culturas, pode apontar anemia.\" (Texto oficial ACCESS — Contagem/MG)\nII. \"As servidoras do setor de atendimento falaram **alto** e resolveram **rápido** as pendências das guias tributárias.\"\nIII. \"Comprei **meia** resma de papel sulfite, mas as impressoras do corredor ainda estavam **meio** desconfiguradas.\"\n\nSobre os termos destacados nos itens I, II e III, assinale a alternativa CORRETA:",
+          "alternativas": {
+            "A": "No item I, o termo \"Já\" atua como advérbio de valor contrastivo, introduzindo uma ideia em contraste com o parágrafo anterior (que tratava do pescoço grosso).",
+            "B": "No item II, as palavras \"alto\" e \"rápido\" estão empregadas incorretamente, pois deveriam flexionar no feminino plural (\"altas\" e \"rápidas\") para concordar com \"As servidoras\".",
+            "C": "No item III, ambas as ocorrências deveriam ser grafadas como \"meia\", pois referem-se a substantivos femininos (\"resma\" e \"impressoras\").",
+            "D": "No item I, a palavra \"esteticamente\" é um adjetivo biforme que qualifica diretamente o substantivo feminino \"culturas\"."
+          },
+          "gabarito": "A",
+          "comentario": "Gabarito: A.\n- Alternativa (A) CORRETA: Questão oficial da prova de Assistente Administrativo de Contagem/MG (Instituto ACCESS): no início do período, \"Já\" não indica tempo neste contexto, mas atua como **advérbio de valor contrastivo**, opondo o caso do pescoço fino ao do pescoço espesso abordado antes.\n- Alternativa (B) INCORRETA: No item II, \"alto\" e \"rápido\" modificam os verbos \"falaram\" e \"resolveram\" (indicando o *modo* como falaram e resolveram). São **adjetivos adverbializados** (funcionam como advérbios de modo) e, portanto, são **invariáveis**.\n- Alternativa (C) INCORRETA: No item III, \"meia resma\" é numeral fracionário (metade de uma resma = variável), enquanto \"meio desconfiguradas\" é advérbio de intensidade modificando o adjetivo (= um pouco desconfiguradas = invariável). O item III já está perfeitamente correto!\n- Alternativa (D) INCORRETA: \"Esteticamente\" é um advérbio de modo (terminado em *-mente*, invariável) que modifica o adjetivo \"atraente\"."
+        },
+        {
+          "qid": "pt2_q19",
+          "numero": 19,
+          "origem": "ADAPTADA",
+          "ref_interna": "Padrão ACCESS — Morfologia II: A Tríplice Função da Palavra A (Artigo, Preposição e Pronome)",
+          "semana": 3,
+          "assunto": "Morfologia II: A Tríplice Função da Palavra \"A\"",
+          "enunciado": "Em um memorando interno da Secretaria Municipal de Finanças, lê-se o seguinte período:\n\n\"O diretor financeiro remeteu **a** planilha consolidada **a** auditoria externa para que **a** avaliassem antes do encerramento do exercício.\"\n\nConsiderando a função morfológica de cada ocorrência destacada da palavra **\"a\"**, na ordem em que aparecem no período, elas classificam-se respectivamente como:",
+          "alternativas": {
+            "A": "Preposição — Artigo definido — Pronome pessoal oblíquo.",
+            "B": "Artigo definido — Preposição — Pronome pessoal oblíquo.",
+            "C": "Artigo definido — Pronome demonstrativo — Preposição.",
+            "D": "Pronome pessoal oblíquo — Preposição — Artigo definido."
+          },
+          "gabarito": "B",
+          "comentario": "Gabarito: B.\n- 1ª ocorrência (\"remeteu **a** planilha\"): Antecede e determina o substantivo feminino \"planilha\" (se trocarmos por um substantivo masculino: *remeteu **o** relatório*). Trata-se de **Artigo definido feminino**.\n- 2ª ocorrência (\"remeteu [...] **a** auditoria externa\"): É o conector exigido pela regência do verbo *remeter* (quem remete, remete algo *a* alguém/algum setor), empregado antes de substantivo tomado sem artigo determinante. Trata-se de **Preposição essencial**.\n- 3ª ocorrência (\"para que **a** avaliassem\"): Aparece antes do verbo *avaliassem*, substituindo o substantivo feminino \"a planilha consolidada\" como seu objeto direto (*avaliassem ela*). Trata-se de **Pronome pessoal oblíquo átono**."
+        },
+        {
+          "qid": "pt2_q20",
+          "numero": 20,
+          "origem": "ADAPTADA",
+          "ref_interna": "Padrão ACCESS — Semântica em Contexto: Homônimos e Parônimos na Administração Pública",
+          "semana": 3,
+          "assunto": "Semântica em Contexto: Homônimos e Parônimos",
+          "enunciado": "A precisão vocabular é requisito indispensável na redação de atos administrativos. A respeito do emprego dos homônimos e parônimos nas frases a seguir, analise as afirmativas:\n\nI. Na **sessão** extraordinária da Câmara Municipal, foi votado o projeto de lei que autoriza a **cessão** gratuita de um terreno público para a instalação de uma nova **seção** de atendimento ao contribuinte.\nII. O prefeito decidiu **deferir** o requerimento do servidor, concedendo-lhe a licença solicitada, decisão que **diferiu** do parecer preliminar emitido pela chefia imediata.\nIII. O relatório da comissão de compras precisou **descriminar** minuciosamente cada item de papelaria adquirido para evitar falhas na conferência das notas fiscais.\n\nEstá(ão) CORRETA(S) quanto à grafia e ao sentido semântico no contexto administrativo:",
+          "alternativas": {
+            "A": "apenas a afirmativa I.",
+            "B": "apenas as afirmativas I e II.",
+            "C": "apenas as afirmativas II e III.",
+            "D": "todas as afirmativas."
+          },
+          "gabarito": "B",
+          "comentario": "Gabarito: B.\n- Afirmativa I CORRETA:\n  * **Sessão** (com SS): reunião deliberativa, assembleia ou tempo de duração de um evento (*sessão da Câmara*).\n  * **Cessão** (com C e SS, do verbo *ceder*): ato de ceder, transferir posse ou uso (*cessão de terreno público*).\n  * **Seção** (com S e Ç): repartição, setor, divisão administrativa (*seção de atendimento*).\n- Afirmativa II CORRETA:\n  * **Deferir** (com E): atender, conceder, aprovar um pedido administrativo.\n  * **Diferir** (com I): divergir, ser diferente (ou adiar). No contexto, a decisão do prefeito divergiu (*diferiu*) do parecer preliminar.\n- Afirmativa III INCORRETA:\n  * Para listar, especificar ou separar detalhadamente itens de uma nota ou relatório, o verbo correto é **discriminar** (com I). O verbo **descriminar** (com E) significa absolver ou retirar o caráter criminoso de uma conduta (descriminalizar)."
+        }
+      ]
+    },
     {
       "key": "gerais",
       "titulo": "Conhecimentos Gerais",

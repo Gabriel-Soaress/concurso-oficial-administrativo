@@ -593,7 +593,7 @@
             '</div>' +
 
             '<div class="sim-reveal sim-feedback">' +
-              '<div class="sim-feedback-gab">Gabarito Oficial: <strong>Alternativa ' + esc(q.gabarito) + '</strong> · <span class="sim-feedback-origin">' + (origemAccess ? 'Questão Oficial ACCESS' : 'Questão Adaptada pelo Guia ACCESS') + '</span></div>' +
+              '<div class="sim-feedback-gab">Gabarito Oficial: <strong>Alternativa ' + esc(q.gabarito) + '</strong> · <span class="sim-feedback-origin">' + esc(q.ref_interna || q.fonte_detalhe || (origemAccess ? 'Questão Oficial ACCESS' : 'Questão Adaptada pelo Guia ACCESS')) + '</span></div>' +
               (q.comentario ? '<div class="sim-feedback-text">' + md(q.comentario, "simc_" + qid) + '</div>' : '') +
             '</div>' +
           '</article>'

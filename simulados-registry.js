@@ -33,13 +33,14 @@
       id: "simulado-sem-01-03",
       titulo: "Simulado Adaptado · Semanas 01 a 03",
       subtitulo: "Caderno de Prova Padrão Instituto ACCESS — Nível Médio",
-      descricao: "Simulado acumulativo das Semanas 01, 02 e 03 (60 questões iniciais: Conhecimentos Gerais, Matemática/RLM e Conhecimentos Específicos — Língua Portuguesa será adicionada após a Semana 03).",
+      descricao: "Simulado acumulativo completo das Semanas 01, 02 e 03 (80 questões: 20 de Língua Portuguesa, 20 de Conhecimentos Gerais, 20 de Matemática/RLM e 20 de Conhecimentos Específicos) no padrão Instituto ACCESS.",
       semanas: "Semanas 01 a 03",
       badge: "Padrão Instituto ACCESS",
       icone: "📝",
-      totalQuestoes: 60,
-      tempoSugeridoMinutos: 180, // 3h00
+      totalQuestoes: 80,
+      tempoSugeridoMinutos: 240, // 4h00
       materias: [
+        { key: "portugues", titulo: "Língua Portuguesa", icone: "📚", count: 20 },
         { key: "gerais", titulo: "Conhecimentos Gerais", icone: "🌍", count: 20 },
         { key: "matematica", titulo: "Raciocínio Lógico e Mat.", icone: "🧮", count: 20 },
         { key: "especificos", titulo: "Conhecimentos Específicos", icone: "⚖️", count: 20 }

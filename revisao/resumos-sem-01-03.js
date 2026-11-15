@@ -6,6 +6,48 @@
   "use strict";
 
   root.REVISAO_02_DATA = {
+    portugues: {
+      title: "Língua Portuguesa",
+      badge: "Semanas 01 a 03",
+      icon: "📚",
+      content: `## 1. Interpretação, Fonologia, Sílabas e Acentuação (Semana 01)
+- **Compreensão vs. Interpretação:** Compreensão = explícito nas linhas; Interpretação = inferência lógica das pistas textuais. Cuidado com os **3 erros clássicos**: Extrapolação (ir além do texto), Redução (tomar parte pelo todo) e Contradição.
+- **Fonologia e Divisão Silábica:**
+  - **Dígrafo:** 2 letras = 1 único som (*ch, lh, nh, rr, ss, sc, sç, xc, gu/qu* com *u* mudo, e vogais nasais *am, em, im, om, um*).
+  - **Encontros Vocálicos:** Ditongo (V+SV ou SV+V na mesma sílaba), Tritongo (SV+V+SV na mesma sílaba: *sa-guão, U-ru-guai*), Hiato (2 vogais em sílabas separadas: *sa-ú-de, vo-o, du-e-lo*).
+- **Acentuação Gráfica:**
+  - **Monossílabos tônicos:** terminados em *-a(s), -e(s), -o(s)*.
+  - **Oxítonas:** terminadas em *-a(s), -e(s), -o(s), -em, -ens*.
+  - **Paroxítonas:** todas, **exceto** as terminadas em *-a(s), -e(s), -o(s), -em, -ens* (inclui ditongos crescentes finais).
+  - **Proparoxítonas:** todas são acentuadas.
+  - **Acento Diferencial:** *tem/têm*, *vem/vêm*, *mantém/mantêm*, *intervém/intervêm*, *pôr* (verbo) vs. *por* (preposição), *pôde* (passado) vs. *pode* (presente).
+
+## 2. Morfologia I: Classes Nominais, Pronomes e Formação (Semana 02)
+- **Substantivos e Compostos:**
+  - Mudança de gênero com mudança de sentido: *o capital* (dinheiro) vs. *a capital* (cidade); *o cabeça* (líder) vs. *a cabeça* (corpo).
+  - Plural dos compostos: Variáveis (Subst./Adj./Num.) vão para o plural (*guardas-civis*); Invariáveis (Verbo/Adv.) ficam no singular (*guarda-roupas, abaixo-assinados*); ligados por preposição variam só o 1º (*pães-de-ló*).
+- **Pronomes e Coesão Referencial:**
+  - **Anáfora (retoma o que já foi dito):** usa **esse / essa / isso**.
+  - **Catáfora (anuncia o que vai ser dito):** usa **este / esta / isto**.
+  - **Pronomes Relativos:** *cujo* indica posse entre dois substantivos e **nunca** aceita artigo posposto (*cuja pasta*, jamais *cuja a pasta*); *onde* = lugar fixo.
+- **Formação de Palavras:**
+  - **Derivação:** Prefixal, Sufixal, Prefixal e Sufixal (independentes: *infelizmente*), Parassintética (simultânea: *entardecer, repatriar*), Regressiva (*combate* de *combater*), Imprópria (mudança de classe: *o jantar*).
+  - **Composição:** Justaposição (*passatempo*) vs. Aglutinação (*planalto, aguardente*). Atenção: *bem-sucedido* (com hífen) vs. *malsucedido* (sem hífen antes de consoante).
+
+## 3. Morfologia II: Verbos, Advérbios, Conectivos e Semântica (Semana 03)
+- **Verbos (Tempos, Modos, Irregulares e Vozes):**
+  - **Indicativo** (certeza: Pretérito Perfeito = foto pontual; Imperfeito = filme/hábito; Mais-que-perfeito *-ra* = passado antes de outro passado; Futuro do Pretérito *-ria* = condição/polidez). **Subjuntivo** (hipótese/dúvida).
+  - **Irregulares Críticos:** *Intervir* segue *vir* (*ele **interveio**, eles **intervieram**, quando ele **intervier**, que ele **intervenha***); *Ver* vs. *Vir* no Futuro do Subjuntivo (*quando eu **vir*** = enxergar vs. *quando eu **vier*** = deslocar-se); *Propor/Repor* seguem *pôr* (*quando ele **propuser / repuser**, se ele **propusesse***).
+  - **Voz Passiva Sintética:** VTD + *se* (partícula apassivadora) $\\rightarrow$ o verbo concorda obrigatoriamente com o sujeito paciente (*Homologaram-se os resultados*). Já VTI + *se* (índice de indeterminação) $\\rightarrow$ verbo no singular (*Procedeu-se às leituras*).
+- **Advérbios e a Palavra "A":**
+  - Advérbio é **invariável**: *falaram alto/claro* (adjetivo adverbializado) e *estavam **meio** cansadas* (= um pouco).
+  - **Tríplice função do "A":** Artigo (antes de subst. feminino, vira *o* no masculino), Preposição (invariável, exigida pela regência), Pronome Oblíquo (substitui nome feminino e funciona como objeto direto: *a aprovou*).
+- **Conjunções e Semântica:**
+  - **Adversativas** (*mas, porém, contudo, todavia, entretanto, no entanto* — oposição/quebra de expectativa no indicativo) vs. **Concessivas** (*embora, conquanto, ainda que, mesmo que, posto que* — admitem obstáculo sem impedir o fato principal, verbo no subjuntivo).
+  - **Proporção vs. Causa:** *À medida que* = proporção; *Na medida em que* = causa (*porque, já que*). *"À medida em que"* não existe!
+  - **Homônimos e Parônimos:** *sessão* (reunião) / *seção* (setor) / *cessão* (ato de ceder); *ratificar* (confirmar) / *retificar* (corrigir); *deferir* (conceder) / *diferir* (divergir/adiar); *mandado* (ordem judicial) / *mandato* (cargo eletivo); *infligir* (aplicar pena) / *infringir* (violar regra); *discriminar* (listar/separar) / *descriminar* (absolver).`
+    },
+
     gerais: {
       title: "Conhecimentos Gerais",
       badge: "Semanas 01 a 03",
