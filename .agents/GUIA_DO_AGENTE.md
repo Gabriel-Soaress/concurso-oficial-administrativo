@@ -113,11 +113,11 @@ Quando o usuário enviar o Prompt Matriz da Semana $X$:
 - [x] **Simulado de Sábado 2:** Prova `prova-auto/2.pdf` (Gabarito `g2.pdf` - VUNESP - Câmara de Fernandópolis/SP) — *Nota/Acertos: ___*
 
 #### Semana 3: Ações, Conexões e Regras de Proporção (`semana-03/`)
-- [ ] **Português (Sem 3):** Morfologia II (Verbos: lógica dos tempos/modos; Advérbios, Preposições vs. Artigos, e Conjunções) + Semântica em contexto.
-- [ ] **Matemática/RLM (Sem 3):** Radiciação completa (complemento: índices, expoente fracionário, simplificação, operações e racionalização) + Regra de Três Simples e Composta (lógica das grandezas) + Porcentagem (aumentos e descontos sucessivos).
-- [ ] **Específicos (Sem 3):** Funções da Administração (PODC), Estruturas Organizacionais (Linear, Funcional, Linha-Staff, Matricial) e Ciclo PDCA.
-- [ ] **Conhecimentos Gerais (Sem 3):** Formação histórica, geográfica e econômica do Estado de São Paulo e do interior paulista.
-- [ ] **Simulado de Sábado 3:** Prova `prova-auto/3.pdf` (Gabarito `g3.pdf` - Avança SP - Câmara de Francisco Morato/SP) — *Nota/Acertos: ___*
+- [x] **Português (Sem 3):** Morfologia II (Verbos: lógica dos tempos/modos; Advérbios, Preposições vs. Artigos, e Conjunções) + Semântica em contexto.
+- [x] **Matemática/RLM (Sem 3):** Radiciação completa (complemento: índices, expoente fracionário, simplificação, operações e racionalização) + Regra de Três Simples e Composta (lógica das grandezas) + Porcentagem (aumentos e descontos sucessivos).
+- [x] **Específicos (Sem 3):** Funções da Administração (PODC), Estruturas Organizacionais (Linear, Funcional, Linha-Staff, Matricial) e Ciclo PDCA.
+- [x] **Conhecimentos Gerais (Sem 3):** Formação histórica, geográfica e econômica do Estado de São Paulo e do interior paulista.
+- [x] **Simulado de Sábado 3:** Prova `prova-auto/3.pdf` (Gabarito `g3.pdf` - Avança SP - Câmara de Francisco Morato/SP) — *Nota/Acertos: Concluído*
 
 #### Semana 4: Estrutura da Frase Simples, Álgebra Inicial e Rotina Interna (`semana-04/`)
 - [ ] **Português (Sem 4):** Sintaxe da Oração Simples (Frase, Oração, Período; Sujeito, Predicado, Transitividade Verbal, Objetos Direto/Indireto, Adjuntos e Aposto).

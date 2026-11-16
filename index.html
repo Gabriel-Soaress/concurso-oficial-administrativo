@@ -3870,7 +3870,7 @@
   </main>
   </div>
 
-  <script src="aulas-data.js?v=20261112_02"></script>
+  <script src="aulas-data.js?v=20261116_01"></script>
   <script>
     const DB_SQL_URL = "https://ep-muddy-thunder-ac0eoxn3-pooler.sa-east-1.aws.neon.tech/sql";
     const DB_CONN_STR = "postgresql://neondb_owner:npg_l2mWY5HINrgG@ep-muddy-thunder-ac0eoxn3-pooler.sa-east-1.aws.neon.tech/neondb?sslmode=require";
@@ -5608,34 +5608,52 @@
         return { preMd: norm, questions: [], postMd: "" };
       }
 
-      const preMd = norm.slice(0, firstQMatch).trim();
+      let preMd = norm.slice(0, firstQMatch).trim();
       const restMd = norm.slice(firstQMatch);
 
-      // Separar caso haja seção final após as questões (ex: ## Checklist de Fixação Ativa)
-      let questionsRegion = restMd;
-      let postMd = "";
-      const postMatch = restMd.search(/^##\s+(?!Bateria|BATERIA)/m);
-      if (postMatch !== -1) {
-        questionsRegion = restMd.slice(0, postMatch).trim();
-        postMd = restMd.slice(postMatch).trim();
+      // Se o final do preMd tiver a introdução do BLOCO 1 (ex: ## 🎯 BLOCO 1...), destacamos para exibir junto da Questão 01
+      let firstBlockIntroMd = "";
+      const block1Match = preMd.search(/^##\s+(?:🎯\s*)?BLOCO\s+1\b/im);
+      if (block1Match !== -1) {
+        firstBlockIntroMd = preMd.slice(block1Match).trim();
+        preMd = preMd.slice(0, block1Match).replace(/(?:\n---\s*)+$/, "").trim();
       }
 
-      const rawBlocks = questionsRegion.split(/(?=^###\s+Questão\s+\d+)/m).filter(b => /^###\s+Questão\s+\d+/.test(b.trim()));
+      let postMd = "";
+      const rawBlocks = restMd.split(/(?=^###\s+Questão\s+\d+)/m).filter(b => /^###\s+Questão\s+\d+/.test(b.trim()));
+      let pendingSectionIntroMd = firstBlockIntroMd;
+
       const questions = rawBlocks.map((block, idx) => {
         const qNum = idx + 1;
+        const sectionIntroMd = pendingSectionIntroMd;
+        pendingSectionIntroMd = "";
+
         let beforeDet = block;
         let detContent = "";
+        let afterDet = "";
         if (block.includes("<details>")) {
           const parts = block.split(/<details>/i);
           beforeDet = parts[0];
-          detContent = (parts[1] || "").split(/<\/details>/i)[0] || "";
+          const detSplit = (parts[1] || "").split(/<\/details>/i);
+          detContent = detSplit[0] || "";
+          afterDet = detSplit.slice(1).join("</details>").trim();
+        }
+
+        // Limpar separadores --- nas extremidades do afterDet
+        const cleanAfterDet = afterDet.replace(/^(?:---+\s*\n?)+/, "").replace(/(?:\n?\s*---+)+$/, "").trim();
+        if (cleanAfterDet) {
+          if (idx < rawBlocks.length - 1) {
+            pendingSectionIntroMd = cleanAfterDet;
+          } else {
+            postMd = cleanAfterDet;
+          }
         }
 
         const lines = beforeDet.trim().split("\n");
         const headerLine = lines[0].replace(/^###\s+/, "").trim();
         let metaLine = "";
         let startStemIdx = 1;
-        if (lines[1] && lines[1].includes("**Banca:**")) {
+        if (lines[1] && (lines[1].includes("**Banca:**") || lines[1].includes("**Foco:**") || lines[1].includes("**Bloco:**"))) {
           metaLine = lines[1].trim();
           startStemIdx = 2;
         }
@@ -5652,7 +5670,7 @@
           }
         }
 
-        const gabMatch = detContent.match(/\*\*Gabarito Oficial:\s*(?:Letra\s+)?([A-E])([^*]*)\*\*/i);
+        const gabMatch = detContent.match(/\*\*Gabarito Oficial:\s*(?:Letra\s+)?\(?([A-E])\)?([^*]*)\*\*/i);
         const answerLetter = gabMatch ? gabMatch[1].toUpperCase() : "A";
         const answerExtra = gabMatch && gabMatch[2] ? gabMatch[2].trim() : "";
 
@@ -5666,6 +5684,7 @@
           num: qNum,
           title: headerLine,
           meta: metaLine,
+          sectionIntroMd,
           stemMd: stemLines.join("\n").trim(),
           options,
           answerLetter,
@@ -5786,8 +5805,14 @@
         }).join("");
 
         const commentaryHtml = renderRichMarkdown(q.commentaryMd, `${doc.id}_q${q.num}_comm`);
+        const sectionIntroHtml = q.sectionIntroMd ? `
+          <div class="surface-elevated rounded-2xl p-5 sm:p-6 border-2 border-indigo-500/30 space-y-3 shadow-sm mt-8 first:mt-0">
+            ${renderRichMarkdown(q.sectionIntroMd, `${doc.id}_sec_${q.num}`)}
+          </div>
+        ` : "";
 
         return `
+          ${sectionIntroHtml}
           <div id="qcard_${doc.id}_${q.num}" class="surface rounded-2xl p-5 sm:p-6 space-y-4 border ${isCorrect ? 'border-emerald-500/50' : isWrong ? 'border-rose-500/50' : 'border-tech'} shadow-sm">
             <!-- Topo da Questão -->
             <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-tech">
