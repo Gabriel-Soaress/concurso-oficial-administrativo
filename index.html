@@ -4621,9 +4621,9 @@
                   const isWorksheet = doc.kind === "worksheet";
                   const isFixation = !doc.isMain && doc.kind === "lesson";
                   const btnLabel = isWorksheet
-                    ? `📝 Lista de Exercícios (${doc.questionCount || 43})`
+                    ? `📝 ${doc.shortTitle || `Lista de Exercícios (${doc.questionCount || 43})`}`
                     : isFixation
-                    ? `📝 Lista de Fixação (${doc.questionCount || 15} Questões)`
+                    ? `🎯 ${doc.shortTitle || `Lista de Fixação (${doc.questionCount || 15} Questões)`}`
                     : `📖 Estudar Aula & Questões (${doc.questionCount || 10})`;
                   const btnVariant = dIdx === 0 ? "primary" : "secondary";
                   const rightCall = (isWorksheet || isFixation) ? "Abrir Lista →" : "Abrir Aula →";
@@ -6509,9 +6509,9 @@
           multiTabs.innerHTML = docs.map((d, idx) => {
             const active = idx === activeLessonDocIdx;
             const tabLabel = d.kind === "worksheet"
-              ? `📝 Lista (${d.questionCount || 43} Exerc.)`
+              ? `📝 ${d.shortTitle || `Lista (${d.questionCount || 43} Exerc.)`}`
               : !d.isMain
-              ? `📝 Lista de Fixação (${d.questionCount || 15} Questões)`
+              ? `🎯 ${d.shortTitle || `Lista de Fixação (${d.questionCount || 15} Questões)`}`
               : `📖 Aula + ${d.questionCount || 10} Questões`;
             return `
               <button
