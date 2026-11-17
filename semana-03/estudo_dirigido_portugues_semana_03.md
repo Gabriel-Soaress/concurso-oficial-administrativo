@@ -24,25 +24,25 @@
 ### Questão 01
 **Bloco:** 01 — Modos Verbais | **Foco:** Identificar a atitude de Certeza, Hipótese e Ordem
 
-Relacione as três frases abaixo aos seus respectivos Modos Verbais:
+Relacione as três frases abaixo aos seus respectivos Modos Verbais e valores comunicativos:
 1. *"O servidor conferiu todas as páginas do processo."*
 2. *"Confira todas as páginas do processo antes de arquivar!"*
 3. *"Talvez o servidor confira as páginas ainda hoje."*
 
-A sequência CORRETA que identifica os modos das frases 1, 2 e 3 é:
-(A) 1. Subjuntivo – 2. Imperativo – 3. Indicativo.
+A sequência CORRETA que identifica os modos verbais das frases 1, 2 e 3 é:
+(A) 1. Subjuntivo (hipótese) – 2. Imperativo (ordem/instrução) – 3. Indicativo (certeza).
 (B) 1. Indicativo (certeza) – 2. Imperativo (ordem/instrução) – 3. Subjuntivo (dúvida/possibilidade).
-(C) 1. Indicativo – 2. Subjuntivo – 3. Imperativo.
-(D) 1. Imperativo – 2. Indicativo – 3. Subjuntivo.
+(C) 1. Indicativo (certeza) – 2. Subjuntivo (dúvida/possibilidade) – 3. Imperativo (ordem/instrução).
+(D) 1. Imperativo (ordem/instrução) – 2. Indicativo (certeza) – 3. Subjuntivo (dúvida/possibilidade).
 
 <details><summary><b>Ver Gabarito e Comentário Detalhado</b></summary>
 
 **Gabarito Oficial: B**
 
 **Por que memorizar assim:**
-* **Frase 1 (*conferiu*):** É um fato real e consumado $\to$ **Modo Indicativo**.
-* **Frase 2 (*Confira!*):** É uma instrução direta dada ao interlocutor $\to$ **Modo Imperativo**.
-* **Frase 3 (*Talvez... confira*):** É uma possibilidade incerta, ativada pela palavra *talvez* $\to$ **Modo Subjuntivo**.
+* **Frase 1 (*conferiu*):** É um fato real e consumado $\to$ **Modo Indicativo (certeza)**.
+* **Frase 2 (*Confira!*):** É uma instrução direta dada ao interlocutor $\to$ **Modo Imperativo (ordem/instrução)**.
+* **Frase 3 (*Talvez... confira*):** É uma possibilidade incerta, ativada pela palavra *talvez* $\to$ **Modo Subjuntivo (dúvida/possibilidade)**.
 
 </details>
 
@@ -51,19 +51,19 @@ A sequência CORRETA que identifica os modos das frases 1, 2 e 3 é:
 ### Questão 02
 **Bloco:** 01 — Modos Verbais | **Foco:** Reconhecer os Gatilhos do Modo Subjuntivo
 
-O Modo Subjuntivo quase sempre aparece acompanhado de palavras que expressam dúvida, condição ou concessão. Assinale a alternativa em que o verbo destacado está no **Modo Subjuntivo**:
-(A) O diretor **aprovou** o relatório financeiro ontem.
-(B) Nós **entregaremos** os malotes às quatorze horas.
-(C) Embora **chova** muito lá fora, o expediente segue normal.
-(D) Os atendentes **recebem** o público no térreo.
+O Modo Subjuntivo quase sempre aparece acompanhado de conectivos ou advérbios que expressam dúvida, condição ou concessão. Assinale a alternativa em que o verbo destacado está flexionado no **Modo Subjuntivo**:
+(A) Embora **chova** forte na região central, o atendimento presencial segue normal.
+(B) Enquanto **chovia** forte na região central, o diretor vistoriava o telhado do prédio.
+(C) Sempre que **chove** forte na região central, os bueiros da avenida transbordam.
+(D) Como **choveu** forte na região central ontem, o evento externo foi transferido.
 
 <details><summary><b>Ver Gabarito e Comentário Detalhado</b></summary>
 
-**Gabarito Oficial: C**
+**Gabarito Oficial: A**
 
 **Por que memorizar assim:**
-* Na letra (C), a conjunção **"Embora"** exige obrigatoriamente o verbo no **Modo Subjuntivo** (*Embora chova* = Presente do Subjuntivo).
-* Nas letras (A) *aprovou*, (B) *entregaremos* e (D) *recebem*, todos os verbos expressam fatos certos e estão no **Modo Indicativo**.
+* Na letra (A), a conjunção concessiva **"Embora"** exige obrigatoriamente o verbo no **Modo Subjuntivo** (*Embora chova* = Presente do Subjuntivo).
+* Nas letras (B) *chovia* (Pretérito Imperfeito), (C) *chove* (Presente) e (D) *choveu* (Pretérito Perfeito), todos os verbos retratam fatos reais e estão no **Modo Indicativo**.
 
 </details>
 
@@ -77,15 +77,15 @@ I. *"Espero **que** a prefeitura **contrate** novos oficiais."*
 II. *"Se a prefeitura **contratasse** mais pessoal, a fila diminuiria."*
 III. *"Quando a prefeitura **contratar** os aprovados, faremos o treinamento."*
 
-Os verbos destacados em I, II e III estão, respectivamente, no:
-(A) Presente do Subjuntivo – Pretérito Imperfeito do Subjuntivo – Futuro do Subjuntivo.
-(B) Futuro do Subjuntivo – Presente do Subjuntivo – Pretérito Imperfeito do Subjuntivo.
-(C) Pretérito Imperfeito do Subjuntivo – Futuro do Subjuntivo – Presente do Subjuntivo.
-(D) Presente do Indicativo – Pretérito Perfeito do Indicativo – Futuro do Presente.
+Os verbos destacados em I, II e III estão flexionados, respectivamente, no:
+(A) Futuro do Subjuntivo – Presente do Subjuntivo – Pretérito Imperfeito do Subjuntivo.
+(B) Pretérito Imperfeito do Subjuntivo – Futuro do Subjuntivo – Presente do Subjuntivo.
+(C) Presente do Indicativo – Pretérito Perfeito do Indicativo – Futuro do Presente do Indicativo.
+(D) Presente do Subjuntivo – Pretérito Imperfeito do Subjuntivo – Futuro do Subjuntivo.
 
 <details><summary><b>Ver Gabarito e Comentário Detalhado</b></summary>
 
-**Gabarito Oficial: A**
+**Gabarito Oficial: D**
 
 **Regra de Bolso Infalível:**
 * **I (*que... contrate*):** Gatilho *"que"* indicando desejo atual $\to$ **Presente do Subjuntivo**.
@@ -99,18 +99,19 @@ Os verbos destacados em I, II e III estão, respectivamente, no:
 ### Questão 04
 **Bloco:** 01 — Modos Verbais | **Foco:** Identificar o Modo Imperativo na Prática
 
-Em editais de concurso, manuais e comunicados internos, um modo verbal é muito usado para orientar o comportamento do leitor. Assinale a frase cujo verbo está no **Modo Imperativo**:
-(A) O candidato preencheu o cartão de respostas com caneta azul.
-(B) Preencha o formulário com letra legível e anexe cópia do RG.
-(C) Se o candidato preenchesse tudo a tempo, não seria eliminado.
-(D) O edital exigia documento original com foto.
+Em editais de concurso, manuais e comunicados internos, um modo verbal específico é utilizado para orientar diretamente a conduta do destinatário. Assinale a frase cujos verbos estão no **Modo Imperativo**:
+(A) O candidato preencheu o formulário com letra legível e anexou a cópia do RG.
+(B) Caso o candidato preencha o formulário com letra legível, anexará a cópia do RG.
+(C) Preencha o formulário com letra legível e anexe a cópia do RG no campo indicado.
+(D) Os candidatos preencheriam o formulário com letra legível se tivessem orientação.
 
 <details><summary><b>Ver Gabarito e Comentário Detalhado</b></summary>
 
-**Gabarito Oficial: B**
+**Gabarito Oficial: C**
 
 **Por que memorizar assim:**
-* **"Preencha"** e **"anexe"** são comandos/instruções diretas dirigidas a *"você"* (interlocutor). Esse é o papel clássico do **Modo Imperativo**.
+* **"Preencha"** e **"anexe"** são comandos/instruções diretas dirigidas ao interlocutor (*você*). Esse é o papel clássico do **Modo Imperativo**.
+* Em (A) temos Pretérito Perfeito do Indicativo; em (B), Presente do Subjuntivo e Futuro do Presente; em (D), Futuro do Pretérito e Imperfeito do Subjuntivo.
 
 </details>
 
@@ -143,11 +144,11 @@ Compare as duas frases a seguir:
 * **Frase I:** *"Na década passada, os moradores **enviavam** cartas pelo correio."*
 * **Frase II:** *"Ontem de manhã, o morador **enviou** uma carta urgente."*
 
-Sobre os verbos destacados, assinale a alternativa CORRETA:
-(A) Ambos estão no Pretérito Perfeito, pois indicam fatos já ocorridos.
-(B) "Enviavam" (terminado em *-va*) está no Pretérito Imperfeito e indica uma ação habitual/contínua no passado; já "enviou" está no Pretérito Perfeito e indica uma ação pontual e concluída.
-(C) "Enviavam" indica o passado do passado (Mais-que-perfeito), enquanto "enviou" indica hábito.
-(D) "Enviavam" está no Modo Subjuntivo por expressar dúvida sobre o passado.
+Sobre a classificação e o sentido dos verbos destacados, assinale a alternativa CORRETA:
+(A) "Enviavam" está no Pretérito Perfeito e indica ação pontual concluída; já "enviou" está no Pretérito Imperfeito e expressa rotina contínua no passado.
+(B) "Enviavam" está no Pretérito Imperfeito e indica ação habitual no passado; já "enviou" está no Pretérito Perfeito e expressa ação pontual e concluída.
+(C) "Enviavam" está no Pretérito Mais-que-perfeito e indica ação anterior a outra; já "enviou" está no Pretérito Imperfeito e expressa hábito duradouro.
+(D) "Enviavam" está no Pretérito Imperfeito do Subjuntivo e indica hipótese; já "enviou" está no Futuro do Pretérito e expressa polidez no discurso.
 
 <details><summary><b>Ver Gabarito e Comentário Detalhado</b></summary>
 
@@ -165,19 +166,19 @@ Sobre os verbos destacados, assinale a alternativa CORRETA:
 **Bloco:** 02 — Tempos do Indicativo | **Foco:** Identificar o Pretérito Mais-que-perfeito (`-ra`)
 
 Na frase *"Quando o cidadão chegou ao guichê, o expediente já **encerrara**"*, a forma verbal destacada está no **Pretérito Mais-que-perfeito do Indicativo**. Isso significa que:
-(A) O expediente vai encerrar no futuro próximo, logo após a chegada do cidadão.
-(B) O encerramento do expediente aconteceu no passado **antes** de outra ação também passada (a chegada do cidadão), equivalendo a *"já tinha encerrado"*.
-(C) O expediente costumava encerrar todos os dias naquele mesmo horário.
-(D) Trata-se de um erro gramatical, pois só existe a palavra "encerrará" com acento.
+(A) O encerramento do expediente ocorrerá em momento futuro, imediatamente após a chegada do cidadão ao setor de atendimento.
+(B) O encerramento do expediente ocorria de forma habitual e repetitiva todos os dias no exato instante em que o cidadão chegava.
+(C) O encerramento do expediente dependia de uma condição incerta que ainda estava em andamento durante a chegada do cidadão.
+(D) O encerramento do expediente ocorreu no passado antes de outra ação também passada, equivalendo à locução "tinha encerrado".
 
 <details><summary><b>Ver Gabarito e Comentário Detalhado</b></summary>
 
-**Gabarito Oficial: B**
+**Gabarito Oficial: D**
 
 **Por que memorizar assim:**
 * Cuidado para não confundir:
-  - **Encerrará** (com acento no final) = Futuro do Presente (*vai encerrar*).
-  - **Encerrara** (sem acento, som fechado) = Pretérito Mais-que-perfeito (*tinha encerrado antes de o cidadão chegar*).
+  - **Encerrará** (oxítona com acento agudo no final) = Futuro do Presente (*vai encerrar*).
+  - **Encerrara** (paroxítona sem acento, terminação `-ra`) = Pretérito Mais-que-perfeito (*já tinha encerrado antes de o cidadão chegar*).
 
 </details>
 
@@ -186,23 +187,23 @@ Na frase *"Quando o cidadão chegou ao guichê, o expediente já **encerrara**"*
 ### Questão 07
 **Bloco:** 02 — Tempos do Indicativo | **Foco:** Os dois usos do Futuro do Pretérito (`-ria`)
 
-O **Futuro do Pretérito** (reconhecido facilmente pela terminação **`-ria`**) possui dois usos muito cobrados em provas. Analise:
+O **Futuro do Pretérito** (reconhecido pela terminação **`-ria`**) possui dois valores semânticos muito cobrados em provas. Analise:
 * **Uso 1:** *"Se houvesse verba disponível, a secretaria **reformaria** o prédio."*
 * **Uso 2:** *"Senhor Diretor, eu **gostaria** de solicitar a revisão da minha escala."*
 
 Esses dois usos do Futuro do Pretérito expressam, respectivamente:
-(A) Ordem direta ao superior e certeza absoluta de realização futura.
-(B) Hábito antigo no passado e ação concluída antes de outra.
-(C) Fato dependente de uma condição e expressão de polidez/cortesia para suavizar um pedido.
-(D) Dúvida no presente e ação contínua no momento da fala.
+(A) Ordem coercitiva direta ao subordinado e certeza incondicional sobre a realização de um evento futuro.
+(B) Ação rotineira repetida no passado distante e fato integralmente consumado antes de outro evento passado.
+(C) Fato posterior que ocorreria mediante uma condição e expressão de cortesia/polidez para suavizar um pedido.
+(D) Hipótese incerta situada no momento presente e ação contínua que permanece em curso no instante da fala.
 
 <details><summary><b>Ver Gabarito e Comentário Detalhado</b></summary>
 
 **Gabarito Oficial: C**
 
 **Por que memorizar assim:**
-* Em *"reformaria"*, a ação dependia de uma condição (*se houvesse verba*).
-* Em *"gostaria"*, o servidor usa o Futuro do Pretérito por **educação/polidez** para não soar rude dizendo *"eu quero"*.
+* Em *"reformaria"*, a ação passada/futura dependia de uma condição prévia (*se houvesse verba*).
+* Em *"gostaria"*, o servidor usa o Futuro do Pretérito por **cortesia/polidez** para suavizar a solicitação e não soar impositivo dizendo *"eu quero"*.
 
 </details>
 
@@ -211,11 +212,11 @@ Esses dois usos do Futuro do Pretérito expressam, respectivamente:
 ### Questão 08
 **Bloco:** 02 — Tempos do Indicativo | **Foco:** Treino Rápido de Desinências (`-va/-ia`, `-ra`, `-ria`, `-sse`)
 
-Olhando apenas para o "finalzinho" (desinência) de cada verbo abaixo, assinale a alternativa que classifica CORRETAMENTE todas as formas do verbo *fazer*:
-(A) **Fazia** (Pretérito Imperfeito do Indicativo) | **Fizera** (Pretérito Mais-que-perfeito) | **Faria** (Futuro do Pretérito) | **Fizesse** (Pretérito Imperfeito do Subjuntivo).
-(B) **Fazia** (Pretérito Perfeito) | **Fizera** (Futuro do Presente) | **Faria** (Presente) | **Fizesse** (Imperativo).
-(C) **Fazia** (Futuro do Pretérito) | **Fizera** (Pretérito Imperfeito) | **Faria** (Mais-que-perfeito) | **Fizesse** (Futuro do Subjuntivo).
-(D) **Fazia** (Subjuntivo) | **Fizera** (Subjuntivo) | **Faria** (Subjuntivo) | **Fizesse** (Indicativo).
+Olhando para a terminação (desinência modo-temporal) de cada forma do verbo *fazer* abaixo, assinale a alternativa que apresenta a classificação CORRETA de todas elas:
+(A) **Fazia** (Pretérito Imperfeito do Indicativo) | **Fizera** (Pretérito Mais-que-perfeito do Indicativo) | **Faria** (Futuro do Pretérito do Indicativo) | **Fizesse** (Pretérito Imperfeito do Subjuntivo).
+(B) **Fazia** (Pretérito Perfeito do Indicativo) | **Fizera** (Futuro do Presente do Indicativo) | **Faria** (Pretérito Imperfeito do Indicativo) | **Fizesse** (Futuro do Subjuntivo).
+(C) **Fazia** (Futuro do Pretérito do Indicativo) | **Fizera** (Pretérito Imperfeito do Indicativo) | **Faria** (Pretérito Mais-que-perfeito do Indicativo) | **Fizesse** (Presente do Subjuntivo).
+(D) **Fazia** (Pretérito Imperfeito do Subjuntivo) | **Fizera** (Futuro do Pretérito do Indicativo) | **Faria** (Pretérito Perfeito do Indicativo) | **Fizesse** (Pretérito Mais-que-perfeito do Indicativo).
 
 <details><summary><b>Ver Gabarito e Comentário Detalhado</b></summary>
 
@@ -253,7 +254,7 @@ Olhando apenas para o "finalzinho" (desinência) de cada verbo abaixo, assinale 
 ### Questão 09
 **Bloco:** 03 — Verbos Irregulares | **Foco:** Acento Diferencial em *Ter/Vir* e Derivados (*Manter/Intervir*)
 
-Para acertar a concordância escrita de *ter, vir* e seus derivados no presente, basta olhar se o sujeito está no singular ou no plural. Assinale a alternativa em que a acentuação dos verbos está **100% CORRETA**:
+Para acertar a concordância escrita de *ter, vir* e seus derivados no presente do indicativo, basta observar se o sujeito está no singular ou no plural. Assinale a alternativa em que a acentuação dos verbos está **100% CORRETA**:
 (A) O relatório **contêm** erros, mas os anexos **vem** corretos.
 (B) O servidor **mantém** a calma quando os cidadãos **vêm** reclamar.
 (C) Os fiscais **intervém** sempre que a empresa **têm** dívidas.
@@ -277,19 +278,19 @@ Para acertar a concordância escrita de *ter, vir* e seus derivados no presente,
 ### Questão 10
 **Bloco:** 03 — Verbos Irregulares | **Foco:** Passado de *Intervir*, *Provir* e *Manter*
 
-Sabendo que os verbos derivados seguem exatamente a conjugação do verbo-pai (*manter* segue *ter*; *intervir* e *provir* seguem *vir*), assinale a frase **CORRETA**:
-(A) O guarda municipal **interviu** na discussão para acalmar os ânimos.
-(B) A funcionária **manteu** os arquivos trancados na gaveta.
-(C) O diretor **interveio** na reunião e **manteve** o cronograma original.
-(D) Toda a verba **proviu** da arrecadação de impostos municipais.
+Sabendo que os verbos derivados seguem exatamente a conjugação do verbo primitivo (*manter* e *reter* seguem *ter*; *intervir* e *provir* seguem *vir*), assinale a frase **CORRETA**:
+(A) O guarda municipal **interviu** na discussão e **reteu** os documentos do veículo.
+(B) A funcionária **manteu** os arquivos trancados porque a ordem **proviu** da chefia.
+(C) O diretor **interveio** na reunião e **manteve** o cronograma original da licitação.
+(D) Os auditores **interviram** no contrato e **mantiveram** a suspensão do pagamento.
 
 <details><summary><b>Ver Gabarito e Comentário Detalhado</b></summary>
 
 **Gabarito Oficial: C**
 
 **Por que memorizar assim:**
-* Verbo *VIR* no passado = ele **veio** $\to$ logo, o diretor **interveio** e a verba **proveio** (jamais *interviu* ou *proviu*).
-* Verbo *TER* no passado = ele **teve** $\to$ logo, a funcionária **manteve** (jamais *manteu*).
+* Verbo *VIR* no Pretérito Perfeito = *ele **veio** / eles **vieram*** $\to$ logo, o diretor **interveio**, a ordem **proveio** e os auditores **intervieram** (jamais *interviu*, *proviu* ou *interviram* no passado!).
+* Verbo *TER* no Pretérito Perfeito = *ele **teve*** $\to$ logo, o guarda **reteve** e a funcionária **manteve** (jamais *reteu* ou *manteu*).
 
 </details>
 
@@ -298,19 +299,19 @@ Sabendo que os verbos derivados seguem exatamente a conjugação do verbo-pai (*
 ### Questão 11
 **Bloco:** 03 — Verbos Irregulares | **Foco:** Duelo *VER* vs. *VIR* no Futuro do Subjuntivo
 
-Complete as duas lacunas abaixo aplicando a diferença entre o verbo **VER** (olhar/enxergar) e o verbo **VIR** (chegar/comparecer):
+Complete as duas lacunas abaixo aplicando a diferença entre o verbo **VER** (olhar/conferir) e o verbo **VIR** (chegar/comparecer) no Futuro do Subjuntivo:
 1. *"Quando você ______ o chefe no corredor, entregue-lhe este recado."* (Verbo **VER**)
 2. *"Quando o engenheiro ______ até a prefeitura amanhã, assinará a planta."* (Verbo **VIR**)
 
 As formas que preenchem CORRETAMENTE as lacunas 1 e 2 são:
 (A) ver – vir.
-(B) vir – vier.
-(C) vier – vir.
-(D) ver – vier.
+(B) vier – vir.
+(C) ver – vier.
+(D) vir – vier.
 
 <details><summary><b>Ver Gabarito e Comentário Detalhado</b></summary>
 
-**Gabarito Oficial: B**
+**Gabarito Oficial: D**
 
 **Macete para nunca mais esquecer:**
 * Na frase 1, você vai **enxergar** o chefe (verbo **VER**) $\to$ *"Quando você **vir** o chefe"* (nunca diga *"quando você ver"*!).
@@ -321,24 +322,24 @@ As formas que preenchem CORRETAMENTE as lacunas 1 e 2 são:
 ---
 
 ### Questão 12
-**Bloco:** 03 — Verbos Irregulares | **Foco:** Família *PÔR* (*Propor, Dispor, Repor*)
+**Bloco:** 03 — Verbos Irregulares | **Foco:** Família *PÔR* (*Propor, Dispor, Repor, Compor*)
 
-Os verbos derivados de **pôr** (*propor, dispor, repor, compor*) são campeões de erros em provas. Assinale a alternativa em que TODAS as formas verbais estão conjugadas CORRETAMENTE:
-(A) Se o candidato ** dispor** de tempo e **propor** um bom plano, vencerá.
+Os verbos derivados de **pôr** (*propor, dispor, repor, compor*) seguem rigorosamente o verbo primitivo (*puser / pusesse*). Assinale a alternativa em que AMBAS as formas verbais destacadas estão conjugadas CORRETAMENTE:
+(A) Se o candidato **dispor** de tempo livre e **propor** um bom plano, será selecionado.
 (B) Caso a equipe **repusesse** as horas e **dispusesse** dos materiais, a obra terminaria hoje.
-(C) Se o prefeito **proposse** um novo projeto, a Câmara votaria.
-(D) Quando você **compor** a comissão, avise a secretaria.
+(C) Se o prefeito **proposse** um novo projeto e **composse** a mesa diretora, a Câmara votaria.
+(D) Quando você **compor** a comissão técnica e **repor** os relatórios, avise a secretaria.
 
 <details><summary><b>Ver Gabarito e Comentário Detalhado</b></summary>
 
 **Gabarito Oficial: B**
 
 **Por que memorizar assim:**
-* Verbo *pôr* no Imperfeito do Subjuntivo = *se eu **pusesse*** $\to$ logo, *se a equipe **repusesse*** e ***dispusesse***.
+* Verbo *pôr* no Imperfeito do Subjuntivo = *se eu **pusesse*** $\to$ logo, *caso a equipe **repusesse*** e ***dispusesse***.
 * Onde estão os erros das outras?
-  - (A) O certo é: *"Se o candidato **dispuser** de tempo e **propuser**..."*.
-  - (C) *"Proposse"* não existe! O certo é **propusesse**.
-  - (D) O certo é: *"Quando você **compuser** a comissão..."*.
+  - (A) No Futuro do Subjuntivo (*Se...*), o certo é: *"Se o candidato **dispuser** de tempo e **propuser**..."*.
+  - (C) *"Proposse"* e *"composse"* não existem! O certo é **propusesse** e **compusesse**.
+  - (D) No Futuro do Subjuntivo (*Quando...*), o certo é: *"Quando você **compuser** a comissão e **repuser** os relatórios..."*.
 
 </details>
 
@@ -365,17 +366,17 @@ Os verbos derivados de **pôr** (*propor, dispor, repor, compor*) são campeões
 > * *"Consertaram-se **os computadores**"* (= Os computadores foram consertados $\to$ plural!).
 
 ### Questão 13
-**Bloco:** 04 — Formas Nominais e Vozes | **Foco:** Infinitivo, Gerúndio, Particípio e Gerundismo
+**Bloco:** 04 — Formas Nominais e Vozes | **Foco:** Infinitivo, Gerúndio e Particípio
 
-Analise as palavras destacadas na frase: *"Para **organizar** o setor, o chefe estava **conferindo** os carimbos que tinham sido **comprados**."* As três formas nominais destacadas são, respectivamente:
-(A) Gerúndio – Particípio – Infinitivo.
-(B) Infinitivo (-r) – Gerúndio (-ndo) – Particípio (-do).
+Analise as palavras destacadas na frase: *"Para **organizar** o setor, o chefe estava **conferindo** os carimbos que tinham sido **comprados**."* As três formas nominais destacadas classificam-se, respectivamente, como:
+(A) Infinitivo – Gerúndio – Particípio.
+(B) Gerúndio – Particípio – Infinitivo.
 (C) Particípio – Infinitivo – Gerúndio.
 (D) Infinitivo – Particípio – Gerúndio.
 
 <details><summary><b>Ver Gabarito e Comentário Detalhado</b></summary>
 
-**Gabarito Oficial: B**
+**Gabarito Oficial: A**
 
 **Identificação imediata pelas terminações:**
 * **Organizar** (termina em `-r`) $\to$ **Infinitivo**.
@@ -395,18 +396,18 @@ Observe quem pratica e quem recebe a ação nas três frases abaixo:
 3. *"O estagiário **machucou-se** ao fechar a gaveta de aço."*
 
 As frases 1, 2 e 3 encontram-se, respectivamente, na:
-(A) 1. Voz Passiva – 2. Voz Ativa – 3. Voz Reflexiva.
-(B) 1. Voz Ativa – 2. Voz Passiva Analítica – 3. Voz Reflexiva.
-(C) 1. Voz Reflexiva – 2. Voz Passiva Sintética – 3. Voz Ativa.
-(D) 1. Voz Ativa – 2. Voz Reflexiva – 3. Voz Passiva.
+(A) 1. Voz Passiva Analítica – 2. Voz Ativa – 3. Voz Reflexiva.
+(B) 1. Voz Reflexiva – 2. Voz Passiva Sintética – 3. Voz Ativa.
+(C) 1. Voz Ativa – 2. Voz Passiva Analítica – 3. Voz Reflexiva.
+(D) 1. Voz Ativa – 2. Voz Reflexiva – 3. Voz Passiva Sintética.
 
 <details><summary><b>Ver Gabarito e Comentário Detalhado</b></summary>
 
-**Gabarito Oficial: B**
+**Gabarito Oficial: C**
 
 **Por que memorizar assim:**
 * **Frase 1:** A secretária praticou a ação $\to$ **Voz Ativa**.
-* **Frase 2:** O edital sofreu a ação de ser redigido (*foi redigido*) $\to$ **Voz Passiva Analítica**.
+* **Frase 2:** O edital sofreu a ação de ser redigido (*foi redigido*, com verbo auxiliar + particípio) $\to$ **Voz Passiva Analítica**.
 * **Frase 3:** O estagiário praticou e sofreu a ação em si mesmo (*machucou a si próprio*) $\to$ **Voz Reflexiva**.
 
 </details>
@@ -416,19 +417,19 @@ As frases 1, 2 e 3 encontram-se, respectivamente, na:
 ### Questão 15
 **Bloco:** 04 — Formas Nominais e Vozes | **Foco:** Transformar Passiva Sintética (`Verbo + SE`) em Analítica
 
-Na frase *"**Arquivaram-se** os processos antigos"*, temos a chamada **Voz Passiva Sintética** (formada por verbo + partícula apassivadora *se*). Como fica essa mesma frase quando reescrita na **Voz Passiva Analítica**, mantendo o mesmo tempo verbal (passado)?
-(A) Os processos antigos arquivaram a si mesmos.
+Na frase *"**Arquivaram-se** os processos antigos"*, temos a chamada **Voz Passiva Sintética** (formada por verbo transitivo direto + partícula apassivadora *se*). Como fica essa mesma frase quando reescrita na **Voz Passiva Analítica**, mantendo exatamente o mesmo tempo verbal?
+(A) Os processos antigos estão sendo arquivados.
 (B) Os processos antigos serão arquivados.
-(C) Os processos antigos foram arquivados.
-(D) Alguém arquivava os processos antigos.
+(C) Os processos antigos tinham sido arquivados.
+(D) Os processos antigos foram arquivados.
 
 <details><summary><b>Ver Gabarito e Comentário Detalhado</b></summary>
 
-**Gabarito Oficial: C**
+**Gabarito Oficial: D**
 
 **Teste da Equivalência Passiva:**
-* *"**Arquivaram-se** os processos antigos"* (Pretérito Perfeito) = *"Os processos antigos **foram arquivados**"*.
-* Se estivesse no presente (*"Arquivam-se os processos"*), equivaleria a *"Os processos **são arquivados**"*.
+* *"**Arquivaram-se** os processos antigos"* está no Pretérito Perfeito do Indicativo, equivalendo exatamente a *"Os processos antigos **foram arquivados**"*.
+* Se estivesse no presente (*"Arquivam-se os processos"*), equivaleria a *"Os processos **são arquivados**"*; se estivesse no futuro (*"Arquivar-se-ão os processos"*), equivaleria a *"Os processos **serão arquivados**"*.
 
 </details>
 
@@ -437,18 +438,18 @@ Na frase *"**Arquivaram-se** os processos antigos"*, temos a chamada **Voz Passi
 ### Questão 16
 **Bloco:** 04 — Formas Nominais e Vozes | **Foco:** Concordância com a Partícula Apassivadora "SE"
 
-Na Voz Passiva Sintética, o verbo concorda obrigatoriamente com a coisa que sofre a ação. Aplicando essa regra, assinale a frase **CORRETA**:
-(A) **Vende-se** terrenos comerciais no centro de Birigui.
-(B) **Aluga-se** salas amplas para escritórios.
-(C) **Analisaram-se** todas as propostas enviadas pelos licitantes.
-(D) **Conserta-se** impressoras e computadores antigos.
+Na Voz Passiva Sintética, o verbo concorda obrigatoriamente em número com o sujeito paciente (a coisa que sofre a ação). Aplicando essa regra, assinale a frase **CORRETA**:
+(A) **Vende-se** terrenos comerciais bem localizados no centro de Birigui.
+(B) **Aluga-se** salas amplas e climatizadas para escritórios contábeis.
+(C) **Analisaram-se** todas as propostas enviadas pelos licitantes no pregão.
+(D) **Conserta-se** impressoras multifuncionais e computadores antigos.
 
 <details><summary><b>Ver Gabarito e Comentário Detalhado</b></summary>
 
 **Gabarito Oficial: C**
 
 **Como nunca errar essa questão:**
-* Faça a inversão mental: *"Todas as propostas **foram analisadas**"*. Como *propostas* está no plural, o verbo é obrigado a ficar no plural: **Analisaram-se**!
+* Faça a inversão mental para a passiva analítica: *"Todas as propostas **foram analisadas**"*. Como *propostas* está no plural, o verbo é obrigado a ficar no plural: **Analisaram-se**!
 * Nas outras, o correto seria: **Vendem-se** terrenos, **Alugam-se** salas, **Consertam-se** impressoras.
 
 </details>
@@ -480,11 +481,11 @@ Na Voz Passiva Sintética, o verbo concorda obrigatoriamente com a coisa que sof
 Lembrando que o advérbio modifica apenas **Verbo, Adjetivo ou outro Advérbio** (e nunca um substantivo), analise a frase:
 *"A nova atendente trabalha **muito** **bem** e deixou os moradores **extremamente** satisfeitos."*
 
-Sobre as palavras destacadas, assinale a alternativa CORRETA:
-(A) "muito", "bem" e "extremamente" são adjetivos que qualificam o substantivo "atendente".
-(B) "bem" é advérbio que modifica o verbo "trabalha"; "muito" é advérbio que intensifica o advérbio "bem"; e "extremamente" é advérbio que intensifica o adjetivo "satisfeitos".
-(C) "muito" deveria ir para o feminino ("muita bem"), pois a atendente é mulher.
-(D) "extremamente" modifica o substantivo "moradores".
+Sobre a função de cada termo destacado, assinale a alternativa CORRETA:
+(A) "bem" modifica o substantivo "atendente"; "muito" modifica o verbo "trabalha"; e "extremamente" modifica o substantivo "moradores".
+(B) "bem" modifica o verbo "trabalha"; "muito" intensifica o advérbio "bem"; e "extremamente" intensifica o adjetivo "satisfeitos".
+(C) "bem" intensifica o advérbio "muito"; "muito" qualifica o substantivo "atendente"; e "extremamente" modifica o verbo "deixou".
+(D) "bem" modifica o adjetivo "nova"; "muito" modifica o verbo "deixou"; e "extremamente" qualifica o substantivo "moradores".
 
 <details><summary><b>Ver Gabarito e Comentário Detalhado</b></summary>
 
@@ -503,10 +504,10 @@ Sobre as palavras destacadas, assinale a alternativa CORRETA:
 **Bloco:** 05 — O Advérbio | **Foco:** O Caso Clássico de *Meio* vs. *Meia*
 
 Aplique o teste do *"um pouco"* (advérbio invariável) vs. *"metade"* (numeral variável) e assinale a alternativa **100% CORRETA**:
-(A) A diretora ficou **meia** chateada porque a reunião atrasou **meia** hora.
-(B) As portas do armário estavam **meias** abertas quando cheguei.
-(C) A candidata estava **meio** nervosa, tomou **meia** xícara de chá e saiu ao meio-dia e **meia**.
-(D) Ela comprou **meio** melancia na feira e ficou **meio** arrependida.
+(A) A diretora ficou **meia** chateada porque perdeu **meia** manhã de trabalho e saiu ao meio-dia e **meio**.
+(B) As janelas da sala ficaram **meias** abertas depois que caiu **meia** garrafa de água e **meio** copo de café.
+(C) A candidata estava **meio** nervosa, tomou **meia** xícara de chá e encerrou a prova ao meio-dia e **meia**.
+(D) Ela comprou **meio** melancia na feira, deixou as sacolas **meias** vazias e ficou **meio** arrependida.
 
 <details><summary><b>Ver Gabarito e Comentário Detalhado</b></summary>
 
@@ -515,7 +516,8 @@ Aplique o teste do *"um pouco"* (advérbio invariável) vs. *"metade"* (numeral 
 **Por que a letra C é perfeita:**
 * *"**meio** nervosa"* = *um pouco* nervosa (advérbio invariável $\to$ fica **meio**).
 * *"**meia** xícara"* = *metade* de uma xícara (numeral antes de substantivo feminino $\to$ fica **meia**).
-* *"meio-dia e **meia**"* = meio-dia e *meia hora* (fica **meia**).
+* *"meio-dia e **meia**"* = meio-dia e *meia hora* (subentende o substantivo feminino *hora* $\to$ fica **meia**).
+* Erros das outras: em (A), o certo é *meio chateada* e *meio-dia e meia*; em (B), *meio abertas*; em (D), *meia melancia* e *meio vazias*.
 
 </details>
 
@@ -524,20 +526,22 @@ Aplique o teste do *"um pouco"* (advérbio invariável) vs. *"metade"* (numeral 
 ### Questão 19
 **Bloco:** 05 — O Advérbio | **Foco:** O Teste do *Bastante* vs. *Bastantes* (Troca por *Muito/Muitos*)
 
-Substitua mentalmente por **muito** (invariável) ou **muitos/muitas** (variável) e assinale a frase **CORRETA**:
-(A) Os novos computadores são **bastantes** rápidos para o setor.
-(B) Os candidatos estudaram **bastantes** para a prova de domingo.
-(C) Havia **bastantes** pessoas aguardando na fila, mas todas estavam **bastante** calmas.
-(D) Foram protocolados **bastante** requerimentos hoje cedo.
+Substitua mentalmente por **muito** (invariável) ou **muitos/muitas** (variável) e assinale a frase **100% CORRETA**:
+(A) Havia **bastantes** pessoas aguardando na fila, mas todas permaneciam **bastante** calmas.
+(B) Os novos computadores são **bastantes** rápidos e possuem **bastante** programas instalados.
+(C) Os candidatos estudaram **bastantes** para o concurso e resolveram **bastantes** simulados.
+(D) Foram protocolados **bastante** requerimentos hoje cedo por servidores **bastantes** experientes.
 
 <details><summary><b>Ver Gabarito e Comentário Detalhado</b></summary>
 
-**Gabarito Oficial: C**
+**Gabarito Oficial: A**
 
 **Aplicando a troca pelo "Muito / Muitos":**
-* *"Havia **muitas** pessoas"* (plural, acompanha o substantivo *pessoas*) $\to$ **bastantes** pessoas.
-* *"todas estavam **muito** calmas"* (singular, modifica o adjetivo *calmas*) $\to$ **bastante** calmas.
-* Nas demais: (A) *muito rápidos* $\to$ **bastante** rápidos; (B) *estudaram muito* $\to$ estudaram **bastante**; (D) *muitos requerimentos* $\to$ **bastantes** requerimentos.
+* Na (A): *"Havia **muitas** pessoas"* (plural, acompanha o substantivo *pessoas*) $\to$ **bastantes** pessoas. *"Todas permaneciam **muito** calmas"* (singular, modifica o adjetivo *calmas*) $\to$ **bastante** calmas.
+* Nas demais:
+  - (B) *muito rápidos* ($\to$ **bastante** rápidos) e *muitos programas* ($\to$ **bastantes** programas).
+  - (C) *estudaram muito* ($\to$ estudaram **bastante**).
+  - (D) *muitos requerimentos* ($\to$ **bastantes** requerimentos) e *muito experientes* ($\to$ **bastante** experientes).
 
 </details>
 
@@ -546,19 +550,19 @@ Substitua mentalmente por **muito** (invariável) ou **muitos/muitas** (variáve
 ### Questão 20
 **Bloco:** 05 — O Advérbio | **Foco:** Adjetivo Comum (Variável) vs. Adjetivo Adverbializado (Invariável)
 
-Compare os pares de frases e assinale a alternativa em que a palavra destacada funciona como **ADVÉRBIO** (e por isso ficou invariável no masculino singular):
-(A) As funcionárias compraram roupas **caras** no centro.
-(B) Os professores têm vozes **altas** e firmes.
-(C) As atletas treinaram **duro** e falaram **claro** durante a entrevista.
-(D) Eles beberam duas águas **geladas** após a corrida.
+Compare as frases abaixo e assinale a alternativa em que AMBAS as palavras destacadas funcionam como **ADVÉRBIO** (permanecendo invariáveis no masculino singular):
+(A) As funcionárias compraram roupas **caras** e bolsas **finas** na loja do centro.
+(B) Os palestrantes têm vozes **altas** e palavras **claras** durante as reuniões.
+(C) Eles enfrentaram provas **duras** e tarefas **difíceis** ao longo do treinamento.
+(D) As atletas treinaram **duro** e falaram **claro** durante a entrevista coletiva.
 
 <details><summary><b>Ver Gabarito e Comentário Detalhado</b></summary>
 
-**Gabarito Oficial: C**
+**Gabarito Oficial: D**
 
 **Por que memorizar assim:**
-* Em (A) *roupas caras*, (B) *vozes altas* e (D) *águas geladas*, as palavras qualificam substantivos, logo são **adjetivos** e vão para o feminino plural.
-* Em (C), *"treinaram **duro**"* e *"falaram **claro**"* modificam os verbos *treinaram* e *falaram* (indicam o *modo* de treinar e falar: *arduamente* e *claramente*). Por isso, viraram **advérbios invariáveis**!
+* Em (A) *roupas caras / bolsas finas*, (B) *vozes altas / palavras claras* e (C) *provas duras / tarefas difíceis*, as palavras qualificam substantivos; logo, são **adjetivos** e flexionam no plural.
+* Em (D), *"treinaram **duro**"* e *"falaram **claro**"* modificam os verbos *treinaram* e *falaram* (indicam o *modo* de treinar e falar: *arduamente* e *claramente*). Por isso, são **adjetivos adverbializados** (advérbios invariáveis)!
 
 </details>
 
@@ -585,11 +589,11 @@ Compare os pares de frases e assinale a alternativa em que a palavra destacada f
 ### Questão 21
 **Bloco:** 06 — Palavra "A" e Preposições | **Foco:** Diferenciar "A" Artigo de "A" Preposição
 
-Observe a palavra que vem logo depois do **"a"** e assinale a alternativa em que o **"a"** destacado é uma **PREPOSIÇÃO** (invariável):
-(A) **A** prefeitura divulgou o resultado oficial.
-(B) O servidor organizou **a** gaveta do armário.
-(C) O diretor começou **a** falar e entregou o prêmio **a** ela.
-(D) **A** comissão avaliou o requerimento.
+Observe a palavra que vem logo depois de cada **"a"** destacado e assinale a alternativa em que AMBAS as ocorrências são **PREPOSIÇÕES** (invariáveis):
+(A) **A** prefeitura divulgou **a** lista oficial de aprovados no diário.
+(B) O servidor organizou **a** gaveta e trancou **a** porta do armário.
+(C) O diretor começou **a** falar na reunião e entregou o relatório **a** ela.
+(D) **A** comissão avaliou **a** documentação entregue pelos candidatos.
 
 <details><summary><b>Ver Gabarito e Comentário Detalhado</b></summary>
 
@@ -597,7 +601,7 @@ Observe a palavra que vem logo depois do **"a"** e assinale a alternativa em que
 
 **Olhe como é fácil identificar a Preposição:**
 * Antes de verbo no infinitivo (*começou **a** falar*) e antes de pronome pessoal (*entregou **a** ela*), jamais existe artigo! Portanto, em ambos os casos da letra (C), o **"a"** é **Preposição**.
-* Nas letras (A) *a prefeitura*, (B) *a gaveta* e (D) *a comissão*, o "a" acompanha substantivos femininos $\to$ é **Artigo Definido**.
+* Nas letras (A), (B) e (D), todas as ocorrências antecedem substantivos femininos (*prefeitura, lista, gaveta, porta, comissão, documentação*) $\to$ são **Artigos Definidos**.
 
 </details>
 
@@ -606,18 +610,19 @@ Observe a palavra que vem logo depois do **"a"** e assinale a alternativa em que
 ### Questão 22
 **Bloco:** 06 — Palavra "A" e Preposições | **Foco:** Identificar o "A" Pronome Pessoal Oblíquo
 
-O **"a"** é classificado como **Pronome Pessoal Oblíquo** quando substitui um nome feminino já dito antes (funcionando como *"ela"*). Assinale a alternativa em que o **"a"** destacado é um **PRONOME**:
-(A) Daqui **a** duas horas encerraremos o atendimento.
+O **"a"** é classificado como **Pronome Pessoal Oblíquo** quando substitui um substantivo feminino já citado antes (funcionando como complemento verbal equivalente a *"ela"*). Assinale a alternativa em que o **"a"** destacado é um **PRONOME PESSOAL OBLÍQUO**:
+(A) Daqui **a** duas horas encerraremos o atendimento presencial no guichê.
 (B) Como a certidão estava pronta, o atendente **a** entregou ao cidadão.
-(C) Enviei um ofício **a** Vossa Senhoria ontem cedo.
-(D) **A** leitura atenta evita erros na prova.
+(C) Enviei um ofício circular **a** Vossa Senhoria na manhã de ontem.
+(D) Durante **a** leitura da ata, os membros aprovaram o balancete.
 
 <details><summary><b>Ver Gabarito e Comentário Detalhado</b></summary>
 
 **Gabarito Oficial: B**
 
 **Por que memorizar assim:**
-* Na letra (B): *"o atendente **a** entregou"* = o atendente entregou **ela** (a certidão). Se fosse *o documento* (masculino), ficaria: *"o atendente **o** entregou"*. Logo, esse **"a"** é **Pronome Pessoal Oblíquo**!
+* Na letra (B): *"o atendente **a** entregou"* = o atendente entregou **ela** (*a certidão*). Se trocarmos por um substantivo masculino (*o documento*), fica: *"o atendente **o** entregou"*. Logo, esse **"a"** é **Pronome Pessoal Oblíquo**!
+* Em (A) e (C), temos **Preposição**; em (D), temos **Artigo Definido**.
 
 </details>
 
@@ -627,10 +632,10 @@ O **"a"** é classificado como **Pronome Pessoal Oblíquo** quando substitui um 
 **Bloco:** 06 — Palavra "A" e Preposições | **Foco:** As 3 Funções do "A" na Mesma Frase
 
 Na frase: *"**A** diretora chamou a estagiária, começou **a** orientá-la e depois **a** elogiou diante da equipe"*, os três **"a"** em destaque classificam-se, na ordem em que aparecem, como:
-(A) Preposição – Artigo definido – Pronome oblíquo.
-(B) Artigo definido – Preposição – Pronome pessoal oblíquo.
-(C) Pronome oblíquo – Preposição – Artigo definido.
-(D) Artigo definido – Pronome oblíquo – Preposição.
+(A) Preposição essencial – Artigo definido – Pronome pessoal oblíquo.
+(B) Artigo definido – Preposição essencial – Pronome pessoal oblíquo.
+(C) Pronome pessoal oblíquo – Preposição essencial – Artigo definido.
+(D) Artigo definido – Pronome pessoal oblíquo – Preposição essencial.
 
 <details><summary><b>Ver Gabarito e Comentário Detalhado</b></summary>
 
@@ -638,7 +643,7 @@ Na frase: *"**A** diretora chamou a estagiária, começou **a** orientá-la e de
 
 **Passo a passo de 3 segundos:**
 1. *"**A** diretora"* $\to$ vem antes do substantivo feminino *diretora* = **Artigo definido**.
-2. *"começou **a** orientá-la"* $\to$ vem antes de verbo no infinitivo (*orientar*) = **Preposição**.
+2. *"começou **a** orientá-la"* $\to$ vem antes de verbo no infinitivo (*orientar*) = **Preposição essencial**.
 3. *"depois **a** elogiou"* $\to$ substitui *a estagiária* (= elogiou *ela*) = **Pronome pessoal oblíquo**.
 
 </details>
@@ -648,20 +653,22 @@ Na frase: *"**A** diretora chamou a estagiária, começou **a** orientá-la e de
 ### Questão 24
 **Bloco:** 06 — Palavra "A" e Preposições | **Foco:** O Sentido Semântico das Preposições
 
-As preposições mudam de sentido conforme o contexto da frase. Assinale a alternativa que indica CORRETAMENTE o sentido das preposições destacadas:
-(A) Em *"Assinou o termo **com** caneta azul"*, a preposição indica **companhia**.
-(B) Em *"O paciente tremia **de** febre"*, a preposição indica **matéria**.
-(C) Em *"Abriu o envelope **com** um abridor"* e *"Debateram **sobre** o orçamento"*, as preposições indicam, respectivamente, **instrumento** e **assunto**.
-(D) Em *"Viajou **para** estudar"*, a preposição indica **causa passada**.
+As preposições estabelecem diferentes relações de sentido conforme o contexto. Assinale a alternativa que indica CORRETAMENTE o valor semântico das duas preposições destacadas:
+(A) Em *"Assinou o termo **com** caneta azul"* e *"Viajou **para** descansar"*, indicam **companhia** e **causa**.
+(B) Em *"O paciente tremia **de** febre"* e *"Voltou **de** Campinas"*, indicam **matéria** e **finalidade**.
+(C) Em *"Saiu **com** os colegas"* e *"Morava **em** Birigui"*, indicam **instrumento** e **assunto**.
+(D) Em *"Abriu o malote **com** a chave"* e *"Debateram **sobre** o orçamento"*, indicam **instrumento** e **assunto**.
 
 <details><summary><b>Ver Gabarito e Comentário Detalhado</b></summary>
 
-**Gabarito Oficial: C**
+**Gabarito Oficial: D**
 
 **Conferindo os sentidos:**
-* *Abriu **com** um abridor* $\to$ a ferramenta usada para fazer a ação = **Instrumento**.
-* *Debateram **sobre** o orçamento* $\to$ o tema do debate = **Assunto**.
-* Nas outras: (A) *com caneta azul* é **instrumento**; (B) *tremia de febre* é **causa**; (D) *viajou para estudar* é **finalidade/objetivo**.
+* Na (D): *Abriu **com** a chave* $\to$ a ferramenta usada para realizar a ação = **Instrumento**. *Debateram **sobre** o orçamento* $\to$ o tema do debate = **Assunto**.
+* Nas outras:
+  - (A) *com caneta azul* é **instrumento** e *para descansar* é **finalidade**.
+  - (B) *tremia de febre* é **causa** e *voltou de Campinas* é **origem/procedência**.
+  - (C) *saiu com os colegas* é **companhia** e *morava em Birigui* é **lugar**.
 
 </details>
 
@@ -694,11 +701,11 @@ As preposições mudam de sentido conforme o contexto da frase. Assinale a alter
 ### Questão 25
 **Bloco:** 07 — Conjunções | **Foco:** Adversativas vs. Conclusivas vs. Explicativas
 
-Muitos candidatos confundem os conectivos mais formais como *todavia*, *por conseguinte* e *porquanto*. Assinale a alternativa que relaciona CORRETAMENTE cada conjunção ao seu grupo e sinônimo direto:
-(A) **Todavia / Contudo** = Adversativas (= *mas, porém*) | **Por conseguinte** = Conclusiva (= *portanto, logo*) | **Porquanto** = Explicativa/Causal (= *porque, visto que*).
-(B) **Todavia** = Conclusiva (= *portanto*) | **Por conseguinte** = Adversativa (= *mas*) | **Porquanto** = Proporcional.
-(C) **Contudo** = Aditiva (= *e*) | **Por conseguinte** = Explicativa (= *porque*) | **Porquanto** = Conclusiva.
-(D) Todas as quatro palavras (*todavia, contudo, por conseguinte, porquanto*) têm sentido de oposição.
+Muitos candidatos confundem os conectivos formais **todavia**, **por conseguinte** e **porquanto**. Assinale a alternativa que relaciona CORRETAMENTE cada um deles à sua classificação e ao seu sinônimo direto:
+(A) **Todavia**: Adversativa (*porém*) | **Por conseguinte**: Conclusiva (*portanto*) | **Porquanto**: Explicativa/Causal (*porque*).
+(B) **Todavia**: Conclusiva (*portanto*) | **Por conseguinte**: Adversativa (*porém*) | **Porquanto**: Concessiva (*embora*).
+(C) **Todavia**: Explicativa (*porque*) | **Por conseguinte**: Conformativa (*conforme*) | **Porquanto**: Conclusiva (*portanto*).
+(D) **Todavia**: Concessiva (*embora*) | **Por conseguinte**: Explicativa (*porque*) | **Porquanto**: Adversativa (*porém*).
 
 <details><summary><b>Ver Gabarito e Comentário Detalhado</b></summary>
 
@@ -706,8 +713,8 @@ Muitos candidatos confundem os conectivos mais formais como *todavia*, *por cons
 
 **Dica de Ouro para Memorizar:**
 * **Mas, porém, contudo, todavia, entretanto, no entanto** $\to$ são as 6 irmãs **Adversativas** (oposição).
-* **Logo, portanto, por conseguinte** $\to$ **Conclusivas** (conclusão).
-* **Porquanto** $\to$ é exatamente igual a **porque** (**Explicativa / Causal**).
+* **Logo, portanto, por conseguinte** $\to$ **Conclusivas** (conclusão lógica).
+* **Porquanto** $\to$ equivale exatamente a **porque / visto que** (**Explicativa / Causal**).
 
 </details>
 
@@ -716,23 +723,23 @@ Muitos candidatos confundem os conectivos mais formais como *todavia*, *por cons
 ### Questão 26
 **Bloco:** 07 — Conjunções | **Foco:** O Duelo Adversativa (*Mas/Porém*) vs. Concessiva (*Embora/Conquanto*)
 
-Tanto as **Adversativas** quanto as **Concessivas** expressam ideias contrárias/opostas. Como diferenciá-las imediatamente na prova? Analise as duas frases:
+Tanto as **Adversativas** quanto as **Concessivas** expressam ideias de contraste. Analise as duas frases:
 * **Frase 1:** *"O servidor estava gripado, **porém** **compareceu** ao plantão."*
 * **Frase 2:** *"**Conquanto** o servidor **estivesse** gripado, compareceu ao plantão."*
 
-Assinale a alternativa CORRETA sobre elas:
-(A) "Porém" é conjunção concessiva e "Conquanto" é conjunção conclusiva.
-(B) Na Frase 1, "porém" é coordenativa **adversativa** (usa verbo no Indicativo); na Frase 2, "conquanto" (igual a *embora, ainda que, posto que*) é subordinativa **concessiva** (exige verbo no Subjuntivo e indica um obstáculo que não impediu o comparecimento).
-(C) "Conquanto" indica proporção matemática de tempo.
-(D) Ambas as palavras indicam causa e motivo da gripe do servidor.
+Assinale a alternativa CORRETA sobre os conectivos e modos verbais das duas frases:
+(A) Na Frase 1, "porém" é subordinativa concessiva com verbo no Subjuntivo; na Frase 2, "conquanto" é coordenativa conclusiva com verbo no Indicativo.
+(B) Na Frase 1, "porém" é coordenativa explicativa com verbo no Imperativo; na Frase 2, "conquanto" é subordinativa proporcional com verbo no Indicativo.
+(C) Na Frase 1, "porém" é coordenativa adversativa com verbo no Indicativo; na Frase 2, "conquanto" é subordinativa concessiva com verbo no Subjuntivo.
+(D) Na Frase 1, "porém" é subordinativa causal com verbo no Indicativo; na Frase 2, "conquanto" é coordenativa adversativa com verbo no Subjuntivo.
 
 <details><summary><b>Ver Gabarito e Comentário Detalhado</b></summary>
 
-**Gabarito Oficial: B**
+**Gabarito Oficial: C**
 
 **Memorize o Quarteto Concessivo:**
 * **Embora = Ainda que = Conquanto = Posto que**.
-* Todas elas são **Concessivas** e sempre puxam o verbo para o **Modo Subjuntivo** (*estivesse, fosse, fizesse, chova*).
+* Todas elas são subordinativas **Concessivas** (indicam um obstáculo que não impede o fato principal) e sempre exigem o verbo no **Modo Subjuntivo** (*estivesse, fosse, fizesse*). Já *porém* é coordenativa **Adversativa** e usa verbo no **Indicativo** (*compareceu*).
 
 </details>
 
@@ -741,49 +748,53 @@ Assinale a alternativa CORRETA sobre elas:
 ### Questão 27
 **Bloco:** 07 — Conjunções | **Foco:** *À medida que* (Proporção) vs. *Na medida em que* (Causa)
 
-Assinale a alternativa que emprega e classifica CORRETAMENTE as locuções **"à medida que"** e **"na medida em que"**:
-(A) *"À medida em que estudamos, aprendemos mais"* está correta e indica causa.
-(B) Em *"**À medida que** os anos passam, a cidade cresce"*, a locução indica **proporção** (evolução gradual e simultânea); já em *"O prédio foi interditado **na medida em que** apresentava rachaduras"*, a locução indica **causa** (= *porque / já que*).
-(C) *"À medida que"* indica finalidade e *"na medida em que"* indica oposição.
-(D) Ambas as expressões são proibidas na norma culta da língua portuguesa.
+Considere os dois períodos abaixo:
+* **Período I:** *"**À medida que** os novos sistemas eram implantados, o tempo de espera no balcão diminuía."*
+* **Período II:** *"O alvará foi cassado **na medida em que** a empresa descumpriu as normas sanitárias."*
+
+As locuções destacadas nos Períodos I e II estão corretas e expressam, respectivamente, relações de:
+(A) Causa e proporção.
+(B) Finalidade e concessão.
+(C) Condição e consequência.
+(D) Proporção e causa.
 
 <details><summary><b>Ver Gabarito e Comentário Detalhado</b></summary>
 
-**Gabarito Oficial: B**
+**Gabarito Oficial: D**
 
 **Regra de Ouro:**
-* **À medida que** (com crase, sem "em") = **Proporção** (*à proporção que*).
-* **Na medida em que** (sem crase, com "na" e "em") = **Causa** (*porque, visto que*).
-* ❌ *"À medida em que"* = **ERRADO** (cruzamento proibido das duas!).
+* **À medida que** (com crase, sem "em") = **Proporção** (*à proporção que*: evolução gradual e simultânea).
+* **Na medida em que** (sem crase, com "na" e "em") = **Causa** (*porque, já que, visto que*).
+* 🚨 Lembre-se: a mistura *"à medida em que"* **não existe** na norma culta!
 
 </details>
 
 ---
 
 ### Questão 28
-**Bloco:** 07 — Conjunções | **Foco:** Identificar Causa, Condição, Conformidade, Consequência e Finalidade
+**Bloco:** 07 — Conjunções | **Foco:** Identificar Causa, Conformidade, Consequência e Finalidade
 
-Observe as palavras destacadas nas quatro frases abaixo:
+Observe os conectivos destacados nas quatro frases abaixo:
 1. *"**Como** o sistema caiu, o atendimento foi feito manualmente."*
 2. *"O edital foi publicado **consoante** determinou o tribunal."*
 3. *"O arquivo estava **tão** pesado **que** travou o computador."*
 4. *"Fizemos um resumo **a fim de que** todos memorizassem a regra."*
 
 As relações lógicas expressas em 1, 2, 3 e 4 são, respectivamente:
-(A) 1. Comparação – 2. Oposição – 3. Causa – 4. Condição.
-(B) 1. Causa (= *já que*) – 2. Conformidade (= *conforme*) – 3. Consequência (*tão... que*) – 4. Finalidade/Objetivo (*para que*).
+(A) 1. Comparação – 2. Concessão – 3. Causa – 4. Condição.
+(B) 1. Causa – 2. Conformidade – 3. Consequência – 4. Finalidade.
 (C) 1. Conformidade – 2. Causa – 3. Finalidade – 4. Consequência.
-(D) 1. Tempo – 2. Proporção – 3. Concessão – 4. Explicação.
+(D) 1. Condição – 2. Proporção – 3. Concessão – 4. Explicação.
 
 <details><summary><b>Ver Gabarito e Comentário Detalhado</b></summary>
 
 **Gabarito Oficial: B**
 
 **Gatilhos para bater o olho e acertar:**
-* **1. "Como" no início da frase** contando o motivo de algo = **Causal** (= *já que / porque*).
-* **2. "Consoante"** = **Conformativa** (= *conforme / segundo*).
-* **3. "Tão... que / Tanto... que"** = **Consecutiva** (mostra a consequência/efeito intenso).
-* **4. "A fim de que / Para que"** = **Final** (mostra a finalidade/objetivo).
+* **1. "Como" no início da frase** apresentando o motivo de algo = **Causa** (= *já que / porque*).
+* **2. "Consoante"** = **Conformidade** (= *conforme / segundo*).
+* **3. "Tão... que / Tanto... que"** = **Consequência** (mostra o efeito intenso).
+* **4. "A fim de que / Para que"** = **Finalidade** (mostra o objetivo).
 
 </details>
 
@@ -851,13 +862,13 @@ Analise as duas situações administrativas abaixo:
 
 Os parônimos que preenchem CORRETAMENTE as Situações 1 e 2 são:
 (A) ratificar – diferido.
-(B) retificar – deferido.
-(C) ratificar – deferido.
+(B) ratificar – deferido.
+(C) retificar – deferido.
 (D) retificar – diferido.
 
 <details><summary><b>Ver Gabarito e Comentário Detalhado</b></summary>
 
-**Gabarito Oficial: B**
+**Gabarito Oficial: C**
 
 **Memorização instantânea:**
 * **REtificar** = **RE**parar, consertar o que estava errado (*retificar o edital*). Já *ratificar* é confirmar o que já estava valendo.
@@ -870,18 +881,18 @@ Os parônimos que preenchem CORRETAMENTE as Situações 1 e 2 são:
 ### Questão 31
 **Bloco:** 08 — Semântica (Parônimos) | **Foco:** *Mandado vs. Mandato* e *Infringir vs. Infligir*
 
-Assinale a alternativa em que os dois parônimos destacados foram empregados com o sentido **100% CORRETO**:
-(A) O prefeito iniciou seu **mandado** de quatro anos prometendo punir quem **infligir** as leis de trânsito.
+Assinale a alternativa em que todos os três parônimos destacados na frase foram empregados com o sentido **100% CORRETO**:
+(A) Durante o seu **mandado** eletivo, o prefeito determinou que a guarda fiscalizasse quem **infligiu** a lei e **infringisse** severa multa.
 (B) O oficial de justiça cumpriu o **mandado** judicial contra a empresa que **infringiu** o código ambiental, à qual o fiscal **infligiu** pesada multa.
-(C) O juiz expediu um **mandato** de segurança porque o motorista **infringiu** a multa.
-(D) O vereador perdeu o **mandado** parlamentar após **infligir** o regimento interno.
+(C) O juiz expediu um **mandato** de segurança para suspender a penalidade de quem **infringiu** a norma, evitando que o órgão **infligisse** o regulamento.
+(D) O vereador exerceu seu **mandado** parlamentar com ética, jamais **infligindo** o regimento interno para não sofrer **mandato** de cassação.
 
 <details><summary><b>Ver Gabarito e Comentário Detalhado</b></summary>
 
 **Gabarito Oficial: B**
 
 **Aplicando os gatilhos mentais:**
-* **MandaDo** (com D) = Ordem judicial escrita (*mandado judicial, mandado de segurança*). **MandaTo** (com T) = Cargo político (*mandato do prefeito/vereador*).
+* **MandaDo** (com D) = Ordem judicial escrita (*mandado judicial, mandado de segurança*). **MandaTo** (com T) = Cargo político (*mandato eletivo/parlamentar*).
 * **InFRIngir** (lembra *infração*) = Violar/desrespeitar a lei (*infringiu o código ambiental*). **InFLIgir** = Aplicar pena ou multa (*infligiu pesada multa*).
 
 </details>
@@ -891,21 +902,21 @@ Assinale a alternativa em que os dois parônimos destacados foram empregados com
 ### Questão 32
 **Bloco:** 08 — Semântica (Parônimos) | **Foco:** *Iminente vs. Eminente*, *Discriminar vs. Descriminar* e *Flagrante vs. Fragrante*
 
-Assinale a frase em que a palavra destacada está empregada CORRETAMENTE de acordo com o significado entre parênteses:
-(A) A queda da ponte velha estava **eminente** (= prestes a acontecer a qualquer instante).
-(B) O contador pediu para **descriminar** (= listar separadamente item por item) todas as compras na nota fiscal.
-(C) O **eminente** (= ilustre, notável) desembargador alertou sobre o risco **iminente** (= imediato) de colapso no sistema, após o suspeito ser detido em **flagrante** (= no ato).
-(D) O suspeito foi preso em **fragrante** delito enquanto fugia.
+Assinale a alternativa em que os três vocábulos destacados estão empregados CORRETAMENTE de acordo com o contexto administrativo:
+(A) O **iminente** jurista convidado pela prefeitura alertou sobre o risco **eminente** de alagamento e pediu para **descriminar** as despesas no quadro financeiro.
+(B) Diante do desabamento **eminente** do muro, o engenheiro **iminente** determinou a interdição da via após constatar a falha em **fragrante** vistoria.
+(C) Para **descriminar** todos os itens da nota fiscal com clareza, o contador consultou o **iminente** auditor antes do vencimento **eminente** do contrato.
+(D) O **eminente** desembargador alertou sobre o risco **iminente** de colapso no sistema, determinando que o setor passasse a **discriminar** cada despesa em relatório.
 
 <details><summary><b>Ver Gabarito e Comentário Detalhado</b></summary>
 
-**Gabarito Oficial: C**
+**Gabarito Oficial: D**
 
 **Resumo final para fechar com 100%:**
-* **EMinente** = **E**levado, ilustre (*eminente desembargador*).
-* **IMinente** = **IM**ediato, prestes a cair/acontecer (*risco iminente*).
-* **FLagrante** = No ato da ação (*preso em flagrante*). *Fragrante* significa perfumado.
-* **DIScriminar** (com I) = Separar/listar itens na nota fiscal. *Descriminar* (com E) significa tirar o crime.
+* **EMinente** = **E**levado, ilustre, notável (*eminente desembargador*).
+* **IMinente** = **IM**ediato, prestes a acontecer (*risco iminente*).
+* **DIScriminar** (com I) = Separar/listar detalhadamente item por item (*discriminar cada despesa*). Já *descriminar* (com E) significa descriminalizar (tirar o crime).
+* **FLagrante** = No ato da ação (*em flagrante*). Já *fragrante* significa perfumado.
 
 </details>
 
