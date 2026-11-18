@@ -3870,7 +3870,7 @@
   </main>
   </div>
 
-  <script src="aulas-data.js?v=20261117_01"></script>
+  <script src="aulas-data.js?v=20261117_02"></script>
   <script>
     const DB_SQL_URL = "https://ep-muddy-thunder-ac0eoxn3-pooler.sa-east-1.aws.neon.tech/sql";
     const DB_CONN_STR = "postgresql://neondb_owner:npg_l2mWY5HINrgG@ep-muddy-thunder-ac0eoxn3-pooler.sa-east-1.aws.neon.tech/neondb?sslmode=require";
@@ -4877,7 +4877,7 @@
 
     function splitTopLevelEquals(texStr) {
       const s = String(texStr || "").trim();
-      if (s.length <= 32) return [s];
+      if (s.length <= 32 || s.includes("\\begin{")) return [s];
       const parts = [];
       let depth = 0;
       let cur = "";
@@ -4898,6 +4898,9 @@
 
     function renderDisplayMathResponsive(rawTex) {
       let s = String(rawTex || "").trim();
+      if (s.includes("\\begin{")) {
+        return `<div class="lesson-math-block"><span class="inline-flex items-center">${renderKaTeXSafe(s, true)}</span></div>`;
+      }
       let noteHtml = "";
 
       // Extrair comentario explicativo no final
@@ -4943,7 +4946,7 @@
 
     function renderInlineMathResponsive(rawTex) {
       const s = String(rawTex || "").trim();
-      if (s.length <= 36 && !s.includes("\\quad") && !s.includes("\\implies")) {
+      if (s.length <= 36 || s.includes("\\begin{") || (!s.includes("\\quad") && !s.includes("\\implies"))) {
         return `<span class="lesson-math-inline">${renderKaTeXSafe(s, false)}</span>`;
       }
       const norm = s
