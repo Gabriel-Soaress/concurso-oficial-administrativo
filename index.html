@@ -3870,7 +3870,7 @@
   </main>
   </div>
 
-  <script src="aulas-data.js?v=20261118_01"></script>
+  <script src="aulas-data.js?v=20261118_02"></script>
   <script>
     const DB_SQL_URL = "https://ep-muddy-thunder-ac0eoxn3-pooler.sa-east-1.aws.neon.tech/sql";
     const DB_CONN_STR = "postgresql://neondb_owner:npg_l2mWY5HINrgG@ep-muddy-thunder-ac0eoxn3-pooler.sa-east-1.aws.neon.tech/neondb?sslmode=require";
@@ -5023,7 +5023,16 @@
       
       const formatCardText = (txt) => {
         if (!txt) return "";
-        let s = escapeHtml(txt).trim();
+        let s = String(txt).trim();
+        const cfcMath = [];
+        s = s.replace(/(?<![a-zA-Z0-9_\\])R\$/g, "@@CFC_BRL@@").replace(/(?<![a-zA-Z0-9_\\])US\$/g, "@@CFC_USD@@");
+        s = s.replace(/\$([^\$\n]+?)\$/g, (_, tex) => {
+          const idx = cfcMath.length;
+          cfcMath.push(renderInlineMathResponsive(tex));
+          return `@@CFC_MATH_${idx}@@`;
+        });
+        s = escapeHtml(s);
+        s = s.replace(/@@CFC_BRL@@/g, "R$").replace(/@@CFC_USD@@/g, "US$");
         // Converte aspas do texto antes de injetar tags HTML
         s = s.replace(/&quot;([^&]+?)&quot;/g, '“$1”');
         s = s.replace(/"([^"]+?)"/g, '“$1”');
@@ -5031,6 +5040,9 @@
         s = s.replace(/\*\*([^*]+)\*\*/g, '<strong class="font-extrabold text-pri">$1</strong>');
         s = s.replace(/\*([^*\n]+)\*/g, '<em class="italic text-pri">$1</em>');
         s = s.replace(/`([^`]+)`/g, '<code class="font-mono text-xs px-1.5 py-0.5 rounded surface-muted text-indigo-600 dark:text-indigo-400">$1</code>');
+        cfcMath.forEach((tok, idx) => {
+          s = s.replace(`@@CFC_MATH_${idx}@@`, () => tok);
+        });
         return s;
       };
 

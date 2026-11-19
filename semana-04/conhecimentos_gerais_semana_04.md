@@ -136,7 +136,7 @@ Na Administração Pública paulista do início do século XX, uma cidade não n
 > [!ESCALAS] MÉTODO DIDÁTICO: CAUSA ➔ FATO ➔ CONSEQUÊNCIA (3 ESCALAS)
 > • **CAUSA GEOLÓGICA E CLIMÁTICA:** Situada sobre a Bacia Sedimentar do Paraná (Formação Arenito Adamantina/Bauru), no interior tropical do Sudeste, a região recebe chuvas concentradas no verão e seca no inverno.
 > • **FATO GEOGRÁFICO (NOROESTE PAULISTA):** O relevo forma colinas amplas e suaves no **Planalto Ocidental Paulista**, drenadas pelos rios Tietê e Aguapeí rumo ao Rio Paraná.
-> • **CONSEQUÊNCIA MUNICIPAL (BIRIGUI):** Com **$530{,}031\text{ km}^2$** de área, altitude média de **$406\text{ m}$** e cercada por **6 municípios vizinhos**, Birigui tem na bacia do **Ribeirão Baguaçu** e no **Aquífero Guarani / Bauru** suas fontes vitais de abastecimento de água urbana.
+> • **CONSEQUÊNCIA MUNICIPAL (BIRIGUI):** Com **530,031 km²** de área, altitude média de **406 m** e cercada por **6 municípios vizinhos**, Birigui tem na bacia do **Ribeirão Baguaçu** e no **Aquífero Guarani / Bauru** suas fontes vitais de abastecimento de água urbana.
 
 ### 1. Onde Birigui Está no Mapa Oficial do IBGE e do Estado de SP?
 Para não errar questões de localização regional, entenda como o IBGE e o Governo do Estado de São Paulo classificam a posição de Birigui:
@@ -287,7 +287,7 @@ Por que uma cidade do interior do Noroeste Paulista — e não a capital — vir
 
 > [!ESCALAS] MÉTODO DIDÁTICO: CAUSA ➔ FATO ➔ CONSEQUÊNCIA (3 ESCALAS)
 > • **CAUSA DEMOGRÁFICA NACIONAL:** A transição demográfica brasileira reduziu a taxa de natalidade e acelerou o envelhecimento populacional, enquanto cidades médias do interior com emprego industrial continuaram atraindo moradores das cidades pequenas vizinhas.
-> • **FATO ESTATÍSTICO (CENSO IBGE 2022):** Birigui atingiu **118.979 habitantes** no Censo de 2022 (com estimativa recente superior a 122 mil), apresentando altíssima taxa de urbanização (~98%) e **IDHM elevado ($0{,}780$)**.
+> • **FATO ESTATÍSTICO (CENSO IBGE 2022):** Birigui atingiu **118.979 habitantes** no Censo de 2022 (com estimativa recente superior a 122 mil), apresentando altíssima taxa de urbanização (~98%) e **IDHM elevado (0,780)**.
 > • **CONSEQUÊNCIA ADMINISTRATIVA:** O crescimento urbano exige da Prefeitura de Birigui investimentos contínuos em **segurança hídrica** (novos poços profundos e captação no Baguaçu), mobilidade urbana, saúde pública, ensino técnico e sustentabilidade.
 
 ### 1. Quadro Oficial de Indicadores do IBGE — Birigui/SP
