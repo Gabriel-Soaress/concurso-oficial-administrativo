@@ -246,23 +246,304 @@ Como garantir que um Oficial Administrativo novato que tomou posse hoje saiba ex
 
 > [!WARNING]
 > **Pegadinha Clássica de Prova sobre Fluxograma vs. Organograma (Não Confunda!):**  
-> Na Semana 03 você estudou o **Organograma**, e hoje estudou o **Fluxograma**. As bancas trocam os dois!  
+> Na Semana 03 você estudou o **Organograma**, e hoje estudou o **Fluxograma**. As bancas trocam os dois! Veja os dois **desenhados lado a lado** abaixo para nunca mais confundir:
 > * **ORGANOGRAMA** = Mostra os **ÓRGÃOS / CARGOS** e a **hierarquia** (quem é chefe de quem — retrato estático da estrutura).  
-> * **FLUXOGRAMA** = Mostra o **FLUXO / PASSO A PASSO** de uma tarefa ou documento em movimento (sequência dinâmica das etapas de um processo).
+> * **FLUXOGRAMA** = Mostra o **FLUXO / PASSO A PASSO** de uma tarefa ou documento em movimento (sequência dinâmica das etapas de um processo, com formatos diferentes para início, ação e decisão).
 
-#### 🎯 Tabela Especial: Os Símbolos do Fluxograma que o Instituto ACCESS Ama Cobrar!
-Analisando as provas recentes do **Instituto ACCESS** (CRBio, Cataguases, Conquista e UFJ), descobrimos que a banca adora perguntar o significado das **figuras geométricas do fluxograma**. Memorize esta tabela visual:
+<div class="edu-component my-6">
+  <div class="edu-comp-header">
+    <div class="edu-comp-title">
+      <span class="edu-comp-icon">👁️</span>
+      <span>COMPARATIVO VISUAL DESENHADO: ORGANOGRAMA vs. FLUXOGRAMA</span>
+    </div>
+    <span class="edu-comp-badge">Diferença Visual Imediata</span>
+  </div>
+  <div class="edu-cards-grid grid-2">
+    <div class="edu-card card-indigo">
+      <div class="edu-card-top">
+        <span class="card-icon">🏛️</span>
+        <span class="card-badge">Retrato da Hierarquia (Quem Manda)</span>
+      </div>
+      <h4 class="card-title">ORGANOGRAMA (Cargos e Setores)</h4>
+      <div style="width:100%; overflow-x:auto; padding:0.5rem 0;">
+        <svg viewBox="0 0 380 230" style="width:100%; max-width:380px; height:auto; display:block; margin:0 auto;" xmlns="http://www.w3.org/2000/svg">
+          <!-- Linhas conectoras do Organograma -->
+          <line x1="190" y1="44" x2="190" y2="105" stroke="#6366f1" stroke-width="2.5"/>
+          <line x1="190" y1="68" x2="310" y2="68" stroke="#a855f7" stroke-width="2" stroke-dasharray="5,4"/>
+          <line x1="85" y1="105" x2="295" y2="105" stroke="#6366f1" stroke-width="2.5"/>
+          <line x1="85" y1="105" x2="85" y2="125" stroke="#6366f1" stroke-width="2.5"/>
+          <line x1="295" y1="105" x2="295" y2="125" stroke="#6366f1" stroke-width="2.5"/>
+          <line x1="85" y1="163" x2="85" y2="185" stroke="#0ea5e9" stroke-width="2.5"/>
+          <line x1="295" y1="163" x2="295" y2="185" stroke="#0ea5e9" stroke-width="2.5"/>
+          <!-- Topo: Prefeito -->
+          <rect x="115" y="10" width="150" height="34" rx="6" fill="#4f46e5" stroke="#3730a3" stroke-width="1.5"/>
+          <text x="190" y="31" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="bold" font-family="sans-serif">PREFEITO MUNICIPAL</text>
+          <!-- Staff lateral -->
+          <rect x="255" y="52" width="118" height="32" rx="6" fill="#f3e8ff" stroke="#9333ea" stroke-width="1.5" stroke-dasharray="4,3"/>
+          <text x="314" y="66" text-anchor="middle" fill="#6b21a8" font-size="9.5" font-weight="bold" font-family="sans-serif">ASSESSORIA (STAFF)</text>
+          <text x="314" y="78" text-anchor="middle" fill="#7e22ce" font-size="8.5" font-family="sans-serif">Procuradoria Jurídica</text>
+          <!-- Nível 2: Secretarias -->
+          <rect x="15" y="125" width="140" height="38" rx="6" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.8"/>
+          <text x="85" y="142" text-anchor="middle" fill="#0369a1" font-size="10" font-weight="bold" font-family="sans-serif">SEC. ADMINISTRAÇÃO</text>
+          <text x="85" y="155" text-anchor="middle" fill="#0284c7" font-size="8.5" font-family="sans-serif">Órgão de Linha</text>
+          <rect x="225" y="125" width="140" height="38" rx="6" fill="#e0f2fe" stroke="#0284c7" stroke-width="1.8"/>
+          <text x="295" y="142" text-anchor="middle" fill="#0369a1" font-size="10" font-weight="bold" font-family="sans-serif">SEC. DE FINANÇAS</text>
+          <text x="295" y="155" text-anchor="middle" fill="#0284c7" font-size="8.5" font-family="sans-serif">Órgão de Linha</text>
+          <!-- Nível 3: Setores -->
+          <rect x="20" y="185" width="130" height="34" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+          <text x="85" y="206" text-anchor="middle" fill="#166534" font-size="9.5" font-weight="bold" font-family="sans-serif">Setor de Protocolo</text>
+          <rect x="230" y="185" width="130" height="34" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+          <text x="295" y="206" text-anchor="middle" fill="#166534" font-size="9.5" font-weight="bold" font-family="sans-serif">Setor de Tributos</text>
+        </svg>
+      </div>
+      <p class="card-text">Note que no <strong>Organograma</strong> todas as caixas são retângulos de cargos/setores ligados por linhas de subordinação (não tem setas de "Sim/Não" nem losangos!).</p>
+    </div>
 
-| Figura Geométrica / Formato Visual | Nome Oficial na Prova da ACCESS | O que Esse Símbolo Faz na Rotina da Prefeitura? |
-| :--- | :---: | :--- |
-| **Cápsula / Retângulo de Cantos Arredondados (Oval)** `( Início / Fim )` | **Terminação** *(Início ou Fim)* | Marca onde o processo **começa** (ex.: *Cidadão chega ao balcão*) e onde o processo **termina** (ex.: *Processo arquivado*). |
-| **Retângulo Simples** `[ Analisar Documento ]` | **Processo** *(ou Operação / Ação)* | Representa qualquer **execução de tarefa ou ação concreta** (ex.: *Carimbar folha, digitar cadastro, emitir guia*). |
-| **Losango (Diamante)** `< Documento Completo? >` | **Decisão** | Ponto de **pergunta com dois caminhos** (*Sim / Não* ou *Deferido / Indeferido*). Sempre entram uma seta e saem duas ou mais setas! |
-| **Retângulo com Duas Barras Verticais nas Laterais** `|[ Subprocesso ]|` | **Processo Predefinido** *(Sub-rotina)* | Indica um procedimento que já está detalhado em outro manual ou POP separado (ex.: *Rotina padrão de licitação*). |
-| **Formato de "D" (Meia-lua / Bala de Canhão deitada)** `[ Espera )` | **Espera** *(ou Atraso)* | Indica uma **pausa ou fila temporária** (ex.: *Aguardando assinatura do Secretário* ou *Aguardando prazo de 5 dias*). |
-| **Retângulo com a Base Ondulada** `[ Documento ~]` | **Documento** | Representa a emissão de um documento físico ou digital (ofício, certidão, nota fiscal, ata). |
-| **Trapézio Invertido (Largo em cima, estreito embaixo)** `\ Operação /` | **Operação Manual** | Tarefa feita manualmente sem automação (ex.: *Assinar livro físico à mão, carimbar pasta*). |
-| **Círculo Pequeno com Letra/Número** `( A )` | **Conector** | Liga duas partes do fluxograma na mesma página para evitar que as linhas se cruzem (o pentágono/etiqueta liga páginas diferentes). |
+    <div class="edu-card card-emerald">
+      <div class="edu-card-top">
+        <span class="card-icon">🔄</span>
+        <span class="card-badge">Filme do Trabalho (Passo a Passo)</span>
+      </div>
+      <h4 class="card-title">FLUXOGRAMA (Etapas e Decisões)</h4>
+      <div style="width:100%; overflow-x:auto; padding:0.5rem 0;">
+        <svg viewBox="0 0 380 230" style="width:100%; max-width:380px; height:auto; display:block; margin:0 auto;" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <marker id="arrowFlx1" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+              <path d="M0,0 L8,4 L0,8 Z" fill="#475569"/>
+            </marker>
+          </defs>
+          <!-- Oval Início -->
+          <rect x="115" y="8" width="120" height="30" rx="15" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+          <text x="175" y="27" text-anchor="middle" fill="#166534" font-size="10.5" font-weight="bold" font-family="sans-serif">INÍCIO (Protocolo)</text>
+          <line x1="175" y1="38" x2="175" y2="56" stroke="#475569" stroke-width="2" marker-end="url(#arrowFlx1)"/>
+          <!-- Retângulo Processo -->
+          <rect x="100" y="58" width="150" height="32" rx="4" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+          <text x="175" y="78" text-anchor="middle" fill="#075985" font-size="10" font-weight="bold" font-family="sans-serif">Conferir Documentos</text>
+          <line x1="175" y1="90" x2="175" y2="108" stroke="#475569" stroke-width="2" marker-end="url(#arrowFlx1)"/>
+          <!-- Losango Decisão -->
+          <polygon points="175,110 235,140 175,170 115,140" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+          <text x="175" y="138" text-anchor="middle" fill="#92400e" font-size="9.5" font-weight="bold" font-family="sans-serif">Tudo Certo?</text>
+          <text x="175" y="150" text-anchor="middle" fill="#b45309" font-size="8.5" font-family="sans-serif">(Decisão)</text>
+          <!-- Ramo NÃO -->
+          <line x1="235" y1="140" x2="275" y2="140" stroke="#e11d48" stroke-width="2" marker-end="url(#arrowFlx1)"/>
+          <text x="253" y="133" text-anchor="middle" fill="#e11d48" font-size="9" font-weight="bold" font-family="sans-serif">NÃO</text>
+          <rect x="278" y="123" width="94" height="34" rx="4" fill="#ffe4e6" stroke="#e11d48" stroke-width="1.8"/>
+          <text x="325" y="138" text-anchor="middle" fill="#9f1239" font-size="9" font-weight="bold" font-family="sans-serif">Pedir Correção</text>
+          <text x="325" y="150" text-anchor="middle" fill="#be123c" font-size="8" font-family="sans-serif">(Devolver)</text>
+          <path d="M325,123 L325,74 L253,74" fill="none" stroke="#e11d48" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrowFlx1)"/>
+          <!-- Ramo SIM -->
+          <line x1="175" y1="170" x2="175" y2="190" stroke="#16a34a" stroke-width="2" marker-end="url(#arrowFlx1)"/>
+          <text x="190" y="184" fill="#16a34a" font-size="9" font-weight="bold" font-family="sans-serif">SIM</text>
+          <!-- Oval Fim -->
+          <rect x="115" y="192" width="120" height="30" rx="15" fill="#e0e7ff" stroke="#4f46e5" stroke-width="2"/>
+          <text x="175" y="211" text-anchor="middle" fill="#3730a3" font-size="10.5" font-weight="bold" font-family="sans-serif">FIM (Emitir Alvará)</text>
+        </svg>
+      </div>
+      <p class="card-text">Note que o <strong>Fluxograma</strong> tem <strong>setas indicando a direção</strong> e <strong>figuras geométricas diferentes</strong> para início/fim (oval), ação (retângulo) e decisão (losango)!</p>
+    </div>
+  </div>
+</div>
+
+---
+
+#### 🎯 Os 8 Símbolos do Fluxograma que o Instituto ACCESS Cobra (Desenhados!)
+Analisando as provas recentes do **Instituto ACCESS** (CRBio, Cataguases, Conquista e UFJ), vimos que a banca coloca a **imagem da figura geométrica** na prova e pergunta o nome oficial dela! Veja cada figura desenhada exatamente como cai no caderno de prova:
+
+<div class="edu-component my-6">
+  <div class="edu-comp-header">
+    <div class="edu-comp-title">
+      <span class="edu-comp-icon">🔣</span>
+      <span>GABARITO VISUAL DAS 8 FORMAS GEOMÉTRICAS DO FLUXOGRAMA (PADRÃO ACCESS)</span>
+    </div>
+    <span class="edu-comp-badge">Figuras de Prova</span>
+  </div>
+  <div class="edu-cards-grid grid-4">
+    <!-- 1. Terminação -->
+    <div class="edu-card card-emerald" style="align-items:center; text-align:center;">
+      <span class="card-badge">1. Início ou Fim</span>
+      <svg viewBox="0 0 160 65" style="width:140px; height:58px; margin:0.35rem auto;" xmlns="http://www.w3.org/2000/svg">
+        <rect x="12" y="12" width="136" height="40" rx="20" ry="20" fill="#dcfce7" stroke="#16a34a" stroke-width="2.5"/>
+        <text x="80" y="36" text-anchor="middle" fill="#166534" font-size="11" font-weight="bold" font-family="sans-serif">TERMINAÇÃO</text>
+      </svg>
+      <h4 class="card-title">Terminação</h4>
+      <p class="card-text">Cápsula ovalada (cantos redondos). Indica o <strong>ponto de partida (Início)</strong> ou o <strong>encerramento (Fim)</strong> do fluxo.</p>
+    </div>
+
+    <!-- 2. Processo -->
+    <div class="edu-card card-sky" style="align-items:center; text-align:center;">
+      <span class="card-badge">2. Ação / Tarefa</span>
+      <svg viewBox="0 0 160 65" style="width:140px; height:58px; margin:0.35rem auto;" xmlns="http://www.w3.org/2000/svg">
+        <rect x="14" y="12" width="132" height="42" rx="2" fill="#e0f2fe" stroke="#0284c7" stroke-width="2.5"/>
+        <text x="80" y="37" text-anchor="middle" fill="#075985" font-size="11.5" font-weight="bold" font-family="sans-serif">PROCESSO</text>
+      </svg>
+      <h4 class="card-title">Processo (Operação)</h4>
+      <p class="card-text">Retângulo simples. Indica qualquer <strong>ação ou operação executada</strong> (ex.: <em>Conferir guia, protocolar, calcular</em>).</p>
+    </div>
+
+    <!-- 3. Decisão -->
+    <div class="edu-card card-amber" style="align-items:center; text-align:center;">
+      <span class="card-badge">3. Pergunta Sim/Não</span>
+      <svg viewBox="0 0 160 65" style="width:140px; height:58px; margin:0.35rem auto;" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="80,5 148,32.5 80,60 12,32.5" fill="#fef3c7" stroke="#d97706" stroke-width="2.5"/>
+        <text x="80" y="36" text-anchor="middle" fill="#92400e" font-size="10.5" font-weight="bold" font-family="sans-serif">DECISÃO?</text>
+      </svg>
+      <h4 class="card-title">Decisão</h4>
+      <p class="card-text">Losango (diamante). Ponto de verificação com <strong>caminhos alternativos</strong> (<em>Sim/Não</em> ou <em>Aprovado/Reprovado</em>).</p>
+    </div>
+
+    <!-- 4. Processo Predefinido -->
+    <div class="edu-card card-indigo" style="align-items:center; text-align:center;">
+      <span class="card-badge">4. Sub-rotina / POP</span>
+      <svg viewBox="0 0 160 65" style="width:140px; height:58px; margin:0.35rem auto;" xmlns="http://www.w3.org/2000/svg">
+        <rect x="14" y="12" width="132" height="42" fill="#e0e7ff" stroke="#4f46e5" stroke-width="2.5"/>
+        <line x1="28" y1="12" x2="28" y2="54" stroke="#4f46e5" stroke-width="2.5"/>
+        <line x1="132" y1="12" x2="132" y2="54" stroke="#4f46e5" stroke-width="2.5"/>
+        <text x="80" y="36" text-anchor="middle" fill="#3730a3" font-size="9.5" font-weight="bold" font-family="sans-serif">PREDEFINIDO</text>
+      </svg>
+      <h4 class="card-title">Processo Predefinido</h4>
+      <p class="card-text">Retângulo com <strong>duas barras verticais internas</strong>. Subprocesso já detalhado em outro manual ou POP.</p>
+    </div>
+
+    <!-- 5. Espera ou Atraso -->
+    <div class="edu-card card-rose" style="align-items:center; text-align:center;">
+      <span class="card-badge">5. Fila / Pausa</span>
+      <svg viewBox="0 0 160 65" style="width:140px; height:58px; margin:0.35rem auto;" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20,12 L100,12 A42,21 0 0,1 100,54 L20,54 Z" fill="#ffe4e6" stroke="#e11d48" stroke-width="2.5"/>
+        <text x="72" y="37" text-anchor="middle" fill="#9f1239" font-size="11" font-weight="bold" font-family="sans-serif">ESPERA</text>
+      </svg>
+      <h4 class="card-title">Espera (ou Atraso)</h4>
+      <p class="card-text">Formato de <strong>letra "D"</strong> (reto na esquerda, redondo na direita). Indica <strong>espera, pausa ou processo sobrestado</strong>.</p>
+    </div>
+
+    <!-- 6. Documento -->
+    <div class="edu-card card-purple" style="align-items:center; text-align:center;">
+      <span class="card-badge">6. Papel / Impresso</span>
+      <svg viewBox="0 0 160 65" style="width:140px; height:58px; margin:0.35rem auto;" xmlns="http://www.w3.org/2000/svg">
+        <path d="M18,10 L142,10 L142,48 Q111,62 80,48 Q49,34 18,50 Z" fill="#f3e8ff" stroke="#9333ea" stroke-width="2.5"/>
+        <text x="80" y="33" text-anchor="middle" fill="#6b21a8" font-size="10.5" font-weight="bold" font-family="sans-serif">DOCUMENTO</text>
+      </svg>
+      <h4 class="card-title">Documento</h4>
+      <p class="card-text">Retângulo com a <strong>base inferior ondulada</strong>. Representa a geração de um ofício, certidão, ata ou relatório.</p>
+    </div>
+
+    <!-- 7. Operação Manual -->
+    <div class="edu-card card-amber" style="align-items:center; text-align:center;">
+      <span class="card-badge">7. Trabalho Manual</span>
+      <svg viewBox="0 0 160 65" style="width:140px; height:58px; margin:0.35rem auto;" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="14,12 146,12 126,54 34,54" fill="#fef3c7" stroke="#d97706" stroke-width="2.5"/>
+        <text x="80" y="37" text-anchor="middle" fill="#92400e" font-size="9.5" font-weight="bold" font-family="sans-serif">OP. MANUAL</text>
+      </svg>
+      <h4 class="card-title">Operação Manual</h4>
+      <p class="card-text"><strong>Trapézio invertido</strong> (base maior em cima). Indica tarefa física feita à mão pelo servidor (sem sistema).</p>
+    </div>
+
+    <!-- 8. Conector -->
+    <div class="edu-card card-sky" style="align-items:center; text-align:center;">
+      <span class="card-badge">8. Ligação / Salto</span>
+      <svg viewBox="0 0 160 65" style="width:140px; height:58px; margin:0.35rem auto;" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="80" cy="32.5" r="22" fill="#e0f2fe" stroke="#0284c7" stroke-width="2.5"/>
+        <text x="80" y="37" text-anchor="middle" fill="#075985" font-size="13" font-weight="bold" font-family="sans-serif">A</text>
+      </svg>
+      <h4 class="card-title">Conector</h4>
+      <p class="card-text"><strong>Círculo pequeno</strong> com letra ou número dentro. Conecta duas partes do fluxograma na mesma página.</p>
+    </div>
+  </div>
+</div>
+
+---
+
+#### 🗺️ Veja Agora um Fluxograma Completo da Prefeitura Desenhado na Prática!
+Para fixar de vez como todos esses símbolos trabalham juntos na sua mesa de Oficial Administrativo, acompanhe no desenho abaixo o **Fluxograma Completo de Emissão de um Alvará Municipal**:
+
+<div class="edu-component my-6">
+  <div class="edu-comp-header">
+    <div class="edu-comp-title">
+      <span class="edu-comp-icon">⚙️</span>
+      <span>EXEMPLO PRÁTICO DESENHADO: FLUXOGRAMA DE EXPEDIÇÃO DE ALVARÁ NA PREFEITURA</span>
+    </div>
+    <span class="edu-comp-badge">Todos os Símbolos em Ação</span>
+  </div>
+  <div style="width:100%; overflow-x:auto; padding:1rem;">
+    <svg viewBox="0 0 760 470" style="width:100%; max-width:760px; height:auto; display:block; margin:0 auto;" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <marker id="arrMain" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+          <path d="M0,0 L9,4.5 L0,9 Z" fill="#334155"/>
+        </marker>
+        <marker id="arrRed" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+          <path d="M0,0 L9,4.5 L0,9 Z" fill="#e11d48"/>
+        </marker>
+        <marker id="arrGreen" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+          <path d="M0,0 L9,4.5 L0,9 Z" fill="#16a34a"/>
+        </marker>
+      </defs>
+
+      <!-- 1. TERMINAÇÃO (INÍCIO) -->
+      <rect x="130" y="14" width="240" height="44" rx="22" ry="22" fill="#dcfce7" stroke="#16a34a" stroke-width="2.5"/>
+      <text x="250" y="34" text-anchor="middle" fill="#166534" font-size="11.5" font-weight="bold" font-family="sans-serif">1. INÍCIO (TERMINAÇÃO)</text>
+      <text x="250" y="49" text-anchor="middle" fill="#15803d" font-size="10" font-family="sans-serif">Cidadão protocola pedido no balcão</text>
+
+      <line x1="250" y1="58" x2="250" y2="86" stroke="#334155" stroke-width="2.2" marker-end="url(#arrMain)"/>
+
+      <!-- 2. PROCESSO (TRIAGEM) -->
+      <rect x="120" y="88" width="260" height="48" rx="4" fill="#e0f2fe" stroke="#0284c7" stroke-width="2.5"/>
+      <text x="250" y="109" text-anchor="middle" fill="#075985" font-size="11.5" font-weight="bold" font-family="sans-serif">2. PROCESSO (AÇÃO)</text>
+      <text x="250" y="125" text-anchor="middle" fill="#0369a1" font-size="10" font-family="sans-serif">Oficial Administrativo realiza a Triagem</text>
+
+      <line x1="250" y1="136" x2="250" y2="164" stroke="#334155" stroke-width="2.2" marker-end="url(#arrMain)"/>
+
+      <!-- 3. DECISÃO (LOSANGO) -->
+      <polygon points="250,166 375,212 250,258 125,212" fill="#fef3c7" stroke="#d97706" stroke-width="2.5"/>
+      <text x="250" y="207" text-anchor="middle" fill="#92400e" font-size="11" font-weight="bold" font-family="sans-serif">3. DECISÃO</text>
+      <text x="250" y="222" text-anchor="middle" fill="#b45309" font-size="10" font-family="sans-serif">Documentos Completos?</text>
+
+      <!-- RAMO NÃO (DIREITA) -->
+      <line x1="375" y1="212" x2="465" y2="212" stroke="#e11d48" stroke-width="2.2" marker-end="url(#arrRed)"/>
+      <text x="418" y="204" text-anchor="middle" fill="#e11d48" font-size="11" font-weight="bold" font-family="sans-serif">NÃO</text>
+
+      <!-- 3A. PROCESSO: NOTIFICAR PENDÊNCIA -->
+      <rect x="468" y="188" width="260" height="48" rx="4" fill="#ffe4e6" stroke="#e11d48" stroke-width="2.2"/>
+      <text x="598" y="209" text-anchor="middle" fill="#9f1239" font-size="11" font-weight="bold" font-family="sans-serif">PROCESSO: Notificar Cidadão</text>
+      <text x="598" y="224" text-anchor="middle" fill="#be123c" font-size="9.5" font-family="sans-serif">Despacho Interlocutório (Prazo: 5 dias)</text>
+
+      <line x1="598" y1="188" x2="598" y2="144" stroke="#e11d48" stroke-width="2.2" marker-end="url(#arrRed)"/>
+
+      <!-- 3B. ESPERA (FORMATO D) -->
+      <path d="M485,88 L655,88 A50,26 0 0,1 655,140 L485,140 Z" fill="#fff1f2" stroke="#e11d48" stroke-width="2.5"/>
+      <text x="580" y="110" text-anchor="middle" fill="#9f1239" font-size="11" font-weight="bold" font-family="sans-serif">ESPERA / ATRASO ("D")</text>
+      <text x="580" y="126" text-anchor="middle" fill="#be123c" font-size="9.5" font-family="sans-serif">Processo Sobrestado + Follow-up</text>
+
+      <!-- Seta voltando da Espera para a Triagem -->
+      <line x1="485" y1="112" x2="383" y2="112" stroke="#e11d48" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arrRed)"/>
+      <text x="434" y="104" text-anchor="middle" fill="#be123c" font-size="9.5" font-weight="bold" font-family="sans-serif">Trouxe doc.</text>
+
+      <!-- RAMO SIM (PARA BAIXO) -->
+      <line x1="250" y1="258" x2="250" y2="292" stroke="#16a34a" stroke-width="2.2" marker-end="url(#arrGreen)"/>
+      <text x="272" y="279" fill="#16a34a" font-size="11" font-weight="bold" font-family="sans-serif">SIM</text>
+
+      <!-- 4. PROCESSO PREDEFINIDO (BARRAS DUPLAS) -->
+      <rect x="115" y="294" width="270" height="48" fill="#e0e7ff" stroke="#4f46e5" stroke-width="2.5"/>
+      <line x1="133" y1="294" x2="133" y2="342" stroke="#4f46e5" stroke-width="2.5"/>
+      <line x1="367" y1="294" x2="367" y2="342" stroke="#4f46e5" stroke-width="2.5"/>
+      <text x="250" y="315" text-anchor="middle" fill="#3730a3" font-size="11" font-weight="bold" font-family="sans-serif">4. PROCESSO PREDEFINIDO</text>
+      <text x="250" y="330" text-anchor="middle" fill="#4338ca" font-size="9.5" font-family="sans-serif">Autuar (NUP) e Tramitar conforme POP</text>
+
+      <line x1="250" y1="342" x2="250" y2="372" stroke="#334155" stroke-width="2.2" marker-end="url(#arrMain)"/>
+
+      <!-- 5. DOCUMENTO (BASE ONDULADA) -->
+      <path d="M120,374 L380,374 L380,424 Q315,442 250,424 Q185,406 120,426 Z" fill="#f3e8ff" stroke="#9333ea" stroke-width="2.5"/>
+      <text x="250" y="396" text-anchor="middle" fill="#6b21a8" font-size="11" font-weight="bold" font-family="sans-serif">5. DOCUMENTO GERADO</text>
+      <text x="250" y="411" text-anchor="middle" fill="#7e22ce" font-size="9.5" font-family="sans-serif">Emissão do Alvará Oficial Assinado</text>
+
+      <!-- Seta para o Fim à direita -->
+      <line x1="380" y1="402" x2="465" y2="402" stroke="#16a34a" stroke-width="2.2" marker-end="url(#arrGreen)"/>
+
+      <!-- 6. TERMINAÇÃO (FIM) -->
+      <rect x="468" y="380" width="250" height="44" rx="22" ry="22" fill="#dcfce7" stroke="#16a34a" stroke-width="2.5"/>
+      <text x="593" y="400" text-anchor="middle" fill="#166534" font-size="11.5" font-weight="bold" font-family="sans-serif">6. FIM (TERMINAÇÃO)</text>
+      <text x="593" y="415" text-anchor="middle" fill="#15803d" font-size="10" font-family="sans-serif">Entrega ao Cidadão e Baixa no Sistema</text>
+    </svg>
+  </div>
+</div>
 
 > [!TIP]
 > **Síntese Feynman de 3 Linhas (Eixo 1 — Fluxo de Demandas):**

@@ -411,34 +411,65 @@ A estrutura linear é a forma mais antiga e simples de organização, herdada do
   <div class="edu-comp-header">
     <div class="edu-comp-title">
       <span>🏛️</span>
-      <span>ORGANOGRAMA DA ESTRUTURA LINEAR: LINHA DIRETA DE MANDO</span>
+      <span>ORGANOGRAMA DESENHADO — ESTRUTURA LINEAR (UNIDADE DE COMANDO)</span>
     </div>
     <span class="edu-comp-badge">Piramidal Rígida</span>
   </div>
-  <div class="edu-cards-grid grid-1" style="max-width: 520px; margin: 0 auto;">
-    <div class="edu-card card-indigo" style="text-align: center; align-items: center;">
-      <span class="card-badge">Topo da Pirâmide</span>
-      <h4 class="card-title">PREFEITO MUNICIPAL</h4>
-      <p class="card-text">Autoridade máxima e centralizada</p>
-    </div>
-    <div style="text-align: center; font-size: 1.4rem; color: #6366f1; margin: -0.25rem 0;">⬇️</div>
-    <div class="edu-card card-sky" style="text-align: center; align-items: center;">
-      <span class="card-badge">Nível Gerencial</span>
-      <h4 class="card-title">SECRETÁRIO DE ADMINISTRAÇÃO</h4>
-      <p class="card-text">Recebe ordens diretas do Prefeito</p>
-    </div>
-    <div style="text-align: center; font-size: 1.4rem; color: #0ea5e9; margin: -0.25rem 0;">⬇️</div>
-    <div class="edu-card card-emerald" style="text-align: center; align-items: center;">
-      <span class="card-badge">Supervisão Direta</span>
-      <h4 class="card-title">DIRETOR DE PROTOCOLO</h4>
-      <p class="card-text">Único superior hierárquico do setor</p>
-    </div>
-    <div style="text-align: center; font-size: 1.4rem; color: #10b981; margin: -0.25rem 0;">⬇️</div>
-    <div class="edu-card card-amber" style="text-align: center; align-items: center;">
-      <span class="card-badge">Execução (Chão da Repartição)</span>
-      <h4 class="card-title">OFICIAL ADMINISTRATIVO</h4>
-      <p class="card-text"><strong>Unidade de Comando:</strong> Reporta-se exclusivamente ao seu Diretor</p>
-    </div>
+  <div style="width:100%; overflow-x:auto; padding:1rem;">
+    <svg viewBox="0 0 680 290" style="width:100%; max-width:680px; height:auto; display:block; margin:0 auto;" xmlns="http://www.w3.org/2000/svg">
+      <!-- Linhas Hierárquicas Retas (Unidade de Comando) -->
+      <line x1="340" y1="52" x2="340" y2="85" stroke="#4f46e5" stroke-width="3"/>
+      <line x1="170" y1="85" x2="510" y2="85" stroke="#4f46e5" stroke-width="3"/>
+      <line x1="170" y1="85" x2="170" y2="110" stroke="#4f46e5" stroke-width="3"/>
+      <line x1="510" y1="85" x2="510" y2="110" stroke="#4f46e5" stroke-width="3"/>
+
+      <!-- Ramificação Secretaria de Administração -->
+      <line x1="170" y1="158" x2="170" y2="185" stroke="#0284c7" stroke-width="2.5"/>
+      <line x1="85" y1="185" x2="255" y2="185" stroke="#0284c7" stroke-width="2.5"/>
+      <line x1="85" y1="185" x2="85" y2="210" stroke="#0284c7" stroke-width="2.5"/>
+      <line x1="255" y1="185" x2="255" y2="210" stroke="#0284c7" stroke-width="2.5"/>
+
+      <!-- Ramificação Secretaria de Finanças -->
+      <line x1="510" y1="158" x2="510" y2="185" stroke="#0284c7" stroke-width="2.5"/>
+      <line x1="425" y1="185" x2="595" y2="185" stroke="#0284c7" stroke-width="2.5"/>
+      <line x1="425" y1="185" x2="425" y2="210" stroke="#0284c7" stroke-width="2.5"/>
+      <line x1="595" y1="185" x2="595" y2="210" stroke="#0284c7" stroke-width="2.5"/>
+
+      <!-- Nível 1: Prefeito -->
+      <rect x="230" y="10" width="220" height="42" rx="8" fill="#4f46e5" stroke="#312e81" stroke-width="2"/>
+      <text x="340" y="29" text-anchor="middle" fill="#ffffff" font-size="12" font-weight="bold" font-family="sans-serif">PREFEITO MUNICIPAL</text>
+      <text x="340" y="44" text-anchor="middle" fill="#e0e7ff" font-size="9.5" font-family="sans-serif">Topo da Pirâmide (Comando Central)</text>
+
+      <!-- Nível 2: Secretários -->
+      <rect x="70" y="110" width="200" height="48" rx="7" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+      <text x="170" y="131" text-anchor="middle" fill="#075985" font-size="11" font-weight="bold" font-family="sans-serif">SECRETÁRIO DE ADMINISTRAÇÃO</text>
+      <text x="170" y="147" text-anchor="middle" fill="#0369a1" font-size="9.5" font-family="sans-serif">Responde só ao Prefeito</text>
+
+      <rect x="410" y="110" width="200" height="48" rx="7" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+      <text x="510" y="131" text-anchor="middle" fill="#075985" font-size="11" font-weight="bold" font-family="sans-serif">SECRETÁRIO DE FINANÇAS</text>
+      <text x="510" y="147" text-anchor="middle" fill="#0369a1" font-size="9.5" font-family="sans-serif">Responde só ao Prefeito</text>
+
+      <!-- Nível 3: Setores / Oficiais -->
+      <rect x="12" y="210" width="146" height="62" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+      <text x="85" y="231" text-anchor="middle" fill="#166534" font-size="10.5" font-weight="bold" font-family="sans-serif">CHEFE DE PROTOCOLO</text>
+      <text x="85" y="247" text-anchor="middle" fill="#15803d" font-size="9.5" font-weight="bold" font-family="sans-serif">↳ Oficial Administrativo</text>
+      <text x="85" y="261" text-anchor="middle" fill="#166534" font-size="8.5" font-family="sans-serif">(1 único chefe direto!)</text>
+
+      <rect x="182" y="210" width="146" height="62" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+      <text x="255" y="231" text-anchor="middle" fill="#166534" font-size="10.5" font-weight="bold" font-family="sans-serif">CHEFE DE RH</text>
+      <text x="255" y="247" text-anchor="middle" fill="#15803d" font-size="9.5" font-weight="bold" font-family="sans-serif">↳ Oficial Administrativo</text>
+      <text x="255" y="261" text-anchor="middle" fill="#166534" font-size="8.5" font-family="sans-serif">(1 único chefe direto!)</text>
+
+      <rect x="352" y="210" width="146" height="62" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+      <text x="425" y="231" text-anchor="middle" fill="#166534" font-size="10.5" font-weight="bold" font-family="sans-serif">CHEFE DE TRIBUTOS</text>
+      <text x="425" y="247" text-anchor="middle" fill="#15803d" font-size="9.5" font-weight="bold" font-family="sans-serif">↳ Oficial Administrativo</text>
+      <text x="425" y="261" text-anchor="middle" fill="#166534" font-size="8.5" font-family="sans-serif">(1 único chefe direto!)</text>
+
+      <rect x="522" y="210" width="146" height="62" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+      <text x="595" y="231" text-anchor="middle" fill="#166534" font-size="10.5" font-weight="bold" font-family="sans-serif">CHEFE DE TESOURARIA</text>
+      <text x="595" y="247" text-anchor="middle" fill="#15803d" font-size="9.5" font-weight="bold" font-family="sans-serif">↳ Oficial Administrativo</text>
+      <text x="595" y="261" text-anchor="middle" fill="#166534" font-size="8.5" font-family="sans-serif">(1 único chefe direto!)</text>
+    </svg>
   </div>
 </div>
 
@@ -468,45 +499,51 @@ Idealizada por **Frederick Taylor**, a estrutura funcional abandona a ideia do "
   <div class="edu-comp-header">
     <div class="edu-comp-title">
       <span>⚙️</span>
-      <span>ORGANOGRAMA DA ESTRUTURA FUNCIONAL: SUBORDINAÇÃO MÚLTIPLA</span>
+      <span>ORGANOGRAMA DESENHADO — ESTRUTURA FUNCIONAL (SUBORDINAÇÃO MÚLTIPLA)</span>
     </div>
     <span class="edu-comp-badge">Taylor (Especialização)</span>
   </div>
-  <div class="edu-cards-grid grid-3">
-    <div class="edu-card card-indigo">
-      <div class="edu-card-top">
-        <span class="card-icon">👥</span>
-        <span class="card-badge">Chefe Técnico 1</span>
-      </div>
-      <h4 class="card-title">SUPERVISOR DE RH</h4>
-      <p class="card-text">Manda em ponto, férias e conduta funcional.</p>
-    </div>
-    <div class="edu-card card-sky">
-      <div class="edu-card-top">
-        <span class="card-icon">💻</span>
-        <span class="card-badge">Chefe Técnico 2</span>
-      </div>
-      <h4 class="card-title">SUPERVISOR DE TI</h4>
-      <p class="card-text">Manda em sistemas, senhas e segurança digital.</p>
-    </div>
-    <div class="edu-card card-emerald">
-      <div class="edu-card-top">
-        <span class="card-icon">💰</span>
-        <span class="card-badge">Chefe Técnico 3</span>
-      </div>
-      <h4 class="card-title">SUPERVISOR FINANCEIRO</h4>
-      <p class="card-text">Manda em empenhos, taxas e conferência contábil.</p>
-    </div>
-  </div>
-  <div style="text-align: center; font-size: 1.3rem; margin: 0.25rem 0 0.5rem; color: #f43f5e; font-weight: 800;">
-    ⬇️ Subordinação Múltipla Direta ⬇️
-  </div>
-  <div style="padding: 0 1.15rem 1.15rem;">
-    <div class="edu-card card-rose" style="text-align: center; align-items: center;">
-      <span class="card-badge" style="background: rgba(244, 63, 94, 0.15); color: #e11d48;">Ponto de Ruptura da Unidade de Comando</span>
-      <h4 class="card-title">OFICIAL ADMINISTRATIVO</h4>
-      <p class="card-text">O servidor responde simultaneamente aos 3 supervisores técnicos diferentes. <strong>Risco:</strong> Ordens concorrentes e conflito de prioridades!</p>
-    </div>
+  <div style="width:100%; overflow-x:auto; padding:1rem;">
+    <svg viewBox="0 0 680 245" style="width:100%; max-width:680px; height:auto; display:block; margin:0 auto;" xmlns="http://www.w3.org/2000/svg">
+      <!-- Linhas Cruzadas dos 3 Chefes Especialistas para o mesmo Oficial Administrativo -->
+      <!-- Do Supervisor de RH (x=115) -->
+      <line x1="115" y1="66" x2="170" y2="165" stroke="#4f46e5" stroke-width="2.5"/>
+      <line x1="115" y1="66" x2="510" y2="165" stroke="#4f46e5" stroke-width="2.2" stroke-dasharray="5,3"/>
+      <!-- Do Supervisor de TI (x=340) -->
+      <line x1="340" y1="66" x2="170" y2="165" stroke="#0284c7" stroke-width="2.5"/>
+      <line x1="340" y1="66" x2="510" y2="165" stroke="#0284c7" stroke-width="2.5"/>
+      <!-- Do Supervisor Financeiro (x=565) -->
+      <line x1="565" y1="66" x2="170" y2="165" stroke="#16a34a" stroke-width="2.2" stroke-dasharray="5,3"/>
+      <line x1="565" y1="66" x2="510" y2="165" stroke="#16a34a" stroke-width="2.5"/>
+
+      <!-- 3 Supervisores Especialistas -->
+      <rect x="20" y="14" width="190" height="52" rx="7" fill="#e0e7ff" stroke="#4f46e5" stroke-width="2"/>
+      <text x="115" y="36" text-anchor="middle" fill="#312e81" font-size="11" font-weight="bold" font-family="sans-serif">CHEFE ESPECIALISTA 1: RH</text>
+      <text x="115" y="52" text-anchor="middle" fill="#4338ca" font-size="9.5" font-family="sans-serif">Manda em ponto, férias e escala</text>
+
+      <rect x="245" y="14" width="190" height="52" rx="7" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+      <text x="340" y="36" text-anchor="middle" fill="#075985" font-size="11" font-weight="bold" font-family="sans-serif">CHEFE ESPECIALISTA 2: TI</text>
+      <text x="340" y="52" text-anchor="middle" fill="#0369a1" font-size="9.5" font-family="sans-serif">Manda no sistema e senhas</text>
+
+      <rect x="470" y="14" width="190" height="52" rx="7" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+      <text x="565" y="36" text-anchor="middle" fill="#166534" font-size="11" font-weight="bold" font-family="sans-serif">CHEFE ESPECIALISTA 3: FINANÇAS</text>
+      <text x="565" y="52" text-anchor="middle" fill="#15803d" font-size="9.5" font-family="sans-serif">Manda em taxas e notas fiscais</text>
+
+      <!-- Rótulo Central -->
+      <rect x="215" y="96" width="250" height="24" rx="12" fill="#ffe4e6" stroke="#e11d48" stroke-width="1.5"/>
+      <text x="340" y="112" text-anchor="middle" fill="#9f1239" font-size="9.5" font-weight="bold" font-family="sans-serif">⚠️ Ordens Cruzadas (Sem Unidade de Comando!)</text>
+
+      <!-- Base: Oficiais Administrativos recebendo 3 linhas de comando cada -->
+      <rect x="45" y="165" width="250" height="62" rx="7" fill="#fff1f2" stroke="#e11d48" stroke-width="2.2"/>
+      <text x="170" y="188" text-anchor="middle" fill="#9f1239" font-size="11" font-weight="bold" font-family="sans-serif">OFICIAL ADMINISTRATIVO A</text>
+      <text x="170" y="204" text-anchor="middle" fill="#be123c" font-size="9.5" font-family="sans-serif">Recebe ordens diretas dos 3 chefes</text>
+      <text x="170" y="218" text-anchor="middle" fill="#e11d48" font-size="8.5" font-weight="bold" font-family="sans-serif">(Subordinação Múltipla)</text>
+
+      <rect x="385" y="165" width="250" height="62" rx="7" fill="#fff1f2" stroke="#e11d48" stroke-width="2.2"/>
+      <text x="510" y="188" text-anchor="middle" fill="#9f1239" font-size="11" font-weight="bold" font-family="sans-serif">OFICIAL ADMINISTRATIVO B</text>
+      <text x="510" y="204" text-anchor="middle" fill="#be123c" font-size="9.5" font-family="sans-serif">Recebe ordens diretas dos 3 chefes</text>
+      <text x="510" y="218" text-anchor="middle" fill="#e11d48" font-size="8.5" font-weight="bold" font-family="sans-serif">(Subordinação Múltipla)</text>
+    </svg>
   </div>
 </div>
 
@@ -539,39 +576,52 @@ Ela junta o melhor dos dois mundos:
   <div class="edu-comp-header">
     <div class="edu-comp-title">
       <span>🤝</span>
-      <span>ESTRUTURA LINHA-STAFF: COMANDO LINEAR + ASSESSORIA TÉCNICA</span>
+      <span>ORGANOGRAMA DESENHADO — ESTRUTURA LINHA-STAFF (LINHA CONTÍNUA vs. TRACEJADA)</span>
     </div>
     <span class="edu-comp-badge">Padrão Municipal Moderno</span>
   </div>
-  <div class="edu-cards-grid grid-2">
-    <div class="edu-card card-indigo">
-      <div class="edu-card-top">
-        <span class="card-icon">⚡</span>
-        <span class="card-badge">ÓRGÃOS DE LINHA</span>
-      </div>
-      <h4 class="card-title">Autoridade de Comando e Execução</h4>
-      <p class="card-text">Possuem a linha hierárquica direta de mando e decisão sobre a rotina da repartição.</p>
-      <div class="card-levels">
-        <div class="level-row"><span>Cúpula</span> <strong>Prefeito Municipal</strong></div>
-        <div class="level-row"><span>Secretaria</span> <strong>Secretário de Administração</strong></div>
-        <div class="level-row"><span>Diretoria</span> <strong>Diretor de Departamento</strong></div>
-        <div class="level-row"><span>Base</span> <strong>Oficial Administrativo (Executor)</strong></div>
-      </div>
-    </div>
-    <div class="edu-card card-purple">
-      <div class="edu-card-top">
-        <span class="card-icon">💡</span>
-        <span class="card-badge">ÓRGÃOS DE STAFF (Assessoria)</span>
-      </div>
-      <h4 class="card-title">Autoridade Consultiva e Apoio Técnico</h4>
-      <p class="card-text">Especialistas que emitem laudos, pareceres e orientam as chefias, <strong>sem poder de mando sobre a base</strong>.</p>
-      <div class="card-levels">
-        <div class="level-row"><span>Jurídico</span> <strong>Procuradoria-Geral do Município</strong></div>
-        <div class="level-row"><span>Auditoria</span> <strong>Controladoria-Geral Municipal</strong></div>
-        <div class="level-row"><span>Mídia</span> <strong>Assessoria de Imprensa e Comunicação</strong></div>
-        <div class="level-row"><span>Tecnologia</span> <strong>Assessoria Especial de TI</strong></div>
-      </div>
-    </div>
+  <div style="width:100%; overflow-x:auto; padding:1rem;">
+    <svg viewBox="0 0 680 285" style="width:100%; max-width:680px; height:auto; display:block; margin:0 auto;" xmlns="http://www.w3.org/2000/svg">
+      <!-- Linha Contínua de Comando (LINHA) -->
+      <line x1="250" y1="54" x2="250" y2="120" stroke="#4f46e5" stroke-width="3"/>
+      <line x1="250" y1="120" x2="250" y2="195" stroke="#4f46e5" stroke-width="3"/>
+      <line x1="115" y1="195" x2="385" y2="195" stroke="#0284c7" stroke-width="2.5"/>
+      <line x1="115" y1="195" x2="115" y2="215" stroke="#0284c7" stroke-width="2.5"/>
+      <line x1="385" y1="195" x2="385" y2="215" stroke="#0284c7" stroke-width="2.5"/>
+
+      <!-- Linhas Tracejadas Laterais (STAFF / ASSESSORIA) -->
+      <line x1="250" y1="80" x2="450" y2="80" stroke="#9333ea" stroke-width="2.5" stroke-dasharray="6,4"/>
+      <line x1="250" y1="175" x2="450" y2="175" stroke="#9333ea" stroke-width="2.5" stroke-dasharray="6,4"/>
+
+      <!-- Topo: Prefeito -->
+      <rect x="145" y="10" width="210" height="44" rx="8" fill="#4f46e5" stroke="#312e81" stroke-width="2"/>
+      <text x="250" y="29" text-anchor="middle" fill="#ffffff" font-size="11.5" font-weight="bold" font-family="sans-serif">PREFEITO MUNICIPAL (LINHA)</text>
+      <text x="250" y="44" text-anchor="middle" fill="#e0e7ff" font-size="9.5" font-family="sans-serif">Autoridade de Comando e Decisão</text>
+
+      <!-- Staff 1: Procuradoria Jurídica -->
+      <rect x="450" y="54" width="215" height="52" rx="7" fill="#f3e8ff" stroke="#9333ea" stroke-width="2" stroke-dasharray="5,3"/>
+      <text x="557" y="75" text-anchor="middle" fill="#6b21a8" font-size="10.5" font-weight="bold" font-family="sans-serif">STAFF: PROCURADORIA JURÍDICA</text>
+      <text x="557" y="90" text-anchor="middle" fill="#7e22ce" font-size="9" font-family="sans-serif">Emite pareceres (NÃO manda na linha!)</text>
+
+      <!-- Nível 2: Secretário -->
+      <rect x="140" y="115" width="220" height="46" rx="7" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+      <text x="250" y="135" text-anchor="middle" fill="#075985" font-size="11" font-weight="bold" font-family="sans-serif">SECRETÁRIO DE ADMINISTRAÇÃO</text>
+      <text x="250" y="150" text-anchor="middle" fill="#0369a1" font-size="9.5" font-family="sans-serif">Órgão de Linha (Chefia Direta)</text>
+
+      <!-- Staff 2: Assessoria de TI / Controle -->
+      <rect x="450" y="149" width="215" height="52" rx="7" fill="#f3e8ff" stroke="#9333ea" stroke-width="2" stroke-dasharray="5,3"/>
+      <text x="557" y="170" text-anchor="middle" fill="#6b21a8" font-size="10.5" font-weight="bold" font-family="sans-serif">STAFF: ASSESSORIA TÉCNICA</text>
+      <text x="557" y="185" text-anchor="middle" fill="#7e22ce" font-size="9" font-family="sans-serif">Apoio consultivo ao Secretário</text>
+
+      <!-- Base: Divisões e Oficiais -->
+      <rect x="20" y="215" width="190" height="55" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+      <text x="115" y="236" text-anchor="middle" fill="#166534" font-size="10.5" font-weight="bold" font-family="sans-serif">DIVISÃO DE PROTOCOLO</text>
+      <text x="115" y="253" text-anchor="middle" fill="#15803d" font-size="9.5" font-weight="bold" font-family="sans-serif">↳ Oficial Administrativo (Linha)</text>
+
+      <rect x="290" y="215" width="190" height="55" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+      <text x="385" y="236" text-anchor="middle" fill="#166534" font-size="10.5" font-weight="bold" font-family="sans-serif">DIVISÃO DE COMPRAS</text>
+      <text x="385" y="253" text-anchor="middle" fill="#15803d" font-size="9.5" font-weight="bold" font-family="sans-serif">↳ Oficial Administrativo (Linha)</text>
+    </svg>
   </div>
 </div>
 
@@ -604,34 +654,68 @@ Para tocar esse projeto, forma-se uma equipe multidisciplinar:
   <div class="edu-comp-header">
     <div class="edu-comp-title">
       <span>🔀</span>
-      <span>ESTRUTURA MATRICIAL: O CRUZAMENTO DE DUAS AUTORIDADES</span>
+      <span>ORGANOGRAMA DESENHADO — ESTRUTURA MATRICIAL (GRADE FUNCIONAL × PROJETOS)</span>
     </div>
     <span class="edu-comp-badge">Dupla Subordinação</span>
   </div>
-  <div class="edu-cards-grid grid-2">
-    <div class="edu-card card-indigo">
-      <div class="edu-card-top">
-        <span class="card-icon">🏢</span>
-        <span class="card-badge">Eixo Vertical (Permanente)</span>
-      </div>
-      <h4 class="card-title">CHEFE FUNCIONAL</h4>
-      <p class="card-text"><strong>Diretor de Protocolo:</strong> Cuida da lotação fixa, escala de trabalho, férias, avaliação funcional e rotina permanente do setor.</p>
-    </div>
-    <div class="edu-card card-emerald">
-      <div class="edu-card-top">
-        <span class="card-icon">🚀</span>
-        <span class="card-badge">Eixo Horizontal (Temporário)</span>
-      </div>
-      <h4 class="card-title">GERENTE DE PROJETO</h4>
-      <p class="card-text"><strong>Coordenador do Projeto "Cidade Digital":</strong> Define metas temporárias, prazos de entrega e condução dos trabalhos da força-tarefa.</p>
-    </div>
-  </div>
-  <div style="padding: 0 1.15rem 1.15rem;">
-    <div class="edu-card card-amber" style="text-align: center; align-items: center;">
-      <span class="card-badge">O Vínculo do Servidor</span>
-      <h4 class="card-title">OFICIAL ADMINISTRATIVO DESIGNADO</h4>
-      <p class="card-text">O servidor atua na intersecção da matriz: responde ao Diretor de Protocolo (como membro do setor) e ao Gerente de Projeto (como integrante da equipe de inovação).</p>
-    </div>
+  <div style="width:100%; overflow-x:auto; padding:1rem;">
+    <svg viewBox="0 0 680 285" style="width:100%; max-width:680px; height:auto; display:block; margin:0 auto;" xmlns="http://www.w3.org/2000/svg">
+      <!-- Linhas Verticais (Eixo Funcional Permanente) -->
+      <line x1="280" y1="62" x2="280" y2="260" stroke="#4f46e5" stroke-width="3"/>
+      <line x1="440" y1="62" x2="440" y2="260" stroke="#4f46e5" stroke-width="3"/>
+      <line x1="600" y1="62" x2="600" y2="260" stroke="#4f46e5" stroke-width="3"/>
+
+      <!-- Linhas Horizontais (Eixo de Projetos Temporários) -->
+      <line x1="185" y1="130" x2="650" y2="130" stroke="#16a34a" stroke-width="3" stroke-dasharray="6,3"/>
+      <line x1="185" y1="220" x2="650" y2="220" stroke="#d97706" stroke-width="3" stroke-dasharray="6,3"/>
+
+      <!-- Colunas Superiores: Chefes Funcionais Permanentes -->
+      <rect x="210" y="14" width="140" height="48" rx="7" fill="#e0e7ff" stroke="#4f46e5" stroke-width="2"/>
+      <text x="280" y="34" text-anchor="middle" fill="#312e81" font-size="10" font-weight="bold" font-family="sans-serif">SETOR DE PROTOCOLO</text>
+      <text x="280" y="49" text-anchor="middle" fill="#4338ca" font-size="8.5" font-family="sans-serif">(Chefe Funcional Fixo)</text>
+
+      <rect x="370" y="14" width="140" height="48" rx="7" fill="#e0e7ff" stroke="#4f46e5" stroke-width="2"/>
+      <text x="440" y="34" text-anchor="middle" fill="#312e81" font-size="10" font-weight="bold" font-family="sans-serif">SETOR DE FINANÇAS</text>
+      <text x="440" y="49" text-anchor="middle" fill="#4338ca" font-size="8.5" font-family="sans-serif">(Chefe Funcional Fixo)</text>
+
+      <rect x="530" y="14" width="140" height="48" rx="7" fill="#e0e7ff" stroke="#4f46e5" stroke-width="2"/>
+      <text x="600" y="34" text-anchor="middle" fill="#312e81" font-size="10" font-weight="bold" font-family="sans-serif">SETOR DE TI</text>
+      <text x="600" y="49" text-anchor="middle" fill="#4338ca" font-size="8.5" font-family="sans-serif">(Chefe Funcional Fixo)</text>
+
+      <!-- Linhas Laterais Esquerdas: Gerentes de Projeto -->
+      <rect x="12" y="104" width="173" height="52" rx="7" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+      <text x="98" y="126" text-anchor="middle" fill="#166534" font-size="10" font-weight="bold" font-family="sans-serif">PROJETO "PREFEITURA DIGITAL"</text>
+      <text x="98" y="142" text-anchor="middle" fill="#15803d" font-size="8.5" font-family="sans-serif">(Gerente do Projeto A)</text>
+
+      <rect x="12" y="194" width="173" height="52" rx="7" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+      <text x="98" y="216" text-anchor="middle" fill="#92400e" font-size="10" font-weight="bold" font-family="sans-serif">PROJETO "NOVO ALMOXARIFADO"</text>
+      <text x="98" y="232" text-anchor="middle" fill="#b45309" font-size="8.5" font-family="sans-serif">(Gerente do Projeto B)</text>
+
+      <!-- Nós de Interseção (Servidores com Dupla Subordinação) -->
+      <rect x="222" y="110" width="116" height="40" rx="20" fill="#ffffff" stroke="#e11d48" stroke-width="2.2"/>
+      <text x="280" y="128" text-anchor="middle" fill="#9f1239" font-size="9" font-weight="bold" font-family="sans-serif">Oficial Adm. 1</text>
+      <text x="280" y="140" text-anchor="middle" fill="#be123c" font-size="8" font-family="sans-serif">(2 Chefes: ⬆️ e ⬅️)</text>
+
+      <rect x="382" y="110" width="116" height="40" rx="20" fill="#ffffff" stroke="#e11d48" stroke-width="2.2"/>
+      <text x="440" y="128" text-anchor="middle" fill="#9f1239" font-size="9" font-weight="bold" font-family="sans-serif">Contador A</text>
+      <text x="440" y="140" text-anchor="middle" fill="#be123c" font-size="8" font-family="sans-serif">(2 Chefes: ⬆️ e ⬅️)</text>
+
+      <rect x="542" y="110" width="116" height="40" rx="20" fill="#ffffff" stroke="#e11d48" stroke-width="2.2"/>
+      <text x="600" y="128" text-anchor="middle" fill="#9f1239" font-size="9" font-weight="bold" font-family="sans-serif">Analista TI 1</text>
+      <text x="600" y="140" text-anchor="middle" fill="#be123c" font-size="8" font-family="sans-serif">(2 Chefes: ⬆️ e ⬅️)</text>
+
+      <rect x="222" y="200" width="116" height="40" rx="20" fill="#ffffff" stroke="#e11d48" stroke-width="2.2"/>
+      <text x="280" y="218" text-anchor="middle" fill="#9f1239" font-size="9" font-weight="bold" font-family="sans-serif">Oficial Adm. 2</text>
+      <text x="280" y="230" text-anchor="middle" fill="#be123c" font-size="8" font-family="sans-serif">(2 Chefes: ⬆️ e ⬅️)</text>
+
+      <rect x="382" y="200" width="116" height="40" rx="20" fill="#ffffff" stroke="#e11d48" stroke-width="2.2"/>
+      <text x="440" y="218" text-anchor="middle" fill="#9f1239" font-size="9" font-weight="bold" font-family="sans-serif">Contador B</text>
+      <text x="440" y="230" text-anchor="middle" fill="#be123c" font-size="8" font-family="sans-serif">(2 Chefes: ⬆️ e ⬅️)</text>
+
+      <rect x="542" y="200" width="116" height="40" rx="20" fill="#ffffff" stroke="#e11d48" stroke-width="2.2"/>
+      <text x="600" y="218" text-anchor="middle" fill="#9f1239" font-size="9" font-weight="bold" font-family="sans-serif">Analista TI 2</text>
+      <text x="600" y="230" text-anchor="middle" fill="#be123c" font-size="8" font-family="sans-serif">(2 Chefes: ⬆️ e ⬅️)</text>
+    </svg>
   </div>
 </div>
 
