@@ -769,6 +769,114 @@
     html.dark .cfc-card-text {
       color: #f1f5f9;
     }
+
+    /* =========================================================
+       LIGHTBOX TELA CHEIA PARA FLUXOGRAMAS E ORGANOGRAMAS (MOBILE/DESKTOP)
+       ========================================================= */
+    .edu-zoomable-diagram {
+      position: relative;
+      cursor: zoom-in;
+      border-radius: 0.85rem;
+      padding: 0.35rem;
+      transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
+    }
+    .edu-zoomable-diagram:hover,
+    .edu-zoomable-diagram:active {
+      background-color: rgba(99, 102, 241, 0.06);
+      box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.28);
+    }
+    .edu-zoom-hint {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.35rem;
+      margin: 0.35rem auto 0;
+      padding: 0.25rem 0.7rem;
+      border-radius: 9999px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      font-family: var(--font-mono, monospace);
+      color: #4f46e5;
+      background: rgba(99, 102, 241, 0.12);
+      border: 1px solid rgba(99, 102, 241, 0.28);
+      pointer-events: none;
+    }
+    html.dark .edu-zoom-hint {
+      color: #a5b4fc;
+      background: rgba(99, 102, 241, 0.22);
+      border-color: rgba(129, 140, 248, 0.35);
+    }
+    .diagram-lightbox-backdrop {
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      background: rgba(15, 23, 42, 0.92);
+      backdrop-filter: blur(6px);
+      display: flex;
+      flex-direction: column;
+    }
+    .diagram-lightbox-backdrop.hidden {
+      display: none !important;
+    }
+    .diagram-lightbox-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+      padding: 0.65rem 0.9rem;
+      background: rgba(15, 23, 42, 0.95);
+      border-bottom: 1px solid rgba(148, 163, 184, 0.2);
+      color: #f8fafc;
+      flex-shrink: 0;
+    }
+    .diagram-lightbox-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.3rem;
+      padding: 0.42rem 0.75rem;
+      border-radius: 0.6rem;
+      font-size: 0.78rem;
+      font-weight: 700;
+      background: rgba(255, 255, 255, 0.12);
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      cursor: pointer;
+      user-select: none;
+    }
+    .diagram-lightbox-btn:active {
+      transform: scale(0.96);
+    }
+    .diagram-lightbox-btn.close-btn {
+      background: #e11d48;
+      border-color: #f43f5e;
+    }
+    .diagram-lightbox-stage {
+      flex: 1;
+      overflow: auto;
+      -webkit-overflow-scrolling: touch;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+      touch-action: pan-x pan-y pinch-zoom;
+    }
+    .diagram-lightbox-card {
+      background: #ffffff;
+      border-radius: 1rem;
+      padding: 1rem;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
+      transition: width 0.15s ease;
+      margin: auto;
+    }
+    .diagram-lightbox-img {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-width: none;
+      user-select: none;
+    }
+    }
     .cfc-card.causa {
       border-color: rgba(245, 158, 11, 0.35);
       background: linear-gradient(180deg, rgba(245, 158, 11, 0.08) 0%, var(--bg-elevated) 100%);
@@ -5149,6 +5257,16 @@
         fmt = fmt.replace(/\x60([^\x60]+)\x60/g, '<code class="font-mono text-xs px-1.5 py-0.5 rounded surface-muted text-indigo-600 dark:text-indigo-400">$1</code>');
         return prefix + fmt + suffix;
       });
+      // Tornar diagramas SVG (Fluxogramas e Organogramas) clicáveis para expandir como imagem em tela cheia
+      s = s.replace(/<svg\b([^>]*?)>([\s\S]*?)<\/svg>/gi, (fullSvg, attrs) => {
+        const vbMatch = attrs.match(/viewBox=["']\s*[\d.-]+\s+[\d.-]+\s+([\d.]+)\s+([\d.]+)\s*["']/i);
+        const vbWidth = vbMatch ? parseFloat(vbMatch[1]) : 0;
+        const vbHeight = vbMatch ? parseFloat(vbMatch[2]) : 0;
+        if (vbWidth >= 220 && vbHeight >= 120) {
+          return `<div class="edu-zoomable-diagram" onclick="openDiagramZoomModal(this)" role="button" tabindex="0" aria-label="Ampliar diagrama em tela cheia">${fullSvg}<div class="text-center"><span class="edu-zoom-hint">🔍 Toque para expandir em tela cheia</span></div></div>`;
+        }
+        return fullSvg;
+      });
       return s;
     }
 
@@ -7274,6 +7392,114 @@ MEU PERFIL E MÉTODO DIDÁTICO ("A LÓGICA DE ORIGEM"):
     } else {
       showLoginScreen();
     }
+
+    // =========================================================
+    // LIGHTBOX DE TELA CHEIA PARA FLUXOGRAMAS E ORGANOGRAMAS
+    // =========================================================
+    let currentDiagramZoom = 100;
+
+    function ensureDiagramModalExists() {
+      let modal = document.getElementById("diagramZoomModal");
+      if (modal) return modal;
+      modal = document.createElement("div");
+      modal.id = "diagramZoomModal";
+      modal.className = "diagram-lightbox-backdrop hidden";
+      modal.innerHTML = `
+        <div class="diagram-lightbox-bar">
+          <div class="flex items-center gap-2 min-w-0">
+            <span class="text-sm font-extrabold truncate" id="diagramZoomTitle">📊 Visualização em Tela Cheia</span>
+          </div>
+          <div class="flex items-center gap-1.5 shrink-0">
+            <button type="button" class="diagram-lightbox-btn" onclick="stepDiagramZoom(-35)" title="Reduzir zoom">➖</button>
+            <button type="button" class="diagram-lightbox-btn font-mono" id="diagramZoomPctBtn" onclick="resetDiagramZoom()" title="Redefinir zoom">100%</button>
+            <button type="button" class="diagram-lightbox-btn" onclick="stepDiagramZoom(35)" title="Aumentar zoom">➕</button>
+            <button type="button" class="diagram-lightbox-btn close-btn" onclick="closeDiagramZoomModal()">✕ Fechar</button>
+          </div>
+        </div>
+        <div class="diagram-lightbox-stage" id="diagramZoomStage" onclick="if(event.target===this) closeDiagramZoomModal()">
+          <div class="diagram-lightbox-card" id="diagramZoomCard">
+            <img id="diagramZoomImg" class="diagram-lightbox-img" alt="Diagrama ampliado em tela cheia" />
+          </div>
+        </div>
+      `;
+      document.body.appendChild(modal);
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && !modal.classList.contains("hidden")) {
+          closeDiagramZoomModal();
+        }
+      });
+      return modal;
+    }
+
+    function applyDiagramZoomWidth() {
+      const card = document.getElementById("diagramZoomCard");
+      const pctBtn = document.getElementById("diagramZoomPctBtn");
+      if (!card) return;
+      const isMobile = window.innerWidth < 768;
+      const baseVw = isMobile ? 94 : 82;
+      const widthVw = Math.round((baseVw * currentDiagramZoom) / 100);
+      card.style.width = widthVw + "vw";
+      if (pctBtn) pctBtn.textContent = currentDiagramZoom + "%";
+    }
+
+    window.openDiagramZoomModal = function(wrapperEl) {
+      if (!wrapperEl) return;
+      const svgEl = wrapperEl.tagName.toLowerCase() === "svg" ? wrapperEl : wrapperEl.querySelector("svg");
+      if (!svgEl) return;
+
+      const modal = ensureDiagramModalExists();
+      const imgEl = document.getElementById("diagramZoomImg");
+      const titleEl = document.getElementById("diagramZoomTitle");
+
+      // Descobrir título do card ou componente pai
+      const parentCard = wrapperEl.closest(".edu-card") || wrapperEl.closest(".edu-component");
+      let titleText = "📊 Fluxograma / Organograma";
+      if (parentCard) {
+        const hEl = parentCard.querySelector(".card-title, .edu-comp-title");
+        if (hEl && hEl.textContent.trim()) {
+          titleText = hEl.textContent.trim();
+        }
+      }
+      if (titleEl) titleEl.textContent = titleText;
+
+      // Converter o SVG em imagem Data URI de alta definição
+      const cloneSvg = svgEl.cloneNode(true);
+      if (!cloneSvg.getAttribute("xmlns")) {
+        cloneSvg.setAttribute("xmlns", "http://www.w3.org/2000/svg");
+      }
+      const vb = (cloneSvg.getAttribute("viewBox") || "0 0 760 470").trim().split(/\s+/);
+      if (vb.length === 4) {
+        cloneSvg.setAttribute("width", vb[2]);
+        cloneSvg.setAttribute("height", vb[3]);
+      }
+      cloneSvg.removeAttribute("style");
+      const svgXml = new XMLSerializer().serializeToString(cloneSvg);
+      const svgDataUrl = "data:image/svg+xml;charset=utf-8," + encodeURIComponent(svgXml);
+
+      imgEl.src = svgDataUrl;
+      // No celular já abre levemente ampliado (135%) para leitura confortável podendo arrastar ou dar zoom
+      currentDiagramZoom = window.innerWidth < 768 ? 135 : 100;
+      applyDiagramZoomWidth();
+
+      modal.classList.remove("hidden");
+      document.body.style.overflow = "hidden";
+    };
+
+    window.stepDiagramZoom = function(delta) {
+      currentDiagramZoom = Math.max(70, Math.min(320, currentDiagramZoom + delta));
+      applyDiagramZoomWidth();
+    };
+
+    window.resetDiagramZoom = function() {
+      currentDiagramZoom = 100;
+      applyDiagramZoomWidth();
+    };
+
+    window.closeDiagramZoomModal = function() {
+      const modal = document.getElementById("diagramZoomModal");
+      if (modal) modal.classList.add("hidden");
+      document.body.style.overflow = "";
+    };
   </script>
   <!-- Módulo de Simulados Integrado -->
   <script src="revisao/data.js"></script>
