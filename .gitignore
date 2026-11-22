@@ -4,4 +4,8 @@ __pycache__/
 *.pyc
 
 impressao/
+node_modules/
+dist/
+.vite/
+*.local
 

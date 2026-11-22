@@ -5,21 +5,27 @@
 > Sempre que iniciar uma sessão ou receber uma mensagem do usuário neste diretório:
 > 1. Leia este arquivo (`.agents/GUIA_DO_AGENTE.md`) para saber exatamente em qual **Semana e Tópico** o usuário está no **Checklist de Progresso** (Seção 5).
 > 2. **VINCULAÇÃO DO E-MAIL DO USUÁRIO (SINCRONIZAÇÃO COM O SITE):** Verifique se o e-mail do usuário já está configurado localmente rodando `python .agents/sync_db.py status`. **Caso ainda não tenha o e-mail configurado (`.agents/usuario_ativo.json` ausente), pergunte ao usuário qual é o e-mail ou nome de usuário dele na plataforma** e execute `python .agents/sync_db.py set-user <email_informado>`.
-> 3. **ORGANIZAÇÃO EM PASTAS POR SEMANA + INCORPORAÇÃO AUTOMÁTICA AO SITE:** Sempre que gerar conteúdos, aulas, resumos ou listas de exercícios para uma semana específica (ex: Semana 1, Semana 2...), **crie uma pasta dedicada na raiz do projeto** no formato `semana-01/`, `semana-02/` ... `semana-12/`, salve os arquivos `.md` lá dentro e **rode imediatamente `python .agents/sync_lessons.py`** para incorporar os `.md` diretamente na Trilha interativa do site (`aulas-data.js`).
+> 3. **ORGANIZAÇÃO EM PASTAS POR SEMANA + AUDITORIA + INCORPORAÇÃO AO SITE (`aulas-data.js` + REACT `EduKit`):** Sempre que gerar conteúdos, aulas, resumos ou listas de exercícios para uma semana específica (`semana-01/` .. `semana-12/`), siga o protocolo completo de `.agents/PROTOCOLO_PRODUCAO_AULA.md`:
+>    - Audite o `.md` com `python .agents/audit_lesson.py <arquivo.md>` até zerar erros/avisos (`[OK]`);
+>    - Rode imediatamente `python .agents/sync_lessons.py` para atualizar `aulas-data.js`;
+>    - Converta o `.md` 1-para-1 (zero condensação) para módulo React `EduKit` em `app-react/src/lessons/semana-XX/<materia>.tsx` conforme `.agents/GUIA_EDUKIT_REACT.md`, registre em `app-react/src/lessons/registry.ts` e valide `typecheck`, `test` e `build`.
 > 4. **ATUALIZAÇÃO AUTOMÁTICA DO PROGRESSO (LOCAL + SITE):** Quando o usuário avisar que concluiu um tópico, bloco ou simulado:
 >    - Edite imediatamente a Seção 5 deste arquivo, trocando `[ ]` por `[x]`.
 >    - Sincronize o progresso na conta do usuário para atualizar o site automaticamente rodando:
 >      - `python .agents/sync_db.py mark <chave>` (chaves: `w1_port`, `w1_rlm`, `w1_esp`, `w1_ger`, `w1_sim` ... até `w12_sim`)
 >      - `python .agents/sync_db.py exam <numero_da_prova>` (ex: `1` a `93`)
-> 5. Ao ensinar qualquer conteúdo ao usuário, siga rigorosamente o **Perfil Cognitivo e Didático do Aluno (Seção 2)** — nunca jogue regras secas ou fórmulas decoradas sem antes explicar **o porquê lógico/histórico** daquilo existir.
-> 6. **PADRÃO ESTRUTURAL DA BANCA INSTITUTO ACCESS:** Consulte `.agents/PADRAO_QUESTOES_BANCA_ACCESS.md`. As questões oficiais do Instituto ACCESS (`prova-auto/provas-access/`) são mantidas 100% autênticas e originais (não precisam de adaptação). Já as questões extraídas de outras bancas (`prova-auto/13.pdf` a `93.pdf`) ou criadas de forma inédita DEVEM ser adaptadas obrigatoriamente para o estilo e estrutura da ACCESS (4 alternativas A-D, comandos em CAIXA ALTA como CORRETA/INCORRETA, casos práticos de repartição e personificação em RLM).
+> 5. Ao ensinar qualquer conteúdo ao usuário, siga rigorosamente o **Perfil Cognitivo e Didático do Aluno (Seção 2)** e o **Contrato `D-E-A-M-P-C`** de `.agents/PROTOCOLO_PRODUCAO_AULA.md` — profundidade máxima nos tópicos do Edital Nível Médio/ACCESS (≥3 exemplos progressivos, analogias, flashcards `<FlipCardsGrid />`, mapa de gêmeos confundíveis e corte de teoria acadêmica irrelevante).
+> 6. **PADRÃO ESTRUTURAL DA BANCA INSTITUTO ACCESS + SIMETRIA:** Consulte `.agents/PADRAO_QUESTOES_BANCA_ACCESS.md` e a Fase 3 de `.agents/PROTOCOLO_PRODUCAO_AULA.md`. As questões oficiais do Instituto ACCESS (`prova-auto/provas-access/`) são mantidas 100% autênticas e originais com gabarito definitivo conferido. Já as questões adaptadas (`13.pdf` a `93.pdf`), inéditas e checkpoints DEVEM seguir o padrão ACCESS (4 alternativas A-D, comandos em CAIXA ALTA, casos práticos/personificados, simetria de tamanho `0.65`–`1.35`, zero pistas exclusivas e gabaritos distribuídos).
 
 ---
 
 ## 1. Visão Geral dos Arquivos do Workspace (`c:\Users\gabri\OneDrive\Documentos\concurso`)
 
-* `index.html`: Aplicação principal do aluno contendo a trilha interativa de 12 semanas, o **Leitor de Aulas e Exercícios Interativos (`#page-aula`)**, o acervo de provas e o **Gerador de Prompt Matriz**.
+* `index.html`: Aplicação legada principal do aluno contendo a trilha interativa de 12 semanas, o **Leitor de Aulas e Exercícios Interativos (`#page-aula`)**, o acervo de provas e o **Gerador de Prompt Matriz**.
+* `app-react/`: Aplicação moderna em React + TypeScript + Vite (`src/components/edu/` `EduKit`, módulos interativos em `src/lessons/semana-XX/<materia>.tsx`, registro em `src/lessons/registry.ts` e gerador em `src/lib/promptBuilder.ts`).
 * `aulas-data.js` e `.agents/sync_lessons.py`: Sistema automatizado que converte todos os arquivos `.md` de `semana-01/` a `semana-12/` em aulas e listas de exercícios interativas linkadas diretamente aos cards de cada semana e matéria na Trilha do site.
+* `.agents/PROTOCOLO_PRODUCAO_AULA.md` e `.agents/audit_lesson.py`: Protocolo obrigatório em 5 fases (`D-E-A-M-P-C` anti-superficialidade + filtro anti-enrolação + flashcards + simetria ACCESS) e auditor automático em Python que valida o `.md` antes da publicação.
+* `.agents/GUIA_EDUKIT_REACT.md`: Manual oficial de conversão 1-para-1 (zero condensação) de aulas `.md` para módulos React `EduKit` responsivos e ricos em interatividade (`FlipCardsGrid`, `CompareGrid`, `TrapAlert`, `StepByStep`, SVGs e `FeynmanCard`).
 * `edital_organizado_oficial_administrativo.pdf`: Documento original do aluno com o Mapa de Estudos dividido em 4 Grandes Grupos (01. Língua Portuguesa, 02. Raciocínio Lógico e Matemático, 03. Conhecimentos Gerais, 04. Conhecimentos Específicos), alinhado ao concurso de Oficial Administrativo (Prefeitura de Birigui/SP — Edital 220/2026 — Banca Instituto ACCESS: 40 questões, sendo 10 de cada grupo).
 * `prova-auto/`: Pasta contendo **93 provas reais de Oficial Administrativo (2022 a 2026)** numeradas de `1.pdf` a `93.pdf` e seus respectivos gabaritos `g1.pdf` a `g93.pdf`, além de `provas-access/` com 45 provas de Nível Médio do Instituto ACCESS (2024–2026):
   * **Provas `1.pdf` a `12.pdf` (`g1.pdf` a `g12.pdf`):** São os **12 Simulados Oficiais de Sábado**, renumerados exatamente na ordem da **Semana 01 até a Semana 12**!
@@ -73,24 +79,17 @@
 
 ## 4. Como o Agente Deve Atuar ao Receber o Prompt da Semana
 
-Quando o usuário enviar o Prompt Matriz da Semana $X$:
-1. **Crie a pasta da semana** na raiz do workspace (`semana-01`, `semana-02`, etc., com dois dígitos).
-2. **Crie os arquivos de estudo dentro da pasta `semana-XX/`** (ou o arquivo específico solicitado), contendo:
-   * **A Origem e o Porquê:** Explicação lógica/histórica de cada conceito daquela semana, do básico ao avançado, sem pular etapas.
-   * **A Lógica das Regras e Exceções:** Por que cada regra ou fórmula funciona daquele jeito (com exemplos práticos e visuais).
-   * **Atenção Especial às Dificuldades Informadas:** Aprofunde com analogias extras os pontos que o aluno destacou no campo de dificuldades do prompt.
-   * **Síntese Feynman (3 Linhas):** Resumo curto por tópico para o aluno passar para o caderno.
-   * **Bateria de Questões Reais Comentadas:** Questões extraídas das provas de `prova-auto/` com gabarito e explicação investigativa de cada alternativa.
-3. **DIRETRIZ OBRIGATÓRIA — Incorpore cada `.md` ao Site (`aulas-data.js`):**
-   * As pessoas não abrem arquivos `.md` brutos fora do sistema. Todo arquivo `.md` criado ou editado dentro de `semana-XX/` **DEVE ser incorporado automaticamente à Trilha do site (`index.html`)** rodando:
-     ```bash
-     python .agents/sync_lessons.py
-     ```
-   * Se uma matéria tiver **2 ou mais arquivos `.md`** (ex.: `matematica_semana_01.md` com a aula + `exercicios_fracoes_decimais_dizimas.md` com lista extra de exercícios), o script `sync_lessons.py` vincula todos eles automaticamente ao card da matéria na Trilha e cria abas alternadoras dentro do Leitor de Aulas.
-   * **Formato de Questões para virar Formulário Interativo no Site:**
-     - Nas aulas (`*_semana_XX.md`), estruture cada questão com `### Questão X (Banca — Órgão — Ano)`, alternativas `- **A)** ...`, `- **B)** ...` e bloco `<details><summary>Ver Gabarito e Resolução Passo a Passo</summary> **Gabarito Oficial: Letra X** ... </details>`. O site transforma isso automaticamente em formulário com botão **"Enviar e Corrigir"**, placar de acertos/erros e revelação da correção.
-     - Nas listas de exercícios abertos (`exercicios_*.md`), use `## Questões`, `### 1. Título`, itens `1. ... = ______` e `## Gabarito` correspondente.
-4. **Atualize o Checklist (Seção 5 abaixo):** Quando o aluno confirmar que concluiu um tópico ou semana, marque `[x]` e rode `python .agents/sync_db.py mark wX_<materia>`.
+Quando o usuário enviar o Prompt Matriz da Semana $X$, siga rigorosamente as 5 Fases de `.agents/PROTOCOLO_PRODUCAO_AULA.md`:
+1. **Pesquisa Prévia e Filtro Anti-Enrolação (Fase 1):** Leia o escopo oficial da semana + pré-requisitos, defina o que **ENTRA** (cobrabilidade Nível Médio / ACCESS) vs. o que **FICA DE FORA** (teoria acadêmica irrelevante), pesquise questões reais em `prova-auto/provas-access/` e `13.pdf`..`93.pdf` (**JAMAIS `1.pdf`..`12.pdf`**) conferindo sempre o gabarito definitivo oficial (descartando questões anuladas), e feche o Contrato de Sumário (zero tópicos prometidos sem explicação).
+2. **Crie a pasta `semana-XX/` e produza o `.md` no Contrato `D-E-A-M-P-C` (Fases 2 e 3):**
+   * Divida a aula em **Eixos focados (`## EIXO 1..N`)**, cumprindo em cada subtópico (`###`): **D**efinição do zero, **E**xplicação lógica + teste operacional, **A**nalogia + **mínimo 3 exemplos progressivos** (cotidiano, Prefeitura, caso limite), **M**apa de "gêmeos confundíveis", **P**egadinha real ACCESS + Teste de 5s, e **C**onsolidação ativa (Síntese Feynman de 3 linhas + **3 questões diretas de checkpoint ao final de CADA eixo**).
+   * Feche com a **Bateria Final de Questões Reais + Adaptadas** (respeitando a Regra de Simetria `0.65`–`1.35`, zero pistas parentéticas exclusivas na correta e distribuição equilibrada A/B/C/D) e o **Checklist de Fixação**.
+3. **Audite ANTES de Publicar (Fase 5 — Obrigatório):**
+   * Rode `python .agents/audit_lesson.py semana-XX/<arquivo>.md` e zere todos os `[ERRO]` e `[AVISO]`.
+4. **Incorpore ao Site Legado (`aulas-data.js`) e Converta para React `EduKit` (Fases 4 e 5):**
+   * Rode imediatamente `python .agents/sync_lessons.py` para atualizar `aulas-data.js`.
+   * Converta **1-para-1 (Zero Condensação)** seguindo `.agents/GUIA_EDUKIT_REACT.md` para `app-react/src/lessons/semana-XX/<materia>.tsx` (incluindo `<FlipCardsGrid />` em todo eixo denso, `<CompareGrid />`, `<TrapAlert />`, `<StepByStep />`, SVGs quando houver fluxogramas/esquemas, `<FeynmanCard />`, checkpoints e bateria final), registre em `app-react/src/lessons/registry.ts` e valide com `cd app-react && npm run typecheck && npm test && npm run build`.
+5. **Atualize o Checklist (Seção 5 abaixo):** Quando o aluno confirmar que concluiu um tópico ou semana, marque `[x]` e rode `python .agents/sync_db.py mark wX_<materia>`.
 
 ---
 
