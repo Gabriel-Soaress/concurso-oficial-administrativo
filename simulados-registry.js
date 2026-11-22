@@ -51,6 +51,28 @@
       getResumos: function () {
         return root.REVISAO_02_DATA || null;
       }
+    },
+    {
+      id: "simulado-sem-01-04",
+      titulo: "Simulado Adaptado · Mês 1 (Semanas 01 a 04)",
+      subtitulo: "Caderno de Prova Padrão Instituto ACCESS — Nível Médio (60 questões · Português em breve)",
+      descricao: "Simulado acumulativo completo do Mês 1 (Semanas 01 a 04) misturando questões oficiais do Instituto ACCESS e questões adaptadas ao padrão da banca: 20 de Conhecimentos Específicos, 20 de Conhecimentos Gerais (incluindo Birigui/SP) e 20 de Matemática/RLM. Língua Portuguesa será incorporada posteriormente.",
+      semanas: "Mês 1 (Sem. 01 a 04)",
+      badge: "Padrão Instituto ACCESS",
+      icone: "🏆",
+      totalQuestoes: 60,
+      tempoSugeridoMinutos: 180, // 3h00
+      materias: [
+        { key: "especificos", titulo: "Conhecimentos Específicos", icone: "⚖️", count: 20 },
+        { key: "gerais", titulo: "Conhecimentos Gerais", icone: "🌍", count: 20 },
+        { key: "matematica", titulo: "Raciocínio Lógico e Mat.", icone: "🧮", count: 20 }
+      ],
+      getData: function () {
+        return root.SIMULADO_03_DATA || null;
+      },
+      getResumos: function () {
+        return root.REVISAO_03_DATA || null;
+      }
     }
   ];
 })(typeof window !== "undefined" ? window : globalThis);
