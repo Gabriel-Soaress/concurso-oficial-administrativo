@@ -285,11 +285,11 @@ Quantos reais cada colega deve pagar para que a conta seja paga no valor exato, 
 ### Questão 09
 **Bloco:** 03 — Molde das Frações | **Foco:** Treino Direto do Truque das Sobras ("Do Restante")
 
-Uma servidora tinha $x$ ofícios para digitar. Pela manhã, digitou $\frac{1}{3}$ do total. À tarde, digitou $\frac{3}{4}$ **do que havia restado**. Se ao final da tarde ainda restaram $10$ ofícios para o dia seguinte, qual é o cálculo direto das sobras que descobre o total $x$?
-(A) Na manhã sobrou $\frac{2}{3}$ e à tarde sobrou $\frac{1}{4}$ desse resto; multiplicando as sobras: $\frac{2}{3} \times \frac{1}{4} \cdot x = 10 \implies \frac{x}{6} = 10 \implies x = 60$ ofícios.
-(B) Soma-se $\frac{1}{3} + \frac{3}{4}$, que dá $\frac{4}{7}$, sobrando $30$ ofícios.
-(C) Multiplica-se $10 \times 3 \times 4 = 120$ ofícios.
-(D) Subtrai-se $\frac{3}{4} - \frac{1}{3} = \frac{5}{12}$, resultando em $24$ ofícios.
+Uma servidora tinha $x$ ofícios para digitar. Pela manhã, digitou $\frac{1}{3}$ do total. À tarde, digitou $\frac{3}{4}$ **do que havia restado**. Se ao final da tarde ainda restaram $10$ ofícios para o dia seguinte, qual é o cálculo correto das sobras que descobre o total $x$?
+(A) Pela manhã sobrou $\frac{2}{3}$ e à tarde sobrou $\frac{1}{4}$ desse resto; logo, $\frac{2}{3} \times \frac{1}{4} \cdot x = 10$, resultando em $x = 60$ ofícios.
+(B) Pela manhã sobrou $\frac{1}{3}$ e à tarde sobrou $\frac{3}{4}$ desse resto; logo, $\frac{1}{3} \times \frac{3}{4} \cdot x = 10$, resultando em $x = 40$ ofícios.
+(C) Pela manhã sobrou $\frac{2}{3}$ e à tarde sobrou $\frac{3}{4}$ desse resto; logo, $\frac{2}{3} \times \frac{3}{4} \cdot x = 10$, resultando em $x = 20$ ofícios.
+(D) Pela manhã sobrou $\frac{1}{3}$ e à tarde sobrou $\frac{1}{4}$ desse resto; logo, $\frac{1}{3} \times \frac{1}{4} \cdot x = 10$, resultando em $x = 120$ ofícios.
 
 <details><summary><b>Ver Gabarito e Comentário Detalhado</b></summary>
 
@@ -560,10 +560,10 @@ Quantos anos de serviço Roberto e Juliana possuem **juntos hoje** ($3x + x = 4x
 **Bloco:** 05 — Molde de Acertos e Erros | **Foco:** Treino Direto da Expressão $(Total - x)$
 
 Em um teste de $20$ questões (sem questões em branco), o candidato ganha $5$ pontos por questão que acerta ($x$) e perde $2$ pontos por questão que erra ($20 - x$). Se um candidato terminou o teste com $58$ pontos, qual é a equação correta e quantas questões ele acertou?
-(A) $5x - 2(20 - x) = 58 \implies 7x = 98 \implies x = 14$ acertos.
-(B) $5x - 2x = 58 \implies 3x = 58$.
-(C) $5x + 2(20 - x) = 58 \implies 3x = 18 \implies x = 6$ acertos.
-(D) $5(20 - x) - 2x = 58 \implies x = 6$ acertos.
+(A) $5x - 2(20 - x) = 58$, o que resulta em $7x = 98$ e $x = 14$ acertos.
+(B) $5x - 2(20 + x) = 58$, o que resulta em $3x = 98$ e $x = 12$ acertos.
+(C) $5x + 2(20 - x) = 58$, o que resulta em $3x = 18$ e $x = 6$ acertos.
+(D) $5(20 - x) - 2x = 58$, o que resulta em $7x = 42$ e $x = 6$ acertos.
 
 <details><summary><b>Ver Gabarito e Comentário Detalhado</b></summary>
 
@@ -692,8 +692,8 @@ Um contrato de manutenção de impressoras cobra uma mensalidade fixa de R$ $300
 Qual dupla de inequações traduz perfeitamente essa regra?
 (A) $300 + 20x \ge 500$ e $300 + 20x < 700$, resultando em $10 \le x < 20$.
 (B) $300 + 20x > 500$ e $300 + 20x \le 700$, resultando em $10 < x \le 20$.
-(C) $300x + 20 > 500$ e $300x + 20 \le 700$.
-(D) $20x - 300 > 500$ e $20x - 300 \le 700$.
+(C) $300 + 20x > 500$ e $300 + 20x < 700$, resultando em $10 < x < 20$.
+(D) $300 + 20x \ge 500$ e $300 + 20x \le 700$, resultando em $10 \le x \le 20$.
 
 <details><summary><b>Ver Gabarito e Comentário Detalhado</b></summary>
 
@@ -720,10 +720,10 @@ Quando você termina de resolver uma faixa de inequação e chega em **$10 < x \
 > Quando um lado é aberto ($<$) e o outro é fechado ($\le$), a quantidade de números inteiros é simplesmente **$\text{Maior} - \text{Menor}$** ($20 - 10 = 10$ números: de $11$ até $20$)!
 
 Assinale a alternativa CORRETA:
-(A) $9$ valores inteiros.
-(B) $10$ valores inteiros (do $11$ até o $20$, inclusive).
-(C) $11$ valores inteiros (do $10$ até o $20$).
-(D) $12$ valores inteiros.
+(A) Existem $9$ valores inteiros possíveis nessa faixa.
+(B) Existem $10$ valores inteiros possíveis nessa faixa.
+(C) Existem $11$ valores inteiros possíveis nessa faixa.
+(D) Existem $12$ valores inteiros possíveis nessa faixa.
 
 <details><summary><b>Ver Gabarito e Comentário Detalhado</b></summary>
 
@@ -810,73 +810,194 @@ Quantos valores inteiros diferentes o número de participantes ($x$) pode assumi
 
 ## 🎯 BLOCO 7: MOLDE DO "SISTEMA CLÁSSICO 2x2" (TOTAL DE ITENS vs. TOTAL DE REAIS / RODAS / CAPACIDADE)
 
-> [!IMPORTANT]
-> **🧠 COMO RECONHECER ESTE ENUNCIADO NA PROVA:**
-> É o problema mais famoso de todos os concursos! O enunciado fala de **dois tipos de coisas** ($x$ e $y$) e te dá **DOIS TOTAIS**:
-> 1. **O Total de Unidades / Cabeças:** *"Foram compradas $45$ pastas ao todo"* (ou *"$32$ veículos ao todo"*).
-> 2. **O Total de Dinheiro / Rodas / Peso / Lugares:** *"Cada pasta azul custa R$ $8$, cada verde custa R$ $12$ e gastou-se R$ $432$"*.
->
-> **📐 A RECEITA DE MONTAGEM E O GOLPE DE 1 PASSO PARA RESOLVER:**
-> 1. **Monte sempre as duas linhas nesse formato fixo:**
->    $$\begin{cases} x + y = \text{Total de Unidades} \\ (\text{Valor de } x)\cdot x + (\text{Valor de } y)\cdot y = \text{Total Geral} \end{cases}$$
-> 2. **Como resolver em 15 segundos pelo Método da Adição (Sem fração!):**
->    * Olhe o menor número da Linha 2 (ex.: o **$8$** em $8x + 12y = 432$).
->    * **Multiplique a Linha 1 inteira por esse número NEGATIVO (`-8`)**!
->    * Ao somar as duas linhas, o $-8x$ mata o $+8x$ na hora e sobra só o $y$ limpinho!
+### 1. Como Reconhecer Este Problema na Prova (e Como Montar as 2 Linhas)
+Este é o problema de sistema mais famoso dos concursos. O enunciado sempre fala de **dois tipos de coisas** (vamos chamar de **$x$** e **$y$**) e entrega **DOIS TOTAIS**:
+1. **O 1º Total é a QUANTIDADE DE UNIDADES** (quantos objetos existem somados).
+2. **O 2º Total é o VALOR / PESO / RODAS / LUGARES** que esses objetos somam juntos.
+
+Vamos acompanhar **um exemplo real do início ao fim, sem pular nenhuma passagem**:
+> **Exemplo Base:** *"Uma secretaria comprou **$45$ pastas ao todo**, sendo algumas pastas azuis ($x$) e outras pastas verdes ($y$). Cada pasta azul custou **$\text{R\$ } 8{,}00$**, cada pasta verde custou **$\text{R\$ } 12{,}00$**, e o valor total pago na nota fiscal foi de **$\text{R\$ } 432{,}00$**. Quantas pastas de cada cor foram compradas?"*
+
+* **Como montar a Linha 1 (Total de Pastas):**
+  Se somarmos a quantidade de pastas azuis ($x$) com a quantidade de pastas verdes ($y$), temos $45$ pastas. Lembrando que quando a letra está sozinha, o número na frente dela é **$1$**:
+  $$\mathbf{1x + 1y = 45} \quad \text{(Linha 1)}$$
+* **Como montar a Linha 2 (Total de Reais Gastos):**
+  Cada pasta azul custa $\text{R\$ } 8{,}00$ (logo, $x$ pastas azuis custam **$8x$**). Cada pasta verde custa $\text{R\$ } 12{,}00$ (logo, $y$ pastas verdes custam **$12y$**). Somando o gasto das duas cores, deu $\text{R\$ } 432{,}00$:
+  $$\mathbf{8x + 12y = 432} \quad \text{(Linha 2)}$$
+
+Juntando as duas linhas, temos o nosso sistema montado:
+$$\begin{cases} 1x + 1y = 45 \quad \text{(Linha 1)} \\ 8x + 12y = 432 \quad \text{(Linha 2)} \end{cases}$$
+
+---
+
+### 2. O Obstáculo: Por que não dá para resolver direto?
+Olhe para a Linha 1 ($1x + 1y = 45$): ela tem **duas letras diferentes** ($x$ e $y$). Não dá para saber quanto vale $x$ porque não sabemos quanto vale $y$.  
+Olhe para a Linha 2 ($8x + 12y = 432$): ela também tem **as mesmas duas letras** ($x$ e $y$).
+
+> **A Regra de Ouro dos Sistemas:**  
+> Nós só conseguimos resolver uma equação quando ela tem **UMA ÚNICA LETRA**!  
+> Portanto, o objetivo de qualquer método de sistema é **fazer uma das letras (por exemplo, o $x$) SUMIR temporariamente**, deixando uma conta simples que tenha apenas a letra **$y$**.
+
+Existem **dois caminhos** para fazer a letra $x$ sumir. Veja os dois explicados **etapa por etapa** para você entender exatamente de onde vem cada número:
+
+---
+
+### 3. Caminho A: O Método da Adição (Entendendo o Porquê de Multiplicar por `-8`)
+
+Queremos somar a Linha 1 com a Linha 2 para que a letra **$x$ desapareça (vire zero)**.
+* Olhe para a coluna do $x$ no nosso sistema:
+  * Na **Linha 1**, temos **$+1x$**.
+  * Na **Linha 2**, temos **$+8x$**.
+* Se a gente somar as duas linhas do jeito que estão agora, teremos $+1x + 8x = 9x$ (o $x$ **não** sumiu!).
+* **Pergunta lógica fundamental:** *O que precisa estar escrito na Linha 1 para que, ao somar com o **$+8x$** da Linha 2, o resultado dê **ZERO**?*
+  Precisa estar escrito **$-8x$**! Porque **$-8x + 8x = 0$**!
+
+#### Passo 1 — Transformar o $+1x$ da Linha 1 em $-8x$:
+Como a Linha 1 é uma balança em equilíbrio ($1x + 1y = 45$), nós podemos multiplicar **a Linha 1 inteira** por **$(-8)$**.
+> ⚠️ **Atenção:** "Multiplicar a Linha 1 inteira por $(-8)$" significa que você é obrigado a multiplicar **TODOS OS 3 TERMOS** da Linha 1 por $(-8)$, um por um!
+
+Veja a conta de cada um dos 3 termos da Linha 1 ($1x + 1y = 45$) multiplicados por **$(-8)$**:
+1. **1º termo (o $x$):** $(+1x) \times (-8) = \mathbf{-8x}$
+2. **2º termo (o $y$):** $(+1y) \times (-8) = \mathbf{-8y}$
+3. **3º termo (o número depois do igual):** $45 \times (-8) = \mathbf{-360}$ *(pois $45 \times 8 = 360$, e mais com menos dá menos)*.
+
+Pronto! A nossa Linha 1 virou **`-8x - 8y = -360`**.
+
+#### Passo 2 — Colocar a Linha 1 modificada em cima da Linha 2 e somar coluna por coluna:
+Agora colocamos uma embaixo da outra e somamos verticalmente (de cima para baixo), coluna por coluna:
+
+```text
+================================================================================
+        SOMA VERTICAL COLUNA POR COLUNA (MÉTODO DA ADIÇÃO EM CÂMERA LENTA)
+================================================================================
+
+                Coluna do X    |    Coluna do Y    |   Depois do Igual (=)
+              -----------------+-------------------+------------------------
+   Linha 1:        - 8x        |       -  8y       |        =  - 360
+   Linha 2:        + 8x        |       + 12y       |        =  + 432
+              =================+===================+========================
+   SOMA:             0x        |       +  4y       |        =  +  72
+                (O x sumiu!)   |  (-8 + 12 = +4)   |   (-360 + 432 = +72)
+================================================================================
+```
+
+Olhe o que aconteceu em cada uma das três colunas:
+1. **Na coluna do $x$:** Tínhamos $-8x$ em cima e $+8x$ embaixo. Somando os dois: $-8x + 8x = \mathbf{0}$ (a letra $x$ foi eliminada!).
+2. **Na coluna do $y$:** Tínhamos $-8y$ em cima e $+12y$ embaixo. Quem deve $8$ e paga $12$ fica com saldo positivo de $4$: $-8y + 12y = \mathbf{+4y}$.
+3. **Depois do sinal de igual:** Tínhamos $-360$ em cima e $+432$ embaixo. Fazendo $432 - 360$, sobra **$\mathbf{72}$**.
+
+#### Passo 3 — Resolver a equação simples que sobrou para achar o $y$:
+Agora só sobrou a letra $y$:
+$$4y = 72$$
+Passando o $4$ dividindo:
+$$y = \frac{72}{4} \implies \mathbf{y = 18\text{ pastas verdes}}$$
+
+#### Passo 4 — Voltar na Linha 1 original para descobrir o $x$:
+Lembra que a Linha 1 original dizia que o total das duas pastas juntas era $45$ ($x + y = 45$)?
+Se o total é $45$ e já sabemos que $18$ são verdes ($y = 18$), basta trocar o $y$ por $18$:
+$$x + 18 = 45 \implies x = 45 - 18 \implies \mathbf{x = 27\text{ pastas azuis}}$$
+
+---
+
+### 4. Caminho B: O Método da Substituição (Fazendo a Mesma Conta SEM Multiplicar por `-8`)
+Se você achar estranho multiplicar uma linha inteira por número negativo, você pode resolver **exatamente o mesmo sistema** pelo **Método da Substituição** (que usa apenas o chuveirinho que você já domina!). Veja como dá a mesmíssima conta:
+
+1. **Passo 1 — Isolar o $x$ na Linha 1 ($x + y = 45$):**
+   Passe o $+y$ para o lado direito subtraindo. Assim descobrimos quanto o $x$ vale em função de $y$:
+   $$\mathbf{x = 45 - y}$$
+2. **Passo 2 — Substituir o $x$ dentro da Linha 2 ($8x + 12y = 432$):**
+   Copie a Linha 2, mas no lugar da letra **$x$**, abra um parêntese e escreva **$(45 - y)$**:
+   $$8 \cdot \mathbf{(45 - y)} + 12y = 432$$
+3. **Passo 3 — Fazer o chuveirinho com o $8$:**
+   Multiplique o $8$ pelos dois termos de dentro do parêntese ($8 \times 45 = 360$ e $8 \times (-y) = -8y$):
+   $$360 - 8y + 12y = 432$$
+   *(Olhe que incrível: apareceram exatamente o **$360$** e o **$-8y + 12y$** que tinham aparecido lá no Método da Adição!)*
+4. **Passo 4 — Juntar os termos com $y$ e isolar:**
+   * Juntando $-8y + 12y = +4y$:
+     $$360 + 4y = 432$$
+   * Passando o $360$ para a direita subtraindo:
+     $$4y = 432 - 360 \implies 4y = 72 \implies y = \frac{72}{4} = \mathbf{18\text{ pastas verdes}}$$
+   * E voltando em $x = 45 - y$:
+     $$x = 45 - 18 = \mathbf{27\text{ pastas azuis}}$$
+
+> [!TIP]
+> **Resumo Didático (Escolha o seu jeito favorito):**
+> * **Se for pela Adição:** Olhe o número que multiplica o $x$ na Linha 2 (ex.: $+8x$). Multiplique **os 3 termos da Linha 1** pelo oposto negativo dele ($-8$) para criar $-8x$, e some as duas linhas coluna por coluna.
+> * **Se for pela Substituição:** Na Linha 1 ($x + y = \text{Total}$), passe o $y$ subtraindo ($x = \text{Total} - y$) e coloque esse parêntese no lugar do $x$ na Linha 2, aplicando o chuveirinho!
+
+---
 
 ### Questão 25
-**Bloco:** 07 — Molde do Sistema 2x2 | **Foco:** Destravar o Método da Adição (Como a Q05 da Aula!)
+**Bloco:** 07 — Molde do Sistema 2x2 | **Foco:** Passo a Passo do Método da Adição quando os Sinais já são Opostos
 
-Para você nunca mais pular um sistema pronto na prova, vamos destravar a **Questão 05 da Aula**:
-$$\begin{cases} 3x + 2y = 26 \\ 2x - y = 8 \end{cases}$$
+Considere o sistema de equações abaixo, em que a letra $y$ aparece positiva na primeira linha ($+2y$) e negativa na segunda linha ($-1y$):
+$$\begin{cases} 3x + 2y = 26 \quad \text{(Linha 1)} \\ 2x - 1y = 8 \quad \text{(Linha 2)} \end{cases}$$
 
-> **💡 Olhe para o $y$:** Em cima temos **$+2y$** e embaixo temos **$-1y$**. Se multiplicarmos a linha de baixo inteira por **$2$**, ela vira **$4x - 2y = 16$**, e o $+2y$ corta com o $-2y$!
-
-Executando esse passo, quais são os valores de $x$, de $y$ e da soma $(x + y)$?
-(A) $x = 5$, $y = 2$ e $x + y = 7$.
-(B) $x = 6$, $y = 4$ e $x + y = 10$.
-(C) $x = 4$, $y = 7$ e $x + y = 11$.
-(D) $x = 8$, $y = 1$ e $x + y = 9$.
+Para eliminar a letra $y$ somando as duas linhas, precisamos que o $-1y$ da Linha 2 vire **$-2y$** (para cancelar com o $+2y$ da Linha 1). Para isso, basta multiplicar **todos os três termos da Linha 2 por $+2$**. Executando esse passo, quais são os valores de $x$, de $y$ e da soma $(x + y)$?
+(A) $x = 5$, $y = 2$ e a soma $(x + y)$ é igual a $7$.
+(B) $x = 6$, $y = 4$ e a soma $(x + y)$ é igual a $10$.
+(C) $x = 4$, $y = 7$ e a soma $(x + y)$ é igual a $11$.
+(D) $x = 8$, $y = 1$ e a soma $(x + y)$ é igual a $9$.
 
 <details><summary><b>Ver Gabarito e Comentário Detalhado</b></summary>
 
 **Gabarito Oficial: B**
 
-**Veja como é rápido quando você iguala o número do $y$ com sinal trocado:**
-1. Multiplicando a 2ª linha por **$2$**:
+**Resolução Passo a Passo Sem Pular Etapas:**
+1. **Passo 1 — Multiplicar todos os 3 termos da Linha 2 ($2x - 1y = 8$) por $2$:**
+   * 1º termo: $2x \times 2 = \mathbf{4x}$
+   * 2º termo: $(-1y) \times 2 = \mathbf{-2y}$
+   * 3º termo (depois do igual): $8 \times 2 = \mathbf{16}$
+   * A Linha 2 transformada fica: **$4x - 2y = 16$**.
+2. **Passo 2 — Somar a Linha 1 com a nova Linha 2 coluna por coluna:**
    $$\begin{cases} 3x + 2y = 26 \\ 4x - 2y = 16 \end{cases}$$
-2. Somando de cima para baixo ($+2y$ cancela com $-2y$):
+   * Coluna do $x$: $3x + 4x = \mathbf{7x}$
+   * Coluna do $y$: $+2y - 2y = \mathbf{0}$ *(o $y$ cancelou!)*
+   * Depois do igual: $26 + 16 = \mathbf{42}$
    $$7x = 42 \implies x = \frac{42}{7} = \mathbf{6}$$
-3. Substituindo $x = 6$ em $3x + 2y = 26$:
-   $$3(6) + 2y = 26 \implies 18 + 2y = 26 \implies 2y = 8 \implies \mathbf{y = 4}$$
-4. Soma pedida: $x + y = 6 + 4 = \mathbf{10}$!
+3. **Passo 3 — Descobrir o $y$ trocando $x$ por $6$ na Linha 1 ($3x + 2y = 26$):**
+   $$3 \cdot (6) + 2y = 26 \implies 18 + 2y = 26 \implies 2y = 26 - 18 \implies 2y = 8 \implies y = \frac{8}{2} = \mathbf{4}$$
+4. **Passo 4 — Calcular a soma pedida $(x + y)$:**
+   $$x + y = 6 + 4 = \mathbf{10}$$
 
 </details>
 
 ---
 
 ### Questão 26
-**Bloco:** 07 — Molde do Sistema 2x2 | **Foco:** Treino Direto da Receita (Multiplicar a 1ª Linha pelo Menor Negativo)
+**Bloco:** 07 — Molde do Sistema 2x2 | **Foco:** Treino Passo a Passo pelos Dois Caminhos (Adição e Substituição)
 
-Um setor comprou $30$ caixas de arquivo (entre caixas pequenas de R$ $5{,}00$ e caixas grandes de R$ $9{,}00$), gastando um total de R$ $198{,}00$. O sistema é:
-$$\begin{cases} p + g = 30 \\ 5p + 9g = 198 \end{cases}$$
+Um setor comprou $30$ caixas de arquivo ao todo, divididas entre caixas pequenas ($p$), que custam $\text{R\$ } 5{,}00$ cada, e caixas grandes ($g$), que custam $\text{R\$ } 9{,}00$ cada, gastando um total de $\text{R\$ } 198{,}00$. O sistema montado é:
+$$\begin{cases} 1p + 1g = 30 \quad \text{(Linha 1: Total de caixas)} \\ 5p + 9g = 198 \quad \text{(Linha 2: Total em reais)} \end{cases}$$
 
-Multiplicando a 1ª linha por **$(-5)$** e somando com a 2ª linha, descobrimos imediatamente que o número de caixas grandes ($g$) e pequenas ($p$) é:
-(A) $g = 12$ grandes e $p = 18$ pequenas.
-(B) $g = 15$ grandes e $p = 15$ pequenas.
-(C) $g = 18$ grandes e $p = 12$ pequenas.
-(D) $g = 20$ grandes e $p = 10$ pequenas.
+Resolvendo esse sistema passo a passo (seja multiplicando os três termos da Linha 1 por $-5$ na Adição, seja isolando $p = 30 - g$ na Substituição), quais são as quantidades exatas de caixas grandes ($g$) e pequenas ($p$)?
+(A) Foram compradas $12$ caixas grandes e $18$ caixas pequenas.
+(B) Foram compradas $15$ caixas grandes e $15$ caixas pequenas.
+(C) Foram compradas $18$ caixas grandes e $12$ caixas pequenas.
+(D) Foram compradas $20$ caixas grandes e $10$ caixas pequenas.
 
 <details><summary><b>Ver Gabarito e Comentário Detalhado</b></summary>
 
 **Gabarito Oficial: A**
 
-**Fazendo o Golpe do $(-5)$ na 1ª linha:**
-$$\begin{cases} -5p - 5g = -150 \\ \phantom{-}5p + 9g = 198 \end{cases}$$
-* Somando as duas linhas ($-5p$ corta com $+5p$):
-  $$4g = 48 \implies g = \frac{48}{4} = \mathbf{12\text{ caixas grandes}}$$
-* Como o total é $30$:
-  $$p = 30 - 12 = \mathbf{18\text{ caixas pequenas}}$$
+**Desmontagem Completa pelos Dois Métodos:**
+* **Pelo Método da Adição:**
+  1. Na Linha 2 temos $+5p$. Para cancelar o $+5p$, precisamos que o $+1p$ da Linha 1 vire **$-5p$**.
+  2. Multiplicamos **cada um dos 3 termos** da Linha 1 ($1p + 1g = 30$) por **$(-5)$**:
+     - $(+1p) \times (-5) = -5p$
+     - $(+1g) \times (-5) = -5g$
+     - $30 \times (-5) = -150$
+  3. Somamos a Linha 1 modificada com a Linha 2 coluna por coluna:
+     $$\begin{cases} -5p - 5g = -150 \\ +5p + 9g = +198 \end{cases}$$
+     - Coluna do $p$: $-5p + 5p = 0$ (sumiu!)
+     - Coluna do $g$: $-5g + 9g = 4g$
+     - Depois do igual: $-150 + 198 = 48$
+     $$4g = 48 \implies g = \frac{48}{4} = \mathbf{12\text{ caixas grandes}}$$
+  4. Como o total das duas caixas era $30$ ($p + g = 30$):
+     $$p + 12 = 30 \implies p = 30 - 12 = \mathbf{18\text{ caixas pequenas}}$$
+* **Pelo Método da Substituição (para conferir):**
+  1. Isolando $p$ na Linha 1: $p = 30 - g$.
+  2. Trocando $p$ por $(30 - g)$ na Linha 2: $5(30 - g) + 9g = 198 \implies 150 - 5g + 9g = 198 \implies 4g = 198 - 150 \implies 4g = 48 \implies g = 12$ e $p = 18$.
 
 </details>
 
@@ -885,64 +1006,76 @@ $$\begin{cases} -5p - 5g = -150 \\ \phantom{-}5p + 9g = 198 \end{cases}$$
 ### Questão 27
 **Bloco:** 07 — Molde do Sistema 2x2 | **Foco:** Situação-Problema Padrão ACCESS (Cédulas de Dinheiro no Caixa)
 
-Um contribuinte pagou uma taxa municipal de R$ $310{,}00$ no caixa da Tesouraria utilizando apenas cédulas de R$ $10{,}00$ e de R$ $20{,}00$, num total de $20$ cédulas.
+Um contribuinte pagou uma taxa municipal de $\text{R\$ } 310{,}00$ no caixa da Tesouraria utilizando apenas cédulas de $\text{R\$ } 10{,}00$ ($d$) e cédulas de $\text{R\$ } 20{,}00$ ($v$), entregando ao todo $20$ cédulas ao caixa.
 
-> **💡 Dica Rápida de Montagem:**  
-> Linha 1 (Total de cédulas): $d + v = 20$  
-> Linha 2 (Total em reais): $10d + 20v = 310$  
-> Multiplique a Linha 1 por **$(-10)$** e some com a Linha 2!
+> **💡 Passo a Passo para você montar no papel:**  
+> 1. **Linha 1 (Quantidade de cédulas):** $1d + 1v = 20$  
+> 2. **Linha 2 (Valor em reais):** $10d + 20v = 310$  
+> 3. **Para eliminar a letra $d$:** Como na Linha 2 temos $+10d$, multiplique os 3 termos da Linha 1 por **$(-10)$** (ela vira $-10d - 10v = -200$) e some verticalmente com a Linha 2!
 
-A quantidade de cédulas de **R$ $20{,}00$** entregues por esse contribuinte foi igual a:
-(A) $9$ cédulas.
-(B) $10$ cédulas.
-(C) $11$ cédulas.
-(D) $12$ cédulas.
+A quantidade de cédulas de **$\text{R\$ } 20{,}00$** ($v$) entregues por esse contribuinte foi igual a:
+(A) $9$ cédulas de vinte reais.
+(B) $10$ cédulas de vinte reais.
+(C) $11$ cédulas de vinte reais.
+(D) $12$ cédulas de vinte reais.
 
 <details><summary><b>Ver Gabarito e Comentário Detalhado</b></summary>
 
 **Gabarito Oficial: C**
 
-**Passo a Passo da Montagem:**
-1. **Sistema:**
-   $$\begin{cases} d + v = 20 \\ 10d + 20v = 310 \end{cases}$$
-2. **Multiplicando a 1ª linha por $(-10)$:**
-   $$\begin{cases} -10d - 10v = -200 \\ \phantom{-}10d + 20v = 310 \end{cases}$$
-3. **Somando as duas linhas:**
+**Resolução Passo a Passo Sem Pular Etapas:**
+1. **Passo 1 — Sistema montado:**
+   $$\begin{cases} 1d + 1v = 20 \quad \text{(Linha 1)} \\ 10d + 20v = 310 \quad \text{(Linha 2)} \end{cases}$$
+2. **Passo 2 — Multiplicar os 3 termos da Linha 1 por $(-10)$ para cancelar o $+10d$:**
+   * $(+1d) \times (-10) = -10d$
+   * $(+1v) \times (-10) = -10v$
+   * $20 \times (-10) = -200$
+3. **Passo 3 — Somar coluna por coluna com a Linha 2:**
+   $$\begin{cases} -10d - 10v = -200 \\ +10d + 20v = +310 \end{cases}$$
+   * Coluna do $d$: $-10d + 10d = 0$
+   * Coluna do $v$: $-10v + 20v = +10v$
+   * Depois do igual: $-200 + 310 = +110$
    $$10v = 110 \implies v = \frac{110}{10} = \mathbf{11\text{ cédulas de R\$ 20,00}}$$
-   *(E $d = 20 - 11 = 9$ cédulas de R$ $10{,}00$)._
+   *(E na Linha 1: $d + 11 = 20 \implies d = 9$ cédulas de $\text{R\$ } 10{,}00$)._
 
 </details>
 
 ---
 
 ### Questão 28
-**Bloco:** 07 — Molde do Sistema 2x2 | **Foco:** Situação-Problema Padrão ACCESS (Capacidade de Salas / Vagões)
+**Bloco:** 07 — Molde do Sistema 2x2 | **Foco:** Situação-Problema Padrão ACCESS (Capacidade de Salas)
 
-Para aplicar a prova do concurso de Oficial Administrativo em uma escola municipal, a banca utilizou $18$ salas ao todo. Algumas salas eram pequenas, com capacidade para $25$ candidatos cada, e outras eram grandes, com capacidade para $40$ candidatos cada. Sabendo que todas as vagas das $18$ salas foram preenchidas por um total de $570$ candidatos, quantas **salas pequenas** foram utilizadas?
+Para aplicar a prova do concurso de Oficial Administrativo em uma escola municipal, a banca utilizou $18$ salas ao todo. Algumas salas eram pequenas ($p$), com capacidade para $25$ candidatos cada, e outras eram grandes ($g$), com capacidade para $40$ candidatos cada. Sabendo que todos os lugares das $18$ salas foram ocupados por um total de $570$ candidatos, quantas **salas pequenas** ($p$) foram utilizadas?
 
-> **💡 Dica Rápida de Montagem:**  
-> Linha 1 (Total de salas): $p + g = 18$  
-> Linha 2 (Total de candidatos): $25p + 40g = 570$  
-> Multiplique a Linha 1 por **$(-25)$** para achar $g$, e depois faça $p = 18 - g$!
+> **💡 Passo a Passo para você montar no papel:**  
+> 1. **Linha 1 (Quantidade de salas):** $1p + 1g = 18$  
+> 2. **Linha 2 (Total de candidatos):** $25p + 40g = 570$  
+> 3. Multiplique os 3 termos da Linha 1 por **$(-25)$** (gerando $-25p - 25g = -450$), some com a Linha 2 para achar as salas grandes ($g$) e depois subtraia de $18$ para achar as pequenas ($p$)!
 
-(A) $6$ salas pequenas.
-(B) $8$ salas pequenas.
-(C) $10$ salas pequenas.
-(D) $12$ salas pequenas.
+(A) Foram utilizadas $6$ salas pequenas.
+(B) Foram utilizadas $8$ salas pequenas.
+(C) Foram utilizadas $10$ salas pequenas.
+(D) Foram utilizadas $12$ salas pequenas.
 
 <details><summary><b>Ver Gabarito e Comentário Detalhado</b></summary>
 
 **Gabarito Oficial: C**
 
-**Passo a Passo da Montagem:**
-1. **Sistema:**
-   $$\begin{cases} p + g = 18 \\ 25p + 40g = 570 \end{cases}$$
-2. **Multiplicando a 1ª linha por $(-25)$:**
-   $$\begin{cases} -25p - 25g = -450 \\ \phantom{-}25p + 40g = 570 \end{cases}$$
-3. **Somando as duas linhas:**
+**Resolução Passo a Passo Sem Pular Etapas:**
+1. **Passo 1 — Sistema montado:**
+   $$\begin{cases} 1p + 1g = 18 \quad \text{(Linha 1)} \\ 25p + 40g = 570 \quad \text{(Linha 2)} \end{cases}$$
+2. **Passo 2 — Multiplicar os 3 termos da Linha 1 por $(-25)$:**
+   * $(+1p) \times (-25) = -25p$
+   * $(+1g) \times (-25) = -25g$
+   * $18 \times (-25) = -450$
+3. **Passo 3 — Somar coluna por coluna com a Linha 2:**
+   $$\begin{cases} -25p - 25g = -450 \\ +25p + 40g = +570 \end{cases}$$
+   * Coluna do $p$: $-25p + 25p = 0$
+   * Coluna do $g$: $-25g + 40g = 15g$
+   * Depois do igual: $-450 + 570 = 120$
    $$15g = 120 \implies g = \frac{120}{15} = \mathbf{8\text{ salas grandes}}$$
-4. **Calculando as salas pequenas ($p$):**
-   $$p = 18 - 8 = \mathbf{10\text{ salas pequenas}}$$
+4. **Passo 4 — Achar as salas pequenas ($p$) na Linha 1 ($p + g = 18$):**
+   $$p + 8 = 18 \implies p = 18 - 8 = \mathbf{10\text{ salas pequenas}}$$
 
 </details>
 
@@ -950,71 +1083,107 @@ Para aplicar a prova do concurso de Oficial Administrativo em uma escola municip
 
 ## 🎯 BLOCO 8: MOLDE DO "SISTEMA FALSO DE 3 COISAS" (COMO TRANSFORMAR 3 ITENS EM 2 LETRAS!)
 
-> [!IMPORTANT]
-> **🧠 COMO RECONHECER ESTE ENUNCIADO NA PROVA (COMO A Q08 DAS MESAS QUE TE TRAVOU!):**
-> O enunciado fala de **3 tipos de objetos** (ex.: mesas de $4$, $5$ e $6$ lugares; ou pastas pequenas, médias e grandes). À primeira vista, você pensa: *"Socorro, são 3 letras ($x, y, z$)!"*  
-> Mas olhe a frase final do enunciado: ele **SEMPRE** diz que **um dos tipos é o dobro (ou o triplo, ou tem $5$ a mais) de outro tipo**!
->
-> **📐 A RECEITA DE MONTAGEM EM 2 PASSOS (PROIBIDO USAR 3 LETRAS!):**
-> 1. **Transforme o 3º item na mesma letra do 2º item logo no início:**
->    * Exemplo da Q08 da Aula: *"Mesas de $4$, $5$ e $6$ lugares. As de $6$ lugares são o **dobro** das de $5$ lugares"*:
->      * Mesas de $4$ lugares $= \mathbf{x}$
->      * Mesas de $5$ lugares $= \mathbf{y}$
->      * Mesas de $6$ lugares (o dobro das de $5$) $= \mathbf{2y}$ *(Nem crie a letra $z$!)*
-> 2. **Agora monte o Sistema 2x2 normal somando os 3 grupos:**
->    * **Linha 1 (Total de Mesas):** $x + y + 2y = 22 \implies \mathbf{x + 3y = 22}$
->    * **Linha 2 (Total de Pessoas):** $4x + 5y + 6 \cdot (2y) = 113 \implies 4x + 5y + 12y = 113 \implies \mathbf{4x + 17y = 113}$
->    * Pronto! Virou um sistema 2x2 facílimo!
+### 1. Por que Chamamos de "Sistema Falso de 3 Coisas"?
+Na Questão 08 da aula principal (aquela das mesas de $4$, $5$ e $6$ lugares), o enunciado falava de **3 tipos de mesas**. Quem tenta resolver criando 3 letras diferentes ($x$, $y$ e $z$) trava na hora, porque um sistema de 3 letras daria um trabalho enorme!
+
+Mas repare no segredo que a banca **SEMPRE** coloca na última frase desse tipo de questão:
+> *"O número de mesas de $6$ lugares era o **dobro** do número de mesas de $5$ lugares."*
+
+Se o 3º grupo é simplesmente o **dobro** (ou o **triplo**) do 2º grupo, ele **NÃO precisa de uma letra nova**! Ele usa a **mesma letra $y$** do 2º grupo multiplicada por $2$ (ou por $3$)!
+
+### 2. O Passo a Passo Completo em Câmera Lenta (Sem Pular Nenhuma Conta)
+Vamos desmontar o exemplo das $22$ mesas e $113$ pessoas passo por passo:
+
+* **Etapa 1 — Dar nome aos 3 grupos usando APENAS $x$ e $y$:**
+  * 1º grupo (mesas de $4$ lugares) $= \mathbf{x}$
+  * 2º grupo (mesas de $5$ lugares) $= \mathbf{y}$
+  * 3º grupo (mesas de $6$ lugares, que são o *dobro* das de $5$ lugares) $= \mathbf{2y}$
+
+* **Etapa 2 — Montar a Linha 1 (Somar a quantidade de mesas dos 3 grupos):**
+  O texto diz que há $22$ mesas ao todo. Somando a quantidade de mesas dos três grupos:
+  $$1x + 1y + 2y = 22$$
+  Como $1y + 2y = 3y$, juntamos os dois e a Linha 1 fica limpinha:
+  $$\mathbf{1x + 3y = 22} \quad \text{(Linha 1)}$$
+
+* **Etapa 3 — Montar a Linha 2 (Multiplicar cada grupo pela sua capacidade de lugares):**
+  O texto diz que há $113$ pessoas sentadas ao todo. Quantas pessoas cabem em cada grupo de mesas?
+  1. Nas **$x$** mesas de **$4$ lugares** cabem: $4 \cdot x = \mathbf{4x\text{ pessoas}}$.
+  2. Nas **$y$** mesas de **$5$ lugares** cabem: $5 \cdot y = \mathbf{5y\text{ pessoas}}$.
+  3. Nas **$2y$** mesas de **$6$ lugares** cabem: $6 \cdot (2y) = \mathbf{12y\text{ pessoas}}$ *(porque cada mesa tem $6$ lugares, e existem $2y$ mesas: $6 \times 2y = 12y$)*.
+  Somando as pessoas dos três grupos para dar $113$:
+  $$4x + 5y + 12y = 113$$
+  Juntando $5y + 12y = 17y$, a Linha 2 fica pronta:
+  $$\mathbf{4x + 17y = 113} \quad \text{(Linha 2)}$$
+
+* **Etapa 4 — Agora virou um Sistema 2x2 comum (igual ao do Bloco 7!):**
+  $$\begin{cases} 1x + 3y = 22 \quad \text{(Linha 1)} \\ 4x + 17y = 113 \quad \text{(Linha 2)} \end{cases}$$
+  Como na Linha 2 temos $+4x$, multiplicamos os 3 termos da Linha 1 por **$(-4)$**:
+  * $(+1x) \times (-4) = -4x$
+  * $(+3y) \times (-4) = -12y$
+  * $22 \times (-4) = -88$
+  Somando coluna por coluna com a Linha 2:
+  $$\begin{cases} -4x - 12y = -88 \\ +4x + 17y = +113 \end{cases}$$
+  * Coluna do $x$: $-4x + 4x = 0$
+  * Coluna do $y$: $-12y + 17y = 5y$
+  * Depois do igual: $-88 + 113 = 25$
+  $$5y = 25 \implies y = \frac{25}{5} = \mathbf{5\text{ mesas de 5 lugares}}$$
+  E voltando na Linha 1 ($x + 3y = 22$) com $y = 5$:
+  $$x + 3 \cdot (5) = 22 \implies x + 15 = 22 \implies x = 22 - 15 = \mathbf{7\text{ mesas de 4 lugares}}$$
+
+---
 
 ### Questão 29
-**Bloco:** 08 — Molde de 3 Coisas em 2 Letras | **Foco:** Treino Direto da Redução para 2 Letras
+**Bloco:** 08 — Molde de 3 Coisas em 2 Letras | **Foco:** Treino da Etapa 1 e 2 (Montar a Linha 1 com 2 Letras)
 
-Um almoxarifado recebeu $35$ caixas de papel divididas em três tamanhos: Pequenas ($P$), Médias ($M$) e Grandes ($G$). Sabe-se que a quantidade de caixas Grandes é o **triplo** da quantidade de caixas Médias.
+Um almoxarifado recebeu $35$ caixas de papel divididas em três tamanhos: Pequenas, Médias e Grandes. Sabe-se que a quantidade de caixas Grandes é o **triplo** da quantidade de caixas Médias.
 
-Se chamarmos as Pequenas de **$x$** e as Médias de **$y$**, então as Grandes serão **$3y$**. Como fica a 1ª equação (Total de $35$ caixas) já simplificada com apenas $x$ e $y$?
-(A) $x + y + 3x = 35 \implies 4x + y = 35$.
-(B) $x + y + 3y = 35 \implies x + 4y = 35$.
-(C) $x + 3y = 35$.
-(D) $3x + 3y = 35$.
+Se representarmos as caixas Pequenas por **$x$** e as caixas Médias por **$y$**, então as caixas Grandes serão representadas por **$3y$**. Somando os três grupos para totalizar as $35$ caixas, qual é a equação da Linha 1 correta?
+(A) $x + y + 3x = 35$, que simplificada resulta em $4x + y = 35$.
+(B) $x + y + 3y = 35$, que simplificada resulta em $x + 4y = 35$.
+(C) $x + 2y + 3y = 35$, que simplificada resulta em $x + 5y = 35$.
+(D) $3x + y + 3y = 35$, que simplificada resulta em $3x + 4y = 35$.
 
 <details><summary><b>Ver Gabarito e Comentário Detalhado</b></summary>
 
 **Gabarito Oficial: B**
 
-**Veja como o bicho-papão de 3 letras some na hora:**
-* Pequenas $= x$
-* Médias $= y$
-* Grandes (o triplo das médias) $= 3y$
-* Somando as três para dar as $35$ caixas:
-  $$x + y + 3y = 35 \implies \mathbf{x + 4y = 35}$$
+**Passo a Passo:**
+* Caixas Pequenas $= 1x$
+* Caixas Médias $= 1y$
+* Caixas Grandes (o triplo das médias) $= 3y$
+* Somando as quantidades dos três grupos:
+  $$1x + 1y + 3y = 35$$
+* Juntando $1y + 3y = 4y$:
+  $$\mathbf{x + 4y = 35}$$
 
 </details>
 
 ---
 
 ### Questão 30
-**Bloco:** 08 — Molde de 3 Coisas em 2 Letras | **Foco:** Montar a 2ª Linha (Pesos/Lugares) sem Errar a Multiplicação
+**Bloco:** 08 — Molde de 3 Coisas em 2 Letras | **Foco:** Treino da Etapa 3 (Montar a Linha 2 das Capacidades)
 
-Continuando o raciocínio anterior: imagine que temos:
-* **$x$** mesas de **$2$ gavetas**;
-* **$y$** mesas de **$3$ gavetas**;
-* **$2y$** mesas de **$4$ gavetas** (pois as de $4$ gavetas são o dobro das de $3$ gavetas).
+Em uma repartição existem três modelos de armários:
+* **$x$** armários pequenos de **$2$ gavetas** cada um;
+* **$y$** armários médios de **$3$ gavetas** cada um;
+* **$2y$** armários grandes de **$4$ gavetas** cada um (pois os grandes são o dobro dos médios).
 
-Se o total de gavetas de todas essas mesas juntas é $65$, como fica a equação do **total de gavetas** já simplificada?
-(A) $2x + 3y + 4y = 65 \implies 2x + 7y = 65$.
-(B) $2x + 3y + 4 \cdot (2y) = 65 \implies 2x + 3y + 8y = 65 \implies 2x + 11y = 65$.
-(C) $x + y + 2y = 65 \implies x + 3y = 65$.
-(D) $2x + 12y = 65$.
+Sabendo que a soma de todas as gavetas desses armários é igual a $65$, qual é a equação da Linha 2 (total de gavetas) correta e já simplificada?
+(A) $2x + 3y + 4y = 65$, que simplificada resulta em $2x + 7y = 65$.
+(B) $2x + 3y + 8y = 65$, que simplificada resulta em $2x + 11y = 65$.
+(C) $2x + 6y + 4y = 65$, que simplificada resulta em $2x + 10y = 65$.
+(D) $4x + 3y + 8y = 65$, que simplificada resulta em $4x + 11y = 65$.
 
 <details><summary><b>Ver Gabarito e Comentário Detalhado</b></summary>
 
 **Gabarito Oficial: B**
 
-**Atenção ao detalhe de ouro:**
-* Cada mesa do 3º grupo tem **$4$ gavetas**, e existem **$2y$ mesas** desse tipo.
-* Logo, o número de gavetas delas é **$4 \times (2y) = 8y$ gavetas**!
-* Somando todas as gavetas:
-  $$2x + 3y + 8y = 65 \implies \mathbf{2x + 11y = 65}$$
+**Passo a Passo da Multiplicação das Gavetas:**
+1. Os **$x$** armários de **$2$ gavetas** têm: $2 \cdot x = \mathbf{2x\text{ gavetas}}$.
+2. Os **$y$** armários de **$3$ gavetas** têm: $3 \cdot y = \mathbf{3y\text{ gavetas}}$.
+3. Os **$2y$** armários de **$4$ gavetas** têm: $4 \cdot (2y) = \mathbf{8y\text{ gavetas}}$.
+4. Somando todas as gavetas e juntando $3y + 8y = 11y$:
+   $$2x + 3y + 8y = 65 \implies \mathbf{2x + 11y = 65}$$
 
 </details>
 
@@ -1025,81 +1194,78 @@ Se o total de gavetas de todas essas mesas juntas é $65$, como fica a equação
 
 Em um evento da Prefeitura, $101$ servidores foram acomodados em veículos de $4$, $5$ e $7$ lugares, sem sobrar nenhum assento vazio. Ao todo, foram utilizados $20$ veículos. Sabe-se que o número de veículos de $7$ lugares era exatamente o **dobro** do número de veículos de $5$ lugares.
 
-> **💡 Dica Rápida de Montagem:**  
-> - Veículos de $4$ lugares $= x$  
-> - Veículos de $5$ lugares $= y$  
-> - Veículos de $7$ lugares (o dobro dos de $5$) $= 2y$  
-> **Linha 1 (Total de $20$ veículos):** $x + y + 2y = 20 \implies \mathbf{x + 3y = 20}$  
-> **Linha 2 (Total de $101$ lugares):** $4x + 5y + 7(2y) = 101 \implies \mathbf{4x + 19y = 101}$  
-> Agora multiplique a Linha 1 por $(-4)$ e some com a Linha 2!
+> **💡 Passo a Passo para você montar no rascunho:**  
+> - **Etapa 1 (Nomes):** Veículos de $4$ lug. $= x$ | De $5$ lug. $= y$ | De $7$ lug. (dobro dos de $5$) $= 2y$.  
+> - **Etapa 2 (Linha 1 — Total de $20$ veículos):** $1x + 1y + 2y = 20 \implies \mathbf{1x + 3y = 20}$  
+> - **Etapa 3 (Linha 2 — Total de $101$ lugares):** $4x + 5y + 7 \cdot (2y) = 101 \implies 4x + 5y + 14y = 101 \implies \mathbf{4x + 19y = 101}$  
+> - **Etapa 4:** Multiplique os 3 termos da Linha 1 por **$(-4)$** (gerando $-4x - 12y = -80$) e some coluna por coluna com a Linha 2!
 
 O número de **veículos de $4$ lugares** ($x$) utilizados nesse evento foi igual a:
-(A) $4$ veículos.
-(B) $8$ veículos.
-(C) $11$ veículos.
-(D) $12$ veículos.
+(A) Foram utilizados $4$ veículos de quatro lugares.
+(B) Foram utilizados $8$ veículos de quatro lugares.
+(C) Foram utilizados $11$ veículos de quatro lugares.
+(D) Foram utilizados $12$ veículos de quatro lugares.
 
 <details><summary><b>Ver Gabarito e Comentário Detalhado</b></summary>
 
 **Gabarito Oficial: C**
 
-**Passo a Passo Completo (Idêntico à Q08 da Aula!):**
-1. **Transformando 3 tipos em 2 letras ($x$ e $y$):**
-   - De $4$ lugares $= x$
-   - De $5$ lugares $= y$
-   - De $7$ lugares $= 2y$
-2. **Montando as duas linhas:**
-   - Total de veículos: $x + y + 2y = 20 \implies \mathbf{x + 3y = 20}$
-   - Total de lugares: $4x + 5y + 14y = 101 \implies \mathbf{4x + 19y = 101}$
-3. **Multiplicando a 1ª linha por $(-4)$ para cortar o $x$:**
-   $$\begin{cases} -4x - 12y = -80 \\ \phantom{-}4x + 19y = 101 \end{cases}$$
-   Somando as duas linhas:
+**Resolução Passo a Passo Sem Pular Etapas:**
+1. **Sistema montado nas Etapas 2 e 3:**
+   $$\begin{cases} 1x + 3y = 20 \quad \text{(Linha 1)} \\ 4x + 19y = 101 \quad \text{(Linha 2)} \end{cases}$$
+2. **Multiplicando os 3 termos da Linha 1 por $(-4)$ para cancelar o $+4x$ da Linha 2:**
+   * $(+1x) \times (-4) = -4x$
+   * $(+3y) \times (-4) = -12y$
+   * $20 \times (-4) = -80$
+3. **Somando coluna por coluna com a Linha 2:**
+   $$\begin{cases} -4x - 12y = -80 \\ +4x + 19y = +101 \end{cases}$$
+   * Coluna do $x$: $-4x + 4x = 0$
+   * Coluna do $y$: $-12y + 19y = 7y$
+   * Depois do igual: $-80 + 101 = 21$
    $$7y = 21 \implies y = \frac{21}{7} = \mathbf{3\text{ veículos de 5 lugares}}$$
-4. **Achando os veículos de $4$ lugares ($x$):**
-   $$x + 3(3) = 20 \implies x = 20 - 9 = \mathbf{11\text{ veículos de 4 lugares}}$$
-   *(Conferência: $11$ veículos de $4$ lugares $= 44$ pessoas; $3$ de $5$ lugares $= 15$ pessoas; $6$ de $7$ lugares $= 42$ pessoas. Soma $= 44 + 15 + 42 = 101$ pessoas!).*
+4. **Voltando na Linha 1 ($x + 3y = 20$) e trocando $y$ por $3$ para achar o $x$:**
+   $$x + 3 \cdot (3) = 20 \implies x + 9 = 20 \implies x = 20 - 9 = \mathbf{11\text{ veículos de 4 lugares}}$$
 
 </details>
 
 ---
 
 ### Questão 32
-**Bloco:** 08 — Molde de 3 Coisas em 2 Letras | **Foco:** Situação-Problema Padrão ACCESS (Moedas / Notas de 3 Valores)
+**Bloco:** 08 — Molde de 3 Coisas em 2 Letras | **Foco:** Situação-Problema Padrão ACCESS (Moedas de 3 Valores)
 
-No cofre do setor de protocolo há $30$ moedas ao todo, sendo algumas de R$ $0{,}10$, outras de R$ $0{,}25$ e outras de R$ $0{,}50$, somando um valor total de R$ $9{,}75$ ($975$ centavos). Sabe-se que a quantidade de moedas de R$ $0{,}50$ é o **triplo** da quantidade de moedas de R$ $0{,}25$.
+No cofre do setor de protocolo há $30$ moedas ao todo, sendo algumas de $\text{R\$ } 0{,}10$ ($10$ centavos), outras de $\text{R\$ } 0{,}25$ ($25$ centavos) e outras de $\text{R\$ } 0{,}50$ ($50$ centavos), somando um valor total de $\text{R\$ } 9{,}75$ ($975$ centavos). Sabe-se que a quantidade de moedas de $50$ centavos é o **triplo** da quantidade de moedas de $25$ centavos.
 
-> **💡 Dica Rápida de Montagem (Trabalhe em CENTAVOS para não usar vírgula!):**  
-> - Moedas de $10$ centavos $= x$  
-> - Moedas de $25$ centavos $= y$  
-> - Moedas de $50$ centavos (o triplo das de $25$) $= 3y$  
-> **Linha 1 (Total de $30$ moedas):** $x + y + 3y = 30 \implies \mathbf{x + 4y = 30}$  
-> **Linha 2 (Total de $975$ centavos):** $10x + 25y + 50(3y) = 975 \implies \mathbf{10x + 175y = 975}$  
-> Multiplique a Linha 1 por $(-10)$ e some com a Linha 2!
+> **💡 Passo a Passo para você montar no rascunho (usando centavos para não ter vírgula):**  
+> - **Etapa 1 (Nomes):** Moedas de $10\text{ cent. } = x$ | De $25\text{ cent. } = y$ | De $50\text{ cent. } (\text{triplo}) = 3y$.  
+> - **Etapa 2 (Linha 1 — Total de $30$ moedas):** $1x + 1y + 3y = 30 \implies \mathbf{1x + 4y = 30}$  
+> - **Etapa 3 (Linha 2 — Total de $975$ centavos):** $10x + 25y + 50 \cdot (3y) = 975 \implies 10x + 25y + 150y = 975 \implies \mathbf{10x + 175y = 975}$  
+> - **Etapa 4:** Multiplique os 3 termos da Linha 1 por **$(-10)$** (gerando $-10x - 40y = -300$) e some coluna por coluna com a Linha 2!
 
-A quantidade de moedas de **R$ $0{,}10$** ($x$) existentes nesse cofre é igual a:
-(A) $6$ moedas.
-(B) $10$ moedas.
-(C) $12$ moedas.
-(D) $15$ moedas.
+A quantidade de moedas de **$\text{R\$ } 0{,}10$** ($x$) existentes nesse cofre é igual a:
+(A) Existem $6$ moedas de dez centavos no cofre.
+(B) Existem $10$ moedas de dez centavos no cofre.
+(C) Existem $12$ moedas de dez centavos no cofre.
+(D) Existem $15$ moedas de dez centavos no cofre.
 
 <details><summary><b>Ver Gabarito e Comentário Detalhado</b></summary>
 
 **Gabarito Oficial: B**
 
-**Passo a Passo da Montagem:**
-1. **Nomeando com 2 letras:**
-   - De $10$ centavos $= x$
-   - De $25$ centavos $= y$
-   - De $50$ centavos $= 3y$
-2. **Montando o Sistema:**
-   - Linha 1 (Moedas): $x + y + 3y = 30 \implies \mathbf{x + 4y = 30}$
-   - Linha 2 (Centavos): $10x + 25y + 150y = 975 \implies \mathbf{10x + 175y = 975}$
-3. **Multiplicando a Linha 1 por $(-10)$:**
-   $$\begin{cases} -10x - 40y = -300 \\ \phantom{-}10x + 175y = 975 \end{cases}$$
-   Somando as duas linhas:
+**Resolução Passo a Passo Sem Pular Etapas:**
+1. **Sistema montado nas Etapas 2 e 3:**
+   $$\begin{cases} 1x + 4y = 30 \quad \text{(Linha 1)} \\ 10x + 175y = 975 \quad \text{(Linha 2)} \end{cases}$$
+2. **Multiplicando os 3 termos da Linha 1 por $(-10)$ para cancelar o $+10x$ da Linha 2:**
+   * $(+1x) \times (-10) = -10x$
+   * $(+4y) \times (-10) = -40y$
+   * $30 \times (-10) = -300$
+3. **Somando coluna por coluna com a Linha 2:**
+   $$\begin{cases} -10x - 40y = -300 \\ +10x + 175y = +975 \end{cases}$$
+   * Coluna do $x$: $-10x + 10x = 0$
+   * Coluna do $y$: $-40y + 175y = 135y$
+   * Depois do igual: $-300 + 975 = 675$
    $$135y = 675 \implies y = \frac{675}{135} = \mathbf{5\text{ moedas de 25 centavos}}$$
-4. **Achando as moedas de $10$ centavos ($x$):**
-   $$x + 4(5) = 30 \implies x = 30 - 20 = \mathbf{10\text{ moedas de R\$ 0,10}}$$
+4. **Voltando na Linha 1 ($x + 4y = 30$) e trocando $y$ por $5$ para achar o $x$:**
+   $$x + 4 \cdot (5) = 30 \implies x + 20 = 30 \implies x = 30 - 20 = \mathbf{10\text{ moedas de R\$ 0,10}}$$
 
 </details>
 
