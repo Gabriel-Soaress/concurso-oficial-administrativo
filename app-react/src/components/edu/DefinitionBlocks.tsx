@@ -51,7 +51,7 @@ const ACCENT_STYLES: Record<DefinitionAccent, { border: string; badge: string; t
   },
 };
 
-export function DefinitionBlocks({ title, columns = 1, items }: DefinitionBlocksProps) {
+export function DefinitionBlocks({ title, items }: DefinitionBlocksProps) {
   return (
     <div className="space-y-3 max-w-full">
       {title && (
@@ -61,13 +61,7 @@ export function DefinitionBlocks({ title, columns = 1, items }: DefinitionBlocks
         </div>
       )}
 
-      <div
-        className={
-          columns === 2
-            ? "grid grid-cols-1 md:grid-cols-2 gap-3.5 [&>*]:min-w-0"
-            : "space-y-3"
-        }
-      >
+      <div className="space-y-3">
         {items.map((item, idx) => {
           const style = ACCENT_STYLES[item.accent ?? "indigo"];
           return (

@@ -21,7 +21,7 @@ export function StepByStep({
   title,
   problem,
   steps,
-  defaultRevealAll = false,
+  defaultRevealAll = true,
 }: StepByStepProps) {
   const [visibleCount, setVisibleCount] = useState(defaultRevealAll ? steps.length : 1);
 

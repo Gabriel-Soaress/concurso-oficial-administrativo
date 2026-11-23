@@ -21,20 +21,20 @@ export function TrapAlert({
         </span>
       </div>
 
-      <div className="p-5 grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div className="space-y-1.5">
+      <div className="p-4 sm:p-5 space-y-3.5">
+        <div className="rounded-xl p-3.5 bg-rose-500/[0.06] border border-rose-500/25 space-y-1.5">
           <div className="text-[11px] font-mono uppercase font-bold text-rose-600 dark:text-rose-400">
-            ❌ Como a banca tenta te derrubar
+            ❌ 1. Como a banca monta a armadilha
           </div>
-          <div className="text-sm text-pri leading-relaxed">{trap}</div>
+          <div className="text-sm sm:text-[15px] text-pri leading-relaxed">{trap}</div>
         </div>
 
-        <div className="space-y-1.5 md:border-l md:border-amber-500/25 md:pl-4">
-          <div className="text-[11px] font-mono uppercase font-bold text-emerald-600 dark:text-emerald-400 inline-flex items-center gap-1">
+        <div className="rounded-xl p-3.5 bg-emerald-500/[0.07] border border-emerald-500/30 space-y-1.5">
+          <div className="text-[11px] font-mono uppercase font-bold text-emerald-700 dark:text-emerald-400 inline-flex items-center gap-1.5">
             <ShieldCheck className="w-3.5 h-3.5" />
-            <span>Como escapar na hora da prova</span>
+            <span>2. Teste de 5 Segundos para escapar na hora</span>
           </div>
-          <div className="text-sm text-pri leading-relaxed">{escape}</div>
+          <div className="text-sm sm:text-[15px] text-pri leading-relaxed">{escape}</div>
         </div>
       </div>
     </div>

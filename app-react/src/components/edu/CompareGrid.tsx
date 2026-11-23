@@ -26,8 +26,8 @@ export function CompareGrid({ title, mode = "right-wrong", left, right }: Compar
         </div>
       )}
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 [&>*]:min-w-0">
-        {/* Coluna Esquerda */}
+      <div className="space-y-3.5">
+        {/* Bloco 1 (Topo) */}
         <div
           className={`rounded-2xl p-5 border space-y-3 min-w-0 max-w-full ${
             isRW
