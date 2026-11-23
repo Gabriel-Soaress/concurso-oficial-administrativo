@@ -3,6 +3,21 @@ export { MathStack, type MathStackLine } from "./MathStack";
 export { GuidedCalcCard, GuidedCalcGrid, type GuidedCalcRow } from "./GuidedCalcCard";
 export { ProseSection } from "./ProseSection";
 export { ConceptCard } from "./ConceptCard";
+export { AxisContextCard } from "./AxisContextCard";
+export {
+  ExampleShowcase,
+  type ExampleAccent,
+  type ExampleTag,
+  type ExampleSentenceCase,
+  type ExampleShowcaseItem,
+  type ExampleShowcaseProps,
+} from "./ExampleShowcase";
+export {
+  InlinePractice,
+  type InlinePracticeOption,
+  type InlinePracticeQuestion,
+  type InlinePracticeProps,
+} from "./InlinePractice";
 export { DefinitionBlocks, type DefinitionBlockItem, type DefinitionAccent } from "./DefinitionBlocks";
 export { ProgressiveExamples, type ProgressiveExampleItem, type ProgressiveExampleAccent } from "./ProgressiveExamples";
 export { FormulaSpotlight, type FormulaLegendItem, type FormulaSpotlightItem } from "./FormulaSpotlight";
