@@ -10,6 +10,7 @@ export interface ExampleTag {
 }
 
 export interface ExampleSentenceCase {
+  label?: string;
   sentence: ReactNode;
   verdict?: "right" | "wrong" | "neutral";
   tags?: ExampleTag[];
@@ -77,6 +78,85 @@ const ACCENT_MAP: Record<
 };
 
 /**
+ * Card individual de frase-exemplo destacada com tags opcionais e explicação guiada.
+ */
+export function ExampleCaseCard({
+  item: c,
+  accent = "indigo",
+}: {
+  item: ExampleSentenceCase;
+  accent?: ExampleAccent;
+}) {
+  const theme = ACCENT_MAP[accent];
+  const boxClass =
+    c.verdict === "right"
+      ? ACCENT_MAP.emerald.box
+      : c.verdict === "wrong"
+        ? ACCENT_MAP.rose.box
+        : theme.box;
+
+  return (
+    <div className="rounded-xl surface border border-tech p-3.5 sm:p-4 space-y-3 min-w-0 max-w-full">
+      {c.label && (
+        <div>
+          <span
+            className={`inline-block px-2 py-0.5 rounded-md font-mono text-[10px] font-extrabold uppercase tracking-wider ${theme.badge}`}
+          >
+            {c.label}
+          </span>
+        </div>
+      )}
+
+      {/* Faixa de destaque da frase-exemplo */}
+      <div className={`rounded-xl border-l-4 ${boxClass} px-4 py-3 space-y-1.5`}>
+        {c.verdict === "right" && (
+          <div className="inline-flex items-center gap-1.5 text-[11px] font-mono font-extrabold uppercase tracking-wider text-emerald-700 dark:text-emerald-300">
+            <CheckCircle2 className="w-3.5 h-3.5 shrink-0" />
+            <span>Construção Correta</span>
+          </div>
+        )}
+        {c.verdict === "wrong" && (
+          <div className="inline-flex items-center gap-1.5 text-[11px] font-mono font-extrabold uppercase tracking-wider text-rose-700 dark:text-rose-300">
+            <XCircle className="w-3.5 h-3.5 shrink-0" />
+            <span>Armadilha / Forma Errada</span>
+          </div>
+        )}
+        <div className="edu-focus-scope text-[15px] sm:text-[17px] font-medium text-pri leading-relaxed break-words">
+          {c.sentence}
+        </div>
+      </div>
+
+      {/* Etiquetas desmontando as peças da frase */}
+      {c.tags && c.tags.length > 0 && (
+        <div className="flex flex-wrap gap-2">
+          {c.tags.map((tg, tIdx) => {
+            const tagTheme = ACCENT_MAP[tg.color ?? accent];
+            return (
+              <div
+                key={tIdx}
+                className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg border text-xs max-w-full ${tagTheme.pill}`}
+              >
+                <span
+                  className={`font-mono text-[10px] font-extrabold uppercase tracking-wider shrink-0 ${tagTheme.pillLabel}`}
+                >
+                  {tg.label}:
+                </span>
+                <span className="font-bold break-words">{tg.value}</span>
+              </div>
+            );
+          })}
+        </div>
+      )}
+
+      {/* Leitura guiada logo abaixo */}
+      <div className="pt-2.5 border-t border-tech/60 text-sm sm:text-[15px] text-sec leading-relaxed space-y-1.5 break-words">
+        {c.explanation}
+      </div>
+    </div>
+  );
+}
+
+/**
  * Vitrine 100% vertical para exemplos progressivos:
  * - Frase isolada em faixa grande de alto contraste
  * - Pílulas visuais opcionais desmontando os papéis das palavras
@@ -94,7 +174,8 @@ export function ExampleShowcase({ title = "Exemplos Progressivos Guiados", items
 
       <div className="space-y-4">
         {items.map((item, idx) => {
-          const theme = ACCENT_MAP[item.accent ?? "indigo"];
+          const itemAccent = item.accent ?? "indigo";
+          const theme = ACCENT_MAP[itemAccent];
           return (
             <div
               key={idx}
@@ -113,67 +194,9 @@ export function ExampleShowcase({ title = "Exemplos Progressivos Guiados", items
               )}
 
               <div className="space-y-3.5">
-                {item.cases.map((c, cIdx) => {
-                  const boxClass =
-                    c.verdict === "right"
-                      ? ACCENT_MAP.emerald.box
-                      : c.verdict === "wrong"
-                        ? ACCENT_MAP.rose.box
-                        : theme.box;
-
-                  return (
-                    <div
-                      key={cIdx}
-                      className="rounded-xl surface border border-tech p-3.5 sm:p-4 space-y-3 min-w-0"
-                    >
-                      {/* Faixa de destaque da frase-exemplo */}
-                      <div className={`rounded-xl border-l-4 ${boxClass} px-4 py-3 space-y-1.5`}>
-                        {c.verdict === "right" && (
-                          <div className="inline-flex items-center gap-1.5 text-[11px] font-mono font-extrabold uppercase tracking-wider text-emerald-700 dark:text-emerald-300">
-                            <CheckCircle2 className="w-3.5 h-3.5 shrink-0" />
-                            <span>Construção Correta</span>
-                          </div>
-                        )}
-                        {c.verdict === "wrong" && (
-                          <div className="inline-flex items-center gap-1.5 text-[11px] font-mono font-extrabold uppercase tracking-wider text-rose-700 dark:text-rose-300">
-                            <XCircle className="w-3.5 h-3.5 shrink-0" />
-                            <span>Armadilha / Forma Errada</span>
-                          </div>
-                        )}
-                        <div className="edu-focus-scope text-[15px] sm:text-[17px] font-medium text-pri leading-relaxed break-words">
-                          {c.sentence}
-                        </div>
-                      </div>
-
-                      {/* Etiquetas desmontando as peças da frase */}
-                      {c.tags && c.tags.length > 0 && (
-                        <div className="flex flex-wrap gap-2">
-                          {c.tags.map((tg, tIdx) => {
-                            const tagTheme = ACCENT_MAP[tg.color ?? item.accent ?? "indigo"];
-                            return (
-                              <div
-                                key={tIdx}
-                                className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg border text-xs ${tagTheme.pill}`}
-                              >
-                                <span
-                                  className={`font-mono text-[10px] font-extrabold uppercase tracking-wider ${tagTheme.pillLabel}`}
-                                >
-                                  {tg.label}:
-                                </span>
-                                <span className="font-bold">{tg.value}</span>
-                              </div>
-                            );
-                          })}
-                        </div>
-                      )}
-
-                      {/* Leitura guiada logo abaixo */}
-                      <div className="pt-2.5 border-t border-tech/60 text-sm sm:text-[15px] text-sec leading-relaxed space-y-1.5 break-words">
-                        {c.explanation}
-                      </div>
-                    </div>
-                  );
-                })}
+                {item.cases.map((c, cIdx) => (
+                  <ExampleCaseCard key={cIdx} item={c} accent={itemAccent} />
+                ))}
               </div>
             </div>
           );

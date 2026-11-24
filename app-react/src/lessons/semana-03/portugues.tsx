@@ -3,6 +3,7 @@ import {
   AnalogyBox,
   CompareGrid,
   ConceptCard,
+  DefinitionBlocks,
   FeynmanCard,
   FlipCardsGrid,
   KeyTable,
@@ -59,24 +60,76 @@ export const portuguesSemana03: RichLessonModule = {
               <strong>ação</strong> (<em>protocolar, assinar</em>), <strong>estado</strong> (<em>estar, permanecer</em>) ou{" "}
               <strong>fenômeno natural</strong> (<em>chover, anoitecer</em>).
             </p>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1">
-              <div className="p-4 rounded-xl surface border border-tech space-y-1">
-                <div className="text-[11px] font-mono font-bold uppercase text-indigo-600 dark:text-indigo-400">Ação</div>
-                <div className="text-sm font-bold text-pri">“O oficial arquivou a pasta.”</div>
-                <div className="text-xs text-mut">O sujeito pratica uma atividade concreta no mundo real.</div>
-              </div>
-              <div className="p-4 rounded-xl surface border border-tech space-y-1">
-                <div className="text-[11px] font-mono font-bold uppercase text-indigo-600 dark:text-indigo-400">Estado</div>
-                <div className="text-sm font-bold text-pri">“O servidor parece exausto.”</div>
-                <div className="text-xs text-mut">Liga o sujeito a uma característica passageira ou duradoura.</div>
-              </div>
-              <div className="p-4 rounded-xl surface border border-tech space-y-1">
-                <div className="text-[11px] font-mono font-bold uppercase text-indigo-600 dark:text-indigo-400">Fenômeno Natural</div>
-                <div className="text-sm font-bold text-pri">“Choveu intensamente em Birigui.”</div>
-                <div className="text-xs text-mut">Oração sem sujeito: o próprio evento da natureza é o fato.</div>
-              </div>
-            </div>
           </ProseSection>
+
+          <DefinitionBlocks
+            title="Os 3 Papéis do Verbo — Um Ponto por Vez"
+            items={[
+              {
+                term: "1. Verbo de Ação",
+                badge: "Atividade concreta",
+                accent: "indigo",
+                summary: (
+                  <>
+                    O sujeito pratica (ou sofre) uma atividade dinâmica que transforma algo no mundo real (<em>protocolar, arquivar, assinar</em>).
+                  </>
+                ),
+                examples: [
+                  {
+                    label: "Exemplo na Repartição",
+                    sentence: (
+                      <>
+                        “O oficial <strong>arquivou</strong> a pasta.”
+                      </>
+                    ),
+                    explanation: "O sujeito (O oficial) executa uma atividade concreta sobre a pasta no mundo real.",
+                  },
+                ],
+              },
+              {
+                term: "2. Verbo de Estado",
+                badge: "Ponte de qualidade",
+                accent: "emerald",
+                summary: (
+                  <>
+                    Não indica ação alguma: serve apenas como ponte para ligar o sujeito a uma característica passageira ou duradoura (<em>ser, estar, parecer, permanecer</em>).
+                  </>
+                ),
+                examples: [
+                  {
+                    label: "Exemplo na Repartição",
+                    sentence: (
+                      <>
+                        “O servidor <strong>parece</strong> exausto.”
+                      </>
+                    ),
+                    explanation: "O verbo não descreve movimento: apenas conecta o sujeito ao seu estado aparente (exausto).",
+                  },
+                ],
+              },
+              {
+                term: "3. Verbo de Fenômeno Natural",
+                badge: "Sem sujeito agente",
+                accent: "amber",
+                summary: (
+                  <>
+                    Exprime acontecimentos próprios da natureza (<em>chover, ventar, anoitecer</em>), formando orações em que o próprio evento é o fato.
+                  </>
+                ),
+                examples: [
+                  {
+                    label: "Exemplo",
+                    sentence: (
+                      <>
+                        “<strong>Choveu</strong> intensamente em Birigui.”
+                      </>
+                    ),
+                    explanation: "Oração sem sujeito: não há pessoa executando a chuva — o fenômeno acontece por si.",
+                  },
+                ],
+              },
+            ]}
+          />
 
           <ProseSection number="2" title="A Lógica dos Três Modos Verbais: A Atitude do Falante">
             <p>
@@ -84,8 +137,65 @@ export const portuguesSemana03: RichLessonModule = {
             </p>
           </ProseSection>
 
+          <DefinitionBlocks
+            title="Cada Modo Verbal com Seu Exemplo Imediato"
+            items={[
+              {
+                term: "1. Modo Indicativo",
+                badge: "Certeza",
+                accent: "indigo",
+                summary: "Transmite postura de certeza objetiva: fato real, consumado no passado, em curso no presente ou garantido no futuro.",
+                examples: [
+                  {
+                    label: "Exemplo na Repartição",
+                    sentence: (
+                      <>
+                        “O prefeito <strong>sancionou</strong> a lei municipal.”
+                      </>
+                    ),
+                    explanation: "A sanção é apresentada como fato concreto e incontestável.",
+                  },
+                ],
+              },
+              {
+                term: "2. Modo Subjuntivo",
+                badge: "Hipótese / Dúvida / Desejo",
+                accent: "amber",
+                summary: "Expressa dúvida, possibilidade incerta, desejo ou condição de algo que ainda não se concretizou como certeza.",
+                examples: [
+                  {
+                    label: "Exemplo na Repartição",
+                    sentence: (
+                      <>
+                        “Caso o prefeito <strong>sancione</strong> a lei, haverá posse.”
+                      </>
+                    ),
+                    explanation: "A conjunção condicional 'Caso' puxa o verbo 'sancione' para o terreno da hipótese.",
+                  },
+                ],
+              },
+              {
+                term: "3. Modo Imperativo",
+                badge: "Ordem / Pedido / Instrução",
+                accent: "rose",
+                summary: "Serve para dar ordem, instrução direta, convite ou orientação ao interlocutor (não possui a 1ª pessoa do singular 'eu').",
+                examples: [
+                  {
+                    label: "Exemplo na Repartição",
+                    sentence: (
+                      <>
+                        “<strong>Protocole</strong> este processo imediatamente!”
+                      </>
+                    ),
+                    explanation: "Verbo em comando direto voltado para quem lê ou ouve a ordem.",
+                  },
+                ],
+              },
+            ]}
+          />
+
           <KeyTable
-            title="Os 3 Modos Verbais e Sua Mecânica Cognitiva"
+            title="Quadro-Resumo: Os 3 Modos Verbais e Sua Mecânica Cognitiva"
             headers={["Modo", "Postura Psicológica", "Exemplo na Repartição"]}
             rows={[
               [
@@ -114,8 +224,76 @@ export const portuguesSemana03: RichLessonModule = {
             </p>
           </ProseSection>
 
+          <DefinitionBlocks
+            title="Os 3 Pretéritos do Indicativo — Um por Vez"
+            items={[
+              {
+                term: "1. Pretérito Perfeito (A FOTO)",
+                badge: "Ação pontual acabada",
+                accent: "indigo",
+                summary: "Indica uma ação pontual, perfeitamente concluída no passado, com começo e fim bem definidos.",
+                examples: [
+                  {
+                    label: "Exemplo (Foto Acabada)",
+                    sentence: (
+                      <>
+                        “Ontem o servidor <strong>redigiu</strong> o ofício.”
+                      </>
+                    ),
+                    explanation: "Fato único e totalmente encerrado ontem.",
+                  },
+                ],
+              },
+              {
+                term: "2. Pretérito Imperfeito (O FILME)",
+                badge: "Hábito / Continuidade",
+                accent: "sky",
+                summary: (
+                  <>
+                    Indica ação habitual, contínua, repetida ou em andamento no passado (marcado pelas terminações típicas{" "}
+                    <em>-va</em> e <em>-ia</em>: <em>cantava, vendia, redigia</em>).
+                  </>
+                ),
+                examples: [
+                  {
+                    label: "Exemplo (Filme Contínuo)",
+                    sentence: (
+                      <>
+                        “Antigamente ele <strong>redigia</strong> ofícios todos os dias.”
+                      </>
+                    ),
+                    explanation: "Mostra rotina repetida no passado, e não um ato isolado.",
+                  },
+                ],
+              },
+              {
+                term: "3. Pretérito Mais-que-perfeito (O Passado do Passado)",
+                badge: "Anterior a outro passado",
+                accent: "purple",
+                summary: (
+                  <>
+                    Expressa uma ação passada que aconteceu <strong>antes de outra ação que também já passou</strong>. Na
+                    forma simples termina em <em>-ra</em> (<em>redigira, fizera</em>); na linguagem comum substitui-se pela forma
+                    composta (<em>“tinha redigido”</em>).
+                  </>
+                ),
+                examples: [
+                  {
+                    label: "Exemplo (Forma Simples -ra)",
+                    sentence: (
+                      <>
+                        “Quando o chefe chegou, ele já <strong>redigira</strong> o despacho.”
+                      </>
+                    ),
+                    explanation: "Primeiro ele redigiu o despacho ('tinha redigido'); só depois o chefe chegou.",
+                  },
+                ],
+              },
+            ]}
+          />
+
           <CompareGrid
-            title="Pretérito Perfeito (A Foto) vs. Pretérito Imperfeito (O Filme)"
+            title="Síntese Visual: Pretérito Perfeito (A Foto) vs. Pretérito Imperfeito (O Filme)"
             mode="contrast"
             left={{
               title: "Pretérito Perfeito (A FOTO)",
@@ -139,52 +317,72 @@ export const portuguesSemana03: RichLessonModule = {
             }}
           />
 
-          <AnalogyBox title="Pretérito Mais-que-perfeito (O Passado do Passado)" tag="3º Pretérito do Indicativo">
+          <AnalogyBox title="Macete do Pretérito Mais-que-perfeito (-ra = tinha + particípio)" tag="3º Pretérito do Indicativo">
             <p>
-              <strong>“Quando o chefe chegou, ele já redigira o despacho.”</strong>
-            </p>
-            <p>
-              Ação passada que aconteceu <strong>antes de outra ação que também já passou</strong>. Na forma simples
-              termina em <em>-ra</em> (<em>redigira, fizera</em>). Na linguagem comum substitui-se pela forma composta:{" "}
-              <em>“tinha redigido”</em>.
+              Sempre que encontrar um verbo terminado em <em>-ra</em> sem acento no final (<em>redigira, fizera, entregara</em>) em
+              questões da ACCESS ou VUNESP, troque mentalmente por <strong>“tinha + particípio”</strong> (<em>tinha redigido, tinha feito</em>) para conferir se ocorreu antes de outro fato passado.
             </p>
           </AnalogyBox>
 
           <ProseSection number="4" title="Futuros em Contraste: Futuro do Presente vs. Futuro do Pretérito">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <ConceptCard title="Futuro do Presente" badge="Fato certo no futuro" accent="indigo" icon="book">
-                <p>
-                  Fato que certamente ocorrerá após o momento da fala:
-                </p>
-                <div className="p-3 rounded-xl surface-muted border border-tech text-xs sm:text-sm font-mono text-pri">
-                  “O prefeito <strong>nomeará</strong> os aprovados em maio.”
-                </div>
-              </ConceptCard>
-
-              <ConceptCard
-                title="Futuro do Pretérito"
-                badge="Condicional & Polidez Oficial"
-                accent="amber"
-                icon="sparkle"
-              >
-                <p>
-                  Fato futuro que dependia de uma condição que não se realizou, ou utilizado como{" "}
-                  <strong>recurso de polidez/educação</strong> na correspondência administrativa:
-                </p>
-                <ul className="list-disc pl-5 space-y-1.5 text-sm">
-                  <li>
-                    <strong>Condicional:</strong>{" "}
-                    <em>“Se houvesse orçamento, a secretaria <strong>compraria</strong> os computadores.”</em>
-                  </li>
-                  <li>
-                    <strong>Polidez no serviço público:</strong> Em vez de dizer bruscamente{" "}
-                    <em>“Eu quero uma informação”</em>, a autoridade diz:{" "}
-                    <em>“Eu <strong>gostaria</strong> de solicitar uma certidão.”</em> (Atenua a exigência).
-                  </li>
-                </ul>
-              </ConceptCard>
-            </div>
+            <p>
+              Enquanto um futuro aponta para algo dado como certo após a fala, o outro abre o campo das hipóteses não realizadas e da cortesia formal exigida na redação oficial:
+            </p>
           </ProseSection>
+
+          <DefinitionBlocks
+            title="Os 2 Futuros do Indicativo — Um por Vez"
+            items={[
+              {
+                term: "1. Futuro do Presente",
+                badge: "Fato certo no futuro",
+                accent: "indigo",
+                summary: "Exprime um fato dado como certo que ocorrerá após o momento da fala.",
+                examples: [
+                  {
+                    label: "Exemplo (Previsão Certa)",
+                    sentence: (
+                      <>
+                        “O prefeito <strong>nomeará</strong> os aprovados em maio.”
+                      </>
+                    ),
+                    explanation: "Comunica uma ação futura direta e afirmativa.",
+                  },
+                ],
+              },
+              {
+                term: "2. Futuro do Pretérito",
+                badge: "Condicional & Polidez Oficial",
+                accent: "amber",
+                summary: (
+                  <>
+                    Indica fato futuro que dependia de uma condição que não se realizou, ou atua como{" "}
+                    <strong>recurso de polidez/educação</strong> na correspondência administrativa (atenuando a exigência em relação a dizer bruscamente <em>“Eu quero uma informação”</em>).
+                  </>
+                ),
+                examples: [
+                  {
+                    label: "Uso 1 · Sentido Condicional",
+                    sentence: (
+                      <>
+                        “Se houvesse orçamento, a secretaria <strong>compraria</strong> os computadores.”
+                      </>
+                    ),
+                    explanation: "A compra dependeria de haver orçamento (condição não efetivada).",
+                  },
+                  {
+                    label: "Uso 2 · Polidez no Serviço Público",
+                    sentence: (
+                      <>
+                        “Eu <strong>gostaria</strong> de solicitar uma certidão.”
+                      </>
+                    ),
+                    explanation: "Substitui o direto 'Eu quero' por um pedido cortês e respeitoso típico de ofícios.",
+                  },
+                ],
+              },
+            ]}
+          />
 
           <FeynmanCard
             title="Síntese Feynman · Eixo 1 (Modos e Tempos Verbais)"
@@ -311,22 +509,90 @@ export const portuguesSemana03: RichLessonModule = {
           />
 
           <ProseSection number="2" title="Formas Nominais (Infinitivo, Particípio e Gerúndio) e Verbos Abundantes">
-            <p>As formas nominais do verbo são três:</p>
-            <ul className="list-disc pl-5 space-y-1.5">
-              <li>
-                <strong>Infinitivo:</strong> o nome do verbo terminado em <em>-r</em> (<em>analisar, deferir</em>). Funciona quase como um substantivo.
-              </li>
-              <li>
-                <strong>Particípio:</strong> ação concluída terminada em <em>-do</em> (<em>analisado, deferido</em>).
-                Alguns verbos são <strong>abundantes</strong> (dupla forma): usa-se a forma regular longa (<em>imprimido, aceitado</em>) com{" "}
-                <strong>ter/haver</strong> (<em>“tinha imprimido”</em>) e a forma curta irregular (<em>impresso, aceito</em>) com{" "}
-                <strong>ser/estar</strong> (<em>“está impresso”</em>).
-              </li>
-              <li>
-                <strong>Gerúndio:</strong> ação em curso contínuo terminada em <em>-ndo</em> (<em>analisando, deferindo</em>).
-              </li>
-            </ul>
+            <p>
+              As formas nominais do verbo são três — vamos entrar em cada uma com seu exemplo e sua regra de prova antes de ver a armadilha do gerundismo:
+            </p>
           </ProseSection>
+
+          <DefinitionBlocks
+            title="As 3 Formas Nominais — Uma por Vez"
+            items={[
+              {
+                term: "1. Infinitivo (Terminação em -r)",
+                badge: "Nome do verbo",
+                accent: "indigo",
+                summary: (
+                  <>
+                    É o nome original do verbo terminado em <em>-r</em> (<em>analisar, deferir, protocolar</em>). Funciona quase como um substantivo.
+                  </>
+                ),
+                examples: [
+                  {
+                    label: "Exemplo",
+                    sentence: (
+                      <>
+                        “É essencial <strong>analisar</strong> e <strong>deferir</strong> o pedido no prazo.”
+                      </>
+                    ),
+                    explanation: "Os verbos estão na sua forma básica terminada em -r, sem indicar pessoa nem tempo.",
+                  },
+                ],
+              },
+              {
+                term: "2. Particípio (e Verbos Abundantes)",
+                badge: "Ter/Haver (longo) × Ser/Estar (curto)",
+                accent: "emerald",
+                summary: (
+                  <>
+                    Indica ação concluída (em geral terminada em <em>-do</em>: <em>analisado, deferido</em>). Alguns verbos são{" "}
+                    <strong>abundantes</strong> (dupla forma): usa-se a forma regular longa (<em>imprimido, aceitado</em>) com{" "}
+                    <strong>ter/haver</strong> e a forma curta irregular (<em>impresso, aceito</em>) com <strong>ser/estar</strong>.
+                  </>
+                ),
+                examples: [
+                  {
+                    label: "Forma Regular Longa (com TER / HAVER)",
+                    sentence: (
+                      <>
+                        “O estagiário <strong>tinha imprimido</strong> as guias.”
+                      </>
+                    ),
+                    explanation: "Com auxiliar TER ou HAVER, a norma culta exige o particípio longo terminado em -do.",
+                  },
+                  {
+                    label: "Forma Curta Irregular (com SER / ESTAR)",
+                    sentence: (
+                      <>
+                        “O relatório já <strong>está impresso</strong> na pasta.”
+                      </>
+                    ),
+                    explanation: "Com auxiliar SER ou ESTAR, usa-se a forma curta irregular (impresso, aceito, entregue, pago).",
+                  },
+                ],
+              },
+              {
+                term: "3. Gerúndio (Terminação em -ndo)",
+                badge: "Ação em curso",
+                accent: "amber",
+                summary: (
+                  <>
+                    Exprime ação contínua e em andamento no momento referido, terminada em <em>-ndo</em> (<em>analisando, deferindo</em>).
+                  </>
+                ),
+                examples: [
+                  {
+                    label: "Exemplo Legítimo (Simultâneo)",
+                    sentence: (
+                      <>
+                        “O auditor está <strong>examinando</strong> as contas agora.”
+                      </>
+                    ),
+                    explanation: "Descreve processo realmente em curso neste instante — diferente do gerundismo futuro.",
+                  },
+                ],
+              },
+            ]}
+          />
 
           <TrapAlert
             title="Atenção ao Gerundismo na Redação Oficial"
@@ -352,8 +618,91 @@ export const portuguesSemana03: RichLessonModule = {
             </p>
           </ProseSection>
 
+          <DefinitionBlocks
+            title="As Vozes Verbais — Uma por Vez com Exemplos"
+            items={[
+              {
+                term: "1. Voz Ativa (Sujeito Agente)",
+                badge: "Sujeito pratica a ação",
+                accent: "indigo",
+                summary: "O sujeito da frase é quem executa diretamente a ação indicada pelo verbo.",
+                examples: [
+                  {
+                    label: "Exemplo na Repartição",
+                    sentence: (
+                      <>
+                        “O fiscal <strong>autuou</strong> a empresa infratora.”
+                      </>
+                    ),
+                    explanation: "O sujeito (O fiscal) pratica diretamente a ação sobre a empresa.",
+                  },
+                ],
+              },
+              {
+                term: "2. Voz Passiva Analítica (Ser/Estar + Particípio)",
+                badge: "Sujeito sofre a ação",
+                accent: "sky",
+                summary: "O termo que recebia a ação vira Sujeito Paciente, e o verbo aparece em locução (ser/estar + particípio), podendo trazer quem praticou nos bastidores (pelo fiscal).",
+                examples: [
+                  {
+                    label: "Exemplo na Repartição",
+                    sentence: (
+                      <>
+                        “A empresa infratora <strong>foi autuada</strong> pelo fiscal.”
+                      </>
+                    ),
+                    explanation: "A empresa recebe a autuação (Sujeito Paciente); 'pelo fiscal' é o Agente da Passiva.",
+                  },
+                ],
+              },
+              {
+                term: "3. Voz Passiva Sintética com 'SE'",
+                badge: "VTD + SE (Concordância obrigatória)",
+                accent: "emerald",
+                summary: "Formada por verbo transitivo direto na 3ª pessoa + pronome apassivador 'se'. O termo paciente comanda o singular ou o plural do verbo!",
+                examples: [
+                  {
+                    label: "Sujeito Paciente no Singular",
+                    sentence: (
+                      <>
+                        “<strong>Autuou-se</strong> a empresa.”
+                      </>
+                    ),
+                    explanation: "Equivale a 'A empresa foi autuada': sujeito singular mantém o verbo no singular.",
+                  },
+                  {
+                    label: "Sujeito Paciente no Plural",
+                    sentence: (
+                      <>
+                        “<strong>Autuaram-se</strong> as empresas infratoras.”
+                      </>
+                    ),
+                    explanation: "Se o termo paciente for plural, o verbo vai obrigatoriamente para o plural ('As empresas foram autuadas').",
+                  },
+                ],
+              },
+              {
+                term: "4. Voz Reflexiva",
+                badge: "Agente e Paciente ao mesmo tempo",
+                accent: "purple",
+                summary: "O sujeito pratica a ação e ele próprio sofre o efeito dela sobre si mesmo ('a si mesmo').",
+                examples: [
+                  {
+                    label: "Exemplo na Repartição",
+                    sentence: (
+                      <>
+                        “O próprio sistema <strong>atualizou-se</strong> durante a madrugada.”
+                      </>
+                    ),
+                    explanation: "O sujeito claro (O próprio sistema) executa e recebe a atualização em si mesmo.",
+                  },
+                ],
+              },
+            ]}
+          />
+
           <CompareGrid
-            title="Voz Ativa vs. Voz Passiva (Analítica e Sintética com 'SE')"
+            title="Quadro Comparativo: Voz Ativa vs. Voz Passiva (Analítica e Sintética com 'SE')"
             mode="contrast"
             left={{
               title: "Voz Ativa (Sujeito Agente)",
@@ -460,36 +809,192 @@ export const portuguesSemana03: RichLessonModule = {
               modifica os verbos? <strong>O ADVÉRBIO</strong>. Além de modificar verbos, o advérbio tem um poder único:
               ele pode intensificar um <strong>adjetivo</strong> ou até mesmo <strong>outro advérbio</strong>.
             </p>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1">
-              <div className="p-4 rounded-xl surface border border-tech space-y-1">
-                <div className="text-[11px] font-mono font-bold uppercase text-indigo-600 dark:text-indigo-400">1. Modifica Verbo</div>
-                <div className="text-sm font-bold text-pri">“O assessor despachou rapidamente.”</div>
-                <div className="text-xs text-mut">Explica o <em>modo</em> como o ato aconteceu.</div>
-              </div>
-              <div className="p-4 rounded-xl surface border border-tech space-y-1">
-                <div className="text-[11px] font-mono font-bold uppercase text-indigo-600 dark:text-indigo-400">2. Modifica Adjetivo</div>
-                <div className="text-sm font-bold text-pri">“O relatório é muito detalhado.”</div>
-                <div className="text-xs text-mut">Intensifica a característica <em>detalhado</em>.</div>
-              </div>
-              <div className="p-4 rounded-xl surface border border-tech space-y-1">
-                <div className="text-[11px] font-mono font-bold uppercase text-indigo-600 dark:text-indigo-400">3. Modifica Advérbio</div>
-                <div className="text-sm font-bold text-pri">“O concurso passou tão depressa!”</div>
-                <div className="text-xs text-mut"><em>Tão</em> intensifica o advérbio <em>depressa</em>.</div>
-              </div>
-            </div>
           </ProseSection>
+
+          <DefinitionBlocks
+            title="Os 3 Alvos que o Advérbio Modifica — Um por Vez"
+            items={[
+              {
+                term: "1. Modifica um Verbo",
+                badge: "Circunstância da ação",
+                accent: "indigo",
+                summary: "Indica o modo, tempo, lugar ou intensidade com que a ação verbal acontece.",
+                examples: [
+                  {
+                    label: "Exemplo",
+                    sentence: (
+                      <>
+                        “O assessor despachou <strong>rapidamente</strong>.”
+                      </>
+                    ),
+                    explanation: "Explica o modo como o ato de despachar aconteceu.",
+                  },
+                ],
+              },
+              {
+                term: "2. Modifica um Adjetivo",
+                badge: "Grau da qualidade",
+                accent: "sky",
+                summary: "Aumenta ou atenua a intensidade de uma característica ligada a um nome.",
+                examples: [
+                  {
+                    label: "Exemplo",
+                    sentence: (
+                      <>
+                        “O relatório é <strong>muito</strong> detalhado.”
+                      </>
+                    ),
+                    explanation: "O advérbio 'muito' intensifica a característica 'detalhado' (adjetivo).",
+                  },
+                ],
+              },
+              {
+                term: "3. Modifica Outro Advérbio",
+                badge: "Intensificação dupla",
+                accent: "amber",
+                summary: "Pode reforçar ou dosar o sentido de outro advérbio logo ao lado.",
+                examples: [
+                  {
+                    label: "Exemplo",
+                    sentence: (
+                      <>
+                        “O concurso passou <strong>tão</strong> depressa!”
+                      </>
+                    ),
+                    explanation: "'Tão' intensifica o advérbio 'depressa'.",
+                  },
+                ],
+              },
+            ]}
+          />
 
           <ProseSection number="2" title="A Regra de Ouro: Por que o Advérbio NUNCA Flexiona?">
             <p>
               Por que os advérbios não têm plural nem feminino? Porque eles não nomeiam nem caracterizam seres
               materiais (<em>coisas</em> com gênero ou contabilidade física). Eles exprimem apenas uma{" "}
-              <strong>circunstância</strong> da ação. Essa propriedade gera as duas maiores pegadinhas de bancas como
-              ACCESS e VUNESP: o uso de <strong>meio</strong> e o <strong>adjetivo adverbializado</strong>.
+              <strong>circunstância</strong> da ação. Essa propriedade gera as maiores pegadinhas de bancas como
+              ACCESS e VUNESP: <strong>meio</strong>, <strong>bastante</strong> e o{" "}
+              <strong>adjetivo adverbializado</strong>. Vamos ver uma por uma:
             </p>
           </ProseSection>
 
+          <DefinitionBlocks
+            title="As Pegadinhas da Invariabilidade — Uma por Vez"
+            items={[
+              {
+                term: "1. 'Meio' (Advérbio = um pouco) vs. 'Meia' (Numeral = metade)",
+                badge: "Pegadinha campeã",
+                accent: "indigo",
+                summary: (
+                  <>
+                    Quando equivale a <em>“um pouco”</em> ou <em>“mais ou menos”</em> modificando um adjetivo, é{" "}
+                    <strong>advérbio invariável</strong> (<em>meio</em>). Só concorda no feminino (<em>meia</em>) quando significa literalmente <strong>metade física</strong> de algo!
+                  </>
+                ),
+                examples: [
+                  {
+                    label: "Certo (Advérbio = um pouco)",
+                    verdict: "right",
+                    sentence: (
+                      <>
+                        “A candidata estava <strong>meio</strong> apreensiva com o gabarito.”
+                      </>
+                    ),
+                    explanation: "Significa 'um pouco apreensiva' → advérbio nunca vai para o feminino.",
+                  },
+                  {
+                    label: "Errado (Pegadinha de Prova)",
+                    verdict: "wrong",
+                    sentence: (
+                      <>
+                        “A candidata estava <strong>meia</strong> apreensiva.”
+                      </>
+                    ),
+                    explanation: "Erro grosseiro: ela não estava dividida na metade física!",
+                  },
+                  {
+                    label: "Certo (Numeral = metade real)",
+                    verdict: "right",
+                    sentence: (
+                      <>
+                        “Ele tomou <strong>meia</strong> dose de café e comeu <strong>meia</strong> maçã.”
+                      </>
+                    ),
+                    explanation: "Aqui 'meia' significa metade física (1/2) de um substantivo → concorda normalmente.",
+                  },
+                ],
+              },
+              {
+                term: "2. 'Bastante' (Advérbio = muito) vs. Adjetivo (= suficiente)",
+                badge: "Invariável antes de adjetivo/verbo",
+                accent: "amber",
+                summary: (
+                  <>
+                    Ligado a um adjetivo ou verbo com sentido de <em>“muito”</em>, <strong>bastante</strong> é advérbio e{" "}
+                    <strong>jamais ganha -s</strong> (mesmo que o sujeito esteja no plural).
+                  </>
+                ),
+                examples: [
+                  {
+                    label: "Errado (Pegadinha de Prova)",
+                    verdict: "wrong",
+                    sentence: (
+                      <>
+                        “Os candidatos estavam <strong>bastantes</strong> tranquilos.”
+                      </>
+                    ),
+                    explanation: "'Bastante' modifica o adjetivo 'tranquilos' (= muito tranquilos) → advérbio invariável: 'bastante tranquilos'.",
+                  },
+                ],
+              },
+              {
+                term: "3. Adjetivo Adverbializado (Trabalhar duro, Falar alto)",
+                badge: "Congela no singular",
+                accent: "emerald",
+                summary: (
+                  <>
+                    Palavras normalmente adjetivas (<em>duro, alto, claro, rápido</em>), quando passam a modificar um{" "}
+                    <strong>verbo</strong>, viram advérbios e congelam obrigatoriamente no masculino singular!
+                  </>
+                ),
+                examples: [
+                  {
+                    label: "Certo (Adjetivos adverbializados)",
+                    verdict: "right",
+                    sentence: (
+                      <>
+                        “As servidoras trabalham <strong>duro</strong> e falaram <strong>alto</strong>.”
+                      </>
+                    ),
+                    explanation: "Como modificam os verbos 'trabalham' e 'falaram', permanecem invariáveis.",
+                  },
+                  {
+                    label: "Errado (Flexionado junto do verbo)",
+                    verdict: "wrong",
+                    sentence: (
+                      <>
+                        “Elas falaram <strong>altas</strong> durante a conferência.”
+                      </>
+                    ),
+                    explanation: "Ligado ao verbo 'falar', deve ficar invariável no masculino singular: 'alto'.",
+                  },
+                  {
+                    label: "Contraste (Ligado a substantivo → Adjetivo variável)",
+                    verdict: "neutral",
+                    sentence: (
+                      <>
+                        “Elas tinham vozes <strong>altas</strong>.”
+                      </>
+                    ),
+                    explanation: "Aqui 'altas' qualifica o substantivo 'vozes' (não o verbo) → adjetivo varia normalmente.",
+                  },
+                ],
+              },
+            ]}
+          />
+
           <CompareGrid
-            title="As Duas Grandes Pegadinhas: 'Meio' e Adjetivo Adverbializado"
+            title="Resumo Rápido: As Grandes Pegadinhas da Invariabilidade"
             mode="right-wrong"
             left={{
               title: "Forma Correta (Norma Culta)",
@@ -599,9 +1104,108 @@ export const portuguesSemana03: RichLessonModule = {
             <p>
               A letra “A” na língua portuguesa pode pertencer a <strong>três classes gramaticais completamente diferentes</strong>.
               Dominar esse teste é o pré-requisito definitivo para nunca mais errar questões de morfologia e de{" "}
-              <strong>Crase</strong> (que estudaremos na Semana 08).
+              <strong>Crase</strong> (que estudaremos na Semana 08). Vamos analisar cada um dos 3 papéis com a troca pelo masculino:
             </p>
           </ProseSection>
+
+          <DefinitionBlocks
+            title="Os 3 Papéis do 'A' — Um por Vez com Teste pelo Masculino"
+            items={[
+              {
+                term: "1. 'A' como Artigo Definido (Variável)",
+                badge: "Troca por 'O'",
+                accent: "indigo",
+                summary: (
+                  <>
+                    Vem antes de um substantivo feminino para determiná-lo. Varia em número (<em>a / as</em>) e, na troca por substantivo masculino, vira <strong>O</strong>.
+                  </>
+                ),
+                examples: [
+                  {
+                    label: "Frase Original (Feminino)",
+                    sentence: (
+                      <>
+                        “<strong>A</strong> portaria foi revogada.”
+                      </>
+                    ),
+                    explanation: "Precede e determina o substantivo feminino 'portaria'.",
+                  },
+                  {
+                    label: "Prova dos 9 (Troca pelo Masculino)",
+                    verdict: "right",
+                    sentence: (
+                      <>
+                        “<strong>O</strong> decreto foi revogado.”
+                      </>
+                    ),
+                    explanation: "Trocou por masculino e virou apenas 'O'? Era Artigo Definido!",
+                  },
+                ],
+              },
+              {
+                term: "2. 'A' como Preposição (Invariável)",
+                badge: "Fica 'A' ou vira 'AO'",
+                accent: "emerald",
+                summary: (
+                  <>
+                    Liga duas palavras por exigência de regência de verbo ou nome. Não varia para o plural e, na troca pelo masculino, permanece <strong>a</strong> ou contrai em <strong>ao</strong>.
+                  </>
+                ),
+                examples: [
+                  {
+                    label: "Frase Original",
+                    sentence: (
+                      <>
+                        “Entregou o laudo <strong>a</strong> você.”
+                      </>
+                    ),
+                    explanation: "Quem entrega, entrega algo A alguém (regência exige preposição 'a').",
+                  },
+                  {
+                    label: "Prova dos 9 (Troca pelo Masculino)",
+                    verdict: "right",
+                    sentence: (
+                      <>
+                        “Entregou o laudo <strong>a</strong> ele / <strong>ao</strong> chefe.”
+                      </>
+                    ),
+                    explanation: "A preposição permaneceu 'a' (ou virou 'a + o = ao')! Jamais vira só 'o'.",
+                  },
+                ],
+              },
+              {
+                term: "3. 'A' como Pronome Oblíquo (Substituto)",
+                badge: "Troca por 'O' (= ela/ele)",
+                accent: "amber",
+                summary: (
+                  <>
+                    Substitui um substantivo feminino já mencionado anteriormente (exercendo função de Objeto Direto), colado ao verbo.
+                  </>
+                ),
+                examples: [
+                  {
+                    label: "Frase Original",
+                    sentence: (
+                      <>
+                        “Recebi a intimação e <strong>a</strong> arquivei.”
+                      </>
+                    ),
+                    explanation: "'a' substitui 'a intimação' (arquivei ela).",
+                  },
+                  {
+                    label: "Prova dos 9 (Troca pelo Masculino)",
+                    verdict: "right",
+                    sentence: (
+                      <>
+                        “Recebi o ofício e <strong>o</strong> arquivei.”
+                      </>
+                    ),
+                    explanation: "Na troca por 'o ofício', vira 'o' retomando o substantivo masculino junto ao verbo.",
+                  },
+                ],
+              },
+            ]}
+          />
 
           <KeyTable
             title="Diagrama Comparativo da Palavra 'A' (Teste da Troca pelo Masculino)"
@@ -730,8 +1334,119 @@ export const portuguesSemana03: RichLessonModule = {
             </p>
           </ProseSection>
 
+          <DefinitionBlocks
+            title="As 5 Conjunções Coordenativas — Uma por Vez"
+            items={[
+              {
+                term: "1. Aditiva",
+                badge: "Soma · Acréscimo",
+                accent: "indigo",
+                summary: (
+                  <>
+                    Liga orações independentes somando ideias ou fatos (<em>e, nem, não só... mas também, bem como</em>).
+                  </>
+                ),
+                examples: [
+                  {
+                    label: "Exemplo Prático",
+                    sentence: (
+                      <>
+                        “O servidor conferiu os dados <strong>e</strong> assinou a ata.”
+                      </>
+                    ),
+                    explanation: "O conectivo 'e' apenas adiciona uma segunda ação à primeira, sem oposição.",
+                  },
+                ],
+              },
+              {
+                term: "2. Adversativa",
+                badge: "Oposição · Quebra de expectativa",
+                accent: "amber",
+                summary: (
+                  <>
+                    Introduz contraste, ressalva ou quebra do que se esperava antes (<em>mas, porém, contudo, todavia, entretanto, no entanto</em>).
+                  </>
+                ),
+                examples: [
+                  {
+                    label: "Exemplo Prático",
+                    sentence: (
+                      <>
+                        “O prazo era curto, <strong>porém</strong> a equipe concluiu a triagem.”
+                      </>
+                    ),
+                    explanation: "'porém' marca a virada lógica: apesar do prazo apertado, o serviço foi concluído.",
+                  },
+                ],
+              },
+              {
+                term: "3. Alternativa",
+                badge: "Escolha · Exclusão",
+                accent: "sky",
+                summary: (
+                  <>
+                    Apresenta caminhos alternativos ou opções que se alternam ou excluem (<em>ou... ou, ora... ora, quer... quer, seja... seja</em>).
+                  </>
+                ),
+                examples: [
+                  {
+                    label: "Exemplo Prático",
+                    sentence: (
+                      <>
+                        “<strong>Ou</strong> protocola hoje, <strong>ou</strong> perderá o prazo.”
+                      </>
+                    ),
+                    explanation: "Estabelece uma escolha excludente entre cumprir o prazo hoje ou ficar de fora.",
+                  },
+                ],
+              },
+              {
+                term: "4. Conclusiva",
+                badge: "Dedução lógica · Desfecho",
+                accent: "emerald",
+                summary: (
+                  <>
+                    Fecha o raciocínio com uma consequência lógica do que foi dito antes (<em>logo, portanto, por conseguinte, pois [posposto ao verbo]</em>).
+                  </>
+                ),
+                examples: [
+                  {
+                    label: "Exemplo Prático",
+                    sentence: (
+                      <>
+                        “Cumpriu tudo; tomará, <strong>pois</strong>, posse.”
+                      </>
+                    ),
+                    explanation: "Deslocado depois do verbo e entre vírgulas, 'pois' equivale a 'portanto' (conclusão).",
+                  },
+                ],
+              },
+              {
+                term: "5. Explicativa",
+                badge: "Justificativa · Motivo",
+                accent: "purple",
+                summary: (
+                  <>
+                    Apresenta a razão imediata ou justificativa de uma ordem, pedido ou declaração anterior (<em>porque, que, pois [anteposto ao verbo], porquanto</em>).
+                  </>
+                ),
+                examples: [
+                  {
+                    label: "Exemplo Prático",
+                    sentence: (
+                      <>
+                        “Feche a janela, <strong>porque</strong> a chuva começou.”
+                      </>
+                    ),
+                    explanation: "Explica o motivo imediato do pedido feito antes ('Feche a janela').",
+                  },
+                ],
+              },
+            ]}
+          />
+
           <KeyTable
-            title="Conjunções Coordenativas (Ligam Orações Independentes)"
+            title="Quadro-Resumo: Conjunções Coordenativas (Ligam Orações Independentes)"
             headers={["Tipo", "Ideia Central", "Conjunções Mais Frequentes", "Exemplo Prático"]}
             rows={[
               [<strong>Aditiva</strong>, "Soma, acréscimo", "e, nem, não só... mas também, bem como", "O servidor conferiu os dados e assinou a ata."],
@@ -745,9 +1460,9 @@ export const portuguesSemana03: RichLessonModule = {
           <ProseSection number="2" title="Conjunções Subordinativas Adverbiais: As 9 Circunstâncias Lógicas">
             <p>
               Ligam uma oração principal a uma oração dependente que funciona como advérbio dela (indicando causa,
-              concessão, condição, consequência, conformidade, comparação, proporção, finalidade ou tempo):
+              concessão, condição, consequência, conformidade, comparação, proporção, finalidade ou tempo). Veja cada uma com seu exemplo direto em ordem sequencial:
             </p>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1">
+            <div className="space-y-3 pt-1">
               {[
                 ["1. Causal", "já que, visto que, como (início), porque", "“Como choveu muito, o trânsito parou.”"],
                 ["2. Concessiva ⭐", "embora, ainda que, conquanto, posto que", "“Embora chovesse, fomos trabalhar.”"],
@@ -759,10 +1474,14 @@ export const portuguesSemana03: RichLessonModule = {
                 ["8. Final", "para que, a fim de que", "“Explicou a fim de que todos entendessem.”"],
                 ["9. Temporal", "quando, assim que, logo que", "“Assim que chegou, iniciou o atendimento.”"],
               ].map(([name, list, ex]) => (
-                <div key={name} className="p-3.5 rounded-xl surface border border-tech space-y-1">
-                  <div className="text-xs font-mono font-bold text-indigo-600 dark:text-indigo-400">{name}</div>
-                  <div className="text-xs text-sec italic">{list}</div>
-                  <div className="text-[11px] font-mono text-pri pt-0.5">{ex}</div>
+                <div key={name} className="p-4 rounded-xl surface border border-tech space-y-1.5">
+                  <div className="flex flex-wrap items-baseline justify-between gap-2">
+                    <div className="text-xs sm:text-sm font-mono font-bold text-indigo-600 dark:text-indigo-400">{name}</div>
+                    <div className="text-xs text-sec italic">{list}</div>
+                  </div>
+                  <div className="text-sm font-mono text-pri bg-slate-50 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 rounded-lg px-3 py-2">
+                    {ex}
+                  </div>
                 </div>
               ))}
             </div>
@@ -885,37 +1604,179 @@ export const portuguesSemana03: RichLessonModule = {
         <div className="space-y-7">
           <ProseSection number="1" title="Denotação vs. Conotação e Homônimos (O Som e a Grafia)">
             <p>
-              Antes dos pares de palavras parecidas, lembre a diferença entre <strong>Denotação</strong> (sentido real,
-              literal, de dicionário) e <strong>Conotação</strong> (sentido figurado, metafórico, dependente do
-              contexto).
+              Antes dos pares de palavras parecidas, domine dois planos de sentido — <strong>Denotação</strong> vs.{" "}
+              <strong>Conotação</strong> — e os três tipos de palavras <strong>homônimas</strong> (que coincidem no som ou na escrita, mas têm significados totalmente distintos), entrando em cada caso com seus exemplos:
             </p>
-            <p>
-              Já as palavras <strong>homônimas</strong> mantêm alguma coincidência formal (som ou escrita), mas possuem
-              significados completamente distintos:
-            </p>
-            <ul className="list-disc pl-5 space-y-2">
-              <li>
-                <strong>1. Homógrafos (mesma grafia, sons diferentes):</strong> <em>o colher</em> (verbo) vs.{" "}
-                <em>a colher</em> (talher); <em>o almoço</em> (nome) vs. <em>eu almoço</em> (verbo).
-              </li>
-              <li>
-                <strong>2. Homófonos (mesmo som, grafias diferentes — clássico teste de ortografia):</strong>
-                <ul className="list-disc pl-5 mt-1 space-y-1 text-sm">
-                  <li><strong>Sessão:</strong> intervalo de tempo de uma reunião ou filme (<em>Sessão da Câmara Municipal</em>).</li>
-                  <li><strong>Seção (ou Secção):</strong> divisão física, departamento, repartição pública (<em>Seção de Protocolo e Arquivo</em>).</li>
-                  <li><strong>Cessão:</strong> ato de ceder, transferir posse de algo (<em>Cessão de direitos, cessão de servidores</em>).</li>
-                  <li><strong>Senso:</strong> juízo, discernimento, bom senso (<em>ter bom senso</em>).</li>
-                  <li><strong>Censo:</strong> recenseamento, contagem estatística populacional (<em>Censo do IBGE</em>).</li>
-                  <li><strong>Conserto:</strong> reparo de algo estragado (<em>conserto do computador</em>).</li>
-                  <li><strong>Concerto:</strong> apresentação musical artística (<em>concerto de piano</em>).</li>
-                </ul>
-              </li>
-              <li>
-                <strong>3. Homônimos Perfeitos (mesmo som E mesma escrita):</strong> <em>manga</em> (fruta) vs.{" "}
-                <em>manga</em> (de camisa); <em>cedo</em> (horário) vs. <em>cedo</em> (do verbo ceder).
-              </li>
-            </ul>
           </ProseSection>
+
+          <DefinitionBlocks
+            title="Sentido Literal vs. Figurado — Um por Vez"
+            items={[
+              {
+                term: "1. Denotação (Sentido Real / Dicionário)",
+                badge: "D de Dicionário",
+                accent: "indigo",
+                summary: "A palavra é empregada com seu sentido literal, objetivo, exatamente como aparece registrada no dicionário.",
+                examples: [
+                  {
+                    label: "Exemplo Literal",
+                    sentence: (
+                      <>
+                        “A prefeitura pavimentou a <strong>pedra</strong> da rua principal.”
+                      </>
+                    ),
+                    explanation: "'Pedra' refere-se ao material físico real, sem metáfora.",
+                  },
+                ],
+              },
+              {
+                term: "2. Conotação (Sentido Figurado / Contexto)",
+                badge: "C de Criatividade",
+                accent: "amber",
+                summary: "A palavra ganha sentido simbólico, metafórico ou expressivo dependente do contexto.",
+                examples: [
+                  {
+                    label: "Exemplo Figurado",
+                    sentence: (
+                      <>
+                        “Aquele parecer foi uma <strong>pedra</strong> no caminho da licitação.”
+                      </>
+                    ),
+                    explanation: "'Pedra' significa obstáculo burocrático ou problema imprevisto — sentido figurado.",
+                  },
+                ],
+              },
+            ]}
+          />
+
+          <DefinitionBlocks
+            title="Os 3 Tipos de Homônimos — Um por Vez com Exemplos"
+            items={[
+              {
+                term: "1. Homógrafos (Mesma Grafia, Sons Diferentes)",
+                badge: "Escrita igual · Som diferente",
+                accent: "sky",
+                summary: "Escrevem-se com exatamente as mesmas letras, mas a pronúncia (timbre aberto/fechado ou sílaba tônica) e a classe gramatical mudam.",
+                examples: [
+                  {
+                    label: "Par 1 · O colher (verbo) × A colher (talher)",
+                    sentence: (
+                      <>
+                        “Vou <strong>colher</strong> (ô) frutos com <strong>a colher</strong> (é) de aço.”
+                      </>
+                    ),
+                    explanation: "Mesma grafia 'colher', mas timbre fechado no verbo (/ô/) e aberto no substantivo (/é/).",
+                  },
+                  {
+                    label: "Par 2 · O almoço (nome) × Eu almoço (verbo)",
+                    sentence: (
+                      <>
+                        “Durante o <strong>almoço</strong> (ô), eu <strong>almoço</strong> (ó) no refeitório.”
+                      </>
+                    ),
+                    explanation: "'o almoço' tem /ô/ fechado (substantivo); 'eu almoço' tem /ó/ aberto (verbo).",
+                  },
+                ],
+              },
+              {
+                term: "2. Homófonos (Mesmo Som, Grafias Diferentes)",
+                badge: "Clássico teste de ortografia",
+                accent: "rose",
+                summary: "Soam de maneira idêntica ao ouvido, mas têm escrita e significados completamente diferentes. Em provas da ACCESS e VUNESP, memorize cada termo abaixo:",
+                examples: [
+                  {
+                    label: "Sessão (com dois S)",
+                    sentence: (
+                      <>
+                        “A <strong>sessão</strong> da Câmara Municipal durou duas horas.”
+                      </>
+                    ),
+                    explanation: "Intervalo de tempo de uma reunião, audiência ou filme.",
+                  },
+                  {
+                    label: "Seção ou Secção (com Ç)",
+                    sentence: (
+                      <>
+                        “Entregue o protocolo na <strong>Seção</strong> de Arquivo.”
+                      </>
+                    ),
+                    explanation: "Divisão física, departamento ou repartição pública.",
+                  },
+                  {
+                    label: "Cessão (com C inicial)",
+                    sentence: (
+                      <>
+                        “Foi assinada a <strong>cessão</strong> de servidores entre secretarias.”
+                      </>
+                    ),
+                    explanation: "Ato de ceder ou transferir posse/uso de direitos ou bens.",
+                  },
+                  {
+                    label: "Senso (com S)",
+                    sentence: (
+                      <>
+                        “O servidor agiu com bom <strong>senso</strong> durante o atendimento.”
+                      </>
+                    ),
+                    explanation: "Juízo, discernimento, bom senso.",
+                  },
+                  {
+                    label: "Censo (com C)",
+                    sentence: (
+                      <>
+                        “Os dados oficiais do <strong>Censo</strong> do IBGE orientam o orçamento.”
+                      </>
+                    ),
+                    explanation: "Recenseamento, contagem estatística populacional.",
+                  },
+                  {
+                    label: "Conserto (com S)",
+                    sentence: (
+                      <>
+                        “O setor solicitou o <strong>conserto</strong> do computador da recepção.”
+                      </>
+                    ),
+                    explanation: "Reparo de algo estragado.",
+                  },
+                  {
+                    label: "Concerto (com C)",
+                    sentence: (
+                      <>
+                        “A orquestra apresentou um <strong>concerto</strong> de piano no teatro municipal.”
+                      </>
+                    ),
+                    explanation: "Apresentação musical artística.",
+                  },
+                ],
+              },
+              {
+                term: "3. Homônimos Perfeitos (Mesmo Som E Mesma Escrita)",
+                badge: "Escrita e som idênticos",
+                accent: "emerald",
+                summary: "Têm grafia e pronúncia totalmente iguais, distinguindo-se apenas pelo contexto da frase.",
+                examples: [
+                  {
+                    label: "Exemplo 1 · Manga (fruta vs. peça de camisa)",
+                    sentence: (
+                      <>
+                        “Sujei a <strong>manga</strong> da camisa com caldo de <strong>manga</strong>.”
+                      </>
+                    ),
+                    explanation: "Idênticas no som e na escrita; só o contexto distingue peça de roupa de fruta.",
+                  },
+                  {
+                    label: "Exemplo 2 · Cedo (horário vs. verbo ceder)",
+                    sentence: (
+                      <>
+                        “Cheguei <strong>cedo</strong> e não <strong>cedo</strong> minha vez na fila.”
+                      </>
+                    ),
+                    explanation: "O primeiro é advérbio de tempo; o segundo é o verbo 'ceder' conjugado.",
+                  },
+                ],
+              },
+            ]}
+          />
 
           <ProseSection number="2" title="Parônimos: As Palavras Gêmeas Falsas">
             <p>

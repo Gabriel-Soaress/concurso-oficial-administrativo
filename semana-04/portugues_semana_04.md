@@ -103,22 +103,21 @@ Na **Sintaxe**, a pergunta muda de natureza. Agora nós não queremos mais saber
 
 Entender essa separação logo de saída evita um dos erros mais comuns de quem estuda para concursos: misturar o **nome da classe** (que nunca muda para aquela palavra naquele sentido) com o **nome do cargo** (que muda toda vez que você coloca a mesma palavra em outra posição da frase).
 
-- **D — Definição do Zero:**
-  - **Morfologia:** estuda a **identidade fixa** da palavra isolada no dicionário (`Substantivo, Adjetivo, Verbo, Advérbio, Preposição`).
-  - **Sintaxe:** estuda o **cargo relacional** que a palavra ocupa trabalhando dentro da oração (`Sujeito, Predicado, Complemento...`).
+- **D — Definição e Exemplos (Um Ponto por Vez):**
+  1. **Morfologia (Identidade Fixa no Dicionário):** estuda a classe gramatical isolada da palavra (`Substantivo, Adjetivo, Verbo, Advérbio, Preposição`).
+     - *Exemplo 1 (Substantivo):* `"O **cidadão** solicitou a guia."` → `cidadão` pertence à classe dos Substantivos.
+     - *Exemplo 2 (Adjetivo variável):* `"O servidor **alto** entrou na sala."` → Concorda com *servidor* (*a servidora alta*) → **Adjetivo**.
+     - *Exemplo 3 (Advérbio invariável):* `"O servidor falou **alto** na audiência."` → Fica invariável (*elas falaram alto*) modificando *falou* → **Advérbio**!
+  2. **Sintaxe (Cargo de Trabalho na Frase):** estuda o papel relacional que a palavra exerce trabalhando dentro da oração (`Sujeito, Predicado, Complemento...`).
+     - *Exemplo 1 (`cidadão` como Sujeito):* `"O **cidadão** solicitou a guia."` → Quem pratica e comanda o verbo *solicitou* → cargo de **Sujeito**.
+     - *Exemplo 2 (`cidadão` como Complemento do Verbo):* `"O atendente orientou o **cidadão**."` → A classe continua Substantivo, mas agora recebe a ação de *orientou* → cargo de **Complemento do Verbo** (Eixo 2).
+     - *Exemplo 3 (A palavra `protocolo` em 3 cargos diferentes):*
+       - (a) `"O **protocolo** funciona das 8h às 17h."` → **Sujeito** (é dele que se declara algo).
+       - (b) `"O estagiário fechou o **protocolo** às 17h."` → **Complemento do Verbo** (completa o sentido de *fechou*).
+       - (c) `"A sala **do protocolo** passou por reforma."` → **Especificador do nome *sala*** (Eixo 5).
 
-- **A — Analogia Concreta + 3 Exemplos Progressivos:**
+- **A — Analogia Concreta:**
   - **Analogia do Engenheiro Carlos em Birigui:** No RG profissional, Carlos é *engenheiro civil* — essa é a **Morfologia** dele (identidade fixa). Porém, na segunda-feira ele atua como *palestrante*; na terça atua como *síndico do prédio*. O cargo que ele assume em cada situação é a **Sintaxe**!
-  - **Exemplo 1 (Cotidiano — O mesmo substantivo *cidadão* trocando de cargo):**
-    - Frase A: `"O **cidadão** solicitou a guia."` → Aqui *cidadão* é quem age e comanda o verbo *solicitou* → cargo de **Sujeito**.
-    - Frase B: `"O atendente orientou o **cidadão**."` → A classe morfológica continuou sendo Substantivo, mas agora *cidadão* recebe a ação de *orientou* → cargo de **Complemento do Verbo** (estudaremos o nome oficial dele no Eixo 2).
-  - **Exemplo 2 (Rotina de Prefeitura — A palavra *protocolo* em 3 papéis):**
-    - (a) `"O **protocolo** funciona das 8h às 17h."` → **Sujeito** (é dele que se declara algo).
-    - (b) `"O estagiário fechou o **protocolo** às 17h."` → **Complemento do Verbo** (completa o sentido de *fechou*).
-    - (c) `"A sala **do protocolo** passou por reforma."` → **Especificador do nome *sala*** (aprofundaremos no Eixo 5).
-  - **Exemplo 3 (Caso Limite — A palavra *alto* mudando de classe e de função):**
-    - Frase A: `"O servidor **alto** entrou na sala."` → Concorda com *servidor* (*a servidora alta*) → **Adjetivo** qualificando um nome.
-    - Frase B: `"O servidor falou **alto** na audiência."` → Fica invariável (*elas falaram alto*) e modifica o verbo *falou* → **Advérbio** indicando o modo como falou!
 
 - **M — Mapa de Gêmeos Confundíveis:**
   - **Pergunta de Morfologia:** pede *"classe gramatical"*, *"classe morfológica"* → resposta será *Substantivo, Adjetivo, Advérbio, Preposição...*
@@ -138,28 +137,21 @@ Pense comigo: se você cola uma placa na porta da repartição dizendo *"Silênc
 
 Quando a mensagem tem verbo e termina com ponto final (`.` / `!` / `?` / `...`), fechamos um **Período**. E para contar quantas orações cabem dentro desse período, basta contar quantos verbos ou blocos verbais (**locuções verbais**) estão agindo ali dentro!
 
-- **D — Definição do Zero:**
-  - **Frase:** todo enunciado com **sentido completo** na comunicação. Se não tem verbo, é **Frase Nominal** (*"Documentação incompleta no balcão."*). Se tem verbo, é **Frase Verbal**.
-  - **Oração:** todo enunciado organizado obrigatoriamente **em torno de um verbo conjugado ou de uma locução verbal** — ou seja, tem um núcleo verbal comandando as palavras da cena. Exemplos completos de orações:
-    1. `"A Prefeitura **abriu** as inscrições."`
-    2. `"O fiscal **vai protocolar** o documento hoje."`
-    3. `"**Choveu** forte em Birigui."`
-  - **Período:** é a frase verbal encerrada por pontuação forte (`.`, `!`, `?`, `...`):
-    - **Período Simples:** possui **1 única oração** (1 verbo simples ou 1 locução verbal) → também chamado de *oração absoluta*.
-    - **Período Composto:** possui **2 ou mais orações** (2 ou mais verbos/locuções verbais).
+- **D — Definição e Exemplos (Um Ponto por Vez):**
+  1. **Frase (Nominal vs. Verbal):** todo enunciado com **sentido completo** na comunicação. Sem verbo = **Frase Nominal** (`0 orações`). Com verbo = **Frase Verbal**.
+     - *Exemplo 1 (Cotidiano — Frase Nominal):* `"Atenção ao horário de atendimento!"` → Sentido completo sem nenhum verbo → **Frase Nominal (`0 orações`; não forma período)**.
+     - *Exemplo 2 (Caso Limite — Particípios soltos sem verbo auxiliar):* `"Material conferido e protocolado na recepção."` → *Conferido* e *protocolado* não têm auxiliar (`foi/está`) antes → **Frase Nominal (`0 orações`)**!
+     - *Exemplo 3 (Frase Verbal):* `"O guichê principal **abriu** pontualmente às oito horas."` → Tem verbo comandando a mensagem.
+  2. **Oração (e a Regra da Locução Verbal = 1 Oração):** todo enunciado organizado obrigatoriamente **em torno de um verbo conjugado ou de uma locução verbal** (`verbo auxiliar conjugado + verbo principal no infinitivo, gerúndio ou particípio` = **1 única ação = 1 SÓ ORAÇÃO**).
+     - *Exemplo 1 (Verbo simples):* `"A Prefeitura **abriu** as inscrições."` → **1 Oração**.
+     - *Exemplo 2 (Rotina de Prefeitura — Locução Verbal vale 1 só Oração):* `"O Oficial Administrativo **deve conferir** todos os comprovantes."` → Embora existam duas palavras verbais juntas (`deve` + `conferir`), representam uma única ação → **1 Locução Verbal = 1 Oração**.
+     - *Exemplo 3 (Fenômeno natural):* `"**Choveu** forte em Birigui."` → Mesmo sem sujeito, há verbo conjugado → **1 Oração**.
+  3. **Período Simples vs. Período Composto:** é a frase verbal encerrada por pontuação forte (`.`, `!`, `?`, `...`):
+     - **Período Simples:** possui **1 única oração** (1 verbo simples ou 1 locução verbal) → *Exemplo:* `"O guichê principal **abriu** pontualmente às oito horas."` (`1 verbo = Período Simples`).
+     - **Período Composto:** possui **2 ou mais orações** (2 ou mais verbos/locuções verbais) → *Exemplo A:* `"A equipe **recebeu** a solicitação e **emitiu** a certidão negativa."` (`2 verbos = Período Composto`). *Exemplo B (Caso Limite):* `"O edital **será publicado** amanhã, porque a comissão **aprovou** a minuta."` (`1 locução + 1 verbo simples = 2 Orações = Período Composto`).
 
-- **A — Analogia Concreta + 3 Exemplos Progressivos:**
+- **A — Analogia Concreta:**
   - **Analogia do Veículo e do Motor:** A **Frase** é qualquer meio de transporte funcionando; o **Verbo** é o motor. Um carrinho de mão carrega tijolo sem motor (**Frase Nominal = 0 orações**); um carro com 1 motor é **Período Simples**; um bitrem com 2 motores acoplados é **Período Composto**!
-  - **Regra de Ouro da Contagem:** **Locução Verbal** (`verbo auxiliar conjugado + verbo principal no infinitivo, gerúndio ou particípio`, como `vai analisar` ou `foi assinado`) expressa **1 única ação** → vale sempre por **1 SÓ ORAÇÃO**!
-  - **Exemplo 1 (Cotidiano — Frase Nominal vs. Frase Verbal / Oração):**
-    - `"Atenção ao horário de atendimento!"` → Sentido completo sem nenhum verbo → **Frase Nominal** (`0 orações`; não forma período).
-    - `"O guichê principal **abriu** pontualmente às oito horas."` → Tem 1 verbo (*abriu*) → **1 Oração = Período Simples**.
-  - **Exemplo 2 (Rotina de Prefeitura — Locução Verbal vale 1 só Oração):**
-    - `"O Oficial Administrativo **deve conferir** todos os comprovantes."` → Embora existam duas palavras verbais juntas (`deve` + `conferir`), elas representam uma única obrigação/ação → **1 Locução Verbal = 1 Oração (Período Simples)**!
-    - `"A equipe **recebeu** a solicitação e **emitiu** a certidão negativa."` → Dois verbos em eventos separados (`recebeu` e `emitiu`) → **2 Orações = Período Composto**.
-  - **Exemplo 3 (Caso Limite — Particípios soltos sem auxiliar vs. Locução Real):**
-    - (a) `"Material conferido e protocolado na recepção."` → *Conferido* e *protocolado* não trazem verbo auxiliar antes (`foi/está`); descrevem o estado do material → **0 orações = Frase Nominal**!
-    - (b) `"O edital **será publicado** amanhã, porque a comissão **aprovou** a minuta."` → 1 locução (*será publicado* = conta 1) + 1 verbo simples (*aprovou* = conta 1) → **2 Orações = Período Composto**.
 
 - **M — Mapa de Gêmeos Confundíveis:**
 
@@ -198,27 +190,18 @@ Agora que você já sabe identificar uma **Oração**, precisamos entender como 
 
 Na gramática, essa primeira metade chama-se **Sujeito**, e a segunda metade — junto com tudo o que cerca o verbo — chama-se **Predicado**. É essa divisão ao meio que organiza toda a concordância da língua portuguesa: porque o verbo precisa combinar em número (`singular/plural`) exatamente com quem é o Sujeito!
 
-- **D — Definição do Zero:**
-  - **Sujeito (e Núcleo do Sujeito):** é o **ser** (pessoa, órgão, documento, objeto ou ideia) sobre o qual a oração declara algo e que, na imensa maioria das frases, **comanda o verbo no singular ou no plural**.
-    - *Núcleo do Sujeito:* é a palavra principal dentro desse bloco, tirando artigos e palavras acompanhantes (ex.: em *"Os novos servidores da repartição chegaram"*, o Sujeito completo é *"Os novos servidores da repartição"*, e o Núcleo é só **`servidores`**).
-  - **Predicado:** é **TUDO o que se declara sobre o sujeito** — e é **obrigatoriamente dentro do predicado que o verbo mora**! Se você já identificou o Sujeito, **100% do que sobra na oração** (incluindo o verbo e expressões de tempo ou lugar mesmo que tenham vindo no começo!) pertence ao Predicado.
-  - *Aviso importante para os próximos Eixos:* Nem toda frase mostra o sujeito escrito na nossa frente: às vezes está escondido na terminação do verbo (`protocolamos` = *nós*), às vezes não se sabe quem agiu, e há verbos especiais (`choveu`, `haver` = existir) onde não existe sujeito e a frase inteira é Predicado — tudo isso será detalhado no **Eixo 3**!
+- **D — Definição e Exemplos (Um Bloco por Vez):**
+  1. **Sujeito (e Núcleo do Sujeito):** é o **ser** (pessoa, órgão, documento, objeto ou ideia) sobre o qual a oração declara algo e que, na imensa maioria das frases, **comanda o verbo no singular ou no plural**.
+     - *Núcleo do Sujeito:* é a palavra principal dentro desse bloco, tirando artigos e palavras acompanhantes (ex.: em *"Os novos servidores da repartição chegaram"*, o Sujeito completo é *"Os novos servidores da repartição"*, e o Núcleo é só **`servidores`**).
+     - *Exemplo 1 (Cotidiano — Ordem direta):* `"O ônibus municipal saiu no horário."` → **`Sujeito:`** `O ônibus municipal` (Núcleo: `ônibus` — se fossem dois, o verbo viraria *saíram*).
+     - *Exemplo 2 (Rotina de Prefeitura — Sujeito longo com 1 único núcleo):* `"A nova Secretaria de Finanças aprovou o balanço anual ontem."` → **`Sujeito:`** `A nova Secretaria de Finanças` (Núcleo sem preposição no singular: `Secretaria` → por isso *aprovou* fica no singular!).
+  2. **Predicado:** é **TUDO o que se declara sobre o sujeito** — e é **obrigatoriamente dentro do predicado que o verbo mora**! Se você já identificou o Sujeito, **100% do que sobra na oração** (incluindo o verbo e expressões de tempo ou lugar mesmo que tenham vindo no começo!) pertence ao Predicado.
+     - *Aviso importante para os próximos Eixos:* Nem toda frase mostra o sujeito escrito na nossa frente: às vezes está escondido na terminação do verbo (`protocolamos` = *nós*), às vezes não se sabe quem agiu, e há verbos especiais (`choveu`, `haver` = existir) onde não existe sujeito e a frase inteira é Predicado — tudo isso será detalhado no **Eixo 3**!
+     - *Exemplo 1 (Cotidiano):* Em `"O ônibus municipal saiu no horário."` → **`Predicado:`** `saiu no horário` (começando no verbo *saiu*).
+     - *Exemplo 2 (Caso Limite — Sujeito fora de lugar no fim e Predicado partido):* `"Na sexta-feira, compareceram ao auditório três novos candidatos."` → *"Na sexta-feira"* é tempo e *"ao auditório"* vem com preposição indicando lugar — nenhum dos dois comanda o plural de *compareceram*! **`Sujeito:`** `três novos candidatos`; **`Predicado:`** `Na sexta-feira, compareceram ao auditório`.
 
-- **A — Analogia Concreta + 3 Exemplos Progressivos:**
+- **A — Analogia Concreta:**
   - **Analogia da Manchete de Jornal:** O **Sujeito** é o protagonista da capa da matéria (sobre quem a notícia fala); o **Predicado** é o fato noticiado completo sobre ele (o verbo + o complemento + quando e onde aconteceu).
-  - **Exemplo 1 (Cotidiano — Divisão limpa em dois blocos):**
-    - `"O ônibus municipal saiu no horário."`
-    - **`Sujeito:`** `O ônibus municipal` (Núcleo: `ônibus` — se fossem dois, o verbo viraria *saíram*).
-    - **`Predicado:`** `saiu no horário` (o verbo *saiu* + o momento em que saiu).
-  - **Exemplo 2 (Rotina de Prefeitura — Sujeito longo com 1 único núcleo):**
-    - `"A nova Secretaria de Finanças aprovou o balanço anual ontem."`
-    - **`Sujeito:`** `A nova Secretaria de Finanças` (Núcleo no singular: `Secretaria` → por isso o verbo *aprovou* fica no singular!).
-    - **`Predicado:`** `aprovou o balanço anual ontem`.
-  - **Exemplo 3 (Caso Limite — Sujeito fora de lugar lá no fim da frase):**
-    - `"Na sexta-feira, compareceram ao auditório três novos candidatos."`
-    - Atenção! *"Na sexta-feira"* é tempo e *"ao auditório"* vem com preposição indicando lugar — nenhum dos dois comanda o plural de *compareceram*!
-    - **`Sujeito:`** `três novos candidatos` (mesmo no final, é o núcleo *candidatos* que puxa o plural!).
-    - **`Predicado:`** `Na sexta-feira, compareceram ao auditório` (tudo o que não é Sujeito integra o Predicado!).
 
 - **M — Mapa de Gêmeos Confundíveis:**
   - **Erro Clássico 1:** *"O sujeito é sempre a primeira palavra da frase."* → **FALSO!** Tempo ou lugar no começo integram o Predicado; o sujeito pode estar no meio ou no fim!
@@ -236,10 +219,13 @@ Por que tantas questões fáceis de concordância e sujeito parecem difíceis na
 
 Quando o nosso olho lê da esquerda para a direita sem reorganizar a frase, caímos direto na armadilha de achar que o primeiro termo é o Sujeito! Desmontar a frase e colocá-la mentalmente na **Ordem Direta** leva 3 segundos e resolve esse problema pela raiz.
 
-- **D — Definição do Zero:**
-  - **Ordem Direta:** sequência padrão e mais natural da frase em português:
-    `Sujeito → Verbo → Complemento do Verbo → Lugar / Tempo`.
-  - **Ordem Inversa:** qualquer frase em que o escritor desloca um desses blocos — por exemplo, traz o lugar ou tempo para antes do verbo ou empurra o Sujeito para depois do verbo.
+- **D — Definição e Exemplos (Um Ponto por Vez):**
+  1. **Ordem Direta (Canônica):** sequência padrão e mais natural da frase em português: `Sujeito → Verbo → Complemento do Verbo → Lugar / Tempo`.
+     - *Exemplo (Rotina de Prefeitura):* `"A Prefeitura (Sujeito) publicou (Verbo) o novo edital (Complemento) em Birigui (Lugar)."`
+  2. **Ordem Inversa (Camuflador de Prova):** qualquer frase em que o escritor desloca um desses blocos — por exemplo, traz o lugar ou tempo para antes do verbo ou empurra o Sujeito para depois do verbo.
+     - *Exemplo 1 (Cotidiano — Sujeito no fim após tempo antecipado):* *Invertida:* `"Ontem à noite, entregou a encomenda o motorista."` → *Ordem Direta:* `"O motorista (Sujeito) entregou (Verbo) a encomenda (Complemento) ontem à noite (Tempo)."`
+     - *Exemplo 2 (Rotina de Prefeitura — Tempo longo antes da vírgula):* *Invertida:* `"Após ampla revisão da minuta, assinaram o termo de posse os novos oficiais."` → *Ordem Direta:* `"Os novos oficiais (Sujeito) assinaram (Verbo) o termo de posse (Complemento) após ampla revisão da minuta (Tempo)."`
+     - *Exemplo 3 (Caso Real ACCESS — Pref. Contagem/MG 2026 Q02):* `"Próximo à Grande Pirâmide de Quéops, o Egito inaugura o Grande Museu Egípcio."` → *Ordem Direta:* `"O Egito (Sujeito) inaugura (Verbo) o Grande Museu Egípcio (Complemento) próximo à Grande Pirâmide de Quéops (Lugar dentro do Predicado)."` Note que `"Próximo à Grande Pirâmide de Quéops"` foi antecipado com vírgula, mas pertence inteiramente ao **Predicado**!
 
 <div class="edu-comp-card">
   <div class="edu-comp-header">
@@ -306,17 +292,8 @@ Quando o nosso olho lê da esquerda para a direita sem reorganizar a frase, caí
 3. **Passo 3 — Separe Sujeito de Predicado:** quem comanda o singular/plural do verbo é o **Sujeito**; tudo o que sobrou na oração forma o **Predicado**.
 4. **Passo 4 — Analise o que o verbo pede lá dentro:** veja se o verbo fecha sozinho ou pede complementos — tema que abriremos passo a passo no **Eixo 2**!
 
-- **A — Analogia Concreta + 3 Exemplos Progressivos:**
+- **A — Analogia Concreta:**
   - **Analogia da Bagagem Desarrumada:** Uma oração na ordem inversa é como uma mala onde alguém jogou os sapatos por cima da camisa; antes de achar o crachá, você esvazia a mala e põe cada peça na prateleira certa.
-  - **Exemplo 1 (Cotidiano — Desfazendo inversão simples):**
-    - *Invertida:* `"Ontem à noite, entregou a encomenda o motorista."`
-    - *Ordem Direta:* `"O motorista (Sujeito) entregou (Verbo) a encomenda (Complemento) ontem à noite (Tempo)."`
-  - **Exemplo 2 (Rotina de Prefeitura — Tempo longo antes da vírgula):**
-    - *Invertida:* `"Após ampla revisão da minuta, assinaram o termo de posse os novos oficiais."`
-    - *Ordem Direta:* `"Os novos oficiais (Sujeito) assinaram (Verbo) o termo de posse (Complemento) após ampla revisão da minuta (Tempo)."`
-  - **Exemplo 3 (Caso Real — Pref. Contagem/MG 2026 Q02):**
-    - *Frase da prova:* `"Próximo à Grande Pirâmide de Quéops, o Egito inaugura o Grande Museu Egípcio."`
-    - *Ordem Direta:* `"O Egito (Sujeito) inaugura (Verbo) o Grande Museu Egípcio (Complemento) próximo à Grande Pirâmide de Quéops (Lugar dentro do Predicado)."` → Note que `"Próximo à Grande Pirâmide de Quéops"` foi antecipado com vírgula, mas pertence inteiramente ao **Predicado**!
 
 - **M — Mapa de Gêmeos Confundíveis:**
   - `"Em Birigui, chegaram os documentos."` → Ordem Direta: `"Os documentos (Sujeito) chegaram em Birigui (Predicado)."` (Jamais chame *Em Birigui* de sujeito!).
@@ -413,24 +390,21 @@ Na língua portuguesa, alguns verbos funcionam como uma viagem já concluída: v
 
 E existe ainda um grupo especial de verbos que **nem ação física representam**: eles estão ali apenas para ligar o Sujeito a uma qualidade ou estado (*"O servidor **está** atento."*). Vamos entender essa divisão antes de estudar cada um dos 5 tipos com calma, um por subseção!
 
-- **D — Definição do Zero:**
+- **D — Definição e Exemplos (Um Ponto por Vez):**
   - **Transitividade Verbal:** é a propriedade que mostra se a ação do verbo se fecha nela mesma ou se precisa **atravessar** até um complemento (**Objeto**).
-  - **Verbos Significativos (Indicam Ação ou Acontecimento → `VI`, `VTD`, `VTI`, `VTDI`):** expressam algo acontecendo no mundo (`chegar, protocolar, precisar, entregar`).
-  - **Verbo de Ligação (`VL`):** não indica ação alguma — serve só como ponte ligando o Sujeito a uma qualidade ou estado (`ser, estar, parecer, permanecer, ficar`).
-  - **Regra de Ouro Contextual:** Nenhum verbo nasce com etiqueta eterna no dicionário! Um mesmo verbo (`andar, pagar, virar, ficar`) muda de comportamento conforme o sentido real naquela frase.
+  - **1. Verbos Significativos (Indicam Ação ou Acontecimento → `VI`, `VTD`, `VTI`, `VTDI`):** expressam algo acontecendo no mundo (`chegar, protocolar, precisar, entregar`). O mesmo verbo *pagar* mostra na prática como o complemento muda o papel do verbo na prefeitura:
+    - **Exemplo (`VTD` — pede só a coisa, sem preposição):** `"A tesouraria **pagou** a fatura."` → Objeto Direto (*a fatura*).
+    - **Exemplo (`VTI` — pede só a pessoa, com preposição *a*):** `"A tesouraria **pagou** ao fornecedor."` → Objeto Indireto (*ao fornecedor*).
+    - **Exemplo (`VTDI` — pede a coisa + a pessoa ao mesmo tempo):** `"A tesouraria **pagou** a fatura **ao** fornecedor."` → dois complementos simultâneos.
+  - **2. Verbo de Ligação (`VL`):** não indica ação alguma — serve só como ponte ligando o Sujeito a uma qualidade ou estado (`ser, estar, parecer, permanecer, ficar`). Comparando com um verbo significativo de ação física:
+    - **Exemplo (Ação Física = `VTD`):** `"O estagiário **virou** a folha do livro de atas."` → Movimento físico sobre um objeto concreto.
+    - **Exemplo (Mudança de Estado = `VL`):** `"O novo portal eletrônico **virou** modelo regional."` → Equivale a *tornou-se* (liga o sujeito a um novo estado).
+  - **3. Regra de Ouro Contextual:** Nenhum verbo nasce com etiqueta eterna no dicionário! Um mesmo verbo (`andar, pagar, virar, ficar`) muda de comportamento conforme o sentido real naquela frase:
+    - **Exemplo (*andar* como Ação Completa = `VI`):** `"O atendente **andou** depressa pelo corredor."` → Caminhou de fato (ação completa sem objeto).
+    - **Exemplo (*andar* como Estado = `VL`):** `"O atendente **anda** preocupado com o prazo."` → Não está caminhando; significa *está preocupado* (ponte de estado).
 
-- **A — Analogia Concreta + 3 Exemplos Progressivos:**
+- **A — Analogia Síntese:**
   - **Analogia da Viagem do Servidor:** O verbo é o motor da frase: às vezes o carro já chegou ao destino sozinho (`VI`); às vezes atravessa em linha reta sem pedágio (`VTD`); às vezes precisa passar por uma ponte com pedágio obrigatório = a **preposição** (`VTI`); às vezes entrega duas encomendas ao mesmo tempo (`VTDI`); e às vezes está desligado na garagem só mostrando a foto de como o sujeito está (`VL`)!
-  - **Exemplo 1 (Cotidiano — O mesmo verbo *andar* em ação vs. estado):**
-    - `"O atendente **andou** depressa pelo corredor."` → Caminhou de fato (ação completa sem objeto = **`VI`**).
-    - `"O atendente **anda** preocupado com o prazo."` → Não está caminhando; significa *está preocupado* (ponte de estado = **`VL`**).
-  - **Exemplo 2 (Rotina de Prefeitura — O mesmo verbo *pagar* mudando de papel):**
-    - (a) `"A tesouraria **pagou** a fatura."` → Pede só a coisa, sem preposição (**`VTD`**).
-    - (b) `"A tesouraria **pagou** ao fornecedor."` → Pede só a pessoa, com preposição *a* (**`VTI`**).
-    - (c) `"A tesouraria **pagou** a fatura **ao** fornecedor."` → Pede a coisa + a pessoa ao mesmo tempo (**`VTDI`**).
-  - **Exemplo 3 (Caso Limite — O verbo *virar* mudando de ação física para estado):**
-    - `"O estagiário **virou** a folha do livro de atas."` → Movimento físico sobre um objeto (**`VTD`**).
-    - `"O novo portal eletrônico **virou** modelo regional."` → Mudança de estado equivalente a *tornou-se* (**`VL`**).
 
 - **M — Mapa de Gêmeos Confundíveis:**
   - **"O verbo X é sempre `VTD` em toda prova."** → **FALSO.** A transitividade depende do sentido da frase inteira!
@@ -587,9 +561,15 @@ Até aqui, nos quatro tipos anteriores (`VI`, `VTD`, `VTI`, `VTDI`), sempre havi
 
 Pense em frases como `"O edital **é** claro"`, `"A servidora **parece** cansada"`, `"Os documentos **permaneceram** intactos"`. Ninguém praticou "ser", ninguém agiu sobre "parecer", ninguém executou "permanecer" em cima de um objeto! Esses verbos servem apenas como uma **ponte** ligando o **Sujeito** a uma qualidade, característica ou estado dele naquele momento.
 
-- **D — Definição do Zero:**
-  - **Verbo de Ligação (`VL`):** verbo que **não indica ação**; funciona unicamente como ponte ligando o **Sujeito** a um estado ou qualidade (que pode ser permanente, passageiro, de mudança, de continuidade ou de aparência).
-  - **Teste de 5s ("Verbo Mudando de Roupa"):** Veja se é possível trocar o verbo mentalmente por **`ser` ou `estar`** mantendo uma **qualidade do sujeito** (*"anda cansado" = "está cansado"* → **`VL`**). Se indicar movimento real (*"anda depressa"*) ou localização física (*"está na sala"*), vira **`VI`**!
+- **D — Definição e Exemplos (Um Ponto por Vez):**
+  - **1. Verbo de Ligação (`VL`):** verbo que **não indica ação**; funciona unicamente como ponte ligando o **Sujeito** a um estado ou qualidade (permanente, passageiro, de mudança, de continuidade ou de aparência).
+    - **Exemplo (Mudança de estado emocional):** `"O cidadão **ficou** aliviado com a resposta."` → Ninguém pratica "ficar" sobre um alvo; o verbo só liga o cidadão ao estado *aliviado* (`cidadão = aliviado` agora) → **`VL`**.
+    - **Exemplo (Continuidade e aparência):** `"Todos os balancetes **permaneceram** corretos e a planilha **parecia** atualizada."` → *Permaneceram* (continuidade) e *parecia* (aparência) conectam estados aos sujeitos → ambos **`VL`**.
+  - **2. Teste de 5s ("Verbo Mudando de Roupa"):** Veja se é possível trocar o verbo mentalmente por **`ser` ou `estar`** mantendo uma **qualidade do sujeito** (*"anda cansado" = "está cansado"* → **`VL`**). Se indicar localização física (*"ficar/estar na gaveta"*) ou ação física sobre objeto (*"virar o monitor"*), deixa de ser **`VL`**!
+    - **Exemplo (*ficar* indicando lugar físico = `VI`):** `"Os documentos **ficaram** na gaveta."` → Indica **lugar físico** (*onde?*), sem qualidade alguma → **`VI`**!
+    - **Exemplo (*ficar* ligando estado = `VL`):** `"Os funcionários **ficaram** atentos."` → Indica **estado/qualidade** (*como?*) → **`VL`**!
+    - **Exemplo (*virar* como ação física = `VTD`):** `"O técnico **virou** o monitor"` → Pratica movimento físico sobre um objeto concreto → **`VTD`**!
+    - **Exemplo (*virar* como transformação de estado = `VL`):** `"O sistema **virou** referência"` → Significa *tornou-se referência* → **`VL`**!
 
 **As 5 Famílias Semânticas dos Verbos de Ligação (`VL`):**
 
@@ -601,16 +581,8 @@ Pense em frases como `"O edital **é** claro"`, `"A servidora **parece** cansada
 | **4. Continuidade de Estado** | *permanecer, continuar* | `"Os documentos fiscais **permaneceram** intactos."` |
 | **5. Aparência de Estado** | *parecer* | `"O recurso protocolado **parece** procedente."` |
 
-- **A — Analogia Concreta + 3 Exemplos Progressivos:**
+- **A — Analogia Síntese:**
   - **Analogia do Sinal de Igual (`=`) com Filtro de Tempo:** O **`VL`** funciona como o símbolo **`=`** da matemática ligando o sujeito à sua característica (*servidor = atento*), mas acrescentando o filtro de tempo ou aparência (*é* = sempre; *está* = agora; *ficou* = mudou para; *permaneceu* = continuou; *parece* = aparenta).
-  - **Exemplo 1 (Cotidiano — Mudança de estado emocional):**
-    - `"O cidadão **ficou** aliviado com a resposta."` → Ninguém faz uma ação chamada "ficar" sobre um alvo; *ficou* só liga o cidadão ao estado *aliviado* (`cidadão = aliviado` agora) → **`VL`**.
-  - **Exemplo 2 (Rotina de Prefeitura — Continuidade e aparência):**
-    - `"Todos os balancetes **permaneceram** corretos e a planilha **parecia** atualizada."` → *Permaneceram* (continuidade) e *parecia* (aparência) conectam estados aos sujeitos → ambos **`VL`**.
-  - **Exemplo 3 (Caso Limite — Os mesmos verbos virando `VI` ou `VTD`):**
-    - `"Os documentos **ficaram** na gaveta."` → Indica **lugar físico** (*onde?*), sem qualidade nenhuma → **`VI`**!
-    - `"Os funcionários **ficaram** atentos."` → Indica **estado** (*como?*) → **`VL`**!
-    - `"O técnico **virou** o monitor"` (**`VTD`** — ação!) vs. `"O sistema **virou** referência"` (**`VL`** — transformação = *tornou-se*!).
 
 - **M — Mapa de Gêmeos Confundíveis (Ação / Lugar × Estado `VL`):**
 
@@ -658,9 +630,13 @@ Agora que você domina os 5 comportamentos do verbo, vamos desarmar **duas armad
 
 A segunda armadilha envolve **5 verbos campeões cujo sentido muda junto com a preposição**: na fala do dia a dia dizemos *"assistir o filme"* ou *"obedecer o chefe"*, mas na prova escrita de concurso municipal a norma culta cobra o uso exato da preposição obrigatória.
 
-- **D — Definição do Zero:**
-  - **Falsa Preposição:** ocorre quando existe uma preposição dentro do bloco que vem depois do verbo, mas **não foi o verbo quem pediu aquela preposição** — quem pediu foi um nome ou adjetivo lá dentro do bloco!
-  - **Teste de 5s (`"ISSO"`):** Troque o complemento **inteiro** após o verbo por **`ISSO`**. Encaixou liso *"exibe **ISSO**"* (sem preposição antes de `ISSO`)? É **`VTD`** 100%, mesmo que existam dez preposições escondidas dentro daquele bloco!
+- **D — Definição e Exemplos (Um Ponto por Vez):**
+  - **1. Falsa Preposição (e o Teste de `"ISSO"`):** ocorre quando existe uma preposição dentro do bloco que vem depois do verbo, mas **não foi o verbo quem pediu aquela preposição** — quem pediu foi um nome ou adjetivo lá dentro do bloco! Para desarmar em 5s, troque o complemento **inteiro** após o verbo por **`ISSO`**: encaixou liso *"exibe **ISSO**"* (sem preposição antes de `ISSO`)? É **`VTD`** 100%, mesmo que haja preposições escondidas dentro do bloco!
+    - **Exemplo (Cotidiano — Desarmando com `"ISSO"`):** `"A técnica **consertou** a impressora **de** jato contínuo."` → Substitua tudo depois de *consertou* por `ISSO`: *"A técnica consertou **ISSO**."* Quem pediu *de* foi *impressora*, nunca *consertou* → **`VTD`**!
+    - **Exemplo (Caso Real — Pref. Contagem/MG 2026 Q01):** `"O edifício monumental... **exibe** fachada revestida **por** hieróglifos e alabastro translúcido..."` → Teste: `"O edifício exibe **ISSO**"` (ninguém diz *"exibe POR ISSO"*!). Quem exigiu a preposição *por* foi *revestida* (`revestida por`). Logo, *exibe* é **`VTD`** puro!
+  - **2. As 5 Regências Campeãs (Mesmo Verbo Mudando de Sentido pela Preposição):** verbos como *assistir*, *visar*, *obedecer*, *pagar/perdoar* e *aspirar* exigem ou rejeitam preposição conforme o sentido na norma culta:
+    - **Exemplo (`assistir` no sentido de presenciar = `VTI`):** `"Os vereadores **assistiram à** sessão solene."` → Exige preposição **`a`** (`à` com crase), diferente de *assistir o paciente* (ajudar = `VTD`).
+    - **Exemplo (`pagar` com coisa + pessoa = `VTDI`):** `"O tesoureiro **pagou o salário aos** servidores."` → Coisa sem preposição (`o salário` = `OD`) + pessoa com preposição `a` (`aos servidores` = `OI`).
 
 **As 5 Regências Campeãs em Concursos Municipais (ACCESS):**
 
@@ -672,16 +648,8 @@ A segunda armadilha envolve **5 verbos campeões cujo sentido muda junto com a p
 | **Pagar / Perdoar** | Para **COISA** = `VTD` (`"Pagou **a guia** / **a multa**."`) | Para **PESSOA** = `VTI` com **`a`** (`"Pagou **ao** servidor."`) |
 | **Aspirar** | = **Inalar / cheirar** (`"Aspirou **o ar puro**."`) | = **Desejar cargo** (`"Aspira **ao** cargo público."` → prep. **`a`**) |
 
-- **A — Analogia Concreta + 3 Exemplos Progressivos:**
+- **A — Analogia Síntese:**
   - **Analogia da Caixa com Etiqueta Dentro:** O verbo **`VTD`** entrega uma **caixa fechada** (`"ISSO"`). Se lá dentro da caixa houver uma etiqueta dizendo *"por vidro"*, essa preposição pertence ao conteúdo interno — não foi o carteiro (o verbo) quem precisou de ponte!
-  - **Exemplo 1 (Cotidiano — Desarmando com "ISSO"):**
-    - `"A técnica **consertou** a impressora **de** jato contínuo."` → Substitua tudo depois de *consertou* por `ISSO`: *"A técnica consertou **ISSO**."* Quem pediu *de* foi *impressora*, nunca *consertou* → **`VTD`**!
-  - **Exemplo 2 (Rotina de Prefeitura — Verbos Campeões *Assistir* e *Pagar*):**
-    - `"Os vereadores **assistiram à** sessão solene."` (= presenciaram → **`VTI`** + preposição *a*).
-    - `"O tesoureiro **pagou o salário aos** servidores."` (= coisa `OD` + pessoa com preposição `OI` → **`VTDI`**!).
-  - **Exemplo 3 (Caso Real — Pref. Contagem/MG 2026 Q01):**
-    - `"O edifício monumental... **exibe** fachada revestida **por** hieróglifos e alabastro translúcido..."`
-    - *Teste:* `"O edifício exibe **ISSO**"` (ninguém diz *"exibe POR ISSO"*!). Quem exigiu a preposição *por* foi a palavra *revestida* (`revestida por`). Logo, *exibe* é **`VTD`** puro!
 
 - **M — Mapa de Gêmeos Confundíveis:**
   - ❌ `"Assistimos o jogo / Obedeceram o decreto."` → ✅ `"Assistimos **ao** debate / Obedeceram **ao** decreto."` (*assistir* = ver e *obedecer* exigem preposição **`a`**!).
@@ -699,25 +667,23 @@ Para evitar ficar repetindo o mesmo substantivo dez vezes no texto (*"O diretor 
 
 Além disso, dois detalhes especiais fecham tudo o que a banca ACCESS cobra dentro dos Objetos: às vezes um `VTD` ganha uma preposição estilística que pode ser removida sem estragar a frase (**Objeto Direto Preposicionado**), e às vezes o autor antecipa o objeto para dar ênfase e o repete com um pronome depois (**Objeto Pleonástico**).
 
-- **D — Definição do Zero:**
-  - **Pronomes do Objeto Direto (`o, a, os, as` e variantes `lo, la, los, las` após *r/s/z*, `no, na, nos, nas` após som nasal):** substituem **EXCLUSIVAMENTE `OD`** (complementos de `VTD`)!
-  - **Pronomes do Objeto Indireto (`lhe, lhes`):** substituem **EXCLUSIVAMENTE `OI`** que tenha preposição **`a`** (ou *para*) referindo-se a pessoa/ser personificado (`obedecer a alguém → obedecer-lhe`).
-  - **Pronomes Camaleões (`me, te, se, nos, vos`):** mudam de cargo conforme o verbo! Com `VTD` = **`OD`** (*"Elogiou-**me**"* = elogiou eu); com `VTI` = **`OI`** (*"Obedeceu-**me**"* = obedeceu *a mim*).
-  - **Objeto Direto Preposicionado:** quando um verbo originalmente `VTD` (que NÃO exige preposição) recebe uma preposição por estilo, clareza ou ênfase (*"Cumpriu **com** o dever"* → teste: tirando *com*, *"Cumpriu o dever"* fica perfeito!).
-  - **Objeto Pleonástico (`OD` ou `OI` Pleonástico):** repetição enfática do mesmo objeto por meio de um pronome após antecipá-lo (*"**Os processos urgentes**, a equipe já **os** conferiu."*).
+- **D — Definição e Exemplos (Um Ponto por Vez):**
+  - **1. Pronomes do Objeto Direto (`o, a, os, as` e variantes `lo, la, los, las` após *r/s/z*, `no, na, nos, nas` após som nasal):** substituem **EXCLUSIVAMENTE `OD`** (complementos de `VTD`)!
+    - **Exemplo (Uso Correto vs. Erro Clássico):** De `"Conheço **o coordenador**"` (`VTD`) → ✅ `"Conheço-**o**."` (**`OD`**). Usar ❌ `"Conheço-lhe."` é erro gramatical.
+  - **2. Pronomes do Objeto Indireto (`lhe, lhes`):** substituem **EXCLUSIVAMENTE `OI`** que tenha preposição **`a`** (ou *para*) referindo-se a pessoa/ser personificado (`obedecer a alguém → obedecer-lhe`).
+    - **Exemplo (Uso Correto vs. Erro Clássico):** De `"Agradeço **ao cidadão**"` (`VTI`) → ✅ `"Agradeço-**lhe**."` (**`OI`**). Usar ❌ `"Agradeço-o."` é erro gramatical.
+  - **3. Pronomes Camaleões (`me, te, se, nos, vos`):** mudam de cargo conforme o verbo! Com `VTD` = **`OD`**; com `VTI` = **`OI`**.
+    - **Exemplo (`nos` como Objeto Direto):** `"O chefe **convocou-nos** para o mutirão."` → *Convocar alguém* (`VTD`) torna **`nos` = `OD`**.
+    - **Exemplo (`nos` como Objeto Indireto):** `"O chefe **respondeu-nos** com precisão."` → *Responder a alguém* (`VTI`) torna **`nos` = `OI`**.
+  - **4. Objeto Direto Preposicionado:** quando um verbo originalmente `VTD` (que NÃO exige preposição) recebe uma preposição por estilo, clareza ou ênfase — tirando a preposição, a frase continua perfeita!
+    - **Exemplo (`OD` Preposicionado):** `"A secretária **cumpriu com o** dever ético previsto no edital."` → Teste da remoção: tirando *com*, fica perfeito (*"cumpriu o dever"*) → **`OD` Preposicionado** (`VTD`).
+    - **Contraste (`OI` Real — Não dá para remover):** `"O servidor **precisa de** autorização."` → Tirar *de* destrói a norma (❌ *"precisa autorização"*) → **`OI`** obrigatório (`VTI`).
+  - **5. Objeto Pleonástico (`OD` ou `OI` Pleonástico):** repetição enfática do mesmo objeto por meio de um pronome após antecipá-lo.
+    - **Exemplo (`OD` Pleonástico):** `"**Os processos urgentes**, a equipe já **os** conferiu."` → **`os`** retoma enfaticamente *Os processos urgentes*.
+    - **Exemplo (`OI` Pleonástico):** `"**Ao contribuinte**, não **lhe** negamos informação."` → **`lhe`** retoma enfaticamente *Ao contribuinte*.
 
-- **A — Analogia Concreta + 3 Exemplos Progressivos:**
+- **A — Analogia Síntese:**
   - **Analogia das Chaves de Boca:** **`o/a/lo/no`** é a chave fixa exclusiva do **`OD` (`VTD`)**; **`lhe`** é a chave do **`OI` (`VTI` com prep. *a*)**; e **`me/te/se/nos/vos`** são chaves ajustáveis (camaleões) que assumem exatamente o formato do verbo!
-  - **Exemplo 1 (Cotidiano — Endereço certo de `o/a` vs. `lhe`):**
-    - `"Conheço **o coordenador**."` (`VTD`) → ✅ `"Conheço-**o**."` (**`OD`**) | ❌ `"Conheço-lhe."` (erro!).
-    - `"Agradeço **ao cidadão**."` (`VTI`) → ✅ `"Agradeço-**lhe**."` (**`OI`**) | ❌ `"Agradeço-o."` (erro!).
-  - **Exemplo 2 (Rotina de Prefeitura — Camaleões e Pleonasmo):**
-    - `"O chefe **convocou-nos** para o mutirão."` (*convocar* = `VTD` → **`nos` = Objeto Direto**).
-    - `"O chefe **respondeu-nos** com precisão."` (*responder a alguém* = `VTI` → **`nos` = Objeto Indireto**).
-    - `"**Ao contribuinte**, não **lhe** negamos informação."` → **`lhe`** repete enfaticamente *Ao contribuinte* (**Objeto Indireto Pleonástico**)!
-  - **Exemplo 3 (Caso Limite — `OD` Preposicionado vs. `OI` Real):**
-    - `"A secretária **cumpriu com o** dever ético previsto no edital."` → Teste da remoção: tirando *com*, fica perfeito (*"cumpriu o dever"*) → **Objeto Direto Preposicionado** (`VTD`)!
-    - Já em `"O servidor **precisa de** autorização"`, tirar *de* destrói a norma (*"precisa autorização"* ❌) → é **Objeto Indireto (`OI`)** de verdade (`VTI`)!
 
 - **M — Mapa de Gêmeos Confundíveis:**
   - `"Cumpriu **com** a meta."` → Fica perfeito sem preposição (`"Cumpriu a meta."`) → **Objeto Direto Preposicionado** (`VTD`).
@@ -817,9 +783,12 @@ Antes de decorar nomes dos tipos de Sujeito, precisamos de um método mecânico 
 
 Se o dono da ação (**Sujeito**) passa do singular para o plural, o verbo é obrigado a ir para o plural junto com ele! E existe uma regra de ouro inviolável que impede erros clássicos: **o núcleo do Sujeito jamais começa com preposição** (*de, em, para, por*). Por isso jamais dizemos *"para mim fazer"*: quem conjuga verbo é Sujeito (*"para **eu** fazer"*).
 
-- **D — Definição do Zero:**
-  - **Teste Definitivo da Concordância:** mude a expressão suspeita entre **singular e plural**. Se o verbo for **obrigado a mudar junto**, você encontrou o **Sujeito**!
-  - **Regra de Ouro:** O núcleo do Sujeito **NUNCA** vem regido por preposição (`"Chegou a hora **de eu** protocolar"` — e jamais contrair `de + eu` em *"deu"* nem usar *"para mim revisar"*).
+- **D — Definição e Exemplos (Um Ponto por Vez):**
+  - **1. Teste Definitivo da Concordância:** mude a expressão suspeita entre **singular e plural**. Se o verbo for **obrigado a mudar junto**, você encontrou o **Sujeito**!
+    - **Exemplo 1 (Prova dos 9 do plural):** `"O processo **chegou** hoje."` → Mudando para o plural: `"Os processos **chegaram** hoje."` O verbo mudou junto obrigatoriamente → Sujeito = *O processo*.
+    - **Exemplo 2 (Expressão partitiva na Prefeitura):** `"A maioria **dos servidores** aprovou (ou aprovaram) a escala."` → O núcleo sem preposição é `maioria` (singular), admitindo concordância lógica com *maioria* ou atração opcional pelo plural *dos servidores*.
+  - **2. Regra de Ouro (Núcleo Sem Preposição):** O núcleo do Sujeito **NUNCA** vem regido por preposição (`"Chegou a hora **de eu** protocolar"` — e jamais contrair `de + eu` em *"deu"* nem usar *"para mim revisar"*).
+    - **Exemplo 3 (*para eu* vs. *para mim*):** `"Trouxeram a ata **para eu** revisar."` → Quem pratica o verbo *revisar*? **`eu`** (Sujeito!). Jamais use *para mim revisar*, pois *mim* vem preso à preposição e não pode ser Sujeito!
 
 <div class="edu-comp-card">
   <div class="edu-comp-header">
@@ -879,14 +848,8 @@ Se o dono da ação (**Sujeito**) passa do singular para o plural, o verbo é ob
   </div>
 </div>
 
-- **A — Analogia Concreta + 3 Exemplos Progressivos:**
+- **A — Analogia Síntese:**
   - **Analogia do Volante e das Rodas:** Quando você gira o volante (`Sujeito`) entre singular e plural, as rodas (`Verbo`) viram junto obrigatoriamente; se mexer um termo e o verbo não mudar, você pegou um acessório do painel, não o Sujeito!
-  - **Exemplo 1 (Cotidiano — Prova dos 9 do plural):**
-    - `"O processo **chegou** hoje."` → Mudando para plural: `"Os processos **chegaram** hoje."` O verbo mudou junto → Sujeito = *O processo*.
-  - **Exemplo 2 (Rotina de Prefeitura — Expressão partitiva):**
-    - `"A maioria **dos servidores** aprovou (ou aprovaram) a escala."` → O núcleo sem preposição é `maioria` (singular), admitindo atração opcional pelo plural *dos servidores*.
-  - **Exemplo 3 (Caso Limite — *para eu* vs. *para mim*):**
-    - `"Trouxeram a ata **para eu** revisar."` → Quem pratica o verbo *revisar*? **`eu`** (Sujeito!). Jamais use *para mim revisar*, pois *mim* vem preso à preposição e não pode ser Sujeito!
 
 - **M — Mapa de Gêmeos Confundíveis:**
   - `"Devolveram a guia para **eu** conferir."` → Tem verbo (*conferir*) depois = pede Sujeito → **`eu`**!
@@ -902,20 +865,17 @@ Se o dono da ação (**Sujeito**) passa do singular para o plural, o verbo é ob
 
 Quando conseguimos identificar **com exatidão** quem pratica ou sofre a ação do verbo, dizemos que o Sujeito é **Determinado**. Ele se divide em três casos muito simples que dependem de duas perguntas: *(1) o sujeito está escrito na frase?* e *(2) quantos substantivos principais (**núcleos**) existem ali dentro?*
 
-- **D — Definição do Zero:**
-  - **Sujeito Determinado Simples:** está escrito na frase e possui **1 único núcleo** (mesmo que esse núcleo esteja no plural ou traga várias palavras ao redor: *"Os trezentos processos urgentes"* tem 1 único núcleo = *processos*).
-  - **Sujeito Determinado Composto:** está escrito na frase e possui **2 ou mais núcleos** somados mandando no verbo (*"O prefeito **e** o secretário assinaram"* = núcleos *prefeito* + *secretário*).
-  - **Sujeito Determinado Oculto (Elíptico / Desinencial):** não aparece escrito ali naquela oração, mas nós sabemos **com 100% de certeza** quem é pela **terminação do verbo** (`protocolamos` = *nós*; `recebi` = *eu*) ou porque já foi citado na frase anterior!
+- **D — Definição e Exemplos (Um Ponto por Vez):**
+  - **1. Sujeito Determinado Simples:** está escrito na frase e possui **1 único núcleo** (mesmo que esse núcleo esteja no plural ou traga várias palavras ao redor: *"Os trezentos processos urgentes"* tem 1 único núcleo = *processos*).
+    - **Exemplo (Plural com 1 núcleo continua Simples!):** `"As **três janelas** da sala quebraram."` → Só existe 1 nome central (*janelas*) → **Sujeito Simples**.
+  - **2. Sujeito Determinado Composto:** está escrito na frase e possui **2 ou mais núcleos** somados mandando no verbo (*"O prefeito **e** o secretário assinaram"* = núcleos *prefeito* + *secretário*).
+    - **Exemplo (Dois núcleos somados):** `"A **porta** e a **janela** quebraram."` → Há 2 nomes centrais somados (*porta* + *janela*) → **Sujeito Composto**.
+  - **3. Sujeito Determinado Oculto (Elíptico / Desinencial):** não aparece escrito ali naquela oração, mas nós sabemos **com 100% de certeza** quem é pela **terminação do verbo** ou porque já foi citado na frase anterior!
+    - **Exemplo (Pela terminação verbal — Desinencial):** `"Protocolamos o edital no sistema hoje pela manhã."` → Quem protocolou? **`Nós`** (revelado pela terminação *-mos*) → **Sujeito Oculto (Desinencial)**.
+    - **Exemplo (Retomado pelo contexto — Elíptico):** `"O oficial conferiu as guias; em seguida, **arquivou** todos os comprovantes."` → Na segunda oração, *arquivou* não tem sujeito escrito ali, mas o contexto prova que foi **ele (o oficial)** → **Sujeito Oculto (Elíptico)**!
 
-- **A — Analogia Concreta + 3 Exemplos Progressivos:**
+- **A — Analogia Síntese:**
   - **Analogia da Assinatura na Portaria:** Uma assinatura (mesmo representando uma equipe inteira de 50 funcionários: *"Os funcionários"*) continua sendo **1 bloco = Simples**; duas assinaturas de cargos distintos (*"O prefeito e o secretário"*) = **Composto**; e um despacho onde só aparece a rubrica no fim (`"Protocolamos ontem"`) = **Oculto** (a terminação *-mos* mostra quem assinou!).
-  - **Exemplo 1 (Cotidiano — Plural com 1 núcleo continua Simples!):**
-    - `"As **três janelas** da sala quebraram."` → Só existe 1 nome central (*janelas*) → **Sujeito Simples**.
-    - `"A **porta** e a **janela** quebraram."` → Há 2 nomes centrais somados (*porta* + *janela*) → **Sujeito Composto**.
-  - **Exemplo 2 (Rotina de Prefeitura — Sujeito Oculto pela desinência):**
-    - `"Protocolamos o edital no sistema hoje pela manhã."` → Quem protocolou? **`Nós`** (revelado pela terminação *-mos*) → **Sujeito Oculto (Desinencial)**.
-  - **Exemplo 3 (Caso Limite — Oração seguinte retomando o sujeito anterior):**
-    - `"O oficial conferiu as guias; em seguida, **arquivou** todos os comprovantes."` → Na segunda oração, *arquivou* não tem sujeito escrito ali, mas o contexto prova que foi **ele (o oficial)** → **Sujeito Oculto (Elíptico)**!
 
 - **M — Mapa de Gêmeos Confundíveis:**
   - `"Vários oficiais assinaram a ata."` → 1 núcleo no plural (*oficiais*) = **Sujeito Simples**!
@@ -933,20 +893,19 @@ Nem sempre quem manda no verbo é quem **faz** a ação! Às vezes o foco do tex
 
 Essa mudança de foco chama-se troca de **Voz Verbal**: na **Voz Ativa**, o sujeito é o **Agente** (quem age); na **Voz Passiva Analítica** (`ser/estar + particípio`), o antigo Objeto Direto da voz ativa assume o posto de **Sujeito Paciente** (quem recebe a ação e comanda a concordância!), enquanto quem fazia a ação passa para os bastidores com a preposição **`por` (`pelo`, `pela`, `pelos`)** ou raramente **`de`**, recebendo o nome de **Agente da Passiva**!
 
-- **D — Definição do Zero:**
-  - **Sujeito Paciente (na Voz Passiva Analítica):** é o sujeito que **sofre/recebe** a ação de uma locução passiva (`ser/estar + particípio`), comandando normalmente o singular ou plural do verbo.
-  - **Agente da Passiva:** é o termo preposicionado (`por, pelo, pela, de`) que representa **quem pratica a ação** nos bastidores da Voz Passiva Analítica.
+- **D — Definição e Exemplos (Um Ponto por Vez):**
+  - **1. Sujeito Paciente (na Voz Passiva Analítica):** é o sujeito que **sofre/recebe** a ação de uma locução passiva (`ser/estar + particípio`), comandando normalmente o singular ou plural do verbo.
+    - **Exemplo (Concordância obrigatória com o Sujeito Paciente no plural):** `"**Novos processos eletrônicos** foram implantados pela diretoria."` → Nunca deixe *"Foi implantado novos processos"* no singular, pois *novos processos eletrônicos* é o **Sujeito Paciente** e puxa o verbo auxiliar para o plural!
+  - **2. Agente da Passiva (Bastidores com Preposição `por` / `pelo` / `de`):** é o termo preposicionado (`por, pelo, pela, de`) que representa **quem pratica a ação** nos bastidores da Voz Passiva Analítica. Ao inverter para a Voz Ativa, ele volta a ser o Sujeito!
+    - **Exemplo 1 (Cotidiano — Passando da Ativa para a Passiva):**
+      - *Ativa:* `"A equipe limpou as salas."` (`A equipe` = Sujeito Agente; `as salas` = `OD`).
+      - *Passiva Analítica:* `"**As salas** foram limpas **pela equipe**."` → **`As salas`** = Sujeito Simples Paciente; **`pela equipe`** = **Agente da Passiva**.
+    - **Exemplo 2 (Rotina de Prefeitura — Caso clássico de contrato/obra):**
+      - *Ativa:* `"O engenheiro responsável fiscalizou a obra."`
+      - *Passiva Analítica:* `"**A obra** foi fiscalizada **pelo engenheiro responsável**."` → **`A obra`** manda no verbo (*foi fiscalizada* = **Sujeito Paciente**), e **`pelo engenheiro responsável`** é o **Agente da Passiva**!
 
-- **A — Analogia Concreta + 3 Exemplos Progressivos:**
+- **A — Analogia Síntese:**
   - **Analogia da Cadeira de Protagonista no Cartório:** Na **Voz Ativa**, quem dirige a cena na cadeira da frente é quem carimba (`"O oficial carimbou a guia"`). Na **Voz Passiva Analítica**, você inverte as cadeiras: a guia passa para o protagonismo (`"A guia foi carimbada..."` = **Sujeito Paciente**), e o oficial vai para os bastidores com a preposição *pelo* (`"...pelo oficial"` = **Agente da Passiva**)!
-  - **Exemplo 1 (Cotidiano — Passando da Ativa para a Passiva):**
-    - *Ativa:* `"A equipe limpou as salas."` (`A equipe` = Sujeito Agente; `as salas` = `OD`).
-    - *Passiva Analítica:* `"**As salas** foram limpas **pela equipe**."` → **`As salas`** = Sujeito Simples Paciente; **`pela equipe`** = **Agente da Passiva**.
-  - **Exemplo 2 (Rotina de Prefeitura — Caso clássico de contrato/obra):**
-    - *Ativa:* `"O engenheiro responsável fiscalizou a obra."`
-    - *Passiva Analítica:* `"**A obra** foi fiscalizada **pelo engenheiro responsável**."` → **`A obra`** manda no verbo (*foi fiscalizada* = Sujeito Paciente), e **`pelo engenheiro responsável`** é o **Agente da Passiva**!
-  - **Exemplo 3 (Caso Limite — Sujeito Paciente no plural exige auxiliar no plural!):**
-    - `"**Novos processos eletrônicos** foram implantados pela diretoria."` → Nunca deixe `"Foi implantado novos processos"` no singular, pois *novos processos eletrônicos* é o Sujeito Paciente!
 
 - **M — Mapa de Gêmeos Confundíveis:**
   - `"A ata foi assinada **pelo diretor**."` → Volta para a ativa: *"O diretor assinou a ata"* (`O diretor` virou Sujeito!) → **`pelo diretor` = Agente da Passiva**.
@@ -980,28 +939,24 @@ Agora entra em cena **um dos tópicos que mais derrubam candidatos** — e você
 
 Mas a grande confusão nas provas acontece quando aparece a palavrinha **`SE`** colada no verbo: por que escrevemos **`"Alugam-se salas"`** no plural, **`"Precisa-se de técnicos"`** obrigatoriamente no singular e **`"O sistema se atualizava"`** concordando com o sistema? A resposta está 100% na transitividade verbal que você aprendeu no Eixo 2!
 
-- **D — Definição do Zero:**
-  - **Sujeito Indeterminado (As 3 Formas Oficiais):** existe um agente (quase sempre humano), mas não é possível nem se quer identificá-lo:
-    1. **Verbo na 3ª pessoa do plural (`eles`) SEM nenhum sujeito escrito antes** (*"Protocolaram uma reclamação anônima."*).
-    2. **`VTI`, `VI` ou `VL` na 3ª pessoa do singular + `SE`** → aqui o `SE` é chamado de **Índice de Indeterminação do Sujeito (`IIS`)** e o verbo fica **OBRIGATORIAMENTE travado no singular**!
-    3. **Verbo no Infinitivo Impessoal** sem sujeito vinculado (*"É necessário conferir os dados antes do envio."*).
-  - **O Trio do `"SE"` (Comparando os 3 Papéis da Palavra `SE`):**
-    1. **Partícula Apassivadora (`PA`):** acontece com **`VTD` ou `VTDI` + `SE`**. Como esses verbos têm alvo sem preposição, o alvo vira **Sujeito Paciente** e **obriga o verbo a variar no singular ou plural** (`"Alugam-se salas"` = `"Salas são alugadas"`).
-    2. **Índice de Indeterminação do Sujeito (`IIS`):** acontece com **`VTI`, `VI` ou `VL` + `SE`**. Como esses verbos NÃO têm objeto direto para virar sujeito, não há sujeito definido → **verbo trava 100% no singular** (`"Precisa-se de técnicos"`).
-    3. **Pronome Reflexivo (`SE`):** existe um sujeito claro antes do verbo (ou pronome *que*) praticando e recebendo a ação **em si mesmo (`"a si mesmo"`)**!
+- **D — Definição e Exemplos (Um Ponto por Vez):**
+  - **Bloco A — As 3 Formas Oficiais de Sujeito Indeterminado** (existe um agente humano, mas não é possível nem se quer identificá-lo):
+    - **1. Verbo na 3ª pessoa do plural (`eles`) SEM nenhum sujeito escrito antes:**
+      - **Exemplo:** `"**Extraviam** formulários quando falta controle."` (não há referente plural anterior → **Sujeito Indeterminado**).
+    - **2. `VTI`, `VI` ou `VL` na 3ª pessoa do singular + `SE`:** aqui o `SE` é chamado de **Índice de Indeterminação do Sujeito (`IIS`)** e o verbo fica **OBRIGATORIAMENTE travado no singular**!
+      - **Exemplo:** `"No setor jurídico, **trabalha-se** sob forte sigilo."` (`VI` + `se` → **`IIS`** = **Sujeito Indeterminado**).
+    - **3. Verbo no Infinitivo Impessoal (sem sujeito vinculado):**
+      - **Exemplo:** `"**É prudente exigir** comprovante em todo protocolo."` (Infinitivo Impessoal *exigir* sem agente definido → **Sujeito Indeterminado**).
+  - **Bloco B — O Trio do `"SE"` (Cada Papel com Seu Exemplo Imediato):**
+    - **1. Partícula Apassivadora (`PA` = `VTD` ou `VTDI` + `SE`):** como esses verbos têm alvo sem preposição, o alvo vira **Sujeito Paciente** e **obriga o verbo a variar no singular ou plural**.
+      - **Exemplo (`PA` no plural):** `"**Consertam-se** impressoras rapidamente."` (`VTD` → Teste: *Impressoras são consertadas* ✅ → `SE` = **`PA`**, **Sujeito Simples = `impressoras`**).
+    - **2. Índice de Indeterminação do Sujeito (`IIS` = `VTI`, `VI` ou `VL` + `SE`):** como esses verbos NÃO têm objeto direto para virar sujeito, não há sujeito definido → **verbo trava 100% no singular**!
+      - **Exemplo (`IIS` travado no singular):** `"**Confia-se** em servidores preparados."` (`VTI` + prep. *em* → ❌ ninguém diz *"Em servidores é confiado"* → `SE` = **`IIS`**, **Sujeito Indeterminado**).
+    - **3. Pronome Reflexivo (`SE`):** existe um sujeito claro antes do verbo (ou pronome *que*) praticando e recebendo a ação **em si mesmo (`"a si mesmo"`)**!
+      - **Exemplo (Caso Real — Pref. Domingos Martins/ES 2023 Q05):** *"um assento de vaso sanitário que **se** esterilizava chegando a 250 °C"* (o gabarito oficial de recursos manteve **Pronome Reflexivo**!). Por que não foi `PA` nem `IIS`? Porque existe um sujeito determinado retomado pelo pronome **`que`** (*= um assento*), e o próprio assento esterilizava **a si mesmo**!
 
-- **A — Analogia Concreta + 3 Exemplos Progressivos:**
+- **A — Analogia Síntese:**
   - **Analogia do Espelho × Telefone Anônimo × Placa na Fachada:** No **Pronome Reflexivo**, o sujeito olha no espelho e faz a ação **em si mesmo**; no **`IIS` (Indeterminado)**, você ouve um telefonema anônimo sem descobrir quem ligou; e na **`PA` (`VTD + se`)**, você olha a placa `"Vendem-se casas"` — as casas são vendidas e mandam no plural do verbo!
-  - **Exemplo 1 (Cotidiano — `VTD + se` vs. `VTI + se`):**
-    - `"**Consertam-se** impressoras rapidamente."` (`VTD` → Teste: *Impressoras são consertadas* ✅ → `SE` = **`PA`**, **Sujeito Simples = `impressoras`**).
-    - `"**Confia-se** em servidores preparados."` (`VTI` + prep. *em* → ❌ ninguém diz *"Em servidores é confiado"* → `SE` = **`IIS`**, **Sujeito Indeterminado**, travado no singular!).
-  - **Exemplo 2 (Rotina de Prefeitura — As 3 Formas do Indeterminado):**
-    - `"**Extraviam** formulários quando falta controle."` (3ª plural sem sujeito anterior → **Sujeito Indeterminado**).
-    - `"No setor jurídico, **trabalha-se** sob forte sigilo."` (`VI` + `se` → **`IIS`** = **Sujeito Indeterminado**).
-    - `"**É prudente exigir** comprovante em todo protocolo."` (Infinitivo Impessoal *exigir* → **Sujeito Indeterminado**).
-  - **Exemplo 3 (Caso Real — Pref. Domingos Martins/ES 2023 Q05 · Pronome Reflexivo):**
-    - *"um assento de vaso sanitário que **se** esterilizava chegando a 250 °C"* (o gabarito oficial de recursos manteve **Pronome Reflexivo**!).
-    - Por que não foi `PA` nem `IIS`? Porque existe um sujeito determinado retomado pelo pronome **`que`** (*= um assento*), e o próprio assento esterilizava **a si mesmo**!
 
 - **M — Mapa de Gêmeos Confundíveis (O Trio Campeão do `"SE"`):**
 
@@ -1039,24 +994,25 @@ Agora precisamos evitar a última grande confusão deste Eixo: **Sujeito Indeter
 
 Por não terem nenhum sujeito comandando o número, esses verbos (**Verbos Impessoais**) ficam **congelados na 3ª pessoa do singular** — e o mais importante para a prova: **eles passam esse congelamento para o verbo auxiliar** em uma locução verbal (`"Deve haver vagas"` — e nunca *"Devem haver"*!). A única exceção que vai para o plural é o verbo **`SER`** indicando horas, datas ou distâncias!
 
-- **D — Definição do Zero (Os 6 Casos de Verbo Impessoal):**
-  1. **`Haver`** no sentido de **existir, acontecer, ocorrer** ou indicando **tempo decorrido** (`Há três vagas`, `Havia problemas`, `Há cinco anos`). *Cuidado:* `Existir, ocorrer, acontecer` **NÃO são impessoais** — têm sujeito e vão ao plural!
-  2. **`Fazer`** indicando **tempo decorrido** ou **clima** (`Faz cinco meses`, `Deve fazer duas semanas`, `Faz dias quentes`).
-  3. **Fenômenos da natureza** no sentido real (`Choveu ontem`, `Ventou forte em Birigui`, `Anoiteceu`). *Exceção:* no **sentido figurado**, ganha sujeito e vai ao plural (`"Choveram elogios"` → *elogios* = Sujeito Simples!).
-  4. **`Estar / Ficar / Parecer`** indicando **clima ou temperatura** (`Está muito abafado hoje`, `Ficou frio à noite`).
-  5. **Expressões `Chega de` / `Basta de`** indicando suficiência (`Basta de atrasos!`, `Chega de papelada!`).
-  6. **`Ser`** indicando **horas, datas ou distâncias**: é **Oração Sem Sujeito**, mas é o único impessoal que **concorda com o numeral** (`"São dez horas"`, `"É uma hora"`, `"Hoje são vinte de abril"`, `"Daqui até lá são dez quilômetros"`).
+- **D — Definição e Exemplos (Os 6 Casos de Verbo Impessoal — Um por Vez):**
+  1. **`Haver` no sentido de existir, acontecer, ocorrer ou indicando tempo decorrido (`Há cinco anos`):** trava no singular (inclusive em locução verbal!). *Cuidado:* `Existir, ocorrer, acontecer` **NÃO são impessoais** — têm sujeito e vão ao plural! E se `haver` for verbo auxiliar no sentido de **ter** (*haviam protocolado*), concorda no plural!
+     - **Exemplo 1 (`Haver` = existir = Oração Sem Sujeito):** `"**Havia** três candidatos na recepção."` → Travado no singular!
+     - **Exemplo 2 (`Existir` = Sujeito Simples no plural):** `"**Existiam** três candidatos na recepção."` → Tem sujeito expresso (*três candidatos*).
+     - **Exemplo 3 (Locução verbal herdando trava):** `"**Pode haver** novas convocações neste semestre."` → Auxiliar *Pode* herda a impessoalidade e fica no singular!
+     - **Exemplo 4 (Caso Limite — `Haver` auxiliar = *Ter*):** `"Os servidores **haviam** protocolado os documentos."` → Significa *tinham protocolado*: aqui há Sujeito Simples (*Os servidores*) e o plural é obrigatório!
+  2. **`Fazer` indicando tempo decorrido ou clima:** trava no singular — e o auxiliar da locução verbal herda o singular!
+     - **Exemplo (Locução verbal com *fazer* de tempo):** `"**Vai fazer** quatro meses que a auditoria começou."` → Auxiliar *Vai* fica no singular (nunca *"Vão fazer"*).
+  3. **Fenômenos da natureza no sentido real (`chover`, `ventar`, `anoitecer`):** não há autor da ação (**Oração Sem Sujeito**). *Exceção:* no **sentido figurado**, ganha sujeito e vai ao plural!
+     - **Exemplo (Real vs. Figurado):** `"Choveu ontem em Birigui"` (Oração Sem Sujeito) vs. `"Choveram elogios"` (*elogios* = Sujeito Simples no plural!).
+  4. **`Estar / Ficar / Parecer` indicando clima ou temperatura:** quando expressam condição atmosférica, não possuem sujeito.
+     - **Exemplo:** `"**Está** muito abafado hoje; **ficou** frio à noite."` → Ambos na 3ª pessoa do singular (**Oração Sem Sujeito**).
+  5. **Expressões `Chega de` / `Basta de` indicando suficiência:** funcionam como verbos impessoais sem sujeito.
+     - **Exemplo:** `"**Basta de** atrasos! **Chega de** papelada!"` → Verbo sempre no singular.
+  6. **`Ser` indicando horas, datas ou distâncias:** é **Oração Sem Sujeito**, mas é o **único impessoal que concorda com o numeral**!
+     - **Exemplo:** `"**São** dez horas"` / `"**É** uma hora"` / `"Hoje **são** vinte de abril"` / `"Daqui até lá **são** dez quilômetros"`.
 
-- **A — Analogia Concreta + 3 Exemplos Progressivos:**
+- **A — Analogia Síntese:**
   - **Analogia da Chuva no Vidro:** Quando você olha pela janela e diz `"Choveu muito"`, ninguém é o autor da chuva na frase — o fenômeno acontece sem dono (**Oração Sem Sujeito**). Já se alguém diz `"Choveram reclamações"`, as *reclamações* viraram autoras figuradas da ação (**Sujeito Simples** no plural!).
-  - **Exemplo 1 (Cotidiano — `Haver` vs. `Existir`):**
-    - `"**Havia** três candidatos na recepção."` (`Haver` = existir → **Oração Sem Sujeito**, travado no singular!).
-    - `"**Existiam** três candidatos na recepção."` (`Existir` tem sujeito expresso *três candidatos* → **Sujeito Simples** no plural!).
-  - **Exemplo 2 (Rotina de Prefeitura — Locução Verbal herdando a trava no singular):**
-    - `"**Vai fazer** quatro meses que a auditoria começou."` (Auxiliar *Vai* herda a impessoalidade de *fazer* → singular!).
-    - `"**Pode haver** novas convocações neste semestre."` (Auxiliar *Pode* herda a impessoalidade de *haver* → singular!).
-  - **Exemplo 3 (Caso Limite — `Haver` como verbo auxiliar = *Ter*!):**
-    - `"Os servidores **haviam** protocolado os documentos."` → Cuidado! Aqui *haviam* NÃO significa "existiam"; significa **tinham** (*tinham protocolado*). Nesse papel de auxiliar pessoal, há Sujeito Simples (*Os servidores*) e o plural é obrigatório!
 
 - **M — Mapa de Gêmeos Confundíveis:**
 
@@ -1155,11 +1111,16 @@ Agora que já sabemos olhar para o verbo dentro do Predicado, fica fácil perceb
 
 E existe uma terceira situação muito inteligente da língua para economizar palavras: quando juntamos **uma ação acontecendo + uma qualidade momentânea** na mesma oração (*"Os fiscais saíram satisfeitos"* = saíram [ação] + estavam satisfeitos [estado]). Por existirem apenas essas três combinações de informação (Só Ação, Só Estado, Ação + Estado), existem exatamente **3 Tipos de Predicado**!
 
-- **D — Definição do Zero:**
-  - **Predicado Verbal (`PV`):** possui **1 único núcleo = um verbo significativo** (`VI`, `VTD`, `VTI` ou `VTDI`). Traz apenas ação/evento, **sem** qualidade atribuída por predicativo.
-  - **Predicado Nominal (`PN`):** possui **1 único núcleo = um nome** (qualidade/estado do sujeito), ligado por um **Verbo de Ligação (`VL`)**. Aqui o verbo é apenas ponte!
-  - **Predicado Verbo-Nominal (`PVN`):** possui **2 núcleos ao mesmo tempo** = **1 verbo significativo (ação)** + **1 qualidade/estado momentâneo** atribuído ao sujeito ou ao objeto!
-  - **Teste de 5s do `PVN`:** Tente dividir a oração mentalmente em duas frases (*"O fiscal saiu" + "e ele estava satisfeito"*). Deu 1 ação + 1 estado juntos? É **`PVN`**!
+- **D — Definição e Exemplos (Os 3 Tipos de Predicado — Um por Vez):**
+  - **1. Predicado Verbal (`PV`):** possui **1 único núcleo = um verbo significativo** (`VI`, `VTD`, `VTI` ou `VTDI`). Traz apenas ação ou acontecimento, **sem** qualidade atribuída por predicativo.
+    - **Exemplo (`VTD` + `OD` = só ação):** `"A técnica **consertou o computador**."` → 1 único núcleo verbal (*consertou*) = **`PV`**.
+    - **Exemplo (*estar* indicando lugar físico = `VI` → `PV`):** `"Os documentos **estão** no arquivo."` → *estar* localizando no espaço é verbo significativo (`VI`), logo não há estado nem predicativo → **`PV`**!
+  - **2. Predicado Nominal (`PN`):** possui **1 único núcleo = um nome** (qualidade/estado do sujeito), ligado por um **Verbo de Ligação (`VL`)**. Aqui o verbo é apenas ponte!
+    - **Exemplo (`VL` + qualidade emocional):** `"A técnica **ficou satisfeita**."` → *ficou* liga o sujeito ao estado *satisfeita* (núcleo nominal) → **`PN`**.
+    - **Exemplo (*estar* ligando estado = `VL` → `PN`):** `"Os documentos **estão** arquivados e completos."` → *estar* liga um estado ao sujeito (`VL` + `PS`) → **`PN`**!
+  - **3. Predicado Verbo-Nominal (`PVN`) + Teste de 5s:** possui **2 núcleos ao mesmo tempo** = **1 verbo significativo (ação)** + **1 qualidade/estado momentâneo** atribuído ao sujeito ou ao objeto! *Teste de 5s:* tente dividir a oração mentalmente em duas frases (*"O fiscal saiu" + "e ele estava satisfeito"*). Deu 1 ação + 1 estado juntos? É **`PVN`**!
+    - **Exemplo (`PVN` com qualidade no Sujeito):** `"A técnica **saiu satisfeita** da sala."` → 1 ação (*saiu*) + 1 estado simultâneo (*satisfeita*) = **2 núcleos = `PVN`**.
+    - **Exemplo (`PVN` com julgamento sobre o Objeto):** `"A comissão jurídica **julgou improcedente** a impugnação do edital."` → Ação = *julgou* (`VTD`); estado atribuído ao objeto *impugnação* = *improcedente* → **2 núcleos = `PVN`**!
 
 <div class="edu-comp-card">
   <div class="edu-comp-header">
@@ -1209,17 +1170,8 @@ E existe uma terceira situação muito inteligente da língua para economizar pa
   </div>
 </div>
 
-- **A — Analogia Concreta + 3 Exemplos Progressivos:**
+- **A — Analogia Síntese:**
   - **Analogia da Câmera Fotográfica:** O **Predicado Verbal (`PV`)** é um vídeo gravando apenas movimento (`"O servidor correu"`); o **Predicado Nominal (`PN`)** é uma foto retratando um estado (`"O servidor está cansado"`); e o **Predicado Verbo-Nominal (`PVN`)** grava o vídeo e tira a foto ao mesmo tempo (`"O servidor trabalhou satisfeito"` = trabalhou + estava satisfeito!).
-  - **Exemplo 1 (Cotidiano — Os 3 Predicados com a mesma pessoa):**
-    - `"A técnica **consertou o computador**."` → só ação (`VTD` + `OD`) = **`PV`**.
-    - `"A técnica **ficou satisfeita**."` → só estado (`VL` + qualidade) = **`PN`**.
-    - `"A técnica **saiu satisfeita** da sala."` → ação (*saiu*) + qualidade (*satisfeita*) = **`PVN`**.
-  - **Exemplo 2 (Rotina de Prefeitura — *Estar* de lugar vs. *Estar* de estado):**
-    - `"Os documentos **estão** no arquivo."` → *estar* localizando no espaço = **`VI`** → **`PV`**!
-    - `"Os documentos **estão** arquivados e completos."` → *estar* ligando estado = **`VL`** → **`PN`**!
-  - **Exemplo 3 (Caso Limite — `PVN` com julgamento sobre o Objeto):**
-    - `"A comissão jurídica **julgou improcedente** a impugnação do edital."` → Ação = *julgou* (`VTD`); estado atribuído ao objeto *impugnação* = *improcedente* → **2 núcleos = `PVN`**!
 
 - **M — Mapa de Gêmeos Confundíveis:**
   - `PV` = só ação (`"analisaram os contratos"`, ou `"estão no pátio"`).
@@ -1254,19 +1206,17 @@ Se o predicado tem uma qualidade sendo atribuída pelo verbo — seja via `VL` n
 
 É exatamente essa diferença que separa o **Predicativo do Sujeito (`PS`)** do **Predicativo do Objeto (`PO`)**. Pense no alvo: se dizemos *"A comissão julgou **válido** o edital"*, quem é *válido*? É a comissão? Não! É *o edital* (**Objeto Direto**) — portanto, *válido* é um julgamento atribuído ao Objeto (**`PO`**)!
 
-- **D — Definição do Zero:**
-  - **Predicativo do Sujeito (`PS`):** qualidade ou estado atribuído ao **Sujeito** (seja via `VL` no `PN`: *"O servidor está atento"*; seja em `PVN` junto de ação: *"Os fiscais voltaram cansados"*).
-  - **Predicativo do Objeto (`PO`):** qualidade, função ou julgamento momentâneo atribuído ao **Objeto** por meio do verbo (frequentemente verbos de opinião/eleição: *julgar, considerar, declarar, nomear, eleger, encontrar, tornar, deixar* — ex.: *"O prefeito nomeou o técnico **coordenador**"*).
+- **D — Definição e Exemplos (Um Ponto por Vez):**
+  - **1. Predicativo do Sujeito (`PS`):** qualidade ou estado atribuído ao **Sujeito** (seja via `VL` no `PN`: *"O servidor está atento"*; seja em `PVN` junto de ação: *"Os fiscais voltaram cansados"*).
+    - **Exemplo (Seta voltando para quem manda no verbo = `PS`):** `"Os alunos entraram **animados** na sala."` → Seta: quem estava *animado*? *Os alunos* (Sujeito) → **`PS`**.
+    - **Exemplo (Caso Limite — Concordância feminina prova o alvo):** `"A fiscal encontrou o contribuinte **nervosa**."` → *nervosa* no feminino qualifica *a fiscal* (Sujeito!) → **`PS`**.
+  - **2. Predicativo do Objeto (`PO`):** qualidade, função ou julgamento momentâneo atribuído ao **Objeto** por meio do verbo (frequentemente verbos de opinião/eleição: *julgar, considerar, declarar, nomear, eleger, encontrar, tornar, deixar* — ex.: *"O prefeito nomeou o técnico **coordenador**"*).
+    - **Exemplo 1 (Seta apontando para quem sofre/recebe = `PO`):** `"O professor encontrou a turma **animada**."` → Seta: quem estava *animada*? *a turma* (Objeto Direto!) → **`PO`**.
+    - **Exemplo 2 (Rotina de Prefeitura — Julgamento sobre Objeto):** `"O prefeito declarou **nulo** o pregão."` → Quem é *nulo*? *o pregão* (`OD`), não o prefeito! → **`PO`**.
+    - **Exemplo 3 (Caso Limite — Concordância masculina mudando o alvo para o Objeto):** `"A fiscal encontrou o contribuinte **nervoso**."` → *nervoso* no masculino qualifica *o contribuinte* (`OD`) → **`PO`**.
 
-- **A — Analogia Concreta + 3 Exemplos Progressivos:**
+- **A — Analogia Síntese:**
   - **Analogia da Seta do Julgamento:** Puxe uma seta da qualidade até quem ela descreve: se a seta volta para quem comanda o verbo = **`PS`**; se a seta aponta para quem sofre/recebe o verbo = **`PO`**!
-  - **Exemplo 1 (Cotidiano — Seta no Sujeito vs. Seta no Objeto):**
-    - `"Os alunos entraram **animados** na sala."` → Seta: quem estava *animado*? *Os alunos* (Sujeito) → **`PS`**.
-    - `"O professor encontrou a turma **animada**."` → Seta: quem estava *animada*? *a turma* (Objeto Direto!) → **`PO`**.
-  - **Exemplo 2 (Rotina de Prefeitura — Verbos de nomeação/julgamento):**
-    - `"O prefeito declarou **nulo** o pregão."` → Quem é *nulo*? *o pregão* (`OD`), não o prefeito! → **`PO`**.
-  - **Exemplo 3 (Caso Limite — Mesma frase mudando a concordância muda o alvo!):**
-    - Compare `"A fiscal encontrou o contribuinte **nervoso**"` (*nervoso* no masculino = qualifica *contribuinte* → **`PO`**) vs. `"A fiscal encontrou o contribuinte **nervosa**"` (*nervosa* no feminino = qualifica *a fiscal* → **`PS`**!).
 
 - **M — Mapa de Gêmeos Confundíveis:**
   - **`PS`** → Qualifica quem manda no verbo (`"As fiscais saíram **calmas**"`).
@@ -1286,25 +1236,23 @@ Muitos candidatos travam diante de um adjetivo perto de um verbo sem saber respo
 
 Em vez de ficar tentando adivinhar pelo "sentido bonito", aplique **dois testes mecânicos de 5 segundos** que acertam 100% dos casos em prova!
 
-- **D — Definição do Zero (Os 2 Testes Oficiais):**
+- **D — Definição e Exemplos (Os 2 Testes Oficiais — Um de Cada Vez):**
   - **Teste 1 — Substituição do Objeto pelo Pronome `o / a / os / as` (Para achar `PO`):**
     - Troque o substantivo Objeto Direto pelo pronome **`o / a / os / as`**.
     - Se a qualidade **SOBRAR DO LADO DE FORA** do pronome (`"julgou-**o válido**"`, `"encontrou-**a aberta**"`) → é **Predicativo do Objeto (`PO`)**!
     - Se a qualidade **SUMIR PARA DENTRO** do pronome (`"comprou **o carro usado**"` → `"comprou-**o**"`) → era apenas qualidade fixa interna do nome (assunto do Eixo 5!).
+    - **Exemplo (`usado` some = qualidade interna fixa):** `"A família comprou o carro usado."` → `"A família comprou-**o**."` (*usado* sumiu dentro de `o` = qualidade fixa interna do nome, sem `PO`).
+    - **Exemplo (`destruído` sobra fora = `PO`):** `"A família encontrou o carro **destruído**."` → `"A família encontrou-**o destruído**."` (*destruído* sobrou do lado de fora → **`PO`**!).
   - **Teste 2 — Passar o Sujeito para o Feminino Plural (Para separar Predicativo de Advérbio):**
     - Mude o sujeito para `"As servidoras..."` / `"Elas..."`.
     - Se a qualidade **flexionar junto** (`"As fiscais saíram **preocupadas**"`) → é **Predicativo**!
     - Se a palavra **ficar travada sem concordar** (`"As fiscais falaram **alto / claro / rápido**"`) → é **Advérbio invariável**, nunca Predicativo!
+    - **Exemplo (Flexionou = `PS`):** `"Os atendentes retornaram motivados."` → `"As atendentes retornaram **motivadas**."` (flexionou = **`PS`**!).
+    - **Exemplo (Ficou invariável = Advérbio):** `"Os atendentes digitaram rápido."` → `"As atendentes digitaram **rápido**."` (não virou *rápidas* = **Advérbio**, nunca `PS`!).
 
-- **A — Analogia Concreta + 3 Exemplos Progressivos:**
+- **A — Analogia Síntese e Caso Combinado:**
   - **Analogia da Etiqueta Removível vs. Tatuagem no Papel:** Uma qualidade fixa interna faz parte do próprio documento: se você guarda o documento na pasta **`"o"`**, a qualidade some lá para dentro (`"aprovou-o"`). Já o **`PO`** é um carimbo dado pelo verbo naquela hora — mesmo guardando o documento na pasta **`"o"`**, o carimbo fica visível do lado de fora (`"julgou-o válido"`)!
-  - **Exemplo 1 (Cotidiano — Teste 1 do Pronome `o/a`):**
-    - `"A família comprou o carro usado."` → `"A família comprou-**o**."` (*usado* sumiu dentro de `o` = qualidade fixa interna do nome, sem `PO`).
-    - `"A família encontrou o carro **destruído**."` → `"A família encontrou-**o destruído**."` (*destruído* sobrou fora = **`PO`**!).
-  - **Exemplo 2 (Rotina de Prefeitura — Teste 2 do Feminino Plural):**
-    - `"Os atendentes retornaram motivados."` → `"As atendentes retornaram **motivadas**."` (flexionou = **`PS`**!).
-    - `"Os atendentes digitaram rápido."` → `"As atendentes digitaram **rápido**."` (invariável = **Advérbio**, nunca `PS`!).
-  - **Exemplo 3 (Caso Limite — Os dois testes juntos na mesma oração!):**
+  - **Exemplo Integrado (Os dois testes juntos na mesma oração):**
     - `"A comissão entregou a obra **reformada** e os técnicos saíram **satisfeitos**, falando **claro**."` → `"entregou-**a reformada**"` (`reformada` fora = **`PO`**); `"as técnicas saíram **satisfeitas**"` (`satisfeitos` varia = **`PS`**); `"as técnicas falaram **claro**"` (`claro` não varia = **Advérbio**)!
 
 - **M — Mapa de Gêmeos Confundíveis:**
@@ -1432,8 +1380,18 @@ Agora chegamos ao duelo clássico número 1 da banca Instituto ACCESS: **`Comple
 
 Mas pense na lógica real da cena! Em *"a fiscalização **do diretor**"*, quem faz a fiscalização? O diretor (**Agente**)! Já em *"a fiscalização **do prédio**"*, o prédio não pode fiscalizar nada — o prédio **recebeu/sofreu** a fiscalização (**Paciente**)! Um completa o sentido passivo da ação (**`CN`**); o outro indica quem praticou ou quem é o dono (**`AA`**). E quando a palavra anterior for **Adjetivo** ou **Advérbio** (*"útil **ao setor**"*, *"longe **da sede**"*), aí nem existe dúvida: Adjunto Adnominal só acompanha substantivo — logo depois de adjetivo ou advérbio é **100% Complemento Nominal (`CN`)**!
 
-- **D — Definição do Zero:**
-  - **Complemento Nominal (`CN`):** é o termo **OBRIGATORIAMENTE preposicionado** que completa o sentido de um **Adjetivo**, um **Advérbio** ou um **Substantivo Abstrato** (no sentido **paciente** — quem sofre/recebe a ideia!).
+- **D — Definição e Exemplos (Passo a Passo `CN × AA` — Um Critério por Vez):**
+  - **Complemento Nominal (`CN`):** é o termo **OBRIGATORIAMENTE preposicionado** que completa o sentido de um **Adjetivo**, um **Advérbio** ou um **Substantivo Abstrato** (no sentido **paciente** — quem sofre/recebe a ideia!). Siga os 3 Passos em ordem:
+  - **Passo 1 — A palavra principal é ADJETIVO ou ADVÉRBIO?** Sempre é **100% Complemento Nominal (`CN`)** (pois `AA` nunca acompanha adjetivo nem advérbio!).
+    - **Exemplo (Ligado a Adjetivo = `CN`):** `"O regulamento é útil **aos estagiários**."` → *útil* é Adjetivo → **Complemento Nominal (`CN`)**.
+  - **Passo 2 — Substantivo Concreto ou Substantivo Abstrato com Preposição ≠ `DE`:** ligado a **Substantivo Concreto** é sempre **Adjunto Adnominal (`AA`)**; já ligado a **Substantivo Abstrato** com preposição diferente de `de` (`com, em, a, por, contra`) é sempre **Complemento Nominal (`CN`)**!
+    - **Exemplo (Substantivo Concreto = `AA`):** `"A mesa **de madeira** chegou hoje."` → *mesa* é Substantivo Concreto → **Adjunto Adnominal (`AA`)**.
+    - **Exemplo Real ACCESS (Domingos Martins/ES 2023 Q10 · Preposição ≠ `DE`):** `"A preocupação **com uma votação mais prática**..."` → *preocupação* é substantivo abstrato ligado por **`com`** (não é `de`!) → Passo 2 mata direto: **Complemento Nominal (`CN`)**!
+  - **Passo 3 — Substantivo Abstrato + Preposição `DE` (`Agente` vs. `Paciente`):** se o termo com `de` **PRATICA / POSSUI** a ação (Agente) = **`AA`**; se **SOFRE / RECEBE** a ação (Paciente) = **`CN`**!
+    - **Exemplo Real ACCESS (CRBio-08 2023 Q10 · Paciente = `CN`):** `"A poluição **da água** ocorre devido à eliminação **do esgoto**..."` → *Poluição* e *eliminação* são substantivos abstratos seguidos de `de`: a água é poluída (sofre!) e o esgoto é eliminado (sofre!) → ambos são **Complementos Nominais (`CN`)**!
+    - **Exemplo Espelhado (O mesmo nome como Agente = `AA` vs. Paciente = `CN`):**
+      - `"A crítica **do vereador** repercutiu."` → O vereador **fez** a crítica (Agente!) → **`AA`**.
+      - `"A crítica **ao vereador** repercutiu."` → O vereador **recebeu** a crítica (Paciente!) → **`CN`**.
 
 <div class="edu-comp-card">
   <div class="edu-comp-header">
@@ -1490,18 +1448,8 @@ Mas pense na lógica real da cena! Em *"a fiscalização **do diretor**"*, quem 
   </div>
 </div>
 
-- **A — Analogia Concreta + 4 Exemplos Progressivos (Com Casos Reais ACCESS):**
+- **A — Analogia Síntese:**
   - **Analogia da Tesoura no Papel:** Em *"A tesoura **de ferro**"* (concreto = matéria), é **`AA`**. Já em *"O corte **do papel**"*, quem sofre o corte é o papel (paciente!) → **`CN`**! Mas em *"O corte **da tesoura**"*, a tesoura **faz** o corte (agente!) → **`AA`**!
-  - **Exemplo 1 (Cotidiano — Passo 1 e Passo 2):**
-    - `"O regulamento é útil **aos estagiários**."` → *útil* é Adjetivo (Passo 1) → **Complemento Nominal (`CN`)**.
-    - `"A mesa **de madeira** chegou hoje."` → *mesa* é Substantivo Concreto (Passo 2) → **Adjunto Adnominal (`AA`)**.
-  - **Exemplo 2 (Caso Real ACCESS — Domingos Martins/ES 2023 Q10 · Preposição ≠ `DE`):**
-    - `"A preocupação **com uma votação mais prática**..."` → *preocupação* é substantivo abstrato ligado por **`com`** (não é `de`!) → Passo 2 mata direto: **Complemento Nominal (`CN`)**!
-  - **Exemplo 3 (Caso Real ACCESS — CRBio-08 2023 Q10 · Passo 3 Paciente):**
-    - `"A poluição **da água** ocorre devido à eliminação **do esgoto**..."` → *Poluição* e *eliminação* são substantivos abstratos seguidos de `de`: a água é poluída (sofre!) e o esgoto é eliminado (sofre!) → ambos são **Complementos Nominais (`CN`)**!
-  - **Exemplo 4 (Comparação Espelhada — O mesmo nome virando `AA` ou `CN`):**
-    - `"A crítica **do vereador** repercutiu."` → O vereador **fez** a crítica (Agente!) → **`AA`**.
-    - `"A crítica **ao vereador** repercutiu."` → O vereador **recebeu** a crítica (Paciente!) → **`CN`**.
 
 - **M — Mapa de Gêmeos Confundíveis:**
   - `"favorável **à proposta**"` / `"longe **da sede**"` → Adjetivo / Advérbio → **100% `CN`**.
@@ -1537,12 +1485,17 @@ Enquanto o **Adjunto Adnominal (`AA`)** mora grudado no **Substantivo**, o **Adj
 
 E atenção máxima às **vírgulas**: na Ordem Direta (lá no final da frase), o Adjunto Adverbial **não** leva vírgula. Porém, quando o escritor o tira do fim e joga para o **início** ou **meio** da frase, a regra de pontuação muda conforme o tamanho dele!
 
-- **D — Definição do Zero:**
-  - **Adjunto Adverbial:** termo **invariável** (advérbio ou locução adverbial com preposição) que modifica um **verbo**, um **adjetivo** ou outro **advérbio**, trazendo uma circunstância.
-  - **Regra da Vírgula no Deslocamento:**
+- **D — Definição e Exemplos (Um Ponto por Vez):**
+  - **1. Adjunto Adverbial (Função Invariável):** termo **invariável** (advérbio ou locução adverbial com preposição) que modifica um **verbo**, um **adjetivo** ou outro **advérbio**, trazendo uma circunstância.
+    - **Exemplo (Varia = Predicativo vs. Invariável = Adjunto Adverbial):**
+      - `"A atendente saiu **apressada**."` → Varia para *apressado/apressadas* → **Predicativo**!
+      - `"A atendente saiu **apressadamente**."` → Invariável modificando o verbo → **Adjunto Adverbial de Modo**!
+    - **Exemplo Real ACCESS (Pref. Passos/MG 2023 Q12 · Intensidade com *quão*):** `"Mas **quão** nocivo é realmente o uso do computador para crianças?"` → Ponto de interrogação NÃO faz de *quão* advérbio de dúvida! *Quão* intensifica o adjetivo *nocivo* (`"tão / muito nocivo"`) → **Adjunto Adverbial de Intensidade**!
+  - **2. Regra da Vírgula no Deslocamento:**
     - No final (Ordem Direta): **sem vírgula** (`"Trabalhou no anexo ontem."`).
     - Deslocado para o início ou meio com **3 ou mais palavras (longo):** vírgula **OBRIGATÓRIA** (`"Na manhã de segunda-feira, o setor..."`).
     - Deslocado curto (**1 ou 2 palavras**): vírgula **facultativa** (`"Ontem(,) protocolamos a ata."`), salvo se precisar evitar dupla leitura!
+    - **Exemplo (Deslocado Longo + Meio Digital):** `"**Durante a audiência de sexta-feira**, o parecer foi entregue **por meio digital**."` → 5 palavras antecipadas = **vírgula obrigatória** (Tempo); *por meio digital* = **Meio**.
 
 **Os 10 Principais Valores Semânticos na ACCESS:**
 
@@ -1554,15 +1507,8 @@ E atenção máxima às **vírgulas**: na Ordem Direta (lá no final da frase), 
 | **7. Meio · 8. Instrumento** | *Por que meio? / Com qual objeto?* | `"pelo correio eletrônico"` / `"com a caneta oficial"` |
 | **9. Companhia · 10. Neg./Dúvida** | *Com quem? / Certeza* | `"com o secretário"` / `"não"`, `"talvez"`, `"certamente"` |
 
-- **A — Analogia Concreta + 3 Exemplos Progressivos:**
+- **A — Analogia Síntese:**
   - **Analogia do Cenário de Teatro:** O Verbo é o ator agindo no palco; o **Adjunto Adverbial** é o cenário (quando, onde, como). Você pode até empurrar a árvore de cenário para a frente do palco (vírgula obrigatória se grande!), mas ela nunca vira sujeito!
-  - **Exemplo 1 (Cotidiano — Varia vs. Invariável):**
-    - `"A atendente saiu **apressada**."` (Varia para *apressado/apressadas* → Predicativo!).
-    - `"A atendente saiu **apressadamente**."` (Invariável modificando o verbo → **Adjunto Adverbial de Modo**!).
-  - **Exemplo 2 (Rotina de Prefeitura — Meio vs. Vírgula obrigatória):**
-    - `"**Durante a audiência de sexta-feira**, o parecer foi entregue **por meio digital**."` → 5 palavras antecipadas = **vírgula obrigatória** (Tempo); *por meio digital* = **Meio**.
-  - **Exemplo 3 (Caso Real ACCESS — Pref. Passos/MG 2023 Q12 · Intensidade com *quão*):**
-    - `"Mas **quão** nocivo é realmente o uso do computador para crianças?"` → Ponto de interrogação NÃO faz de *quão* advérbio de dúvida! *Quão* intensifica o adjetivo *nocivo* (`"tão / muito nocivo"`) → **Adjunto Adverbial de Intensidade**!
 
 - **M — Mapa de Gêmeos Confundíveis:**
   - `"**Muitos** ofícios chegaram"` (varia e acompanha substantivo *ofícios*) → **`AA`**.
@@ -1578,21 +1524,20 @@ E atenção máxima às **vírgulas**: na Ordem Direta (lá no final da frase), 
 
 Às vezes, no meio da explicação, escrevemos o nome de alguém ou de um órgão e logo ao lado colocamos **outro substantivo que equivale exatamente a ele** — para explicar quem é, listar o que contém, resumir tudo numa palavra ou dar nome próprio a um termo comum (*"Birigui, **capital do calçado**"*, *"o município **de Birigui**"*). Esse termo equivalente chama-se **Aposto**.
 
-- **D — Definição do Zero (Os 4 Tipos de Aposto):**
-  1. **Aposto Explicativo:** explica ou identifica um termo anterior, **sempre isolado por vírgulas, travessões ou parênteses** (*"Birigui, **capital nacional do calçado infantil**, abrirá edital."*).
-  2. **Aposto Enumerativo:** desdobra/lista itens após dois-pontos (`:`) ou travessão (*"Três prioridades: **creches, pavimentação e saúde**."*).
-  3. **Aposto Resumitivo:** resume vários termos em uma só palavra (`tudo, nada, todos, ninguém` — *"Editais, atas, ofícios, **tudo** foi salvo."*).
-  4. **Aposto Especificativo:** **SEM VÍRGULA!** Individualiza um substantivo comum ligando diretamente o nome próprio (`"o município **de Birigui**"`, `"a Avenida **Brasil**"`, `"o prefeito **João**"`).
+- **D — Definição e Exemplos (Os 4 Tipos de Aposto — Um por Vez):**
+  1. **Aposto Explicativo:** explica ou identifica um termo anterior, **sempre isolado por vírgulas, travessões ou parênteses**.
+     - **Exemplo:** `"**Carlos, o novo estagiário**, protocolou o guia."` → `Carlos = o novo estagiário` (explica entre duas vírgulas) → **Aposto Explicativo**.
+  2. **Aposto Enumerativo:** desdobra/lista itens após dois-pontos (`:`) ou travessão.
+     - **Exemplo:** `"Três prioridades: **creches, pavimentação e saúde**."` → Lista os itens equivalentes a *Três prioridades*.
+  3. **Aposto Resumitivo:** resume vários termos anteriores em uma só palavra (`tudo, nada, todos, ninguém`).
+     - **Exemplo:** `"Editais, atas, ofícios, **tudo** foi salvo."` → **`tudo`** sintetiza todos os documentos citados.
+  4. **Aposto Especificativo:** **SEM VÍRGULA!** Individualiza um substantivo comum ligando diretamente o nome próprio (`"a Avenida **Brasil**"`, `"o prefeito **João**"`). Cuidado para não confundir com `AA` quando houver preposição `de`!
+     - **Exemplo (`Aposto Especificativo`):** `"O município **de Birigui**"` → Teste do `=`: `município = Birigui`! (identidade direta sem vírgula → **Aposto Especificativo**).
+     - **Contraste (`AA` — Falha no `=`):** `"O decreto **de Birigui**"` → `decreto ≠ Birigui`! (decreto pertence à cidade; não É a cidade!) → **Adjunto Adnominal (`AA`)**!
 
-- **A — Analogia Concreta + 3 Exemplos Progressivos:**
+- **A — Analogia Síntese e Caso Combinado:**
   - **Analogia do Crachá de Equivalência (`=`):** O **Aposto** funciona como um crachá que **equivale** ao mesmo ser já citado na frase (*João = o diretor*; *município = Birigui*).
-  - **Exemplo 1 (Cotidiano — Aposto Explicativo entre vírgulas):**
-    - `"**Carlos, o novo estagiário**, protocolou o guia."` → `Carlos = o novo estagiário` (explica entre duas vírgulas) → **Aposto Explicativo**.
-  - **Exemplo 2 (Rotina de Prefeitura — Teste do Sinal de Igual `=` contra o `AA`):**
-    - `"O município **de Birigui**"` → `município = Birigui`! (identidade direta sem vírgula) → **Aposto Especificativo**.
-    - `"O decreto **de Birigui**"` → `decreto ≠ Birigui`! (decreto pertence à cidade; não É a cidade!) → **Adjunto Adnominal (`AA`)**!
-  - **Exemplo 3 (Caso Limite — Três apostos no mesmo trecho oficial):**
-    - `"O município **de Birigui** [Especificativo], **referência administrativa** [Explicativo], definiu três metas: **agilidade, transparência e economia** [Enumerativo]."`
+  - **Exemplo Integrado (Três apostos no mesmo trecho oficial):** `"O município **de Birigui** [Especificativo], **referência administrativa** [Explicativo], definiu três metas: **agilidade, transparência e economia** [Enumerativo]."`
 
 - **M — Mapa de Gêmeos Confundíveis:**
   - `"Cidade **de Birigui**"` → `Cidade = Birigui` → **Aposto Especificativo**.
@@ -1610,21 +1555,17 @@ Para encerrar a Sintaxe da Oração Simples, falta apenas entender o único term
 
 Justamente por ser um chamamento independente de quem participa da conversa, a norma culta **exige vírgula obrigatória** isolando o Vocativo em qualquer lugar que ele apareça: no início, no meio ou no fim da frase!
 
-- **D — Definição do Zero:**
-  - **Vocativo:** é o **termo independente** (fora do Sujeito e do Predicado) usado exclusivamente para **chamar, invocar ou interpelar** o interlocutor — sempre isolado por **vírgula(s)**.
+- **D — Definição e Exemplos (Um Ponto por Vez):**
+  - **Vocativo:** é o **termo independente** (fora do Sujeito e do Predicado) usado exclusivamente para **chamar, invocar ou interpelar** o interlocutor — sempre isolado por **vírgula(s)**. Jamais confunda com o Sujeito!
+    - **Exemplo (`Vocativo ≠ Sujeito`):** `"**Carlos**, protocole o guia hoje!"` → Há uma única vírgula separando *Carlos* do verbo *protocole*: você está falando **com** Carlos (**Vocativo**), e o Sujeito de *protocole* é oculto (`você`)!
   - **As 3 Posições Obrigatórias com Vírgula:**
-    - **Início:** `"**Senhores vereadores,** apresentamos o relatório."`
-    - **Meio:** `"Apresentamos, **senhores vereadores,** o relatório."` (entre duas vírgulas!)
-    - **Fim:** `"Apresentamos o relatório, **senhores vereadores**."`
+    - **1. Início:** `"**Senhores vereadores,** apresentamos o relatório."`
+    - **2. Meio (entre duas vírgulas!):** `"Apresentamos, **senhores vereadores,** o relatório."` / `"Requeremos, **Excelentíssimo Prefeito**, a análise urgente deste parecer."`
+    - **3. Fim:** `"Apresentamos o relatório, **senhores vereadores**."`
 
-- **A — Analogia Concreta + 3 Exemplos Progressivos:**
+- **A — Analogia Síntese e Caso Combinado:**
   - **Analogia do Megafone vs. Crachá:** O **Aposto** é o crachá descrevendo alguém dentro da cena (*"Carlos, o diretor, assinou"*); já o **Vocativo** é o megafone chamando alguém pelo nome de fora da frase (*"Diretor, assine!"*).
-  - **Exemplo 1 (Cotidiano — Vocativo ≠ Sujeito):**
-    - `"**Carlos**, protocole o guia hoje!"` → Há uma única vírgula separando *Carlos* do verbo *protocole*: você está falando **com** Carlos (**Vocativo**), e o Sujeito de *protocole* é oculto (`você`)!
-  - **Exemplo 2 (Rotina de Prefeitura — Vocativo no meio da ata):**
-    - `"Requeremos, **Excelentíssimo Prefeito**, a análise urgente deste parecer."` → Chamamento intercalado entre duas vírgulas → **Vocativo**.
-  - **Exemplo 3 (Caso Limite — Vocativo + Aposto na mesma abertura oficial):**
-    - `"**Cidadãos presentes**, Birigui, **capital do calçado infantil**, crescerá mais."` → *Cidadãos presentes* (fala **COM** eles = **Vocativo**); *capital do calçado infantil* (fala **SOBRE** Birigui = **Aposto Explicativo**).
+  - **Caso Limite (Vocativo + Aposto na mesma abertura oficial):** `"**Cidadãos presentes**, Birigui, **capital do calçado infantil**, crescerá mais."` → *Cidadãos presentes* (fala **COM** eles = **Vocativo**); *capital do calçado infantil* (fala **SOBRE** Birigui = **Aposto Explicativo**).
 
 - **M — Mapa de Gêmeos Confundíveis:**
   - `"**Dr. Marcos**, assine o ofício!"` → Fala **COM** dr. Marcos + 1 vírgula antes do verbo → **Vocativo**.

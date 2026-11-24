@@ -5,6 +5,7 @@ export { ProseSection } from "./ProseSection";
 export { ConceptCard } from "./ConceptCard";
 export { AxisContextCard } from "./AxisContextCard";
 export {
+  ExampleCaseCard,
   ExampleShowcase,
   type ExampleAccent,
   type ExampleTag,

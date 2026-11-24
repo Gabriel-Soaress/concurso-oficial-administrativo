@@ -240,6 +240,43 @@ export const portuguesSemana04: RichLessonModule = {
                   accent: "indigo",
                   summary:
                     "Analisa a palavra isolada dentro da sua família gramatical: Substantivo, Adjetivo, Artigo, Numeral, Pronome, Verbo, Advérbio, Preposição ou Conjunção.",
+                  examplesTitle: "Exemplos de Morfologia (Identidade da Palavra)",
+                  examples: [
+                    {
+                      label: "Cotidiano · Substantivo",
+                      sentence: (
+                        <>
+                          “O <span className="underline decoration-indigo-500 decoration-2 font-bold">cidadão</span>{" "}
+                          solicitou a guia.”
+                        </>
+                      ),
+                      tags: [{ label: "MORFOLOGIA", value: "Substantivo", color: "sky" }],
+                      explanation:
+                        "Isolada no dicionário, a palavra 'cidadão' pertence à classe dos Substantivos (nomeia o ser).",
+                    },
+                    {
+                      label: "Caso Limite (Parte 1) · Adjetivo",
+                      sentence: (
+                        <>
+                          “O servidor <strong>alto</strong> entrou na sala.”
+                        </>
+                      ),
+                      tags: [{ label: "MORFOLOGIA", value: "Adjetivo (varia: servidora alta)", color: "emerald" }],
+                      explanation:
+                        "Aqui 'alto' caracteriza o nome servidor e concorda com ele no gênero e no plural.",
+                    },
+                    {
+                      label: "Caso Limite (Parte 2) · Advérbio",
+                      sentence: (
+                        <>
+                          “O servidor falou <strong>alto</strong> na audiência.”
+                        </>
+                      ),
+                      tags: [{ label: "MORFOLOGIA", value: "Advérbio (invariável: falaram alto)", color: "amber" }],
+                      explanation:
+                        "Agora 'alto' modifica o modo da ação de falar — não muda para o plural mesmo com 'elas falaram alto'!",
+                    },
+                  ],
                 },
                 {
                   term: "Sintaxe (Cargo de Trabalho na Frase)",
@@ -247,25 +284,10 @@ export const portuguesSemana04: RichLessonModule = {
                   accent: "emerald",
                   summary:
                     "Analisa a função relacional que a palavra exerce naquele enunciado específico: Sujeito, Predicado, Complemento do Verbo, entre outros papéis que estudaremos passo a passo.",
-                },
-              ]}
-            />
-
-            <AnalogyBox title="Analogia do Engenheiro Carlos em Birigui" tag="Identidade Fixa × Função no Contexto">
-              No registro profissional, Carlos é <strong>engenheiro civil</strong> — essa é a{" "}
-              <strong>Morfologia</strong> dele (identidade que não muda). Porém, na segunda-feira ele atua como{" "}
-              <em>palestrante</em> no auditório; na terça atua como <em>síndico</em> do prédio. O cargo que ele ocupa em
-              cada cena é a <strong>Sintaxe</strong>!
-            </AnalogyBox>
-
-            <ExampleShowcase
-              title="Exemplos Progressivos · A Mesma Palavra em Cargos Diferentes"
-              items={[
-                {
-                  level: "Exemplo 1 · Cotidiano (Substantivo 'cidadão' trocando de cargo)",
-                  accent: "indigo",
-                  cases: [
+                  examplesTitle: "Exemplos de Sintaxe (A Mesma Palavra em Cargos Diferentes)",
+                  examples: [
                     {
+                      label: "Cotidiano (A) · 'cidadão' como Sujeito",
                       sentence: (
                         <>
                           “O <span className="underline decoration-indigo-500 decoration-2 font-bold">cidadão</span>{" "}
@@ -280,6 +302,7 @@ export const portuguesSemana04: RichLessonModule = {
                         "Aqui o substantivo 'cidadão' é quem pratica a ação de solicitar e manda no verbo 'solicitou'.",
                     },
                     {
+                      label: "Cotidiano (B) · 'cidadão' como Complemento",
                       sentence: (
                         <>
                           “O atendente orientou o{" "}
@@ -293,34 +316,31 @@ export const portuguesSemana04: RichLessonModule = {
                       explanation:
                         "A classe morfológica continuou Substantivo, mas agora 'cidadão' recebe a ação de orientar — mudou de cargo sintático!",
                     },
-                  ],
-                },
-                {
-                  level: "Exemplo 2 · Rotina de Prefeitura (A palavra 'protocolo' em 3 setores)",
-                  accent: "emerald",
-                  cases: [
                     {
+                      label: "Rotina de Prefeitura (a) · 'protocolo' como Sujeito",
                       sentence: (
                         <>
-                          (a) “O <strong>protocolo</strong> funciona das 8h às 17h.”
+                          “O <strong>protocolo</strong> funciona das 8h às 17h.”
                         </>
                       ),
                       tags: [{ label: "CARGO", value: "Sujeito (tema da oração)", color: "emerald" }],
                       explanation: "É sobre o protocolo que o verbo 'funciona' declara alguma coisa.",
                     },
                     {
+                      label: "Rotina de Prefeitura (b) · 'protocolo' como Complemento",
                       sentence: (
                         <>
-                          (b) “O estagiário fechou o <strong>protocolo</strong> às 17h.”
+                          “O estagiário fechou o <strong>protocolo</strong> às 17h.”
                         </>
                       ),
                       tags: [{ label: "CARGO", value: "Complemento do Verbo (Eixo 2)", color: "indigo" }],
                       explanation: "Agora o protocolo não age mais: ele completa o sentido do verbo 'fechou'.",
                     },
                     {
+                      label: "Rotina de Prefeitura (c) · 'do protocolo' como Especificador",
                       sentence: (
                         <>
-                          (c) “A sala <strong>do protocolo</strong> passou por reforma.”
+                          “A sala <strong>do protocolo</strong> passou por reforma.”
                         </>
                       ),
                       tags: [{ label: "CARGO", value: "Especificador do nome 'sala' (Eixo 5)", color: "amber" }],
@@ -328,28 +348,15 @@ export const portuguesSemana04: RichLessonModule = {
                     },
                   ],
                 },
-                {
-                  level: "Exemplo 3 · Caso Limite (A palavra 'alto' mudando classe e papel)",
-                  accent: "amber",
-                  cases: [
-                    {
-                      sentence: (
-                        <>
-                          “O servidor <strong>alto</strong> entrou na sala.” vs. “O servidor falou <strong>alto</strong>{" "}
-                          na audiência.”
-                        </>
-                      ),
-                      tags: [
-                        { label: "1ª FRASE", value: "Adjetivo (varia: servidora alta)", color: "emerald" },
-                        { label: "2ª FRASE", value: "Advérbio (invariável: falaram alto)", color: "amber" },
-                      ],
-                      explanation:
-                        "Na 1ª frase, 'alto' caracteriza o nome servidor. Na 2ª, 'alto' modifica o modo da ação de falar — não muda para o plural mesmo com 'elas falaram alto'!",
-                    },
-                  ],
-                },
               ]}
             />
+
+            <AnalogyBox title="Analogia do Engenheiro Carlos em Birigui" tag="Identidade Fixa × Função no Contexto">
+              No registro profissional, Carlos é <strong>engenheiro civil</strong> — essa é a{" "}
+              <strong>Morfologia</strong> dele (identidade que não muda). Porém, na segunda-feira ele atua como{" "}
+              <em>palestrante</em> no auditório; na terça atua como <em>síndico</em> do prédio. O cargo que ele ocupa em
+              cada cena é a <strong>Sintaxe</strong>!
+            </AnalogyBox>
 
             <CompareGrid
               title="Mapa de Gêmeos Confundíveis · O Que a Banca Realmente Perguntou?"
@@ -412,6 +419,29 @@ export const portuguesSemana04: RichLessonModule = {
                   accent: "indigo",
                   summary:
                     "Todo enunciado capaz de transmitir um sentido completo. Sem verbo = Frase Nominal (“Atendimento suspenso.”). Com verbo = Frase Verbal (“O servidor protocolou o ofício.”).",
+                  examplesTitle: "Exemplos de Frase (Nominal vs. Verbal)",
+                  examples: [
+                    {
+                      label: "Cotidiano · Frase Nominal (Sem verbo)",
+                      sentence: "“Atenção ao horário de atendimento!”",
+                      tags: [{ label: "VERBOS", value: "Nenhum (0 orações)", color: "amber" }],
+                      explanation:
+                        "Comunica perfeitamente sem ter nenhum verbo → Frase Nominal (0 orações; não forma período).",
+                    },
+                    {
+                      label: "Caso Limite · Particípios soltos continuam Frase Nominal!",
+                      sentence: "“Material conferido e protocolado na recepção.”",
+                      tags: [{ label: "VERBOS CONJUGADOS", value: "Zero (só particípios soltos)", color: "rose" }],
+                      explanation:
+                        "Os particípios conferido e protocolado não têm verbo auxiliar conjugado antes deles (foi/está) → Frase Nominal (0 orações)!",
+                    },
+                    {
+                      label: "Cotidiano · Frase Verbal (Com verbo)",
+                      sentence: "“O guichê principal abriu pontualmente às oito horas.”",
+                      tags: [{ label: "VERBO", value: "abriu (tem ação verbal)", color: "emerald" }],
+                      explanation: "Como possui verbo comandando o sentido completo, é uma Frase Verbal.",
+                    },
+                  ],
                 },
                 {
                   term: "2. Oração (Organizada em Torno de Um Verbo ou Locução)",
@@ -419,16 +449,57 @@ export const portuguesSemana04: RichLessonModule = {
                   accent: "emerald",
                   summary:
                     "Todo enunciado completo que possui um verbo conjugado ou uma locução verbal comandando os demais termos da cena.",
-                  example:
-                    "Exemplos completos de Orações: (1) “A Prefeitura abriu as inscrições.” (2) “O fiscal vai protocolar o documento hoje.” (3) “Choveu forte em Birigui.”",
+                  note: "Regra de Ouro: Locução verbal (vai protocolar, foi assinado, deve conferir) expressa 1 única ação e conta sempre como 1 SÓ ORAÇÃO!",
+                  examplesTitle: "Exemplos de Orações (Verbo Simples e Locução Verbal)",
+                  examples: [
+                    {
+                      label: "Verbo Simples · Ação direta",
+                      sentence: "“A Prefeitura abriu as inscrições.”",
+                      tags: [{ label: "VERBO", value: "abriu = 1 Oração", color: "emerald" }],
+                      explanation: "Há 1 verbo simples comandando todos os termos da cena.",
+                    },
+                    {
+                      label: "Rotina de Prefeitura · Locução Verbal = 1 Oração",
+                      sentence: "“O Oficial Administrativo deve conferir todos os comprovantes.”",
+                      tags: [{ label: "LOCUÇÃO VERBAL", value: "deve conferir = 1 só ação", color: "emerald" }],
+                      explanation:
+                        "Apesar de haver duas palavras verbais juntas (deve + conferir), formam 1 única locução → 1 Oração!",
+                    },
+                    {
+                      label: "Fenômeno Natural · Oração sem sujeito",
+                      sentence: "“Choveu forte em Birigui.”",
+                      tags: [{ label: "VERBO", value: "Choveu = 1 Oração", color: "sky" }],
+                      explanation: "Mesmo sem alguém praticando a chuva, há verbo conjugado → é uma Oração completa.",
+                    },
+                  ],
                 },
                 {
                   term: "3. Período Simples vs. Período Composto",
                   badge: "CONTAGEM DE AÇÕES",
                   accent: "sky",
                   summary:
-                    "É a frase verbal terminada por ponto forte. Com 1 verbo simples ou 1 locução verbal = Período Simples (oração absoluta). Com 2 ou mais verbos/locuções = Período Composto.",
-                  note: "Regra de Ouro: Locução verbal (vai protocolar, foi assinado, deve conferir) = 1 única ação = 1 SÓ ORAÇÃO!",
+                    "É a frase verbal terminada por ponto forte (., !, ?, ...). Com 1 verbo simples ou 1 locução verbal = Período Simples (oração absoluta). Com 2 ou mais verbos/locuções = Período Composto.",
+                  examplesTitle: "Exemplos de Período Simples vs. Período Composto",
+                  examples: [
+                    {
+                      label: "Período Simples · 1 só oração",
+                      sentence: "“O guichê principal abriu pontualmente às oito horas.”",
+                      tags: [{ label: "CONTAGEM", value: "1 verbo (abriu) = Período Simples", color: "emerald" }],
+                      explanation: "Possui apenas uma oração absoluta encerrada pelo ponto final.",
+                    },
+                    {
+                      label: "Rotina de Prefeitura · Período Composto (2 verbos)",
+                      sentence: "“A equipe recebeu o pedido e emitiu a certidão negativa.”",
+                      tags: [{ label: "VERBOS SEPARADOS", value: "recebeu + emitiu (2 ações)", color: "indigo" }],
+                      explanation: "Existem dois verbos em eventos distintos → 2 Orações = Período Composto.",
+                    },
+                    {
+                      label: "Caso Limite · 1 Locução + 1 Verbo Simples",
+                      sentence: "“O edital será publicado amanhã, porque a comissão aprovou a minuta.”",
+                      tags: [{ label: "CONTAGEM", value: "será publicado (1) + aprovou (1) = 2", color: "amber" }],
+                      explanation: "1 locução verbal (conta 1!) + 1 verbo simples (conta 1!) → 2 Orações = Período Composto.",
+                    },
+                  ],
                 },
               ]}
             />
@@ -438,63 +509,6 @@ export const portuguesSemana04: RichLessonModule = {
               carrinho de mão leva tijolo sem motor (<strong>Frase Nominal = 0 orações</strong>); um carro com 1 motor é{" "}
               <strong>Período Simples</strong>; uma carreta com 2 motores acoplados é <strong>Período Composto</strong>!
             </AnalogyBox>
-
-            <ExampleShowcase
-              title="Exemplos Progressivos · Contando Orações Sem Nunca Errar"
-              items={[
-                {
-                  level: "Exemplo 1 · Cotidiano (Frase Nominal sem oração vs. Frase Verbal)",
-                  accent: "indigo",
-                  cases: [
-                    {
-                      sentence: "“Atenção ao horário de atendimento!”",
-                      tags: [{ label: "VERBOS", value: "Nenhum", color: "amber" }],
-                      explanation:
-                        "Comunica perfeitamente sem ter nenhum verbo → Frase Nominal (0 orações; não forma período).",
-                    },
-                    {
-                      sentence: "“O guichê principal abriu pontualmente às oito horas.”",
-                      tags: [{ label: "VERBO", value: "abriu (1 ação)", color: "emerald" }],
-                      explanation: "Há 1 verbo comandando a cena → 1 Oração = Período Simples.",
-                    },
-                  ],
-                },
-                {
-                  level: "Exemplo 2 · Rotina de Prefeitura (Locução Verbal = 1 Oração)",
-                  accent: "emerald",
-                  cases: [
-                    {
-                      sentence: "“O Oficial Administrativo deve conferir todos os comprovantes.”",
-                      tags: [{ label: "LOCUÇÃO VERBAL", value: "deve conferir = 1 só ação", color: "emerald" }],
-                      explanation:
-                        "Apesar de haver duas palavras verbais juntas (deve + conferir), formam 1 única locução → 1 Oração = Período Simples!",
-                    },
-                    {
-                      sentence: "“A equipe recebeu o pedido e emitiu a certidão negativa.”",
-                      tags: [{ label: "VERBOS SEPARADOS", value: "recebeu + emitiu (2 ações)", color: "indigo" }],
-                      explanation: "Existem dois verbos em eventos distintos → 2 Orações = Período Composto.",
-                    },
-                  ],
-                },
-                {
-                  level: "Exemplo 3 · Caso Limite (Particípios Soltos vs. Locução Real)",
-                  accent: "amber",
-                  cases: [
-                    {
-                      sentence: "“Material conferido e protocolado na recepção.”",
-                      tags: [{ label: "VERBOS CONJUGADOS", value: "Zero (só particípios soltos)", color: "rose" }],
-                      explanation:
-                        "Os particípios conferido e protocolado não têm verbo auxiliar conjugado antes deles (foi/está) → Frase Nominal (0 orações)!",
-                    },
-                    {
-                      sentence: "“O edital será publicado amanhã, porque a comissão aprovou a minuta.”",
-                      tags: [{ label: "CONTAGEM", value: "será publicado (1) + aprovou (1) = 2", color: "amber" }],
-                      explanation: "1 locução verbal (conta 1!) + 1 verbo simples (conta 1!) → 2 Orações = Período Composto.",
-                    },
-                  ],
-                },
-              ]}
-            />
 
             <KeyTable
               title="Mapa de Gêmeos Confundíveis · Frase × Oração × Período"
@@ -581,57 +595,26 @@ export const portuguesSemana04: RichLessonModule = {
             <DefinitionBlocks
               items={[
                 {
-                  term: "Sujeito (e Núcleo do Sujeito)",
+                  term: "1. Sujeito (e Núcleo do Sujeito)",
                   badge: "QUEM COMANDA O VERBO",
                   accent: "indigo",
                   summary:
                     "É o ser (pessoa, órgão, documento, objeto ou ideia) sobre o qual a oração declara algo e que, na maioria das frases, puxa o verbo para o singular ou plural.",
                   note: "Núcleo do Sujeito é a palavra principal dentro desse bloco, sem artigos ou acompanhantes: em “Os novos servidores chegaram”, o núcleo é só “servidores”.",
-                },
-                {
-                  term: "Predicado",
-                  badge: "TUDO O QUE SE DECLARA (COM O VERBO DENTRO)",
-                  accent: "emerald",
-                  summary:
-                    "É 100% do que sobra na oração declarando algo sobre o Sujeito. O verbo mora sempre dentro do Predicado — inclusive expressões de lugar ou tempo antecipadas no começo!",
-                  note: "Aviso linear: no Eixo 3 veremos casos em que o sujeito está oculto na terminação do verbo ou simplesmente não existe (como em 'choveu' ou 'há vagas'), tornando a frase inteira Predicado.",
-                },
-              ]}
-            />
-
-            <AnalogyBox title="Analogia da Manchete de Jornal" tag="Protagonista × Notícia Completa">
-              O <strong>Sujeito</strong> é o protagonista da capa da matéria (sobre quem a notícia fala); o{" "}
-              <strong>Predicado</strong> é o fato noticiado completo sobre ele (o verbo + o complemento + quando e onde
-              ocorreu).
-            </AnalogyBox>
-
-            <ExampleShowcase
-              title="Exemplos Progressivos · Partindo a Oração em Sujeito × Predicado"
-              items={[
-                {
-                  level: "Exemplo 1 · Cotidiano (Divisão limpa em ordem direta)",
-                  accent: "indigo",
-                  cases: [
+                  examplesTitle: "Exemplos · Localizando o Sujeito e Seu Núcleo",
+                  examples: [
                     {
+                      label: "Cotidiano · Ordem direta limpa",
                       sentence: "“O ônibus municipal saiu no horário.”",
-                      tags: [
-                        { label: "SUJEITO", value: "O ônibus municipal (núcleo: ônibus)", color: "indigo" },
-                        { label: "PREDICADO", value: "saiu no horário", color: "emerald" },
-                      ],
+                      tags: [{ label: "SUJEITO", value: "O ônibus municipal (núcleo: ônibus)", color: "indigo" }],
                       explanation:
-                        "Se mudássemos para dois ônibus, o verbo iria para o plural ('saíram'). Tudo o que declara a ação ('saiu no horário') forma o Predicado.",
+                        "Se mudássemos para dois ônibus, o verbo iria para o plural ('saíram'). Quem comanda o verbo é 'O ônibus municipal'.",
                     },
-                  ],
-                },
-                {
-                  level: "Exemplo 2 · Rotina de Prefeitura (Sujeito longo com 1 núcleo no singular)",
-                  accent: "emerald",
-                  cases: [
                     {
+                      label: "Rotina de Prefeitura · Sujeito longo com 1 núcleo no singular",
                       sentence: "“A nova Secretaria de Finanças aprovou o balanço anual ontem.”",
                       tags: [
                         { label: "SUJEITO", value: "A nova Secretaria de Finanças (núcleo: Secretaria)", color: "indigo" },
-                        { label: "PREDICADO", value: "aprovou o balanço anual ontem", color: "emerald" },
                       ],
                       explanation:
                         "Note que 'Finanças' está no plural, mas tem preposição 'de'. O núcleo sem preposição é 'Secretaria' (singular) → por isso o verbo fica 'aprovou'!",
@@ -639,10 +622,23 @@ export const portuguesSemana04: RichLessonModule = {
                   ],
                 },
                 {
-                  level: "Exemplo 3 · Caso Limite (Sujeito fora de lugar no final da frase)",
-                  accent: "amber",
-                  cases: [
+                  term: "2. Predicado",
+                  badge: "TUDO O QUE SE DECLARA (COM O VERBO DENTRO)",
+                  accent: "emerald",
+                  summary:
+                    "É 100% do que sobra na oração declarando algo sobre o Sujeito. O verbo mora sempre dentro do Predicado — inclusive expressões de lugar ou tempo antecipadas no começo!",
+                  note: "Aviso linear: no Eixo 3 veremos casos em que o sujeito está oculto na terminação do verbo ou simplesmente não existe (como em 'choveu' ou 'há vagas'), tornando a frase inteira Predicado.",
+                  examplesTitle: "Exemplos · Separando o Bloco do Predicado",
+                  examples: [
                     {
+                      label: "Cotidiano · O verbo mora dentro do Predicado",
+                      sentence: "“O ônibus municipal saiu no horário.”",
+                      tags: [{ label: "PREDICADO", value: "saiu no horário", color: "emerald" }],
+                      explanation:
+                        "Tudo o que declara a ação ('saiu no horário') forma o Predicado — começando obrigatoriamente pelo verbo.",
+                    },
+                    {
+                      label: "Caso Limite · Sujeito fora de lugar no final da frase",
                       sentence: "“Na sexta-feira, compareceram ao auditório três novos candidatos.”",
                       tags: [
                         { label: "SUJEITO (NO FIM)", value: "três novos candidatos", color: "indigo" },
@@ -655,6 +651,12 @@ export const portuguesSemana04: RichLessonModule = {
                 },
               ]}
             />
+
+            <AnalogyBox title="Analogia da Manchete de Jornal" tag="Protagonista × Notícia Completa">
+              O <strong>Sujeito</strong> é o protagonista da capa da matéria (sobre quem a notícia fala); o{" "}
+              <strong>Predicado</strong> é o fato noticiado completo sobre ele (o verbo + o complemento + quando e onde
+              ocorreu).
+            </AnalogyBox>
 
             <TrapAlert
               title="Pegadinha ACCESS + Teste de 5 Segundos"
@@ -679,18 +681,66 @@ export const portuguesSemana04: RichLessonModule = {
             <DefinitionBlocks
               items={[
                 {
-                  term: "Ordem Direta (Canônica)",
+                  term: "1. Ordem Direta (Canônica)",
                   badge: "SUJEITO → VERBO → RESTO",
                   accent: "indigo",
                   summary:
                     "Sequência padrão e natural do português: Sujeito → Verbo → Complemento do Verbo → Circunstância de Lugar / Tempo.",
+                  examplesTitle: "Exemplo · Ordem Direta",
+                  examples: [
+                    {
+                      label: "Rotina de Prefeitura · Os 4 blocos na sequência natural",
+                      sentence: "“A Prefeitura publicou o novo edital em Birigui.”",
+                      tags: [
+                        { label: "SUJEITO", value: "A Prefeitura", color: "indigo" },
+                        { label: "VERBO", value: "publicou", color: "emerald" },
+                        { label: "COMPLEMENTO", value: "o novo edital", color: "sky" },
+                        { label: "LUGAR", value: "em Birigui", color: "amber" },
+                      ],
+                      explanation:
+                        "Na sequência padrão, o sujeito aparece no início e tudo o que vem do verbo em diante forma o Predicado.",
+                    },
+                  ],
                 },
                 {
-                  term: "Ordem Inversa (Camuflador de Prova)",
+                  term: "2. Ordem Inversa (Camuflador de Prova)",
                   badge: "BLOCOS DESLOCADOS",
                   accent: "amber",
                   summary:
                     "Qualquer frase em que um bloco sai do lugar padrão — por exemplo, quando o lugar vem no início com vírgula ou o Sujeito aparece posposto depois do verbo.",
+                  examplesTitle: "Exemplos Progressivos · Desarmando a Ordem Inversa",
+                  examples: [
+                    {
+                      label: "Cotidiano · Sujeito no fim após tempo antecipado",
+                      sentence: "“Ontem à noite, entregou a encomenda o motorista.”",
+                      tags: [
+                        {
+                          label: "ORDEM DIRETA",
+                          value: "O motorista entregou a encomenda ontem à noite.",
+                          color: "emerald",
+                        },
+                      ],
+                      explanation:
+                        "Na ordem direta fica imediato: Sujeito = 'O motorista'; Predicado = 'entregou a encomenda ontem à noite'.",
+                    },
+                    {
+                      label: "Rotina de Prefeitura · Tempo longo antes da vírgula",
+                      sentence: "“Após ampla revisão da minuta, assinaram o termo os novos oficiais.”",
+                      tags: [{ label: "SUJEITO (NO FIM)", value: "os novos oficiais", color: "indigo" }],
+                      explanation:
+                        "Na Ordem Direta: 'Os novos oficiais assinaram o termo após ampla revisão da minuta.' Por isso 'assinaram' vai para o plural!",
+                    },
+                    {
+                      label: "Caso Real ACCESS · Pref. Contagem/MG 2026 Q02",
+                      sentence: "“Próximo à Grande Pirâmide de Quéops, o Egito inaugura o Grande Museu Egípcio.”",
+                      tags: [
+                        { label: "SUJEITO", value: "o Egito", color: "indigo" },
+                        { label: "LUGAR NO PREDICADO", value: "Próximo à Grande Pirâmide de Quéops", color: "amber" },
+                      ],
+                      explanation:
+                        "Ordem Direta: 'O Egito inaugura o Grande Museu Egípcio próximo à Grande Pirâmide de Quéops.' A expressão inicial indica lugar e faz parte do Predicado!",
+                    },
+                  ],
                 },
               ]}
             />
@@ -867,53 +917,6 @@ export const portuguesSemana04: RichLessonModule = {
               achar o crachá, você esvazia e coloca cada peça na prateleira padrão (Sujeito → Verbo → Resto).
             </AnalogyBox>
 
-            <ExampleShowcase
-              title="Exemplos Progressivos · Desarmando a Ordem Inversa"
-              items={[
-                {
-                  level: "Exemplo 1 · Cotidiano (Sujeito no fim após tempo antecipado)",
-                  accent: "indigo",
-                  cases: [
-                    {
-                      sentence: "“Ontem à noite, entregou a encomenda o motorista.”",
-                      tags: [
-                        { label: "ORDEM DIRETA", value: "O motorista entregou a encomenda ontem à noite.", color: "emerald" },
-                      ],
-                      explanation:
-                        "Na ordem direta fica imediato: Sujeito = 'O motorista'; Predicado = 'entregou a encomenda ontem à noite'.",
-                    },
-                  ],
-                },
-                {
-                  level: "Exemplo 2 · Rotina de Prefeitura (Tempo longo antes da vírgula)",
-                  accent: "emerald",
-                  cases: [
-                    {
-                      sentence: "“Após ampla revisão da minuta, assinaram o termo os novos oficiais.”",
-                      tags: [{ label: "SUJEITO (NO FIM)", value: "os novos oficiais", color: "indigo" }],
-                      explanation:
-                        "Na Ordem Direta: 'Os novos oficiais assinaram o termo após ampla revisão da minuta.' Por isso 'assinaram' vai para o plural!",
-                    },
-                  ],
-                },
-                {
-                  level: "Exemplo 3 · Caso Real ACCESS (Pref. Contagem/MG 2026 Q02)",
-                  accent: "amber",
-                  cases: [
-                    {
-                      sentence: "“Próximo à Grande Pirâmide de Quéops, o Egito inaugura o Grande Museu Egípcio.”",
-                      tags: [
-                        { label: "SUJEITO", value: "o Egito", color: "indigo" },
-                        { label: "LUGAR NO PREDICADO", value: "Próximo à Grande Pirâmide de Quéops", color: "amber" },
-                      ],
-                      explanation:
-                        "Ordem Direta: 'O Egito inaugura o Grande Museu Egípcio próximo à Grande Pirâmide de Quéops.' A expressão inicial indica lugar e faz parte do Predicado!",
-                    },
-                  ],
-                },
-              ]}
-            />
-
             <TrapAlert
               title="Pegadinha ACCESS + Teste de 5 Segundos"
               trap="Deixar o verbo no singular antes de um sujeito plural lá no final ('Falta aos setores municipais duas impressoras novas') esperando que você não note!"
@@ -1064,18 +1067,48 @@ export const portuguesSemana04: RichLessonModule = {
             <DefinitionBlocks
               items={[
                 {
-                  term: "1. Verbos Significativos (Indicam Ação ou Acontecimento → VI, VTD, VTI, VTDI)",
+                  term: "1. Verbos Significativos (Indicam Ação ou Acontecimento → Intransitivo, Transitivo Direto, Transitivo Indireto ou Bitransitivo)",
                   badge: "AÇÃO NO MUNDO",
                   accent: "indigo",
                   summary:
                     "Mostram algo acontecendo (chegar, protocolar, precisar, entregar). Conforme a ação feche nela mesma ou precise de complemento (sem preposição, com preposição, ou ambos), formam os 4 grupos de ação.",
+                  examplesTitle: "Exemplos de Verbos Significativos (Ação Real)",
+                  examples: [
+                    {
+                      label: "Cotidiano · 'andar' como caminhada física",
+                      sentence: "“O atendente andou depressa pelo corredor.”",
+                      tags: [{ label: "SENTIDO", value: "Caminhou (ação física = Verbo Intransitivo)", color: "emerald" }],
+                      explanation: "O atendente realmente moveu as pernas: é ação física que fecha nela mesma.",
+                    },
+                    {
+                      label: "Caso Limite · 'virar' como movimento físico sobre algo",
+                      sentence: "“O estagiário virou a folha.”",
+                      tags: [{ label: "SENTIDO", value: "Moveu a folha (Verbo Transitivo Direto)", color: "indigo" }],
+                      explanation: "Há um ato físico executado diretamente sobre o objeto 'a folha'.",
+                    },
+                  ],
                 },
                 {
-                  term: "2. Verbo de Ligação (Indica Apenas Estado → VL)",
+                  term: "2. Verbo de Ligação (Indica Apenas Estado)",
                   badge: "PONTE DE ESTADO",
                   accent: "emerald",
                   summary:
                     "Aqui não há ação física nenhuma: o verbo apenas conecta o Sujeito a uma qualidade, condição ou estado passageiro/permanente (ser, estar, parecer, permanecer, ficar).",
+                  examplesTitle: "Exemplos de Verbo de Ligação (Ponte de Estado)",
+                  examples: [
+                    {
+                      label: "Cotidiano · 'andar' como estado emocional",
+                      sentence: "“O atendente anda preocupado com o prazo.”",
+                      tags: [{ label: "SENTIDO", value: "Está preocupado (estado = Verbo de Ligação)", color: "amber" }],
+                      explanation: "Ele não está caminhando! 'Anda' aqui significa apenas 'está', ligando o estado ao sujeito.",
+                    },
+                    {
+                      label: "Caso Limite · 'virar' como mudança de estado",
+                      sentence: "“O novo portal virou modelo regional.”",
+                      tags: [{ label: "SENTIDO", value: "Tornou-se modelo (Verbo de Ligação)", color: "emerald" }],
+                      explanation: "Não houve movimento físico de girar nada: o verbo exprime apenas mudança de estado (= tornou-se).",
+                    },
+                  ],
                 },
                 {
                   term: "3. Regra de Ouro do Contexto (O Verbo Muda de Roupa na Frase)",
@@ -1083,6 +1116,28 @@ export const portuguesSemana04: RichLessonModule = {
                   accent: "amber",
                   summary:
                     "Nenhum verbo nasce carimbado para sempre no dicionário! O mesmo verbo (andar, pagar, virar, ficar) muda de tipo dependendo da função exata que cumpre naquela frase da prova.",
+                  examplesTitle: "Exemplo Progressivo · O Verbo 'pagar' Mudando Conforme a Frase",
+                  examples: [
+                    {
+                      label: "Uso 1 · Só a coisa paga (sem preposição)",
+                      sentence: "“A tesouraria pagou a fatura.”",
+                      tags: [{ label: "CLASSIFICAÇÃO", value: "Verbo Transitivo Direto (VTD)", color: "indigo" }],
+                      explanation: "Completa direto a pergunta 'pagou o quê?' com o alvo 'a fatura' sem preposição.",
+                    },
+                    {
+                      label: "Uso 2 · Só a pessoa/empresa paga (com preposição 'a')",
+                      sentence: "“A tesouraria pagou ao fornecedor.”",
+                      tags: [{ label: "CLASSIFICAÇÃO", value: "Verbo Transitivo Indireto (VTI)", color: "sky" }],
+                      explanation: "Quando o alvo é pessoa, a norma culta exige a preposição 'a' (ao fornecedor).",
+                    },
+                    {
+                      label: "Uso 3 · Coisa + Pessoa juntas na mesma frase",
+                      sentence: "“A tesouraria pagou a fatura ao fornecedor.”",
+                      tags: [{ label: "CLASSIFICAÇÃO", value: "Verbo Transitivo Direto e Indireto (VTDI)", color: "purple" }],
+                      explanation:
+                        "O verbo é exatamente o mesmo ('pagou'), mas agora traz os dois objetos ao mesmo tempo!",
+                    },
+                  ],
                 },
               ]}
             />
@@ -1093,59 +1148,6 @@ export const portuguesSemana04: RichLessonModule = {
               a preposição (<strong>VTI</strong>); às vezes faz duas entregas ao mesmo tempo (<strong>VTDI</strong>); e às
               vezes está desligado na garagem só retratando como o sujeito está (<strong>VL</strong>).
             </AnalogyBox>
-
-            <ExampleShowcase
-              title="Exemplos Progressivos · O Mesmo Verbo Mudando de Comportamento"
-              items={[
-                {
-                  level: "Exemplo 1 · Cotidiano ('andar' como ação completa vs. estado)",
-                  accent: "indigo",
-                  cases: [
-                    {
-                      sentence: "“O atendente andou depressa pelo corredor.”",
-                      tags: [{ label: "SENTIDO", value: "Caminhou (ação física = VI)", color: "emerald" }],
-                      explanation: "O atendente realmente moveu as pernas: é ação física que fecha nela mesma.",
-                    },
-                    {
-                      sentence: "“O atendente anda preocupado com o prazo.”",
-                      tags: [{ label: "SENTIDO", value: "Está preocupado (estado = VL)", color: "amber" }],
-                      explanation: "Ele não está caminhando! 'Anda' aqui significa apenas 'está' ligando um estado emocional.",
-                    },
-                  ],
-                },
-                {
-                  level: "Exemplo 2 · Rotina de Prefeitura ('pagar' mudando conforme o que acompanha)",
-                  accent: "emerald",
-                  cases: [
-                    {
-                      sentence: "“A tesouraria pagou a fatura.” | “Pagou ao fornecedor.” | “Pagou a fatura ao fornecedor.”",
-                      tags: [
-                        { label: "1ª", value: "Só coisa = VTD", color: "indigo" },
-                        { label: "2ª", value: "Só pessoa com 'a' = VTI", color: "sky" },
-                        { label: "3ª", value: "Coisa + Pessoa = VTDI", color: "purple" },
-                      ],
-                      explanation:
-                        "O verbo é o mesmo ('pagou'), mas muda de rótulo conforme o número e o tipo de peças presentes na oração!",
-                    },
-                  ],
-                },
-                {
-                  level: "Exemplo 3 · Caso Limite ('virar' como ação física vs. transformação de estado)",
-                  accent: "amber",
-                  cases: [
-                    {
-                      sentence: "“O estagiário virou a folha.” vs. “O novo portal virou modelo regional.”",
-                      tags: [
-                        { label: "1ª", value: "Moveu a folha (VTD)", color: "indigo" },
-                        { label: "2ª", value: "Tornou-se modelo (VL)", color: "emerald" },
-                      ],
-                      explanation:
-                        "Na 1ª há ato físico sobre um objeto; na 2ª exprime apenas mudança de estado (= tornou-se).",
-                    },
-                  ],
-                },
-              ]}
-            />
 
             <TrapAlert
               title="Pegadinha ACCESS + Teste de 5 Segundos"
@@ -1174,19 +1176,55 @@ export const portuguesSemana04: RichLessonModule = {
             <DefinitionBlocks
               items={[
                 {
-                  term: "Verbo Intransitivo (VI) = Sentido Fechado",
+                  term: "1. Verbo Intransitivo (Sentido Fechado)",
                   badge: "PREFIXO IN- = NÃO ATRAVESSA",
                   accent: "emerald",
                   summary:
                     "Verbo de ação ou acontecimento que já comunica um evento inteiro sozinho (nascer, morrer, expirar, dormir, chegar). Não exige objeto para fechar o sentido.",
+                  examplesTitle: "Exemplo · Verbo Intransitivo com Modo e Tempo",
+                  examples: [
+                    {
+                      label: "Cotidiano · Sentido fechado sem alvo",
+                      sentence: "“O bebê dormiu tranquilamente durante a madrugada.”",
+                      tags: [
+                        { label: "VERBO", value: "dormiu (Verbo Intransitivo)", color: "emerald" },
+                        { label: "CENÁRIO", value: "tranquilamente (modo) · durante a madrugada (tempo)", color: "sky" },
+                      ],
+                      explanation:
+                        "Quem dorme não 'dorme algo'. Os termos seguintes apenas explicam como e quando o sono aconteceu.",
+                    },
+                  ],
                 },
                 {
-                  term: "A Regra de Ouro do Lugar (Cenário ≠ Objeto)",
+                  term: "2. A Regra de Ouro do Lugar (Cenário ≠ Objeto)",
                   badge: "ONDE NÃO É OBJETO!",
                   accent: "sky",
                   summary:
-                    "Verbos de movimento ou permanência física (ir, chegar, voltar, morar, comparecer) seguidos de preposição indicando LUGAR (ao guichê, em Birigui, à sala) respondem ONDE/AONDE — portanto NÃO têm objeto e continuam VI!",
+                    "Verbos de movimento ou permanência física (ir, chegar, voltar, morar, comparecer) seguidos de preposição indicando LUGAR (ao guichê, em Birigui, à sala) respondem ONDE/AONDE — portanto NÃO têm objeto e continuam Intransitivos!",
                   note: "Teste de 5s: coloque um ponto final imaginário depois do verbo ou veja se tudo que vem após só responde ONDE / QUANDO / COMO.",
+                  examplesTitle: "Exemplos · Verbo de Movimento + Lugar Não Vira Objeto",
+                  examples: [
+                    {
+                      label: "Rotina de Prefeitura · Chegar + Lugar + Tempo",
+                      sentence: "“Os requerimentos urgentes chegaram ao setor de compras ainda pela manhã.”",
+                      tags: [
+                        { label: "VERBO", value: "chegaram (Verbo Intransitivo)", color: "emerald" },
+                        { label: "ONDE?", value: "ao setor de compras (LUGAR, não objeto!)", color: "amber" },
+                      ],
+                      explanation:
+                        "Se parássemos em 'chegaram', a ação faria sentido completo. 'Ao setor de compras' indica lugar físico — nunca vira objeto indireto!",
+                    },
+                    {
+                      label: "Caso Limite · Crase em lugar continua Intransitivo!",
+                      sentence: "“Todos os fiscais compareceram à audiência pública no auditório central.”",
+                      tags: [
+                        { label: "VERBO", value: "compareceram (Verbo Intransitivo)", color: "emerald" },
+                        { label: "ARMADILHA DA CRASE", value: "à audiência = AONDE/ONDE (lugar do evento)", color: "rose" },
+                      ],
+                      explanation:
+                        "Não se assuste com a crase em 'à audiência pública': na análise tradicional de concursos, verbo de movimento + destino físico classifica-se como Intransitivo!",
+                    },
+                  ],
                 },
               ]}
             />
@@ -1196,57 +1234,6 @@ export const portuguesSemana04: RichLessonModule = {
               qualquer sala (<strong>VI</strong>). Você pode até dizer <em>onde</em> acendeu (<em>no corredor</em>) ou{" "}
               <em>quando</em> (<em>ontem à noite</em>), mas ela nunca precisa ser ligada a uma tomada externa!
             </AnalogyBox>
-
-            <ExampleShowcase
-              title="Exemplos Progressivos · Verbo Intransitivo (VI) e a Regra do Lugar"
-              items={[
-                {
-                  level: "Exemplo 1 · Cotidiano (Sentido fechado com modo e tempo)",
-                  accent: "indigo",
-                  cases: [
-                    {
-                      sentence: "“O bebê dormiu tranquilamente durante a madrugada.”",
-                      tags: [
-                        { label: "VERBO", value: "dormiu (VI)", color: "emerald" },
-                        { label: "CENÁRIO", value: "tranquilamente (modo) · durante a madrugada (tempo)", color: "sky" },
-                      ],
-                      explanation:
-                        "Quem dorme não 'dorme algo'. Os termos seguintes apenas explicam como e quando o sono aconteceu.",
-                    },
-                  ],
-                },
-                {
-                  level: "Exemplo 2 · Rotina de Prefeitura (Chegar + Lugar + Tempo)",
-                  accent: "emerald",
-                  cases: [
-                    {
-                      sentence: "“Os requerimentos urgentes chegaram ao setor de compras ainda pela manhã.”",
-                      tags: [
-                        { label: "VERBO", value: "chegaram (VI)", color: "emerald" },
-                        { label: "ONDE?", value: "ao setor de compras (LUGAR, não objeto!)", color: "amber" },
-                      ],
-                      explanation:
-                        "Se parássemos em 'chegaram', a ação faria sentido completo. 'Ao setor de compras' indica lugar físico — nunca vira objeto indireto!",
-                    },
-                  ],
-                },
-                {
-                  level: "Exemplo 3 · Caso Limite (Crase em lugar continua sendo VI!)",
-                  accent: "amber",
-                  cases: [
-                    {
-                      sentence: "“Todos os fiscais compareceram à audiência pública no auditório central.”",
-                      tags: [
-                        { label: "VERBO", value: "compareceram (VI)", color: "emerald" },
-                        { label: "ARMADILHA DA CRASE", value: "à audiência = AONDE/ONDE (lugar do evento)", color: "rose" },
-                      ],
-                      explanation:
-                        "Não se assuste com a crase em 'à audiência pública': na análise tradicional de concursos, verbo de movimento + destino físico classifica-se como VI!",
-                    },
-                  ],
-                },
-              ]}
-            />
 
             <KeyTable
               title="Mapa de Gêmeos Confundíveis · Cenário (VI) vs. Alvo Direto (VTD)"
@@ -1338,17 +1325,22 @@ export const portuguesSemana04: RichLessonModule = {
                   ],
                 },
                 {
-                  level: "Exemplo 3 · Caso Limite (Artigo 'a' no VTD vs. Crase 'à' com preposição)",
+                  level: "Exemplo 3 · Caso Limite (Artigo 'a' sem preposição vs. Crase 'à' com preposição)",
                   accent: "amber",
                   cases: [
                     {
-                      sentence: "“O coordenador revisou a portaria.” vs. “O coordenador obedeceu à portaria.”",
-                      tags: [
-                        { label: "TROCA MASCULINA 1", value: "revisou O decreto → VTD", color: "emerald" },
-                        { label: "TROCA MASCULINA 2", value: "obedeceu AO decreto → VTI", color: "rose" },
-                      ],
+                      label: "Frase A · Artigo 'a' (sem preposição)",
+                      sentence: "“O coordenador revisou a portaria.”",
+                      tags: [{ label: "TROCA MASCULINA", value: "revisou O decreto → Verbo Transitivo Direto", color: "emerald" }],
                       explanation:
-                        "Na 1ª frase, 'a' é apenas artigo feminino (vira 'o decreto' = sem preposição = VTD). Na 2ª, há crase 'à' (vira 'ao decreto' = tem preposição = VTI!).",
+                        "Aqui 'a' é apenas artigo feminino: ao trocar para o masculino vira 'o decreto' (sem preposição) → Verbo Transitivo Direto + Objeto Direto.",
+                    },
+                    {
+                      label: "Frase B · Crase 'à' (esconde preposição 'a')",
+                      sentence: "“O coordenador obedeceu à portaria.”",
+                      tags: [{ label: "TROCA MASCULINA", value: "obedeceu AO decreto → Verbo Transitivo Indireto", color: "rose" }],
+                      explanation:
+                        "Aqui há crase 'à': ao trocar para o masculino aparece o 'ao' ('ao decreto'), revelando a preposição obrigatória → Verbo Transitivo Indireto!",
                     },
                   ],
                 },
@@ -1635,18 +1627,30 @@ export const portuguesSemana04: RichLessonModule = {
             <DefinitionBlocks
               items={[
                 {
-                  term: "Verbo de Ligação (VL)",
+                  term: "1. Verbo de Ligação (Ponte de Estado)",
                   badge: "ZERO AÇÃO · SÓ PONTE DE ESTADO",
                   accent: "amber",
                   summary:
                     "Verbo que não indica ação nem movimento: atua apenas como ponte conectando o Sujeito a uma qualidade, condição ou estado (ser, estar, parecer, permanecer, continuar, ficar, andar, tornar-se, virar, viver).",
-                },
-                {
-                  term: "Teste de 5s ('Verbo Mudando de Roupa')",
-                  badge: "TROQUE POR SER / ESTAR",
-                  accent: "rose",
-                  summary:
-                    "Veja se você consegue trocar o verbo por ser ou estar mantendo uma qualidade do sujeito ('anda cansado' = 'está cansado' → VL!). Se indicar movimento físico ('anda depressa') ou lugar ('está no arquivo'), vira VI!",
+                  examplesTitle: "Exemplos · Verbo de Ligação Conectando Estado",
+                  examples: [
+                    {
+                      label: "Cotidiano · Mudança de estado emocional",
+                      sentence: "“O cidadão ficou aliviado com a resposta.”",
+                      tags: [{ label: "FUNÇÃO", value: "Verbo de Ligação (cidadão = aliviado)", color: "amber" }],
+                      explanation:
+                        "Ninguém executa uma ação física chamada 'ficar': é apenas mudança de estado do cidadão.",
+                    },
+                    {
+                      label: "Rotina de Prefeitura · Continuidade e Aparência",
+                      sentence: "“Todos os balancetes permaneceram corretos e a planilha parecia atualizada.”",
+                      tags: [
+                        { label: "permaneceram", value: "Verbo de Ligação (continuidade)", color: "amber" },
+                        { label: "parecia", value: "Verbo de Ligação (aparência)", color: "sky" },
+                      ],
+                      explanation: "Ambos os verbos apenas ligam os sujeitos às suas qualidades/estados.",
+                    },
+                  ],
                 },
               ]}
             />
@@ -1664,52 +1668,35 @@ export const portuguesSemana04: RichLessonModule = {
             />
 
             <AnalogyBox title="Analogia do Sinal de Igual (=) com Filtro de Tempo" tag="Sujeito = Qualidade">
-              O <strong>VL</strong> funciona igual ao sinal <strong>=</strong> da matemática ligando o sujeito ao seu
+              O <strong>Verbo de Ligação</strong> funciona igual ao sinal <strong>=</strong> da matemática ligando o sujeito ao seu
               estado (<em>servidor = tranquilo</em>), acrescentando apenas o filtro de duração ou aparência (<em>é</em> =
               sempre; <em>está</em> = hoje; <em>ficou</em> = passou a ser; <em>permaneceu</em> = continuou;{" "}
               <em>parece</em> = aparenta).
             </AnalogyBox>
 
-            <ExampleShowcase
-              title="Exemplos Progressivos · Verbo de Ligação (VL) vs. Ação e Lugar"
+            <DefinitionBlocks
               items={[
                 {
-                  level: "Exemplo 1 · Cotidiano (Mudança de estado emocional = VL)",
-                  accent: "indigo",
-                  cases: [
+                  term: "2. Teste de 5 Segundos (“Verbo Mudando de Roupa”: Lugar vs. Estado)",
+                  badge: "TROQUE POR SER / ESTAR",
+                  accent: "rose",
+                  summary:
+                    "Veja se você consegue trocar o verbo por ser ou estar mantendo uma qualidade do sujeito ('anda cansado' = 'está cansado' → Verbo de Ligação!). Se indicar movimento físico ('anda depressa') ou lugar no espaço ('ficaram na gaveta', 'está no arquivo'), NÃO é Verbo de Ligação — vira Verbo Intransitivo!",
+                  examplesTitle: "Caso Limite · Lugar Físico vs. Estado do Sujeito",
+                  examples: [
                     {
-                      sentence: "“O cidadão ficou aliviado com a resposta.”",
-                      tags: [{ label: "FUNÇÃO", value: "VL (cidadão = aliviado após a resposta)", color: "amber" }],
-                      explanation: "Ninguém executa uma ação física chamada 'ficar': é apenas mudança de estado do cidadão.",
-                    },
-                  ],
-                },
-                {
-                  level: "Exemplo 2 · Rotina de Prefeitura (Continuidade e Aparência)",
-                  accent: "emerald",
-                  cases: [
-                    {
-                      sentence: "“Todos os balancetes permaneceram corretos e a planilha parecia atualizada.”",
-                      tags: [
-                        { label: "permaneceram", value: "VL (continuidade)", color: "amber" },
-                        { label: "parecia", value: "VL (aparência)", color: "sky" },
-                      ],
-                      explanation: "Ambos os verbos apenas ligam os sujeitos às suas qualidades/estados.",
-                    },
-                  ],
-                },
-                {
-                  level: "Exemplo 3 · Caso Limite ('Ficar' e 'Estar' com lugar NÃO são VL!)",
-                  accent: "amber",
-                  cases: [
-                    {
-                      sentence: "“Os documentos ficaram na gaveta.” vs. “Os funcionários ficaram atentos.”",
-                      tags: [
-                        { label: "1ª FRASE", value: "na gaveta = LUGAR → VI!", color: "rose" },
-                        { label: "2ª FRASE", value: "atentos = ESTADO → VL!", color: "emerald" },
-                      ],
+                      label: "Armadilha · Com LUGAR físico NÃO é Verbo de Ligação!",
+                      sentence: "“Os documentos ficaram na gaveta.”",
+                      tags: [{ label: "TERMO SEGUINTE", value: "na gaveta = LUGAR → Verbo Intransitivo!", color: "rose" }],
                       explanation:
-                        "Olhe para o que vem depois do verbo: lugar no espaço (na gaveta, no arquivo) não expressa qualidade do sujeito, logo o verbo funciona como VI!",
+                        "Olhe para o que vem depois do verbo: lugar no espaço (na gaveta, no arquivo) não expressa qualidade do sujeito — logo, 'ficaram' funciona aqui como Verbo Intransitivo!",
+                    },
+                    {
+                      label: "Uso Real · Com QUALIDADE/ESTADO é Verbo de Ligação!",
+                      sentence: "“Os funcionários ficaram atentos.”",
+                      tags: [{ label: "TERMO SEGUINTE", value: "atentos = ESTADO → Verbo de Ligação!", color: "emerald" }],
+                      explanation:
+                        "Aqui 'atentos' expressa o estado dos funcionários (equivalente a 'estavam atentos') — confirmando o Verbo de Ligação.",
                     },
                   ],
                 },
@@ -1818,12 +1805,82 @@ export const portuguesSemana04: RichLessonModule = {
             <DefinitionBlocks
               items={[
                 {
-                  term: "Armadilha da 'Falsa Preposição' (Pref. Contagem/MG 2026 Q01)",
+                  term: "1. Armadilha da 'Falsa Preposição' (Pref. Contagem/MG 2026 Q01)",
                   badge: "TESTE DO 'ISSO'",
                   accent: "rose",
                   summary:
                     "Existe uma preposição dentro do bloco após o verbo, mas NÃO foi o verbo quem pediu aquela preposição — quem pediu foi um nome ou adjetivo lá dentro do complemento!",
-                  note: "Teste infalível de 5s: troque TODO o complemento por ISSO. Se encaixar liso 'exibe ISSO' (sem preposição antes de ISSO), o verbo é VTD 100%!",
+                  note: "Teste infalível de 5s: troque TODO o complemento por ISSO. Se encaixar liso 'exibe ISSO' (sem preposição antes de ISSO), o verbo é Transitivo Direto 100%!",
+                  examplesTitle: "Exemplos · Desarmando a Falsa Preposição com o Teste de 'ISSO'",
+                  examples: [
+                    {
+                      label: "Cotidiano · Preposição interna pertence ao nome",
+                      sentence: "“A técnica consertou a impressora de jato contínuo.”",
+                      tags: [{ label: "TESTE", value: "consertou ISSO → Verbo Transitivo Direto!", color: "emerald" }],
+                      explanation:
+                        "Quem pediu a preposição 'de' foi o nome 'impressora' (tipo de impressora), jamais o verbo 'consertou'!",
+                    },
+                    {
+                      label: "Caso Real ACCESS · Pref. Contagem/MG 2026 Q01",
+                      sentence: "“O edifício monumental... exibe fachada revestida por hieróglifos e alabastro translúcido...”",
+                      tags: [
+                        {
+                          label: "TESTE DO ISSO",
+                          value: "“O edifício exibe ISSO” → Verbo Transitivo Direto puro!",
+                          color: "emerald",
+                        },
+                      ],
+                      explanation:
+                        "Ninguém diz 'exibe POR ISSO'! Quem exigiu a preposição 'por' foi a palavra 'revestida' (revestida por hieróglifos). Logo, 'exibe' é Verbo Transitivo Direto puro!",
+                    },
+                  ],
+                },
+              ]}
+            />
+
+            <AnalogyBox title="Analogia da Caixa com Etiqueta Dentro" tag="VTD × Preposição Interna">
+              O verbo <strong>Transitivo Direto</strong> entrega uma <strong>caixa fechada</strong> (<em>“ISSO”</em>). Se lá dentro da
+              caixa há um rótulo escrito <em>“por hieróglifos”</em>, essa preposição pertence ao conteúdo lá dentro —
+              não foi o verbo quem precisou de ponte!
+            </AnalogyBox>
+
+            <DefinitionBlocks
+              items={[
+                {
+                  term: "2. As 5 Regências Campeãs em Concursos Municipais (Fala Informal vs. Norma Culta)",
+                  badge: "TROCA DE SENTIDO",
+                  accent: "sky",
+                  summary:
+                    "Na fala informal costumamos omitir a preposição obrigatória ('assistir o filme', 'obedecer o chefe'). Na prova escrita, cada sentido desses 5 verbos exige ou dispensa preposição com rigor.",
+                  examplesTitle: "Exemplos na Rotina de Prefeitura · Regências em Ação",
+                  examples: [
+                    {
+                      label: "Regência 1 · 'Assistir' no sentido de presenciar",
+                      sentence: "“Os vereadores assistiram à sessão.”",
+                      tags: [
+                        {
+                          label: "assistiram à",
+                          value: "= presenciaram → Verbo Transitivo Indireto (prep. 'a')",
+                          color: "sky",
+                        },
+                      ],
+                      explanation:
+                        "Assistir (= ver/presenciar) exige preposição A obrigatória (fundida com o artigo 'a' formando crase 'à').",
+                    },
+                    {
+                      label: "Regência 2 · 'Pagar' com coisa + pessoa juntos",
+                      sentence: "“O tesoureiro pagou o salário aos servidores.”",
+                      tags: [
+                        {
+                          label: "pagou X aos",
+                          value: "coisa (Objeto Direto) + pessoa (Objeto Indireto) → Bitransitivo",
+                          color: "purple",
+                        },
+                      ],
+                      explanation:
+                        "Pagar coisa não leva preposição (Objeto Direto); pagar pessoa exige preposição A (Objeto Indireto). Juntos formam Verbo Transitivo Direto e Indireto!",
+                    },
+                  ],
                 },
               ]}
             />
@@ -1837,57 +1894,6 @@ export const portuguesSemana04: RichLessonModule = {
                 ["Obedecer / Desobedecer", "(Na norma culta, nunca é VTD!)", "Sempre VTI com prep. A (“obedece às leis / lhe obedece”)"],
                 ["Pagar / Perdoar", "COISA = VTD (“pagou a guia / a dívida”)", "PESSOA = VTI com prep. A (“pagou ao servidor”)"],
                 ["Aspirar", "= Inalar / cheirar (“aspirou o ar puro”)", "= Desejar cargo (“aspira ao cargo público” → prep. A)"],
-              ]}
-            />
-
-            <AnalogyBox title="Analogia da Caixa com Etiqueta Dentro" tag="VTD × Preposição Interna">
-              O verbo <strong>VTD</strong> entrega uma <strong>caixa fechada</strong> (<em>“ISSO”</em>). Se lá dentro da
-              caixa há um rótulo escrito <em>“por hieróglifos”</em>, essa preposição pertence ao conteúdo lá dentro —
-              não foi o verbo quem precisou de ponte!
-            </AnalogyBox>
-
-            <ExampleShowcase
-              title="Exemplos Progressivos · Falsa Preposição & Regências Campeãs"
-              items={[
-                {
-                  level: "Exemplo 1 · Cotidiano (Desarmando preposição interna com 'ISSO')",
-                  accent: "indigo",
-                  cases: [
-                    {
-                      sentence: "“A técnica consertou a impressora de jato contínuo.”",
-                      tags: [{ label: "TESTE", value: "consertou ISSO → VTD!", color: "emerald" }],
-                      explanation:
-                        "Quem pediu a preposição 'de' foi o nome 'impressora' (tipo de impressora), jamais o verbo 'consertou'!",
-                    },
-                  ],
-                },
-                {
-                  level: "Exemplo 2 · Rotina de Prefeitura (Regências com troca de preposição)",
-                  accent: "emerald",
-                  cases: [
-                    {
-                      sentence: "“Os vereadores assistiram à sessão.” | “O tesoureiro pagou o salário aos servidores.”",
-                      tags: [
-                        { label: "assistiram à", value: "= presenciaram → VTI (prep. a)", color: "sky" },
-                        { label: "pagou X aos", value: "coisa (OD) + pessoa (OI) → VTDI", color: "purple" },
-                      ],
-                      explanation:
-                        "Assistir (= ver) exige preposição A; pagar coisa + pessoa une OD e OI virando VTDI.",
-                    },
-                  ],
-                },
-                {
-                  level: "Exemplo 3 · Caso Real ACCESS (Pref. Contagem/MG 2026 Q01)",
-                  accent: "amber",
-                  cases: [
-                    {
-                      sentence: "“O edifício monumental... exibe fachada revestida por hieróglifos e alabastro translúcido...”",
-                      tags: [{ label: "TESTE DO ISSO", value: "“O edifício exibe ISSO” → VTD puro!", color: "emerald" }],
-                      explanation:
-                        "Ninguém diz 'exibe POR ISSO'! Quem exigiu a preposição 'por' foi a palavra 'revestida' (revestida por hieróglifos). Logo, 'exibe' é VTD puro!",
-                    },
-                  ],
-                },
               ]}
             />
 
@@ -1919,88 +1925,115 @@ export const portuguesSemana04: RichLessonModule = {
             <DefinitionBlocks
               items={[
                 {
-                  term: "Endereços Fixos: o/a/lo/no (OD) vs. lhe/lhes (OI)",
+                  term: "1. Endereços Fixos: o/a/lo/no (Objeto Direto) vs. lhe/lhes (Objeto Indireto)",
                   badge: "PROIBIDO TROCAR!",
                   accent: "indigo",
                   summary:
-                    "o, a, os, as (e variantes lo/la após r/s/z; no/na após som nasal) substituem EXCLUSIVAMENTE Objeto Direto (VTD). Já lhe / lhes substituem EXCLUSIVAMENTE Objeto Indireto com preposição 'a' para pessoa (VTI).",
+                    "o, a, os, as (e variantes lo/la após r/s/z; no/na após som nasal) substituem EXCLUSIVAMENTE Objeto Direto (Verbo Transitivo Direto). Já lhe / lhes substituem EXCLUSIVAMENTE Objeto Indireto com preposição 'a' para pessoa (Verbo Transitivo Indireto).",
+                  examplesTitle: "Exemplos · Certo vs. Errado na Escolha entre 'o' e 'lhe'",
+                  examples: [
+                    {
+                      label: "Certo · Verbo Transitivo Direto pede 'o'",
+                      sentence: "“Conheço-o.” (de 'Conheço o diretor')",
+                      verdict: "right",
+                      explanation: "Conhecer = Verbo Transitivo Direto (quem conhece, conhece alguém sem preposição) → pede O.",
+                    },
+                    {
+                      label: "Certo · Verbo Transitivo Indireto com 'a' pede 'lhe'",
+                      sentence: "“Agradeço-lhe.” (de 'Agradeço ao cidadão')",
+                      verdict: "right",
+                      explanation: "Agradecer a alguém = Verbo Transitivo Indireto com preposição 'a' → pede LHE.",
+                    },
+                    {
+                      label: "Armadilha · Proibido usar 'lhe' em Verbo Transitivo Direto",
+                      sentence: "“Conheço-lhe.”",
+                      verdict: "wrong",
+                      explanation: "Inversão proibida! Conhecer não pede preposição 'a', portanto não aceita 'lhe'.",
+                    },
+                    {
+                      label: "Armadilha · Proibido usar 'o/no' em Verbo Transitivo Indireto",
+                      sentence: "“Os servidores obedecem-no rigorosamente.”",
+                      verdict: "wrong",
+                      explanation: "Obedecer exige preposição 'a' (obedece A alguém) — logo não aceita 'no'; o certo é obedecem-lhe!",
+                    },
+                  ],
                 },
                 {
-                  term: "Pronomes Camaleões (me, te, se, nos, vos)",
+                  term: "2. Pronomes Camaleões (me, te, se, nos, vos)",
                   badge: "DEPENDEM DO VERBO",
                   accent: "purple",
                   summary:
-                    "Não têm cargo fixo sozinhos: com VTD exercem papel de OD ('Elogiou-me' = elogiou eu); com VTI exercem papel de OI ('Obedeceu-me' = obedeceu a mim).",
+                    "Não têm cargo fixo sozinhos: com Verbo Transitivo Direto exercem papel de Objeto Direto ('Elogiou-me' = elogiou eu); com Verbo Transitivo Indireto exercem papel de Objeto Indireto ('Obedeceu-me' = obedeceu a mim).",
+                  examplesTitle: "Exemplos · O Mesmo Pronome 'nos' Mudando de Função",
+                  examples: [
+                    {
+                      label: "Com Verbo Transitivo Direto → Objeto Direto",
+                      sentence: "“O chefe convocou-nos.”",
+                      tags: [{ label: "convocou-NOS", value: "Verbo Transitivo Direto → nos = Objeto Direto", color: "indigo" }],
+                      explanation: "Quem convoca, convoca alguém (sem preposição), então 'nos' vale como Objeto Direto.",
+                    },
+                    {
+                      label: "Com Verbo Transitivo Indireto → Objeto Indireto",
+                      sentence: "“O chefe respondeu-nos.”",
+                      tags: [{ label: "respondeu-NOS", value: "Verbo Transitivo Indireto → nos = Objeto Indireto", color: "purple" }],
+                      explanation: "Quem responde a alguém responde COM preposição 'a', então o mesmo 'nos' vira Objeto Indireto!",
+                    },
+                  ],
                 },
                 {
-                  term: "OD Preposicionado & Objeto Pleonástico",
-                  badge: "CASOS ESPECIAIS",
+                  term: "3. Objeto Direto Preposicionado (Preposição Opcional vs. Objeto Indireto Real)",
+                  badge: "TESTE DA REMOÇÃO",
                   accent: "amber",
                   summary:
-                    "OD Preposicionado: verbo VTD recebe preposição opcional removível sem estragar a frase ('Cumpriu com o dever' = 'Cumpriu o dever'). Pleonástico: antecipa o objeto e o repete com um pronome depois ('O ofício, já o protocolei').",
+                    "Ocorre quando um Verbo Transitivo Direto recebe uma preposição opcional estilística que pode ser removida sem estragar a frase ('Cumpriu com o dever' = 'Cumpriu o dever'). Se tirar a preposição destruir a frase, é Objeto Indireto real!",
+                  examplesTitle: "Exemplos · Como Testar Removendo a Preposição",
+                  examples: [
+                    {
+                      label: "Objeto Direto Preposicionado · Preposição removível",
+                      sentence: "“A secretária cumpriu com o dever.”",
+                      tags: [{ label: "TESTE REMOÇÃO", value: "“cumpriu o dever” ✅ → Objeto Direto Preposicionado", color: "emerald" }],
+                      explanation:
+                        "Tirando a preposição 'com', 'cumpriu o dever' continua perfeito na norma culta (Verbo Transitivo Direto com preposição estilística).",
+                    },
+                    {
+                      label: "Objeto Indireto Obrigatório · Preposição insubstituível",
+                      sentence: "“O servidor precisa de autorização.”",
+                      tags: [{ label: "TESTE REMOÇÃO", value: "“precisa autorização” ❌ → Objeto Indireto obrigatório", color: "rose" }],
+                      explanation:
+                        "Em 'precisa de', apagar a preposição 'de' quebra a norma culta — logo o verbo é Transitivo Indireto com Objeto Indireto real!",
+                    },
+                  ],
+                },
+                {
+                  term: "4. Objeto Pleonástico (Ênfase por Repetição)",
+                  badge: "RETOMADA ENFÁTICA",
+                  accent: "sky",
+                  summary:
+                    "O autor antecipa o objeto no início da frase para dar destaque e logo depois o repete com um pronome oblíquo grudado no verbo ('O ofício, já o protocolei').",
+                  examplesTitle: "Exemplos · Objeto Direto e Indireto Pleonásticos",
+                  examples: [
+                    {
+                      label: "Objeto Direto Pleonástico",
+                      sentence: "“O ofício, já o protocolei.”",
+                      tags: [{ label: "O (PLEONÁSTICO)", value: "retoma 'O ofício' sem preposição", color: "indigo" }],
+                      explanation: "O pronome 'o' repete enfaticamente o Objeto Direto antecipado no começo da frase.",
+                    },
+                    {
+                      label: "Objeto Indireto Pleonástico",
+                      sentence: "“Ao contribuinte, não lhe negamos ajuda.”",
+                      tags: [{ label: "LHE (PLEONÁSTICO)", value: "retoma 'Ao contribuinte'", color: "amber" }],
+                      explanation: "O pronome 'lhe' retoma enfaticamente o Objeto Indireto antecipado 'Ao contribuinte'.",
+                    },
+                  ],
                 },
               ]}
             />
 
             <AnalogyBox title="Analogia das Chaves de Boca" tag="Cada Chave no Seu Parafuso">
-              O pronome <strong>o/a/lo/no</strong> é a chave fixa exclusiva do <strong>VTD (OD)</strong>;{" "}
-              <strong>lhe</strong> é a chave do <strong>VTI com preposição a (OI)</strong>; e os camaleões{" "}
+              O pronome <strong>o/a/lo/no</strong> é a chave fixa exclusiva do <strong>Objeto Direto (VTD)</strong>;{" "}
+              <strong>lhe</strong> é a chave do <strong>Objeto Indireto com preposição a (VTI)</strong>; e os camaleões{" "}
               <strong>me/te/se/nos/vos</strong> são chaves ajustáveis que mudam conforme o verbo da oração!
             </AnalogyBox>
-
-            <ExampleShowcase
-              title="Exemplos Progressivos · Pronomes, Camaleões e Casos Especiais"
-              items={[
-                {
-                  level: "Exemplo 1 · Cotidiano (Endereço certo vs. errado de o/a e lhe)",
-                  accent: "indigo",
-                  cases: [
-                    {
-                      sentence: "“Conheço-o.” (de 'Conheço o diretor') | “Agradeço-lhe.” (de 'Agradeço ao cidadão')",
-                      verdict: "right",
-                      explanation: "Conhecer = VTD → pede O. Agradecer a alguém = VTI → pede LHE.",
-                    },
-                    {
-                      sentence: "“Conheço-lhe.” | “Os servidores obedecem-no rigorosamente.”",
-                      verdict: "wrong",
-                      explanation:
-                        "Inversão proibida! Conhecer não pede 'a' (não aceita lhe), e obedecer pede 'a' (não aceita no; o certo é obedecem-lhe)!",
-                    },
-                  ],
-                },
-                {
-                  level: "Exemplo 2 · Rotina de Prefeitura (Camaleões e Pleonasmo)",
-                  accent: "emerald",
-                  cases: [
-                    {
-                      sentence: "“O chefe convocou-nos.” | “O chefe respondeu-nos.” | “Ao contribuinte, não lhe negamos ajuda.”",
-                      tags: [
-                        { label: "convocou-NOS", value: "VTD → nos = OD", color: "indigo" },
-                        { label: "respondeu-NOS", value: "VTI → nos = OI", color: "purple" },
-                        { label: "LHE (PLEONÁSTICO)", value: "repete 'Ao contribuinte'", color: "amber" },
-                      ],
-                      explanation:
-                        "O mesmo pronome 'nos' vira OD com verbo direto e OI com verbo indireto; e 'lhe' retomando 'Ao contribuinte' forma OI Pleonástico.",
-                    },
-                  ],
-                },
-                {
-                  level: "Exemplo 3 · Caso Limite (OD Preposicionado vs. OI Real)",
-                  accent: "amber",
-                  cases: [
-                    {
-                      sentence: "“A secretária cumpriu com o dever.” vs. “O servidor precisa de autorização.”",
-                      tags: [
-                        { label: "TESTE REMOÇÃO 1", value: "“cumpriu o dever” ✅ → OD Preposicionado", color: "emerald" },
-                        { label: "TESTE REMOÇÃO 2", value: "“precisa autorização” ❌ → OI obrigatório", color: "rose" },
-                      ],
-                      explanation:
-                        "Tirando a preposição 'com', 'cumpriu o dever' continua perfeito na norma culta (VTD com preposição estilística = OD Preposicionado). Já em 'precisa de', apagar o 'de' quebra a norma!",
-                    },
-                  ],
-                },
-              ]}
-            />
 
             <TrapAlert
               title="Pegadinha ACCESS + Teste de 5 Segundos"
@@ -2148,18 +2181,51 @@ export const portuguesSemana04: RichLessonModule = {
             <DefinitionBlocks
               items={[
                 {
-                  term: "Teste Definitivo da Concordância (Prova dos 9)",
+                  term: "1. Teste Definitivo da Concordância (Prova dos 9)",
                   badge: "INFALÍVEL",
                   accent: "indigo",
                   summary:
                     "Mude a expressão suspeita entre singular e plural. Se o verbo for OBRIGADO a mudar junto, você encontrou o Sujeito exato!",
+                  examplesTitle: "Exemplos · Testando no Singular ↔ Plural",
+                  examples: [
+                    {
+                      label: "Cotidiano · Mudança obrigatória do verbo",
+                      sentence: "“O processo chegou hoje.” → “Os processos chegaram hoje.”",
+                      tags: [{ label: "SUJEITO", value: "O processo / Os processos (mudou o verbo!)", color: "indigo" }],
+                      explanation: "O verbo foi obrigado a variar para 'chegaram' → Sujeito confirmado!",
+                    },
+                    {
+                      label: "Rotina de Prefeitura · Núcleo partitivo",
+                      sentence: "“A maioria dos servidores aprovou (ou aprovaram) a escala.”",
+                      tags: [{ label: "NÚCLEO", value: "maioria (sem preposição)", color: "emerald" }],
+                      explanation:
+                        "O núcleo exato é 'maioria' (singular), aceitando atração opcional pelo plural 'dos servidores' em expressões partitivas.",
+                    },
+                  ],
                 },
                 {
-                  term: "Regra de Ouro: Núcleo Sem Preposição",
+                  term: "2. Regra de Ouro: Núcleo Sem Preposição (para eu vs. para mim)",
                   badge: "PARA EU vs. PARA MIM",
                   accent: "rose",
                   summary:
                     "O núcleo do sujeito nunca vem regido por preposição. Diante de verbo no infinitivo, o sujeito usa sempre pronome reto (eu/tu/nós): “para eu conferir”, jamais “para mim conferir” — nem junte 'de + eu' em 'deu'!",
+                  examplesTitle: "Exemplos · Com Verbo Depois ('eu') vs. Sem Verbo ('mim')",
+                  examples: [
+                    {
+                      label: "Caso Limite (A) · Há verbo no infinitivo depois → pede 'eu'",
+                      sentence: "“Trouxeram a ata para eu revisar.”",
+                      tags: [{ label: "COM VERBO", value: "eu (Sujeito de revisar!)", color: "emerald" }],
+                      explanation:
+                        "Quem conjuga o verbo 'revisar' é o Sujeito. Como 'mim' jamais pode ser sujeito, exige-se o pronome reto 'eu'!",
+                    },
+                    {
+                      label: "Caso Limite (B) · Não há verbo depois → usa 'mim'",
+                      sentence: "“Entregaram o documento para mim.”",
+                      tags: [{ label: "SEM VERBO", value: "mim (complemento final)", color: "sky" }],
+                      explanation:
+                        "Aqui não existe nenhum verbo após o pronome: 'mim' funciona corretamente como complemento preposicionado no fim da frase.",
+                    },
+                  ],
                 },
               ]}
             />
@@ -2299,49 +2365,6 @@ export const portuguesSemana04: RichLessonModule = {
               não o Sujeito!
             </AnalogyBox>
 
-            <ExampleShowcase
-              title="Exemplos Progressivos · Achando o Sujeito Pela Concordância"
-              items={[
-                {
-                  level: "Exemplo 1 · Cotidiano (Teste singular ↔ plural)",
-                  accent: "indigo",
-                  cases: [
-                    {
-                      sentence: "“O processo chegou hoje.” → “Os processos chegaram hoje.”",
-                      tags: [{ label: "SUJEITO", value: "O processo / Os processos (mudou o verbo!)", color: "indigo" }],
-                      explanation: "O verbo foi obrigado a variar para 'chegaram' → Sujeito confirmado!",
-                    },
-                  ],
-                },
-                {
-                  level: "Exemplo 2 · Rotina de Prefeitura (Núcleo partitivo)",
-                  accent: "emerald",
-                  cases: [
-                    {
-                      sentence: "“A maioria dos servidores aprovou (ou aprovaram) a escala.”",
-                      tags: [{ label: "NÚCLEO", value: "maioria (sem preposição)", color: "emerald" }],
-                      explanation:
-                        "O núcleo exato é 'maioria' (singular), aceitando atração opcional pelo plural 'dos servidores' em expressões partitivas.",
-                    },
-                  ],
-                },
-                {
-                  level: "Exemplo 3 · Caso Limite (Para eu revisar vs. Para mim)",
-                  accent: "amber",
-                  cases: [
-                    {
-                      sentence: "“Trouxeram a ata para eu revisar.” vs. “Entregaram o documento para mim.”",
-                      tags: [
-                        { label: "COM VERBO", value: "eu (Sujeito de revisar!)", color: "emerald" },
-                        { label: "SEM VERBO", value: "mim (complemento final)", color: "sky" },
-                      ],
-                      explanation: "Mim jamais conjuga verbo! Antes de verbo no infinitivo entra sempre o Sujeito 'eu'.",
-                    },
-                  ],
-                },
-              ]}
-            />
-
             <TrapAlert
               title="Pegadinha ACCESS + Teste de 5 Segundos"
               trap="Juntar preposição com sujeito formando contração proibida: 'Apesar dos esforços fracassarem...' (contraiu de + os antes do sujeito 'os esforços')."
@@ -2365,6 +2388,21 @@ export const portuguesSemana04: RichLessonModule = {
                   accent: "indigo",
                   summary:
                     "Está escrito na oração e possui apenas 1 substantivo/pronome central no núcleo — mesmo que esse núcleo esteja no plural ou cercado de várias palavras.",
+                  examplesTitle: "Exemplos · 1 Único Núcleo (Mesmo no Plural!)",
+                  examples: [
+                    {
+                      label: "Cotidiano · Plural com 1 único núcleo continua Simples",
+                      sentence: "“As três janelas da sala quebraram.”",
+                      tags: [{ label: "NÚCLEO", value: "1 núcleo (janelas) = Sujeito Simples", color: "indigo" }],
+                      explanation: "Mesmo com várias palavras e no plural, só há um nome central comandando o verbo.",
+                    },
+                    {
+                      label: "Rotina de Prefeitura · Bloco longo com 1 núcleo",
+                      sentence: "“Os trinta processos urgentes chegaram ao protocolo.”",
+                      tags: [{ label: "NÚCLEO", value: "1 núcleo (processos) = Sujeito Simples", color: "indigo" }],
+                      explanation: "Plural com 1 só núcleo não vira Sujeito Composto!",
+                    },
+                  ],
                 },
                 {
                   term: "2. Sujeito Determinado Composto",
@@ -2372,6 +2410,21 @@ export const portuguesSemana04: RichLessonModule = {
                   accent: "emerald",
                   summary:
                     "Está escrito na oração e reúne 2 ou mais núcleos somados comandando o mesmo verbo (“O prefeito e o secretário assinaram”).",
+                  examplesTitle: "Exemplos · 2 ou Mais Núcleos Somados",
+                  examples: [
+                    {
+                      label: "Cotidiano · Dois seres diferentes somados",
+                      sentence: "“A porta e a janela quebraram.”",
+                      tags: [{ label: "NÚCLEOS", value: "2 núcleos (porta + janela) = Sujeito Composto", color: "emerald" }],
+                      explanation: "Agora há duas coisas distintas ligadas somando forças no mesmo verbo.",
+                    },
+                    {
+                      label: "Rotina de Prefeitura · Dois cargos comandando o verbo",
+                      sentence: "“O prefeito e o secretário assinaram a portaria.”",
+                      tags: [{ label: "NÚCLEOS", value: "2 núcleos (prefeito + secretário) = Sujeito Composto", color: "emerald" }],
+                      explanation: "Dois substantivos centrais somados determinam o plural do verbo 'assinaram'.",
+                    },
+                  ],
                 },
                 {
                   term: "3. Sujeito Determinado Oculto (Elíptico / Desinencial)",
@@ -2379,6 +2432,21 @@ export const portuguesSemana04: RichLessonModule = {
                   accent: "sky",
                   summary:
                     "Não aparece escrito naquela oração, mas nós sabemos exatamente quem é pela desinência verbal ('protocolamos' = nós) ou pela frase imediatamente anterior.",
+                  examplesTitle: "Exemplos · Oculto na Desinência ou na Oração Anterior",
+                  examples: [
+                    {
+                      label: "Rotina de Prefeitura · Oculto pela desinência verbal",
+                      sentence: "“Protocolamos o edital no sistema hoje pela manhã.”",
+                      tags: [{ label: "DESINÊNCIA -MOS", value: "Nós → Sujeito Oculto", color: "sky" }],
+                      explanation: "Não está escrito 'Nós', mas a terminação '-mos' identifica o sujeito com 100% de certeza.",
+                    },
+                    {
+                      label: "Caso Limite · Elíptico retomado da oração anterior",
+                      sentence: "“O oficial conferiu as guias; em seguida, arquivou todos os comprovantes.”",
+                      tags: [{ label: "2ª ORAÇÃO", value: "Ele (o oficial) → Sujeito Oculto / Elíptico", color: "amber" }],
+                      explanation: "Sabemos pelo contexto imediatamente anterior que quem arquivou foi o oficial.",
+                    },
+                  ],
                 },
               ]}
             />
@@ -2389,48 +2457,6 @@ export const portuguesSemana04: RichLessonModule = {
               <strong>Composto</strong>; e um despacho onde só aparece a terminação <em>-mos</em> (
               <em>“Protocolamos ontem”</em>) = <strong>Oculto</strong>!
             </AnalogyBox>
-
-            <ExampleShowcase
-              title="Exemplos Progressivos · Simples, Composto e Oculto"
-              items={[
-                {
-                  level: "Exemplo 1 · Cotidiano (Plural com 1 núcleo ainda é Simples)",
-                  accent: "indigo",
-                  cases: [
-                    {
-                      sentence: "“As três janelas da sala quebraram.” vs. “A porta e a janela quebraram.”",
-                      tags: [
-                        { label: "1ª FRASE", value: "1 núcleo (janelas) = Simples", color: "indigo" },
-                        { label: "2ª FRASE", value: "2 núcleos (porta + janela) = Composto", color: "emerald" },
-                      ],
-                      explanation: "Plural com 1 só núcleo não vira composto!",
-                    },
-                  ],
-                },
-                {
-                  level: "Exemplo 2 · Rotina de Prefeitura (Sujeito Oculto pela desinência)",
-                  accent: "emerald",
-                  cases: [
-                    {
-                      sentence: "“Protocolamos o edital no sistema hoje pela manhã.”",
-                      tags: [{ label: "DESINÊNCIA -MOS", value: "Nós → Sujeito Oculto", color: "sky" }],
-                      explanation: "Não está escrito 'Nós', mas a terminação '-mos' identifica com 100% de certeza.",
-                    },
-                  ],
-                },
-                {
-                  level: "Exemplo 3 · Caso Limite (Sujeito Elíptico retomado da oração anterior)",
-                  accent: "amber",
-                  cases: [
-                    {
-                      sentence: "“O oficial conferiu as guias; em seguida, arquivou todos os comprovantes.”",
-                      tags: [{ label: "2ª ORAÇÃO", value: "Ele (o oficial) → Sujeito Oculto / Elíptico", color: "amber" }],
-                      explanation: "Sabemos pelo contexto imediatamente anterior que quem arquivou foi o oficial.",
-                    },
-                  ],
-                },
-              ]}
-            />
 
             <TrapAlert
               title="Pegadinha ACCESS + Teste de 5 Segundos"
@@ -2456,18 +2482,53 @@ export const portuguesSemana04: RichLessonModule = {
             <DefinitionBlocks
               items={[
                 {
-                  term: "Sujeito Paciente (na Voz Passiva Analítica)",
+                  term: "1. Sujeito Paciente (na Voz Passiva Analítica)",
                   badge: "SOFRE A AÇÃO",
                   accent: "emerald",
                   summary:
                     "Ocorre na estrutura 'verbo auxiliar ser/estar + particípio': quem recebe a ação torna-se o Sujeito Paciente e obriga o auxiliar a concordar com ele no singular ou plural.",
+                  examplesTitle: "Exemplo · Concordância do Sujeito Paciente",
+                  examples: [
+                    {
+                      label: "Caso Limite · Sujeito Paciente plural exige auxiliar no plural",
+                      sentence: "“Novos processos eletrônicos foram implantados pela diretoria.”",
+                      tags: [
+                        { label: "SUJEITO PACIENTE", value: "Novos processos eletrônicos", color: "emerald" },
+                        { label: "CONCORDÂNCIA", value: "processos (plural) → foram implantados", color: "indigo" },
+                      ],
+                      explanation:
+                        "Nunca deixe 'Foi implantado novos processos' no singular: 'novos processos eletrônicos' é o Sujeito Paciente e comanda o plural do auxiliar!",
+                    },
+                  ],
                 },
                 {
-                  term: "Agente da Passiva",
+                  term: "2. Agente da Passiva",
                   badge: "QUEM AGE COM POR / PELO / DE",
                   accent: "amber",
                   summary:
                     "É o termo preposicionado (por, pelo, pela, de) que representa o verdadeiro praticante da ação na Voz Passiva Analítica. Voltando para a voz ativa, ele vira o Sujeito!",
+                  examplesTitle: "Exemplos · Identificando o Agente da Passiva na Prática",
+                  examples: [
+                    {
+                      label: "Cotidiano · Voltando da Passiva para a Ativa",
+                      sentence: "“As salas foram limpas pela equipe.”",
+                      tags: [
+                        { label: "SUJEITO PACIENTE", value: "As salas (sofreu a limpeza)", color: "indigo" },
+                        { label: "AGENTE DA PASSIVA", value: "pela equipe", color: "amber" },
+                      ],
+                      explanation: "Na Voz Ativa ficaria: 'A equipe limpou as salas.' Quem virou Sujeito na ativa era o Agente da Passiva.",
+                    },
+                    {
+                      label: "Rotina de Prefeitura · Contrato fiscalizado",
+                      sentence: "“A obra foi fiscalizada pelo engenheiro responsável.”",
+                      tags: [
+                        { label: "SUJEITO PACIENTE", value: "A obra", color: "indigo" },
+                        { label: "AGENTE DA PASSIVA", value: "pelo engenheiro responsável", color: "amber" },
+                      ],
+                      explanation:
+                        "Na Voz Ativa: 'O engenheiro responsável fiscalizou a obra.' Logo, 'pelo engenheiro responsável' exerce a função de Agente da Passiva!",
+                    },
+                  ],
                 },
               ]}
             />
@@ -2478,53 +2539,6 @@ export const portuguesSemana04: RichLessonModule = {
               <strong>Sujeito Paciente</strong> (<em>“A guia foi carimbada...”</em>), e o oficial vai para os bastidores
               com <em>pelo</em> como <strong>Agente da Passiva</strong> (<em>“...pelo oficial”</em>)!
             </AnalogyBox>
-
-            <ExampleShowcase
-              title="Exemplos Progressivos · Voz Passiva Analítica & Agente da Passiva"
-              items={[
-                {
-                  level: "Exemplo 1 · Cotidiano (Invertendo Ativa → Passiva)",
-                  accent: "indigo",
-                  cases: [
-                    {
-                      sentence: "“As salas foram limpas pela equipe.”",
-                      tags: [
-                        { label: "SUJEITO PACIENTE", value: "As salas (sofreu a limpeza!)", color: "indigo" },
-                        { label: "AGENTE DA PASSIVA", value: "pela equipe", color: "amber" },
-                      ],
-                      explanation: "Na Voz Ativa ficaria: 'A equipe limpou as salas.'",
-                    },
-                  ],
-                },
-                {
-                  level: "Exemplo 2 · Rotina de Prefeitura (Contrato fiscalizado)",
-                  accent: "emerald",
-                  cases: [
-                    {
-                      sentence: "“A obra foi fiscalizada pelo engenheiro responsável.”",
-                      tags: [
-                        { label: "SUJEITO PACIENTE", value: "A obra", color: "indigo" },
-                        { label: "AGENTE DA PASSIVA", value: "pelo engenheiro responsável", color: "amber" },
-                      ],
-                      explanation:
-                        "Na Voz Ativa: 'O engenheiro responsável fiscalizou a obra.' Quem virou Sujeito na ativa era o Agente da Passiva!",
-                    },
-                  ],
-                },
-                {
-                  level: "Exemplo 3 · Caso Limite (Sujeito Paciente plural exige auxiliar no plural)",
-                  accent: "amber",
-                  cases: [
-                    {
-                      sentence: "“Novos processos eletrônicos foram implantados pela diretoria.”",
-                      tags: [{ label: "CONCORDÂNCIA", value: "processos (plural) → foram implantados", color: "emerald" }],
-                      explanation:
-                        "Nunca deixe 'Foi implantado novos processos' no singular: 'novos processos' é Sujeito Paciente!",
-                    },
-                  ],
-                },
-              ]}
-            />
 
             <TrapAlert
               title="Pegadinha ACCESS + Teste de 5 Segundos"
@@ -2609,88 +2623,161 @@ export const portuguesSemana04: RichLessonModule = {
             </p>
 
             <DefinitionBlocks
+              title="As 3 Formas Oficiais de Sujeito Indeterminado (Uma por Vez)"
               items={[
                 {
-                  term: "As 3 Formas Oficiais de Sujeito Indeterminado",
-                  badge: "EXISTE AGENTE, MAS NÃO SE SABE QUEM",
+                  term: "Forma 1 · Verbo na 3ª Pessoa do Plural Sem Sujeito Anterior",
+                  badge: "ELES (SEM REFERENTE)",
                   accent: "purple",
                   summary:
-                    "(1) Verbo na 3ª pessoa do plural sem sujeito anterior ('Protocolaram uma denúncia'). (2) VTI, VI ou VL na 3ª pessoa do singular + SE (Índice de Indeterminação — IIS). (3) Verbo no Infinitivo Impessoal ('É prudente exigir comprovante').",
+                    "O verbo aparece conjugado na 3ª pessoa do plural sem que nenhum sujeito tenha sido citado antes na frase ou no parágrafo imediatamente anterior.",
+                  examplesTitle: "Exemplos · 3ª Pessoa do Plural Sem Sujeito Expresso",
+                  examples: [
+                    {
+                      label: "Cotidiano · Não se sabe quem fez",
+                      sentence: "“Protocolaram uma denúncia anônima no balcão.”",
+                      tags: [{ label: "SUJEITO", value: "Indeterminado (alguém protocolou, sem identificar)", color: "purple" }],
+                      explanation: "O verbo está em 'eles', mas o texto não informa quem são esses responsáveis.",
+                    },
+                    {
+                      label: "Rotina de Prefeitura · Ação sem dono identificado",
+                      sentence: "“Extraviam formulários quando falta controle.”",
+                      tags: [{ label: "SUJEITO", value: "Indeterminado (3ª pessoa do plural)", color: "purple" }],
+                      explanation: "Não existe referente anterior para 'extraviam' → Sujeito Indeterminado.",
+                    },
+                  ],
                 },
                 {
-                  term: "1. Partícula Apassivadora (PA): VTD / VTDI + SE",
-                  badge: "TEM SUJEITO PACIENTE!",
+                  term: "Forma 2 · Verbo Transitivo Indireto, Intransitivo ou de Ligação (3ª pess. sing.) + “SE”",
+                  badge: "TRAVADO NO SINGULAR",
+                  accent: "amber",
+                  summary:
+                    "Aqui o pronome “SE” funciona como Índice de Indeterminação do Sujeito (IIS). Como esses verbos não têm Objeto Direto para virar sujeito, o verbo fica obrigatoriamente travado no singular.",
+                  examplesTitle: "Exemplo · Verbo Intransitivo + “SE”",
+                  examples: [
+                    {
+                      label: "Rotina de Prefeitura · Verbo Intransitivo + SE",
+                      sentence: "“No setor jurídico, trabalha-se sob forte sigilo.”",
+                      tags: [
+                        { label: "VERBO", value: "trabalha (Intransitivo)", color: "sky" },
+                        { label: "PAPEL DO 'SE'", value: "Índice de Indeterminação (IIS)", color: "amber" },
+                      ],
+                      explanation:
+                        "Quem trabalha não trabalha algo direto. Logo, não há sujeito paciente e o verbo trava no singular → Sujeito Indeterminado.",
+                    },
+                  ],
+                },
+                {
+                  term: "Forma 3 · Verbo no Infinitivo Impessoal (Sem Dono)",
+                  badge: "AÇÃO GENÉRICA",
+                  accent: "indigo",
+                  summary:
+                    "Um verbo no infinitivo aparece sem sujeito ligado a ele, expressando uma orientação ou regra geral válida para qualquer pessoa.",
+                  examplesTitle: "Exemplo · Infinitivo Impessoal",
+                  examples: [
+                    {
+                      label: "Rotina de Prefeitura · Regra geral sem agente",
+                      sentence: "“É prudente exigir comprovante em todo protocolo.”",
+                      tags: [{ label: "INFINITIVO", value: "exigir (sem sujeito ligado) = Indeterminado", color: "indigo" }],
+                      explanation: "Não se diz exatamente quem deve exigir: vale para qualquer atendente no setor.",
+                    },
+                  ],
+                },
+              ]}
+            />
+
+            <DefinitionBlocks
+              title='O Trio do "SE" (Um Papel por Vez)'
+              items={[
+                {
+                  term: "1. Partícula Apassivadora (Verbo Transitivo Direto ou Bitransitivo + “SE”)",
+                  badge: "TEM SUJEITO PACIENTE · VARIA NO PLURAL!",
                   accent: "emerald",
                   summary:
-                    "Como o VTD pede alvo sem preposição, o 'SE' transforma esse alvo no Sujeito Paciente — por isso o verbo concorda no plural! Teste: 'Alugam-se salas' = 'Salas são alugadas' ✅.",
+                    "Como o Verbo Transitivo Direto pede alvo sem preposição, o 'SE' transforma esse alvo no Sujeito Paciente — por isso o verbo concorda no singular ou no plural! Teste: 'Alugam-se salas' = 'Salas são alugadas' ✅.",
+                  examplesTitle: "Exemplo · Partícula Apassivadora (Concorda no Plural!)",
+                  examples: [
+                    {
+                      label: "Cotidiano · Verbo Transitivo Direto + SE",
+                      sentence: "“Consertam-se impressoras rapidamente.”",
+                      tags: [
+                        { label: "TESTE PASSIVO", value: "Impressoras são consertadas ✅", color: "emerald" },
+                        { label: "SUJEITO PACIENTE", value: "impressoras (puxa o plural!)", color: "indigo" },
+                      ],
+                      explanation:
+                        "Como 'consertar' é Transitivo Direto, 'impressoras' torna-se Sujeito Simples Paciente e obriga o verbo a ir para o plural!",
+                    },
+                  ],
                 },
                 {
-                  term: "2. Índice de Indeterminação do Sujeito (IIS): VTI / VI / VL + SE",
+                  term: "2. Índice de Indeterminação do Sujeito (Verbo Transitivo Indireto, Intransitivo ou de Ligação + “SE”)",
                   badge: "TRAVADO NO SINGULAR!",
                   accent: "amber",
                   summary:
-                    "Como VTI, VI e VL não têm objeto direto para virar sujeito, não aparece sujeito nenhum! Logo o verbo fica PROIBIDO de ir ao plural ('Precisa-se de técnicos').",
+                    "Como Verbos Transitivos Indiretos, Intransitivos e de Ligação não têm Objeto Direto para virar sujeito, não aparece sujeito nenhum! Logo o verbo fica PROIBIDO de ir ao plural ('Precisa-se de técnicos').",
+                  examplesTitle: "Exemplo · Índice de Indeterminação do Sujeito (Sempre Singular!)",
+                  examples: [
+                    {
+                      label: "Cotidiano · Verbo Transitivo Indireto + preposição 'em' + SE",
+                      sentence: "“Confia-se em servidores preparados.”",
+                      tags: [
+                        { label: "VERBO", value: "Confiar EM (Transitivo Indireto) + SE", color: "amber" },
+                        { label: "SUJEITO", value: "Indeterminado (trava no singular!)", color: "rose" },
+                      ],
+                      explanation:
+                        "Com preposição ('em servidores'), não dá para dizer 'Em servidores é confiado' — por isso o verbo fica travado no singular!",
+                    },
+                  ],
                 },
                 {
-                  term: "3. Pronome Reflexivo (SE)",
-                  badge: "A SI MESMO",
+                  term: "3. Pronome Reflexivo (“SE” = A Si Mesmo)",
+                  badge: "SUJEITO AGE EM SI PRÓPRIO",
                   accent: "sky",
                   summary:
                     "Há um sujeito claro (ou pronome 'que' retomando-o) praticando e sofrendo a ação em si mesmo ('um assento que se esterilizava'). Aceita trocar por 'a si mesmo'!",
+                  examplesTitle: "Exemplo Real ACCESS · Pronome Reflexivo",
+                  examples: [
+                    {
+                      label: "Caso Real ACCESS · Pref. Domingos Martins/ES 2023 Q05",
+                      sentence: "“...um assento de vaso sanitário que se esterilizava chegando a 250 °C.”",
+                      tags: [{ label: "GABARITO OFICIAL RECURSOS", value: "Pronome Reflexivo (a si mesmo)", color: "sky" }],
+                      explanation:
+                        "Não é Partícula Apassivadora nem Indeterminação porque o pronome relativo 'que' retoma o sujeito expresso ('um assento'): o próprio assento esterilizava A SI MESMO!",
+                    },
+                  ],
                 },
               ]}
             />
 
             <AnalogyBox title="Analogia do Espelho × Telefone Anônimo × Placa de Imóvel" tag="Trio do SE">
               No <strong>Pronome Reflexivo</strong>, o sujeito olha no espelho e age em <strong>si mesmo</strong>; no{" "}
-              <strong>IIS (Indeterminado)</strong>, você ouve um telefonema anônimo sem descobrir quem ligou (verbo no
-              singular); e na <strong>PA (VTD + se)</strong>, a placa diz <em>“Vendem-se casas”</em> (= casas são vendidas →
+              <strong>Índice de Indeterminação</strong>, você ouve um telefonema anônimo sem descobrir quem ligou (verbo no
+              singular); e na <strong>Partícula Apassivadora</strong>, a placa diz <em>“Vendem-se casas”</em> (= casas são vendidas →
               plural!).
             </AnalogyBox>
 
-            <ExampleShowcase
-              title='Exemplos Progressivos · Dominando o Trio do "SE"'
-              items={[
-                {
-                  level: "Exemplo 1 · Cotidiano (PA com VTD vs. IIS com VTI)",
-                  accent: "indigo",
-                  cases: [
-                    {
-                      sentence: "“Consertam-se impressoras.” vs. “Confia-se em servidores preparados.”",
-                      tags: [
-                        { label: "Consertar (VTD) + SE", value: "PA → Impressoras são consertadas (PLURAL!)", color: "emerald" },
-                        { label: "Confiar em (VTI) + SE", value: "IIS → Sujeito Indeterminado (SINGULAR!)", color: "amber" },
-                      ],
-                      explanation:
-                        "Com VTD existe Sujeito Paciente; com VTI + preposição ('em servidores'), não dá para dizer 'em servidores é confiado' → trava no singular!",
-                    },
-                  ],
-                },
-                {
-                  level: "Exemplo 2 · Rotina de Prefeitura (As 3 formas do Indeterminado)",
-                  accent: "emerald",
-                  cases: [
-                    {
-                      sentence:
-                        "(a) “Extraviam formulários.” · (b) “Trabalha-se com sigilo.” · (c) “É prudente conferir tudo.”",
-                      tags: [{ label: "TODAS AS 3", value: "Sujeito Indeterminado", color: "purple" }],
-                      explanation:
-                        "(a) 3ª pessoa do plural sem sujeito anterior; (b) VI + se (IIS); (c) Infinitivo Impessoal sem dono.",
-                    },
-                  ],
-                },
-                {
-                  level: "Exemplo 3 · Caso Real ACCESS (Domingos Martins/ES 2023 Q05 · Pronome Reflexivo)",
-                  accent: "amber",
-                  cases: [
-                    {
-                      sentence: "“...um assento de vaso sanitário que se esterilizava chegando a 250 °C.”",
-                      tags: [{ label: "GABARITO OFICIAL RECURSOS", value: "Pronome Reflexivo (a si mesmo)", color: "sky" }],
-                      explanation:
-                        "Não é PA nem IIS porque o pronome relativo 'que' retoma o sujeito expresso ('um assento'): o próprio assento esterilizava A SI MESMO!",
-                    },
-                  ],
-                },
+            <KeyTable
+              title='Mapa de Gêmeos Confundíveis · O Trio Campeão do "SE"'
+              headers={["Papel do “SE”", "Verbo Exigido", "Concordância", "Teste Prático de 5s"]}
+              rows={[
+                [
+                  "Partícula Apassivadora (PA)",
+                  "Verbo Transitivo Direto ou Bitransitivo + SE",
+                  "Concorda com o Sujeito Paciente (vai ao plural!)",
+                  "“Salas são alugadas” ✅",
+                ],
+                [
+                  "Índice de Indeterminação (IIS)",
+                  "Transitivo Indireto, Intransitivo ou Ligação + SE",
+                  "Travado no singular!",
+                  "❌ “De técnicos é precisado”",
+                ],
+                [
+                  "Pronome Reflexivo",
+                  "Sujeito claro age sobre si próprio",
+                  "Concorda com esse sujeito",
+                  "Troca por “a si mesmo”",
+                ],
               ]}
             />
 
@@ -2785,18 +2872,61 @@ export const portuguesSemana04: RichLessonModule = {
             <DefinitionBlocks
               items={[
                 {
-                  term: "1. Haver (= existir, ocorrer) ou Tempo Decorrido",
+                  term: "1. Verbo Haver (= existir, ocorrer) ou Tempo Decorrido vs. Existir e Haver Auxiliar",
                   badge: "TRAVA NO SINGULAR + AUXILIAR",
                   accent: "rose",
                   summary:
                     "Quando 'haver' equivale a existir ou indica tempo passado ('Há três vagas', 'Deve haver soluções'), forma Oração Sem Sujeito e trava no singular — ao contrário de existir/ocorrer, que têm sujeito e vão ao plural!",
+                  examplesTitle: "Exemplos · Haver Impessoal vs. Existir Pessoal vs. Haver Auxiliar",
+                  examples: [
+                    {
+                      label: "Cotidiano (A) · 'Haver' = existir → Oração Sem Sujeito",
+                      sentence: "“Havia três candidatos.”",
+                      tags: [{ label: "Haver = existir", value: "Oração Sem Sujeito (singular obrigatório!)", color: "rose" }],
+                      explanation: "Nunca escreva 'Haviam três candidatos': sem sujeito, o verbo fica na 3ª pessoa do singular.",
+                    },
+                    {
+                      label: "Cotidiano (B) · 'Existir' → Tem Sujeito!",
+                      sentence: "“Existiam três candidatos.”",
+                      tags: [{ label: "Existir", value: "Tem Sujeito Simples (vai ao plural!)", color: "emerald" }],
+                      explanation: "Com 'existir', 'três candidatos' é Sujeito Simples e obriga o verbo a ir para o plural!",
+                    },
+                    {
+                      label: "Rotina de Prefeitura · Verbo auxiliar herda o singular",
+                      sentence: "“Pode haver novas convocações neste semestre.”",
+                      tags: [{ label: "LOCUÇÃO IMPESSOAL", value: "Auxiliar herda a trava no singular!", color: "amber" }],
+                      explanation: "O auxiliar antes de 'haver' (= existir) fica proibido de ir ao plural (nunca 'Podem haver').",
+                    },
+                    {
+                      label: "Caso Limite · 'Haver' auxiliar significando 'ter' vai ao plural!",
+                      sentence: "“Os servidores haviam protocolado os documentos.”",
+                      tags: [{ label: "haviam = tinham", value: "Sujeito Simples = Os servidores (plural certo!)", color: "emerald" }],
+                      explanation:
+                        "Aqui 'haviam' não significa 'existiam': funciona como auxiliar equivalente a 'tinham', concordando normalmente com 'Os servidores'!",
+                    },
+                  ],
                 },
                 {
-                  term: "2. Fazer (Tempo Decorrido ou Clima)",
+                  term: "2. Verbo Fazer (Tempo Decorrido ou Clima)",
                   badge: "TRAVA NO SINGULAR + AUXILIAR",
                   accent: "amber",
                   summary:
-                    "Indicando tempo passado ou clima ('Faz cinco meses', 'Vai fazer duas semanas', 'Faz dias quentes'), fica 100% travado no singular!",
+                    "Indicando tempo passado ou temperatura/clima ('Faz cinco meses', 'Vai fazer duas semanas', 'Faz dias quentes'), fica 100% travado no singular — inclusive o verbo auxiliar!",
+                  examplesTitle: "Exemplos · Fazer Impessoal e Seu Auxiliar",
+                  examples: [
+                    {
+                      label: "Cotidiano · Tempo decorrido no singular",
+                      sentence: "“Faz cinco meses que o edital foi publicado.”",
+                      tags: [{ label: "Fazer (tempo)", value: "Oração Sem Sujeito (nunca 'Fazem'!)", color: "amber" }],
+                      explanation: "Mesmo com 'cinco meses' no plural, o verbo fazer permanece congelado no singular.",
+                    },
+                    {
+                      label: "Rotina de Prefeitura · Locução com 'fazer'",
+                      sentence: "“Vai fazer quatro meses.”",
+                      tags: [{ label: "LOCUÇÃO IMPESSOAL", value: "Auxiliar 'Vai' também trava no singular!", color: "amber" }],
+                      explanation: "Nunca escreva 'Vão fazer quatro meses': o auxiliar herda a impessoalidade de 'fazer'.",
+                    },
+                  ],
                 },
                 {
                   term: "3. Fenômenos Naturais, Estar/Ficar (Clima) e Chega/Basta de",
@@ -2804,13 +2934,43 @@ export const portuguesSemana04: RichLessonModule = {
                   accent: "sky",
                   summary:
                     "'Choveu forte', 'Está frio', 'Basta de atrasos' = Oração Sem Sujeito. Mas se o fenômeno for figurado ('Choveram elogios ao edital'), ganha Sujeito Simples e varia no plural!",
+                  examplesTitle: "Exemplos · Sentido Real vs. Sentido Figurado",
+                  examples: [
+                    {
+                      label: "Sentido Real · Evento natural sem dono",
+                      sentence: "“Choveu forte em Birigui e está muito abafado hoje.”",
+                      tags: [{ label: "SENTIDO REAL", value: "Oração Sem Sujeito (singular)", color: "sky" }],
+                      explanation: "Fenômeno climático real não tem sujeito gramatical.",
+                    },
+                    {
+                      label: "Sentido Figurado · Ganha Sujeito e vai ao plural",
+                      sentence: "“Choveram elogios ao novo edital.”",
+                      tags: [{ label: "SENTIDO FIGURADO", value: "Sujeito Simples = elogios (plural!)", color: "emerald" }],
+                      explanation: "Aqui 'elogios' funciona como sujeito figurado e puxa o verbo para o plural.",
+                    },
+                  ],
                 },
                 {
                   term: "4. Verbo SER (Horas, Datas e Distâncias)",
                   badge: "ÚNICA EXCEÇÃO NO PLURAL",
                   accent: "indigo",
                   summary:
-                    "Embora seja Oração Sem Sujeito, o verbo SER concorda obrigatoriamente com o numeral: “São dez horas”, “É uma hora”, “Daqui até lá são dez quilômetros”.",
+                    "Embora seja Oração Sem Sujeito, o verbo SER concorda obrigatoriamente com o numeral: “São dez horas”, “É uma hora”, “Hoje são vinte de abril”, “Daqui até lá são dez quilômetros”.",
+                  examplesTitle: "Exemplos · Concordância do Verbo 'Ser' com o Numeral",
+                  examples: [
+                    {
+                      label: "Numeral 1 · Fica no singular",
+                      sentence: "“É uma hora da tarde.”",
+                      tags: [{ label: "CONCORDÂNCIA", value: "Numeral 1 → 'É'", color: "indigo" }],
+                      explanation: "Continua Oração Sem Sujeito, concordando no singular com 'uma hora'.",
+                    },
+                    {
+                      label: "Numeral 2+ · Vai ao plural",
+                      sentence: "“São dez horas e daqui até lá são dez quilômetros.”",
+                      tags: [{ label: "EXCEÇÃO NO PLURAL", value: "SER concorda com 'dez'", color: "emerald" }],
+                      explanation: "É o único verbo impessoal que flexiona no plural acompanhando horas, datas ou distâncias.",
+                    },
+                  ],
                 },
               ]}
             />
@@ -2820,49 +2980,6 @@ export const portuguesSemana04: RichLessonModule = {
               fato apenas ocorreu sem dono (<strong>Oração Sem Sujeito</strong>). Mas se você diz{" "}
               <em>“Choveram críticas no balcão”</em>, as <em>críticas</em> viraram donas figuradas e mandam no plural!
             </AnalogyBox>
-
-            <ExampleShowcase
-              title="Exemplos Progressivos · Impessoais vs. Pessoais"
-              items={[
-                {
-                  level: "Exemplo 1 · Cotidiano ('Haver' impessoal vs. 'Existir' pessoal)",
-                  accent: "indigo",
-                  cases: [
-                    {
-                      sentence: "“Havia três candidatos.” vs. “Existiam três candidatos.”",
-                      tags: [
-                        { label: "Haver = existir", value: "Oração Sem Sujeito (singular!)", color: "rose" },
-                        { label: "Existir", value: "Tem Sujeito (vai ao plural!)", color: "emerald" },
-                      ],
-                      explanation: "Nunca escreva 'Haviam três candidatos' nem 'Existia três candidatos'!",
-                    },
-                  ],
-                },
-                {
-                  level: "Exemplo 2 · Rotina de Prefeitura (Auxiliar preso no singular)",
-                  accent: "emerald",
-                  cases: [
-                    {
-                      sentence: "“Vai fazer quatro meses.” e “Pode haver novas convocações neste semestre.”",
-                      tags: [{ label: "LOCUÇÃO IMPESSOAL", value: "Auxiliar herda o singular!", color: "amber" }],
-                      explanation: "O auxiliar antes de 'haver' (= existir) ou 'fazer' (tempo) fica proibido de ir ao plural.",
-                    },
-                  ],
-                },
-                {
-                  level: "Exemplo 3 · Caso Limite ('Haver' auxiliar significando 'ter'!)",
-                  accent: "amber",
-                  cases: [
-                    {
-                      sentence: "“Os servidores haviam protocolado os documentos.”",
-                      tags: [{ label: "haviam = tinham", value: "Sujeito Simples = Os servidores (plural certo!)", color: "emerald" }],
-                      explanation:
-                        "Aqui 'haviam' não significa 'existiam': funciona como auxiliar equivalente a 'tinham', concordando normalmente com 'Os servidores'!",
-                    },
-                  ],
-                },
-              ]}
-            />
 
             <KeyTable
               title="Mapa de Gêmeos Confundíveis · Impessoais vs. Pessoais"
@@ -3026,6 +3143,26 @@ export const portuguesSemana04: RichLessonModule = {
                   accent: "sky",
                   summary:
                     "Tem apenas 1 núcleo = um verbo significativo (de ação ou acontecimento). Transmite apenas o fato ou a ação, sem nenhuma qualidade atribuída por predicativo.",
+                  examplesTitle: "Exemplos · Só Ação (Sem Qualidade de Predicativo)",
+                  examples: [
+                    {
+                      label: "Cotidiano · Ação pura com objeto",
+                      sentence: "“A técnica consertou o computador.”",
+                      tags: [{ label: "PREDICADO VERBAL", value: "Só ação (consertou + o computador)", color: "sky" }],
+                      explanation:
+                        "Não existe nenhuma qualidade sendo ligada pelo verbo: o único núcleo do predicado é o verbo significativo 'consertou'.",
+                    },
+                    {
+                      label: "Armadilha da Prefeitura · 'Estar' de lugar NÃO é Predicado Nominal!",
+                      sentence: "“Os documentos estão no arquivo.”",
+                      tags: [
+                        { label: "TERMO SEGUINTE", value: "no arquivo = lugar físico", color: "rose" },
+                        { label: "CLASSIFICAÇÃO", value: "Verbo Intransitivo → Predicado Verbal!", color: "sky" },
+                      ],
+                      explanation:
+                        "'No arquivo' responde ONDE está, nunca uma qualidade ou estado — portanto 'estão' indica localização e forma Predicado Verbal!",
+                    },
+                  ],
                 },
                 {
                   term: "2. Predicado Nominal",
@@ -3033,13 +3170,66 @@ export const portuguesSemana04: RichLessonModule = {
                   accent: "emerald",
                   summary:
                     "Formado por Verbo de Ligação + qualidade ou estado do sujeito. Como o verbo de ligação é apenas uma ponte, o núcleo do predicado é o nome (o Predicativo do Sujeito).",
+                  examplesTitle: "Exemplos · Verbo de Ligação + Estado do Sujeito",
+                  examples: [
+                    {
+                      label: "Cotidiano · Mudança de estado sem ação",
+                      sentence: "“A técnica ficou satisfeita.”",
+                      tags: [
+                        {
+                          label: "PREDICADO NOMINAL",
+                          value: "Verbo de ligação (ficou) + estado (satisfeita)",
+                          color: "emerald",
+                        },
+                      ],
+                      explanation:
+                        "O verbo 'ficou' apenas liga a técnica ao estado 'satisfeita'. Quem carrega a informação principal é o nome 'satisfeita'.",
+                    },
+                    {
+                      label: "Contraste na Prefeitura · Agora sim 'estar' + qualidade!",
+                      sentence: "“Os documentos estão arquivados e completos.”",
+                      tags: [
+                        {
+                          label: "PREDICADO NOMINAL",
+                          value: "Verbo de ligação (estão) + qualidades",
+                          color: "emerald",
+                        },
+                      ],
+                      explanation:
+                        "Diferente de 'estão no arquivo' (lugar = Predicado Verbal), aqui 'arquivados e completos' são qualidades do sujeito → Predicado Nominal!",
+                    },
+                  ],
                 },
                 {
                   term: "3. Predicado Verbo-Nominal",
                   badge: "2 NÚCLEOS JUNTOS",
                   accent: "amber",
                   summary:
-                    "Reúne 2 núcleos na mesma frase = 1 verbo de ação + 1 qualidade/estado momentâneo atribuído ao Sujeito ou ao Objeto. Teste: dá para quebrar em duas frases (ação + estado)!",
+                    "Reúne 2 núcleos na mesma frase = 1 verbo de ação + 1 qualidade/estado momentâneo atribuído ao Sujeito ou ao Objeto.",
+                  note: "Teste de 5 segundos: dá para quebrar a oração em duas frases independentes (1 ação + 1 estado simultâneo)!",
+                  examplesTitle: "Exemplos · Ação + Qualidade ao Mesmo Tempo",
+                  examples: [
+                    {
+                      label: "Cotidiano · Ação + qualidade do Sujeito",
+                      sentence: "“A técnica saiu satisfeita da sala.”",
+                      tags: [
+                        { label: "NÚCLEO 1 (AÇÃO)", value: "saiu", color: "sky" },
+                        { label: "NÚCLEO 2 (QUALIDADE)", value: "satisfeita (estado da técnica)", color: "amber" },
+                      ],
+                      explanation:
+                        "Podemos quebrar em duas ideias: 'A técnica saiu da sala' (ação) + 'e ela estava satisfeita' (estado) → 2 núcleos = Predicado Verbo-Nominal!",
+                    },
+                    {
+                      label: "Caso Limite · Ação + julgamento sobre o Objeto",
+                      sentence: "“A comissão jurídica julgou improcedente a impugnação do edital.”",
+                      tags: [
+                        { label: "NÚCLEO 1 (AÇÃO)", value: "julgou (ação sobre o objeto)", color: "sky" },
+                        { label: "NÚCLEO 2 (QUALIDADE)", value: "improcedente (qualidade da impugnação)", color: "amber" },
+                      ],
+                      explanation:
+                        "Reúne a ação real de julgar + uma qualidade atribuída na hora ao Objeto Direto → 2 núcleos = Predicado Verbo-Nominal!",
+                    },
+                  ],
                 },
               ]}
             />
@@ -3144,56 +3334,6 @@ export const portuguesSemana04: RichLessonModule = {
               foto ao mesmo tempo (<em>“saiu satisfeito”</em> = saiu + estava satisfeito!).
             </AnalogyBox>
 
-            <ExampleShowcase
-              title="Exemplos Progressivos · Os 3 Tipos de Predicado"
-              items={[
-                {
-                  level: "Exemplo 1 · Cotidiano (Os 3 na sequência com a mesma pessoa)",
-                  accent: "indigo",
-                  cases: [
-                    {
-                      sentence:
-                        "“A técnica consertou o PC.” | “Ficou satisfeita.” | “Saiu satisfeita.”",
-                      tags: [
-                        { label: "PREDICADO VERBAL", value: "Só ação (consertou)", color: "sky" },
-                        { label: "PREDICADO NOMINAL", value: "Verbo de ligação + estado (ficou satisfeita)", color: "emerald" },
-                        { label: "VERBO-NOMINAL", value: "Ação + qualidade juntos (saiu satisfeita)", color: "amber" },
-                      ],
-                      explanation: "Cada estrutura muda exatamente conforme o foco da informação.",
-                    },
-                  ],
-                },
-                {
-                  level: "Exemplo 2 · Rotina de Prefeitura ('Estar' de lugar vs. estado)",
-                  accent: "emerald",
-                  cases: [
-                    {
-                      sentence: "“Os documentos estão no arquivo.” vs. “Os documentos estão arquivados.”",
-                      tags: [
-                        { label: "1ª FRASE", value: "Lugar físico (Intransitivo) = Predicado Verbal!", color: "rose" },
-                        { label: "2ª FRASE", value: "Qualidade/estado (Ligação) = Predicado Nominal!", color: "emerald" },
-                      ],
-                      explanation: "'No arquivo' responde ONDE está, nunca estado — portanto é Predicado Verbal!",
-                    },
-                  ],
-                },
-                {
-                  level: "Exemplo 3 · Caso Limite (Verbo-Nominal com julgamento sobre o Objeto)",
-                  accent: "amber",
-                  cases: [
-                    {
-                      sentence: "“A comissão jurídica julgou improcedente a impugnação do edital.”",
-                      tags: [
-                        { label: "NÚCLEO 1 (AÇÃO)", value: "julgou (ação sobre o objeto)", color: "sky" },
-                        { label: "NÚCLEO 2 (QUALIDADE)", value: "improcedente (qualidade da impugnação)", color: "amber" },
-                      ],
-                      explanation: "Ação de julgar + qualidade atribuída ao objeto = Predicado Verbo-Nominal!",
-                    },
-                  ],
-                },
-              ]}
-            />
-
             <TrapAlert
               title="Pegadinha ACCESS + Teste de 5 Segundos"
               trap="Ver 'estar' ou 'andar' ('Os fiscais estão no pátio') e marcar Predicado Nominal no reflexo!"
@@ -3276,18 +3416,54 @@ export const portuguesSemana04: RichLessonModule = {
             <DefinitionBlocks
               items={[
                 {
-                  term: "Predicativo do Sujeito",
+                  term: "1. Predicativo do Sujeito",
                   badge: "SETA APONTA PARA O SUJEITO",
                   accent: "emerald",
                   summary:
-                    "Qualidade ou estado ligado ao Sujeito (via Verbo de Ligação no Predicado Nominal, como 'O edital é claro', ou junto de ação no Verbo-Nominal, como 'Os fiscais voltaram cansados').",
+                    "Qualidade ou estado ligado ao Sujeito (seja via Verbo de Ligação no Predicado Nominal, como 'O edital é claro', seja junto de uma ação no Predicado Verbo-Nominal, como 'Os fiscais voltaram cansados').",
+                  examplesTitle: "Exemplos · A Qualidade Descreve Quem Comanda o Verbo",
+                  examples: [
+                    {
+                      label: "Cotidiano · Qualidade ligada ao Sujeito",
+                      sentence: "“Os alunos entraram animados na sala.”",
+                      tags: [{ label: "SETA DE 'ANIMADOS'", value: "Os alunos → Predicativo do Sujeito", color: "emerald" }],
+                      explanation: "Quem estava animado ao entrar eram 'os alunos' (o próprio Sujeito).",
+                    },
+                    {
+                      label: "Caso Limite · A concordância no feminino entrega o alvo!",
+                      sentence: "“A fiscal encontrou o contribuinte nervosa.”",
+                      tags: [{ label: "nervosa (fem.)", value: "concorda com a fiscal = Predicativo do Sujeito", color: "emerald" }],
+                      explanation: "Como está no feminino, 'nervosa' refere-se obrigatoriamente a 'a fiscal' (Sujeito)!",
+                    },
+                  ],
                 },
                 {
-                  term: "Predicativo do Objeto",
+                  term: "2. Predicativo do Objeto",
                   badge: "SETA APONTA PARA O OBJETO",
                   accent: "amber",
                   summary:
                     "Qualidade momentânea ou julgamento atribuído ao Objeto através de um verbo de ação (muito comum com julgar, considerar, declarar, nomear, eleger, encontrar, tornar).",
+                  examplesTitle: "Exemplos · A Qualidade Descreve Quem Recebe a Ação",
+                  examples: [
+                    {
+                      label: "Cotidiano · Estado atribuído ao Objeto Direto",
+                      sentence: "“O professor encontrou a turma animada.”",
+                      tags: [{ label: "SETA DE 'ANIMADA'", value: "a turma (Objeto Direto) → Predicativo do Objeto", color: "amber" }],
+                      explanation: "Aqui quem estava animada era 'a turma' (Objeto Direto), não o professor!",
+                    },
+                    {
+                      label: "Rotina de Prefeitura · Julgamento sobre ato administrativo",
+                      sentence: "“O prefeito declarou nulo o pregão.”",
+                      tags: [{ label: "ALVO DE 'NULO'", value: "o pregão (Objeto Direto) → Predicativo do Objeto", color: "amber" }],
+                      explanation: "Quem ficou nulo foi o pregão (Objeto Direto), jamais o prefeito!",
+                    },
+                    {
+                      label: "Caso Limite · Concordância masculina aponta para o Objeto",
+                      sentence: "“A fiscal encontrou o contribuinte nervoso.”",
+                      tags: [{ label: "nervoso (masc.)", value: "concorda com contribuinte = Predicativo do Objeto", color: "amber" }],
+                      explanation: "Basta olhar o gênero masculino de 'nervoso' para confirmar que ele descreve 'o contribuinte' (Objeto Direto).",
+                    },
+                  ],
                 },
               ]}
             />
@@ -3297,53 +3473,6 @@ export const portuguesSemana04: RichLessonModule = {
               <strong>Predicativo do Sujeito</strong>; apontou para quem recebe a ação (o Objeto) ={" "}
               <strong>Predicativo do Objeto</strong>!
             </AnalogyBox>
-
-            <ExampleShowcase
-              title="Exemplos Progressivos · Predicativo do Sujeito vs. Predicativo do Objeto"
-              items={[
-                {
-                  level: "Exemplo 1 · Cotidiano (Mesma qualidade, alvos diferentes)",
-                  accent: "indigo",
-                  cases: [
-                    {
-                      sentence: "“Os alunos entraram animados.” vs. “O professor encontrou a turma animada.”",
-                      tags: [
-                        { label: "1ª FRASE", value: "animados → Os alunos (Predicativo do Sujeito)", color: "emerald" },
-                        { label: "2ª FRASE", value: "animada → a turma (Predicativo do Objeto)", color: "amber" },
-                      ],
-                      explanation: "Na 2ª frase quem está animada é 'a turma' (Objeto Direto), não o professor!",
-                    },
-                  ],
-                },
-                {
-                  level: "Exemplo 2 · Rotina de Prefeitura (Julgamento sobre ato administrativo)",
-                  accent: "emerald",
-                  cases: [
-                    {
-                      sentence: "“O prefeito declarou nulo o pregão.”",
-                      tags: [
-                        { label: "ALVO DE 'NULO'", value: "o pregão (Objeto Direto) → Predicativo do Objeto", color: "amber" },
-                      ],
-                      explanation: "Quem ficou nulo foi o pregão (Objeto), jamais o prefeito!",
-                    },
-                  ],
-                },
-                {
-                  level: "Exemplo 3 · Caso Limite (A concordância de gênero entrega o alvo!)",
-                  accent: "amber",
-                  cases: [
-                    {
-                      sentence: "“A fiscal encontrou o contribuinte nervoso.” vs. “A fiscal encontrou o contribuinte nervosa.”",
-                      tags: [
-                        { label: "nervoso (masc.)", value: "concorda com contribuinte = Predicativo do Objeto", color: "amber" },
-                        { label: "nervosa (fem.)", value: "concorda com a fiscal = Predicativo do Sujeito", color: "emerald" },
-                      ],
-                      explanation: "Basta mudar o gênero para enxergar imediatamente a quem o verbo atribuiu o estado.",
-                    },
-                  ],
-                },
-              ]}
-            />
 
             <TrapAlert
               title="Pegadinha ACCESS + Teste de 5 Segundos"
@@ -3360,31 +3489,34 @@ export const portuguesSemana04: RichLessonModule = {
               substantivo (que batizaremos no Eixo 5) nem com um <strong>Advérbio</strong> invariável!
             </p>
 
-            <StepByStep
-              title="Os 2 Testes Infalíveis para Isolar Qualquer Predicativo"
-              problem="Como saber se o adjetivo é Predicativo ou outra peça da frase?"
-              steps={[
+            <DefinitionBlocks
+              items={[
                 {
-                  title: "Teste 1 · Substitua o Objeto Direto pelo Pronome o / a / os / as",
+                  term: "Teste 1 · Substitua o Objeto Direto pelo Pronome o / a / os / as",
                   badge: "ACHA PREDICATIVO DO OBJETO",
-                  content: (
-                    <p>
+                  accent: "amber",
+                  summary: (
+                    <>
                       A qualidade <strong>SOBROU DO LADO DE FORA</strong> do pronome (<em>“julgou-o válido”</em>)? É{" "}
                       <strong>Predicativo do Objeto</strong>! Sumiu para dentro do pronome (<em>“aprovou-o”</em>)?
                       Era apenas qualidade fixa interna do nome (estudaremos o nome oficial no Eixo 5!).
-                    </p>
+                    </>
                   ),
-                },
-                {
-                  title: "Teste 2 · Passe o Sujeito para o Feminino Plural (As servidoras...)",
-                  badge: "SEPARA PREDICATIVO DE ADVÉRBIO",
-                  content: (
-                    <p>
-                      A palavra <strong>flexionou junto</strong> (<em>“As fiscais saíram satisfeitas”</em>)? É{" "}
-                      <strong>Predicativo do Sujeito</strong>! Ficou travada invariável (
-                      <em>“falaram alto / claro / rápido”</em>)? É <strong>Advérbio</strong>!
-                    </p>
-                  ),
+                  examplesTitle: "Exemplos · Aplicando o Teste do Pronome (o/a)",
+                  examples: [
+                    {
+                      label: "Sumiu dentro do pronome → Qualidade fixa interna (Eixo 5)",
+                      sentence: "“Comprou o carro usado.” → “Comprou-o.”",
+                      tags: [{ label: "SUMIU DENTRO", value: "usado (qualidade fixa interna · Eixo 5)", color: "sky" }],
+                      explanation: "Como 'usado' desapareceu engolido pelo pronome 'o', não é Predicativo do Objeto.",
+                    },
+                    {
+                      label: "Sobreviveu fora do pronome → Predicativo do Objeto!",
+                      sentence: "“Encontrou o carro destruído.” → “Encontrou-o destruído.”",
+                      tags: [{ label: "SOBROU FORA", value: "destruído = Predicativo do Objeto!", color: "amber" }],
+                      explanation: "Se sobreviveu do lado de fora do pronome 'o/a', é Predicativo do Objeto!",
+                    },
+                  ],
                 },
               ]}
             />
@@ -3396,40 +3528,45 @@ export const portuguesSemana04: RichLessonModule = {
               <strong>“o”</strong>, o carimbo aparece fora (<em>“julgou-o válido”</em>)!
             </AnalogyBox>
 
-            <ExampleShowcase
-              title="Exemplos Progressivos · Aplicando os 2 Testes"
+            <DefinitionBlocks
               items={[
                 {
-                  level: "Exemplo 1 · Cotidiano (Teste 1 do Pronome o/a)",
-                  accent: "indigo",
-                  cases: [
-                    {
-                      sentence: "“Comprou o carro usado” → “Comprou-o.” | “Encontrou o carro destruído” → “Encontrou-o destruído.”",
-                      tags: [
-                        { label: "SUMIU DENTRO", value: "usado (qualidade fixa interna · Eixo 5)", color: "sky" },
-                        { label: "SOBROU FORA", value: "destruído = Predicativo do Objeto!", color: "amber" },
-                      ],
-                      explanation: "Se sobreviveu fora do pronome 'o/a', é Predicativo do Objeto.",
-                    },
-                  ],
-                },
-                {
-                  level: "Exemplo 2 · Rotina de Prefeitura (Teste 2 do Feminino Plural)",
+                  term: "Teste 2 · Passe o Sujeito para o Feminino Plural (As servidoras...)",
+                  badge: "SEPARA PREDICATIVO DE ADVÉRBIO",
                   accent: "emerald",
-                  cases: [
+                  summary: (
+                    <>
+                      A palavra <strong>flexionou junto</strong> (<em>“As fiscais saíram satisfeitas”</em>)? É{" "}
+                      <strong>Predicativo do Sujeito</strong>! Ficou travada invariável (
+                      <em>“falaram alto / claro / rápido”</em>)? É <strong>Advérbio</strong>!
+                    </>
+                  ),
+                  examplesTitle: "Exemplos · Aplicando o Teste do Feminino Plural",
+                  examples: [
                     {
-                      sentence: "“As atendentes retornaram motivadas.” vs. “As atendentes digitaram rápido.”",
-                      tags: [
-                        { label: "FLEXIONOU", value: "motivadas = Predicativo do Sujeito", color: "emerald" },
-                        { label: "INVARIÁVEL", value: "rápido = Advérbio (sem plural)", color: "rose" },
-                      ],
-                      explanation: "Advérbio jamais concorda no feminino ou plural!",
+                      label: "Flexionou no feminino plural → Predicativo do Sujeito",
+                      sentence: "“As atendentes retornaram motivadas.”",
+                      tags: [{ label: "FLEXIONOU", value: "motivadas = Predicativo do Sujeito", color: "emerald" }],
+                      explanation:
+                        "Mudou para o feminino plural concordando com 'as atendentes' — logo é um adjetivo predicativo.",
+                    },
+                    {
+                      label: "Travou invariável → Advérbio de Modo",
+                      sentence: "“As atendentes digitaram rápido.”",
+                      tags: [{ label: "INVARIÁVEL", value: "rápido = Advérbio (sem plural)", color: "rose" }],
+                      explanation: "Advérbio jamais concorda no feminino ou plural (não se diz 'digitaram rápidas')!",
                     },
                   ],
                 },
+              ]}
+            />
+
+            <ExampleShowcase
+              title="Aplicando os 2 Testes Juntos (Caso Limite de Prova)"
+              items={[
                 {
-                  level: "Exemplo 3 · Caso Limite (Os dois testes juntos na mesma frase)",
-                  accent: "amber",
+                  level: "Caso Limite · Os Dois Testes na Mesma Oração",
+                  accent: "indigo",
                   cases: [
                     {
                       sentence: "“A comissão entregou a obra reformada e os técnicos saíram satisfeitos, falando claro.”",
@@ -3586,11 +3723,34 @@ export const portuguesSemana04: RichLessonModule = {
             <DefinitionBlocks
               items={[
                 {
-                  term: "Adjunto Adnominal (AA) = As 5 Classes Satélites do Substantivo",
+                  term: "Adjunto Adnominal = As 5 Classes Satélites do Substantivo",
                   badge: "MORA DENTRO DO SUBSTANTIVO",
                   accent: "indigo",
-                  summary:
-                    "Todo termo acessório preso a um substantivo para determiná-lo ou caracterizá-lo por dentro: (1) Artigo (o, um); (2) Adjetivo interno; (3) Pronome adjetivo (meu, este, aqueles); (4) Numeral adjetivo (dois, terceiro); (5) Locução adjetiva (de ferro, de Birigui, da prefeitura).",
+                  summary: (
+                    <div className="space-y-2">
+                      <p>
+                        Todo termo acessório preso a um substantivo para determiná-lo ou caracterizá-lo por dentro,
+                        pertencendo sempre a uma destas <strong>5 classes morfológicas</strong>:
+                      </p>
+                      <ol className="list-decimal pl-5 space-y-1 text-sm">
+                        <li>
+                          <strong>Artigo:</strong> <em>o, a, um, umas</em>
+                        </li>
+                        <li>
+                          <strong>Adjetivo interno:</strong> <em>municipal, público, antigo</em>
+                        </li>
+                        <li>
+                          <strong>Pronome adjetivo:</strong> <em>meu, sua, este, aqueles</em>
+                        </li>
+                        <li>
+                          <strong>Numeral adjetivo:</strong> <em>dois, terceiro, cem</em>
+                        </li>
+                        <li>
+                          <strong>Locução adjetiva:</strong> <em>de ferro, de Birigui, da prefeitura</em>
+                        </li>
+                      </ol>
+                    </div>
+                  ),
                   note: "Conexão direta com o Eixo 4: ao substituir o substantivo por o/a/os/as, tudo o que sumir dentro do pronome é Adjunto Adnominal!",
                 },
               ]}
@@ -3602,7 +3762,7 @@ export const portuguesSemana04: RichLessonModule = {
             </AnalogyBox>
 
             <ExampleShowcase
-              title="Exemplos Progressivos · Adjunto Adnominal (AA)"
+              title="Exemplos Progressivos · Adjunto Adnominal"
               items={[
                 {
                   level: "Exemplo 1 · Cotidiano (Múltiplos satélites no mesmo substantivo)",
@@ -3612,7 +3772,7 @@ export const portuguesSemana04: RichLessonModule = {
                       sentence: "“Aqueles dois novos relatórios de despesas chegaram.”",
                       tags: [
                         { label: "NÚCLEO", value: "relatórios", color: "indigo" },
-                        { label: "4 AA AO REDOR", value: "Aqueles + dois + novos + de despesas", color: "sky" },
+                        { label: "4 ADJUNTOS ADNOMINAIS", value: "Aqueles + dois + novos + de despesas", color: "sky" },
                       ],
                       explanation: "Pronome, numeral, adjetivo e locução adjetiva todos orbitando o núcleo 'relatórios'.",
                     },
@@ -3624,22 +3784,34 @@ export const portuguesSemana04: RichLessonModule = {
                   cases: [
                     {
                       sentence: "“O técnico arquivou os três formulários antigos da recepção.” → “O técnico arquivou-os.”",
-                      tags: [{ label: "ENGOLIDOS POR 'OS'", value: "os, três, antigos, da recepção = todos AA!", color: "emerald" }],
+                      tags: [
+                        {
+                          label: "ENGOLIDOS POR 'OS'",
+                          value: "os, três, antigos, da recepção = todos Adjuntos Adnominais!",
+                          color: "emerald",
+                        },
+                      ],
                       explanation: "Como todos fazem parte do bloco interno de 'formulários', o pronome 'os' substitui o conjunto inteiro.",
                     },
                   ],
                 },
                 {
-                  level: "Exemplo 3 · Caso Limite (AA interno vs. PO externo com a mesma palavra)",
+                  level: "Exemplo 3 · Caso Limite (Adjunto Adnominal interno vs. Predicativo do Objeto externo)",
                   accent: "amber",
                   cases: [
                     {
-                      sentence: "“A diretoria aprovou a nova proposta urgente.” vs. “A diretoria julgou urgente a nova proposta.”",
-                      tags: [
-                        { label: "aprovou-A", value: "urgente sumiu = AA", color: "emerald" },
-                        { label: "julgou-A urgente", value: "urgente ficou fora = PO", color: "amber" },
-                      ],
-                      explanation: "O Teste do Pronome separa em segundos o adjetivo interno (AA) do julgamento externo (PO).",
+                      label: "Frase A · Sumiu dentro do pronome → Adjunto Adnominal",
+                      sentence: "“A diretoria aprovou a nova proposta urgente.”",
+                      tags: [{ label: "TESTE DO PRONOME", value: "aprovou-A (urgente sumiu = Adjunto Adnominal)", color: "emerald" }],
+                      explanation:
+                        "'Urgente' faz parte do próprio nome 'proposta' — ao trocar por 'a', ele é engolido pelo pronome.",
+                    },
+                    {
+                      label: "Frase B · Ficou fora do pronome → Predicativo do Objeto",
+                      sentence: "“A diretoria julgou urgente a nova proposta.”",
+                      tags: [{ label: "TESTE DO PRONOME", value: "julgou-A urgente (ficou fora = Predicativo do Objeto)", color: "amber" }],
+                      explanation:
+                        "Aqui 'urgente' é um julgamento momentâneo dado pelo verbo 'julgou' e sobrevive fora do pronome 'a'.",
                     },
                   ],
                 },
@@ -3674,7 +3846,7 @@ export const portuguesSemana04: RichLessonModule = {
             <DefinitionBlocks
               items={[
                 {
-                  term: "Complemento Nominal (CN)",
+                  term: "Complemento Nominal",
                   badge: "OBRIGATORIAMENTE PREPOSICIONADO",
                   accent: "emerald",
                   summary:
@@ -3682,6 +3854,96 @@ export const portuguesSemana04: RichLessonModule = {
                 },
               ]}
             />
+
+            <DefinitionBlocks
+              title="Os 3 Passos do Duelo (Um Passo por Vez)"
+              items={[
+                {
+                  term: "Passo 1 · Liga-se a Adjetivo ou Advérbio? → 100% Complemento Nominal",
+                  badge: "SEM DÚVIDA!",
+                  accent: "emerald",
+                  summary:
+                    "Adjunto Adnominal só acompanha substantivo! Se a palavra principal anterior for um Adjetivo ('útil', 'favorável', 'nocivo') ou Advérbio ('longe', 'perto'), é automaticamente Complemento Nominal.",
+                  examplesTitle: "Exemplo do Passo 1",
+                  examples: [
+                    {
+                      label: "Cotidiano · Ligado a Adjetivo",
+                      sentence: "“O regulamento é útil aos estagiários.”",
+                      tags: [{ label: "útil (ADJETIVO)", value: "aos estagiários = 100% Complemento Nominal", color: "emerald" }],
+                      explanation: "Como 'útil' é um adjetivo (e não substantivo), o termo preposicionado é obrigatoriamente Complemento Nominal.",
+                    },
+                  ],
+                },
+                {
+                  term: "Passo 2 · Substantivo Concreto (Adjunto Adnominal) vs. Abstrato com Preposição ≠ “DE” (Complemento Nominal)",
+                  badge: "CONCRETO × ABSTRATO",
+                  accent: "sky",
+                  summary:
+                    "Se o termo anterior for Substantivo Concreto (mesa, prédio, porta), será sempre Adjunto Adnominal! Se for Substantivo Abstrato ligado por qualquer preposição diferente de 'DE' (a, com, em, por, contra), será sempre Complemento Nominal!",
+                  examplesTitle: "Exemplos do Passo 2",
+                  examples: [
+                    {
+                      label: "Cotidiano · Substantivo Concreto → Adjunto Adnominal",
+                      sentence: "“A mesa de madeira chegou hoje.”",
+                      tags: [{ label: "mesa (CONCRETO)", value: "de madeira = 100% Adjunto Adnominal", color: "sky" }],
+                      explanation: "Substantivo concreto nunca recebe Complemento Nominal: indica matéria/tipo → Adjunto Adnominal.",
+                    },
+                    {
+                      label: "Caso Real ACCESS · Pref. Domingos Martins/ES 2023 Q10 (Prep. ≠ DE)",
+                      sentence: "“A preocupação com uma votação mais prática...”",
+                      tags: [
+                        {
+                          label: "ABSTRATO + PREP. 'COM'",
+                          value: "Não é 'de' → 100% Complemento Nominal!",
+                          color: "emerald",
+                        },
+                      ],
+                      explanation:
+                        "Passo 2 resolve na hora: substantivo abstrato ('preocupação') com preposição diferente de DE (com, em, por, a, contra) é sempre Complemento Nominal!",
+                    },
+                  ],
+                },
+                {
+                  term: "Passo 3 · Substantivo Abstrato + Preposição “DE”: Quem Pratica (Adjunto Adnominal) vs. Quem Sofre (Complemento Nominal)",
+                  badge: "AGENTE × PACIENTE",
+                  accent: "amber",
+                  summary:
+                    "Só existe duelo real quando há Substantivo Abstrato + preposição 'DE'! Pergunte: o termo com 'de' PRATICA/POSSUI a ação (Agente = Adjunto Adnominal) ou SOFRE/RECEBE a ação (Paciente = Complemento Nominal)?",
+                  examplesTitle: "Exemplos do Passo 3 (Com Caso Real ACCESS)",
+                  examples: [
+                    {
+                      label: "Sentido Agente · Quem fez a crítica → Adjunto Adnominal",
+                      sentence: "“A crítica do vereador repercutiu.”",
+                      tags: [{ label: "do vereador", value: "fez a crítica (agente) = Adjunto Adnominal", color: "sky" }],
+                      explanation: "O vereador praticou o ato de criticar — sentido ativo (agente) = Adjunto Adnominal.",
+                    },
+                    {
+                      label: "Sentido Paciente · Quem sofreu a crítica → Complemento Nominal",
+                      sentence: "“A crítica ao vereador repercutiu.”",
+                      tags: [{ label: "ao vereador", value: "sofreu a crítica (paciente) = Complemento Nominal", color: "emerald" }],
+                      explanation: "Agora o vereador recebeu/sofreu a crítica feita por outro — sentido passivo = Complemento Nominal.",
+                    },
+                    {
+                      label: "Caso Real ACCESS · CRBio-08 2023 Q10 (Duplo Paciente)",
+                      sentence: "“A poluição da água ocorre devido à eliminação do esgoto...”",
+                      tags: [
+                        { label: "da água", value: "água é poluída (sofre!) = Complemento Nominal", color: "emerald" },
+                        { label: "do esgoto", value: "esgoto é eliminado (sofre!) = Complemento Nominal", color: "emerald" },
+                      ],
+                      explanation:
+                        "Ambos são pacientes das ações expressas pelos substantivos abstratos 'poluição' e 'eliminação' → dois Complementos Nominais!",
+                    },
+                  ],
+                },
+              ]}
+            />
+
+            <AnalogyBox title="Analogia da Tesoura no Papel" tag="Agente × Paciente">
+              Em <em>“A tesoura de ferro”</em> (concreto), é <strong>Adjunto Adnominal</strong>. Em{" "}
+              <em>“O corte do papel”</em>, o papel <strong>sofre</strong> o corte (paciente) →{" "}
+              <strong>Complemento Nominal</strong>! Já em <em>“O corte da tesoura”</em>, a tesoura{" "}
+              <strong>faz</strong> o corte (agente) → <strong>Adjunto Adnominal</strong>!
+            </AnalogyBox>
 
             {/* SVG 4 */}
             <ZoomableDiagram
@@ -3795,77 +4057,10 @@ export const portuguesSemana04: RichLessonModule = {
               </svg>
             </ZoomableDiagram>
 
-            <AnalogyBox title="Analogia da Tesoura no Papel" tag="Agente (AA) × Paciente (CN)">
-              Em <em>“A tesoura de ferro”</em> (concreto), é <strong>AA</strong>. Em <em>“O corte do papel”</em>, o papel{" "}
-              <strong>sofre</strong> o corte (paciente) → <strong>CN</strong>! Já em <em>“O corte da tesoura”</em>, a
-              tesoura <strong>faz</strong> o corte (agente) → <strong>AA</strong>!
-            </AnalogyBox>
-
-            <ExampleShowcase
-              title="Exemplos Progressivos · Duelo CN × AA (Com Casos Reais ACCESS)"
-              items={[
-                {
-                  level: "Exemplo 1 · Cotidiano (Passos 1 e 2 do Fluxograma)",
-                  accent: "indigo",
-                  cases: [
-                    {
-                      sentence: "“O regulamento é útil aos estagiários.” vs. “A mesa de madeira chegou hoje.”",
-                      tags: [
-                        { label: "útil (ADJETIVO)", value: "aos estagiários = 100% CN", color: "emerald" },
-                        { label: "mesa (CONCRETO)", value: "de madeira = 100% AA", color: "sky" },
-                      ],
-                      explanation: "Adjetivo/advérbio sempre puxa CN; substantivo concreto sempre puxa AA.",
-                    },
-                  ],
-                },
-                {
-                  level: "Exemplo 2 · Caso Real ACCESS (Domingos Martins/ES 2023 Q10 · Prep. ≠ DE)",
-                  accent: "emerald",
-                  cases: [
-                    {
-                      sentence: "“A preocupação com uma votação mais prática...”",
-                      tags: [{ label: "ABSTRATO + PREP. 'COM'", value: "Não é DE → 100% CN!", color: "emerald" }],
-                      explanation:
-                        "Passo 2 resolve na hora: substantivo abstrato com preposição diferente de DE (a, com, em, por, contra) é sempre CN!",
-                    },
-                  ],
-                },
-                {
-                  level: "Exemplo 3 · Caso Real ACCESS (CRBio-08 2023 Q10 · Passo 3 Paciente)",
-                  accent: "amber",
-                  cases: [
-                    {
-                      sentence: "“A poluição da água ocorre devido à eliminação do esgoto...”",
-                      tags: [
-                        { label: "da água", value: "água é poluída (sofre!) = CN", color: "emerald" },
-                        { label: "do esgoto", value: "esgoto é eliminado (sofre!) = CN", color: "emerald" },
-                      ],
-                      explanation:
-                        "Ambos são pacientes das ações expressas pelos substantivos abstratos 'poluição' e 'eliminação' → dois CN!",
-                    },
-                  ],
-                },
-                {
-                  level: "Exemplo 4 · Comparação Espelhada (Agente vs. Paciente)",
-                  accent: "purple",
-                  cases: [
-                    {
-                      sentence: "“A crítica do vereador repercutiu.” vs. “A crítica ao vereador repercutiu.”",
-                      tags: [
-                        { label: "do vereador", value: "fez a crítica (agente) = AA", color: "sky" },
-                        { label: "ao vereador", value: "sofreu a crítica (paciente) = CN", color: "emerald" },
-                      ],
-                      explanation: "Se pratica a ação, é AA; se recebe a ação, é CN.",
-                    },
-                  ],
-                },
-              ]}
-            />
-
             <TrapAlert
               title="Pegadinha ACCESS + Teste de 5 Segundos"
               trap="Chamar 'o uso do computador' (Passos/MG 2023 Q12) ou 'a aprovação do projeto' de Adjunto Adnominal achando que indica posse!"
-              escape="Passe para o particípio passivo: 'O computador foi USADO?' ✅ 'O projeto foi APROVADO?' ✅ Se SOFRE a ação do substantivo abstrato → é Complemento Nominal (CN)!"
+              escape="Passe para o particípio passivo: 'O computador foi USADO?' ✅ 'O projeto foi APROVADO?' ✅ Se SOFRE a ação do substantivo abstrato → é Complemento Nominal!"
             />
 
             {/* PARADA RAPIDA 5.A */}
@@ -3960,11 +4155,16 @@ export const portuguesSemana04: RichLessonModule = {
               title="Os 10 Valores Semânticos do Adjunto Adverbial na ACCESS"
               headers={["Valor Semântico", "Pergunta", "Exemplos em Prova"]}
               rows={[
-                ["1. Tempo · 2. Lugar", "Quando? / Onde?", "“Na terça-feira” / “Próximo à Grande Pirâmide”"],
-                ["3. Modo · 4. Intensidade", "Como? / Quanto?", "“com atenção” / “quão nocivo” (Passos/MG 2023 Q12!)"],
-                ["5. Causa · 6. Finalidade", "Por quê? / Para quê?", "“por falta de energia” / “para assinatura”"],
-                ["7. Meio · 8. Instrumento", "Por que meio? / Com que objeto?", "“pelo correio eletrônico” / “com a caneta oficial”"],
-                ["9. Companhia · 10. Neg./Dúvida", "Com quem? / Certeza", "“com o secretário” / “não”, “talvez”, “certamente”"],
+                ["1. Tempo", "Quando?", "“Na terça-feira” / “ontem à noite”"],
+                ["2. Lugar", "Onde / Aonde?", "“Próximo à Grande Pirâmide” / “em Birigui”"],
+                ["3. Modo", "Como?", "“com atenção” / “apressadamente”"],
+                ["4. Intensidade", "Quanto?", "“quão nocivo” (Passos/MG 2023 Q12!) / “muito cansada”"],
+                ["5. Causa", "Por quê?", "“por falta de energia”"],
+                ["6. Finalidade", "Para quê?", "“para assinatura”"],
+                ["7. Meio", "Por que meio?", "“pelo correio eletrônico” / “por meio digital”"],
+                ["8. Instrumento", "Com que objeto?", "“com a caneta oficial”"],
+                ["9. Companhia", "Com quem?", "“com o secretário”"],
+                ["10. Negação / Dúvida / Afirmação", "Nega, duvida ou confirma?", "“não”, “talvez”, “certamente”"],
               ]}
             />
 
@@ -3978,16 +4178,20 @@ export const portuguesSemana04: RichLessonModule = {
               title="Exemplos Progressivos · Adjunto Adverbial & Intensidade"
               items={[
                 {
-                  level: "Exemplo 1 · Cotidiano (Varia vs. Invariável)",
+                  level: "Exemplo 1 · Cotidiano (Adjetivo variável vs. Advérbio invariável)",
                   accent: "indigo",
                   cases: [
                     {
-                      sentence: "“A atendente saiu apressada.” vs. “A atendente saiu apressadamente.”",
-                      tags: [
-                        { label: "apressada", value: "varia (elas apressadas) = PS", color: "emerald" },
-                        { label: "apressadamente", value: "invariável = Adj. Adv. de Modo", color: "sky" },
-                      ],
-                      explanation: "Circunstância adverbial jamais vai ao plural!",
+                      label: "Frase A · Varia com o sujeito → Predicativo do Sujeito",
+                      sentence: "“A atendente saiu apressada.”",
+                      tags: [{ label: "apressada", value: "varia (elas apressadas) = Predicativo do Sujeito", color: "emerald" }],
+                      explanation: "Como muda para o plural/masculino ('as atendentes apressadas'), é qualidade adjetiva.",
+                    },
+                    {
+                      label: "Frase B · Não varia nunca → Adjunto Adverbial de Modo",
+                      sentence: "“A atendente saiu apressadamente.”",
+                      tags: [{ label: "apressadamente", value: "invariável = Adjunto Adverbial de Modo", color: "sky" }],
+                      explanation: "Circunstância adverbial jamais vai ao plural — mesmo com 'as atendentes saíram apressadamente'!",
                     },
                   ],
                 },
@@ -4038,12 +4242,83 @@ export const portuguesSemana04: RichLessonModule = {
             <DefinitionBlocks
               items={[
                 {
-                  term: "Os 4 Tipos de Aposto na Prova",
-                  badge: "EQUIVALÊNCIA DE BASE SUBSTANTIVA",
+                  term: "1. Aposto Explicativo",
+                  badge: "SEMPRE ISOLADO POR PONTUAÇÃO",
                   accent: "indigo",
                   summary:
-                    "(1) Explicativo: entre vírgulas/travessões ('Birigui, capital do calçado, ...'); (2) Enumerativo: lista após dois-pontos ('três metas: creches, saúde e obras'); (3) Resumitivo: condensa tudo ('Editais, atas, tudo foi salvo'); (4) Especificativo: SEM VÍRGULA, individualiza nome comum ('o município de Birigui').",
-                  note: "Duelo com AA (Teste do Sinal de Igual '='): município = Birigui → Aposto Especificativo! Decreto ≠ Birigui → Adjunto Adnominal!",
+                    "Explica ou identifica um termo anterior, sempre isolado por vírgulas, travessões ou parênteses (“Birigui, capital nacional do calçado infantil, abrirá edital.”).",
+                  examplesTitle: "Exemplo · Aposto Explicativo",
+                  examples: [
+                    {
+                      label: "Cotidiano · Entre duas vírgulas",
+                      sentence: "“Carlos, o novo estagiário, protocolou o guia.”",
+                      tags: [{ label: "EQUIVALÊNCIA", value: "Carlos = o novo estagiário (Aposto Explicativo)", color: "indigo" }],
+                      explanation: "Vem isolado por duas vírgulas explicando quem é o sujeito Carlos.",
+                    },
+                  ],
+                },
+                {
+                  term: "2. Aposto Enumerativo",
+                  badge: "LISTA APÓS DOIS-PONTOS",
+                  accent: "amber",
+                  summary:
+                    "Desdobra ou lista os itens que compõem um termo anterior logo após dois-pontos (:) ou travessão.",
+                  examplesTitle: "Exemplo · Aposto Enumerativo",
+                  examples: [
+                    {
+                      label: "Rotina de Prefeitura · Desdobrando itens",
+                      sentence: "“A Prefeitura definiu três metas: agilidade, transparência e economia.”",
+                      tags: [
+                        {
+                          label: "ENUMERAÇÃO",
+                          value: "agilidade, transparência e economia = Aposto Enumerativo",
+                          color: "amber",
+                        },
+                      ],
+                      explanation: "Os dois-pontos abrem a enumeração que desdobra exatamente quais são as 'três metas'.",
+                    },
+                  ],
+                },
+                {
+                  term: "3. Aposto Resumitivo (Recapitulativo)",
+                  badge: "CONDENSA TUDO EM 1 PALAVRA",
+                  accent: "sky",
+                  summary:
+                    "Resume vários termos enumerados antes em uma única palavra totalizadora (tudo, nada, todos, ninguém, isso).",
+                  examplesTitle: "Exemplo · Aposto Resumitivo",
+                  examples: [
+                    {
+                      label: "Rotina de Prefeitura · Condensando uma lista inteira",
+                      sentence: "“Editais, atas, ofícios, tudo foi salvo no sistema.”",
+                      tags: [{ label: "RESUMO", value: "tudo = Aposto Resumitivo", color: "sky" }],
+                      explanation: "A palavra 'tudo' retoma e condensa todos os documentos citados anteriormente para ligá-los ao verbo no singular.",
+                    },
+                  ],
+                },
+                {
+                  term: "4. Aposto Especificativo (SEM Vírgula) + Duelo com Adjunto Adnominal (Teste do '=')",
+                  badge: "TESTE DO SINAL DE IGUAL (=)",
+                  accent: "emerald",
+                  summary:
+                    "Individualiza um substantivo comum ligando diretamente o nome próprio SEM vírgula (“o município de Birigui”, “a Avenida Brasil”, “o prefeito João”).",
+                  note: "Duelo com Adjunto Adnominal (Teste do Sinal de Igual '='): município = Birigui → Aposto Especificativo! Decreto ≠ Birigui → Adjunto Adnominal!",
+                  examplesTitle: "Exemplos · Aposto Especificativo vs. Adjunto Adnominal",
+                  examples: [
+                    {
+                      label: "Identidade direta (=) → Aposto Especificativo",
+                      sentence: "“O município de Birigui modernizou o portal.”",
+                      tags: [{ label: "município = Birigui", value: "Aposto Especificativo (sem vírgula!)", color: "emerald" }],
+                      explanation:
+                        "Teste do Sinal de Igual: o município É Birigui! Há equivalência direta entre os dois nomes sem vírgula.",
+                    },
+                    {
+                      label: "Posse ou origem (≠) → Adjunto Adnominal",
+                      sentence: "“O decreto de Birigui entrou em vigor.”",
+                      tags: [{ label: "decreto ≠ Birigui", value: "Adjunto Adnominal (posse/origem)", color: "sky" }],
+                      explanation:
+                        "Um decreto não É a cidade de Birigui — ele pertence ou veio de Birigui! Portanto é Adjunto Adnominal.",
+                    },
+                  ],
                 },
               ]}
             />
@@ -4054,45 +4329,20 @@ export const portuguesSemana04: RichLessonModule = {
             </AnalogyBox>
 
             <ExampleShowcase
-              title="Exemplos Progressivos · Os Tipos de Aposto & Teste do '='"
+              title="Caso Limite · 3 Tipos de Aposto na Mesma Ata"
               items={[
                 {
-                  level: "Exemplo 1 · Cotidiano (Aposto Explicativo entre vírgulas)",
-                  accent: "indigo",
-                  cases: [
-                    {
-                      sentence: "“Carlos, o novo estagiário, protocolou o guia.”",
-                      tags: [{ label: "EQUIVALÊNCIA", value: "Carlos = o novo estagiário (Explicativo)", color: "indigo" }],
-                      explanation: "Vem isolado por duas vírgulas explicando quem é o sujeito Carlos.",
-                    },
-                  ],
-                },
-                {
-                  level: "Exemplo 2 · Rotina de Prefeitura (Especificativo × Adjunto Adnominal)",
-                  accent: "emerald",
-                  cases: [
-                    {
-                      sentence: "“O município de Birigui” vs. “O decreto de Birigui”",
-                      tags: [
-                        { label: "município = Birigui", value: "Aposto Especificativo (sem vírgula!)", color: "emerald" },
-                        { label: "decreto ≠ Birigui", value: "Adjunto Adnominal (posse/origem)", color: "sky" },
-                      ],
-                      explanation: "Teste do Igual: se há identidade entre os nomes sem vírgula, é Aposto Especificativo!",
-                    },
-                  ],
-                },
-                {
-                  level: "Exemplo 3 · Caso Limite (Vários tipos de aposto na mesma ata)",
+                  level: "Caso Limite · Combinando Especificativo, Explicativo e Enumerativo",
                   accent: "amber",
                   cases: [
                     {
                       sentence: "“O município de Birigui, referência administrativa, definiu três metas: agilidade, transparência e economia.”",
                       tags: [
-                        { label: "de Birigui", value: "Especificativo", color: "emerald" },
-                        { label: "referência...", value: "Explicativo", color: "indigo" },
-                        { label: "agilidade, ...", value: "Enumerativo", color: "amber" },
+                        { label: "de Birigui", value: "Aposto Especificativo", color: "emerald" },
+                        { label: "referência administrativa", value: "Aposto Explicativo", color: "indigo" },
+                        { label: "agilidade, transparência e economia", value: "Aposto Enumerativo", color: "amber" },
                       ],
-                      explanation: "Os dois-pontos abrem o Aposto Enumerativo desdobrando 'três metas'.",
+                      explanation: "Na mesma ata municipal aparecem três apostos diferentes: o especificativo sem vírgula, o explicativo entre vírgulas e o enumerativo após dois-pontos.",
                     },
                   ],
                 },
@@ -4119,11 +4369,58 @@ export const portuguesSemana04: RichLessonModule = {
             <DefinitionBlocks
               items={[
                 {
-                  term: "Vocativo = Termo Independente de Chamamento",
-                  badge: "SEMPRE COM VÍRGULA!",
+                  term: "1. Vocativo no Início da Frase (Vírgula Obrigatória Depois)",
+                  badge: "CHAMAMENTO INICIAL",
                   accent: "amber",
                   summary:
-                    "Termo avulso usado só para chamar ou interpelar o ouvinte/leitor. Nunca faz parte do Sujeito nem do Predicado e traz vírgula obrigatória nas 3 posições: início ('Senhores, ...'), meio ('..., senhores, ...') ou fim ('..., senhores.').",
+                    "Aparece na abertura da fala chamando o ouvinte, separado por uma vírgula antes da oração principal (que pode ter verbo no imperativo com sujeito oculto).",
+                  examplesTitle: "Exemplo · Vocativo no Início",
+                  examples: [
+                    {
+                      label: "Cotidiano · Vocativo ≠ Sujeito",
+                      sentence: "“Carlos, protocole o guia ainda hoje!”",
+                      tags: [
+                        {
+                          label: "1 VÍRGULA ANTES DO VERBO",
+                          value: "Carlos = Vocativo (Sujeito oculto: você)",
+                          color: "amber",
+                        },
+                      ],
+                      explanation: "Sujeito jamais fica separado do verbo por uma única vírgula! Aqui falamos COM o Carlos.",
+                    },
+                  ],
+                },
+                {
+                  term: "2. Vocativo no Meio da Frase (Isolado Entre Duas Vírgulas)",
+                  badge: "CHAMAMENTO INTERCALADO",
+                  accent: "emerald",
+                  summary:
+                    "Quando o chamamento entra no meio da oração, fica obrigatoriamente cercado por duas vírgulas — e continua sem fazer parte do Sujeito nem do Predicado.",
+                  examplesTitle: "Exemplo · Vocativo no Meio",
+                  examples: [
+                    {
+                      label: "Rotina de Prefeitura · Entre duas vírgulas",
+                      sentence: "“Requeremos, Excelentíssimo Prefeito, a análise urgente deste parecer.”",
+                      tags: [{ label: "NO MEIO", value: "Isolado por duas vírgulas obrigatórias", color: "emerald" }],
+                      explanation: "Mesmo intercalado no meio da oração, o chamamento não pertence ao sujeito nem ao predicado.",
+                    },
+                  ],
+                },
+                {
+                  term: "3. Vocativo no Fim da Frase (Vírgula Obrigatória Antes)",
+                  badge: "CHAMAMENTO FINAL",
+                  accent: "indigo",
+                  summary:
+                    "Quando o chamamento fecha a frase, exige uma vírgula logo antes dele para não se misturar com o último termo da oração.",
+                  examplesTitle: "Exemplo · Vocativo no Fim",
+                  examples: [
+                    {
+                      label: "Rotina de Prefeitura · Fechando o pedido",
+                      sentence: "“Encaminhe o processo com urgência, senhores vereadores.”",
+                      tags: [{ label: "NO FIM", value: "Vírgula obrigatória antes do chamamento", color: "indigo" }],
+                      explanation: "Sem essa vírgula, pareceria que o processo pertence aos vereadores; com a vírgula, estamos chamando os vereadores.",
+                    },
+                  ],
                 },
               ]}
             />
@@ -4134,41 +4431,19 @@ export const portuguesSemana04: RichLessonModule = {
             </AnalogyBox>
 
             <ExampleShowcase
-              title="Exemplos Progressivos · Vocativo nas 3 Posições"
+              title="Caso Limite · Vocativo e Aposto Explicativo Juntos na Mesma Frase"
               items={[
                 {
-                  level: "Exemplo 1 · Cotidiano (Vocativo ≠ Sujeito)",
-                  accent: "indigo",
-                  cases: [
-                    {
-                      sentence: "“Carlos, protocole o guia ainda hoje!”",
-                      tags: [{ label: "1 VÍRGULA ANTES DO VERBO", value: "Carlos = Vocativo (Sujeito oculto: você)", color: "amber" }],
-                      explanation: "Sujeito jamais fica separado do verbo por uma única vírgula!",
-                    },
-                  ],
-                },
-                {
-                  level: "Exemplo 2 · Rotina de Prefeitura (Vocativo no meio entre duas vírgulas)",
-                  accent: "emerald",
-                  cases: [
-                    {
-                      sentence: "“Requeremos, Excelentíssimo Prefeito, a análise urgente deste parecer.”",
-                      tags: [{ label: "NO MEIO", value: "Isolado por duas vírgulas obrigatórias", color: "emerald" }],
-                      explanation: "Mesmo intercalado no meio da oração, o chamamento não pertence ao sujeito nem ao predicado.",
-                    },
-                  ],
-                },
-                {
-                  level: "Exemplo 3 · Caso Limite (Vocativo + Aposto Explicativo juntos)",
+                  level: "Caso Limite · Quem Ouve o Chamado vs. Quem é Explicado",
                   accent: "amber",
                   cases: [
                     {
                       sentence: "“Cidadãos presentes, Birigui, capital do calçado infantil, crescerá mais.”",
                       tags: [
                         { label: "Cidadãos presentes", value: "fala COM eles = Vocativo", color: "amber" },
-                        { label: "capital do calçado...", value: "fala SOBRE Birigui = Aposto Explicativo", color: "indigo" },
+                        { label: "capital do calçado infantil", value: "fala SOBRE Birigui = Aposto Explicativo", color: "indigo" },
                       ],
-                      explanation: "Distinção clássica: quem ouve o chamado = Vocativo; quem é explicado = Aposto.",
+                      explanation: "Distinção clássica: quem ouve o chamado = Vocativo; quem é explicado entre vírgulas = Aposto Explicativo.",
                     },
                   ],
                 },

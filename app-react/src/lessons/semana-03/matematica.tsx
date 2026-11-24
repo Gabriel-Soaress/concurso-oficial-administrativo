@@ -76,7 +76,7 @@ export const matematicaSemana03: RichLessonModule = {
               <MathTex tex="= 25\text{ m}^2" /> ou o volume de um cubo <MathTex tex="= 64\text{ m}^3" />) e pergunta:{" "}
               <strong>“Qual número positivo multiplicado por si mesmo n vezes produziu esse valor?”</strong>
             </p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
+            <div className="space-y-3 pt-1">
               <MathStack
                 compact
                 lines={[
@@ -722,31 +722,25 @@ export const matematicaSemana03: RichLessonModule = {
               Antes de cruzar qualquer coisa, faça sempre a pergunta da realidade:{" "}
               <strong>“Se eu AUMENTAR a coluna A, a coluna B AUMENTA ou DIMINUI?”</strong>
             </p>
-            <ul className="list-disc pl-5 space-y-1.5 text-sm sm:text-[15px]">
-              <li>
-                <strong>Grandezas Diretamente Proporcionais (GDP — Setas no MESMO sentido ↑ ↑):</strong> mais processos
-                para digitalizar → exige <strong>mais</strong> tempo (ou mais folhas de papel). Quando ambas crescem ou
-                diminuem juntas, a fração fica na posição original e <strong>multiplica-se cruzado</strong>.
-              </li>
-              <li>
-                <strong>Grandezas Inversamente Proporcionais (GIP — Setas em sentidos OPOSTOS ↑ ↓):</strong> mais
-                servidores atendendo ao mesmo tempo (ou maior velocidade de um veículo) → o serviço termina em{" "}
-                <strong>menos</strong> tempo! Quando uma cresce e a outra cai, <strong>INVERTA uma das colunas</strong>{" "}
-                (vire de cabeça para baixo) antes de multiplicar cruzado (ou multiplique <strong>reto na horizontal</strong>).
-              </li>
-            </ul>
           </ProseSection>
 
           <GuidedCalcGrid>
             <GuidedCalcCard
-              title="Diretamente Proporcional (GDP ↑ ↑)"
+              title="1. Grandezas Diretamente Proporcionais (GDP — Setas no MESMO sentido ↑ ↑)"
               badge="Mais trabalho = Mais tempo"
               accent="emerald"
               banner={
-                <span>
-                  <em>Exemplo:</em> Uma impressora imprime <strong>120 páginas em 4 minutos</strong>. Quantas páginas
-                  imprimirá em <strong>10 minutos</strong>?
-                </span>
+                <div className="space-y-2">
+                  <p>
+                    Mais processos para digitalizar → exige <strong>mais</strong> tempo (ou mais folhas de papel). Quando
+                    ambas crescem ou diminuem juntas, a fração fica na posição original e{" "}
+                    <strong>multiplica-se cruzado</strong>.
+                  </p>
+                  <p className="pt-2 border-t border-dashed border-tech">
+                    <em>Exemplo:</em> Uma impressora imprime <strong>120 páginas em 4 minutos</strong>. Quantas páginas
+                    imprimirá em <strong>10 minutos</strong>?
+                  </p>
+                </div>
               }
               rows={[
                 {
@@ -773,14 +767,22 @@ export const matematicaSemana03: RichLessonModule = {
             />
 
             <GuidedCalcCard
-              title="Inversamente Proporcional (GIP ↑ ↓)"
+              title="2. Grandezas Inversamente Proporcionais (GIP — Setas em sentidos OPOSTOS ↑ ↓)"
               badge="Mais servidores = Menos dias"
               accent="amber"
               banner={
-                <span>
-                  <em>Exemplo:</em> Uma equipe de <strong>6 servidores</strong> cataloga um arquivo em{" "}
-                  <strong>10 dias</strong>. Se colocarmos <strong>15 servidores</strong>, em quantos dias terminam?
-                </span>
+                <div className="space-y-2">
+                  <p>
+                    Mais servidores atendendo ao mesmo tempo (ou maior velocidade de um veículo) → o serviço termina em{" "}
+                    <strong>menos</strong> tempo! Quando uma cresce e a outra cai,{" "}
+                    <strong>INVERTA uma das colunas</strong> (vire de cabeça para baixo) antes de multiplicar cruzado (ou
+                    multiplique <strong>reto na horizontal</strong>).
+                  </p>
+                  <p className="pt-2 border-t border-dashed border-tech">
+                    <em>Exemplo:</em> Uma equipe de <strong>6 servidores</strong> cataloga um arquivo em{" "}
+                    <strong>10 dias</strong>. Se colocarmos <strong>15 servidores</strong>, em quantos dias terminam?
+                  </p>
+                </div>
               }
               rows={[
                 {

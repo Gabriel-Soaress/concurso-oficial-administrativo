@@ -30,16 +30,17 @@ Antes de digitar o título da aula, o agente deve executar estes 4 passos obriga
 
 Cada subconceito (`###`) dentro de um Eixo (`## EIXO X: ...`) deve obrigatoriamente cumprir os **6 pilares `D-E-A-M-P-C`**:
 
-- **D — Definição do Zero:**
+- **D — Definição do Zero (+ Regra 1 Ponto → Exemplo Imediato):**
   - Conceitue com palavras simples antes de usar qualquer termo técnico (zero jargão solto).
   - Se o subconceito depender de conteúdo de semanas anteriores (ex.: preposição, particípio, pronome oblíquo), faça uma **micro-revisão de 1 a 3 linhas** ali mesmo antes de avançar.
+  - **1 Ponto → Exemplo(s) Imediato(s) → Próximo Ponto:** sempre que um subtópico `###` explicar **2 ou mais subtipos, classificações, regras ou testes** (ex.: *Predicado Verbal / Nominal / Verbo-Nominal*; *Trio do SE*; *6 Casos de Verbo Impessoal*; *4 Tipos de Aposto*), apresente **um ponto por vez com o(s) seu(s) exemplo(s) comentado(s) logo abaixo dele**, antes de abrir o ponto seguinte — é proibido listar todas as definições juntas e jogar todos os exemplos misturados no bloco posterior, deixando analogia, fluxograma/tabela comparativa e `Mapa de Gêmeos` apenas como integração final.
   - **Ordem de Dependência Linear (Zero Forward References):** Jamais use siglas ou conceitos de Eixos posteriores (nem em exemplos, quadros, fluxogramas ou checkpoints) antes de defini-los formalmente no Eixo próprio. Quando um exemplo da introdução ou de um eixo inicial mencionar um papel sintático futuro, use descrição intuitiva em português comum e aponte entre parênteses em qual Eixo será batizado e aprofundado.
 - **E — Explicação da Mecânica e do Porquê:**
   - Explique **por que** a regra existe na comunicação escrita ou no cálculo/rotina pública e **como ela funciona nos bastidores**.
   - Sempre entregue o **Teste Operacional Prático** (ex.: *"troque por algo/alguém"*, *"pluralize o verbo para achar o sujeito"*, *"substitua pelo pronome `o/a` para saber se é objeto ou predicativo"*).
 - **A — Analogia Concreta + Mínimo de 3 Exemplos Progressivos:**
-  - Inclua uma analogia clara do cotidiano ou da rotina de trabalho de uma Prefeitura Municipal.
-  - Todo subconceito deve trazer **no mínimo 3 exemplos progressivos comentados**:
+  - Inclua uma analogia clara do cotidiano ou da rotina de trabalho de uma Prefeitura Municipal (atuando como síntese visual quando cada subponto já tiver recebido seus exemplos na etapa `D`).
+  - No somatório do subtópico (`###`), entregue **no mínimo 3 exemplos progressivos comentados**:
     1. **Exemplo 1 (Intuitivo / Cotidiano):** frase ou caso simples para "cair a ficha" de imediato;
     2. **Exemplo 2 (Rotina de Prefeitura / Oficial Administrativo):** aplicação concreta no setor público (protocolo, ofício, licitação, edital, atendimento em Birigui/SP);
     3. **Exemplo 3 (Caso Limite / Ordem Invertida / Armadilha de Prova):** a construção atípica que derruba quem só decorou o caso básico.
@@ -83,13 +84,13 @@ Consulte sempre `.agents/PADRAO_QUESTOES_BANCA_ACCESS.md` e cumpra as regras aba
 
 Conforme `.agents/GUIA_EDUKIT_REACT.md`:
 
-1. **Mapeamento 1-para-1 e Fluxo 100% Vertical:** o `.md` é o texto-base integral; o `.tsx` em `app-react/src/lessons/semana-XX/<materia>.tsx` deve preservar **100%** das subseções, parágrafos, exemplos e questões, em **fluxo 100% vertical na teoria** (proibido cards teóricos lado a lado `md:grid-cols-2`), apenas elevando a apresentação visual.
+1. **Mapeamento 1-para-1 e Fluxo 100% Vertical ("1 Ponto → Exemplo(s) → Próximo Ponto"):** o `.md` é o texto-base integral; o `.tsx` em `app-react/src/lessons/semana-XX/<materia>.tsx` deve preservar **100%** das subseções, parágrafos, exemplos e questões, em **fluxo 100% vertical na teoria** (proibido cards teóricos lado a lado `md:grid-cols-2`, `sm:grid-cols-3`, `lg:grid-cols-2`), apenas elevando a apresentação visual. Quando houver 2+ subtipos ou regras, é **proibido** agrupar todas as definições no topo e empilhar todos os exemplos juntos num único `<ExampleShowcase />` abaixo: cada conceito deve carregar seu(s) próprio(s) exemplo(s) imediatamente abaixo (via `examples` em `<DefinitionBlocks />` ou `<GuidedCalcCard />` sequenciais), e é proibido concatenar frases distintas com `" | "` ou `" vs. "` dentro de um mesmo campo `sentence:`.
 2. **Matriz Obrigatória de Componentes (`@/components/edu`):**
    - Contexto inicial obrigatório de cada Eixo → `<AxisContextCard eyebrow? title bridge problemSolved roadmap />`
    - Narrativa conceitual e demonstrações integrais → `<ProseSection number title>`
    - Regra-mãe ou definição inaugural → `<ConceptCard title badge accent icon>`
-   - Definições e enumerações de conceitos irmãos → `<DefinitionBlocks title? columns={1|2} items />` (Regra Anti-Texto Corrido: proibido empilhar 2 ou mais conceitos/classificações num mesmo parágrafo `<p>`)
-   - Exemplos progressivos destacados em vitrine vertical → `<ExampleShowcase title? items />`
+   - Definições e enumerações de conceitos irmãos → `<DefinitionBlocks title? columns={1|2} items />` (Regra Anti-Texto Corrido: proibido empilhar 2 ou mais conceitos/classificações num mesmo parágrafo `<p>`; passe `examples?: ExampleSentenceCase[]` e `examplesTitle?` diretamente em cada item para embutir seus exemplos imediatos antes do próximo ponto)
+   - Exemplos progressivos destacados em vitrine vertical ou card avulso → `<ExampleShowcase title? items />` & `<ExampleCaseCard />` (usar `<ExampleShowcase />` isolado apenas em seções de conceito único, deixando sínteses/tabelas para o fechamento)
    - Fixação ativa no meio dos eixos → `<InlinePractice title subtitle? questions />` (aceita `label: ReactNode` e termos-alvo obrigatoriamente marcados com `<u>`)
    - Analogia prática ou caso de Prefeitura → `<AnalogyBox title tag>`
    - Contraste entre "Gêmeos Confundíveis" ou Certo vs. Errado → `<CompareGrid mode="right-wrong"|"contrast" />` e/ou `<KeyTable />`

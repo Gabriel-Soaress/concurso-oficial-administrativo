@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
-import { Layers } from "lucide-react";
+import { BookOpen, Layers } from "lucide-react";
+import { ExampleCaseCard, type ExampleSentenceCase } from "./ExampleShowcase";
 
 export type DefinitionAccent = "indigo" | "emerald" | "amber" | "sky" | "purple" | "rose";
 
@@ -10,6 +11,8 @@ export interface DefinitionBlockItem {
   summary: ReactNode;
   note?: ReactNode;
   example?: ReactNode;
+  examples?: ExampleSentenceCase[];
+  examplesTitle?: string;
 }
 
 interface DefinitionBlocksProps {
@@ -61,13 +64,15 @@ export function DefinitionBlocks({ title, items }: DefinitionBlocksProps) {
         </div>
       )}
 
-      <div className="space-y-3">
+      <div className="space-y-4">
         {items.map((item, idx) => {
-          const style = ACCENT_STYLES[item.accent ?? "indigo"];
+          const itemAccent = item.accent ?? "indigo";
+          const style = ACCENT_STYLES[itemAccent];
+          const hasRichExamples = Boolean(item.examples && item.examples.length > 0);
           return (
             <div
               key={idx}
-              className={`rounded-xl p-4 sm:p-5 surface-muted border border-tech border-l-4 ${style.border} space-y-2.5 min-w-0 max-w-full`}
+              className={`rounded-xl ${hasRichExamples ? "p-3.5 sm:p-5" : "p-4 sm:p-5"} surface-muted border border-tech border-l-4 ${style.border} space-y-3 min-w-0 max-w-full`}
             >
               <div className="flex flex-wrap items-center justify-between gap-2">
                 <h4 className={`text-sm sm:text-base font-extrabold leading-snug break-words ${style.title}`}>
@@ -98,6 +103,22 @@ export function DefinitionBlocks({ title, items }: DefinitionBlocksProps) {
                     EX.
                   </span>
                   <div className="min-w-0 flex-1 break-words">{item.example}</div>
+                </div>
+              )}
+
+              {item.examples && item.examples.length > 0 && (
+                <div className="pt-2 border-t border-tech/60 space-y-3">
+                  <div className="flex items-center gap-1.5 text-[11px] font-mono uppercase tracking-wider font-extrabold text-mut">
+                    <BookOpen className="w-3.5 h-3.5 shrink-0" />
+                    <span>
+                      {item.examplesTitle ?? (item.examples.length > 1 ? "Exemplos Práticos" : "Exemplo Prático")}
+                    </span>
+                  </div>
+                  <div className="space-y-3">
+                    {item.examples.map((ex, eIdx) => (
+                      <ExampleCaseCard key={eIdx} item={ex} accent={itemAccent} />
+                    ))}
+                  </div>
                 </div>
               )}
             </div>
