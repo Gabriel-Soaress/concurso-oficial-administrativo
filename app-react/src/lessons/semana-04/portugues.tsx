@@ -697,100 +697,120 @@ export const portuguesSemana04: RichLessonModule = {
 
             {/* SVG 1 */}
             <ZoomableDiagram
-              title="Anatomia da Oração: Sujeito e Predicado na Ordem Direta vs. Ordem Inversa"
+              title="Anatomia da Oração: Ordem Direta vs. Ordem Inversa"
               badge="MAPA VISUAL"
             >
               <svg
-                viewBox="0 0 740 260"
+                viewBox="0 0 760 320"
                 className="w-full h-auto"
                 role="img"
                 aria-label="Anatomia da Oração Simples: Sujeito e Predicado na Ordem Direta versus Ordem Inversa"
               >
-                <rect x="8" y="8" width="724" height="244" rx="14" fill="#0f172a" stroke="#334155" strokeWidth="1.5" />
-                <text x="28" y="34" fill="#a5b4fc" fontSize="12" fontWeight="bold" fontFamily="sans-serif">
-                  1. ORDEM DIRETA (SUJEITO → VERBO → COMPLEMENTO → LUGAR/TEMPO)
+                <rect x="8" y="8" width="744" height="304" rx="14" fill="#0f172a" stroke="#334155" strokeWidth="1.5" />
+
+                {/* Faixa 1: Ordem Direta */}
+                <text x="28" y="36" fill="#a5b4fc" fontSize="13" fontWeight="bold" fontFamily="sans-serif">
+                  1. ORDEM DIRETA — O Sujeito vem primeiro; tudo o resto é Predicado
                 </text>
-                <rect x="28" y="48" width="165" height="58" rx="10" fill="#1e1b4b" stroke="#6366f1" strokeWidth="1.5" />
-                <text x="110" y="70" textAnchor="middle" fill="#c7d2fe" fontSize="11" fontWeight="bold" fontFamily="sans-serif">
-                  SUJEITO (Quem)
+
+                <rect x="28" y="50" width="160" height="60" rx="10" fill="#1e1b4b" stroke="#818cf8" strokeWidth="2" />
+                <text x="108" y="73" textAnchor="middle" fill="#c7d2fe" fontSize="11" fontWeight="bold" fontFamily="sans-serif">
+                  SUJEITO (Quem age)
                 </text>
-                <text x="110" y="90" textAnchor="middle" fill="#ffffff" fontSize="13" fontWeight="bold" fontFamily="sans-serif">
+                <text x="108" y="95" textAnchor="middle" fill="#ffffff" fontSize="14" fontWeight="bold" fontFamily="sans-serif">
                   A Prefeitura
                 </text>
 
-                <line x1="196" y1="77" x2="216" y2="77" stroke="#818cf8" strokeWidth="2" />
-                <polygon points="216,72 226,77 216,82" fill="#818cf8" />
+                <line x1="192" y1="80" x2="214" y2="80" stroke="#94a3b8" strokeWidth="2" />
+                <polygon points="214,75 224,80 214,85" fill="#94a3b8" />
 
-                <rect x="228" y="48" width="125" height="58" rx="10" fill="#064e3b" stroke="#10b981" strokeWidth="1.5" />
-                <text x="290" y="70" textAnchor="middle" fill="#a7f3d0" fontSize="11" fontWeight="bold" fontFamily="sans-serif">
+                <rect x="228" y="50" width="130" height="60" rx="10" fill="#064e3b" stroke="#10b981" strokeWidth="2" />
+                <text x="293" y="73" textAnchor="middle" fill="#a7f3d0" fontSize="11" fontWeight="bold" fontFamily="sans-serif">
                   VERBO (Ação)
                 </text>
-                <text x="290" y="90" textAnchor="middle" fill="#ffffff" fontSize="13" fontWeight="bold" fontFamily="sans-serif">
+                <text x="293" y="95" textAnchor="middle" fill="#ffffff" fontSize="14" fontWeight="bold" fontFamily="sans-serif">
                   publicou
                 </text>
 
-                <line x1="356" y1="77" x2="376" y2="77" stroke="#34d399" strokeWidth="2" />
-                <polygon points="376,72 386,77 376,82" fill="#34d399" />
+                <line x1="362" y1="80" x2="384" y2="80" stroke="#94a3b8" strokeWidth="2" />
+                <polygon points="384,75 394,80 384,85" fill="#94a3b8" />
 
-                <rect x="388" y="48" width="145" height="58" rx="10" fill="#0c4a6e" stroke="#0ea5e9" strokeWidth="1.5" />
-                <text x="460" y="70" textAnchor="middle" fill="#bae6fd" fontSize="11" fontWeight="bold" fontFamily="sans-serif">
+                <rect x="398" y="50" width="156" height="60" rx="10" fill="#0c4a6e" stroke="#38bdf8" strokeWidth="2" />
+                <text x="476" y="73" textAnchor="middle" fill="#bae6fd" fontSize="11" fontWeight="bold" fontFamily="sans-serif">
                   COMPLEMENTO
                 </text>
-                <text x="460" y="90" textAnchor="middle" fill="#ffffff" fontSize="13" fontWeight="bold" fontFamily="sans-serif">
+                <text x="476" y="95" textAnchor="middle" fill="#ffffff" fontSize="14" fontWeight="bold" fontFamily="sans-serif">
                   o novo edital
                 </text>
 
-                <line x1="536" y1="77" x2="556" y2="77" stroke="#38bdf8" strokeWidth="2" />
-                <polygon points="556,72 566,77 556,82" fill="#38bdf8" />
+                <line x1="558" y1="80" x2="580" y2="80" stroke="#94a3b8" strokeWidth="2" />
+                <polygon points="580,75 590,80 580,85" fill="#94a3b8" />
 
-                <rect x="568" y="48" width="144" height="58" rx="10" fill="#451a03" stroke="#f59e0b" strokeWidth="1.5" />
-                <text x="640" y="70" textAnchor="middle" fill="#fde68a" fontSize="11" fontWeight="bold" fontFamily="sans-serif">
-                  LUGAR / TEMPO
+                <rect x="594" y="50" width="138" height="60" rx="10" fill="#451a03" stroke="#f59e0b" strokeWidth="2" />
+                <text x="663" y="73" textAnchor="middle" fill="#fde68a" fontSize="11" fontWeight="bold" fontFamily="sans-serif">
+                  LUGAR
                 </text>
-                <text x="640" y="90" textAnchor="middle" fill="#ffffff" fontSize="13" fontWeight="bold" fontFamily="sans-serif">
+                <text x="663" y="95" textAnchor="middle" fill="#ffffff" fontSize="14" fontWeight="bold" fontFamily="sans-serif">
                   em Birigui.
                 </text>
 
-                <rect x="228" y="112" width="484" height="22" rx="6" fill="#064e3b" stroke="#10b981" strokeWidth="1" />
-                <text x="470" y="127" textAnchor="middle" fill="#a7f3d0" fontSize="10.5" fontWeight="bold" fontFamily="sans-serif">
-                  BLOCO DO PREDICADO (tudo o que se declara sobre o Sujeito — inclui Verbo + resto)
+                {/* Barra de Predicado na Ordem Direta */}
+                <rect x="228" y="118" width="504" height="28" rx="7" fill="#064e3b" stroke="#10b981" strokeWidth="1.2" />
+                <text x="480" y="136" textAnchor="middle" fill="#a7f3d0" fontSize="11.5" fontWeight="bold" fontFamily="sans-serif">
+                  PREDICADO = Verbo + Complemento + Lugar (tudo o que sobra fora do Sujeito)
                 </text>
 
-                <line x1="28" y1="146" x2="712" y2="146" stroke="#334155" strokeDasharray="5 5" />
-                <text x="28" y="168" fill="#fbbf24" fontSize="12" fontWeight="bold" fontFamily="sans-serif">
-                  2. ORDEM INVERSA NA PROVA ACCESS (LUGAR NO INÍCIO + SUJEITO DEPOIS DO VERBO)
+                <line x1="28" y1="164" x2="732" y2="164" stroke="#334155" strokeDasharray="6 5" strokeWidth="1.5" />
+
+                {/* Faixa 2: Ordem Inversa */}
+                <text x="28" y="190" fill="#fbbf24" fontSize="13" fontWeight="bold" fontFamily="sans-serif">
+                  2. ORDEM INVERSA — As peças mudam de lugar, mas o Sujeito continua o mesmo!
                 </text>
 
-                <rect x="28" y="182" width="160" height="54" rx="10" fill="#451a03" stroke="#f59e0b" strokeWidth="1.5" />
-                <text x="108" y="203" textAnchor="middle" fill="#fde68a" fontSize="10.5" fontWeight="bold" fontFamily="sans-serif">
-                  LUGAR ANTECIPADO
+                <rect x="28" y="204" width="146" height="60" rx="10" fill="#451a03" stroke="#f59e0b" strokeWidth="2" />
+                <text x="101" y="227" textAnchor="middle" fill="#fde68a" fontSize="11" fontWeight="bold" fontFamily="sans-serif">
+                  LUGAR NO INÍCIO
                 </text>
-                <text x="108" y="222" textAnchor="middle" fill="#ffffff" fontSize="13" fontWeight="bold" fontFamily="sans-serif">
+                <text x="101" y="249" textAnchor="middle" fill="#ffffff" fontSize="14" fontWeight="bold" fontFamily="sans-serif">
                   Em Birigui,
                 </text>
 
-                <rect x="200" y="182" width="135" height="54" rx="10" fill="#064e3b" stroke="#10b981" strokeWidth="1.5" />
-                <text x="267" y="203" textAnchor="middle" fill="#a7f3d0" fontSize="10.5" fontWeight="bold" fontFamily="sans-serif">
+                <line x1="178" y1="234" x2="198" y2="234" stroke="#94a3b8" strokeWidth="2" />
+                <polygon points="198,229 208,234 198,239" fill="#94a3b8" />
+
+                <rect x="212" y="204" width="130" height="60" rx="10" fill="#064e3b" stroke="#10b981" strokeWidth="2" />
+                <text x="277" y="227" textAnchor="middle" fill="#a7f3d0" fontSize="11" fontWeight="bold" fontFamily="sans-serif">
                   VERBO
                 </text>
-                <text x="267" y="222" textAnchor="middle" fill="#ffffff" fontSize="13" fontWeight="bold" fontFamily="sans-serif">
+                <text x="277" y="249" textAnchor="middle" fill="#ffffff" fontSize="14" fontWeight="bold" fontFamily="sans-serif">
                   publicou
                 </text>
 
-                <rect x="347" y="182" width="175" height="54" rx="10" fill="#1e1b4b" stroke="#6366f1" strokeWidth="1.5" />
-                <text x="434" y="203" textAnchor="middle" fill="#c7d2fe" fontSize="10.5" fontWeight="bold" fontFamily="sans-serif">
-                  SUJEITO POSPOSTO
+                <line x1="346" y1="234" x2="366" y2="234" stroke="#94a3b8" strokeWidth="2" />
+                <polygon points="366,229 376,234 366,239" fill="#94a3b8" />
+
+                <rect x="380" y="204" width="166" height="60" rx="10" fill="#1e1b4b" stroke="#818cf8" strokeWidth="2" />
+                <text x="463" y="227" textAnchor="middle" fill="#c7d2fe" fontSize="11" fontWeight="bold" fontFamily="sans-serif">
+                  SUJEITO (Continua aqui!)
                 </text>
-                <text x="434" y="222" textAnchor="middle" fill="#ffffff" fontSize="13" fontWeight="bold" fontFamily="sans-serif">
+                <text x="463" y="249" textAnchor="middle" fill="#ffffff" fontSize="14" fontWeight="bold" fontFamily="sans-serif">
                   a Prefeitura
                 </text>
 
-                <rect x="534" y="182" width="178" height="54" rx="10" fill="#0c4a6e" stroke="#0ea5e9" strokeWidth="1.5" />
-                <text x="623" y="203" textAnchor="middle" fill="#bae6fd" fontSize="10.5" fontWeight="bold" fontFamily="sans-serif">
+                <line x1="550" y1="234" x2="570" y2="234" stroke="#94a3b8" strokeWidth="2" />
+                <polygon points="570,229 580,234 570,239" fill="#94a3b8" />
+
+                <rect x="584" y="204" width="148" height="60" rx="10" fill="#0c4a6e" stroke="#38bdf8" strokeWidth="2" />
+                <text x="658" y="227" textAnchor="middle" fill="#bae6fd" fontSize="11" fontWeight="bold" fontFamily="sans-serif">
                   COMPLEMENTO
                 </text>
-                <text x="623" y="222" textAnchor="middle" fill="#ffffff" fontSize="13" fontWeight="bold" fontFamily="sans-serif">
+                <text x="658" y="249" textAnchor="middle" fill="#ffffff" fontSize="14" fontWeight="bold" fontFamily="sans-serif">
                   o novo edital.
+                </text>
+
+                <rect x="28" y="274" width="704" height="26" rx="7" fill="#1e293b" stroke="#475569" strokeWidth="1" />
+                <text x="380" y="291" textAnchor="middle" fill="#fde68a" fontSize="11.5" fontWeight="bold" fontFamily="sans-serif">
+                  Atenção: “Em Birigui,” é só o LUGAR antecipado — nunca o Sujeito! Quem manda no verbo continua sendo “a Prefeitura”.
                 </text>
               </svg>
             </ZoomableDiagram>
@@ -2146,97 +2166,129 @@ export const portuguesSemana04: RichLessonModule = {
 
             {/* SVG 2 */}
             <ZoomableDiagram
-              title="Fluxograma em 4 Decisões para Classificar Qualquer Sujeito"
+              title="Fluxograma em 3 Perguntas para Classificar Qualquer Sujeito"
               badge="MAPA DE DECISÃO"
             >
               <svg
-                viewBox="0 0 740 300"
+                viewBox="0 0 760 400"
                 className="w-full h-auto"
                 role="img"
-                aria-label="Fluxograma em 4 decisões para classificar qualquer tipo de sujeito"
+                aria-label="Fluxograma em 3 perguntas para classificar qualquer tipo de sujeito"
               >
-                <rect x="8" y="8" width="724" height="284" rx="14" fill="#0f172a" stroke="#334155" strokeWidth="1.5" />
-                <rect x="24" y="22" width="320" height="54" rx="10" fill="#1e1b4b" stroke="#6366f1" strokeWidth="1.5" />
-                <text x="184" y="43" textAnchor="middle" fill="#a5b4fc" fontSize="11" fontWeight="bold" fontFamily="sans-serif">
-                  DECISÃO 1: O verbo é IMPESSOAL?
+                <rect x="8" y="8" width="744" height="384" rx="14" fill="#0f172a" stroke="#334155" strokeWidth="1.5" />
+
+                {/* Pergunta 1 */}
+                <rect x="28" y="26" width="320" height="68" rx="12" fill="#1e1b4b" stroke="#818cf8" strokeWidth="2" />
+                <text x="188" y="51" textAnchor="middle" fill="#a5b4fc" fontSize="11.5" fontWeight="bold" fontFamily="sans-serif">
+                  PERGUNTA 1
                 </text>
-                <text x="184" y="61" textAnchor="middle" fill="#ffffff" fontSize="12" fontWeight="bold" fontFamily="sans-serif">
-                  (Haver=existir, Fazer tempo/clima, Chover, Ser horas)
+                <text x="188" y="70" textAnchor="middle" fill="#ffffff" fontSize="13.5" fontWeight="bold" fontFamily="sans-serif">
+                  O verbo é IMPESSOAL?
+                </text>
+                <text x="188" y="86" textAnchor="middle" fill="#cbd5e1" fontSize="10.5" fontFamily="sans-serif">
+                  (Haver = existir, Fazer tempo/clima, Chover, Ser horas)
                 </text>
 
-                <line x1="344" y1="49" x2="420" y2="49" stroke="#f59e0b" strokeWidth="2" />
-                <polygon points="420,44 430,49 420,54" fill="#f59e0b" />
-                <text x="382" y="40" textAnchor="middle" fill="#fcd34d" fontSize="10.5" fontWeight="bold" fontFamily="sans-serif">
+                {/* Seta SIM 1 */}
+                <line x1="348" y1="60" x2="424" y2="60" stroke="#f59e0b" strokeWidth="2.2" />
+                <polygon points="424,54 436,60 424,66" fill="#f59e0b" />
+                <text x="388" y="51" textAnchor="middle" fill="#fcd34d" fontSize="11.5" fontWeight="bold" fontFamily="sans-serif">
                   SIM
                 </text>
 
-                <rect x="432" y="22" width="284" height="54" rx="10" fill="#451a03" stroke="#f59e0b" strokeWidth="1.5" />
-                <text x="574" y="44" textAnchor="middle" fill="#fde68a" fontSize="12" fontWeight="bold" fontFamily="sans-serif">
-                  ORAÇÃO SEM SUJEITO (Inexistente)
+                {/* Resultado 1 */}
+                <rect x="440" y="26" width="292" height="68" rx="12" fill="#451a03" stroke="#f59e0b" strokeWidth="2" />
+                <text x="586" y="53" textAnchor="middle" fill="#fde68a" fontSize="13.5" fontWeight="bold" fontFamily="sans-serif">
+                  ORAÇÃO SEM SUJEITO
                 </text>
-                <text x="574" y="62" textAnchor="middle" fill="#e2e8f0" fontSize="10.5" fontFamily="sans-serif">
-                  Verbo preso no singular (exceto SER horas/datas)
+                <text x="586" y="74" textAnchor="middle" fill="#fef3c7" fontSize="11" fontFamily="sans-serif">
+                  Ex.: “Havia filas.” / “Faz dois dias.”
                 </text>
 
-                <line x1="184" y1="76" x2="184" y2="96" stroke="#94a3b8" strokeWidth="2" />
-                <polygon points="179,96 184,104 189,96" fill="#94a3b8" />
-                <text x="200" y="93" fill="#cbd5e1" fontSize="10" fontWeight="bold" fontFamily="sans-serif">
+                {/* Seta NÃO 1 */}
+                <line x1="188" y1="94" x2="188" y2="122" stroke="#94a3b8" strokeWidth="2.2" />
+                <polygon points="182,122 188,132 194,122" fill="#94a3b8" />
+                <text x="204" y="116" fill="#cbd5e1" fontSize="11" fontWeight="bold" fontFamily="sans-serif">
                   NÃO
                 </text>
 
-                <rect x="24" y="106" width="320" height="54" rx="10" fill="#1e1b4b" stroke="#6366f1" strokeWidth="1.5" />
-                <text x="184" y="127" textAnchor="middle" fill="#a5b4fc" fontSize="11" fontWeight="bold" fontFamily="sans-serif">
-                  DECISÃO 2: O sujeito está ESCRITO na oração?
+                {/* Pergunta 2 */}
+                <rect x="28" y="134" width="320" height="68" rx="12" fill="#1e1b4b" stroke="#818cf8" strokeWidth="2" />
+                <text x="188" y="159" textAnchor="middle" fill="#a5b4fc" fontSize="11.5" fontWeight="bold" fontFamily="sans-serif">
+                  PERGUNTA 2
                 </text>
-                <text x="184" y="145" textAnchor="middle" fill="#ffffff" fontSize="11.5" fontWeight="bold" fontFamily="sans-serif">
-                  (Antes ou depois do verbo, sem preposição no núcleo!)
+                <text x="188" y="178" textAnchor="middle" fill="#ffffff" fontSize="13.5" fontWeight="bold" fontFamily="sans-serif">
+                  O sujeito está ESCRITO na frase?
+                </text>
+                <text x="188" y="194" textAnchor="middle" fill="#cbd5e1" fontSize="10.5" fontFamily="sans-serif">
+                  (Antes ou depois do verbo, sem preposição no núcleo)
                 </text>
 
-                <line x1="344" y1="133" x2="420" y2="133" stroke="#10b981" strokeWidth="2" />
-                <polygon points="420,128 430,133 420,138" fill="#10b981" />
-                <text x="382" y="124" textAnchor="middle" fill="#34d399" fontSize="10.5" fontWeight="bold" fontFamily="sans-serif">
+                {/* Seta SIM 2 */}
+                <line x1="348" y1="168" x2="424" y2="168" stroke="#10b981" strokeWidth="2.2" />
+                <polygon points="424,162 436,168 424,174" fill="#10b981" />
+                <text x="388" y="159" textAnchor="middle" fill="#34d399" fontSize="11.5" fontWeight="bold" fontFamily="sans-serif">
                   SIM
                 </text>
 
-                <rect x="432" y="106" width="284" height="54" rx="10" fill="#064e3b" stroke="#10b981" strokeWidth="1.5" />
-                <text x="574" y="128" textAnchor="middle" fill="#a7f3d0" fontSize="12" fontWeight="bold" fontFamily="sans-serif">
-                  1 núcleo → SIMPLES | 2+ núcleos → COMPOSTO
+                {/* Resultado 2 */}
+                <rect x="440" y="134" width="292" height="68" rx="12" fill="#064e3b" stroke="#10b981" strokeWidth="2" />
+                <text x="586" y="158" textAnchor="middle" fill="#a7f3d0" fontSize="13" fontWeight="bold" fontFamily="sans-serif">
+                  SUJEITO DETERMINADO
                 </text>
-                <text x="574" y="146" textAnchor="middle" fill="#e2e8f0" fontSize="10.5" fontFamily="sans-serif">
-                  Inclui Sujeito Paciente com SE (VTD + se = passiva)
+                <text x="586" y="177" textAnchor="middle" fill="#ffffff" fontSize="11.5" fontWeight="bold" fontFamily="sans-serif">
+                  1 núcleo = SIMPLES · 2+ núcleos = COMPOSTO
+                </text>
+                <text x="586" y="193" textAnchor="middle" fill="#d1fae5" fontSize="10.5" fontFamily="sans-serif">
+                  (Inclui passiva com “se”: “Alugam-se salas.”)
                 </text>
 
-                <line x1="184" y1="160" x2="184" y2="180" stroke="#94a3b8" strokeWidth="2" />
-                <polygon points="179,180 184,188 189,180" fill="#94a3b8" />
-                <text x="200" y="177" fill="#cbd5e1" fontSize="10" fontWeight="bold" fontFamily="sans-serif">
+                {/* Seta NÃO 2 */}
+                <line x1="188" y1="202" x2="188" y2="230" stroke="#94a3b8" strokeWidth="2.2" />
+                <polygon points="182,230 188,240 194,230" fill="#94a3b8" />
+                <text x="204" y="224" fill="#cbd5e1" fontSize="11" fontWeight="bold" fontFamily="sans-serif">
                   NÃO está escrito
                 </text>
 
-                <rect x="24" y="190" width="320" height="54" rx="10" fill="#1e1b4b" stroke="#6366f1" strokeWidth="1.5" />
-                <text x="184" y="211" textAnchor="middle" fill="#a5b4fc" fontSize="11" fontWeight="bold" fontFamily="sans-serif">
-                  DECISÃO 3: Dá para saber QUEM É pela
+                {/* Pergunta 3 */}
+                <rect x="28" y="242" width="320" height="68" rx="12" fill="#1e1b4b" stroke="#818cf8" strokeWidth="2" />
+                <text x="188" y="266" textAnchor="middle" fill="#a5b4fc" fontSize="11.5" fontWeight="bold" fontFamily="sans-serif">
+                  PERGUNTA 3
                 </text>
-                <text x="184" y="229" textAnchor="middle" fill="#ffffff" fontSize="11.5" fontWeight="bold" fontFamily="sans-serif">
-                  terminação verbal (eu/nós) ou frase anterior?
+                <text x="188" y="285" textAnchor="middle" fill="#ffffff" fontSize="13" fontWeight="bold" fontFamily="sans-serif">
+                  Dá para saber QUEM É pelo verbo?
+                </text>
+                <text x="188" y="301" textAnchor="middle" fill="#cbd5e1" fontSize="10.5" fontFamily="sans-serif">
+                  (Terminação eu / tu / nós ou frase anterior)
                 </text>
 
-                <line x1="344" y1="217" x2="420" y2="217" stroke="#38bdf8" strokeWidth="2" />
-                <polygon points="420,212 430,217 420,222" fill="#38bdf8" />
-                <text x="382" y="208" textAnchor="middle" fill="#38bdf8" fontSize="10.5" fontWeight="bold" fontFamily="sans-serif">
+                {/* Seta SIM 3 */}
+                <line x1="348" y1="276" x2="424" y2="276" stroke="#38bdf8" strokeWidth="2.2" />
+                <polygon points="424,270 436,276 424,282" fill="#38bdf8" />
+                <text x="388" y="267" textAnchor="middle" fill="#38bdf8" fontSize="11.5" fontWeight="bold" fontFamily="sans-serif">
                   SIM
                 </text>
 
-                <rect x="432" y="190" width="284" height="54" rx="10" fill="#0c4a6e" stroke="#0ea5e9" strokeWidth="1.5" />
-                <text x="574" y="212" textAnchor="middle" fill="#bae6fd" fontSize="12" fontWeight="bold" fontFamily="sans-serif">
-                  SUJEITO OCULTO (Elíptico / Desinencial)
+                {/* Resultado 3 */}
+                <rect x="440" y="242" width="292" height="68" rx="12" fill="#0c4a6e" stroke="#38bdf8" strokeWidth="2" />
+                <text x="586" y="269" textAnchor="middle" fill="#bae6fd" fontSize="13.5" fontWeight="bold" fontFamily="sans-serif">
+                  SUJEITO OCULTO (Elíptico)
                 </text>
-                <text x="574" y="230" textAnchor="middle" fill="#e2e8f0" fontSize="10.5" fontFamily="sans-serif">
-                  Ex: “Protocolamos o ofício” (nós)
+                <text x="586" y="290" textAnchor="middle" fill="#e0f2fe" fontSize="11" fontFamily="sans-serif">
+                  Ex.: “Protocolamos o ofício.” (= Nós)
                 </text>
 
-                <rect x="24" y="254" width="692" height="28" rx="8" fill="#3b0764" stroke="#a855f7" strokeWidth="1.2" />
-                <text x="370" y="272" textAnchor="middle" fill="#f3e8ff" fontSize="11" fontWeight="bold" fontFamily="sans-serif">
-                  SE NÃO SOUBER QUEM É (3ª plural sem referente | VTI/VI/VL + SE [IIS] | Infinitivo Impessoal) → SUJEITO INDETERMINADO
+                {/* Seta NÃO 3 (conectando explicitamente à caixa de baixo!) */}
+                <line x1="188" y1="310" x2="188" y2="332" stroke="#c084fc" strokeWidth="2.2" />
+                <polygon points="182,332 188,342 194,332" fill="#c084fc" />
+                <text x="204" y="328" fill="#e9d5ff" fontSize="11" fontWeight="bold" fontFamily="sans-serif">
+                  NÃO dá para saber quem é
+                </text>
+
+                {/* Resultado 4 */}
+                <rect x="28" y="344" width="704" height="36" rx="10" fill="#3b0764" stroke="#a855f7" strokeWidth="2" />
+                <text x="380" y="367" textAnchor="middle" fill="#f3e8ff" fontSize="12.5" fontWeight="bold" fontFamily="sans-serif">
+                  SUJEITO INDETERMINADO — Ex.: “Bateram à porta.” | “Precisa-se de técnicos.”
                 </text>
               </svg>
             </ZoomableDiagram>
@@ -2936,23 +2988,23 @@ export const portuguesSemana04: RichLessonModule = {
       index: 4,
       title: "Eixo 4 · Os 3 Tipos de Predicado e os Predicativos (Ações e Qualidades no Alvo Certo)",
       subtitle:
-        "Quem manda dentro do Predicado (PV, PN, PVN + Fluxograma em SVG), Parada Rápida 4.A, Predicativo do Sujeito × Predicativo do Objeto e os 2 Testes matadores de prova.",
+        "Quem manda dentro do Predicado (Verbal, Nominal e Verbo-Nominal + Fluxograma), Parada Rápida 4.A, Predicativo do Sujeito × Predicativo do Objeto e os 2 Testes matadores de prova.",
       estimatedMinutes: 28,
       render: () => (
         <div className="space-y-6">
           <AxisContextCard
             title="Descobrindo o núcleo do Predicado e separando qualidades passageiras"
-            bridge="Você já sabe localizar o Sujeito (Eixos 1 e 3) e distinguir verbos de ação (VI, VTD, VTI, VTDI) de verbos de ligação de estado (VL, Eixo 2)."
+            bridge="Você já sabe localizar o Sujeito (Eixos 1 e 3) e distinguir verbos de ação (intransitivos e transitivos) de verbos de ligação de estado (Eixo 2)."
             problemSolved="Tudo o que sobra fora do Sujeito é o Predicado. Agora vamos ver quem é o 'chefe' lá dentro (a ação, o estado, ou ambos!) e como não confundir uma qualidade solta dada pelo verbo com um adjetivo colado no substantivo ou com um advérbio."
             roadmap={[
-              "4.1 Os 3 Tipos de Predicado (PV, PN e PVN + Fluxograma em SVG) + Parada Rápida 4.A",
-              "4.2 Predicativo do Sujeito (PS) vs. Predicativo do Objeto (PO)",
+              "4.1 Os 3 Tipos de Predicado (Verbal, Nominal e Verbo-Nominal + Fluxograma) + Parada Rápida 4.A",
+              "4.2 Predicativo do Sujeito vs. Predicativo do Objeto",
               "4.3 Os 2 Testes Práticos de Prova: Teste do Pronome (o/a) e Teste do Feminino Plural",
             ]}
           />
 
           {/* 4.1 3 Tipos de Predicado + SVG 3 */}
-          <ProseSection number="4.1" title="Os 3 Tipos de Predicado (PV, PN e PVN + Fluxograma em SVG)">
+          <ProseSection number="4.1" title="Os 3 Tipos de Predicado (Verbal, Nominal e Verbo-Nominal)">
             <p>
               Olhando para dentro do Predicado, a pergunta agora é simples: <strong>qual é a palavra mais importante ali?</strong>{" "}
               Quando dizemos <em>“Os fiscais analisaram o contrato”</em>, a informação principal está na ação de{" "}
@@ -2969,120 +3021,127 @@ export const portuguesSemana04: RichLessonModule = {
             <DefinitionBlocks
               items={[
                 {
-                  term: "1. Predicado Verbal (PV)",
+                  term: "1. Predicado Verbal",
                   badge: "1 NÚCLEO = O VERBO",
                   accent: "sky",
                   summary:
-                    "Tem apenas 1 núcleo = verbo significativo (VI, VTD, VTI ou VTDI). Transmite apenas ação/acontecimento, sem nenhuma qualidade atribuída por predicativo.",
+                    "Tem apenas 1 núcleo = um verbo significativo (de ação ou acontecimento). Transmite apenas o fato ou a ação, sem nenhuma qualidade atribuída por predicativo.",
                 },
                 {
-                  term: "2. Predicado Nominal (PN)",
+                  term: "2. Predicado Nominal",
                   badge: "1 NÚCLEO = O NOME",
                   accent: "emerald",
                   summary:
-                    "Formado por Verbo de Ligação (VL) + qualidade/estado do sujeito. Como o VL é apenas ponte, o núcleo do predicado é o nome predicativo!",
+                    "Formado por Verbo de Ligação + qualidade ou estado do sujeito. Como o verbo de ligação é apenas uma ponte, o núcleo do predicado é o nome (o Predicativo do Sujeito).",
                 },
                 {
-                  term: "3. Predicado Verbo-Nominal (PVN)",
+                  term: "3. Predicado Verbo-Nominal",
                   badge: "2 NÚCLEOS JUNTOS",
                   accent: "amber",
                   summary:
-                    "Reúne 2 núcleos na mesma frase = 1 verbo significativo (ação) + 1 qualidade/estado momentâneo atribuído ao Sujeito ou ao Objeto. Teste: dá para quebrar em duas frases (ação + estado)!",
+                    "Reúne 2 núcleos na mesma frase = 1 verbo de ação + 1 qualidade/estado momentâneo atribuído ao Sujeito ou ao Objeto. Teste: dá para quebrar em duas frases (ação + estado)!",
                 },
               ]}
             />
 
             {/* SVG 3 */}
             <ZoomableDiagram
-              title="Fluxograma da Classificação dos 3 Tipos de Predicado"
+              title="Fluxograma em 2 Perguntas: Como Classificar os 3 Tipos de Predicado"
               badge="MAPA DE DECISÃO"
             >
               <svg
-                viewBox="0 0 740 295"
+                viewBox="0 0 760 325"
                 className="w-full h-auto"
                 role="img"
-                aria-label="Fluxograma dos 3 tipos de predicado e seus núcleos"
+                aria-label="Fluxograma em 2 perguntas para classificar Predicado Nominal, Predicado Verbal e Predicado Verbo-Nominal"
               >
-                <rect x="8" y="8" width="724" height="279" rx="14" fill="#0f172a" stroke="#334155" strokeWidth="1.5" />
-                <rect x="24" y="24" width="320" height="58" rx="10" fill="#1e1b4b" stroke="#6366f1" strokeWidth="1.5" />
-                <text x="184" y="47" textAnchor="middle" fill="#a5b4fc" fontSize="11" fontWeight="bold" fontFamily="sans-serif">
-                  PASSO 1: O verbo indica AÇÃO/ACONTECIMENTO
+                <rect x="8" y="8" width="744" height="309" rx="14" fill="#0f172a" stroke="#334155" strokeWidth="1.5" />
+
+                {/* Pergunta 1 */}
+                <rect x="28" y="28" width="330" height="74" rx="12" fill="#1e1b4b" stroke="#818cf8" strokeWidth="2" />
+                <text x="193" y="51" textAnchor="middle" fill="#a5b4fc" fontSize="11.5" fontWeight="bold" fontFamily="sans-serif">
+                  PERGUNTA 1
                 </text>
-                <text x="184" y="66" textAnchor="middle" fill="#ffffff" fontSize="12" fontWeight="bold" fontFamily="sans-serif">
-                  ou é apenas PONTE DE ESTADO (ser, estar, parecer)?
+                <text x="193" y="71" textAnchor="middle" fill="#ffffff" fontSize="13.5" fontWeight="bold" fontFamily="sans-serif">
+                  O verbo é apenas PONTE DE ESTADO?
+                </text>
+                <text x="193" y="90" textAnchor="middle" fill="#cbd5e1" fontSize="11" fontFamily="sans-serif">
+                  (ser, estar, parecer, ficar, permanecer, continuar)
                 </text>
 
-                <line x1="344" y1="53" x2="418" y2="53" stroke="#10b981" strokeWidth="2" />
-                <polygon points="418,48 428,53 418,58" fill="#10b981" />
-                <text x="381" y="44" textAnchor="middle" fill="#34d399" fontSize="10.5" fontWeight="bold" fontFamily="sans-serif">
-                  ESTADO
+                {/* Seta SIM 1 */}
+                <line x1="358" y1="65" x2="430" y2="65" stroke="#10b981" strokeWidth="2.2" />
+                <polygon points="430,59 442,65 430,71" fill="#10b981" />
+                <text x="396" y="56" textAnchor="middle" fill="#34d399" fontSize="11.5" fontWeight="bold" fontFamily="sans-serif">
+                  SIM
                 </text>
 
-                <rect x="430" y="24" width="286" height="58" rx="10" fill="#064e3b" stroke="#10b981" strokeWidth="1.5" />
-                <text x="573" y="46" textAnchor="middle" fill="#a7f3d0" fontSize="12" fontWeight="bold" fontFamily="sans-serif">
-                  VERBO DE LIGAÇÃO (VL) + PRED. SUJEITO
+                {/* Resultado 1: Predicado Nominal */}
+                <rect x="446" y="28" width="286" height="74" rx="12" fill="#064e3b" stroke="#10b981" strokeWidth="2" />
+                <text x="589" y="53" textAnchor="middle" fill="#a7f3d0" fontSize="14" fontWeight="bold" fontFamily="sans-serif">
+                  PREDICADO NOMINAL
                 </text>
-                <text x="573" y="66" textAnchor="middle" fill="#e2e8f0" fontSize="11" fontFamily="sans-serif">
-                  → PREDICADO NOMINAL (Ex: “O servidor está calmo.”)
+                <text x="589" y="72" textAnchor="middle" fill="#ffffff" fontSize="11.5" fontWeight="bold" fontFamily="sans-serif">
+                  1 núcleo = a qualidade (Predicativo do Sujeito)
                 </text>
-
-                <line x1="184" y1="82" x2="184" y2="108" stroke="#38bdf8" strokeWidth="2" />
-                <polygon points="179,108 184,116 189,108" fill="#38bdf8" />
-                <text x="200" y="102" fill="#7dd3fc" fontSize="10.5" fontWeight="bold" fontFamily="sans-serif">
-                  INDICA AÇÃO (Verbo Significativo)
+                <text x="589" y="90" textAnchor="middle" fill="#d1fae5" fontSize="11" fontFamily="sans-serif">
+                  Ex.: “O servidor está calmo.”
                 </text>
 
-                <rect x="24" y="118" width="692" height="72" rx="10" fill="#0c4a6e" stroke="#0ea5e9" strokeWidth="1.5" />
-                <text x="370" y="140" textAnchor="middle" fill="#bae6fd" fontSize="11.5" fontWeight="bold" fontFamily="sans-serif">
-                  PASSO 2: Identifique a transitividade já aprendida no Eixo 2
-                </text>
-                <text x="140" y="164" textAnchor="middle" fill="#ffffff" fontSize="11" fontWeight="bold" fontFamily="sans-serif">
-                  • VI (sem objeto)
-                </text>
-                <text x="140" y="180" textAnchor="middle" fill="#cbd5e1" fontSize="10" fontFamily="sans-serif">
-                  (“O prazo expirou hoje.”)
-                </text>
-                <text x="365" y="164" textAnchor="middle" fill="#ffffff" fontSize="11" fontWeight="bold" fontFamily="sans-serif">
-                  • VTD (+ OD sem prep.)
-                </text>
-                <text x="365" y="180" textAnchor="middle" fill="#cbd5e1" fontSize="10" fontFamily="sans-serif">
-                  (“Vetou o artigo.”)
-                </text>
-                <text x="595" y="164" textAnchor="middle" fill="#ffffff" fontSize="11" fontWeight="bold" fontFamily="sans-serif">
-                  • VTI (+ OI) | VTDI (Ambos)
-                </text>
-                <text x="595" y="180" textAnchor="middle" fill="#cbd5e1" fontSize="10" fontFamily="sans-serif">
-                  (“Obedeceu à norma.” / “Deu a guia ao munícipe.”)
+                {/* Seta NÃO 1 */}
+                <line x1="193" y1="102" x2="193" y2="134" stroke="#38bdf8" strokeWidth="2.2" />
+                <polygon points="187,134 193,144 199,134" fill="#38bdf8" />
+                <text x="208" y="128" fill="#7dd3fc" fontSize="11.5" fontWeight="bold" fontFamily="sans-serif">
+                  NÃO — o verbo indica uma AÇÃO
                 </text>
 
-                <line x1="370" y1="190" x2="370" y2="212" stroke="#f59e0b" strokeWidth="2" />
-                <polygon points="365,212 370,220 375,212" fill="#f59e0b" />
-                <text x="386" y="207" fill="#fcd34d" fontSize="10" fontWeight="bold" fontFamily="sans-serif">
-                  PASSO 3: Há também uma QUALIDADE de Sujeito ou Objeto fora do nome?
+                {/* Pergunta 2 */}
+                <rect x="115" y="146" width="530" height="60" rx="12" fill="#0c4a6e" stroke="#38bdf8" strokeWidth="2" />
+                <text x="380" y="169" textAnchor="middle" fill="#bae6fd" fontSize="11.5" fontWeight="bold" fontFamily="sans-serif">
+                  PERGUNTA 2
+                </text>
+                <text x="380" y="191" textAnchor="middle" fill="#ffffff" fontSize="13.5" fontWeight="bold" fontFamily="sans-serif">
+                  Além da ação, há uma QUALIDADE atribuída ao Sujeito ou ao Objeto?
                 </text>
 
-                <rect x="24" y="222" width="334" height="50" rx="10" fill="#1e293b" stroke="#64748b" strokeWidth="1.5" />
-                <text x="191" y="244" textAnchor="middle" fill="#e2e8f0" fontSize="12" fontWeight="bold" fontFamily="sans-serif">
-                  NÃO há predicativo → PREDICADO VERBAL
-                </text>
-                <text x="191" y="261" textAnchor="middle" fill="#94a3b8" fontSize="10.5" fontFamily="sans-serif">
-                  1 único núcleo: o verbo (“O fiscal chegou hoje.”)
+                {/* Seta NÃO 2 (Esquerda) */}
+                <line x1="260" y1="206" x2="205" y2="232" stroke="#94a3b8" strokeWidth="2.2" />
+                <polygon points="199,227 198,238 210,234" fill="#94a3b8" />
+                <text x="195" y="220" textAnchor="middle" fill="#cbd5e1" fontSize="11.5" fontWeight="bold" fontFamily="sans-serif">
+                  NÃO
                 </text>
 
-                <rect x="378" y="222" width="338" height="50" rx="10" fill="#451a03" stroke="#f59e0b" strokeWidth="1.5" />
-                <text x="547" y="244" textAnchor="middle" fill="#fde68a" fontSize="12" fontWeight="bold" fontFamily="sans-serif">
-                  SIM (ação + qualidade) → VERBO-NOMINAL
+                {/* Resultado 2: Predicado Verbal */}
+                <rect x="28" y="238" width="332" height="62" rx="12" fill="#1e293b" stroke="#94a3b8" strokeWidth="2" />
+                <text x="194" y="261" textAnchor="middle" fill="#f1f5f9" fontSize="14" fontWeight="bold" fontFamily="sans-serif">
+                  PREDICADO VERBAL
                 </text>
-                <text x="547" y="261" textAnchor="middle" fill="#fef3c7" fontSize="10.5" fontFamily="sans-serif">
-                  2 núcleos (“O fiscal saiu satisfeito.” / “Julgou o ato válido.”)
+                <text x="194" y="279" textAnchor="middle" fill="#cbd5e1" fontSize="11.5" fontFamily="sans-serif">
+                  1 núcleo = só a ação · Ex.: “O fiscal chegou hoje.”
+                </text>
+
+                {/* Seta SIM 2 (Direita) */}
+                <line x1="500" y1="206" x2="555" y2="232" stroke="#f59e0b" strokeWidth="2.2" />
+                <polygon points="550,234 562,238 561,227" fill="#f59e0b" />
+                <text x="565" y="220" textAnchor="middle" fill="#fcd34d" fontSize="11.5" fontWeight="bold" fontFamily="sans-serif">
+                  SIM
+                </text>
+
+                {/* Resultado 3: Predicado Verbo-Nominal */}
+                <rect x="396" y="238" width="336" height="62" rx="12" fill="#451a03" stroke="#f59e0b" strokeWidth="2" />
+                <text x="564" y="261" textAnchor="middle" fill="#fde68a" fontSize="14" fontWeight="bold" fontFamily="sans-serif">
+                  PREDICADO VERBO-NOMINAL
+                </text>
+                <text x="564" y="279" textAnchor="middle" fill="#fef3c7" fontSize="11.5" fontFamily="sans-serif">
+                  2 núcleos = ação + qualidade · Ex.: “Saiu satisfeito.”
                 </text>
               </svg>
             </ZoomableDiagram>
 
             <AnalogyBox title="Analogia da Câmera Fotográfica" tag="Vídeo × Foto × Os Dois">
-              O <strong>PV</strong> é câmera gravando movimento; o <strong>PN</strong> é foto parada de um estado; e o{" "}
-              <strong>PVN</strong> grava o movimento e tira a foto ao mesmo tempo (<em>“saiu satisfeito”</em> = saiu +
-              estava satisfeito!).
+              O <strong>Predicado Verbal</strong> é uma câmera gravando movimento; o <strong>Predicado Nominal</strong>{" "}
+              é uma foto parada de um estado; e o <strong>Predicado Verbo-Nominal</strong> grava o movimento e tira a
+              foto ao mesmo tempo (<em>“saiu satisfeito”</em> = saiu + estava satisfeito!).
             </AnalogyBox>
 
             <ExampleShowcase
@@ -3094,11 +3153,11 @@ export const portuguesSemana04: RichLessonModule = {
                   cases: [
                     {
                       sentence:
-                        "“A técnica consertou o PC.” (PV) | “Ficou satisfeita.” (PN) | “Saiu satisfeita.” (PVN)",
+                        "“A técnica consertou o PC.” | “Ficou satisfeita.” | “Saiu satisfeita.”",
                       tags: [
-                        { label: "PV", value: "Só ação", color: "sky" },
-                        { label: "PN", value: "VL + estado", color: "emerald" },
-                        { label: "PVN", value: "Ação + qualidade juntos", color: "amber" },
+                        { label: "PREDICADO VERBAL", value: "Só ação (consertou)", color: "sky" },
+                        { label: "PREDICADO NOMINAL", value: "Verbo de ligação + estado (ficou satisfeita)", color: "emerald" },
+                        { label: "VERBO-NOMINAL", value: "Ação + qualidade juntos (saiu satisfeita)", color: "amber" },
                       ],
                       explanation: "Cada estrutura muda exatamente conforme o foco da informação.",
                     },
@@ -3111,24 +3170,24 @@ export const portuguesSemana04: RichLessonModule = {
                     {
                       sentence: "“Os documentos estão no arquivo.” vs. “Os documentos estão arquivados.”",
                       tags: [
-                        { label: "1ª FRASE", value: "Lugar físico (VI) = PV!", color: "rose" },
-                        { label: "2ª FRASE", value: "Qualidade/estado (VL) = PN!", color: "emerald" },
+                        { label: "1ª FRASE", value: "Lugar físico (Intransitivo) = Predicado Verbal!", color: "rose" },
+                        { label: "2ª FRASE", value: "Qualidade/estado (Ligação) = Predicado Nominal!", color: "emerald" },
                       ],
                       explanation: "'No arquivo' responde ONDE está, nunca estado — portanto é Predicado Verbal!",
                     },
                   ],
                 },
                 {
-                  level: "Exemplo 3 · Caso Limite (PVN com julgamento sobre o Objeto)",
+                  level: "Exemplo 3 · Caso Limite (Verbo-Nominal com julgamento sobre o Objeto)",
                   accent: "amber",
                   cases: [
                     {
                       sentence: "“A comissão jurídica julgou improcedente a impugnação do edital.”",
                       tags: [
-                        { label: "NÚCLEO 1", value: "julgou (ação VTD)", color: "sky" },
-                        { label: "NÚCLEO 2", value: "improcedente (qualidade da impugnação)", color: "amber" },
+                        { label: "NÚCLEO 1 (AÇÃO)", value: "julgou (ação sobre o objeto)", color: "sky" },
+                        { label: "NÚCLEO 2 (QUALIDADE)", value: "improcedente (qualidade da impugnação)", color: "amber" },
                       ],
-                      explanation: "Ação de julgar + qualidade atribuída ao objeto = Predicado Verbo-Nominal (PVN)!",
+                      explanation: "Ação de julgar + qualidade atribuída ao objeto = Predicado Verbo-Nominal!",
                     },
                   ],
                 },
@@ -3138,7 +3197,7 @@ export const portuguesSemana04: RichLessonModule = {
             <TrapAlert
               title="Pegadinha ACCESS + Teste de 5 Segundos"
               trap="Ver 'estar' ou 'andar' ('Os fiscais estão no pátio') e marcar Predicado Nominal no reflexo!"
-              escape="Confira o termo seguinte: é lugar físico ('no pátio', 'na mesa')? Não há qualidade nenhuma — é VI e Predicado Verbal (PV)!"
+              escape="Confira o termo seguinte: é lugar físico ('no pátio', 'na mesa')? Não há qualidade nenhuma — é Verbo Intransitivo e Predicado Verbal!"
             />
 
             {/* PARADA RAPIDA 4.A */}
@@ -3147,7 +3206,7 @@ export const portuguesSemana04: RichLessonModule = {
               subtitle="Resolva antes de aprender a separar Predicativo do Sujeito e do Objeto."
               questions={[
                 {
-                  prompt: "Qual frase traz um Predicado Verbal (PV) disfarçado com o verbo 'estar'?",
+                  prompt: "Qual frase traz um Predicado Verbal disfarçado com o verbo 'estar'?",
                   options: [
                     {
                       key: "A",
@@ -3176,9 +3235,9 @@ export const portuguesSemana04: RichLessonModule = {
                   ],
                   correctKey: "C",
                   feedbackCorrect:
-                    "Acertou! 'No cofre da tesouraria' indica lugar físico (onde estão), sem nenhuma qualidade — logo 'estão' é VI e o predicado é Verbal (PV).",
+                    "Acertou! 'No cofre da tesouraria' indica lugar físico (onde estão), sem nenhuma qualidade — logo 'estão' é verbo intransitivo e o predicado é Verbal.",
                   feedbackWrong:
-                    "Em (A) e (B), 'preocupada' e 'completos' são qualidades (PN). Só em (C) 'no cofre' é lugar físico → Predicado Verbal!",
+                    "Em (A) e (B), 'preocupada' e 'completos' são qualidades (Predicado Nominal). Só em (C) 'no cofre' é lugar físico → Predicado Verbal!",
                 },
                 {
                   prompt: "Como se classifica o predicado desta oração com foco nos termos destacados?",
@@ -3191,39 +3250,40 @@ export const portuguesSemana04: RichLessonModule = {
                     { key: "A", label: "Predicado Nominal, pois 'preocupados' é o único foco da frase." },
                     {
                       key: "B",
-                      label: "Predicado Verbo-Nominal (PVN), pois reúne uma ação real (deixaram) + um estado momentâneo (preocupados).",
+                      label: "Predicado Verbo-Nominal, pois reúne uma ação real (deixaram) + um estado momentâneo (preocupados).",
                     },
                     { key: "C", label: "Predicado Verbal, porque todo verbo de ação anula o adjetivo." },
                   ],
                   correctKey: "B",
                   feedbackCorrect:
-                    "Isso! Podemos dividir em duas frases: 'Os auditores deixaram o gabinete' + 'eles estavam preocupados' → 2 núcleos = PVN!",
+                    "Isso! Podemos dividir em duas frases: 'Os auditores deixaram o gabinete' + 'eles estavam preocupados' → 2 núcleos = Predicado Verbo-Nominal!",
                   feedbackWrong:
-                    "Verifique: 'deixaram o gabinete' é ação real (VTD + OD), mas 'preocupados' mostra o estado dos auditores naquele momento → 2 núcleos = PVN!",
+                    "Verifique: 'deixaram o gabinete' é ação real, mas 'preocupados' mostra o estado dos auditores naquele momento → 2 núcleos = Predicado Verbo-Nominal!",
                 },
               ]}
             />
           </ProseSection>
 
           {/* 4.2 Predicativo do Sujeito vs Objeto */}
-          <ProseSection number="4.2" title="Predicativo do Sujeito (PS) vs. Predicativo do Objeto (PO): Qualidades no Alvo Certo">
+          <ProseSection number="4.2" title="Predicativo do Sujeito vs. Predicativo do Objeto: Qualidades no Alvo Certo">
             <p>
-              Quando há uma qualidade atribuída pelo verbo dentro do predicado (seja no <code>PN</code> ou no{" "}
-              <code>PVN</code>), precisamos apenas saber <strong>para quem a seta aponta</strong>: ela está descrevendo
-              quem pratica/sofre o verbo (<strong>Sujeito</strong>) ou quem recebe a ação (<strong>Objeto</strong>)?
+              Quando há uma qualidade atribuída pelo verbo dentro do predicado (seja no{" "}
+              <strong>Predicado Nominal</strong> ou no <strong>Predicado Verbo-Nominal</strong>), precisamos apenas
+              saber <strong>para quem a seta aponta</strong>: ela está descrevendo quem comanda o verbo (
+              <strong>Sujeito</strong>) ou quem recebe a ação (<strong>Objeto</strong>)?
             </p>
 
             <DefinitionBlocks
               items={[
                 {
-                  term: "Predicativo do Sujeito (PS)",
+                  term: "Predicativo do Sujeito",
                   badge: "SETA APONTA PARA O SUJEITO",
                   accent: "emerald",
                   summary:
-                    "Qualidade ou estado ligado ao Sujeito (via VL no PN, como 'O edital é claro', ou junto de ação no PVN, como 'Os fiscais voltaram cansados').",
+                    "Qualidade ou estado ligado ao Sujeito (via Verbo de Ligação no Predicado Nominal, como 'O edital é claro', ou junto de ação no Verbo-Nominal, como 'Os fiscais voltaram cansados').",
                 },
                 {
-                  term: "Predicativo do Objeto (PO)",
+                  term: "Predicativo do Objeto",
                   badge: "SETA APONTA PARA O OBJETO",
                   accent: "amber",
                   summary:
@@ -3232,13 +3292,14 @@ export const portuguesSemana04: RichLessonModule = {
               ]}
             />
 
-            <AnalogyBox title="Analogia da Seta do Julgamento" tag="PS × PO">
+            <AnalogyBox title="Analogia da Seta do Julgamento" tag="Sujeito × Objeto">
               Puxe uma seta da qualidade até o alvo que ela descreve: voltou para quem comanda o verbo ={" "}
-              <strong>PS</strong>; apontou para quem recebe a ação (o Objeto) = <strong>PO</strong>!
+              <strong>Predicativo do Sujeito</strong>; apontou para quem recebe a ação (o Objeto) ={" "}
+              <strong>Predicativo do Objeto</strong>!
             </AnalogyBox>
 
             <ExampleShowcase
-              title="Exemplos Progressivos · PS vs. PO"
+              title="Exemplos Progressivos · Predicativo do Sujeito vs. Predicativo do Objeto"
               items={[
                 {
                   level: "Exemplo 1 · Cotidiano (Mesma qualidade, alvos diferentes)",
@@ -3247,8 +3308,8 @@ export const portuguesSemana04: RichLessonModule = {
                     {
                       sentence: "“Os alunos entraram animados.” vs. “O professor encontrou a turma animada.”",
                       tags: [
-                        { label: "1ª FRASE", value: "animados → Os alunos (Sujeito) = PS", color: "emerald" },
-                        { label: "2ª FRASE", value: "animada → a turma (Objeto Direto) = PO", color: "amber" },
+                        { label: "1ª FRASE", value: "animados → Os alunos (Predicativo do Sujeito)", color: "emerald" },
+                        { label: "2ª FRASE", value: "animada → a turma (Predicativo do Objeto)", color: "amber" },
                       ],
                       explanation: "Na 2ª frase quem está animada é 'a turma' (Objeto Direto), não o professor!",
                     },
@@ -3260,7 +3321,9 @@ export const portuguesSemana04: RichLessonModule = {
                   cases: [
                     {
                       sentence: "“O prefeito declarou nulo o pregão.”",
-                      tags: [{ label: "ALVO DE 'NULO'", value: "o pregão (OD) → PO", color: "amber" }],
+                      tags: [
+                        { label: "ALVO DE 'NULO'", value: "o pregão (Objeto Direto) → Predicativo do Objeto", color: "amber" },
+                      ],
                       explanation: "Quem ficou nulo foi o pregão (Objeto), jamais o prefeito!",
                     },
                   ],
@@ -3272,8 +3335,8 @@ export const portuguesSemana04: RichLessonModule = {
                     {
                       sentence: "“A fiscal encontrou o contribuinte nervoso.” vs. “A fiscal encontrou o contribuinte nervosa.”",
                       tags: [
-                        { label: "nervoso (masc.)", value: "concorda com contribuinte = PO", color: "amber" },
-                        { label: "nervosa (fem.)", value: "concorda com a fiscal = PS", color: "emerald" },
+                        { label: "nervoso (masc.)", value: "concorda com contribuinte = Predicativo do Objeto", color: "amber" },
+                        { label: "nervosa (fem.)", value: "concorda com a fiscal = Predicativo do Sujeito", color: "emerald" },
                       ],
                       explanation: "Basta mudar o gênero para enxergar imediatamente a quem o verbo atribuiu o estado.",
                     },
@@ -3284,8 +3347,8 @@ export const portuguesSemana04: RichLessonModule = {
 
             <TrapAlert
               title="Pegadinha ACCESS + Teste de 5 Segundos"
-              trap="Empurrar o adjetivo PO para antes do substantivo objeto ('considerou válidos os argumentos') para parecer que faz parte do substantivo!"
-              escape="Aplique o Teste do Pronome (o/a) que você aprenderá logo a seguir: 'considerou-os válidos'. Como 'válidos' sobrou do lado de fora, é PO!"
+              trap="Empurrar o Predicativo do Objeto para antes do substantivo ('considerou válidos os argumentos') para parecer que faz parte do substantivo!"
+              escape="Aplique o Teste do Pronome (o/a) que você aprenderá logo a seguir: 'considerou-os válidos'. Como 'válidos' sobrou do lado de fora, é Predicativo do Objeto!"
             />
           </ProseSection>
 
@@ -3299,27 +3362,27 @@ export const portuguesSemana04: RichLessonModule = {
 
             <StepByStep
               title="Os 2 Testes Infalíveis para Isolar Qualquer Predicativo"
-              problem="Como saber se o adjetivo é PO/PS ou outra peça da frase?"
+              problem="Como saber se o adjetivo é Predicativo ou outra peça da frase?"
               steps={[
                 {
                   title: "Teste 1 · Substitua o Objeto Direto pelo Pronome o / a / os / as",
-                  badge: "PARA ACHAR PO",
+                  badge: "ACHA PREDICATIVO DO OBJETO",
                   content: (
                     <p>
                       A qualidade <strong>SOBROU DO LADO DE FORA</strong> do pronome (<em>“julgou-o válido”</em>)? É{" "}
-                      <strong>Predicativo do Objeto (PO)</strong>! Sumiu para dentro do pronome (<em>“aprovou-o”</em>)?
+                      <strong>Predicativo do Objeto</strong>! Sumiu para dentro do pronome (<em>“aprovou-o”</em>)?
                       Era apenas qualidade fixa interna do nome (estudaremos o nome oficial no Eixo 5!).
                     </p>
                   ),
                 },
                 {
                   title: "Teste 2 · Passe o Sujeito para o Feminino Plural (As servidoras...)",
-                  badge: "SEPARA PS DE ADVÉRBIO",
+                  badge: "SEPARA PREDICATIVO DE ADVÉRBIO",
                   content: (
                     <p>
                       A palavra <strong>flexionou junto</strong> (<em>“As fiscais saíram satisfeitas”</em>)? É{" "}
-                      <strong>Predicativo (PS)</strong>! Ficou travada invariável (<em>“falaram alto / claro / rápido”</em>)?
-                      É <strong>Advérbio</strong>!
+                      <strong>Predicativo do Sujeito</strong>! Ficou travada invariável (
+                      <em>“falaram alto / claro / rápido”</em>)? É <strong>Advérbio</strong>!
                     </p>
                   ),
                 },
@@ -3328,9 +3391,9 @@ export const portuguesSemana04: RichLessonModule = {
 
             <AnalogyBox title="Analogia da Pasta 'o' no Arquivo" tag="Dentro × Fora do Pronome">
               Qualidades fixas moram impressas dentro do documento: quando você guarda o documento na pasta{" "}
-              <strong>“o”</strong> (<em>“aprovou-o”</em>), elas entram junto. Já o <strong>PO</strong> é um carimbo dado
-              na hora pelo verbo — mesmo guardando na pasta <strong>“o”</strong>, o carimbo aparece fora (
-              <em>“julgou-o válido”</em>)!
+              <strong>“o”</strong> (<em>“aprovou-o”</em>), elas entram junto. Já o{" "}
+              <strong>Predicativo do Objeto</strong> é um carimbo dado na hora pelo verbo — mesmo guardando na pasta{" "}
+              <strong>“o”</strong>, o carimbo aparece fora (<em>“julgou-o válido”</em>)!
             </AnalogyBox>
 
             <ExampleShowcase
@@ -3344,7 +3407,7 @@ export const portuguesSemana04: RichLessonModule = {
                       sentence: "“Comprou o carro usado” → “Comprou-o.” | “Encontrou o carro destruído” → “Encontrou-o destruído.”",
                       tags: [
                         { label: "SUMIU DENTRO", value: "usado (qualidade fixa interna · Eixo 5)", color: "sky" },
-                        { label: "SOBROU FORA", value: "destruído = PO!", color: "amber" },
+                        { label: "SOBROU FORA", value: "destruído = Predicativo do Objeto!", color: "amber" },
                       ],
                       explanation: "Se sobreviveu fora do pronome 'o/a', é Predicativo do Objeto.",
                     },
@@ -3357,7 +3420,7 @@ export const portuguesSemana04: RichLessonModule = {
                     {
                       sentence: "“As atendentes retornaram motivadas.” vs. “As atendentes digitaram rápido.”",
                       tags: [
-                        { label: "FLEXIONOU", value: "motivadas = Predicativo (PS)", color: "emerald" },
+                        { label: "FLEXIONOU", value: "motivadas = Predicativo do Sujeito", color: "emerald" },
                         { label: "INVARIÁVEL", value: "rápido = Advérbio (sem plural)", color: "rose" },
                       ],
                       explanation: "Advérbio jamais concorda no feminino ou plural!",
@@ -3371,9 +3434,9 @@ export const portuguesSemana04: RichLessonModule = {
                     {
                       sentence: "“A comissão entregou a obra reformada e os técnicos saíram satisfeitos, falando claro.”",
                       tags: [
-                        { label: "entregou-a reformada", value: "reformada = PO", color: "amber" },
-                        { label: "técnicas satisfeitas", value: "satisfeitos = PS", color: "emerald" },
-                        { label: "falaram claro", value: "claro = Advérbio", color: "sky" },
+                        { label: "entregou-a reformada", value: "reformada = Predicativo do Objeto", color: "amber" },
+                        { label: "técnicas satisfeitas", value: "satisfeitos = Predicativo do Sujeito", color: "emerald" },
+                        { label: "falaram claro", value: "claro = Advérbio de Modo", color: "sky" },
                       ],
                       explanation: "Os dois testes resolvem três termos diferentes em menos de dez segundos.",
                     },
@@ -3393,29 +3456,29 @@ export const portuguesSemana04: RichLessonModule = {
             title="Flashcards de Memorização Ativa · Eixo 4"
             cards={[
               {
-                front: "PV × PN × PVN",
-                hint: "Quantos núcleos tem cada um?",
-                back: "PV = 1 núcleo verbal (só ação). PN = 1 núcleo nominal (VL + PS). PVN = 2 núcleos ao mesmo tempo (ação significativa + PS ou PO)!",
+                front: "Verbal × Nominal × Verbo-Nominal",
+                hint: "Quantos núcleos tem cada predicado?",
+                back: "Verbal = 1 núcleo (só a ação). Nominal = 1 núcleo (a qualidade/estado com verbo de ligação). Verbo-Nominal = 2 núcleos juntos (ação + qualidade momentânea)!",
               },
               {
                 front: "'Estar' de lugar vs. estado",
                 hint: "Cuidado na armadilha!",
-                back: "'O processo está na mesa' indica lugar físico (VI → Predicado Verbal). Só é Nominal quando liga a uma característica ('está completo').",
+                back: "'O processo está na mesa' indica lugar físico (verbo intransitivo → Predicado Verbal). Só é Nominal quando liga a uma característica ('está completo').",
               },
               {
                 front: "Teste do Pronome (o/a)",
-                hint: "Como achar o PO?",
-                back: "Troque o Objeto Direto por o/a/os/as. Se o adjetivo SOBRAR fora do pronome ('julgou-a improcedente'), é Predicativo do Objeto (PO)!",
+                hint: "Como achar o Predicativo do Objeto?",
+                back: "Troque o Objeto Direto por o/a/os/as. Se o adjetivo SOBRAR fora do pronome ('julgou-a improcedente'), é Predicativo do Objeto!",
               },
               {
                 front: "Teste do Feminino Plural",
                 hint: "Predicativo × Advérbio",
-                back: "Mude o sujeito para 'Elas'. Mudou junto ('saíram animadas') = Predicativo! Ficou travado ('falaram alto/claro/rápido') = Advérbio!",
+                back: "Mude o sujeito para 'Elas'. Mudou junto ('saíram animadas') = Predicativo do Sujeito! Ficou travado ('falaram alto/claro/rápido') = Advérbio!",
               },
               {
-                front: "PS × PO pela Concordância",
+                front: "Sujeito × Objeto pela Concordância",
                 hint: "Quem está recebendo o estado?",
-                back: "'A fiscal encontrou o rapaz nervoso' (nervoso concorda com rapaz = PO). 'A fiscal encontrou o rapaz nervosa' (concorda com a fiscal = PS).",
+                back: "'A fiscal encontrou o rapaz nervoso' (nervoso concorda com rapaz = Predicativo do Objeto). 'A fiscal encontrou o rapaz nervosa' (concorda com a fiscal = Predicativo do Sujeito).",
               },
             ]}
           />
@@ -3424,8 +3487,8 @@ export const portuguesSemana04: RichLessonModule = {
             title="Síntese Feynman de 3 Linhas · Eixo 4"
             lines={[
               "1. O Predicado é Verbal (só ação), Nominal (só estado com Verbo de Ligação + Predicativo do Sujeito) ou Verbo-Nominal (ação significativa + qualidade momentânea ao mesmo tempo = 2 núcleos).",
-              "2. Para não confundir Predicativo do Objeto com característica fixa interna do substantivo, troque o objeto por o/a: se a qualidade sobrar fora do pronome ('julgou-o válido'), é PO.",
-              "3. Se você passar o sujeito para o feminino plural e o termo flexionar junto ('saíram satisfeitas'), é Predicativo; se ficar invariável ('falaram claro'), é Advérbio.",
+              "2. Para não confundir Predicativo do Objeto com característica fixa interna do substantivo, troque o objeto por o/a: se a qualidade sobrar fora do pronome ('julgou-o válido'), é Predicativo do Objeto.",
+              "3. Se você passar o sujeito para o feminino plural e o termo flexionar junto ('saíram satisfeitas'), é Predicativo do Sujeito; se ficar invariável ('falaram claro'), é Advérbio.",
             ]}
           />
         </div>
@@ -3445,14 +3508,14 @@ export const portuguesSemana04: RichLessonModule = {
           },
           answer: "C",
           commentary:
-            "**Gabarito Oficial: C**\n- **(C) CORRETA:** Em I há verbo de ação (`chegaram`, `VI`) + estado do sujeito (`cansados`) → **Predicado Verbo-Nominal**; em II há `VL` (`permaneceu`) + estado (`arquivada`) → **Predicado Nominal**; em III há apenas ação significativa (`notificaram`) → **Predicado Verbal**.\n- **(A), (B) e (D) ERRADAS:** Invertem `PVN`, `PN` e `PV`.",
+            "**Gabarito Oficial: C**\n- **(C) CORRETA:** Em I há verbo de ação (`chegaram`) + estado do sujeito (`cansados`) → **Predicado Verbo-Nominal**; em II há Verbo de Ligação (`permaneceu`) + estado (`arquivada`) → **Predicado Nominal**; em III há apenas ação significativa (`notificaram`) → **Predicado Verbal**.\n- **(A), (B) e (D) ERRADAS:** Invertem a ordem entre Predicado Verbo-Nominal, Nominal e Verbal.",
         },
         {
           num: "2",
           header: "Questão 11",
           banca: "**Banca:** Adaptada para o Padrão Instituto ACCESS | Cargo: Oficial Administrativo",
           statement:
-            "Assinale a alternativa em que o termo destacado desempenha a função sintática de **Predicativo do Objeto (`PO`)**:",
+            "Assinale a alternativa em que o termo destacado desempenha a função sintática de **Predicativo do Objeto**:",
           options: {
             A: "A junta de licitações considerou **inexequível** a proposta apresentada pela última empresa.",
             B: "Todos os novos concursados entraram **confiantes** no auditório central da Prefeitura.",
@@ -3477,7 +3540,7 @@ export const portuguesSemana04: RichLessonModule = {
           },
           answer: "D",
           commentary:
-            "**Gabarito Oficial: D**\n- **(D) CORRETA:** *“entregou-a reformada”* (*reformada* fica fora do pronome = **PO**); *“as engenheiras saíram satisfeitas”* (flexiona = **PS**); *“as engenheiras falaram claro”* (invariável = **Advérbio de Modo**).\n- **(A), (B) e (C) ERRADAS:** Misturam advérbio invariável com adjetivos predicativos.",
+            "**Gabarito Oficial: D**\n- **(D) CORRETA:** *“entregou-a reformada”* (*reformada* fica fora do pronome = **Predicativo do Objeto**); *“as engenheiras saíram satisfeitas”* (flexiona = **Predicativo do Sujeito**); *“as engenheiras falaram claro”* (invariável = **Advérbio de Modo**).\n- **(A), (B) e (C) ERRADAS:** Misturam advérbio invariável com adjetivos predicativos.",
         },
       ],
     },
@@ -3627,88 +3690,107 @@ export const portuguesSemana04: RichLessonModule = {
               badgeTone="amber"
             >
               <svg
-                viewBox="0 0 740 310"
+                viewBox="0 0 760 415"
                 className="w-full h-auto"
                 role="img"
                 aria-label="Fluxograma em 3 passos para distinguir Complemento Nominal de Adjunto Adnominal"
               >
-                <rect x="8" y="8" width="724" height="294" rx="14" fill="#0f172a" stroke="#334155" strokeWidth="1.5" />
-                <rect x="24" y="26" width="330" height="62" rx="10" fill="#1e1b4b" stroke="#6366f1" strokeWidth="1.5" />
-                <text x="189" y="49" textAnchor="middle" fill="#a5b4fc" fontSize="11" fontWeight="bold" fontFamily="sans-serif">
-                  PASSO 1: A palavra principal é
+                <rect x="8" y="8" width="744" height="399" rx="14" fill="#0f172a" stroke="#334155" strokeWidth="1.5" />
+
+                {/* Passo 1 */}
+                <rect x="28" y="24" width="320" height="64" rx="12" fill="#1e1b4b" stroke="#818cf8" strokeWidth="2" />
+                <text x="188" y="48" textAnchor="middle" fill="#a5b4fc" fontSize="11.5" fontWeight="bold" fontFamily="sans-serif">
+                  PASSO 1
                 </text>
-                <text x="189" y="69" textAnchor="middle" fill="#ffffff" fontSize="13" fontWeight="bold" fontFamily="sans-serif">
-                  ADJETIVO ou ADVÉRBIO?
+                <text x="188" y="70" textAnchor="middle" fill="#ffffff" fontSize="13.5" fontWeight="bold" fontFamily="sans-serif">
+                  Liga-se a ADJETIVO ou ADVÉRBIO?
                 </text>
 
-                <line x1="354" y1="57" x2="430" y2="57" stroke="#10b981" strokeWidth="2" />
-                <polygon points="430,52 440,57 430,62" fill="#10b981" />
-                <text x="392" y="48" textAnchor="middle" fill="#34d399" fontSize="11" fontWeight="bold" fontFamily="sans-serif">
+                <line x1="348" y1="56" x2="424" y2="56" stroke="#10b981" strokeWidth="2.2" />
+                <polygon points="424,50 436,56 424,62" fill="#10b981" />
+                <text x="388" y="47" textAnchor="middle" fill="#34d399" fontSize="11.5" fontWeight="bold" fontFamily="sans-serif">
                   SIM
                 </text>
 
-                <rect x="442" y="26" width="270" height="62" rx="10" fill="#064e3b" stroke="#10b981" strokeWidth="1.5" />
-                <text x="577" y="50" textAnchor="middle" fill="#a7f3d0" fontSize="12" fontWeight="bold" fontFamily="sans-serif">
-                  100% COMPLEMENTO NOMINAL
+                <rect x="440" y="24" width="292" height="64" rx="12" fill="#064e3b" stroke="#10b981" strokeWidth="2" />
+                <text x="586" y="49" textAnchor="middle" fill="#a7f3d0" fontSize="13.5" fontWeight="bold" fontFamily="sans-serif">
+                  COMPLEMENTO NOMINAL
                 </text>
-                <text x="577" y="70" textAnchor="middle" fill="#e2e8f0" fontSize="11" fontFamily="sans-serif">
-                  Ex: “nocivo para crianças” | “longe da sede”
-                </text>
-
-                <line x1="189" y1="88" x2="189" y2="118" stroke="#94a3b8" strokeWidth="2" />
-                <polygon points="184,118 189,126 194,118" fill="#94a3b8" />
-                <text x="238" y="110" fill="#cbd5e1" fontSize="10" fontWeight="bold" fontFamily="sans-serif">
-                  NÃO (é Substantivo)
+                <text x="586" y="71" textAnchor="middle" fill="#d1fae5" fontSize="11.5" fontFamily="sans-serif">
+                  Ex.: “útil à cidade” | “longe da sede”
                 </text>
 
-                <rect x="24" y="128" width="330" height="62" rx="10" fill="#1e1b4b" stroke="#6366f1" strokeWidth="1.5" />
-                <text x="189" y="151" textAnchor="middle" fill="#a5b4fc" fontSize="11" fontWeight="bold" fontFamily="sans-serif">
-                  PASSO 2: O substantivo é CONCRETO
-                </text>
-                <text x="189" y="171" textAnchor="middle" fill="#ffffff" fontSize="13" fontWeight="bold" fontFamily="sans-serif">
-                  ou a preposição NÃO for “DE”?
-                </text>
-
-                <line x1="354" y1="159" x2="430" y2="159" stroke="#38bdf8" strokeWidth="2" />
-                <polygon points="430,154 440,159 430,164" fill="#38bdf8" />
-                <text x="392" y="150" textAnchor="middle" fill="#38bdf8" fontSize="10" fontWeight="bold" fontFamily="sans-serif">
-                  REGRA
+                {/* Seta NÃO 1 */}
+                <line x1="188" y1="88" x2="188" y2="116" stroke="#94a3b8" strokeWidth="2.2" />
+                <polygon points="182,116 188,126 194,116" fill="#94a3b8" />
+                <text x="204" y="110" fill="#cbd5e1" fontSize="11" fontWeight="bold" fontFamily="sans-serif">
+                  NÃO (liga-se a Substantivo)
                 </text>
 
-                <rect x="442" y="128" width="270" height="62" rx="10" fill="#0c4a6e" stroke="#0ea5e9" strokeWidth="1.5" />
-                <text x="577" y="149" textAnchor="middle" fill="#bae6fd" fontSize="11" fontWeight="bold" fontFamily="sans-serif">
-                  Concreto → SEMPRE Adjunto Adnominal
+                {/* Passo 2 */}
+                <rect x="28" y="128" width="320" height="64" rx="12" fill="#1e1b4b" stroke="#818cf8" strokeWidth="2" />
+                <text x="188" y="152" textAnchor="middle" fill="#a5b4fc" fontSize="11.5" fontWeight="bold" fontFamily="sans-serif">
+                  PASSO 2
                 </text>
-                <text x="577" y="170" textAnchor="middle" fill="#e2e8f0" fontSize="10.5" fontFamily="sans-serif">
-                  Abstrato + prep. A/COM/EM/POR/CONTRA → CN
-                </text>
-
-                <line x1="189" y1="190" x2="189" y2="220" stroke="#f59e0b" strokeWidth="2" />
-                <polygon points="184,220 189,228 194,220" fill="#f59e0b" />
-                <text x="260" y="212" fill="#fcd34d" fontSize="10" fontWeight="bold" fontFamily="sans-serif">
-                  Substantivo Abstrato + prep. DE
+                <text x="188" y="174" textAnchor="middle" fill="#ffffff" fontSize="13.5" fontWeight="bold" fontFamily="sans-serif">
+                  Esse substantivo é CONCRETO?
                 </text>
 
-                <rect x="24" y="230" width="330" height="58" rx="10" fill="#451a03" stroke="#f59e0b" strokeWidth="1.5" />
-                <text x="189" y="253" textAnchor="middle" fill="#fde68a" fontSize="11" fontWeight="bold" fontFamily="sans-serif">
-                  PASSO 3: O termo com “DE”
-                </text>
-                <text x="189" y="273" textAnchor="middle" fill="#ffffff" fontSize="13" fontWeight="bold" fontFamily="sans-serif">
-                  PRATICA ou SOFRE a ação?
+                <line x1="348" y1="160" x2="424" y2="160" stroke="#38bdf8" strokeWidth="2.2" />
+                <polygon points="424,154 436,160 424,166" fill="#38bdf8" />
+                <text x="388" y="151" textAnchor="middle" fill="#38bdf8" fontSize="11.5" fontWeight="bold" fontFamily="sans-serif">
+                  SIM
                 </text>
 
-                <line x1="354" y1="259" x2="430" y2="259" stroke="#f59e0b" strokeWidth="2" />
-                <polygon points="430,254 440,259 430,264" fill="#f59e0b" />
-                <text x="392" y="250" textAnchor="middle" fill="#fcd34d" fontSize="10" fontWeight="bold" fontFamily="sans-serif">
-                  DECIDE
+                <rect x="440" y="128" width="292" height="64" rx="12" fill="#0c4a6e" stroke="#38bdf8" strokeWidth="2" />
+                <text x="586" y="153" textAnchor="middle" fill="#bae6fd" fontSize="13.5" fontWeight="bold" fontFamily="sans-serif">
+                  ADJUNTO ADNOMINAL
+                </text>
+                <text x="586" y="175" textAnchor="middle" fill="#e0f2fe" fontSize="11.5" fontFamily="sans-serif">
+                  Ex.: “mesa de madeira” | “prédio da prefeitura”
                 </text>
 
-                <rect x="442" y="230" width="270" height="58" rx="10" fill="#1e293b" stroke="#f59e0b" strokeWidth="1.5" />
-                <text x="577" y="251" textAnchor="middle" fill="#93c5fd" fontSize="11.5" fontWeight="bold" fontFamily="sans-serif">
-                  PRATICA / POSSUI (Agente) → ADJUNTO ADNOMINAL
+                {/* Seta NÃO 2 */}
+                <line x1="188" y1="192" x2="188" y2="220" stroke="#f59e0b" strokeWidth="2.2" />
+                <polygon points="182,220 188,230 194,220" fill="#f59e0b" />
+                <text x="204" y="214" fill="#fcd34d" fontSize="11" fontWeight="bold" fontFamily="sans-serif">
+                  NÃO (é Substantivo Abstrato)
                 </text>
-                <text x="577" y="272" textAnchor="middle" fill="#6ee7b7" fontSize="11.5" fontWeight="bold" fontFamily="sans-serif">
-                  SOFRE / RECEBE (Paciente) → COMPLEMENTO NOMINAL
+
+                {/* Passo 3 (centralizado, bifurcando claramente para 2 caixas) */}
+                <rect x="130" y="232" width="500" height="54" rx="12" fill="#451a03" stroke="#f59e0b" strokeWidth="2" />
+                <text x="380" y="254" textAnchor="middle" fill="#fde68a" fontSize="11.5" fontWeight="bold" fontFamily="sans-serif">
+                  PASSO 3 · DECISÃO FINAL
+                </text>
+                <text x="380" y="274" textAnchor="middle" fill="#ffffff" fontSize="13.5" fontWeight="bold" fontFamily="sans-serif">
+                  O termo PRATICA / POSSUI a ação ou SOFRE / RECEBE a ação?
+                </text>
+
+                {/* Bifurcação Esquerda (Agente) */}
+                <line x1="250" y1="286" x2="195" y2="306" stroke="#38bdf8" strokeWidth="2.2" />
+                <polygon points="190,300 188,312 200,308" fill="#38bdf8" />
+                <rect x="28" y="312" width="336" height="58" rx="12" fill="#0c4a6e" stroke="#38bdf8" strokeWidth="2" />
+                <text x="196" y="336" textAnchor="middle" fill="#bae6fd" fontSize="13" fontWeight="bold" fontFamily="sans-serif">
+                  PRATICA / POSSUI → ADJUNTO ADNOMINAL
+                </text>
+                <text x="196" y="357" textAnchor="middle" fill="#e0f2fe" fontSize="11.5" fontFamily="sans-serif">
+                  Ex.: “aprovação do prefeito” (ele aprovou)
+                </text>
+
+                {/* Bifurcação Direita (Paciente) */}
+                <line x1="510" y1="286" x2="565" y2="306" stroke="#10b981" strokeWidth="2.2" />
+                <polygon points="560,308 572,312 570,300" fill="#10b981" />
+                <rect x="396" y="312" width="336" height="58" rx="12" fill="#064e3b" stroke="#10b981" strokeWidth="2" />
+                <text x="564" y="336" textAnchor="middle" fill="#a7f3d0" fontSize="13" fontWeight="bold" fontFamily="sans-serif">
+                  SOFRE / RECEBE → COMPLEMENTO NOMINAL
+                </text>
+                <text x="564" y="357" textAnchor="middle" fill="#d1fae5" fontSize="11.5" fontFamily="sans-serif">
+                  Ex.: “aprovação do edital” (foi aprovado)
+                </text>
+
+                {/* Dica de rodapé */}
+                <text x="380" y="393" textAnchor="middle" fill="#94a3b8" fontSize="11" fontWeight="bold" fontFamily="sans-serif">
+                  Atalho extra: com substantivo abstrato + preposição diferente de “de” (a, em, por, com, contra), é Complemento Nominal!
                 </text>
               </svg>
             </ZoomableDiagram>
