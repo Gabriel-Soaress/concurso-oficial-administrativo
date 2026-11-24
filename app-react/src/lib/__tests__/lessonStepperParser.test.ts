@@ -75,6 +75,10 @@ Explicação final.
     expect(parsed.hasAxes).toBe(true);
     expect(parsed.axes).toHaveLength(2);
     expect(parsed.axes[0].cleanTitle).toBe("Fundamentos");
+    expect(parsed.axes[0].rawMd).toContain("## EIXO 1: Fundamentos");
+    expect(parsed.axes[0].rawMd).toContain("Teoria do eixo 1.");
+    expect(parsed.axes[0].rawMd).toContain("### Questão 01");
+    expect(parsed.axes[0].rawMd).not.toContain("## EIXO 2");
     expect(parsed.axes[0].checkpointQuestions).toHaveLength(3);
     expect(parsed.axes[0].checkpointQuestions[0].answer).toBe("B");
     expect(parsed.axes[1].checkpointQuestions).toHaveLength(0);

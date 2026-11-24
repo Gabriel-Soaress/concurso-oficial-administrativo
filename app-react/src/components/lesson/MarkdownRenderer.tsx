@@ -1,5 +1,6 @@
-import { useMemo, useState, type MouseEvent, type ChangeEvent } from "react";
+import { useMemo, useState, type ChangeEvent, type KeyboardEvent, type MouseEvent } from "react";
 import { renderRichMarkdown } from "@/lib/markdown";
+import { extractZoomPayload } from "@/lib/diagramZoom";
 import { useProgress } from "@/contexts/ProgressContext";
 import { DiagramZoomModal, type ZoomDiagramPayload } from "./DiagramZoomModal";
 
@@ -50,28 +51,23 @@ export function MarkdownRenderer({ content, contextId, docId, className = "" }: 
       return;
     }
 
-    // 3. Zoom de Diagrama SVG
+    // 3. Zoom de Diagrama SVG ou Imagem
     const zoomWrap = target.closest<HTMLElement>("[data-zoom-diagram]");
     if (zoomWrap) {
-      const svgEl = zoomWrap.querySelector("svg");
-      if (!svgEl) return;
-      const parentCard = zoomWrap.closest(".edu-card, .edu-component");
-      const titleEl = parentCard?.querySelector(".card-title, .edu-comp-title");
-      const title = titleEl?.textContent?.trim() || "📊 Fluxograma / Diagrama";
+      const payload = extractZoomPayload(zoomWrap);
+      if (payload) setZoomDiagram(payload);
+    }
+  };
 
-      const clone = svgEl.cloneNode(true) as SVGSVGElement;
-      if (!clone.getAttribute("xmlns")) {
-        clone.setAttribute("xmlns", "http://www.w3.org/2000/svg");
-      }
-      const vb = (clone.getAttribute("viewBox") || "0 0 760 470").trim().split(/\s+/);
-      if (vb.length === 4) {
-        clone.setAttribute("width", vb[2]);
-        clone.setAttribute("height", vb[3]);
-      }
-      clone.removeAttribute("style");
-      const svgXml = new XMLSerializer().serializeToString(clone);
-      const dataUrl = "data:image/svg+xml;charset=utf-8," + encodeURIComponent(svgXml);
-      setZoomDiagram({ title, dataUrl });
+  const handleKeyDown = (e: KeyboardEvent<HTMLDivElement>) => {
+    if (e.key !== "Enter" && e.key !== " ") return;
+    const target = e.target as HTMLElement;
+    const zoomWrap = target.closest<HTMLElement>("[data-zoom-diagram]");
+    if (!zoomWrap) return;
+    const payload = extractZoomPayload(zoomWrap);
+    if (payload) {
+      e.preventDefault();
+      setZoomDiagram(payload);
     }
   };
 
@@ -92,6 +88,7 @@ export function MarkdownRenderer({ content, contextId, docId, className = "" }: 
       <div
         className={`md-content max-w-none ${className}`}
         onClick={handleClick}
+        onKeyDown={handleKeyDown}
         onChange={handleChange}
         dangerouslySetInnerHTML={{ __html: html }}
       />

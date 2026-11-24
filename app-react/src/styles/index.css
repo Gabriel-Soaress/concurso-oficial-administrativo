@@ -267,3 +267,31 @@ html.dark .badge-ger {
 .pb-safe {
   padding-bottom: env(safe-area-inset-bottom, 0px);
 }
+
+/* Destaque inequívoco com sublinhado para termos-alvo em treinos, exemplos e questões */
+.edu-term-highlight,
+.edu-focus-scope strong,
+.edu-focus-scope u,
+.mc-question-scope em strong,
+.mc-question-scope u {
+  font-weight: 800;
+  font-style: normal;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  text-decoration-color: #f59e0b;
+  background-color: rgba(245, 158, 11, 0.16);
+  color: var(--text-primary);
+  padding: 0.04rem 0.28rem;
+  border-radius: 0.3rem;
+}
+
+html.dark .edu-term-highlight,
+html.dark .edu-focus-scope strong,
+html.dark .edu-focus-scope u,
+html.dark .mc-question-scope em strong,
+html.dark .mc-question-scope u {
+  color: #fef3c7;
+  background-color: rgba(245, 158, 11, 0.22);
+  text-decoration-color: #fbbf24;
+}

@@ -245,7 +245,7 @@ export function MCQuestionList({
 
               {/* Enunciado */}
               <div
-                className="text-sm sm:text-[15px] leading-relaxed text-pri space-y-2"
+                className="mc-question-scope text-sm sm:text-[15px] leading-relaxed text-pri space-y-2"
                 dangerouslySetInnerHTML={{ __html: renderRichMarkdown(q.statement, `${k}_stmt`) }}
               />
 
@@ -291,7 +291,7 @@ export function MCQuestionList({
                           {L}
                         </span>
                         <span
-                          className="text-sm leading-relaxed text-pri flex-1"
+                          className="mc-question-scope text-sm leading-relaxed text-pri flex-1"
                           dangerouslySetInnerHTML={{
                             __html: renderInlineMarkdown(q.options[L], `${k}_opt_${L}`),
                           }}

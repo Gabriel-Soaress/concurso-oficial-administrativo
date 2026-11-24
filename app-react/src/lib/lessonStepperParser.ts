@@ -107,6 +107,7 @@ export function parseLessonIntoAxes(mdText: string): ParsedLessonStepper {
         id: `eixo-${axisNum}`,
         title: rawTitle,
         cleanTitle,
+        rawMd: fullBlock,
         theoryMd: parsedAxis.preMd + (parsedAxis.postMd ? `\n\n${parsedAxis.postMd}` : ""),
         checkpointQuestions: parsedAxis.questions,
       });

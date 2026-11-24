@@ -104,4 +104,34 @@ describe("renderRichMarkdown (tabelas, tabelas indentadas e blocos ASCII)", () =
     expect(html).toContain("Comparação Lado a Lado");
     expect(html).toContain("A FÍSICA DOS BASTIDORES vs. O ATALHO DE PROVA");
   });
+
+  it("envolve SVG avulso em container clicável com botão de expandir em tela cheia", () => {
+    const md = [
+      "Texto introdutório.",
+      "",
+      '<svg viewBox="0 0 740 260" role="img" aria-label="Diagrama Teste"><rect x="0" y="0" width="740" height="260" /></svg>',
+    ].join("\n");
+    const html = renderRichMarkdown(md, "t_svg_standalone");
+    expect(html).toContain("<svg");
+    expect(html).toContain('data-zoom-diagram="true"');
+    expect(html).toContain("Expandir em tela cheia");
+    expect(html).not.toContain("&lt;svg");
+  });
+
+  it("renderiza imagem Markdown com zoom e botão de expandir em tela cheia", () => {
+    const md = "Veja o organograma abaixo:\n\n![Organograma](/revisao/teste.png)";
+    const html = renderRichMarkdown(md, "t_md_img");
+    expect(html).toContain('<img src="/revisao/teste.png" alt="Organograma"');
+    expect(html).toContain('data-zoom-diagram="true"');
+    expect(html).toContain('data-zoom-title="Organograma"');
+    expect(html).toContain("Expandir em tela cheia");
+  });
+
+  it("converte <u>termo</u> em sublinhado destacado com segurança mantendo outras tags HTML escapadas", () => {
+    const md = "Identifique o termo <u>urgente</u> sem executar <script>alert(1)</script>.";
+    const html = renderRichMarkdown(md, "t_u_hl");
+    expect(html).toContain('<u class="edu-term-highlight">urgente</u>');
+    expect(html).toContain("&lt;script&gt;");
+    expect(html).not.toContain("<script>");
+  });
 });

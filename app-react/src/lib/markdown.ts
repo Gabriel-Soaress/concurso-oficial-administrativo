@@ -302,10 +302,19 @@ function formatRawHtmlComponent(rawHtml: string): string {
     const vbMatch = attrs.match(/viewBox=["']\s*[\d.-]+\s+[\d.-]+\s+([\d.]+)\s+([\d.]+)\s*["']/i);
     const vbWidth = vbMatch ? parseFloat(vbMatch[1]) : 0;
     const vbHeight = vbMatch ? parseFloat(vbMatch[2]) : 0;
-    if (vbWidth >= 220 && vbHeight >= 120) {
-      return `<div class="edu-zoomable-diagram" data-zoom-diagram="true" role="button" tabindex="0" aria-label="Ampliar diagrama em tela cheia">${fullSvg}<div class="text-center"><span class="edu-zoom-hint">🔍 Toque para expandir em tela cheia</span></div></div>`;
+    if (vbWidth >= 180 && vbHeight >= 100) {
+      return `<div class="edu-zoomable-diagram" data-zoom-diagram="true" role="button" tabindex="0" aria-label="Ampliar diagrama em tela cheia">${fullSvg}<div class="text-center"><button type="button" class="edu-zoom-hint">🔍 Expandir em tela cheia</button></div></div>`;
     }
     return fullSvg;
+  });
+
+  // Imagens HTML dentro de componentes também ganham botão de expansão em tela cheia
+  s = s.replace(/(<div[^>]*data-zoom-diagram[\s\S]*?<\/div>)|(<img\b[^>]*>)/gi, (match, existingWrap, imgTag) => {
+    if (existingWrap) return existingWrap;
+    if (imgTag) {
+      return `<div class="edu-zoomable-diagram my-3" data-zoom-diagram="true" role="button" tabindex="0" aria-label="Ampliar imagem em tela cheia">${imgTag}<div class="text-center"><button type="button" class="edu-zoom-hint">🔍 Expandir em tela cheia</button></div></div>`;
+    }
+    return match;
   });
   return s;
 }
@@ -317,6 +326,13 @@ function formatInlineMd(line: string): string {
     /`([^`]+)`/g,
     '<code class="font-mono text-xs px-1.5 py-0.5 rounded surface-muted text-indigo-600 dark:text-indigo-400">$1</code>'
   );
+  s = s.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, (full, alt, rawSrc) => {
+    const src = String(rawSrc || "").trim();
+    if (!/^(https?:\/\/|\/|\.\/)/i.test(src)) return full;
+    const altAttr = String(alt || "").replace(/"/g, "&quot;");
+    const srcAttr = src.replace(/"/g, "&quot;");
+    return `<span class="edu-zoomable-diagram block my-3" data-zoom-diagram="true" data-zoom-title="${altAttr}" role="button" tabindex="0" aria-label="Ampliar imagem em tela cheia"><img src="${srcAttr}" alt="${altAttr}" class="max-w-full h-auto rounded-xl mx-auto block" loading="lazy" /><span class="block text-center"><button type="button" class="edu-zoom-hint">🔍 Expandir em tela cheia</button></span></span>`;
+  });
   s = s.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_, label, href) => {
     if (href.startsWith("#")) {
       return `<a href="${href}" data-anchor-slug="${escapeHtml(href.slice(1))}" class="text-indigo-600 dark:text-indigo-400 font-semibold hover:underline">${label}</a>`;
@@ -326,6 +342,7 @@ function formatInlineMd(line: string): string {
   s = s.replace(/\*\*\*([^*]+)\*\*\*/g, "<strong><em>$1</em></strong>");
   s = s.replace(/\*\*([^*]+)\*\*/g, '<strong class="font-extrabold text-pri">$1</strong>');
   s = s.replace(/\*([^*\n]+)\*/g, "<em>$1</em>");
+  s = s.replace(/&lt;u&gt;([\s\S]*?)&lt;\/u&gt;/gi, '<u class="edu-term-highlight">$1</u>');
   return s;
 }
 
@@ -624,6 +641,13 @@ export function renderRichMarkdown(
       break;
     }
   }
+
+  // Extrair <svg> avulsos (fora de <div class="edu-component">) para renderizar e ganhar zoom
+  text = text.replace(/<svg\b[^>]*>[\s\S]*?<\/svg>/gi, (rawSvg) => {
+    const hIdx = rawHtmlTokens.length;
+    rawHtmlTokens.push(formatRawHtmlComponent(rawSvg));
+    return `\n@@RAW_HTML_TOKEN_${hIdx}@@\n`;
+  });
 
   const codeTokens: string[] = [];
   const mathTokens: string[] = [];

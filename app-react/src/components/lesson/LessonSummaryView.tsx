@@ -4,6 +4,7 @@ import {
   BookOpen,
   CheckCircle2,
   Circle,
+  Download,
   ListChecks,
   Play,
   Sparkles,
@@ -19,6 +20,8 @@ interface LessonSummaryViewProps {
   parsed: ParsedLessonStepper;
   completedAxes: string[];
   onSwitchContinuousMode: () => void;
+  onDownloadFullLesson?: () => void;
+  onDownloadAxis?: (axisIndex: number) => void;
 }
 
 export function LessonSummaryView({
@@ -28,6 +31,8 @@ export function LessonSummaryView({
   parsed,
   completedAxes,
   onSwitchContinuousMode,
+  onDownloadFullLesson,
+  onDownloadAxis,
 }: LessonSummaryViewProps) {
   const firstPendingAxis = parsed.axes.find((a) => !completedAxes.includes(a.id));
   const doneCount = parsed.axes.filter((a) => completedAxes.includes(a.id)).length;
@@ -85,7 +90,7 @@ export function LessonSummaryView({
         </div>
 
         {/* Botões principais */}
-        <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-1">
+        <div className="flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center gap-3 pt-1">
           <Link to={ctaUrl} className="btn-primary !py-3 !px-6 !text-sm sm:!text-base">
             <Play className="w-4 h-4 fill-current" />
             <span>{ctaLabel}</span>
@@ -99,6 +104,17 @@ export function LessonSummaryView({
             <BookOpen className="w-4 h-4" />
             <span>Modo leitura contínua</span>
           </button>
+          {onDownloadFullLesson && (
+            <button
+              type="button"
+              onClick={onDownloadFullLesson}
+              className="btn-secondary !py-3 !px-4 !text-xs sm:!text-sm"
+              title="Baixar aula completa em Markdown (ideal para NotebookLM)"
+            >
+              <Download className="w-4 h-4" />
+              <span>Baixar Aula (.md)</span>
+            </button>
+          )}
         </div>
       </div>
 
@@ -120,10 +136,9 @@ export function LessonSummaryView({
             const isDone = completedAxes.includes(axis.id);
             const isNext = firstPendingAxis?.id === axis.id;
             return (
-              <Link
+              <div
                 key={axis.id}
-                to={`${baseUrl}/eixo/${axis.index}`}
-                className={`group flex items-center justify-between gap-3 p-4 rounded-xl border transition-all ${
+                className={`flex items-center gap-2 p-2 sm:p-2.5 rounded-xl border transition-all ${
                   isDone
                     ? "border-emerald-500/30 bg-emerald-500/[0.04] hover:border-emerald-500/55"
                     : isNext
@@ -131,44 +146,62 @@ export function LessonSummaryView({
                       : "border-tech surface-muted hover:border-indigo-500/40"
                 }`}
               >
-                <div className="flex items-start gap-3 min-w-0">
-                  <div className="mt-0.5 shrink-0">
-                    {isDone ? (
-                      <CheckCircle2 className="w-5 h-5 text-emerald-500" />
-                    ) : (
-                      <Circle
-                        className={`w-5 h-5 ${
-                          isNext ? "text-indigo-500" : "text-mut/60"
-                        }`}
-                      />
-                    )}
-                  </div>
-                  <div className="min-w-0">
-                    <div className="flex items-center gap-2 flex-wrap">
-                      <span className="font-mono text-[11px] font-bold uppercase text-indigo-600 dark:text-indigo-400">
-                        Eixo {axis.index}
-                      </span>
-                      {isNext && !isDone && (
-                        <span className="px-2 py-0.5 rounded-full bg-indigo-500/15 text-indigo-600 dark:text-indigo-400 text-[10px] font-bold">
-                          Próximo passo
-                        </span>
-                      )}
-                      {axis.checkpointQuestions.length > 0 && (
-                        <span className="px-2 py-0.5 rounded-full bg-amber-500/15 text-amber-700 dark:text-amber-400 text-[10px] font-mono font-semibold">
-                          +{axis.checkpointQuestions.length} questões diretas
-                        </span>
+                <Link
+                  to={`${baseUrl}/eixo/${axis.index}`}
+                  className="group flex-1 min-w-0 flex items-center justify-between gap-3 p-2 rounded-lg"
+                >
+                  <div className="flex items-start gap-3 min-w-0">
+                    <div className="mt-0.5 shrink-0">
+                      {isDone ? (
+                        <CheckCircle2 className="w-5 h-5 text-emerald-500" />
+                      ) : (
+                        <Circle
+                          className={`w-5 h-5 ${
+                            isNext ? "text-indigo-500" : "text-mut/60"
+                          }`}
+                        />
                       )}
                     </div>
-                    <div
-                      className="text-sm sm:text-[15px] font-bold text-pri mt-0.5 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors"
-                      dangerouslySetInnerHTML={{
-                        __html: renderInlineMarkdown(axis.cleanTitle, `${docId}_sum_ax_${axis.index}`),
-                      }}
-                    />
+                    <div className="min-w-0">
+                      <div className="flex items-center gap-2 flex-wrap">
+                        <span className="font-mono text-[11px] font-bold uppercase text-indigo-600 dark:text-indigo-400">
+                          Eixo {axis.index}
+                        </span>
+                        {isNext && !isDone && (
+                          <span className="px-2 py-0.5 rounded-full bg-indigo-500/15 text-indigo-600 dark:text-indigo-400 text-[10px] font-bold">
+                            Próximo passo
+                          </span>
+                        )}
+                        {axis.checkpointQuestions.length > 0 && (
+                          <span className="px-2 py-0.5 rounded-full bg-amber-500/15 text-amber-700 dark:text-amber-400 text-[10px] font-mono font-semibold">
+                            +{axis.checkpointQuestions.length} questões diretas
+                          </span>
+                        )}
+                      </div>
+                      <div
+                        className="text-sm sm:text-[15px] font-bold text-pri mt-0.5 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors"
+                        dangerouslySetInnerHTML={{
+                          __html: renderInlineMarkdown(axis.cleanTitle, `${docId}_sum_ax_${axis.index}`),
+                        }}
+                      />
+                    </div>
                   </div>
-                </div>
-                <ArrowRight className="w-4 h-4 text-mut group-hover:text-indigo-500 group-hover:translate-x-0.5 transition-all shrink-0" />
-              </Link>
+                  <ArrowRight className="w-4 h-4 text-mut group-hover:text-indigo-500 group-hover:translate-x-0.5 transition-all shrink-0" />
+                </Link>
+
+                {onDownloadAxis && (
+                  <button
+                    type="button"
+                    onClick={() => onDownloadAxis(axis.index)}
+                    title={`Baixar apenas o Eixo ${axis.index} em Markdown`}
+                    aria-label={`Baixar Eixo ${axis.index} em Markdown`}
+                    className="inline-flex items-center gap-1.5 px-2.5 py-2 rounded-lg surface border border-tech text-sec hover:text-indigo-600 dark:hover:text-indigo-400 hover:border-indigo-500/50 text-xs font-mono font-bold transition-colors cursor-pointer shrink-0"
+                  >
+                    <Download className="w-3.5 h-3.5" />
+                    <span>.md</span>
+                  </button>
+                )}
+              </div>
             );
           })}
 

@@ -1,6 +1,15 @@
 import { useEffect, useMemo, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
-import { ArrowLeft, BookOpen, Check, CheckCircle2, ChevronDown, Layers, ListChecks } from "lucide-react";
+import {
+  ArrowLeft,
+  BookOpen,
+  Check,
+  CheckCircle2,
+  ChevronDown,
+  Download,
+  Layers,
+  ListChecks,
+} from "lucide-react";
 import confetti from "canvas-confetti";
 import { SUBJECT_META } from "@/config/constants";
 import { WEEKS_DATA } from "@/data/weeks";
@@ -8,6 +17,14 @@ import { loadWeekLessons } from "@/services/lessonsLoader";
 import { loadRichLesson } from "@/lessons/registry";
 import { parseLessonIntoAxes } from "@/lib/lessonStepperParser";
 import { parseWorksheetMarkdown } from "@/lib/worksheetParser";
+import {
+  buildAxisMarkdown,
+  buildAxisMdFilename,
+  buildFullLessonMarkdown,
+  buildLessonMdFilename,
+  resolveRichAxisMarkdown,
+  triggerMarkdownDownload,
+} from "@/lib/markdownDownload";
 import { useProgress } from "@/contexts/ProgressContext";
 import { useToast } from "@/contexts/ToastContext";
 import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
@@ -134,6 +151,35 @@ export function LessonPage({ mode = "summary" }: LessonPageProps) {
 
   const currentDoc = docs[safeDocIdx];
 
+  const handleDownloadFullLesson = () => {
+    if (!doc) return;
+    const filename = buildLessonMdFilename(doc);
+    triggerMarkdownDownload(buildFullLessonMarkdown(doc), filename);
+    showToast(`Baixado: ${filename}`, "success");
+  };
+
+  const handleDownloadMarkdownAxis = (targetAxisIndex: number) => {
+    if (!doc || !parsedLesson?.hasAxes) return;
+    const axis = parsedLesson.axes.find((a) => a.index === targetAxisIndex);
+    if (!axis) return;
+    const filename = buildAxisMdFilename(doc, axis.index);
+    triggerMarkdownDownload(buildAxisMarkdown(doc.title, axis), filename);
+    showToast(`Baixado: ${filename}`, "success");
+  };
+
+  const handleDownloadRichAxis = (targetAxisIndex: number) => {
+    if (!richLesson) return;
+    const resolved = resolveRichAxisMarkdown(
+      doc,
+      parsedLesson,
+      targetAxisIndex,
+      richLesson.axes.length
+    );
+    if (!resolved) return;
+    triggerMarkdownDownload(resolved.content, resolved.filename);
+    showToast(`Baixado: ${resolved.filename}`, "success");
+  };
+
   return (
     <div className="space-y-4 sm:space-y-5">
       {/* Barra Superior de Contexto + Breadcrumbs */}
@@ -154,27 +200,41 @@ export function LessonPage({ mode = "summary" }: LessonPageProps) {
             </span>
           </div>
 
-          <button
-            type="button"
-            onClick={() => {
-              toggleBlock(blockId);
-              showToast(
-                isBlockDone ? "Bloco desmarcado na Trilha." : "Bloco marcado como concluído!",
-                isBlockDone ? "info" : "success"
-              );
-            }}
-            className={`!py-1.5 !px-3 !text-xs shrink-0 ${
-              isBlockDone
-                ? "btn-secondary !border-emerald-500 !text-emerald-600 dark:!text-emerald-400"
-                : "btn-primary"
-            }`}
-          >
-            <CheckCircle2 className="w-3.5 h-3.5" />
-            <span>{isBlockDone ? "Concluído" : "Concluir"}</span>
-          </button>
+          <div className="flex items-center gap-1.5 shrink-0">
+            {doc && (
+              <button
+                type="button"
+                onClick={handleDownloadFullLesson}
+                aria-label="Baixar aula completa em Markdown"
+                title="Baixar aula completa (.md) — ideal para NotebookLM"
+                className="btn-secondary !py-1.5 !px-2.5 !text-xs shrink-0"
+              >
+                <Download className="w-3.5 h-3.5" />
+                <span>.md</span>
+              </button>
+            )}
+            <button
+              type="button"
+              onClick={() => {
+                toggleBlock(blockId);
+                showToast(
+                  isBlockDone ? "Bloco desmarcado na Trilha." : "Bloco marcado como concluído!",
+                  isBlockDone ? "info" : "success"
+                );
+              }}
+              className={`!py-1.5 !px-3 !text-xs shrink-0 ${
+                isBlockDone
+                  ? "btn-secondary !border-emerald-500 !text-emerald-600 dark:!text-emerald-400"
+                  : "btn-primary"
+              }`}
+            >
+              <CheckCircle2 className="w-3.5 h-3.5" />
+              <span>{isBlockDone ? "Concluído" : "Concluir"}</span>
+            </button>
+          </div>
         </div>
 
-        {/* Versão Desktop / Tablet (sm+): Trilha + Breadcrumbs + Botão Concluir Bloco */}
+        {/* Versão Desktop / Tablet (sm+): Trilha + Breadcrumbs + Ações */}
         <div className="hidden sm:flex items-center justify-between gap-3 flex-wrap">
           <div className="flex items-center gap-3 min-w-0">
             <Link
@@ -194,24 +254,37 @@ export function LessonPage({ mode = "summary" }: LessonPageProps) {
             />
           </div>
 
-          <button
-            type="button"
-            onClick={() => {
-              toggleBlock(blockId);
-              showToast(
-                isBlockDone ? "Bloco desmarcado na Trilha." : "Bloco marcado como concluído!",
-                isBlockDone ? "info" : "success"
-              );
-            }}
-            className={`!py-1.5 !px-3.5 !text-xs shrink-0 ${
-              isBlockDone
-                ? "btn-secondary !border-emerald-500 !text-emerald-600 dark:!text-emerald-400"
-                : "btn-primary"
-            }`}
-          >
-            <CheckCircle2 className="w-3.5 h-3.5" />
-            <span>{isBlockDone ? "Bloco Concluído" : "Concluir Bloco"}</span>
-          </button>
+          <div className="flex items-center gap-2 shrink-0">
+            {doc && (
+              <button
+                type="button"
+                onClick={handleDownloadFullLesson}
+                className="btn-secondary !py-1.5 !px-3 !text-xs shrink-0"
+                title="Baixar aula completa em Markdown (ideal para NotebookLM)"
+              >
+                <Download className="w-3.5 h-3.5" />
+                <span>Baixar Aula (.md)</span>
+              </button>
+            )}
+            <button
+              type="button"
+              onClick={() => {
+                toggleBlock(blockId);
+                showToast(
+                  isBlockDone ? "Bloco desmarcado na Trilha." : "Bloco marcado como concluído!",
+                  isBlockDone ? "info" : "success"
+                );
+              }}
+              className={`!py-1.5 !px-3.5 !text-xs shrink-0 ${
+                isBlockDone
+                  ? "btn-secondary !border-emerald-500 !text-emerald-600 dark:!text-emerald-400"
+                  : "btn-primary"
+              }`}
+            >
+              <CheckCircle2 className="w-3.5 h-3.5" />
+              <span>{isBlockDone ? "Bloco Concluído" : "Concluir Bloco"}</span>
+            </button>
+          </div>
         </div>
 
         {/* Seletor de Documentos quando o bloco tiver múltiplos arquivos */}
@@ -311,6 +384,8 @@ export function LessonPage({ mode = "summary" }: LessonPageProps) {
           mode={mode}
           axisNum={parsedAxisNum}
           onFinishBlock={handleFinishBlock}
+          onDownloadFullLesson={doc ? handleDownloadFullLesson : undefined}
+          onDownloadAxis={doc && parsedLesson?.hasAxes ? handleDownloadRichAxis : undefined}
         />
       ) : (
         <>
@@ -357,6 +432,8 @@ export function LessonPage({ mode = "summary" }: LessonPageProps) {
               parsed={parsedLesson}
               completedAxes={axesProgress.completedAxes}
               onSwitchContinuousMode={() => setContinuousMode(true)}
+              onDownloadFullLesson={handleDownloadFullLesson}
+              onDownloadAxis={handleDownloadMarkdownAxis}
             />
           )}
 
@@ -370,6 +447,7 @@ export function LessonPage({ mode = "summary" }: LessonPageProps) {
               extraLabMd={parsedLesson.extraLabMd}
               isCompleted={axesProgress.completedAxes.includes(currentAxis.id)}
               onCompleteAxis={(axisId, nextStep) => markAxisCompleted(doc.id, axisId, nextStep)}
+              onDownloadAxis={() => handleDownloadMarkdownAxis(currentAxis.index)}
             />
           )}
 

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { RotateCcw, X, ZoomIn, ZoomOut } from "lucide-react";
 
 export interface ZoomDiagramPayload {
@@ -13,6 +13,20 @@ interface DiagramZoomModalProps {
 
 export function DiagramZoomModal({ diagram, onClose }: DiagramZoomModalProps) {
   const [zoom, setZoom] = useState<number>(() => (window.innerWidth < 768 ? 135 : 100));
+
+  useEffect(() => {
+    if (!diagram) return;
+    setZoom(window.innerWidth < 768 ? 135 : 100);
+  }, [diagram]);
+
+  useEffect(() => {
+    if (!diagram) return;
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") onClose();
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [diagram, onClose]);
 
   if (!diagram) return null;
 
@@ -67,7 +81,7 @@ export function DiagramZoomModal({ diagram, onClose }: DiagramZoomModalProps) {
       </div>
 
       <div
-        className="flex-1 overflow-auto p-4 sm:p-8 flex items-start justify-center"
+        className="flex-1 overflow-auto touch-pan-x touch-pan-y p-4 sm:p-8 flex items-start justify-center"
         onClick={(e) => {
           if (e.target === e.currentTarget) onClose();
         }}

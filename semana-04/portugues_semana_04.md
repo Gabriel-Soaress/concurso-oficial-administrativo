@@ -964,7 +964,7 @@ Essa mudança de foco chama-se troca de **Voz Verbal**: na **Voz Ativa**, o suje
    <details><summary><b>Ver Resposta Comentada (Treino 1)</b></summary>
    **Resposta: C.** Quem pratica a ação de *protocolar* é o Sujeito → exige o pronome reto **`eu`** (*"para eu protocolar"*), jamais *mim*! Em (B) está correto porque não existe verbo depois de *para mim*.
    </details>
-2. *(Treino 2)* Em *"As novas guias de pagamento foram liberadas pela tesouraria municipal"*, qual é a classificação de **As novas guias de pagamento** e de **pela tesouraria municipal**?
+2. *(Treino 2)* Em *"**As novas guias de pagamento** foram liberadas **pela tesouraria municipal**"*, qual é a classificação de **As novas guias de pagamento** e de **pela tesouraria municipal**?
    - (A) Sujeito Composto — Objeto Indireto.
    - (B) Sujeito Simples Paciente — Agente da Passiva.
    - (C) Objeto Direto — Sujeito Simples Agente.
@@ -1238,7 +1238,7 @@ E existe uma terceira situação muito inteligente da língua para economizar pa
    <details><summary><b>Ver Resposta Comentada (Treino 1)</b></summary>
    **Resposta: C.** *No cofre da tesouraria* indica **lugar físico**, não estado nem qualidade! Logo *estão* atua como `VI` e todo o predicado é **Verbal (`PV`)**. Em (A) e (B), *preocupada* e *completos* são qualidades → `PN`.
    </details>
-2. *(Treino 2)* Em *"Os auditores deixaram o gabinete preocupados"*, qual é o tipo de predicado?
+2. *(Treino 2)* Em *"Os auditores **deixaram** o gabinete **preocupados**"*, qual é o tipo de predicado?
    - (A) Predicado Nominal, pois *preocupados* é o único foco importante da frase.
    - (B) Predicado Verbo-Nominal (`PVN`), pois junta uma ação real (*deixaram*) + um estado momentâneo (*preocupados*).
    - (C) Predicado Verbal, pois todo verbo terminado em *-aram* anula o adjetivo seguinte.

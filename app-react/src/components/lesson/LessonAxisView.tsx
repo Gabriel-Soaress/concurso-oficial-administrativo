@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { ArrowLeft, ArrowRight, CheckCircle2, Sparkles } from "lucide-react";
+import { ArrowLeft, ArrowRight, CheckCircle2, Download, Sparkles } from "lucide-react";
 import type { LessonAxis } from "@/types";
 import { renderInlineMarkdown } from "@/lib/markdown";
 import { MarkdownRenderer } from "./MarkdownRenderer";
@@ -15,6 +15,7 @@ interface LessonAxisViewProps {
   extraLabMd?: string;
   isCompleted: boolean;
   onCompleteAxis: (axisId: string, nextStep: string) => void;
+  onDownloadAxis?: () => void;
 }
 
 export function LessonAxisView({
@@ -26,6 +27,7 @@ export function LessonAxisView({
   extraLabMd,
   isCompleted,
   onCompleteAxis,
+  onDownloadAxis,
 }: LessonAxisViewProps) {
   const navigate = useNavigate();
   const { showToast } = useToast();
@@ -64,7 +66,7 @@ export function LessonAxisView({
     <div className="max-w-4xl mx-auto space-y-6">
       {/* Conteúdo Teórico Focado do Eixo */}
       <article className="surface rounded-2xl p-5 sm:p-8 border border-tech space-y-4">
-        <div className="flex items-center justify-between gap-2 pb-4 border-b border-tech flex-wrap">
+        <div className="flex items-start sm:items-center justify-between gap-3 pb-4 border-b border-tech flex-wrap">
           <div className="space-y-1">
             <div className="inline-flex items-center gap-2">
               <span className="px-2.5 py-0.5 rounded-lg bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 font-mono text-xs font-bold">
@@ -83,6 +85,18 @@ export function LessonAxisView({
               }}
             />
           </div>
+
+          {onDownloadAxis && (
+            <button
+              type="button"
+              onClick={onDownloadAxis}
+              className="btn-secondary !py-1.5 !px-3 !text-xs shrink-0"
+              title={`Baixar apenas o Eixo ${axis.index} em Markdown (ideal para NotebookLM)`}
+            >
+              <Download className="w-3.5 h-3.5" />
+              <span>Baixar Eixo {axis.index} (.md)</span>
+            </button>
+          )}
         </div>
 
         <MarkdownRenderer

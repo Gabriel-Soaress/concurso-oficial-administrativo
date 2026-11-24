@@ -13,6 +13,7 @@ import {
   ProseSection,
   StepByStep,
   TrapAlert,
+  ZoomableDiagram,
 } from "@/components/edu";
 
 export const portuguesSemana04: RichLessonModule = {
@@ -521,7 +522,7 @@ export const portuguesSemana04: RichLessonModule = {
                   prompt: "Em qual papel se encaixa a palavra destacada no enunciado abaixo?",
                   sentence: (
                     <>
-                      “O ofício <strong>urgente</strong> chegou ao setor.”
+                      “O ofício <u>urgente</u> chegou ao setor.”
                     </>
                   ),
                   options: [
@@ -542,7 +543,7 @@ export const portuguesSemana04: RichLessonModule = {
                   prompt: "Quantas orações existem no período abaixo?",
                   sentence: (
                     <>
-                      “O novo sistema eletrônico <strong>deverá ser implantado</strong> na Prefeitura ainda neste mês.”
+                      “O novo sistema eletrônico <u>deverá ser implantado</u> na Prefeitura ainda neste mês.”
                     </>
                   ),
                   options: [
@@ -695,15 +696,10 @@ export const portuguesSemana04: RichLessonModule = {
             />
 
             {/* SVG 1 */}
-            <div className="rounded-2xl border border-tech bg-slate-950/90 p-3 sm:p-5 overflow-hidden">
-              <div className="flex items-center justify-between gap-2 mb-3 flex-wrap">
-                <span className="text-xs sm:text-sm font-extrabold text-indigo-300">
-                  Anatomia da Oração: Sujeito e Predicado na Ordem Direta vs. Ordem Inversa
-                </span>
-                <span className="text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-indigo-500/20 text-indigo-300">
-                  MAPA VISUAL
-                </span>
-              </div>
+            <ZoomableDiagram
+              title="Anatomia da Oração: Sujeito e Predicado na Ordem Direta vs. Ordem Inversa"
+              badge="MAPA VISUAL"
+            >
               <svg
                 viewBox="0 0 740 260"
                 className="w-full h-auto"
@@ -797,7 +793,7 @@ export const portuguesSemana04: RichLessonModule = {
                   o novo edital.
                 </text>
               </svg>
-            </div>
+            </ZoomableDiagram>
 
             <StepByStep
               title="Receita Fixa em 4 Passos para Dissecação de Qualquer Oração de Prova"
@@ -1463,7 +1459,7 @@ export const portuguesSemana04: RichLessonModule = {
                   prompt: "Qual é a classificação correta do verbo destacado nesta frase de rotina municipal?",
                   sentence: (
                     <>
-                      “Os novos fiscais <strong>chegaram</strong> ao prédio anexo muito cedo.”
+                      “Os novos fiscais <u>chegaram</u> ao prédio anexo muito cedo.”
                     </>
                   ),
                   options: [
@@ -1481,7 +1477,7 @@ export const portuguesSemana04: RichLessonModule = {
                   prompt: "Como classificamos o verbo 'confiou' e o termo em destaque na frase abaixo?",
                   sentence: (
                     <>
-                      “A comissão <strong>confiou nas informações</strong> apresentadas pelo protocolo.”
+                      “A comissão confiou <u>nas informações</u> apresentadas pelo protocolo.”
                     </>
                   ),
                   options: [
@@ -1727,7 +1723,7 @@ export const portuguesSemana04: RichLessonModule = {
                   prompt: "Qual é a classificação do verbo destacado nesta frase?",
                   sentence: (
                     <>
-                      “O secretário <strong>enviou</strong> o decreto ao setor jurídico ontem.”
+                      “O secretário <u>enviou</u> o decreto ao setor jurídico ontem.”
                     </>
                   ),
                   options: [
@@ -1745,11 +1741,32 @@ export const portuguesSemana04: RichLessonModule = {
                     "Note que há duas perguntas respondidas pelo ato de enviar: O QUÊ (o decreto = OD) + A QUEM / PARA ONDE FOI ENVIADO (ao setor jurídico = OI) → VTDI.",
                 },
                 {
-                  prompt: "Em qual alternativa o verbo funciona realmente como Verbo de Ligação (VL)?",
+                  prompt: "Em qual alternativa o verbo destacado funciona realmente como Verbo de Ligação (VL)?",
                   options: [
-                    { key: "A", label: "“Os novos formulários estão no armário da recepção.”" },
-                    { key: "B", label: "“O atendente andou depressa até o terceiro andar.”" },
-                    { key: "C", label: "“Durante a auditoria, as contas municipais permaneceram equilibradas.”" },
+                    {
+                      key: "A",
+                      label: (
+                        <>
+                          “Os novos formulários <u>estão</u> no armário da recepção.”
+                        </>
+                      ),
+                    },
+                    {
+                      key: "B",
+                      label: (
+                        <>
+                          “O atendente <u>andou</u> depressa até o terceiro andar.”
+                        </>
+                      ),
+                    },
+                    {
+                      key: "C",
+                      label: (
+                        <>
+                          “Durante a auditoria, as contas municipais <u>permaneceram</u> equilibradas.”
+                        </>
+                      ),
+                    },
                   ],
                   correctKey: "C",
                   feedbackCorrect:
@@ -2128,15 +2145,10 @@ export const portuguesSemana04: RichLessonModule = {
             />
 
             {/* SVG 2 */}
-            <div className="rounded-2xl border border-tech bg-slate-950/90 p-3 sm:p-5 overflow-hidden">
-              <div className="flex items-center justify-between gap-2 mb-3 flex-wrap">
-                <span className="text-xs sm:text-sm font-extrabold text-indigo-300">
-                  Fluxograma em 4 Decisões para Classificar Qualquer Sujeito
-                </span>
-                <span className="text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-indigo-500/20 text-indigo-300">
-                  MAPA DE DECISÃO
-                </span>
-              </div>
+            <ZoomableDiagram
+              title="Fluxograma em 4 Decisões para Classificar Qualquer Sujeito"
+              badge="MAPA DE DECISÃO"
+            >
               <svg
                 viewBox="0 0 740 300"
                 className="w-full h-auto"
@@ -2227,7 +2239,7 @@ export const portuguesSemana04: RichLessonModule = {
                   SE NÃO SOUBER QUEM É (3ª plural sem referente | VTI/VI/VL + SE [IIS] | Infinitivo Impessoal) → SUJEITO INDETERMINADO
                 </text>
               </svg>
-            </div>
+            </ZoomableDiagram>
 
             <AnalogyBox title="Analogia do Volante e das Rodas" tag="Prova dos 9">
               Quando você gira o volante (<strong>Sujeito</strong>) entre singular e plural, as rodas (<strong>Verbo</strong>)
@@ -2476,9 +2488,30 @@ export const portuguesSemana04: RichLessonModule = {
                 {
                   prompt: "Assinale a frase em que há erro grave por usar 'mim' como se pudesse ser Sujeito:",
                   options: [
-                    { key: "A", label: "“O diretor trouxe as pastas para eu conferir ainda hoje.”" },
-                    { key: "B", label: "“A secretária entregou o processo revisado para mim.”" },
-                    { key: "C", label: "“Os documentos chegaram cedo para mim protocolar no sistema.”" },
+                    {
+                      key: "A",
+                      label: (
+                        <>
+                          “O diretor trouxe as pastas <u>para eu</u> conferir ainda hoje.”
+                        </>
+                      ),
+                    },
+                    {
+                      key: "B",
+                      label: (
+                        <>
+                          “A secretária entregou o processo revisado <u>para mim</u>.”
+                        </>
+                      ),
+                    },
+                    {
+                      key: "C",
+                      label: (
+                        <>
+                          “Os documentos chegaram cedo <u>para mim</u> protocolar no sistema.”
+                        </>
+                      ),
+                    },
                   ],
                   correctKey: "C",
                   feedbackCorrect:
@@ -2487,8 +2520,12 @@ export const portuguesSemana04: RichLessonModule = {
                     "Lembre: quem conjuga verbo é Sujeito ('eu'), nunca 'mim'! Olhe a opção (C): 'para mim protocolar' está errada.",
                 },
                 {
-                  prompt: "Qual é a análise correta dos dois trechos desta frase em Voz Passiva Analítica?",
-                  sentence: "“As novas guias de pagamento foram liberadas pela tesouraria municipal.”",
+                  prompt: "Qual é a análise correta dos dois trechos destacados nesta frase em Voz Passiva Analítica?",
+                  sentence: (
+                    <>
+                      “<u>As novas guias de pagamento</u> foram liberadas <u>pela tesouraria municipal</u>.”
+                    </>
+                  ),
                   options: [
                     { key: "A", label: "Sujeito Composto — Objeto Indireto." },
                     { key: "B", label: "Sujeito Simples Paciente — Agente da Passiva." },
@@ -2619,9 +2656,30 @@ export const portuguesSemana04: RichLessonModule = {
                 {
                   prompt: "Qual frase respeita corretamente a concordância verbal com o pronome 'se'?",
                   options: [
-                    { key: "A", label: "“Tratam-se de documentos sigilosos guardados no gabinete.”" },
-                    { key: "B", label: "“Necessita-se de três novos analistas para o arquivo municipal.”" },
-                    { key: "C", label: "“Precisam-se de técnicos experientes em rede na Secretaria.”" },
+                    {
+                      key: "A",
+                      label: (
+                        <>
+                          “<u>Tratam-se de</u> documentos sigilosos guardados no gabinete.”
+                        </>
+                      ),
+                    },
+                    {
+                      key: "B",
+                      label: (
+                        <>
+                          “<u>Necessita-se de</u> três novos analistas para o arquivo municipal.”
+                        </>
+                      ),
+                    },
+                    {
+                      key: "C",
+                      label: (
+                        <>
+                          “<u>Precisam-se de</u> técnicos experientes em rede na Secretaria.”
+                        </>
+                      ),
+                    },
                   ],
                   correctKey: "B",
                   feedbackCorrect:
@@ -2630,8 +2688,12 @@ export const portuguesSemana04: RichLessonModule = {
                     "Sempre que o verbo após 'se' exigir preposição (tratar DE, necessitar DE, precisar DE), o verbo é obrigado a ficar no singular ('Necessita-se de...').",
                 },
                 {
-                  prompt: "Na frase abaixo, qual é o papel do 'se'?",
-                  sentence: "“O equipamento eletrônico que se desligava sozinho às dezoito horas.”",
+                  prompt: "Na frase abaixo, qual é o papel do termo destacado ('se')?",
+                  sentence: (
+                    <>
+                      “O equipamento eletrônico que <u>se</u> desligava sozinho às dezoito horas.”
+                    </>
+                  ),
                   options: [
                     {
                       key: "A",
@@ -2931,15 +2993,10 @@ export const portuguesSemana04: RichLessonModule = {
             />
 
             {/* SVG 3 */}
-            <div className="rounded-2xl border border-tech bg-slate-950/90 p-3 sm:p-5 overflow-hidden">
-              <div className="flex items-center justify-between gap-2 mb-3 flex-wrap">
-                <span className="text-xs sm:text-sm font-extrabold text-indigo-300">
-                  Fluxograma da Classificação dos 3 Tipos de Predicado
-                </span>
-                <span className="text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-indigo-500/20 text-indigo-300">
-                  MAPA DE DECISÃO
-                </span>
-              </div>
+            <ZoomableDiagram
+              title="Fluxograma da Classificação dos 3 Tipos de Predicado"
+              badge="MAPA DE DECISÃO"
+            >
               <svg
                 viewBox="0 0 740 295"
                 className="w-full h-auto"
@@ -3020,7 +3077,7 @@ export const portuguesSemana04: RichLessonModule = {
                   2 núcleos (“O fiscal saiu satisfeito.” / “Julgou o ato válido.”)
                 </text>
               </svg>
-            </div>
+            </ZoomableDiagram>
 
             <AnalogyBox title="Analogia da Câmera Fotográfica" tag="Vídeo × Foto × Os Dois">
               O <strong>PV</strong> é câmera gravando movimento; o <strong>PN</strong> é foto parada de um estado; e o{" "}
@@ -3092,9 +3149,30 @@ export const portuguesSemana04: RichLessonModule = {
                 {
                   prompt: "Qual frase traz um Predicado Verbal (PV) disfarçado com o verbo 'estar'?",
                   options: [
-                    { key: "A", label: "“A servidora está muito preocupada com o prazo final.”" },
-                    { key: "B", label: "“Os balancetes contábeis estão completos e conferidos.”" },
-                    { key: "C", label: "“Todos os contratos originais estão no cofre da tesouraria.”" },
+                    {
+                      key: "A",
+                      label: (
+                        <>
+                          “A servidora <u>está</u> muito preocupada com o prazo final.”
+                        </>
+                      ),
+                    },
+                    {
+                      key: "B",
+                      label: (
+                        <>
+                          “Os balancetes contábeis <u>estão</u> completos e conferidos.”
+                        </>
+                      ),
+                    },
+                    {
+                      key: "C",
+                      label: (
+                        <>
+                          “Todos os contratos originais <u>estão</u> no cofre da tesouraria.”
+                        </>
+                      ),
+                    },
                   ],
                   correctKey: "C",
                   feedbackCorrect:
@@ -3103,8 +3181,12 @@ export const portuguesSemana04: RichLessonModule = {
                     "Em (A) e (B), 'preocupada' e 'completos' são qualidades (PN). Só em (C) 'no cofre' é lugar físico → Predicado Verbal!",
                 },
                 {
-                  prompt: "Como se classifica o predicado desta oração?",
-                  sentence: "“Os auditores deixaram o gabinete preocupados.”",
+                  prompt: "Como se classifica o predicado desta oração com foco nos termos destacados?",
+                  sentence: (
+                    <>
+                      “Os auditores <u>deixaram</u> o gabinete <u>preocupados</u>.”
+                    </>
+                  ),
                   options: [
                     { key: "A", label: "Predicado Nominal, pois 'preocupados' é o único foco da frase." },
                     {
@@ -3539,15 +3621,11 @@ export const portuguesSemana04: RichLessonModule = {
             />
 
             {/* SVG 4 */}
-            <div className="rounded-2xl border border-tech bg-slate-950/90 p-3 sm:p-5 overflow-hidden">
-              <div className="flex items-center justify-between gap-2 mb-3 flex-wrap">
-                <span className="text-xs sm:text-sm font-extrabold text-indigo-300">
-                  Fluxograma em 3 Passos: Complemento Nominal × Adjunto Adnominal
-                </span>
-                <span className="text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-amber-500/20 text-amber-300">
-                  CAMPEÃO ACCESS
-                </span>
-              </div>
+            <ZoomableDiagram
+              title="Fluxograma em 3 Passos: Complemento Nominal × Adjunto Adnominal"
+              badge="CAMPEÃO ACCESS"
+              badgeTone="amber"
+            >
               <svg
                 viewBox="0 0 740 310"
                 className="w-full h-auto"
@@ -3633,7 +3711,7 @@ export const portuguesSemana04: RichLessonModule = {
                   SOFRE / RECEBE (Paciente) → COMPLEMENTO NOMINAL
                 </text>
               </svg>
-            </div>
+            </ZoomableDiagram>
 
             <AnalogyBox title="Analogia da Tesoura no Papel" tag="Agente (AA) × Paciente (CN)">
               Em <em>“A tesoura de ferro”</em> (concreto), é <strong>AA</strong>. Em <em>“O corte do papel”</em>, o papel{" "}
@@ -3717,8 +3795,8 @@ export const portuguesSemana04: RichLessonModule = {
                   prompt: "Em sequência, qual é a função dos dois termos destacados?",
                   sentence: (
                     <>
-                      “A fiscalização <strong>do contrato</strong> foi concluída após o parecer favorável{" "}
-                      <strong>ao recurso</strong>.”
+                      “A fiscalização <u>do contrato</u> foi concluída após o parecer favorável{" "}
+                      <u>ao recurso</u>.”
                     </>
                   ),
                   options: [
@@ -3735,9 +3813,30 @@ export const portuguesSemana04: RichLessonModule = {
                 {
                   prompt: "Em qual alternativa o termo destacado atua como Adjunto Adnominal (AA)?",
                   options: [
-                    { key: "A", label: "“A construção do viaduto começou ontem.”" },
-                    { key: "B", label: "“A resposta do secretário tranquilizou a equipe.”" },
-                    { key: "C", label: "“A eliminação do esgoto é prioridade ambiental.”" },
+                    {
+                      key: "A",
+                      label: (
+                        <>
+                          “A construção <u>do viaduto</u> começou ontem.”
+                        </>
+                      ),
+                    },
+                    {
+                      key: "B",
+                      label: (
+                        <>
+                          “A resposta <u>do secretário</u> tranquilizou a equipe.”
+                        </>
+                      ),
+                    },
+                    {
+                      key: "C",
+                      label: (
+                        <>
+                          “A eliminação <u>do esgoto</u> é prioridade ambiental.”
+                        </>
+                      ),
+                    },
                   ],
                   correctKey: "B",
                   feedbackCorrect:
@@ -4008,9 +4107,30 @@ export const portuguesSemana04: RichLessonModule = {
                 {
                   prompt: "Em qual frase o termo destacado é Aposto Especificativo (e NÃO Adjunto Adnominal)?",
                   options: [
-                    { key: "A", label: "“A Secretaria de Obras publicou o cronograma hoje.”" },
-                    { key: "B", label: "“A cidade de Birigui modernizou todo o atendimento.”" },
-                    { key: "C", label: "“O relatório de auditoria foi protocolado cedo.”" },
+                    {
+                      key: "A",
+                      label: (
+                        <>
+                          “A Secretaria <u>de Obras</u> publicou o cronograma hoje.”
+                        </>
+                      ),
+                    },
+                    {
+                      key: "B",
+                      label: (
+                        <>
+                          “A cidade <u>de Birigui</u> modernizou todo o atendimento.”
+                        </>
+                      ),
+                    },
+                    {
+                      key: "C",
+                      label: (
+                        <>
+                          “O relatório <u>de auditoria</u> foi protocolado cedo.”
+                        </>
+                      ),
+                    },
                   ],
                   correctKey: "B",
                   feedbackCorrect:
@@ -4022,7 +4142,7 @@ export const portuguesSemana04: RichLessonModule = {
                   prompt: "Qual é a função sintática do trecho inicial destacado na fala abaixo?",
                   sentence: (
                     <>
-                      “<strong>Servidores municipais</strong>, confiram os contracheques no portal ainda hoje.”
+                      “<u>Servidores municipais</u>, confiram os contracheques no portal ainda hoje.”
                     </>
                   ),
                   options: [

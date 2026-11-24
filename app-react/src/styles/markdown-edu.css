@@ -491,7 +491,7 @@
       color: #4f46e5;
       background: rgba(99, 102, 241, 0.12);
       border: 1px solid rgba(99, 102, 241, 0.28);
-      pointer-events: none;
+      cursor: pointer;
     }
     html.dark .edu-zoom-hint {
       color: #a5b4fc;

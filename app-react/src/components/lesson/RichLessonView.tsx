@@ -1,3 +1,4 @@
+import { useState, type MouseEvent } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import {
   ArrowLeft,
@@ -5,14 +6,17 @@ import {
   CheckCircle2,
   Circle,
   Clock,
+  Download,
   Layers,
   ListChecks,
   Play,
   Sparkles,
 } from "lucide-react";
 import type { RichLessonModule } from "@/types";
+import { extractZoomPayload, isZoomableSvg } from "@/lib/diagramZoom";
 import { useProgress } from "@/contexts/ProgressContext";
 import { useToast } from "@/contexts/ToastContext";
+import { DiagramZoomModal, type ZoomDiagramPayload } from "./DiagramZoomModal";
 import { LessonStepperBar } from "./LessonStepperBar";
 import { MCQuestionList } from "./MCQuestionList";
 
@@ -22,6 +26,8 @@ interface RichLessonViewProps {
   mode: "summary" | "axis" | "questoes";
   axisNum?: number;
   onFinishBlock: () => void;
+  onDownloadFullLesson?: () => void;
+  onDownloadAxis?: (axisIndex: number) => void;
 }
 
 export function RichLessonView({
@@ -30,10 +36,38 @@ export function RichLessonView({
   mode,
   axisNum = 1,
   onFinishBlock,
+  onDownloadFullLesson,
+  onDownloadAxis,
 }: RichLessonViewProps) {
   const navigate = useNavigate();
   const { getDocAxesProgress, markAxisCompleted, getQuizDoc, updateQuizDoc } = useProgress();
   const { showToast } = useToast();
+  const [zoomDiagram, setZoomDiagram] = useState<ZoomDiagramPayload | null>(null);
+
+  const handleRichMediaClick = (e: MouseEvent<HTMLElement>) => {
+    const target = e.target as HTMLElement;
+    if (target.closest("[data-self-zoom='true']")) return;
+
+    const zoomWrap = target.closest<HTMLElement>("[data-zoom-diagram]");
+    if (zoomWrap) {
+      const payload = extractZoomPayload(zoomWrap);
+      if (payload) setZoomDiagram(payload);
+      return;
+    }
+
+    const imgEl = target.closest<HTMLImageElement>("img");
+    if (imgEl && (imgEl.naturalWidth >= 120 || imgEl.clientWidth >= 120)) {
+      const payload = extractZoomPayload(imgEl);
+      if (payload) setZoomDiagram(payload);
+      return;
+    }
+
+    const svgEl = target.closest<SVGSVGElement>("svg");
+    if (svgEl && isZoomableSvg(svgEl)) {
+      const payload = extractZoomPayload(svgEl as unknown as HTMLElement);
+      if (payload) setZoomDiagram(payload);
+    }
+  };
 
   const axesProgress = getDocAxesProgress(lesson.id);
   const completedAxes = axesProgress.completedAxes;
@@ -129,16 +163,27 @@ export function RichLessonView({
               </div>
             </div>
 
-            <div className="pt-1">
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-1">
               <Link to={ctaUrl} className="btn-primary !py-3 !px-6 !text-sm sm:!text-base">
                 <Play className="w-4 h-4 fill-current" />
                 <span>{ctaLabel}</span>
                 <ArrowRight className="w-4 h-4" />
               </Link>
+              {onDownloadFullLesson && (
+                <button
+                  type="button"
+                  onClick={onDownloadFullLesson}
+                  className="btn-secondary !py-3 !px-4 !text-xs sm:!text-sm"
+                  title="Baixar aula completa em Markdown (ideal para NotebookLM)"
+                >
+                  <Download className="w-4 h-4" />
+                  <span>Baixar Aula Completa (.md)</span>
+                </button>
+              )}
             </div>
           </div>
 
-          {lesson.introRender && <div>{lesson.introRender()}</div>}
+          {lesson.introRender && <div onClick={handleRichMediaClick}>{lesson.introRender()}</div>}
 
           {/* Mapa de Eixos */}
           <div className="surface rounded-2xl p-5 sm:p-6 border border-tech space-y-4">
@@ -157,10 +202,9 @@ export function RichLessonView({
                 const isDone = completedAxes.includes(ax.id);
                 const isNext = firstPendingAxis?.id === ax.id;
                 return (
-                  <Link
+                  <div
                     key={ax.id}
-                    to={`${baseUrl}/eixo/${ax.index}`}
-                    className={`group flex items-center justify-between gap-3 p-4 rounded-xl border transition-all ${
+                    className={`flex items-center gap-2 p-2 sm:p-2.5 rounded-xl border transition-all ${
                       isDone
                         ? "border-emerald-500/35 bg-emerald-500/[0.04] hover:border-emerald-500/60"
                         : isNext
@@ -168,38 +212,56 @@ export function RichLessonView({
                           : "border-tech surface-muted hover:border-indigo-500/40"
                     }`}
                   >
-                    <div className="flex items-start gap-3 min-w-0">
-                      <div className="mt-0.5 shrink-0">
-                        {isDone ? (
-                          <CheckCircle2 className="w-5 h-5 text-emerald-500" />
-                        ) : (
-                          <Circle className={`w-5 h-5 ${isNext ? "text-indigo-500" : "text-mut/60"}`} />
-                        )}
-                      </div>
-                      <div className="min-w-0">
-                        <div className="flex items-center gap-2 flex-wrap">
-                          <span className="font-mono text-[11px] font-bold uppercase text-indigo-600 dark:text-indigo-400">
-                            Eixo {ax.index}
-                          </span>
-                          {ax.estimatedMinutes && (
-                            <span className="inline-flex items-center gap-1 text-[11px] font-mono text-mut">
-                              <Clock className="w-3 h-3" /> {ax.estimatedMinutes} min
-                            </span>
-                          )}
-                          {ax.checkpointQuestions.length > 0 && (
-                            <span className="px-2 py-0.5 rounded-full bg-amber-500/15 text-amber-700 dark:text-amber-400 text-[10px] font-mono font-bold">
-                              +{ax.checkpointQuestions.length} questões diretas
-                            </span>
+                    <Link
+                      to={`${baseUrl}/eixo/${ax.index}`}
+                      className="group flex-1 min-w-0 flex items-center justify-between gap-3 p-2 rounded-lg"
+                    >
+                      <div className="flex items-start gap-3 min-w-0">
+                        <div className="mt-0.5 shrink-0">
+                          {isDone ? (
+                            <CheckCircle2 className="w-5 h-5 text-emerald-500" />
+                          ) : (
+                            <Circle className={`w-5 h-5 ${isNext ? "text-indigo-500" : "text-mut/60"}`} />
                           )}
                         </div>
-                        <div className="text-sm sm:text-[15px] font-bold text-pri mt-0.5 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
-                          {ax.title}
+                        <div className="min-w-0">
+                          <div className="flex items-center gap-2 flex-wrap">
+                            <span className="font-mono text-[11px] font-bold uppercase text-indigo-600 dark:text-indigo-400">
+                              Eixo {ax.index}
+                            </span>
+                            {ax.estimatedMinutes && (
+                              <span className="inline-flex items-center gap-1 text-[11px] font-mono text-mut">
+                                <Clock className="w-3 h-3" /> {ax.estimatedMinutes} min
+                              </span>
+                            )}
+                            {ax.checkpointQuestions.length > 0 && (
+                              <span className="px-2 py-0.5 rounded-full bg-amber-500/15 text-amber-700 dark:text-amber-400 text-[10px] font-mono font-bold">
+                                +{ax.checkpointQuestions.length} questões diretas
+                              </span>
+                            )}
+                          </div>
+                          <div className="text-sm sm:text-[15px] font-bold text-pri mt-0.5 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
+                            {ax.title}
+                          </div>
+                          {ax.subtitle && <p className="text-xs text-mut mt-0.5">{ax.subtitle}</p>}
                         </div>
-                        {ax.subtitle && <p className="text-xs text-mut mt-0.5">{ax.subtitle}</p>}
                       </div>
-                    </div>
-                    <ArrowRight className="w-4 h-4 text-mut group-hover:text-indigo-500 group-hover:translate-x-0.5 transition-all shrink-0" />
-                  </Link>
+                      <ArrowRight className="w-4 h-4 text-mut group-hover:text-indigo-500 group-hover:translate-x-0.5 transition-all shrink-0" />
+                    </Link>
+
+                    {onDownloadAxis && (
+                      <button
+                        type="button"
+                        onClick={() => onDownloadAxis(ax.index)}
+                        title={`Baixar apenas o Eixo ${ax.index} em Markdown`}
+                        aria-label={`Baixar Eixo ${ax.index} em Markdown`}
+                        className="inline-flex items-center gap-1.5 px-2.5 py-2 rounded-lg surface border border-tech text-sec hover:text-indigo-600 dark:hover:text-indigo-400 hover:border-indigo-500/50 text-xs font-mono font-bold transition-colors cursor-pointer shrink-0"
+                      >
+                        <Download className="w-3.5 h-3.5" />
+                        <span>.md</span>
+                      </button>
+                    )}
+                  </div>
                 );
               })}
 
@@ -232,19 +294,33 @@ export function RichLessonView({
         <div className="max-w-4xl mx-auto space-y-8">
           {/* Cabeçalho do Eixo */}
           <div className="surface rounded-2xl p-5 sm:p-7 border border-tech space-y-2">
-            <div className="flex items-center gap-2 flex-wrap">
-              <span className="px-2.5 py-0.5 rounded-lg bg-indigo-500/12 text-indigo-600 dark:text-indigo-400 font-mono text-xs font-bold">
-                EIXO {currentAxis.index} DE {totalAxes}
-              </span>
-              {currentAxis.estimatedMinutes && (
-                <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-lg surface-muted font-mono text-xs text-mut">
-                  <Clock className="w-3.5 h-3.5" /> ~{currentAxis.estimatedMinutes} min
+            <div className="flex items-center justify-between gap-2 flex-wrap">
+              <div className="flex items-center gap-2 flex-wrap">
+                <span className="px-2.5 py-0.5 rounded-lg bg-indigo-500/12 text-indigo-600 dark:text-indigo-400 font-mono text-xs font-bold">
+                  EIXO {currentAxis.index} DE {totalAxes}
                 </span>
-              )}
-              {completedAxes.includes(currentAxis.id) && (
-                <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-lg bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 text-xs font-bold">
-                  <CheckCircle2 className="w-3.5 h-3.5" /> Concluído
-                </span>
+                {currentAxis.estimatedMinutes && (
+                  <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-lg surface-muted font-mono text-xs text-mut">
+                    <Clock className="w-3.5 h-3.5" /> ~{currentAxis.estimatedMinutes} min
+                  </span>
+                )}
+                {completedAxes.includes(currentAxis.id) && (
+                  <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-lg bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 text-xs font-bold">
+                    <CheckCircle2 className="w-3.5 h-3.5" /> Concluído
+                  </span>
+                )}
+              </div>
+
+              {onDownloadAxis && (
+                <button
+                  type="button"
+                  onClick={() => onDownloadAxis(currentAxis.index)}
+                  className="btn-secondary !py-1.5 !px-3 !text-xs shrink-0"
+                  title={`Baixar apenas o Eixo ${currentAxis.index} em Markdown (ideal para NotebookLM)`}
+                >
+                  <Download className="w-3.5 h-3.5" />
+                  <span>Baixar Eixo {currentAxis.index} (.md)</span>
+                </button>
               )}
             </div>
             <h2 className="text-xl sm:text-2xl font-extrabold text-pri leading-snug">
@@ -254,7 +330,7 @@ export function RichLessonView({
           </div>
 
           {/* Conteúdo JSX Rico (EduKit) */}
-          <div>{currentAxis.render()}</div>
+          <div onClick={handleRichMediaClick}>{currentAxis.render()}</div>
 
           {/* 3 Questões Diretas de Checkpoint */}
           {currentAxis.checkpointQuestions.length > 0 && (
@@ -414,6 +490,8 @@ export function RichLessonView({
           </footer>
         </div>
       )}
+
+      <DiagramZoomModal diagram={zoomDiagram} onClose={() => setZoomDiagram(null)} />
     </div>
   );
 }

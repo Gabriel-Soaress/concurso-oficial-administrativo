@@ -6,6 +6,7 @@ import {
   ChevronDown,
   ChevronRight,
   Circle,
+  Download,
   FileText,
   Layers,
   Sparkles,
@@ -14,8 +15,14 @@ import {
 import { WEEKS_DATA } from "@/data/weeks";
 import { MONTH_META, SUBJECT_META } from "@/config/constants";
 import { useProgress } from "@/contexts/ProgressContext";
+import { useToast } from "@/contexts/ToastContext";
 import { loadWeekLessons } from "@/services/lessonsLoader";
 import { hasRichLesson } from "@/lessons/registry";
+import {
+  buildFullLessonMarkdown,
+  buildLessonMdFilename,
+  triggerMarkdownDownload,
+} from "@/lib/markdownDownload";
 import type { SubjectKey, WeekLessonsMap } from "@/types";
 
 const SUBJECT_ORDER: SubjectKey[] = ["port", "rlm", "esp", "ger"];
@@ -33,6 +40,7 @@ export function CronogramaPage() {
     setMonthWeeksCollapsed,
     getDocAxesProgress,
   } = useProgress();
+  const { showToast } = useToast();
 
   const [lessonsMap, setLessonsMap] = useState<WeekLessonsMap>({});
 
@@ -303,36 +311,54 @@ export function CronogramaPage() {
                                 const isRich = hasRichLesson(blockId, dIdx);
 
                                 return (
-                                  <Link
-                                    key={doc.id}
-                                    to={`/aulas/${blockId}/${dIdx}`}
-                                    className="group flex items-center justify-between gap-2 px-3 py-2 rounded-lg surface border border-tech hover:border-indigo-500/50 transition-all text-xs"
-                                  >
-                                    <span className="flex items-center gap-2 min-w-0 font-semibold text-pri group-hover:text-indigo-600 dark:group-hover:text-indigo-400">
-                                      {isRich ? (
-                                        <Sparkles className="w-3.5 h-3.5 text-indigo-500 shrink-0" />
-                                      ) : doc.isMain ? (
-                                        <Layers className="w-3.5 h-3.5 text-indigo-500 shrink-0" />
-                                      ) : (
-                                        <BookOpen className="w-3.5 h-3.5 text-amber-500 shrink-0" />
-                                      )}
-                                      <span className="truncate">{doc.shortTitle}</span>
-                                    </span>
+                                  <div key={doc.id} className="flex items-stretch gap-1.5">
+                                    <Link
+                                      to={`/aulas/${blockId}/${dIdx}`}
+                                      className="group flex-1 min-w-0 flex items-center justify-between gap-2 px-3 py-2 rounded-lg surface border border-tech hover:border-indigo-500/50 transition-all text-xs"
+                                    >
+                                      <span className="flex items-center gap-2 min-w-0 font-semibold text-pri group-hover:text-indigo-600 dark:group-hover:text-indigo-400">
+                                        {isRich ? (
+                                          <Sparkles className="w-3.5 h-3.5 text-indigo-500 shrink-0" />
+                                        ) : doc.isMain ? (
+                                          <Layers className="w-3.5 h-3.5 text-indigo-500 shrink-0" />
+                                        ) : (
+                                          <BookOpen className="w-3.5 h-3.5 text-amber-500 shrink-0" />
+                                        )}
+                                        <span className="truncate">{doc.shortTitle}</span>
+                                      </span>
 
-                                    <span className="flex items-center gap-1.5 shrink-0">
-                                      {isRich && (
-                                        <span className="px-1.5 py-0.5 rounded bg-indigo-500/12 text-indigo-600 dark:text-indigo-400 font-mono text-[10px] font-bold">
-                                          EduKit
-                                        </span>
-                                      )}
-                                      {completedAxesCount > 0 && (
-                                        <span className="px-1.5 py-0.5 rounded bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 font-mono text-[10px] font-bold">
-                                          {completedAxesCount}✓
-                                        </span>
-                                      )}
-                                      <ChevronRight className="w-3.5 h-3.5 text-mut group-hover:text-indigo-500" />
-                                    </span>
-                                  </Link>
+                                      <span className="flex items-center gap-1.5 shrink-0">
+                                        {isRich && (
+                                          <span className="px-1.5 py-0.5 rounded bg-indigo-500/12 text-indigo-600 dark:text-indigo-400 font-mono text-[10px] font-bold">
+                                            EduKit
+                                          </span>
+                                        )}
+                                        {completedAxesCount > 0 && (
+                                          <span className="px-1.5 py-0.5 rounded bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 font-mono text-[10px] font-bold">
+                                            {completedAxesCount}✓
+                                          </span>
+                                        )}
+                                        <ChevronRight className="w-3.5 h-3.5 text-mut group-hover:text-indigo-500" />
+                                      </span>
+                                    </Link>
+
+                                    <button
+                                      type="button"
+                                      onClick={() => {
+                                        const filename = buildLessonMdFilename(doc);
+                                        triggerMarkdownDownload(
+                                          buildFullLessonMarkdown(doc),
+                                          filename
+                                        );
+                                        showToast(`Baixado: ${filename}`, "success");
+                                      }}
+                                      title={`Baixar aula completa (.md): ${doc.filename}`}
+                                      aria-label={`Baixar ${doc.shortTitle} em Markdown`}
+                                      className="px-2.5 py-2 rounded-lg surface border border-tech text-mut hover:text-indigo-600 dark:hover:text-indigo-400 hover:border-indigo-500/50 transition-colors cursor-pointer shrink-0 flex items-center justify-center"
+                                    >
+                                      <Download className="w-3.5 h-3.5" />
+                                    </button>
+                                  </div>
                                 );
                               })}
                             </div>

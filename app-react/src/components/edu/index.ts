@@ -30,3 +30,4 @@ export { FlipCardsGrid } from "./FlipCardsGrid";
 export { KeyTable } from "./KeyTable";
 export { AsciiKeyBlock } from "./AsciiKeyBlock";
 export { FeynmanCard, type FeynmanLine } from "./FeynmanCard";
+export { ZoomableDiagram, type ZoomableDiagramProps } from "./ZoomableDiagram";

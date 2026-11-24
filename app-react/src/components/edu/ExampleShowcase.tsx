@@ -140,7 +140,7 @@ export function ExampleShowcase({ title = "Exemplos Progressivos Guiados", items
                             <span>Armadilha / Forma Errada</span>
                           </div>
                         )}
-                        <div className="text-[15px] sm:text-[17px] font-semibold text-pri leading-relaxed break-words">
+                        <div className="edu-focus-scope text-[15px] sm:text-[17px] font-medium text-pri leading-relaxed break-words">
                           {c.sentence}
                         </div>
                       </div>

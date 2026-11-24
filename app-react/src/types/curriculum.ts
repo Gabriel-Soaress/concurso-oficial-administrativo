@@ -68,6 +68,7 @@ export interface LessonAxis {
   id: string; // e.g. "eixo-1"
   title: string;
   cleanTitle: string;
+  rawMd: string;
   theoryMd: string;
   checkpointQuestions: MCQuestion[];
 }

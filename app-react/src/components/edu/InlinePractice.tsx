@@ -3,7 +3,7 @@ import { CheckCircle2, RotateCcw, Target, XCircle } from "lucide-react";
 
 export interface InlinePracticeOption {
   key: string;
-  label: string;
+  label: ReactNode;
 }
 
 export interface InlinePracticeQuestion {
@@ -93,7 +93,7 @@ export function InlinePractice({ title, subtitle, questions }: InlinePracticePro
                   {q.prompt}
                 </div>
                 {q.sentence && (
-                  <div className="rounded-xl border-l-4 border-l-indigo-500 bg-indigo-500/[0.06] px-4 py-3 text-[15px] sm:text-base font-semibold text-pri leading-relaxed">
+                  <div className="edu-focus-scope rounded-xl border-l-4 border-l-indigo-500 bg-indigo-500/[0.06] px-4 py-3 text-[15px] sm:text-base font-medium text-pri leading-relaxed">
                     {q.sentence}
                   </div>
                 )}
@@ -137,7 +137,9 @@ export function InlinePractice({ title, subtitle, questions }: InlinePracticePro
                         >
                           {opt.key}
                         </span>
-                        <span className="text-sm sm:text-[15px] leading-snug break-words">{opt.label}</span>
+                        <span className="edu-focus-scope text-sm sm:text-[15px] leading-snug break-words">
+                          {opt.label}
+                        </span>
                       </div>
                       {isAnswered && isThisCorrect && (
                         <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0" />

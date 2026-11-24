@@ -25,6 +25,9 @@ Antes de digitar o título da aula, o agente deve executar estes 4 passos obriga
 
 ## FASE 2 — Contrato Didático `D-E-A-M-P-C` por Subconceito
 
+- **Abertura Obrigatória de Todo Eixo (`Contexto Inicial`):** Todo `## EIXO X` deve abrir com um bloco de contexto inicial (`> [!NOTE]` no `.md` / `<AxisContextCard />` no `.tsx`) trazendo ponte com o eixo anterior, o problema real que aquele eixo resolve na prova e o roteiro de subtópicos. Cada subtópico (`###`) deve iniciar em **voz calma de professor explicando o porquê da regra antes do rótulo técnico**.
+- **Paradas Rápidas no Meio dos Eixos:** Em eixos densos, intercale blocos `#### 🎯 Parada Rápida X.A` (`.md`) / `<InlinePractice />` (`.tsx`) com 1 a 2 questões curtas de fixação ativa no meio da teoria, antes de mudar de bloco conceitual — sem substituir os 3 checkpoints obrigatórios ao final do eixo.
+
 Cada subconceito (`###`) dentro de um Eixo (`## EIXO X: ...`) deve obrigatoriamente cumprir os **6 pilares `D-E-A-M-P-C`**:
 
 - **D — Definição do Zero:**
@@ -71,6 +74,8 @@ Consulte sempre `.agents/PADRAO_QUESTOES_BANCA_ACCESS.md` e cumpra as regras aba
    - **Zero pistas tipográficas exclusivas:** não coloque parênteses explicativos `(ou seja, ...)`, aspas ou negritos **apenas** na alternativa correta; se usar estrutura explicativa na certa, use estrutura equivalente nas 3 erradas.
    - **Distribuição balanceada de gabaritos:** em baterias de 8 a 10 questões, nenhuma letra (`A`, `B`, `C`, `D`) pode passar de **40%** (ideal: 2 a 3 de cada letra em 10 questões). Nos 3 checkpoints de um mesmo Eixo, é proibido repetir a mesma letra nas 3 questões.
    - **Comentário completo alternativa por alternativa:** dentro de `<details><summary><b>Ver Gabarito e Comentário Detalhado</b></summary> **Gabarito Oficial: X** ... </details>`, explicar por que a correta procede **e** qual é o erro específico de cada uma das outras 3 opções.
+4. **Destaque Inequívoco com Sublinhado em Termos-Alvo (Obrigatório):**
+   - Sempre que um enunciado de **Parada Rápida**, **Checkpoint** ou **Questão** mencionar *"termo destacado"*, *"verbo destacado"* ou *"trecho destacado"*, é **proibido** deixar a palavra apenas em texto comum ou em negrito discreto: marque explicitamente o termo-alvo com `<u>...</u>` no TSX (`InlinePractice`, `ExampleShowcase`) ou com `<u>...</u>` / `**termo**` dentro de frase em itálico `*“... **termo** ...”*` no Markdown (`.edu-focus-scope`, `.mc-question-scope`, `.edu-term-highlight`), garantindo renderização com **sublinhado espesso (`2px`) + destaque visual**.
 
 ---
 
@@ -78,11 +83,14 @@ Consulte sempre `.agents/PADRAO_QUESTOES_BANCA_ACCESS.md` e cumpra as regras aba
 
 Conforme `.agents/GUIA_EDUKIT_REACT.md`:
 
-1. **Mapeamento 1-para-1 com Zero Condensação:** o `.md` é o texto-base integral; o `.tsx` em `app-react/src/lessons/semana-XX/<materia>.tsx` deve preservar **100%** das subseções, parágrafos, exemplos e questões, apenas elevando a apresentação visual.
+1. **Mapeamento 1-para-1 e Fluxo 100% Vertical:** o `.md` é o texto-base integral; o `.tsx` em `app-react/src/lessons/semana-XX/<materia>.tsx` deve preservar **100%** das subseções, parágrafos, exemplos e questões, em **fluxo 100% vertical na teoria** (proibido cards teóricos lado a lado `md:grid-cols-2`), apenas elevando a apresentação visual.
 2. **Matriz Obrigatória de Componentes (`@/components/edu`):**
+   - Contexto inicial obrigatório de cada Eixo → `<AxisContextCard eyebrow? title bridge problemSolved roadmap />`
    - Narrativa conceitual e demonstrações integrais → `<ProseSection number title>`
    - Regra-mãe ou definição inaugural → `<ConceptCard title badge accent icon>`
    - Definições e enumerações de conceitos irmãos → `<DefinitionBlocks title? columns={1|2} items />` (Regra Anti-Texto Corrido: proibido empilhar 2 ou mais conceitos/classificações num mesmo parágrafo `<p>`)
+   - Exemplos progressivos destacados em vitrine vertical → `<ExampleShowcase title? items />`
+   - Fixação ativa no meio dos eixos → `<InlinePractice title subtitle? questions />` (aceita `label: ReactNode` e termos-alvo obrigatoriamente marcados com `<u>`)
    - Analogia prática ou caso de Prefeitura → `<AnalogyBox title tag>`
    - Contraste entre "Gêmeos Confundíveis" ou Certo vs. Errado → `<CompareGrid mode="right-wrong"|"contrast" />` e/ou `<KeyTable />`
    - Armadilha da banca + Teste rápido de 5s → `<TrapAlert title trap escape />`
@@ -90,9 +98,10 @@ Conforme `.agents/GUIA_EDUKIT_REACT.md`:
    - Treino ativo de memorização (obrigatório em todo eixo denso!) → `<FlipCardsGrid title cards />` (4 a 6 flashcards)
    - Fórmulas e passagens matemáticas → `<MathTex />`, `<MathStack />`, `<GuidedCalcCard />`, `<FormulaSpotlight />`
    - Contas armadas na chave → `<AsciiKeyBlock />` (proibido caixas ASCII `┌───┐` fora de contas armadas!)
-   - Fluxogramas, organogramas ou anatomias espaciais → **SVG responsivo nativo** (`viewBox="..." className="w-full h-auto"`) — **NUNCA** citar um fluxograma/organograma no texto sem desenhá-lo visualmente!
+   - Fluxogramas, organogramas, SVG ou imagens didáticas → **`<ZoomableDiagram title badge? badgeTone?>`** envolvendo `<svg viewBox="..." className="w-full h-auto" />` ou imagem — **OBRIGATÓRIO** em módulos React para disponibilizar o botão `Expandir` e o modal `DiagramZoomModal` com zoom; **NUNCA** citar um fluxograma/organograma no texto sem desenhá-lo visualmente!
    - Fechamento teórico do eixo → `<FeynmanCard title lines />` (antes das 3 `checkpointQuestions`)
 3. **Zero Scroll Lateral no Mobile (`390px`):** nunca usar `overflow-x-auto` nem larguras fixas maiores que `340px` fora de `viewBox` escalável.
+4. **Contrato de Exportação `.md` (NotebookLM):** manter correspondência **1-para-1** dos cabeçalhos `## EIXO X:` entre o `.md` e o `.tsx` para que os botões **Baixar Aula (.md)** e **Baixar Eixo X (.md)** exportem conteúdo fiel e íntegro.
 
 ---
 
