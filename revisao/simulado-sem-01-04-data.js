@@ -1,8 +1,438 @@
 window.SIMULADO_03_DATA = {
   "titulo": "Simulado Adaptado · Mês 1 (Semanas 01 a 04)",
-  "subtitulo": "Caderno de Prova Padrão Instituto ACCESS — Nível Médio (Específicos, Gerais e Mat./RLM)",
-  "total": 60,
+  "subtitulo": "Caderno de Prova Padrão Instituto ACCESS — Nível Médio (Português, Específicos, Gerais e Mat./RLM)",
+  "total": 80,
   "materias": [
+    {
+      "key": "portugues",
+      "titulo": "Língua Portuguesa",
+      "icone": "📚",
+      "textos": [
+        {
+          "id": "pt3_t1",
+          "titulo": "Texto I — O que aconteceria se o mundo todo acendesse a luz ao mesmo tempo? (Questões 01 a 04)",
+          "conteudo": "Se todas as pessoas do mundo acendessem suas luzes simultaneamente, o principal impacto seria um aumento expressivo na demanda por eletricidade, já que a maior parte da população global utiliza energia elétrica para iluminação.\n\nA eletricidade, forma de energia obtida a partir de diferentes fontes, é produzida em usinas que utilizam carvão, gás natural, urânio, água, vento ou luz solar. Essas usinas fornecem energia para uma rede de transmissão e distribuição — a chamada rede elétrica — responsável por levar eletricidade às residências e aos estabelecimentos comerciais. Para garantir a estabilidade dessa rede, é necessário que a eletricidade seja fornecida conforme a demanda. Sempre que alguém acende uma luz, consome energia da rede, e um gerador precisa compensar imediatamente essa retirada com a mesma quantidade de energia. Qualquer desequilíbrio, mesmo que por poucos segundos, provoca um apagão.\n\nA rede elétrica é monitorada por operadores que utilizam sensores e sistemas computacionais avançados, ajustando a produção de energia de acordo com a carga, que representa a demanda total. Essa carga varia de hora em hora e conforme a estação do ano, refletindo, por exemplo, a diferença de consumo entre madrugada e dia, ou entre o verão e o outono.\n\nSe todas as luzes fossem acesas ao mesmo tempo, haveria um pico abrupto de demanda energética. Para evitar falhas no sistema, seria necessário que as usinas aumentassem rapidamente sua produção, o que nem sempre é possível. Usinas nucleares e a carvão conseguem gerar grande quantidade de eletricidade, mas respondem lentamente a variações e demandam horas para reativação em caso de desligamento. Já as usinas movidas a gás natural reagem com maior rapidez, sendo mais indicadas para cobrir picos, como os que ocorrem em tardes quentes e ensolaradas.\n\nAs fontes renováveis — como solar, eólica e hidráulica — emitem menos poluentes, mas são menos controláveis, uma vez que dependem de fatores naturais, como vento e luz solar, que não são constantes. Para compensar essas variações, gestores da rede utilizam baterias de grande porte, que armazenam energia para liberação posterior. No entanto, a tecnologia atual ainda não permite que essas baterias abasteçam, por si só, cidades inteiras, tanto por questões de custo quanto pela capacidade limitada de armazenamento.\n\nAlgumas operadoras hidrelétricas conseguem acumular água em lagos durante períodos de baixa demanda e, em seguida, liberá-la para gerar energia nos momentos de maior necessidade, por meio de turbinas.\n\nApesar dos riscos, dois fatores evitariam um colapso global. Em primeiro lugar, não há uma única rede elétrica mundial. A maioria dos países possui redes próprias ou subdivisões regionais. Algumas redes vizinhas, como as dos Estados Unidos e Canadá, são interconectadas, permitindo transferência de energia entre fronteiras. No entanto, essas conexões podem ser rapidamente interrompidas, o que limita a propagação de falhas em larga escala.\n\nEm segundo lugar, a substituição das lâmpadas tradicionais por lâmpadas de LED, nas últimas duas décadas, reduziu consideravelmente o consumo de energia para iluminação. O LED produz mais luz com menos energia. Segundo o Departamento de Energia dos EUA, essa substituição gera uma economia média de 225 dólares por ano por família. Em 2020, quase metade dos lares americanos utilizava LEDs para a maior parte da iluminação doméstica.\n\nO uso excessivo de iluminação à noite é frequente: prédios comerciais permanecem iluminados mesmo vazios, e postes de luz, muitas vezes, direcionam a luz para cima, em vez de focar ruas e calçadas. Mesmo os sistemas mais bem projetados podem contribuir para que cidades e rodovias fiquem visíveis do espaço, enquanto as estrelas desaparecem da visão a olho nu.\n\nEsse excesso de luz noturna afeta também a saúde humana, ao interferir nos ciclos biológicos de sono e vigília, além de prejudicar animais silvestres, como insetos, aves e tartarugas marinhas, que se desorientam com a luminosidade artificial.\n\nSe todas as pessoas do mundo acendessem suas luzes ao mesmo tempo, haveria apenas um aumento moderado no consumo energético. No entanto, a poluição luminosa cresceria drasticamente, fazendo desaparecer as estrelas do céu noturno — um cenário pouco desejável.",
+          "fonte": "BBC News Brasil (Adaptado — Instituto ACCESS, Pref. de Estrela Dalva/MG, 2025 — Auxiliar Administrativo)."
+        },
+        {
+          "id": "pt3_t2",
+          "titulo": "Texto II — As tempestades sempre passam (Questões 05 a 09)",
+          "conteudo": "As tempestades, vêm, caem, destroem e passam. Sempre passam. Umas demoram mais, outras são quase tão rápidas quanto a queda de um raio, mas, passam. Passam como o vento passa, como as marés se repetem, sempre outras em seu movimento de subir e descer. Passam como o ciclo das mulheres, como o corpo que se abre, como a vida que nasce de dentro do ventre e ilumina este mundo no primeiro choro saudando a luz.\n\nAs tempestades passam e deixam no céu a transparência que me fala de outros mundos, de outras dimensões, de momentos esquecidos que precisam ser resgatados, e de outros não vividos, que se perdem na distância, além de qualquer possibilidade, até mesmo para o sonho.\n\nAs tempestades passam e dão lugar a um sol mais limpo e mais brilhante, que faz mais alegre o dia, para dar lugar a uma lua que, se estiver cheia é uma ode impressa no céu, mas que, se estiver crescente, é um soneto, e é o momento mais terno e mais suave de todos os que a natureza dá.\n\nPouca coisa se compara à noite depois duma tempestade. Pouca coisa tem mais poesia do que o céu limpo mudando de cor, até atingir o azul profundo, onde a lua se deita, como uma cimitarra de ouro, apontando os rumos e as rotas das vidas de cada um de nós.\n\nA lua depois da chuva é poesia pura, é o encontro da alma com o eterno, do atávico com o futuro, como se todos fôssemos um único corpo, e o universo não se fragmentasse em estrelas e cometas rodeados de planetas, onde, algumas vezes, a vida se faz, sem explicação capaz de nos explicar, mas real como cada um de nós, como cada corpo e cada pensamento.\n\nA lua depois da tempestade é a chegada da vida na terra molhada, na semente carregada pelo vento, no encontro da luz com as águas escuras onde ela reflete os sonhos de Deus, antes de criar o paraíso.",
+          "fonte": "Antonio Penteado Mendonça, Crônicas da Cidade, 28 nov. 2021 (Instituto ACCESS, Pref. de Rodeiro/MG, 2025 — Assistente Administrativo)."
+        }
+      ],
+      "questoes": [
+        {
+          "id": "pt3_q01",
+          "qid": "pt3_q01",
+          "num": 1,
+          "numero": 1,
+          "origem": "ACCESS",
+          "banca": "Instituto ACCESS — Pref. de Estrela Dalva/MG (2025) · Auxiliar Administrativo · Q09",
+          "ref_interna": "Instituto ACCESS — Pref. de Estrela Dalva/MG (2025) · Auxiliar Administrativo · Q09",
+          "semana": 1,
+          "assunto": "Compreensão e Interpretação Textual (Texto I)",
+          "texto_id": "pt3_t1",
+          "enunciado": "A hipótese de todas as pessoas do mundo acenderem suas luzes ao mesmo tempo é explorada sob diferentes perspectivas ao longo do texto, envolvendo aspectos técnicos, ambientais e sociais.\n\nDe acordo com o texto base, analise as afirmações a seguir e assinale a alternativa correta.",
+          "alternativas": {
+            "A": "A substituição de lâmpadas convencionais por LED reduziu os custos de produção de energia, sendo esse o principal foco de economia citado.",
+            "B": "O texto defende que a existência de uma única rede elétrica mundial aumentaria a segurança do sistema e evitaria falhas generalizadas.",
+            "C": "A simultaneidade no acendimento de luzes causaria sobrecarga na rede elétrica e agravaria a poluição luminosa, com consequências ambientais e à saúde, conforme diferentes trechos do texto.",
+            "D": "A sobrecarga energética descrita no texto seria neutralizada facilmente pelas baterias de grande porte, capazes de alimentar cidades inteiras."
+          },
+          "gabarito": "C",
+          "comentario": "Gabarito: C.\n- Alternativa (C) CORRETA: Síntese fiel ao Texto I — o texto explica que acender todas as luzes geraria pico abrupto de demanda na rede (risco de apagão sem compensação imediata) e agravaria drasticamente a poluição luminosa, afetando o sono humano e a orientação de animais silvestres.\n- Alternativa (A) INCORRETA (Desvio): A economia mencionada (225 dólares por ano) ocorre na despesa das famílias por redução no consumo, não nos custos de produção de usinas.\n- Alternativa (B) INCORRETA (Contradição): O texto afirma o oposto — **não** haver uma única rede elétrica mundial evita a propagação global de falhas.\n- Alternativa (D) INCORRETA (Contradição): O 5º parágrafo afirma expressamente que a tecnologia atual ainda **não** permite que baterias abasteçam cidades inteiras."
+        },
+        {
+          "id": "pt3_q02",
+          "qid": "pt3_q02",
+          "num": 2,
+          "numero": 2,
+          "origem": "ACCESS",
+          "banca": "Instituto ACCESS — Pref. de Estrela Dalva/MG (2025) · Auxiliar Administrativo · Q04",
+          "ref_interna": "Instituto ACCESS — Pref. de Estrela Dalva/MG (2025) · Auxiliar Administrativo · Q04",
+          "semana": 3,
+          "assunto": "Morfologia II: Tempos e Modos Verbais (Correlação Verbal)",
+          "texto_id": "pt3_t1",
+          "enunciado": "Se todas as luzes <u>fossem</u> acesas ao mesmo tempo, <u>haveria</u> um pico abrupto de demanda energética.\n\nOs verbos destacados na frase encontram-se conjugados, respectivamente, no:",
+          "alternativas": {
+            "A": "pretérito imperfeito do subjuntivo e futuro do pretérito do indicativo.",
+            "B": "pretérito imperfeito do indicativo e futuro do presente do indicativo.",
+            "C": "futuro do subjuntivo e presente do indicativo.",
+            "D": "condicional composto e pretérito mais-que-perfeito do indicativo."
+          },
+          "gabarito": "A",
+          "comentario": "Gabarito: A.\n- Alternativa (A) CORRETA: A conjunção condicional *Se* introduz hipótese no **pretérito imperfeito do subjuntivo** (*fossem*, desinência *-sse-*), correlacionando-se perfeitamente na oração principal com o **futuro do pretérito do indicativo** (*haveria*, desinência *-ria*).\n- Alternativa (B) INCORRETA: *Fossem* pertence ao modo subjuntivo (não indicativo), e *haveria* é futuro do pretérito (não futuro do presente *haverá*).\n- Alternativa (C) INCORRETA: O futuro do subjuntivo de *ser* é *forem*, não *fossem*.\n- Alternativa (D) INCORRETA: Ambas as formas são tempos simples, sem nenhum verbo em tempo composto."
+        },
+        {
+          "id": "pt3_q03",
+          "qid": "pt3_q03",
+          "num": 3,
+          "numero": 3,
+          "origem": "ACCESS",
+          "banca": "Instituto ACCESS — Pref. de Estrela Dalva/MG (2025) · Auxiliar Administrativo · Q01",
+          "ref_interna": "Instituto ACCESS — Pref. de Estrela Dalva/MG (2025) · Auxiliar Administrativo · Q01",
+          "semana": 4,
+          "assunto": "Sintaxe da Oração Simples: Sujeito e Predicado",
+          "texto_id": "pt3_t1",
+          "enunciado": "Qualquer desequilíbrio, mesmo que por poucos segundos, provoca um apagão.\n\nSintaticamente, é correto afirmar que, nesta frase,",
+          "alternativas": {
+            "A": "a oração apresenta sujeito oculto e predicado verbo-nominal com verbos de ação e de ligação.",
+            "B": "o sujeito é \"provoca um apagão\" e o predicado está implícito.",
+            "C": "o sujeito é composto por duas expressões: \"qualquer desequilíbrio\" e \"por poucos segundos\".",
+            "D": "o sujeito é \"qualquer desequilíbrio\" e o predicado é \"mesmo que por poucos segundos, provoca um apagão\"."
+          },
+          "gabarito": "D",
+          "comentario": "Gabarito: D.\n- Alternativa (D) CORRETA: Perguntando ao verbo *provoca* (*O que provoca um apagão?*), localizamos o sujeito simples **\"qualquer desequilíbrio\"** (núcleo *desequilíbrio*). Tudo o que resta na oração — inclusive a expressão intercalada *mesmo que por poucos segundos* — integra o **predicado**.\n- Alternativa (A) INCORRETA: O sujeito é expresso/simples, e existe apenas um verbo de ação (*provoca*), caracterizando predicado verbal.\n- Alternativa (B) INCORRETA: *\"Provoca um apagão\"* é o núcleo do predicado verbal + objeto direto, nunca sujeito.\n- Alternativa (C) INCORRETA: *\"Por poucos segundos\"* indica tempo (circunstância intercalada), não é núcleo do sujeito."
+        },
+        {
+          "id": "pt3_q04",
+          "qid": "pt3_q04",
+          "num": 4,
+          "numero": 4,
+          "origem": "ACCESS",
+          "banca": "Instituto ACCESS — Pref. de Estrela Dalva/MG (2025) · Auxiliar Administrativo · Q10",
+          "ref_interna": "Instituto ACCESS — Pref. de Estrela Dalva/MG (2025) · Auxiliar Administrativo · Q10",
+          "semana": 4,
+          "assunto": "Sintaxe da Oração Simples: Verbo Impessoal HAVER e Transitividade",
+          "texto_id": "pt3_t1",
+          "enunciado": "Em primeiro lugar, não <u>há</u> uma única rede elétrica mundial.\n\nDe acordo com as regras de regência verbal, é correto afirmar que, nesta frase, o verbo destacado comporta-se como um verbo:",
+          "alternativas": {
+            "A": "bitransitivo, pois exige dois complementos: um objeto direto e outro indireto.",
+            "B": "transitivo indireto, pois seu sentido de existência exige um termo iniciado por preposição.",
+            "C": "transitivo direto, pois exprime ideia de existência e exige complemento sem preposição.",
+            "D": "intransitivo, pois não exige complemento e encerra sentido completo por si somente."
+          },
+          "gabarito": "C",
+          "comentario": "Gabarito: C.\n- Alternativa (C) CORRETA: Ponto campeão da Semana 04 (**Haver × Existir**): o verbo *haver* no sentido de *existir* forma oração sem sujeito e funciona como **verbo transitivo direto (VTD)**, exigindo complemento sem preposição (*uma única rede elétrica mundial* = **Objeto Direto**; confira substituindo por *não **a** há*).\n- Alternativas (A) e (B) INCORRETAS: Não há preposição exigida pelo verbo, inexistindo objeto indireto.\n- Alternativa (D) INCORRETA: *Existir* seria intransitivo (com sujeito), ao passo que *haver* existencial exige objeto direto."
+        },
+        {
+          "id": "pt3_q05",
+          "qid": "pt3_q05",
+          "num": 5,
+          "numero": 5,
+          "origem": "ACCESS",
+          "banca": "Instituto ACCESS — Pref. de Rodeiro/MG (2025) · Assistente Administrativo · Q01",
+          "ref_interna": "Instituto ACCESS — Pref. de Rodeiro/MG (2025) · Assistente Administrativo · Q01",
+          "semana": 1,
+          "assunto": "Leitura, Compreensão e Semântica Textual (Texto II)",
+          "texto_id": "pt3_t2",
+          "enunciado": "A partir da análise semântica do trecho \"As tempestades passam e deixam no céu a transparência que me fala de outros mundos, de outras dimensões, de momentos esquecidos que precisam ser resgatados, e de outros não vividos, que se perdem na distância, além de qualquer possibilidade, até mesmo para o sonho\", avalie as afirmativas a seguir:\n\nI. A expressão \"transparência que me fala de outros mundos\" deve ser compreendida como um recurso que associa percepção visual a uma forma de comunicação sensível e subjetiva.\nII. A referência a \"momentos esquecidos que precisam ser resgatados\" articula uma noção de tempo passado com valor de urgência, construindo uma expectativa de recuperação afetiva ou emocional.\nIII. A construção \"além de qualquer possibilidade, até mesmo para o sonho\" delimita um espaço de realização concreta, sugerindo que a experiência mencionada se refere a um plano lógico e exequível.\n\nEstá correto o que se afirma em:",
+          "alternativas": {
+            "A": "I, II e III.",
+            "B": "I e II, apenas.",
+            "C": "II e III, apenas.",
+            "D": "I e III, apenas."
+          },
+          "gabarito": "B",
+          "comentario": "Gabarito: B.\n- Afirmativa I CORRETA: A transparência visual do céu após a chuva \"fala\" ao cronista, fundindo percepção visual e sensibilidade subjetiva.\n- Afirmativa II CORRETA: *\"Esquecidos\"* situa a vivência no passado, e *\"precisam ser resgatados\"* acrescenta senso de urgência/necessidade afetiva de resgate.\n- Afirmativa III INCORRETA (Contradição): *\"Além de qualquer possibilidade, até mesmo para o sonho\"* expressa exatamente o oposto do concreto e exequível — aponta algo inatingível até pela imaginação."
+        },
+        {
+          "id": "pt3_q06",
+          "qid": "pt3_q06",
+          "num": 6,
+          "numero": 6,
+          "origem": "ACCESS",
+          "banca": "Instituto ACCESS — Pref. de Rodeiro/MG (2025) · Assistente Administrativo · Q03",
+          "ref_interna": "Instituto ACCESS — Pref. de Rodeiro/MG (2025) · Assistente Administrativo · Q03",
+          "semana": 1,
+          "assunto": "Interpretação de Crônica, Metáfora e Progressão Temática (Texto II)",
+          "texto_id": "pt3_t2",
+          "enunciado": "Considerando os recursos discursivos e os elementos de progressão temática do texto, assinale a alternativa que apresenta uma análise coerente com a construção simbólica do texto e os mecanismos linguísticos empregados para sua articulação semântica.",
+          "alternativas": {
+            "A": "A organização do texto pauta-se na descrição objetiva de fenômenos meteorológicos como elementos estruturantes da narrativa, utilizando termos técnicos para reforçar a verossimilhança e limitar a interpretação simbólica das passagens.",
+            "B": "A progressão textual revela um conflito argumentativo entre a efemeridade dos fenômenos naturais e a eternidade do ser humano, construindo um paradoxo resolvido apenas na última frase, em que se abandona a linguagem figurada em prol de um juízo lógico.",
+            "C": "O texto recorre à metáfora da tempestade como representação de conflitos interiores transitórios, utilizando-se de imagens da natureza para ilustrar os processos de purificação e renascimento, o que se comprova pela linearidade narrativa e pela constância lexical ao longo do texto.",
+            "D": "A alternância entre imagens concretas e abstratas promove um tensionamento lógico entre razão e emoção, anulando, em diversos momentos, a coerência interna do texto e comprometendo o sentido de espiritualidade que o autor tenta imprimir na descrição da natureza."
+          },
+          "gabarito": "C",
+          "comentario": "Gabarito: C.\n- Alternativa (C) CORRETA: A crônica utiliza as tempestades que passam, o céu transparente, o sol limpo e a lua depois da chuva como metáforas de crises superadas, purificação e renascimento da vida (*\"chegada da vida na terra molhada\"*), mantendo unidade lexical (*tempestades, passam, lua, vida*).\n- Alternativa (A) INCORRETA: O texto é uma crônica lírica/poética, não descrição científica meteorológica.\n- Alternativa (B) INCORRETA: O último parágrafo preserva integralmente o tom lírico e metafórico (*\"reflete os sonhos de Deus, antes de criar o paraíso\"*).\n- Alternativa (D) INCORRETA: A combinação entre imagens concretas e abstratas fortalece a coerência simbólica, sem anulá-la."
+        },
+        {
+          "id": "pt3_q07",
+          "qid": "pt3_q07",
+          "num": 7,
+          "numero": 7,
+          "origem": "ACCESS",
+          "banca": "Instituto ACCESS — Pref. de Rodeiro/MG (2025) · Assistente Administrativo · Q02",
+          "ref_interna": "Instituto ACCESS — Pref. de Rodeiro/MG (2025) · Assistente Administrativo · Q02",
+          "semana": 2,
+          "assunto": "Morfologia I: Formação de Palavras (Derivação Regressiva)",
+          "texto_id": "pt3_t2",
+          "enunciado": "Considerando a palavra \"encontro\" no trecho \"A lua depois da chuva é poesia pura, é o encontro da alma com o eterno, do atávico com o futuro\" e os processos de formação de palavras em língua portuguesa, assinale a alternativa correta quanto à sua estrutura morfológica e à classificação do processo de formação que a originou.",
+          "alternativas": {
+            "A": "Trata-se de um substantivo abstrato formado por derivação regressiva a partir do verbo \"encontrar\", mediante supressão do sufixo flexional de infinitivo verbal.",
+            "B": "\"Encontro\" é um substantivo primitivo, pois não se deriva de nenhuma outra forma verbal ou nominal existente na língua, funcionando aqui como termo essencial à oração.",
+            "C": "A palavra \"encontro\" resulta da composição por justaposição dos radicais \"em\" e \"contra\", reunindo elementos autônomos para exprimir a ideia de oposição e convergência.",
+            "D": "A palavra \"encontro\" é derivada por sufixação a partir do verbo \"encontrar\", sendo, portanto, um exemplo de derivação sufixal com valor de agente verbal."
+          },
+          "gabarito": "A",
+          "comentario": "Gabarito: A.\n- Alternativa (A) CORRETA: O substantivo abstrato de ação **encontro** (o ato de encontrar) origina-se do verbo **encontrar** pela redução da terminação de infinitivo e acréscimo da vogal nominal *-o*, configurando a clássica **derivação regressiva (ou deverbal)** estudada na Semana 02.\n- Alternativa (B) INCORRETA: É substantivo derivado do verbo *encontrar*, jamais primitivo.\n- Alternativa (C) INCORRETA: Não é justaposição de *em + contra* na sincronia do português, e sim deverbal.\n- Alternativa (D) INCORRETA: Não há acréscimo de sufixo derivacional de agente (*encontrador*), e sim redução em relação ao infinitivo."
+        },
+        {
+          "id": "pt3_q08",
+          "qid": "pt3_q08",
+          "num": 8,
+          "numero": 8,
+          "origem": "ACCESS",
+          "banca": "Instituto ACCESS — Pref. de Rodeiro/MG (2025) · Assistente Administrativo · Q06",
+          "ref_interna": "Instituto ACCESS — Pref. de Rodeiro/MG (2025) · Assistente Administrativo · Q06",
+          "semana": 2,
+          "assunto": "Morfologia I e II: Pronomes Indefinidos vs. Conjunções e Advérbios",
+          "texto_id": "pt3_t2",
+          "enunciado": "No período \"Umas demoram mais, outras são quase tão rápidas quanto a queda de um raio, mas, passam\", diversas classes gramaticais são mobilizadas para estruturar sentidos específicos. Com base na análise morfossintática e semântica da oração, assinale a alternativa correta quanto à classificação das palavras destacadas em seu contexto de uso.",
+          "alternativas": {
+            "A": "\"Umas\" e \"outras\" exercem função pronominal com valor demonstrativo, sendo ambas classificadas como pronomes indefinidos que retomam e contrastam elementos previamente mencionados.",
+            "B": "\"Mas\" é uma conjunção coordenativa explicativa que introduz uma justificativa para a lentidão de algumas tempestades, reforçando a conclusão expressa pelo verbo \"passam\".",
+            "C": "A palavra \"quanto\" atua como advérbio comparativo, pois introduz uma expressão de proporcionalidade direta com o termo \"rápidas\", sem exercer função subordinativa.",
+            "D": "Em \"mais\", temos um advérbio de intensidade que modifica o verbo \"demoram\", enquanto \"quase\" é advérbio de dúvida que altera o sentido do adjetivo \"rápidas\"."
+          },
+          "gabarito": "A",
+          "comentario": "Gabarito: A.\n- Alternativa (A) CORRETA: Como não acompanham substantivos expressos, **\"Umas\"** e **\"outras\"** atuam como **pronomes substantivos indefinidos** retomando *tempestades* e opondo dois grupos (*algumas... outras...*, valor análogo a *estas/aquelas*).\n- Alternativa (B) INCORRETA: *Mas* é conjunção coordenativa **adversativa**, jamais explicativa.\n- Alternativa (C) INCORRETA: Na correlação *tão rápidas quanto*, o termo *quanto* é conjunção subordinativa **comparativa**.\n- Alternativa (D) INCORRETA: *Quase* não expressa dúvida (*talvez*), e sim intensidade/aproximação."
+        },
+        {
+          "id": "pt3_q09",
+          "qid": "pt3_q09",
+          "num": 9,
+          "numero": 9,
+          "origem": "ACCESS",
+          "banca": "Instituto ACCESS — Pref. de Rodeiro/MG (2025) · Assistente Administrativo · Q04",
+          "ref_interna": "Instituto ACCESS — Pref. de Rodeiro/MG (2025) · Assistente Administrativo · Q04",
+          "semana": 4,
+          "assunto": "Sintaxe da Oração Simples: Sujeito Simples e Concordância do Verbo VIR",
+          "texto_id": "pt3_t2",
+          "enunciado": "A forma verbal \"vêm\", no trecho \"As tempestades, vêm, caem, destroem, e passam\", está flexionada no plural. Com base na norma-padrão, assinale a alternativa que explica corretamente a flexão verbal empregada.",
+          "alternativas": {
+            "A": "O verbo \"vir\" aparece flexionado no plural por estar posposto a um sujeito partitivo, e nesse tipo de construção a concordância plural é facultativa, podendo-se empregar também a forma \"vem\".",
+            "B": "A flexão verbal plural é incorreta, pois a presença das vírgulas isola o sujeito do verbo, exigindo a forma singular \"vem\" para indicar generalidade, em respeito ao paralelismo com os demais verbos da sequência.",
+            "C": "A forma \"vêm\" está correta porque concorda com o sujeito \"as tempestades\", núcleo expresso no plural, e o verbo \"vir\", nesse uso impessoal, exige obrigatoriamente essa concordância.",
+            "D": "O verbo \"vir\" está no plural por concordar com o sujeito simples \"as tempestades\", e, nesse caso, a concordância verbal é obrigatória, ainda que o sujeito venha separado por vírgulas."
+          },
+          "gabarito": "D",
+          "comentario": "Gabarito: D.\n- Alternativa (D) CORRETA: O sujeito simples **\"As tempestades\"** (núcleo no plural) determina obrigatoriamente a flexão plural de toda a sequência verbal (*vêm, caem, destroem, passam*), levando acento diferencial em **vêm** (3ª pessoa do plural de *vir*).\n- Alternativa (A) INCORRETA: Não existe expressão partitiva no sujeito, sendo a concordância plural obrigatória.\n- Alternativa (B) INCORRETA: Todos os verbos estão no plural (*vêm, caem, destroem, passam*); usar *vem* no singular quebraria o paralelismo.\n- Alternativa (C) INCORRETA: O verbo *vir* tem sujeito claro e determinado (*as tempestades*) — não é impessoal."
+        },
+        {
+          "id": "pt3_q10",
+          "qid": "pt3_q10",
+          "num": 10,
+          "numero": 10,
+          "origem": "ACCESS",
+          "banca": "Instituto ACCESS — Pref. de Apiaí/SP (2025) · Escriturário Tipo 1 · Q06",
+          "ref_interna": "Instituto ACCESS — Pref. de Apiaí/SP (2025) · Escriturário Tipo 1 · Q06",
+          "semana": 4,
+          "assunto": "Sintaxe da Oração Simples: Os 3 Tipos de Predicado",
+          "enunciado": "Leia as afirmativas a seguir, analisando a classificação do predicado de acordo com a norma gramatical:\n\nI. \"Os engenheiros calibraram os instrumentos com precisão milimétrica.\" → Predicado verbo-nominal.\nII. \"O sistema de refrigeração permaneceu estável durante os testes de estresse.\" → Predicado nominal.\nIII. \"A equipe considerou o resultado satisfatório após a última auditoria.\" → Predicado verbo-nominal.\nIV. \"Os controladores desligaram os equipamentos imediatamente após o alerta.\" → Predicado verbal.\nV. \"O software tornou-se obsoleto em menos de seis meses.\" → Predicado verbo-nominal.\n\nEm quais afirmativas a classificação do predicado está corretamente identificada?",
+          "alternativas": {
+            "A": "I, IV e V.",
+            "B": "III, IV e V.",
+            "C": "II, III e IV.",
+            "D": "I, II e III."
+          },
+          "gabarito": "C",
+          "comentario": "Gabarito: C (II, III e IV).\n- Item I INCORRETO: *Calibraram* é verbo de ação (VTD) e *com precisão milimétrica* é apenas **adjunto adverbial de modo** (não há predicativo) → **Predicado Verbal**.\n- Item II CORRETO: *Permaneceu* = Verbo de Ligação + *estável* = Predicativo do Sujeito → **Predicado Nominal**.\n- Item III CORRETO: *Considerou* = verbo de ação (VTD) + *o resultado* = Objeto Direto + *satisfatório* = Predicativo do Objeto (teste: *A equipe o considerou satisfatório*) → **Predicado Verbo-Nominal**.\n- Item IV CORRETO: *Desligaram* = verbo de ação (VTD) sem nenhum predicativo → **Predicado Verbal**.\n- Item V INCORRETO: *Tornou-se* = Verbo de Ligação (mudança de estado) + *obsoleto* = Predicativo do Sujeito → **Predicado Nominal**."
+        },
+        {
+          "id": "pt3_q11",
+          "qid": "pt3_q11",
+          "num": 11,
+          "numero": 11,
+          "origem": "Adaptada ACCESS",
+          "banca": "Padrão Instituto ACCESS (Adaptada) — Fonologia, Sílabas e Acentuação Gráfica",
+          "ref_interna": "Padrão Instituto ACCESS (Adaptada) — Fonologia, Sílabas e Acentuação Gráfica",
+          "semana": 1,
+          "assunto": "Fonologia: Dígrafos, Hiatos e Acentuação Gráfica (Semana 01)",
+          "enunciado": "Durante a revisão do Diário Oficial do Município de Birigui, a Oficial Administrativo Beatriz analisou a estrutura sonora e a acentuação gráfica de vocábulos frequentes nas rotinas da repartição.\n\nAvalie as assertivas a seguir e assinale V (verdadeiro) ou F (falso):\n\n(__) O vocábulo \"ASSINATURA\" possui 10 letras e 9 fonemas, pois o encontro \"ss\" forma um dígrafo consonantal que representa apenas um som.\n(__) As palavras \"SAÚDE\" e \"JUÍZES\" recebem acento agudo pela regra dos hiatos tônicos formados por I ou U sozinhos na sílaba (ou seguidos de S) e não seguidos de NH.\n(__) Os vocábulos \"MÍNIMO\" e \"OFÍCIO\" são acentuados pela mesma regra: ambos são proparoxítonos puros na divisão silábica padrão.\n(__) A frase \"Ontem o diretor não pôde assinar, mas hoje ele pode responder\" emprega corretamente o acento diferencial entre passado e presente do verbo poder.\n\nA sequência CORRETA, de cima para baixo, é:",
+          "alternativas": {
+            "A": "V – F – V – F.",
+            "B": "V – V – F – V.",
+            "C": "F – V – F – V.",
+            "D": "V – V – V – F."
+          },
+          "gabarito": "B",
+          "comentario": "Gabarito: B (V – V – F – V).\n- 1ª assertiva (V): \"ASSINATURA\" tem 10 letras, mas 9 fonemas porque o dígrafo \"ss\" corresponde a um único fonema (/s/).\n- 2ª assertiva (V): \"SA-Ú-DE\" e \"JU-Í-ZES\" obedecem à regra dos hiatos tônicos com I/U isolados na sílaba.\n- 3ª assertiva (F): \"MÍ-NI-MO\" é proparoxítona; já \"O-FÍ-CIO\" acentua-se na divisão escolar padrão como **paroxítona terminada em ditongo crescente** (e não proparoxítona pura).\n- 4ª assertiva (V): \"pôde\" (circunflexo) marca o passado; \"pode\" (sem acento) marca o presente."
+        },
+        {
+          "id": "pt3_q12",
+          "qid": "pt3_q12",
+          "num": 12,
+          "numero": 12,
+          "origem": "Adaptada ACCESS",
+          "banca": "Padrão Instituto ACCESS (Adaptada) — Morfologia I: Plural dos Compostos e Adjetivo vs. Advérbio",
+          "ref_interna": "Padrão Instituto ACCESS (Adaptada) — Morfologia I: Plural dos Compostos e Adjetivo vs. Advérbio",
+          "semana": 2,
+          "assunto": "Morfologia I: Substantivos Compostos e Adjetivo vs. Advérbio (Semana 02)",
+          "enunciado": "Na elaboração de um inventário patrimonial e na redação de portarias administrativas da Prefeitura Municipal, o servidor deve dominar as regras de concordância e flexão nominal.\n\nConsiderando a norma-padrão da Língua Portuguesa, assinale a alternativa INCORRETA:",
+          "alternativas": {
+            "A": "O plural de \"guarda-civil\" é \"guardas-civis\", porque ambos os termos pertencem a classes variáveis, enquanto em \"guarda-roupa\" apenas o segundo termo varia.",
+            "B": "Nos compostos unidos por preposição, como \"pão-de-ló\" e \"mula sem cabeça\", apenas o primeiro elemento é flexionado no plural, formando \"pães-de-ló\" e \"mulas sem cabeça\".",
+            "C": "Na frase \"As fiscais falaram claro e ficaram meio preocupadas\", os termos \"claro\" e \"meio\" permanecem no singular por exercerem função adverbial invariável.",
+            "D": "Na frase \"Os relatórios seguem anexos ao ofício e as cópias seguem anexo ao e-mail\", ambas as construções preservam corretamente o caráter invariável do vocábulo."
+          },
+          "gabarito": "D",
+          "comentario": "Gabarito: D.\n- Alternativa (D) INCORRETA (Gabarito): A palavra **anexo** é um **adjetivo** e concorda obrigatoriamente em gênero e número com o substantivo (*as cópias seguem **anexas***; ela só permanece invariável quando aparece na locução adverbial *\"em anexo\"*).\n- Alternativa (A) CORRETA: Em *guarda-civil* (substantivo + adjetivo), variam os dois; em *guarda-roupa* (verbo + substantivo), varia apenas o segundo (*guarda-roupas*).\n- Alternativa (B) CORRETA: Compostos ligados por preposição variam somente o primeiro termo.\n- Alternativa (C) CORRETA: *Claro* modifica o verbo *falaram* (advérbio de modo) e *meio* (= um pouco) modifica o adjetivo *preocupadas* (advérbio de intensidade), ficando invariáveis."
+        },
+        {
+          "id": "pt3_q13",
+          "qid": "pt3_q13",
+          "num": 13,
+          "numero": 13,
+          "origem": "Adaptada ACCESS",
+          "banca": "Padrão Instituto ACCESS (Adaptada) — Morfologia I: Pronomes Pessoais, Demonstrativos e Relativos",
+          "ref_interna": "Padrão Instituto ACCESS (Adaptada) — Morfologia I: Pronomes Pessoais, Demonstrativos e Relativos",
+          "semana": 2,
+          "assunto": "Morfologia I: Anáfora, Catáfora, Relativo CUJO e Caso Reto (Semana 02)",
+          "enunciado": "Releia o despacho redigido no setor de licitações da Prefeitura de Birigui:\n\n\"O edital foi publicado ontem no Diário Oficial. ________ (1) documento contém as exigências para o pregão, ________ (2) cópia integral deve ser enviada para ________ (3) conferir antes da sessão. Além disso, o diretor analisou o processo e despachou-________ (4) hoje.\"\n\nAssinale a alternativa que preenche, CORRETA e respectivamente, as lacunas (1), (2), (3) e (4) conforme a norma-padrão:",
+          "alternativas": {
+            "A": "Este — cuja a — mim — lhe",
+            "B": "Esse — cuja — eu — o",
+            "C": "Este — da qual — eu — lhe",
+            "D": "Esse — cuja — mim — o"
+          },
+          "gabarito": "B",
+          "comentario": "Gabarito: B (Esse — cuja — eu — o).\n- Lacuna 1 (**Esse**): Retoma um referente já citado na frase anterior (*O edital* → anáfora = *esse*).\n- Lacuna 2 (**cuja**): O relativo *cuja* liga possuidor (*edital/pregão*) e coisa possuída (*cópia*) e nunca admite artigo posposto (*cuja a* é errado).\n- Lacuna 3 (**eu**): Antes de verbo no infinitivo (*conferir*) exercendo papel de sujeito, usa-se pronome do caso reto **eu** (*para eu conferir*).\n- Lacuna 4 (**o**): *Despachar* é Verbo Transitivo Direto (quem despacha, despacha algo), exigindo o pronome oblíquo direto **o** (*despachou-o*), nunca *lhe*."
+        },
+        {
+          "id": "pt3_q14",
+          "qid": "pt3_q14",
+          "num": 14,
+          "numero": 14,
+          "origem": "Adaptada ACCESS",
+          "banca": "Padrão Instituto ACCESS (Adaptada) — Morfologia II: Flexão de Verbos Irregulares",
+          "ref_interna": "Padrão Instituto ACCESS (Adaptada) — Morfologia II: Flexão de Verbos Irregulares",
+          "semana": 3,
+          "assunto": "Morfologia II: Verbos Irregulares Críticos (Intervir, Requerer, Repor e Ver)",
+          "enunciado": "Ao revisar uma ata de reunião e os despachos do setor jurídico de uma prefeitura municipal, o Oficial Administrativo verificou a conjugação de verbos irregulares frequentemente exigidos em provas.\n\nAssinale a alternativa em que TODAS as formas verbais estão CORRETAS segundo a norma-padrão:",
+          "alternativas": {
+            "A": "O coordenador interveio na discussão e requereu a suspensão do pregão até que o fornecedor repusesse a garantia.",
+            "B": "Quando a secretaria repor os documentos originais e nós vermos o protocolo assinado, os fiscais manterão o prazo.",
+            "C": "Caso o jurídico intervisse no edital e o pregoeiro se abster de responder, todos manteriam a ata original.",
+            "D": "O servidor requiseu férias regulamentares e afirmou que, se a chefia manter a escala atual, ele virá ao plantão."
+          },
+          "gabarito": "A",
+          "comentario": "Gabarito: A.\n- Alternativa (A) CORRETA: *Intervir* segue *vir* (*ele veio* → **interveio**); *requerer* no pretérito perfeito do indicativo é **requereu**; e *repor* segue *pôr* no imperfeito do subjuntivo (*pusesse* → **repusesse**).\n- Alternativa (B) INCORRETA: No futuro do subjuntivo (*quando...*), *repor* faz **repuser** (não *repor*) e *ver* faz **virmos** (não *vermos*).\n- Alternativa (C) INCORRETA: *Intervir* no imperfeito do subjuntivo segue *viesse* → **interviesse** (nunca *intervisse*), e *abster-se* segue *ter* → **se abstivesse** (nunca *se abster*).\n- Alternativa (D) INCORRETA: *Requerer* faz **requereu** (nunca *requiseu*), e *manter* no futuro do subjuntivo faz **mantiver** (*se a chefia mantiver*)."
+        },
+        {
+          "id": "pt3_q15",
+          "qid": "pt3_q15",
+          "num": 15,
+          "numero": 15,
+          "origem": "Adaptada ACCESS",
+          "banca": "Padrão Instituto ACCESS (Adaptada) — Morfologia II & Sintaxe: Palavra A e Locução Verbal",
+          "ref_interna": "Padrão Instituto ACCESS (Adaptada) — Morfologia II & Sintaxe: Palavra A e Locução Verbal",
+          "semana": 3,
+          "assunto": "Morfologia II (Funções do A) + Contagem de Orações (Semanas 03 e 04)",
+          "enunciado": "Analise o trecho extraído de um memorando da Secretaria Municipal de Educação:\n\n\"A diretora pretende entregar <u>a</u> lista atualizada <u>a</u> funcionárias do setor ainda hoje para que os técnicos <u>a</u> confiram antes do fechamento.\"\n\nCom base nos estudos de Morfologia e Sintaxe, avalie as afirmativas a seguir:\n\nI. As três ocorrências sublinhadas da palavra \"a\" classificam-se, na ordem em que aparecem, como artigo definido, preposição e pronome pessoal oblíquo.\nII. Na oração inicial \"A diretora pretende entregar a lista atualizada\", a construção \"pretende entregar\" constitui uma locução verbal e conta como apenas uma oração.\nIII. Na oração final \"para que os técnicos a confiram\", o termo destacado \"a\" exerce a função sintática de sujeito paciente do verbo conferir.\n\nEstá(ão) CORRETA(S):",
+          "alternativas": {
+            "A": "apenas a afirmativa I.",
+            "B": "apenas a afirmativa II.",
+            "C": "apenas as afirmativas II e III.",
+            "D": "apenas as afirmativas I e II."
+          },
+          "gabarito": "D",
+          "comentario": "Gabarito: D.\n- Afirmativa I CORRETA: Em *entregar **a** lista* é artigo definido (troca por masculino: *o relatório*); em *entregar... **a** funcionárias* é preposição essencial (exigida por *entregar algo a alguém*, sem artigo antes do plural); em *para que os técnicos **a** confiram* é pronome oblíquo direto substituindo *a lista atualizada*.\n- Afirmativa II CORRETA: Verbo auxiliar (*pretende*) + verbo principal no infinitivo (*entregar*) equivalem a uma única ação e formam **1 única oração**.\n- Afirmativa III INCORRETA: O sujeito de *confiram* é **os técnicos** (*quem confere?*); o pronome *a* exerce função de **Objeto Direto** (*confiram ela* = a lista)."
+        },
+        {
+          "id": "pt3_q16",
+          "qid": "pt3_q16",
+          "num": 16,
+          "numero": 16,
+          "origem": "Adaptada ACCESS",
+          "banca": "Padrão Instituto ACCESS (Adaptada) — Morfologia II: Conjunções e Relações Lógicas",
+          "ref_interna": "Padrão Instituto ACCESS (Adaptada) — Morfologia II: Conjunções e Relações Lógicas",
+          "semana": 3,
+          "assunto": "Morfologia II: Conjunções Adversativas, Concessivas, Causais e Proporcionais",
+          "enunciado": "Na redação de ofícios e pareceres, a escolha precisa do conector define a relação lógica entre as orações. Relacione os períodos da Coluna I ao valor semântico da conjunção ou locução destacada na Coluna II:\n\nColuna I:\n1. \"A comissão manteve o edital aberto, <u>conquanto</u> houvesse pedido de adiamento.\"\n2. \"<u>Na medida em que</u> os cadastros estavam incompletos, o sistema bloqueou o envio.\"\n3. \"Os protocolos são digitalizados <u>à medida que</u> os contribuintes entregam os papéis.\"\n4. \"O setor solicitou revisão do contrato, <u>porquanto</u> os valores estavam defasados.\"\n\nColuna II:\n(__) Relação de causa/motivo equivalente a \"porque\" ou \"já que\".\n(__) Relação de concessão equivalente a \"embora\" ou \"ainda que\".\n(__) Relação de explicação ou justificativa equivalente a \"pois\".\n(__) Relação de proporcionalidade progressiva equivalente a \"à proporção que\".\n\nAssinale a sequência CORRETA da Coluna II, de cima para baixo:",
+          "alternativas": {
+            "A": "1 – 2 – 4 – 3.",
+            "B": "2 – 1 – 4 – 3.",
+            "C": "2 – 4 – 1 – 3.",
+            "D": "3 – 1 – 4 – 2."
+          },
+          "gabarito": "B",
+          "comentario": "Gabarito: B (2 – 1 – 4 – 3).\n- 1º parêntese = **2** (*Na medida em que* = **causa** / *porque, já que* — nunca confunda com *à medida que*!).\n- 2º parêntese = **1** (*Conquanto* = **concessão** / *embora, ainda que* + verbo no subjuntivo *houvesse*).\n- 3º parêntese = **4** (*Porquanto* = **explicação/causa** / *pois, visto que* — não confundir com *conquanto*!).\n- 4º parêntese = **3** (*À medida que* = **proporção** simultânea / *à proporção que*)."
+        },
+        {
+          "id": "pt3_q17",
+          "qid": "pt3_q17",
+          "num": 17,
+          "numero": 17,
+          "origem": "Adaptada ACCESS",
+          "banca": "Padrão Instituto ACCESS (Adaptada) — Semântica em Contexto: Homônimos e Parônimos",
+          "ref_interna": "Padrão Instituto ACCESS (Adaptada) — Semântica em Contexto: Homônimos e Parônimos",
+          "semana": 3,
+          "assunto": "Semântica em Contexto: Homônimos e Parônimos na Prefeitura (Semana 03)",
+          "enunciado": "Complete adequadamente o registro oficial da sessão da Comissão Permanente de Licitação:\n\n\"Durante a ________ (1) extraordinária da comissão, a presidente decidiu ________ (2) um erro de digitação no anexo III para depois ________ (3) a decisão da ata anterior, sem ________ (4) nenhuma regra do edital vigente.\"\n\nAssinale a alternativa que preenche, CORRETA e respectivamente, as lacunas (1), (2), (3) e (4):",
+          "alternativas": {
+            "A": "seção — ratificar — retificar — infligir",
+            "B": "cessão — retificar — ratificar — infringir",
+            "C": "sessão — retificar — ratificar — infringir",
+            "D": "sessão — ratificar — retificar — infligir"
+          },
+          "gabarito": "C",
+          "comentario": "Gabarito: C (sessão — retificar — ratificar — infringir).\n- Lacuna 1 (**sessão**): Reunião deliberativa com início e fim (*seção* é setor; *cessão* é ato de ceder).\n- Lacuna 2 (**retificar**): Corrigir/emendar um erro (*retificar = tornar reto*).\n- Lacuna 3 (**ratificar**): Confirmar/validar uma decisão anterior.\n- Lacuna 4 (**infringir**): Violar ou desrespeitar uma norma/regra (*infligir* significa aplicar pena ou castigo)."
+        },
+        {
+          "id": "pt3_q18",
+          "qid": "pt3_q18",
+          "num": 18,
+          "numero": 18,
+          "origem": "Adaptada ACCESS",
+          "banca": "Padrão Instituto ACCESS (Adaptada) — Sintaxe: Tipos de Sujeito e Funções do SE",
+          "ref_interna": "Padrão Instituto ACCESS (Adaptada) — Sintaxe: Tipos de Sujeito e Funções do SE",
+          "semana": 4,
+          "assunto": "Sintaxe da Oração Simples: Sujeito Determinado, Indeterminado, Oração sem Sujeito e Trio do SE",
+          "enunciado": "A correta identificação do sujeito define a concordância verbal na redação oficial. Relacione as frases da Coluna I à respectiva classificação do sujeito na Coluna II:\n\nColuna I:\n1. \"Publicaram-se todos os editais de convocação no mural.\"\n2. \"Precisa-se de técnicos experientes no setor de compras.\"\n3. \"Houve diversos pedidos de esclarecimento sobre a licitação.\"\n4. \"Protocolamos o recurso administrativo no prazo correto.\"\n\nColuna II:\n(__) Sujeito simples (paciente) na voz passiva sintética.\n(__) Oração sem sujeito por emprego de verbo impessoal.\n(__) Sujeito indeterminado com índice de indeterminação.\n(__) Sujeito oculto (desinencial) identificado pela desinência verbal.\n\nAssinale a sequência CORRETA da Coluna II, de cima para baixo:",
+          "alternativas": {
+            "A": "1 – 3 – 2 – 4.",
+            "B": "2 – 3 – 1 – 4.",
+            "C": "1 – 4 – 2 – 3.",
+            "D": "2 – 1 – 3 – 4."
+          },
+          "gabarito": "A",
+          "comentario": "Gabarito: A (1 – 3 – 2 – 4).\n- 1º parêntese = **1**: *Publicar* é VTD (*quem publica, publica algo*). Logo, *se* é **Pronome Apassivador**, e *todos os editais de convocação* é **sujeito simples paciente** (*Todos os editais foram publicados*).\n- 2º parêntese = **3**: *Haver* com sentido de *existir* é verbo impessoal → **Oração sem sujeito** (verbo permanece no singular mesmo com complemento plural!).\n- 3º parêntese = **2**: *Precisar* exige preposição *de* (VTI). Com VTI + *se*, o *se* é **Índice de Indeterminação do Sujeito** (verbo fica congelado na 3ª pessoa do singular).\n- 4º parêntese = **4**: Em *Protocolamos*, a desinência *-mos* revela o sujeito oculto/desinencial **Nós**."
+        },
+        {
+          "id": "pt3_q19",
+          "qid": "pt3_q19",
+          "num": 19,
+          "numero": 19,
+          "origem": "Adaptada ACCESS",
+          "banca": "Padrão Instituto ACCESS (Adaptada) — Sintaxe: Complemento Nominal vs. Adjunto Adnominal e Predicativos",
+          "ref_interna": "Padrão Instituto ACCESS (Adaptada) — Sintaxe: Complemento Nominal vs. Adjunto Adnominal e Predicativos",
+          "semana": 4,
+          "assunto": "Sintaxe da Oração Simples: Duelo CN × AA e Predicativo do Objeto",
+          "enunciado": "Na análise sintática de pareceres administrativos em Birigui, é frequente a necessidade de distinguir termos ligados a substantivos de termos que atribuem qualidades aos objetos.\n\nConsiderando essas distinções sintáticas, assinale a alternativa CORRETA:",
+          "alternativas": {
+            "A": "Em \"O parecer jurídico de ontem trouxe alívio imediato\", a expressão \"de ontem\" é complemento nominal porque aparece preposicionada após o nome.",
+            "B": "Em \"A demissão do servidor irregular gerou protestos\", o termo \"do servidor irregular\" é complemento nominal, pois sofre a ação expressa pelo substantivo abstrato.",
+            "C": "Em \"O secretário julgou o relatório técnico incompleto\", o vocábulo \"incompleto\" funciona como adjunto adnominal por se referir a um substantivo.",
+            "D": "Em \"A entrega do secretário comoveu a equipe\", o termo \"do secretário\" é complemento nominal porque acompanha um substantivo abstrato de ação."
+          },
+          "gabarito": "B",
+          "comentario": "Gabarito: B.\n- Alternativa (B) CORRETA: *Demissão* é substantivo abstrato de ação (*alguém demitiu o servidor*). Como *o servidor irregular* **sofre/recebe** a ação de ser demitido (alvo paciente), a expressão preposicionada *do servidor irregular* exerce papel de **Complemento Nominal**.\n- Alternativa (A) INCORRETA: *Parecer* aqui é **substantivo concreto** (o documento físico/peça); substantivo concreto **nunca** tem complemento nominal — *de ontem* é **Adjunto Adnominal**.\n- Alternativa (C) INCORRETA: Aplicando o teste do pronome *o* (*O secretário julgou-**o** incompleto*), *incompleto* fica do lado de fora do pronome! Trata-se de **Predicativo do Objeto** (opinião momentânea do sujeito sobre o objeto), não Adjunto Adnominal.\n- Alternativa (D) INCORRETA: Em *A entrega do secretário*, é o secretário quem pratica a ação de entregar (agente) → **Adjunto Adnominal**, e não Complemento Nominal."
+        },
+        {
+          "id": "pt3_q20",
+          "qid": "pt3_q20",
+          "num": 20,
+          "numero": 20,
+          "origem": "Adaptada ACCESS",
+          "banca": "Padrão Instituto ACCESS (Adaptada) — Sintaxe: Adjunto Adverbial, Aposto e Vocativo",
+          "ref_interna": "Padrão Instituto ACCESS (Adaptada) — Sintaxe: Adjunto Adverbial, Aposto e Vocativo",
+          "semana": 4,
+          "assunto": "Sintaxe da Oração Simples: Adjunto Adverbial, Aposto e Vocativo (Semana 04)",
+          "enunciado": "Ao revisar os termos acessórios e o chamamento na redação de ofícios e atas da Prefeitura de Birigui, avalie as assertivas a seguir e assinale V (verdadeiro) ou F (falso):\n\n(__) Na frase \"<u>Prezados servidores</u>, iniciaremos a reunião agora\", a expressão destacada exerce função de vocativo, isolada obrigatoriamente por vírgula.\n(__) Na expressão \"O Município <u>de Birigui</u> ampliou o atendimento\", o termo destacado funciona como aposto especificativo e não deve ser isolado entre vírgulas.\n(__) Na frase \"A proposta parece <u>muito vantajosa</u>\", a palavra \"muito\" atua como adjunto adverbial de intensidade modificando diretamente um adjetivo.\n(__) Na frase \"Protocolo, Arquivo e Licitação, <u>tudo</u> funcionou perfeitamente\", o termo resumitivo destacado funciona como vocativo deslocado.\n\nA sequência CORRETA, de cima para baixo, é:",
+          "alternativas": {
+            "A": "V – F – V – F.",
+            "B": "F – V – V – F.",
+            "C": "V – V – F – V.",
+            "D": "V – V – V – F."
+          },
+          "gabarito": "D",
+          "comentario": "Gabarito: D (V – V – V – F).\n- 1ª assertiva (V): *Prezados servidores* é um chamamento dirigido ao interlocutor, não pertence ao sujeito nem ao predicado → **Vocativo** (sempre separado por vírgula).\n- 2ª assertiva (V): Nome próprio individualizando substantivo geográfico/comum (*Município de Birigui*, *Secretaria de Saúde*, *Rua Anhanguera*) é **Aposto Especificativo**, grafado sem vírgulas.\n- 3ª assertiva (V): *Muito* é invariável (*propostas muito vantajosas*) e intensifica o adjetivo *vantajosa* → **Adjunto Adverbial de Intensidade**.\n- 4ª assertiva (F): *Tudo* resume a enumeração anterior (*Protocolo, Arquivo e Licitação*) → trata-se de **Aposto Resumitivo**, nunca vocativo."
+        }
+      ]
+    },
     {
       "key": "especificos",
       "titulo": "Conhecimentos Específicos",

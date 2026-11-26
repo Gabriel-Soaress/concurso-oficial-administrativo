@@ -1,12 +1,59 @@
 /* ==========================================================================
    RESUMOS ESTRATÉGICOS — SIMULADO 03 · MÊS 1 (SEMANAS 01 A 04)
    Oficial Administrativo · Instituto ACCESS
-   (Conhecimentos Específicos, Conhecimentos Gerais e Matemática/RLM)
+   (Língua Portuguesa, Conhecimentos Específicos, Gerais e Matemática/RLM)
    ========================================================================== */
 (function (root) {
   "use strict";
 
   root.REVISAO_03_DATA = {
+    portugues: {
+      title: "Língua Portuguesa",
+      badge: "Mês 1 · Semanas 01 a 04",
+      icon: "📚",
+      content: `## 1. Interpretação, Fonologia, Sílabas e Acentuação (Semana 01)
+- **Compreensão vs. Interpretação:** **Compreensão** = está explícito nas linhas; **Interpretação** = inferência lógica das pistas textuais. Fique atento aos **3 desvios clássicos**: *Extrapolação* (inventar além do texto), *Redução* (tomar parte pelo todo) e *Contradição* (dizer o oposto do texto).
+- **Fonologia e Encontros:**
+  - **Dígrafo:** 2 letras = **1 único fonema/som** (*ch, lh, nh, rr, ss, sc, sç, xc, gu/qu* com *u* mudo, e vogais nasais *am, em, im, om, um*). Ex.: *assinatura* = 10 letras e 9 fonemas (*ss* = 1 som).
+  - **Ditongo** (vogal + semivogal na mesma sílaba), **Tritongo** (SV + V + SV na mesma sílaba: *sa-guão, U-ru-guai*) e **Hiato** (2 vogais em sílabas vizinhas: *sa-ú-de, ju-í-zes, vo-o*).
+- **Acentuação Gráfica:**
+  - **Monossílabos tônicos** e **Oxítonas:** terminados em *-a(s), -e(s), -o(s)* (e *-em/-ens* nas oxítonas).
+  - **Paroxítonas:** todas levam acento, **exceto** as terminadas em *-a(s), -e(s), -o(s), -em, -ens* (inclui paroxítonas terminadas em ditongo crescente: *o-fí-cio, sé-rie*).
+  - **Proparoxítonas:** todas são acentuadas (*pú-bli-co, mí-ni-mo*). **Hiatos:** I e U tônicos sozinhos na sílaba (ou com *-s*), sem *nh* depois (*sa-ú-de*).
+  - **Acento Diferencial:** *tem/têm*, *vem/vêm*, *mantém/mantêm*, *pôde* (passado) vs. *pode* (presente), *pôr* (verbo) vs. *por* (preposição).
+
+## 2. Morfologia I: Classes Nominais, Pronomes e Formação (Semana 02)
+- **Substantivos Compostos e Adjetivo vs. Advérbio:**
+  - **Plural dos Compostos:** 2 variáveis (*guarda-civil* $\\rightarrow$ *guardas-civis*); verbo/advérbio invariável + substantivo (*guarda-roupa* $\\rightarrow$ *guarda-roupas*); ligados por preposição varia só o 1º (*pães-de-ló*).
+  - **Anexo vs. Em anexo / Meio:** *anexo* é **adjetivo** variável (*as cópias seguem **anexas***; só *em anexo* não varia). Advérbio não vai para o plural nem feminino (*falaram **claro**; estavam **meio** cansadas*).
+- **Pronomes e Coesão:**
+  - **Anáfora (retoma o que já foi dito):** usa **esse / essa / isso**; **Catáfora (anuncia o que vem adiante):** usa **este / esta / isto**.
+  - **Relativo *cujo*:** indica posse entre dois nomes e **nunca** aceita artigo depois (*cuja cópia*, jamais *cuja a cópia*).
+  - **Antes de infinitivo:** se é sujeito do verbo, usa-se caso reto (*para **eu** conferir*, jamais *para mim conferir*).
+- **Formação de Palavras:** **Prefixal/Sufixal** (*infelizmente*), **Parassintética** (simultânea: *entardecer*), **Regressiva / Deverbal** (substantivo de ação reduzido do verbo: *o encontro* de *encontrar*, *o combate* de *combater*), **Composição** (*justaposição* sem perda vs. *aglutinação* com fusão). Atenção: *bem-sucedido* (com hífen) vs. *malsucedido* (sem hífen antes de consoante).
+
+## 3. Morfologia II: Verbos, Advérbios, Conectivos e Semântica (Semana 03)
+- **Tempos, Modos e Verbos Irregulares:**
+  - **Correlação condicional:** Imperfeito do Subjuntivo (*Se... **fossem***, *-sse*) combina com Futuro do Pretérito (*...**haveria***, *-ria*). Pretérito Mais-que-perfeito (*concluíra*) = passado antes de outro passado.
+  - **Irregulares campeões:** *Intervir* segue *vir* (*ele **interveio**, se **interviesse**, quando **intervier***); *Requerer* no pretérito perfeito é ***requereu*** (jamais *requiseu*); *Repor/Propor* seguem *pôr* (*quando **repuser**, se **repusesse***); *Ver* no futuro do subjuntivo (*quando nós **virmos***) vs. *Vir* (*quando nós **viermos***); *Manter/Abster* seguem *ter* (*se **mantiver**, se **abstivesse***).
+- **Tríplice Função da Palavra "A" e Conjunções:**
+  - **Artigo** (determina substantivo: vira *o* no masculino), **Preposição** (exigida pela regência: invariável), **Pronome Oblíquo** (substitui objeto direto feminino: *os técnicos **a** confiram*).
+  - **Adversativas** (*mas, porém, contudo, todavia, entretanto*) vs. **Concessivas** (*embora, conquanto, ainda que, mesmo que, posto que* + subjuntivo). **Causa** (*na medida em que, porquanto*) vs. **Proporção** (*à medida que*).
+- **Homônimos e Parônimos:** *sessão* (reunião) / *seção* (setor) / *cessão* (ato de ceder); *ratificar* (confirmar) / *retificar* (corrigir); *deferir* (conceder) / *diferir* (divergir/adiar); *infringir* (violar regra) / *infligir* (aplicar pena); *discriminar* (separar/listar) / *descriminar* (absolver).
+
+## 4. Sintaxe da Oração Simples: Sujeito, Predicado, Complementos e Satélites (Semana 04)
+- **Oração e Sujeito:** Toda **Locução Verbal** (ex.: *pretende entregar*) equivale a **1 única oração**. Para achar o **Sujeito**, pluralize ou pergunte *quem/o quê* ao verbo; o resto é **Predicado**.
+  - **Trio do "SE":** VTD + *se* = **Pronome Apassivador** (há sujeito paciente, o verbo concorda com ele: *Publicaram-se todos os editais*); VTI/VI/VL + *se* = **Índice de Indeterminação** (verbo congelado na 3ª pessoa do singular: *Precisa-se de técnicos*); verbo **Haver** no sentido de existir = **Oração sem Sujeito** + **VTD** (*Não **há** uma única rede* / *Houve diversos pedidos*).
+- **Transitividade Verbal e os 3 Predicados:**
+  - **Predicado Verbal (PV):** núcleo é verbo significativo (**VI, VTD, VTI, VTDI**), sem predicativo.
+  - **Predicado Nominal (PN):** **Verbo de Ligação** (*ser, estar, permanecer, continuar, parecer, tornar-se, ficar*) + **Predicativo do Sujeito**.
+  - **Predicado Verbo-Nominal (PVN):** **Verbo significativo** (ação) + **Predicativo** (do sujeito ou do objeto). **Teste do Predicativo do Objeto:** troque o objeto pelo pronome *o/a* — se a qualidade ficar fora do pronome (*A equipe **o** considerou satisfatório*), é **Predicativo do Objeto** (jamais Adjunto Adnominal!).
+- **Duelo Complemento Nominal (CN) × Adjunto Adnominal (AA):**
+  - Substantivo **Concreto** (ex.: *parecer de ontem, mesa de madeira*) = **sempre Adjunto Adnominal**.
+  - Substantivo **Abstrato** (ex.: *demissão, entrega, construção*) ou Adjetivo/Advérbio: se o termo preposicionado **pratica/é agente** (ou indica posse) $\\rightarrow$ **Adjunto Adnominal** (*a entrega do secretário*); se **sofre/é alvo paciente** da ação ou completa adjetivo/advérbio $\\rightarrow$ **Complemento Nominal** (*a demissão do servidor irregular*).
+- **Adjunto Adverbial, Aposto e Vocativo:** **Adjunto Adverbial** indica circunstância (*muito vantajosa*, *com precisão* — invariável); **Aposto Explicativo** vem entre vírgulas, **Aposto Resumitivo** condensa lista (*tudo, ninguém*) e **Aposto Especificativo** individualiza nome sem vírgula (*Município de Birigui*); **Vocativo** é chamamento fora da estrutura sujeito-predicado, sempre isolado por vírgula (*Prezados servidores,*).`
+    },
+
     especificos: {
       title: "Conhecimentos Específicos",
       badge: "Mês 1 · Semanas 01 a 04",

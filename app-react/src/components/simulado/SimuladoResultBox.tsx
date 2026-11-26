@@ -15,12 +15,13 @@ export function SimuladoResultBox({ data, state }: SimuladoResultBoxProps) {
   let totalCorrectedQ = 0;
 
   const rows = (data.materias || []).map((m) => {
-    const isCorr = state.corrected || !!state.correctedMaterias?.[m.key];
+    const corrMap = state.correctedMaterias || {};
+    const isCorr = Object.keys(corrMap).length > 0 ? !!corrMap[m.key] : !!state.corrected;
     const total = m.questoes.length;
     let right = 0;
     if (isCorr) {
       m.questoes.forEach((q, idx) => {
-        const qid = q.id || `${m.key}_q${idx + 1}`;
+        const qid = q.id || q.qid || `${m.key}_q${idx + 1}`;
         if (state.answers[qid] === q.gabarito) right++;
       });
       totalRight += right;

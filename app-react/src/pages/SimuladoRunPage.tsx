@@ -20,9 +20,25 @@ import { Breadcrumbs } from "@/components/ui/Breadcrumbs";
 import { SimuladoTimer } from "@/components/simulado/SimuladoTimer";
 import { SimuladoResultBox } from "@/components/simulado/SimuladoResultBox";
 import { MarkdownRenderer } from "@/components/lesson/MarkdownRenderer";
-import type { SimuladoRegistryEntry } from "@/types";
+import type { SimuladoQuestion, SimuladoRegistryEntry, SimuladoState, SimuladoTextoBase } from "@/types";
 
 const LETTERS = ["A", "B", "C", "D", "E"];
+
+function getQuestionId(q: SimuladoQuestion, matKey: string, idx: number): string {
+  return q.id || q.qid || `${matKey}_q${idx + 1}`;
+}
+
+function getQuestionNum(q: SimuladoQuestion, idx: number): number {
+  return q.num || q.numero || idx + 1;
+}
+
+function isMateriaCorrected(state: SimuladoState, matKey: string): boolean {
+  const corrMap = state.correctedMaterias || {};
+  if (Object.keys(corrMap).length > 0) {
+    return !!corrMap[matKey];
+  }
+  return !!state.corrected;
+}
 
 function getShortSubjectTitle(key: string, fallback: string): string {
   if (key === "portugues") return "Português";
@@ -94,14 +110,14 @@ export function SimuladoRunPage() {
   }
 
   const pickAnswer = (qid: string, matKey: string, letter: string) => {
-    if (state.corrected || state.correctedMaterias?.[matKey]) return;
+    if (isMateriaCorrected(state, matKey)) return;
     const nextAnswers = { ...state.answers };
     nextAnswers[qid] = nextAnswers[qid] === letter ? undefined : letter;
     saveSimuladoState(simId, { ...state, answers: nextAnswers });
   };
 
   const toggleEliminate = (qid: string, matKey: string, letter: string) => {
-    if (state.corrected || state.correctedMaterias?.[matKey]) return;
+    if (isMateriaCorrected(state, matKey)) return;
     const eKey = `${qid}_${letter}`;
     const nextElim = { ...state.eliminated, [eKey]: !state.eliminated[eKey] };
     const nextAns = { ...state.answers };
@@ -126,7 +142,7 @@ export function SimuladoRunPage() {
     const nextAns = { ...state.answers };
     const nextElim = { ...state.eliminated };
     mat.questoes.forEach((q, idx) => {
-      const qid = q.id || `${mat.key}_q${idx + 1}`;
+      const qid = getQuestionId(q, mat.key, idx);
       delete nextAns[qid];
       LETTERS.forEach((L) => delete nextElim[`${qid}_${L}`]);
     });
@@ -174,7 +190,7 @@ export function SimuladoRunPage() {
   const answeredTotal = data.materias.reduce(
     (acc, m) =>
       acc +
-      m.questoes.filter((q, idx) => Boolean(state.answers[q.id || `${m.key}_q${idx + 1}`])).length,
+      m.questoes.filter((q, idx) => Boolean(state.answers[getQuestionId(q, m.key, idx)])).length,
     0
   );
 
@@ -330,7 +346,7 @@ export function SimuladoRunPage() {
 
               {data.materias.map((m) => {
                 const isActive = activeMat === m.key;
-                const isDone = state.corrected || !!state.correctedMaterias?.[m.key];
+                const isDone = isMateriaCorrected(state, m.key);
                 const shortLabel = getShortSubjectTitle(m.key, m.titulo);
                 return (
                   <button
@@ -385,13 +401,13 @@ export function SimuladoRunPage() {
 
           {/* Seções por Matéria */}
           {visibleMaterias.map((mat) => {
-            const isMatCorr = state.corrected || !!state.correctedMaterias?.[mat.key];
+            const isMatCorr = isMateriaCorrected(state, mat.key);
             const matAnswered = mat.questoes.filter(
-              (q, idx) => Boolean(state.answers[q.id || `${mat.key}_q${idx + 1}`])
+              (q, idx) => Boolean(state.answers[getQuestionId(q, mat.key, idx)])
             ).length;
             const matRight = isMatCorr
               ? mat.questoes.filter(
-                  (q, idx) => state.answers[q.id || `${mat.key}_q${idx + 1}`] === q.gabarito
+                  (q, idx) => state.answers[getQuestionId(q, mat.key, idx)] === q.gabarito
                 ).length
               : 0;
             const matPct =
@@ -399,6 +415,23 @@ export function SimuladoRunPage() {
             const matIdx = data.materias.findIndex((m) => m.key === mat.key);
             const nextMat =
               matIdx >= 0 && matIdx + 1 < data.materias.length ? data.materias[matIdx + 1] : null;
+
+            const textosById: Record<string, SimuladoTextoBase> = {};
+            (mat.textos || []).forEach((t) => {
+              textosById[t.id] = t;
+            });
+            const textRange: Record<string, { a: number; b: number }> = {};
+            mat.questoes.forEach((q, idx) => {
+              if (!q.texto_id) return;
+              const qNum = getQuestionNum(q, idx);
+              if (!textRange[q.texto_id]) {
+                textRange[q.texto_id] = { a: qNum, b: qNum };
+              } else {
+                textRange[q.texto_id].b = qNum;
+              }
+            });
+            const printedTexts = new Set<string>();
+
             return (
               <section key={mat.key} className="space-y-4">
                 <div className="surface rounded-2xl p-4 sm:p-5 border border-tech flex flex-col sm:flex-row sm:items-center justify-between gap-3">
@@ -431,163 +464,227 @@ export function SimuladoRunPage() {
                 </div>
 
                 {mat.questoes.map((q, idx) => {
-                  const qid = q.id || `${mat.key}_q${idx + 1}`;
+                  const qid = getQuestionId(q, mat.key, idx);
+                  const qNum = getQuestionNum(q, idx);
                   const mine = state.answers[qid];
                   const isRight = isMatCorr && mine === q.gabarito;
                   const optKeys = LETTERS.filter(
                     (L) => q.alternativas?.[L] != null && String(q.alternativas[L]).trim() !== ""
                   );
+                  const bancaLabel = q.banca || q.ref_interna;
+                  const linkedText = q.texto_id ? textosById[q.texto_id] : undefined;
+                  const linkedRange = q.texto_id ? textRange[q.texto_id] : undefined;
+                  const shouldRenderTextCard = Boolean(
+                    linkedText && q.texto_id && !printedTexts.has(q.texto_id)
+                  );
+                  if (shouldRenderTextCard && q.texto_id) {
+                    printedTexts.add(q.texto_id);
+                  }
 
                   return (
-                    <article
-                      key={qid}
-                      className={`surface rounded-2xl p-5 sm:p-6 space-y-4 border ${
-                        isMatCorr
-                          ? isRight
-                            ? "border-emerald-500/45"
-                            : "border-rose-500/45"
-                          : "border-tech"
-                      }`}
-                    >
-                      <div className="flex items-center justify-between gap-2 flex-wrap">
-                        <div className="flex items-center gap-2 flex-wrap">
-                          <span className="px-2.5 py-0.5 rounded-lg bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 font-mono text-xs font-bold">
-                            Questão {String(q.num || idx + 1).padStart(2, "0")}
-                          </span>
-                          {q.banca && (
-                            <span className="text-xs text-mut font-medium">{q.banca}</span>
+                    <div key={qid} className="space-y-4">
+                      {shouldRenderTextCard && linkedText && (
+                        <article
+                          id={`sim-txt-${linkedText.id}`}
+                          className="surface rounded-2xl p-5 sm:p-6 border border-indigo-500/35 bg-indigo-500/[0.03] space-y-3"
+                        >
+                          <div className="flex items-center justify-between gap-2 flex-wrap">
+                            <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-lg bg-indigo-500/12 text-indigo-600 dark:text-indigo-400 font-mono text-[11px] font-bold uppercase tracking-wider">
+                              📖 Texto Base{" "}
+                              {linkedRange && linkedRange.b !== linkedRange.a
+                                ? `para as questões ${String(linkedRange.a).padStart(2, "0")} a ${String(linkedRange.b).padStart(2, "0")}`
+                                : `para a questão ${String(qNum).padStart(2, "0")}`}
+                            </span>
+                          </div>
+                          {linkedText.titulo && (
+                            <h3 className="text-base sm:text-lg font-extrabold text-pri leading-snug">
+                              {linkedText.titulo}
+                            </h3>
                           )}
-                          {q.origem && (
-                            <span className="px-2 py-0.5 rounded-md surface-muted font-mono text-[10px] font-bold uppercase text-sec">
-                              {q.origem}
+                          <div
+                            className="text-sm sm:text-[15px] leading-relaxed text-pri space-y-2"
+                            dangerouslySetInnerHTML={{
+                              __html: renderRichMarkdown(linkedText.conteudo, `simtxt_${linkedText.id}`),
+                            }}
+                          />
+                          {linkedText.fonte && (
+                            <div className="pt-2 border-t border-tech text-xs text-mut italic">
+                              Fonte: {linkedText.fonte}
+                            </div>
+                          )}
+                        </article>
+                      )}
+
+                      <article
+                        className={`surface rounded-2xl p-5 sm:p-6 space-y-4 border ${
+                          isMatCorr
+                            ? isRight
+                              ? "border-emerald-500/45"
+                              : "border-rose-500/45"
+                            : "border-tech"
+                        }`}
+                      >
+                        <div className="flex items-center justify-between gap-2 flex-wrap">
+                          <div className="flex items-center gap-2 flex-wrap">
+                            <span className="px-2.5 py-0.5 rounded-lg bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 font-mono text-xs font-bold">
+                              Questão {String(qNum).padStart(2, "0")}
+                            </span>
+                            {bancaLabel && (
+                              <span className="text-xs text-mut font-medium">{bancaLabel}</span>
+                            )}
+                            {q.origem && (
+                              <span className="px-2 py-0.5 rounded-md surface-muted font-mono text-[10px] font-bold uppercase text-sec">
+                                {q.origem}
+                              </span>
+                            )}
+                          </div>
+                          {isMatCorr && (
+                            <span
+                              className={`inline-flex items-center gap-1 px-2.5 py-0.5 rounded-lg text-xs font-bold ${
+                                isRight
+                                  ? "bg-emerald-500/15 text-emerald-600 dark:text-emerald-400"
+                                  : "bg-rose-500/15 text-rose-600 dark:text-rose-400"
+                              }`}
+                            >
+                              {isRight ? (
+                                <>
+                                  <CheckCircle2 className="w-3.5 h-3.5" /> Correta
+                                </>
+                              ) : (
+                                <>
+                                  <XCircle className="w-3.5 h-3.5" /> Gabarito: {q.gabarito}
+                                </>
+                              )}
                             </span>
                           )}
                         </div>
-                        {isMatCorr && (
-                          <span
-                            className={`inline-flex items-center gap-1 px-2.5 py-0.5 rounded-lg text-xs font-bold ${
-                              isRight
-                                ? "bg-emerald-500/15 text-emerald-600 dark:text-emerald-400"
-                                : "bg-rose-500/15 text-rose-600 dark:text-rose-400"
-                            }`}
-                          >
-                            {isRight ? (
-                              <>
-                                <CheckCircle2 className="w-3.5 h-3.5" /> Correta
-                              </>
-                            ) : (
-                              <>
-                                <XCircle className="w-3.5 h-3.5" /> Gabarito: {q.gabarito}
-                              </>
-                            )}
-                          </span>
-                        )}
-                      </div>
 
-                      {q.textoApoio && (
-                        <div
-                          className="p-4 rounded-xl surface-muted border border-tech text-xs sm:text-sm leading-relaxed text-sec space-y-2"
-                          dangerouslySetInnerHTML={{
-                            __html: renderRichMarkdown(q.textoApoio, `${qid}_apoio`),
-                          }}
-                        />
-                      )}
-
-                      <div
-                        className="text-sm sm:text-[15px] leading-relaxed text-pri space-y-2"
-                        dangerouslySetInnerHTML={{
-                          __html: renderRichMarkdown(q.enunciado, `${qid}_enunc`),
-                        }}
-                      />
-
-                      <div className="space-y-2">
-                        {optKeys.map((L) => {
-                          const isSelected = mine === L;
-                          const isElim = !!state.eliminated[`${qid}_${L}`];
-                          const isCorrectOpt = isMatCorr && L === q.gabarito;
-                          const isWrongSel = isMatCorr && isSelected && L !== q.gabarito;
-
-                          const isElimActive = isElim && !isMatCorr;
-                          let cls = "border-tech hover:border-indigo-500/50";
-                          if (isCorrectOpt) cls = "border-emerald-500 bg-emerald-500/10 ring-1 ring-emerald-500/30";
-                          else if (isWrongSel) cls = "border-rose-500 bg-rose-500/10 ring-1 ring-rose-500/30";
-                          else if (isSelected) cls = "border-indigo-500 bg-indigo-500/10 ring-1 ring-indigo-500/30";
-                          else if (isElimActive) cls = "sim-opt-eliminated border-dashed border-slate-400/70 dark:border-slate-500/70 bg-slate-200/70 dark:bg-slate-800/75";
-
-                          return (
-                            <div key={L} className="flex items-stretch gap-2">
-                              <button
-                                type="button"
-                                disabled={isMatCorr}
-                                onClick={() => pickAnswer(qid, mat.key, L)}
-                                className={`flex-1 text-left flex items-start gap-3 p-3 rounded-xl border transition-all cursor-pointer disabled:cursor-default ${cls}`}
-                              >
-                                <span
-                                  className={`w-7 h-7 rounded-lg font-mono text-xs font-extrabold flex items-center justify-center shrink-0 mt-0.5 ${
-                                    isCorrectOpt
-                                      ? "bg-emerald-600 text-white"
-                                      : isWrongSel
-                                        ? "bg-rose-600 text-white"
-                                        : isSelected
-                                          ? "bg-indigo-600 text-white"
-                                          : isElimActive
-                                            ? "bg-slate-300/80 dark:bg-slate-700/90 text-slate-600 dark:text-slate-400 border border-slate-400/60 dark:border-slate-600 line-through decoration-2 decoration-slate-600 dark:decoration-slate-300"
-                                            : "surface-muted text-sec"
-                                  }`}
-                                >
-                                  {L}
-                                </span>
-                                <span
-                                  className={`text-sm leading-relaxed flex-1 ${
-                                    isElimActive
-                                      ? "text-slate-500 dark:text-slate-400/75 line-through decoration-slate-600 dark:decoration-slate-300 decoration-2"
-                                      : "text-pri"
-                                  }`}
-                                  dangerouslySetInnerHTML={{
-                                    __html: renderInlineMarkdown(q.alternativas[L], `${qid}_opt_${L}`),
-                                  }}
-                                />
-                                {isElimActive && (
-                                  <span className="hidden sm:inline-flex items-center px-1.5 py-0.5 rounded bg-slate-300/80 dark:bg-slate-700 text-slate-700 dark:text-slate-300 font-mono text-[10px] font-bold uppercase tracking-wider shrink-0 self-center">
-                                    Cortada
-                                  </span>
-                                )}
-                              </button>
-
-                              {!isMatCorr && (
-                                <button
-                                  type="button"
-                                  onClick={() => toggleEliminate(qid, mat.key, L)}
-                                  aria-pressed={isElim}
-                                  className={`px-2.5 rounded-xl border transition-colors cursor-pointer ${
-                                    isElim
-                                      ? "bg-slate-700 dark:bg-slate-600 text-white border-slate-700 dark:border-slate-500 shadow-sm hover:bg-slate-800 dark:hover:bg-slate-500"
-                                      : "border-tech text-mut hover:text-pri hover:border-slate-400 dark:hover:border-slate-500 hover:bg-slate-500/10"
-                                  }`}
-                                  title={isElim ? "Restaurar alternativa" : "Riscar alternativa"}
-                                >
-                                  <Scissors className="w-3.5 h-3.5" />
-                                </button>
-                              )}
-                            </div>
-                          );
-                        })}
-                      </div>
-
-                      {isMatCorr && q.comentario && (
-                        <div className="rounded-xl p-4 border border-emerald-500/30 bg-emerald-500/[0.06] space-y-1.5">
-                          <div className="text-[11px] font-mono uppercase font-extrabold text-emerald-600 dark:text-emerald-400">
-                            Gabarito: {q.gabarito} — Comentário
+                        {linkedText && linkedRange && (
+                          <div className="flex items-center justify-between gap-2 px-3 py-1.5 rounded-lg surface-muted border border-tech text-[11px] font-mono text-sec">
+                            <span>
+                              Refere-se ao Texto Base (Questões{" "}
+                              {String(linkedRange.a).padStart(2, "0")} a{" "}
+                              {String(linkedRange.b).padStart(2, "0")})
+                            </span>
+                            <button
+                              type="button"
+                              onClick={() =>
+                                document
+                                  .getElementById(`sim-txt-${linkedText.id}`)
+                                  ?.scrollIntoView({ behavior: "smooth", block: "start" })
+                              }
+                              className="text-indigo-600 dark:text-indigo-400 font-bold hover:underline cursor-pointer shrink-0"
+                            >
+                              ↑ Ver texto
+                            </button>
                           </div>
+                        )}
+
+                        {q.textoApoio && (
                           <div
-                            className="text-xs sm:text-sm leading-relaxed text-pri space-y-2"
+                            className="p-4 rounded-xl surface-muted border border-tech text-xs sm:text-sm leading-relaxed text-sec space-y-2 mc-question-scope"
                             dangerouslySetInnerHTML={{
-                              __html: renderRichMarkdown(q.comentario, `${qid}_comm`),
+                              __html: renderRichMarkdown(q.textoApoio, `${qid}_apoio`),
                             }}
                           />
+                        )}
+
+                        <div
+                          className="text-sm sm:text-[15px] leading-relaxed text-pri space-y-2 mc-question-scope"
+                          dangerouslySetInnerHTML={{
+                            __html: renderRichMarkdown(q.enunciado, `${qid}_enunc`),
+                          }}
+                        />
+
+                        <div className="space-y-2 mc-question-scope">
+                          {optKeys.map((L) => {
+                            const isSelected = mine === L;
+                            const isElim = !!state.eliminated[`${qid}_${L}`];
+                            const isCorrectOpt = isMatCorr && L === q.gabarito;
+                            const isWrongSel = isMatCorr && isSelected && L !== q.gabarito;
+
+                            const isElimActive = isElim && !isMatCorr;
+                            let cls = "border-tech hover:border-indigo-500/50";
+                            if (isCorrectOpt) cls = "border-emerald-500 bg-emerald-500/10 ring-1 ring-emerald-500/30";
+                            else if (isWrongSel) cls = "border-rose-500 bg-rose-500/10 ring-1 ring-rose-500/30";
+                            else if (isSelected) cls = "border-indigo-500 bg-indigo-500/10 ring-1 ring-indigo-500/30";
+                            else if (isElimActive) cls = "sim-opt-eliminated border-dashed border-slate-400/70 dark:border-slate-500/70 bg-slate-200/70 dark:bg-slate-800/75";
+
+                            return (
+                              <div key={L} className="flex items-stretch gap-2">
+                                <button
+                                  type="button"
+                                  disabled={isMatCorr}
+                                  onClick={() => pickAnswer(qid, mat.key, L)}
+                                  className={`flex-1 text-left flex items-start gap-3 p-3 rounded-xl border transition-all cursor-pointer disabled:cursor-default ${cls}`}
+                                >
+                                  <span
+                                    className={`w-7 h-7 rounded-lg font-mono text-xs font-extrabold flex items-center justify-center shrink-0 mt-0.5 ${
+                                      isCorrectOpt
+                                        ? "bg-emerald-600 text-white"
+                                        : isWrongSel
+                                          ? "bg-rose-600 text-white"
+                                          : isSelected
+                                            ? "bg-indigo-600 text-white"
+                                            : isElimActive
+                                              ? "bg-slate-300/80 dark:bg-slate-700/90 text-slate-600 dark:text-slate-400 border border-slate-400/60 dark:border-slate-600 line-through decoration-2 decoration-slate-600 dark:decoration-slate-300"
+                                              : "surface-muted text-sec"
+                                    }`}
+                                  >
+                                    {L}
+                                  </span>
+                                  <span
+                                    className={`text-sm leading-relaxed flex-1 ${
+                                      isElimActive
+                                        ? "text-slate-500 dark:text-slate-400/75 line-through decoration-slate-600 dark:decoration-slate-300 decoration-2"
+                                        : "text-pri"
+                                    }`}
+                                    dangerouslySetInnerHTML={{
+                                      __html: renderInlineMarkdown(q.alternativas[L], `${qid}_opt_${L}`),
+                                    }}
+                                  />
+                                  {isElimActive && (
+                                    <span className="hidden sm:inline-flex items-center px-1.5 py-0.5 rounded bg-slate-300/80 dark:bg-slate-700 text-slate-700 dark:text-slate-300 font-mono text-[10px] font-bold uppercase tracking-wider shrink-0 self-center">
+                                      Cortada
+                                    </span>
+                                  )}
+                                </button>
+
+                                {!isMatCorr && (
+                                  <button
+                                    type="button"
+                                    onClick={() => toggleEliminate(qid, mat.key, L)}
+                                    aria-pressed={isElim}
+                                    className={`px-2.5 rounded-xl border transition-colors cursor-pointer ${
+                                      isElim
+                                        ? "bg-slate-700 dark:bg-slate-600 text-white border-slate-700 dark:border-slate-500 shadow-sm hover:bg-slate-800 dark:hover:bg-slate-500"
+                                        : "border-tech text-mut hover:text-pri hover:border-slate-400 dark:hover:border-slate-500 hover:bg-slate-500/10"
+                                    }`}
+                                    title={isElim ? "Restaurar alternativa" : "Riscar alternativa"}
+                                  >
+                                    <Scissors className="w-3.5 h-3.5" />
+                                  </button>
+                                )}
+                              </div>
+                            );
+                          })}
                         </div>
-                      )}
-                    </article>
+
+                        {isMatCorr && q.comentario && (
+                          <div className="rounded-xl p-4 border border-emerald-500/30 bg-emerald-500/[0.06] space-y-1.5">
+                            <div className="text-[11px] font-mono uppercase font-extrabold text-emerald-600 dark:text-emerald-400">
+                              Gabarito: {q.gabarito} — Comentário
+                            </div>
+                            <div
+                              className="text-xs sm:text-sm leading-relaxed text-pri space-y-2"
+                              dangerouslySetInnerHTML={{
+                                __html: renderRichMarkdown(q.comentario, `${qid}_comm`),
+                              }}
+                            />
+                          </div>
+                        )}
+                      </article>
+                    </div>
                   );
                 })}
 

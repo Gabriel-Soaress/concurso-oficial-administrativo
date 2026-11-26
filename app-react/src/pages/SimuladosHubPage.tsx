@@ -70,11 +70,13 @@ export function SimuladosHubPage() {
 
           if (data?.materias) {
             totalQ = data.materias.reduce((acc, m) => acc + m.questoes.length, 0);
+            const corrMap = state.correctedMaterias || {};
+            const hasCorrMap = Object.keys(corrMap).length > 0;
             data.materias.forEach((m) => {
-              const isCorr = state.corrected || !!state.correctedMaterias?.[m.key];
+              const isCorr = hasCorrMap ? !!corrMap[m.key] : !!state.corrected;
               if (!isCorr) return;
               m.questoes.forEach((q, idx) => {
-                const qid = q.id || `${m.key}_q${idx + 1}`;
+                const qid = q.id || q.qid || `${m.key}_q${idx + 1}`;
                 if (state.answers[qid] === q.gabarito) rightCount++;
               });
             });

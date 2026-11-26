@@ -5,11 +5,22 @@ export interface SimuladoSubjectMeta {
   count: number;
 }
 
+export interface SimuladoTextoBase {
+  id: string;
+  titulo?: string;
+  conteudo: string;
+  fonte?: string;
+}
+
 export interface SimuladoQuestion {
   id?: string;
+  qid?: string;
   num?: number;
+  numero?: number;
   banca?: string;
+  ref_interna?: string;
   origem?: string;
+  texto_id?: string;
   textoApoio?: string;
   enunciado: string;
   alternativas: Record<string, string>;
@@ -23,6 +34,7 @@ export interface SimuladoMateriaData {
   titulo: string;
   icone?: string;
   subtitulo?: string;
+  textos?: SimuladoTextoBase[];
   questoes: SimuladoQuestion[];
 }
 
