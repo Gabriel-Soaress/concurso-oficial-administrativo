@@ -111,6 +111,10 @@
       background-color: var(--bg-muted);
       border: 1px solid var(--border);
     }
+    .surface-elevated {
+      background-color: var(--bg-elevated);
+      border: 1px solid var(--border);
+    }
     .text-pri {
       color: var(--text-primary) !important;
     }
@@ -1507,6 +1511,152 @@
       background: #1e273b;
       border-color: #354463;
       color: #f1f5f9;
+    }
+
+    /* Destaques Coloridos de Palavras & Blocos Limpos de Exemplos */
+    .edu-term-highlight {
+      font-weight: 800;
+      font-style: normal;
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 3px;
+      text-decoration-color: #f59e0b;
+      background-color: rgba(245, 158, 11, 0.16);
+      color: var(--text-primary);
+      padding: 0.04rem 0.28rem;
+      border-radius: 0.3rem;
+    }
+    html.dark .edu-term-highlight {
+      color: #fef3c7;
+      background-color: rgba(245, 158, 11, 0.22);
+      text-decoration-color: #fbbf24;
+    }
+    mark[class*="hl-"] {
+      background: transparent;
+      color: inherit;
+    }
+    .hl-indigo,
+    .hl-emerald,
+    .hl-sky,
+    .hl-amber,
+    .hl-rose,
+    .hl-purple {
+      font-weight: 700;
+      padding: 0.05rem 0.34rem;
+      border-radius: 0.35rem;
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 3px;
+      box-decoration-break: clone;
+      -webkit-box-decoration-break: clone;
+    }
+    .hl-indigo {
+      background-color: rgba(99, 102, 241, 0.14);
+      color: #3730a3;
+      text-decoration-color: #6366f1;
+    }
+    .hl-emerald {
+      background-color: rgba(16, 185, 129, 0.14);
+      color: #065f46;
+      text-decoration-color: #10b981;
+    }
+    .hl-sky {
+      background-color: rgba(14, 165, 233, 0.14);
+      color: #075985;
+      text-decoration-color: #0ea5e9;
+    }
+    .hl-amber {
+      background-color: rgba(245, 158, 11, 0.16);
+      color: #92400e;
+      text-decoration-color: #f59e0b;
+    }
+    .hl-rose {
+      background-color: rgba(244, 63, 94, 0.14);
+      color: #9f1239;
+      text-decoration-color: #f43f5e;
+    }
+    .hl-purple {
+      background-color: rgba(168, 85, 247, 0.14);
+      color: #6b21a8;
+      text-decoration-color: #a855f7;
+    }
+    html.dark .hl-indigo {
+      background-color: rgba(99, 102, 241, 0.24);
+      color: #e0e7ff;
+      text-decoration-color: #818cf8;
+    }
+    html.dark .hl-emerald {
+      background-color: rgba(16, 185, 129, 0.22);
+      color: #d1fae5;
+      text-decoration-color: #34d399;
+    }
+    html.dark .hl-sky {
+      background-color: rgba(14, 165, 233, 0.22);
+      color: #e0f2fe;
+      text-decoration-color: #38bdf8;
+    }
+    html.dark .hl-amber {
+      background-color: rgba(245, 158, 11, 0.24);
+      color: #fef3c7;
+      text-decoration-color: #fbbf24;
+    }
+    html.dark .hl-rose {
+      background-color: rgba(244, 63, 94, 0.22);
+      color: #ffe4e6;
+      text-decoration-color: #fb7185;
+    }
+    html.dark .hl-purple {
+      background-color: rgba(168, 85, 247, 0.24);
+      color: #f3e8ff;
+      text-decoration-color: #c084fc;
+    }
+    .edu-ex-legend {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.45rem 0.9rem;
+      padding: 0.65rem 1.15rem;
+      border-bottom: 1px solid var(--border);
+      background-color: rgba(148, 163, 184, 0.06);
+      font-size: 0.78rem;
+      color: var(--text-secondary);
+      font-weight: 600;
+    }
+    .edu-ex-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+      padding: 0.95rem 1.15rem;
+    }
+    .edu-ex-item {
+      padding: 0.85rem 1rem;
+      border-radius: 0.8rem;
+      background-color: var(--bg-elevated);
+      border: 1px solid var(--border);
+      transition: border-color 0.15s ease;
+    }
+    .edu-ex-item:hover {
+      border-color: var(--border-strong);
+    }
+    .edu-ex-sentence {
+      font-size: 0.98rem;
+      line-height: 1.78;
+      color: var(--text-primary);
+      font-weight: 500;
+    }
+    .edu-ex-note {
+      margin-top: 0.42rem;
+      font-size: 0.84rem;
+      line-height: 1.55;
+      color: var(--text-secondary);
+    }
+    @media (min-width: 640px) {
+      .edu-ex-sentence {
+        font-size: 1.04rem;
+      }
+      .edu-ex-note {
+        font-size: 0.88rem;
+      }
     }
 
     /* Prompt Banner p/ Testes Mentais */
@@ -3978,7 +4128,7 @@
   </main>
   </div>
 
-  <script src="aulas-data.js?v=20261122_02"></script>
+  <script src="aulas-data.js?v=20261125_04"></script>
   <script>
     const DB_SQL_URL = "https://ep-muddy-thunder-ac0eoxn3-pooler.sa-east-1.aws.neon.tech/sql";
     const DB_CONN_STR = "postgresql://neondb_owner:npg_l2mWY5HINrgG@ep-muddy-thunder-ac0eoxn3-pooler.sa-east-1.aws.neon.tech/neondb?sslmode=require";
@@ -5311,6 +5461,13 @@
         }
       }
 
+      // Extrair <svg> avulsos (fora de <div class="edu-component">) para renderizar e ganhar zoom
+      text = text.replace(/<svg\b[^>]*>[\s\S]*?<\/svg>/gi, (rawSvg) => {
+        const hIdx = rawHtmlTokens.length;
+        rawHtmlTokens.push(formatRawHtmlComponent(rawSvg));
+        return `\n@@RAW_HTML_TOKEN_${hIdx}@@\n`;
+      });
+
       const codeTokens = [];
       const mathTokens = [];
       const detailsTokens = [];
@@ -5478,6 +5635,8 @@
       s = s.replace(/\*\*\*([^*]+)\*\*\*/g, "<strong><em>$1</em></strong>");
       s = s.replace(/\*\*([^*]+)\*\*/g, '<strong class="font-extrabold text-pri">$1</strong>');
       s = s.replace(/\*([^*\n]+)\*/g, "<em>$1</em>");
+      s = s.replace(/&lt;u&gt;([\s\S]*?)&lt;\/u&gt;/gi, '<u class="edu-term-highlight">$1</u>');
+      s = s.replace(/&lt;mark\s+class=(?:&quot;|"|')hl-(indigo|emerald|sky|amber|rose|purple)(?:&quot;|"|')&gt;([\s\S]*?)&lt;\/mark&gt;/gi, '<mark class="hl-$1">$2</mark>');
       return s;
     }
 

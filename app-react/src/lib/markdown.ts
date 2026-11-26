@@ -343,6 +343,10 @@ function formatInlineMd(line: string): string {
   s = s.replace(/\*\*([^*]+)\*\*/g, '<strong class="font-extrabold text-pri">$1</strong>');
   s = s.replace(/\*([^*\n]+)\*/g, "<em>$1</em>");
   s = s.replace(/&lt;u&gt;([\s\S]*?)&lt;\/u&gt;/gi, '<u class="edu-term-highlight">$1</u>');
+  s = s.replace(
+    /&lt;mark\s+class=(?:&quot;|"|')hl-(indigo|emerald|sky|amber|rose|purple)(?:&quot;|"|')&gt;([\s\S]*?)&lt;\/mark&gt;/gi,
+    '<mark class="hl-$1">$2</mark>'
+  );
   return s;
 }
 

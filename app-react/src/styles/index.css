@@ -1,6 +1,12 @@
 @import "tailwindcss";
 @import "katex/dist/katex.min.css";
 @import "./markdown-edu.css";
+@source "../../../aulas-data.js";
+@source "../../../semana-01";
+@source "../../../semana-02";
+@source "../../../semana-03";
+@source "../../../semana-04";
+@source "../../../semana-05";
 
 @custom-variant dark (&:where(.dark, .dark *));
 
@@ -104,6 +110,11 @@ h4,
 
 .surface-muted {
   background-color: var(--bg-muted);
+  border: 1px solid var(--border);
+}
+
+.surface-elevated {
+  background-color: var(--bg-elevated);
   border: 1px solid var(--border);
 }
 

@@ -6,23 +6,9 @@ export interface RichLessonRegistryEntry {
   load: () => Promise<{ default: RichLessonModule }>;
 }
 
-const REGISTRY_ENTRIES: RichLessonRegistryEntry[] = [
-  {
-    blockId: "w3_rlm",
-    docIndex: 0,
-    load: () => import("./semana-03/matematica"),
-  },
-  {
-    blockId: "w3_port",
-    docIndex: 0,
-    load: () => import("./semana-03/portugues"),
-  },
-  {
-    blockId: "w4_port",
-    docIndex: 0,
-    load: () => import("./semana-04/portugues"),
-  },
-];
+// Fluxo unificado: todas as aulas são renderizadas diretamente do Markdown (.md)
+// dividido automaticamente por Eixos em LessonAxisView + CSS visual nativo.
+const REGISTRY_ENTRIES: RichLessonRegistryEntry[] = [];
 
 const ENTRY_MAP = new Map<string, RichLessonRegistryEntry>(
   REGISTRY_ENTRIES.map((e) => [`${e.blockId}:${e.docIndex}`, e])

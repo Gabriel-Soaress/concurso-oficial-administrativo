@@ -1,93 +1,19 @@
-# Guia Oficial: Conversão de Aulas `.md` para Módulos React (`EduKit`)
+# GUIA EDUKIT REACT — ARQUIVO DESCONTINUADO
 
-Sempre que o aluno solicitar **"incorporar a aula ao sistema"** ou **"subir a aula para o site React"**:
+> [!IMPORTANT]
+> **ESTE FLUXO FOI DESCONTINUADO POR DECISÃO DO ALUNO.**
+> **NÃO** crie novos arquivos `.tsx` dentro de `app-react/src/lessons/`, **NÃO** registre aulas em `app-react/src/lessons/registry.ts` e **NÃO** duplique o conteúdo de `.md` em componentes React customizados (`<ProseSection>`, `<FlipCardsGrid />`, `<ExampleShowcase />`, etc.).
 
-## 1. Fluxo Obrigatório
-> **REGRA DE OURO INVIOLÁVEL (MAPEAMENTO 1-PARA-1 · ZERO CONDENSAÇÃO):**
-> O `.md` entregue é **fechado e sagrado como texto-base**. O agente **NUNCA** deve resumir, condensar, fundir subseções ou omitir parágrafos, bullets, exemplos ou explicações do `.md`.
-> - Toda subseção (`### 1.`, `### 2.`, `### 3.`, `### 4.`...) do `.md` deve existir separadamente no `.tsx` com o **texto integral preservado**.
-> - O trabalho do agente é **exclusivamente reorganizar visualmente** usando `<ProseSection>` e os componentes do `EduKit` (`ConceptCard`, `CompareGrid`, `KeyTable`, `FormulaSpotlight`, `TrapAlert`, `StepByStep`, `FlipCardsGrid`, `FeynmanCard`) para maximizar o destaque e a didática sem perder uma única frase.
-> - A única adição permitida são as **3 questões diretas de checkpoint** ao final de cada Eixo (caso o `.md` ainda não as possua).
+## Como o App React Funciona Agora (Fluxo Unificado)
 
-1. O arquivo `.md` em `semana-XX/<materia>_semana_XX.md` continua sendo a **base de dados pedagógica** (fácil de ler e editar).
-2. Leia o `.md` e **converta seu conteúdo em um Módulo React/TypeScript** em:
-   `app-react/src/lessons/semana-XX/<materia>.tsx`
-   implementando a interface `RichLessonModule` (`@/types`).
-3. **Estrutura obrigatória por Eixo:**
-   - Divida o conteúdo em **Eixos focados** (`axes: RichLessonAxis[]`), sem paredões de texto corrido.
-   - Em **cada Eixo**, inclua:
-     - Componentes visuais da biblioteca **EduKit** (`@/components/edu`);
-     - Um `<FeynmanCard />` de fechamento com 3 linhas;
-     - **3 questões diretas de checkpoint** (`checkpointQuestions`) sobre o próprio eixo (4 alternativas A–D, gabarito e comentário).
-   - Ao final do módulo (`finalQuestions`), inclua a **Bateria Final de Questões Reais + Adaptadas** no padrão Instituto ACCESS e o `checklistItems`.
-4. **Registre o módulo** em `app-react/src/lessons/registry.ts` usando *lazy import*:
-   ```ts
-   { blockId: "w4_rlm", docIndex: 0, load: () => import("./semana-04/matematica") }
-   ```
-5. **Valide antes de finalizar:**
+1. A **única fonte de verdade** de qualquer aula é o arquivo Markdown em `semana-XX/<materia>_semana_XX.md`, sincronizado via:
    ```bash
-   cd app-react && npm run typecheck && npm run build
+   python .agents/sync_lessons.py
    ```
+2. Sempre que uma aula `.md` NÃO está registrada em `registry.ts` (que agora deve permanecer vazio), o próprio `LessonPage.tsx` usa `parseLessonIntoAxes()` (`LessonAxisView.tsx`) para:
+   - dividir automaticamente o `.md` por `## EIXO 1:`, `## EIXO 2:` etc.;
+   - renderizar todos os cards CSS (`.edu-component`, `.edu-cards-grid`, `.edu-ex-list`), destaques coloridos (`<mark class="hl-...">`, `<u>`), tabelas responsivas, fórmulas KaTeX e diagramas `<svg>` com zoom em tela cheia;
+   - transformar automaticamente as questões `### Questão XX` de cada Eixo em checkpoints interativos e as questões finais na Bateria Final (`MCQuestionList`);
+   - manter o download `.md` por Eixo e da aula inteira 100% fiel ao arquivo original.
 
-## 2. Catálogo de Componentes `EduKit` (`import { ... } from "@/components/edu"`)
-- `<ProseSection number title>` — Bloco editorial obrigatório para parágrafos introdutórios, contexto narrativo e demonstrações integrais do `.md`.
-- `<MathTex tex="..." display? bare? />` — KaTeX nativo inline ou em bloco (zero regex, zero scroll lateral).
-- `<MathStack lines showFlowArrows? align? compact? />` — Pilha vertical de passagens matemáticas ("papel e caneta"), uma equação por linha, com setas opcionais (`↓`) e destaque esmeralda (`highlight: true`) na resposta final.
-- `<GuidedCalcCard title badge? accent? banner? rows />` & `<GuidedCalcGrid>` — Bloquinhos estruturados de Matemática: cada linha traz `[Badge à esquerda]`, explicação curta em cima e faixa `<MathStack>` separada abaixo para as contas. `<GuidedCalcGrid>` empilha sempre os cards em **1 coluna vertical contínua (`space-y-4`)** para preservar a leitura sequencial e evitar aperto horizontal em expressões KaTeX.
-- `<ConceptCard title badge accent icon>` — Destaque para conceitos-chave e regras centrais.
-- `<AxisContextCard eyebrow? title bridge problemSolved roadmap />` — Bloco obrigatório de contexto inicial no topo de cada Eixo (100% vertical: ponte com o eixo anterior, qual problema resolve e roteiro do eixo).
-- `<ExampleShowcase title? items />` & `<ExampleCaseCard />` — Vitrine 100% vertical para exemplos progressivos: frase em caixa destacada de alto contraste (`verdict?: "right"|"wrong"|"neutral"`, escopo `.edu-focus-scope`), tags coloridas desmontando peças da frase e leitura guiada logo abaixo (`ExampleSentenceCase` suporta `label?: string` opcional). `<ExampleCaseCard />` é exportado separadamente para renderizar cards individuais focados dentro de outros blocos.
-- `<InlinePractice title subtitle? questions />` — Paradas Rápidas de fixação interativa NO MEIO do Eixo (`options[].label` aceita `ReactNode`, feedback imediato e botão Refazer); sempre marcar termos-alvo citados no enunciado com `<u>...</u>` dentro de `.edu-focus-scope` para garantir sublinhado visível.
-- `<ProgressiveExamples items />` — Renderiza exemplos progressivos (`label`, `accent?`, `content`) em sub-cards espaçados com quebra de linha clara entre frases e subitens `(a)`, `(b)`, `(c)`, sem amontoar exemplos em listas `<ul>` corridas.
-- `<DefinitionBlocks title? columns={1|2} items />` — Quebra conceitos irmãos, subtipos ou enumerações em cards individuais destacados em coluna vertical única. Cada item aceita `examples?: ExampleSentenceCase[]` e `examplesTitle?: string` para embutir o(s) exemplo(s) **diretamente dentro do bloco daquele conceito**, imediatamente após sua definição.
-- `<FormulaSpotlight title formulaTex? formulas? note? legend? />` — Fórmula em destaque ou lista vertical (`formulas[]`) de fórmulas empilhadas + passos + legenda visual dos símbolos. Nunca colocar duas fórmulas lado a lado com `|`.
-- `<CompareGrid title mode="right-wrong"|"contrast" left right />` — Comparação Certo vs. Errado ou Conceito A vs. B.
-- `<TrapAlert title trap escape />` — Pegadinha clássica da banca ACCESS vs. como escapar.
-- `<StepByStep title problem steps defaultRevealAll? />` — Resolução passo a passo interativa (`steps` suportam `badge`, `content` e `mathLines` verticais separados do texto).
-- `<AnalogyBox title tag>` — Analogias do dia a dia e casos práticos de Prefeitura.
-- `<CfcFlow title causa fato consequencia />` — Pipeline Causa → Fato → Consequência (3 Escalas).
-- `<FlipCardsGrid title cards />` — Flashcards clicáveis para memorização ativa (parônimos, verbos, fatores).
-- `<KeyTable title headers rows />` — Tabelas-resumo limpas e responsivas (com bordas e zebra no desktop e cards empilhados no mobile — zero scroll lateral).
-- `<AsciiKeyBlock title code />` — Contas armadas na chave e diagramas alinhados com quebra segura.
-- `<FeynmanCard title lines />` — Síntese Feynman de 3 linhas (suporta `{ render, copyText }` para usar `<MathTex />`) com botão de copiar para o caderno.
-- `<ZoomableDiagram title badge? badgeTone? children />` — Moldura padrão para `<svg>` e imagens educativas em módulos React, com botão explícito `Expandir` + clique/toque para abrir o lightbox `DiagramZoomModal` com zoom.
-
-## 3. Regras Invioláveis de Matemática, Tabelas e Layout Responsivo
-1. **ZERO Scroll Lateral em Qualquer Tela (`overflow-x-auto` PROIBIDO):**
-   - Nunca usar `overflow-x-auto` nem grades rígidas sem `minmax(0, 1fr)` em equações, tabelas, steppers, abas ou caixas ASCII.
-   - Todo conteúdo deve caber confortavelmente tanto em **mobile (`390px`)** quanto em **desktop (`1280px`)**.
-2. **Resolução "Papel e Caneta" (Vertical, Linha por Linha):**
-   - Nunca encadear várias igualdades ou implicações compridas numa única linha horizontal (`a = b ⇒ c = d ⇒ e = f`).
-   - Use `<MathStack lines={[...]} showFlowArrows />`, `mathLines` dentro de `<GuidedCalcCard>` / `<StepByStep>`, ou quebre comentários em blocos `$$...$$` onde cada etapa vai para a linha de baixo.
-   - Em `<FormulaSpotlight>`, quando houver 2 fórmulas ou exemplos relacionados, use `formulas={[ ... ]}` empilhados verticalmente — jamais junte dois casos na mesma linha separados por `|`.
-3. **Ritmo em Bloquinhos (`<GuidedCalcCard>` + `<GuidedCalcGrid>`):**
-   - Não misturar contas longas dentro de parágrafos ou bullets corridos. Separe sempre: `[Rótulo / Passo]` → `[Explicação curta]` → `[Faixa visual com a conta vertical]`.
-4. **KaTeX Obrigatório (Zero Unicode Matemático):**
-   - Nunca escrever `ⁿ√a`, `⁴√81`, `a^(m/n)` ou frações em texto corrido quando houver suporte a KaTeX: use sempre `<MathTex tex="..." />` (ou `{ render: ..., copyText: ... }` dentro do `<FeynmanCard>`).
-5. **Diretriz de Unidades Atômicas em Sequência Direta & Escala de Operações:**
-   - Expressões que formam uma única unidade lógica (ex.: `↑ Minutos (4 → 10)`, `(x - 2)`, `x = 12 dias`) são renderizadas como átomos indivisíveis (`math-atom`) e **nunca** sofrem quebra de linha interna. Em sequências conectadas por `e`, `⇒` ou `⟶`, a eventual quebra em tela estreita ocorre apenas no conector.
-   - Toda linha em `<MathStack />` e `<MathTex display />` renderiza em `\displaystyle` com fonte ampliada para que frações e expoentes fracionários ($8^{\frac{2}{3}}$) tenham leitura imediata.
-
----
-
-## 4. Padrão Mínimo de Interatividade (Protocolo `D-E-A-M-P-C`)
-
-Consulte `.agents/PROTOCOLO_PRODUCAO_AULA.md` (Fases 2 e 4). Ao construir qualquer módulo `.tsx`, garanta em todos os Eixos:
-1. **`<FlipCardsGrid />` em Todo Eixo Denso:** inclua de **4 a 6 flashcards clicáveis** por eixo (`front`, `hint?`, `back`) cobrindo testes rápidos de 5 segundos, contrastes clássicos e pegadinhas da banca ACCESS.
-2. **Fluxo 100% Vertical, Contexto Inicial, Explicação Simples Antes da Regra e Paradas Rápidas Inline:**
-   - Abra TODO Eixo com `<AxisContextCard />` (1 coluna vertical: ponte com o degrau anterior, problema real resolvido e roteiro do eixo).
-   - Em cada `<ProseSection>`, comece com parágrafos curtos em **voz calma de professor explicando o porquê da regra antes do rótulo técnico**. Em seguida, aplique obrigatoriamente a **Regra 1 Ponto → Exemplo(s) → Próximo Ponto**: sempre que a seção ensinar **2 ou mais conceitos, subtipos, classificações ou regras** (ex.: *Os 3 Tipos de Predicado*, *Modos Verbais*, *GDP vs. GIP*), entre em **um ponto de cada vez**, mostre logo ali o(s) seu(s) exemplo(s) imediato(s) (`<DefinitionBlocks />` com `examples` ou `<GuidedCalcCard />` sequenciais) e **só então** passe para o próximo ponto.
-   - **Proibições absolutas de agrupamento:** NUNCA explique 2 ou mais subtipos/regras juntos e jogue os exemplos de todos eles misturados depois no fim da seção; NUNCA junte duas frases ou comparações distintas na mesma caixa `sentence:` usando `" | "` ou `" vs. "` (cada exemplo ganha seu próprio `<ExampleCaseCard />`). Reserve `<AnalogyBox>`, `<ZoomableDiagram>`, `<KeyTable>` e `<CompareGrid>` para a síntese/comparação final **depois** que cada conceito individual já tiver sido apresentado com seus próprios exemplos.
-   - Evite cards teóricos lado a lado (`md:grid-cols-2`, `sm:grid-cols-3`, `lg:grid-cols-2`): todo o fluxo de leitura deve correr em **1 coluna vertical contínua**.
-   - Em Eixos densos, intercale blocos `<InlinePractice />` (**Paradas Rápidas no meio do conteúdo**) para o aluno testar subconceitos parciais antes de avançar ao próximo bloco.
-3. **Regra Anti-Texto Corrido (1 Conceito + Exemplo Imediato = 1 Bloco Destacado):** é proibido agrupar 2 ou mais conceitos, subtipos ou enumerações (`(1)... (2)... (3)...`) num único parágrafo `<p>` ou separar as definições de seus exemplos em seções distantes. Use `<DefinitionBlocks />` com `examples` em cada item para isolar definição + exemplo(s) no mesmo card, mantendo 100% do conteúdo integral (zero condensação).
-4. **Destaque Inequívoco com Sublinhado em Termos-Alvo (`<u>` / `.edu-focus-scope` / `.mc-question-scope`):** em todo bloco `<InlinePractice />`, `<ExampleShowcase />` ou questão (`MCQuestionList`), qualquer palavra ou trecho referido como *"termo/verbo/trecho destacado"* **DEVE** ser marcado explicitamente com `<u>...</u>` (TSX) ou `<u>...</u>` / `*“... **termo** ...”*` (Markdown) para exibir **sublinhado espesso (`2px`) + realce de contraste**; nunca deixe só o negrito discreto ou texto plano quando o comando pedir termo destacado.
-5. **Mapeamento Semântico dos "Gêmeos Confundíveis" e Pegadinhas:** nunca deixe comparações críticas apenas em texto corrido — use `<CompareGrid />` ou `<KeyTable />` e destaque armadilhas reais com `<TrapAlert />`.
-6. **Diagramas Visuais em SVG Nativo Dentro de `<ZoomableDiagram />` (Fluxo Limpo e Legível):** sempre que uma explicação citar fluxograma, organograma, linha do tempo ou anatomia visual da frase/processo, desenhe o componente **`<svg viewBox="..." className="w-full h-auto" />` responsivo** envolvido obrigatoriamente por **`<ZoomableDiagram title badge? badgeTone?>`** (garantindo botão **`Expandir`** no cabeçalho + modal `DiagramZoomModal` em tela cheia; proibido prometer diagrama sem desenhá-lo). **Regras obrigatórias de clareza nos fluxogramas:**
-   - **1 pergunta por caixa, 1 resultado por caixa final:** nunca misturar duas condições distintas numa mesma pergunta nem dois resultados opostos no mesmo retângulo.
-   - **Setas explícitas (`SIM` / `NÃO`) conectando TODAS as caixas:** proibido deixar caixas órfãs no rodapé sem seta ou etapas intermediárias decorativas que não ramificam nada.
-   - **Respiro visual e nomes por extenso:** use `viewBox` generoso (ex.: `0 0 760 320..420`), fontes legíveis (`12px–14px`) e termos por extenso sem sopa de siglas.
-7. **Proibido Excesso de Siglas no Texto Didático:** escreva os conceitos **por extenso** no corpo da aula, exemplos, analogias, flashcards e feedbacks (ex.: *Predicado Verbal*, *Predicado Nominal*, *Predicado Verbo-Nominal*, *Predicativo do Sujeito*, *Predicativo do Objeto*, *Verbo de Ligação*). Siglas só podem aparecer esporadicamente entre parênteses quando ajudam o aluno a reconhecer o termo em provas — nunca substituindo o nome completo em toda frase.
-8. **Paridade de Eixos para Exportação `.md` (NotebookLM):** mantenha alinhamento **1-para-1** dos cabeçalhos `## EIXO X:` entre `.md` e `.tsx` para que os botões de download em `.md` (aula completa e por eixo) exportem cada eixo sem lacunas.
-9. **Auditoria Antes da Conversão:** nunca converta um `.md` sem antes aprová-lo com `python .agents/audit_lesson.py <arquivo.md>` e sincronizar com `python .agents/sync_lessons.py`.
-10. **Validação Completa ao Final:** rode `npm run typecheck`, `npm test` e `npm run build` dentro de `app-react/`.
+Para instruções atuais de escrita e recursos visuais no `.md`, consulte [`.agents/GUIA_DO_AGENTE.md`](GUIA_DO_AGENTE.md) e [`.agents/PROTOCOLO_PRODUCAO_AULA.md`](PROTOCOLO_PRODUCAO_AULA.md).

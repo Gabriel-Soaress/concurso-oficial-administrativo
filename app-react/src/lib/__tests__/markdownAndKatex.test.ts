@@ -134,4 +134,14 @@ describe("renderRichMarkdown (tabelas, tabelas indentadas e blocos ASCII)", () =
     expect(html).toContain("&lt;script&gt;");
     expect(html).not.toContain("<script>");
   });
+
+  it("converte <mark class='hl-*'> colorido com allowlist segura mantendo classes inválidas escapadas", () => {
+    const md =
+      '<mark class="hl-indigo">A Prefeitura</mark> <mark class="hl-emerald">publicou</mark> <mark class="evil">nada</mark>.';
+    const html = renderRichMarkdown(md, "t_hl_mark");
+    expect(html).toContain('<mark class="hl-indigo">A Prefeitura</mark>');
+    expect(html).toContain('<mark class="hl-emerald">publicou</mark>');
+    expect(html).toContain("&lt;mark class=&quot;evil&quot;&gt;".replace(/&quot;/g, '"'));
+    expect(html).not.toContain('<mark class="evil">');
+  });
 });

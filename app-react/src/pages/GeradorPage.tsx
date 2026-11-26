@@ -55,7 +55,7 @@ export function GeradorPage() {
           Gerador de Prompt Pedagógico
         </h1>
         <p className="text-sm text-sec">
-          Gera prompts calibrados no padrão Instituto ACCESS + estrutura por Eixos com 3 questões diretas por eixo.
+          Gera prompts calibrados na didática lógica por Eixos, elementos visuais limpos e questões no padrão Instituto ACCESS.
         </p>
       </header>
 

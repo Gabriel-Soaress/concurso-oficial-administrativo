@@ -65,7 +65,7 @@ describe("markdownDownload", () => {
     ).toBe("regencia_crase_eixo_10.md");
   });
 
-  it("extrai apenas o Eixo 2 real de semana-04/portugues_semana_04.md com paradas e checkpoints", () => {
+  it("extrai apenas o Eixo 2 real de semana-04/portugues_semana_04.md com subtópicos e checkpoints", () => {
     const doc = loadRealDoc("semana-04/portugues_semana_04.md");
     const parsed = parseLessonIntoAxes(doc.content);
     const eixo2 = parsed.axes.find((a) => a.index === 2);
@@ -76,7 +76,7 @@ describe("markdownDownload", () => {
     expect(axisMd.startsWith("# ")).toBe(true);
     expect(axisMd).toContain("Extrato do **Eixo 2**");
     expect(axisMd).toContain("## EIXO 2");
-    expect(axisMd).toContain("Parada Rápida 2.A");
+    expect(axisMd).toContain("Verbo Transitivo Direto");
     expect(axisMd).toContain("### Questão 04");
     expect(axisMd).not.toContain("## EIXO 1");
     expect(axisMd).not.toContain("## EIXO 3");

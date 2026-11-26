@@ -4,38 +4,34 @@
 > **INSTRUÇÃO OBRIGATÓRIA PARA QUALQUER AGENTE IA:**
 > Sempre que iniciar uma sessão ou receber uma mensagem do usuário neste diretório:
 > 1. Leia este arquivo (`.agents/GUIA_DO_AGENTE.md`) para saber exatamente em qual **Semana e Tópico** o usuário está no **Checklist de Progresso** (Seção 5).
-> 2. **VINCULAÇÃO DO E-MAIL DO USUÁRIO (SINCRONIZAÇÃO COM O SITE):** Verifique se o e-mail do usuário já está configurado localmente rodando `python .agents/sync_db.py status`. **Caso ainda não tenha o e-mail configurado (`.agents/usuario_ativo.json` ausente), pergunte ao usuário qual é o e-mail ou nome de usuário dele na plataforma** e execute `python .agents/sync_db.py set-user <email_informado>`.
-> 3. **ORGANIZAÇÃO EM PASTAS POR SEMANA + AUDITORIA + INCORPORAÇÃO AO SITE (`aulas-data.js` + REACT `EduKit`):** Sempre que gerar conteúdos, aulas, resumos ou listas de exercícios para uma semana específica (`semana-01/` .. `semana-12/`), siga o protocolo completo de `.agents/PROTOCOLO_PRODUCAO_AULA.md`:
->    - Audite o `.md` com `python .agents/audit_lesson.py <arquivo.md>` até zerar erros/avisos (`[OK]`);
->    - Rode imediatamente `python .agents/sync_lessons.py` para atualizar `aulas-data.js`;
->    - Converta o `.md` 1-para-1 (zero condensação) para módulo React `EduKit` em `app-react/src/lessons/semana-XX/<materia>.tsx` conforme `.agents/GUIA_EDUKIT_REACT.md`, registre em `app-react/src/lessons/registry.ts` e valide `typecheck`, `test` e `build`.
+> 2. **VINCULAÇÃO DO E-MAIL DO USUÁRIO (SINCRONIZAÇÃO COM O SITE):** Verifique se o e-mail do usuário já está configurado localmente rodando `python .agents/sync_db.py status`. **Caso ainda não tenha o e-mail configurado (`.agents/usuario_ativo.json` ausente), pergunte ao aluno qual é o e-mail ou nome de usuário dele na plataforma** e execute `python .agents/sync_db.py set-user <email_informado>`.
+> 3. **FONTE ÚNICA DE VERDADE EM MARKDOWN (`.md`) + CSS VISUAL + `sync_lessons.py`:** Toda aula e lista de exercícios deve ser criada diretamente em `semana-01/` .. `semana-12/` como arquivo `.md` limpo (enriquecido com componentes CSS visuais, destaques coloridos de palavras e SVGs quando ajudarem a enxergar a estrutura). Em seguida, **rode `python .agents/audit_lesson.py <arquivo.md>`** (checagem técnica e padrão ACCESS) e **`python .agents/sync_lessons.py`** para incorporar os `.md` no arquivo `aulas-data.js` (consumido pelo site original `index.html` e pelo app React `app-react/`, que já divide automaticamente os `## EIXO X:` em etapas navegáveis). **NÃO crie módulos `.tsx` customizados (`EduKit`) em `app-react/src/lessons/`.**
 > 4. **ATUALIZAÇÃO AUTOMÁTICA DO PROGRESSO (LOCAL + SITE):** Quando o usuário avisar que concluiu um tópico, bloco ou simulado:
 >    - Edite imediatamente a Seção 5 deste arquivo, trocando `[ ]` por `[x]`.
 >    - Sincronize o progresso na conta do usuário para atualizar o site automaticamente rodando:
 >      - `python .agents/sync_db.py mark <chave>` (chaves: `w1_port`, `w1_rlm`, `w1_esp`, `w1_ger`, `w1_sim` ... até `w12_sim`)
 >      - `python .agents/sync_db.py exam <numero_da_prova>` (ex: `1` a `93`)
-> 5. Ao ensinar qualquer conteúdo ao usuário, siga rigorosamente o **Perfil Cognitivo e Didático do Aluno (Seção 2)** e o **Contrato `D-E-A-M-P-C`** de `.agents/PROTOCOLO_PRODUCAO_AULA.md` — profundidade máxima nos tópicos do Edital Nível Médio/ACCESS (≥3 exemplos progressivos, analogias, flashcards `<FlipCardsGrid />`, mapa de gêmeos confundíveis e corte de teoria acadêmica irrelevante).
-> 6. **PADRÃO ESTRUTURAL DA BANCA INSTITUTO ACCESS + SIMETRIA:** Consulte `.agents/PADRAO_QUESTOES_BANCA_ACCESS.md` e a Fase 3 de `.agents/PROTOCOLO_PRODUCAO_AULA.md`. As questões oficiais do Instituto ACCESS (`prova-auto/provas-access/`) são mantidas 100% autênticas e originais com gabarito definitivo conferido. Já as questões adaptadas (`13.pdf` a `93.pdf`), inéditas e checkpoints DEVEM seguir o padrão ACCESS (4 alternativas A-D, comandos em CAIXA ALTA, casos práticos/personificados, simetria de tamanho `0.65`–`1.35`, zero pistas exclusivas e gabaritos distribuídos).
+> 5. Ao ensinar qualquer conteúdo ao usuário, siga rigorosamente o **Perfil Cognitivo e Didático do Aluno (Seção 2)** — voz clara de professor, contexto real antes do rótulo técnico, **1 conceito → exemplos claros com destaque visual em palavras → próximo conceito**, nunca regras secas nem moldes mecânicos engessados.
+> 6. **PADRÃO ESTRUTURAL DA BANCA INSTITUTO ACCESS:** Consulte `.agents/PADRAO_QUESTOES_BANCA_ACCESS.md`. As questões oficiais do Instituto ACCESS (`prova-auto/provas-access/`) são mantidas 100% autênticas e originais com gabarito definitivo conferido (descartando anuladas). Já as questões adaptadas de outras bancas (`prova-auto/13.pdf` a `93.pdf`) ou inéditas DEVEM seguir o padrão ACCESS (4 alternativas A–D, comandos em CAIXA ALTA como CORRETA/INCORRETA/EXCETO, casos práticos de repartição, personificação em RLM e simetria de tamanho entre alternativas).
 
 ---
 
 ## 1. Visão Geral dos Arquivos do Workspace (`c:\Users\gabri\OneDrive\Documentos\concurso`)
 
-* `index.html`: Aplicação legada principal do aluno contendo a trilha interativa de 12 semanas, o **Leitor de Aulas e Exercícios Interativos (`#page-aula`)**, o acervo de provas e o **Gerador de Prompt Matriz**.
-* `app-react/`: Aplicação moderna em React + TypeScript + Vite (`src/components/edu/` `EduKit`, módulos interativos em `src/lessons/semana-XX/<materia>.tsx`, registro em `src/lessons/registry.ts` e gerador em `src/lib/promptBuilder.ts`).
-* `aulas-data.js` e `.agents/sync_lessons.py`: Sistema automatizado que converte todos os arquivos `.md` de `semana-01/` a `semana-12/` em aulas e listas de exercícios interativas linkadas diretamente aos cards de cada semana e matéria na Trilha do site.
-* `.agents/PROTOCOLO_PRODUCAO_AULA.md` e `.agents/audit_lesson.py`: Protocolo obrigatório em 5 fases (`D-E-A-M-P-C` anti-superficialidade + filtro anti-enrolação + flashcards + simetria ACCESS) e auditor automático em Python que valida o `.md` antes da publicação.
-* `.agents/GUIA_EDUKIT_REACT.md`: Manual oficial de conversão 1-para-1 (zero condensação) de aulas `.md` para módulos React `EduKit` responsivos e ricos em interatividade (`FlipCardsGrid`, `CompareGrid`, `TrapAlert`, `StepByStep`, SVGs e `FeynmanCard`).
+* `index.html`: Aplicação original completa do aluno com a trilha interativa de 12 semanas, Leitor de Aulas e Formulários Interativos, acervo de provas e Gerador de Prompt.
+* `app-react/`: Versão em React + Vite que consome o mesmo `aulas-data.js` e divide automaticamente qualquer aula `.md` por `## EIXO X:` (`LessonAxisView`), renderizando cards CSS, destaques coloridos em palavras, KaTeX, diagramas SVG ampliáveis com zoom e questões interativas diretamente do Markdown.
+* `aulas-data.js` e `.agents/sync_lessons.py`: Sistema automatizado que converte todos os arquivos `.md` de `semana-01/` a `semana-12/` em aulas e listas de exercícios interativas linkadas diretamente aos cards de cada semana e matéria na Trilha dos dois sites.
+* `.agents/PROTOCOLO_PRODUCAO_AULA.md` e `.agents/audit_lesson.py`: Guia prático da didática original + catálogo de recursos visuais CSS/SVG no `.md`, além do auditor técnico automático que valida formatação de questões, simetria ACCESS, balanceamento HTML e preservação dos simulados.
 * `edital_organizado_oficial_administrativo.pdf`: Documento original do aluno com o Mapa de Estudos dividido em 4 Grandes Grupos (01. Língua Portuguesa, 02. Raciocínio Lógico e Matemático, 03. Conhecimentos Gerais, 04. Conhecimentos Específicos), alinhado ao concurso de Oficial Administrativo (Prefeitura de Birigui/SP — Edital 220/2026 — Banca Instituto ACCESS: 40 questões, sendo 10 de cada grupo).
 * `prova-auto/`: Pasta contendo **93 provas reais de Oficial Administrativo (2022 a 2026)** numeradas de `1.pdf` a `93.pdf` e seus respectivos gabaritos `g1.pdf` a `g93.pdf`, além de `provas-access/` com 45 provas de Nível Médio do Instituto ACCESS (2024–2026):
   * **Provas `1.pdf` a `12.pdf` (`g1.pdf` a `g12.pdf`):** São os **12 Simulados Oficiais de Sábado**, renumerados exatamente na ordem da **Semana 01 até a Semana 12**!
   * **Provas `13.pdf` a `93.pdf` (`g13.pdf` a `g93.pdf`):** São as **81 provas de Treino Diário** (para usar de segunda a sexta nas baterias de questões por matéria).
   * `prova-auto/indice_provas.txt`: Índice completo mapeando `Nº | Tipo | Ano | Órgão | Banca | Prova | Gabarito | URL`.
-* `.agents/PADRAO_QUESTOES_BANCA_ACCESS.md`: Manual mestre de engenharia reversa e adaptação de questões, contendo a radiografia estrutural completa de mais de 1.000 questões reais do Instituto ACCESS (formatos de enunciados, itens romanos, V/F, colunas, personificação e algoritmo de adaptação de outras bancas).
+* `.agents/PADRAO_QUESTOES_BANCA_ACCESS.md`: Manual mestre de engenharia reversa e adaptação de questões do Instituto ACCESS (formatos de enunciados, itens romanos, V/F, associação de colunas, personificação e simetria).
 
 > [!IMPORTANT]
 > **PRESERVAÇÃO TOTAL DOS 12 SIMULADOS DE SÁBADO (PROVAS 1 A 12):**
-> Nunca retire questões de 1.pdf a 12.pdf para aulas semanais, apostilas teóricas ou baterias diárias de exercícios. Elas são reservadas com exclusividade para os Simulados de Sábado. Todas as questões de aula devem vir exclusivamente das provas de Treino Diário (13.pdf a 93.pdf).
+> Nunca retire questões de `1.pdf` a `12.pdf` para aulas semanais, apostilas teóricas ou baterias diárias de exercícios. Elas são reservadas com exclusividade para os Simulados de Sábado. Todas as questões de aula devem vir exclusivamente das provas de Treino Diário (`13.pdf` a `93.pdf` ou `provas-access/`).
 
 * `semana-01/`, `semana-02/`, etc.: Pastas criadas pelos agentes à medida que os materiais de cada semana são gerados.
 
@@ -49,17 +45,21 @@
    * **Domingo:** Estudo contextual de **Conhecimentos Gerais** (História Municipal/Nacional, Geografia e Política/Atualidades) + revisão leve dos erros da semana.
 2. **Estilo de Aprendizagem ("Entender o Porquê / Lógica e História"):**
    * O aluno tem base de Ensino Médio em Português e Matemática, mas **faz tempo que viu**, então precisa **construir do básico até o avançado sem pular degraus**.
-   * **Regra de Ouro Didática:** O aluno **não gosta de decorar "como fazer a conta" ou "macetes cegos"**. Ele aprende muito melhor quando entende:
-     * **A lógica por trás da regra e das exceções** (ex: *por que* a crase não ocorre antes de verbo; *por que* a vírgula não separa sujeito e verbo).
+   * **Regra de Ouro Didática:** O aluno **não gosta de decorar "como fazer a conta" ou "macetes cegos"**, nem de textos engessados por rótulos artificiais. Ele aprende muito melhor quando entende:
+     * **O contexto e o porquê da regra e das exceções** (ex: *para que* aquela classificação existe na língua; *por que* a crase não ocorre antes de verbo; *por que* a vírgula não separa sujeito e verbo).
      * **O significado físico/prático da conta matemática** (ex: *o que* uma equação, função, matriz ou razão está fazendo na realidade).
      * **O contexto histórico e institucional** (ex: *por que* a Administração Pública funciona assim; *qual* a história que levou a um fato político/econômico).
-* **Regra Pedagógica Absoluta (Didático e Completo ao Máximo):**
-      * **Zero termos jogados do nada:** Qualquer conceito novo (ex: ditongo, hiato, paroxítona, dígrafo, inferência, anáfora) deve ser primeiramente conceituado com termos simples antes de ser usado.
-      * **O Porquê e a Lógica:** Explicar qual problema prático da comunicação escrita ou acústica a regra resolve e a lógica das exceções.
-      * **Analogias e Comparativos (Certo vs. Errado):** Sempre ilustrar com analogias da vida real e quadros comparativos entre a frase correta e o erro clássico que a banca cria.
-      * **Síntese Feynman de 3 Linhas:** Finalizar cada tópico com um resumo conciso para fixação no caderno.
-      * **Quadros e Diagramas em Destaque com CSS Rico (Proibido Caixas ASCII ┌───┐):** Todos os conteúdos destacáveis, esquemas visuais, comparações, mnemônicos, pirâmides, órbitas e mapas mentais nas aulas .md devem ser construídos com os componentes HTML/CSS nativos do sistema (<div class="edu-component my-6"> com .edu-cards-grid, .edu-mnemonic-grid, .edu-pyramid-container, .edu-orbital-stage, .edu-nested-wrap ou > [!ESCALAS]), garantindo visual moderno, responsivo no mobile e alto contraste nos modos claro e escuro.
-   3. **Nível Inicial por Grande Grupo:**
+   * **Fluxo e Clareza (Regras Práticas de Ouro):**
+     * **Zero termos jogados do nada:** Qualquer conceito novo deve ser apresentado primeiro em linguagem clara e contextualizada antes do nome técnico.
+     * **Um conceito por vez → exemplos com destaque visual → próximo conceito:** Quando um tópico tiver 2 ou mais subtipos (ex: os 3 tipos de predicado, os tipos de sujeito, os casos de crase), explique **um subtipo**, mostre imediatamente seus exemplos com destaque colorido nas palavras-chave, e **só depois** passe para o próximo. Nunca explique 3 coisas juntas para jogar todos os exemplos misturados lá embaixo.
+     * **Exemplos limpos e naturais (sem molde engessado):** Use frases claras, reais e fáceis de visualizar — misturando cotidiano e situações do cargo apenas quando fizer sentido natural.
+     * **Elementos visuais que ajudam a enxergar (CSS + SVG no `.md`):** Use destaques coloridos de palavras (`<mark class="hl-...">`, `<u>...</u>`), caixas limpas de exemplos (`.edu-ex-list`), cards comparativos CSS (`.edu-component` / `.edu-cards-grid`), blocos `> [!ESCALAS]` e fluxogramas `<svg>` limpos (com zoom automático no leitor). Proibido caixas ASCII desenhadas com `┌───┐`.
+     * **Fixação natural e Síntese Feynman de 3 Linhas:** Feche cada eixo com uma **Síntese Feynman de 3 Linhas** direta para o caderno e, quando ajudar a consolidar o eixo antes de seguir, inclua de 2 a 3 questões diretas de checkpoint.
+   * **O que é PROIBIDO fazer nas aulas (Anti-Engessamento):**
+     * **NÃO** use molde burocrático `D-E-A-M-P-C` com subtítulos repetitivos `D — / E — / A — / M — / P —`.
+     * **NÃO** force artificialmente a escada carimbada `"Exemplo 1 (Cotidiano) / Exemplo 2 (Rotina de Prefeitura) / Exemplo 3 (Caso Limite)"` nem boxes repetitivos de `"Como a banca monta a armadilha / Teste de 5s"` em todo subtópico.
+     * **NÃO** recrie ou duplique aulas `.md` como módulos `.tsx` (`EduKit`) dentro de `app-react/src/lessons/`.
+3. **Nível Inicial por Grande Grupo:**
    * **Grupo 01 (Português) e Grupo 02 (Matemática/RLM):** Já viu no Ensino Médio, mas precisa relembrar desde a base com explicação lógica passo a passo até chegar nos tópicos avançados.
    * **Grupo 03 (Conhecimentos Gerais):** Exige atenção especial à **História Municipal (Birigui/SP e região), História Nacional, Geografia e Política**, sempre conectando causa, fato e consequência nas 3 escalas (Municipal $\leftrightarrow$ Estadual $\leftrightarrow$ Nacional/Global).
    * **Grupo 04 (Conhecimentos Específicos):** Tirando **Informática** (onde já tem familiaridade), **quase tudo é contato novo** (Administração Pública, Rotinas, Redação Oficial, Protocolo, Arquivo, LAI e LGPD). O agente deve ensinar esses temas como uma narrativa contínua do funcionamento de uma Prefeitura.
@@ -79,17 +79,15 @@
 
 ## 4. Como o Agente Deve Atuar ao Receber o Prompt da Semana
 
-Quando o usuário enviar o Prompt Matriz da Semana $X$, siga rigorosamente as 5 Fases de `.agents/PROTOCOLO_PRODUCAO_AULA.md`:
-1. **Pesquisa Prévia e Filtro Anti-Enrolação (Fase 1):** Leia o escopo oficial da semana + pré-requisitos, defina o que **ENTRA** (cobrabilidade Nível Médio / ACCESS) vs. o que **FICA DE FORA** (teoria acadêmica irrelevante), pesquise questões reais em `prova-auto/provas-access/` e `13.pdf`..`93.pdf` (**JAMAIS `1.pdf`..`12.pdf`**) conferindo sempre o gabarito definitivo oficial (descartando questões anuladas), e feche o Contrato de Sumário (zero tópicos prometidos sem explicação).
-2. **Crie a pasta `semana-XX/` e produza o `.md` no Contrato `D-E-A-M-P-C` (Fases 2 e 3):**
-   * Divida a aula em **Eixos focados (`## EIXO 1..N`)**, cumprindo em cada subtópico (`###`): **D**efinição do zero, **E**xplicação lógica + teste operacional, **A**nalogia + **mínimo 3 exemplos progressivos** (cotidiano, Prefeitura, caso limite), **M**apa de "gêmeos confundíveis", **P**egadinha real ACCESS + Teste de 5s, e **C**onsolidação ativa (Síntese Feynman de 3 linhas + **3 questões diretas de checkpoint ao final de CADA eixo**).
-   * Feche com a **Bateria Final de Questões Reais + Adaptadas** (respeitando a Regra de Simetria `0.65`–`1.35`, zero pistas parentéticas exclusivas na correta e distribuição equilibrada A/B/C/D) e o **Checklist de Fixação**.
-3. **Audite ANTES de Publicar (Fase 5 — Obrigatório):**
-   * Rode `python .agents/audit_lesson.py semana-XX/<arquivo>.md` e zere todos os `[ERRO]` e `[AVISO]`.
-4. **Incorpore ao Site Legado (`aulas-data.js`) e Converta para React `EduKit` (Fases 4 e 5):**
-   * Rode imediatamente `python .agents/sync_lessons.py` para atualizar `aulas-data.js`.
-   * Converta **1-para-1 (Zero Condensação)** seguindo `.agents/GUIA_EDUKIT_REACT.md` para `app-react/src/lessons/semana-XX/<materia>.tsx` (incluindo `<FlipCardsGrid />` em todo eixo denso, `<CompareGrid />`, `<TrapAlert />`, `<StepByStep />`, SVGs quando houver fluxogramas/esquemas, `<FeynmanCard />`, checkpoints e bateria final), registre em `app-react/src/lessons/registry.ts` e valide com `cd app-react && npm run typecheck && npm test && npm run build`.
-5. **Atualize o Checklist (Seção 5 abaixo):** Quando o aluno confirmar que concluiu um tópico ou semana, marque `[x]` e rode `python .agents/sync_db.py mark wX_<materia>`.
+Quando o usuário enviar o Prompt Matriz da Semana $X$:
+1. **Pesquise o escopo real e organize a aula em Eixos (`## EIXO 1:` .. `## EIXO N:`):** Leia o assunto da semana + pré-requisitos, foque no que cai em nível médio / Instituto ACCESS (cortando teoria acadêmica irrelevante) e estruture os eixos em ordem crescente de dependência lógica.
+2. **Crie a pasta `semana-XX/` e salve o `.md` didático:**
+   * Explique primeiro o contexto e o *porquê*, avance **um conceito por vez com exemplos claros logo abaixo** (usando `.edu-ex-list`, `<mark class="hl-...">`, `.edu-component` / `.edu-cards-grid`, quadros comparativos e `<svg>` limpos onde realmente iluminam o raciocínio), e feche cada eixo com **Síntese Feynman de 3 Linhas** (+ 2 a 3 questões de checkpoint ao final de cada eixo quando ajudar a fixar antes do próximo).
+   * Feche a aula com uma **Bateria Final de Questões Reais + Adaptadas** no padrão Instituto ACCESS (`prova-auto/provas-access/` e `13.pdf`..`93.pdf`, **JAMAIS `1.pdf`..`12.pdf`**), respeitando 4 alternativas `(A)`–`(D)` simétricas em tamanho, comandos em CAIXA ALTA e gabarito comentado alternativa por alternativa.
+3. **Audite tecnicamente e incorpore aos sites (`aulas-data.js`):**
+   * Rode `python .agents/audit_lesson.py semana-XX/<arquivo>.md` e garanta que passe sem erros.
+   * Rode imediatamente `python .agents/sync_lessons.py` para publicar no `aulas-data.js` (tanto o site original quanto o app React dividido por Eixos passam a exibir a aula instantaneamente).
+4. **Atualize o Checklist (Seção 5 abaixo):** Somente quando o aluno confirmar que concluiu um tópico ou semana, marque `[x]` e rode `python .agents/sync_db.py mark wX_<materia>`.
 
 ---
 
