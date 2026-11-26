@@ -43,6 +43,7 @@ interface ProgressContextValue {
   totalBlocksCount: number;
   completedExamsCount: number;
   clearSyncError: () => void;
+  retrySync: () => Promise<void>;
   toggleBlock: (blockId: string) => void;
   setBlockDone: (blockId: string, done: boolean) => void;
   toggleWeekCollapse: (weekNum: number) => void;
@@ -75,13 +76,42 @@ interface CloudProgressRow {
   semana_atual: number | null;
 }
 
+function hydrateInitialChecklist(): ChecklistState {
+  const base = hydrateChecklistWithLegacyQuizzes(storage.getChecklist());
+  const localSims = storage.getAllSimuladoStates();
+  if (Object.keys(localSims).length === 0) return base;
+  const mergedSims = mergeCloudAndLocalChecklist(
+    { _simulados: localSims },
+    { _simulados: base._simulados }
+  )._simulados;
+  return {
+    ...base,
+    ...(mergedSims ? { _simulados: mergedSims } : {}),
+  };
+}
+
+function isPlainRecordEqual(a: unknown, b: unknown): boolean {
+  if (Object.is(a, b)) return true;
+  if (typeof a !== typeof b || a === null || b === null || typeof a !== "object") return false;
+  if (Array.isArray(a) || Array.isArray(b)) {
+    if (!Array.isArray(a) || !Array.isArray(b) || a.length !== b.length) return false;
+    return a.every((item, idx) => isPlainRecordEqual(item, b[idx]));
+  }
+  const objA = a as Record<string, unknown>;
+  const objB = b as Record<string, unknown>;
+  const keysA = Object.keys(objA).filter((k) => objA[k] !== undefined);
+  const keysB = Object.keys(objB).filter((k) => objB[k] !== undefined);
+  if (keysA.length !== keysB.length) return false;
+  return keysA.every((k) => Object.prototype.hasOwnProperty.call(objB, k) && isPlainRecordEqual(objA[k], objB[k]));
+}
+
 export function ProgressProvider({ children }: { children: ReactNode }) {
   const { user } = useAuth();
   const { theme, setTheme } = useTheme();
+  const setThemeRef = useRef(setTheme);
+  setThemeRef.current = setTheme;
 
-  const [checklist, setChecklist] = useState<ChecklistState>(() =>
-    hydrateChecklistWithLegacyQuizzes(storage.getChecklist())
-  );
+  const [checklist, setChecklist] = useState<ChecklistState>(() => hydrateInitialChecklist());
   const [examsDone, setExamsDone] = useState<ExamsDoneState>(() => storage.getExamsDone());
   const [collapsedWeeks, setCollapsedWeeks] = useState<Record<number, boolean>>(() =>
     storage.getCollapsedWeeks()
@@ -105,44 +135,155 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
   }, [checklist, examsDone, difficultyNotes, currentWeek]);
 
   const pushTimerRef = useRef<number | null>(null);
+  const hasPendingPushRef = useRef(false);
+  const pullSeqRef = useRef(0);
 
-  const pushProgressNow = useCallback(async () => {
-    if (!user || hydratedUserIdRef.current !== user.id) return;
-    setIsSyncing(true);
-    try {
-      const snap = latestRef.current;
-      await dbQuery(
-        `INSERT INTO concurso_progresso (usuario_id, checklist, provas_feitas, notas_dificuldade, semana_atual, updated_at)
+  const UPSERT_PROGRESS_SQL = `INSERT INTO concurso_progresso (usuario_id, checklist, provas_feitas, notas_dificuldade, semana_atual, updated_at)
          VALUES ($1, $2::jsonb, $3::jsonb, $4, $5, NOW())
          ON CONFLICT (usuario_id) DO UPDATE SET
            checklist = EXCLUDED.checklist,
            provas_feitas = EXCLUDED.provas_feitas,
            notas_dificuldade = EXCLUDED.notas_dificuldade,
            semana_atual = EXCLUDED.semana_atual,
-           updated_at = NOW();`,
-        [
-          user.id,
-          JSON.stringify(snap.checklist),
-          JSON.stringify(snap.examsDone),
-          snap.difficultyNotes.trim(),
-          snap.currentWeek,
-        ]
-      );
+           updated_at = NOW();`;
+
+  const pushProgressNow = useCallback(async () => {
+    if (!user || hydratedUserIdRef.current !== user.id) return;
+    if (pushTimerRef.current) {
+      window.clearTimeout(pushTimerRef.current);
+      pushTimerRef.current = null;
+    }
+    setIsSyncing(true);
+    try {
+      const snap = latestRef.current;
+      await dbQuery(UPSERT_PROGRESS_SQL, [
+        user.id,
+        JSON.stringify(snap.checklist),
+        JSON.stringify(snap.examsDone),
+        snap.difficultyNotes.trim(),
+        snap.currentWeek,
+      ]);
+      hasPendingPushRef.current = false;
       setSyncError(null);
     } catch {
+      hasPendingPushRef.current = true;
       setSyncError("Sem conexão com o servidor. Suas alterações foram salvas localmente.");
     } finally {
       setIsSyncing(false);
     }
-  }, [user]);
+  }, [user, UPSERT_PROGRESS_SQL]);
+
+  const pullAndSync = useCallback(async () => {
+    if (!user) return;
+    const reqId = ++pullSeqRef.current;
+    setIsSyncing(true);
+    try {
+      const res = await dbQuery<CloudProgressRow>(
+        "SELECT checklist, provas_feitas, notas_dificuldade, semana_atual FROM concurso_progresso WHERE usuario_id = $1;",
+        [user.id]
+      );
+      if (pullSeqRef.current !== reqId) return;
+      setSyncError(null);
+
+      // Garante que simulados salvos nas chaves individuais do localStorage entrem na mescla
+      const localBase = latestRef.current.checklist;
+      const localIndividualSims = storage.getAllSimuladoStates();
+      const hydratedLocal =
+        Object.keys(localIndividualSims).length > 0
+          ? mergeCloudAndLocalChecklist({ _simulados: localIndividualSims }, localBase)
+          : localBase;
+
+      let hasLocalDiff = false;
+
+      if (res.rows && res.rows.length > 0) {
+        const row = res.rows[0];
+        const dbChecklist: ChecklistState =
+          typeof row.checklist === "string" ? JSON.parse(row.checklist) : row.checklist || {};
+        const dbProvas: ExamsDoneState =
+          typeof row.provas_feitas === "string"
+            ? JSON.parse(row.provas_feitas)
+            : row.provas_feitas || {};
+
+        const mergedChecklist = mergeCloudAndLocalChecklist(hydratedLocal, dbChecklist);
+        const mergedExams: ExamsDoneState = { ...latestRef.current.examsDone, ...dbProvas };
+
+        hasLocalDiff =
+          !isPlainRecordEqual(mergedChecklist, dbChecklist) ||
+          !isPlainRecordEqual(mergedExams, dbProvas);
+
+        latestRef.current.checklist = mergedChecklist;
+        latestRef.current.examsDone = mergedExams;
+        setChecklist(mergedChecklist);
+        setExamsDone(mergedExams);
+        storage.setChecklist(mergedChecklist);
+        storage.setExamsDone(mergedExams);
+
+        if (mergedChecklist._collapsedWeeks && typeof mergedChecklist._collapsedWeeks === "object") {
+          setCollapsedWeeks(mergedChecklist._collapsedWeeks);
+          storage.setCollapsedWeeks(mergedChecklist._collapsedWeeks);
+        }
+
+        if (mergedChecklist._theme === "dark" || mergedChecklist._theme === "light") {
+          setThemeRef.current(mergedChecklist._theme);
+        }
+
+        if (mergedChecklist._simulados && typeof mergedChecklist._simulados === "object") {
+          for (const [simKey, simState] of Object.entries(mergedChecklist._simulados)) {
+            if (simState) storage.setSimuladoState(simKey, simState);
+          }
+        }
+
+        if (row.notas_dificuldade) {
+          const nextNotes = latestRef.current.difficultyNotes || row.notas_dificuldade || "";
+          latestRef.current.difficultyNotes = nextNotes;
+          setDifficultyNotesState(nextNotes);
+        }
+        if (typeof row.semana_atual === "number" && row.semana_atual >= 1 && row.semana_atual <= 12) {
+          latestRef.current.currentWeek = row.semana_atual;
+          setCurrentWeekState(row.semana_atual);
+        }
+      } else {
+        latestRef.current.checklist = hydratedLocal;
+        setChecklist(hydratedLocal);
+        storage.setChecklist(hydratedLocal);
+        hasLocalDiff = true;
+      }
+
+      hydratedUserIdRef.current = user.id;
+      // Só envia de volta para a nuvem se houver diferença real entre o estado mesclado e o banco
+      if (hasLocalDiff) {
+        await pushProgressNow();
+      }
+    } catch {
+      if (pullSeqRef.current === reqId) {
+        setSyncError("Não foi possível carregar dados da nuvem. Usando progresso local.");
+      }
+    } finally {
+      if (pullSeqRef.current === reqId) setIsSyncing(false);
+    }
+  }, [user, pushProgressNow]);
+
+  const retrySync = useCallback(async () => {
+    if (!user) return;
+    if (hydratedUserIdRef.current !== user.id) {
+      await pullAndSync();
+    } else {
+      await pushProgressNow();
+    }
+  }, [user, pullAndSync, pushProgressNow]);
 
   const scheduleCloudPush = useCallback(() => {
-    if (!user || hydratedUserIdRef.current !== user.id) return;
+    if (!user) return;
+    hasPendingPushRef.current = true;
+    if (hydratedUserIdRef.current !== user.id) {
+      void pullAndSync();
+      return;
+    }
     if (pushTimerRef.current) window.clearTimeout(pushTimerRef.current);
     pushTimerRef.current = window.setTimeout(() => {
       void pushProgressNow();
     }, 650);
-  }, [user, pushProgressNow]);
+  }, [user, pushProgressNow, pullAndSync]);
 
   // Puxar progresso da nuvem ao logar (bloqueando pushes até concluir a hidratação)
   useEffect(() => {
@@ -150,79 +291,49 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
       hydratedUserIdRef.current = null;
       return;
     }
-    let cancelled = false;
     hydratedUserIdRef.current = null;
-
-    async function pull() {
-      setIsSyncing(true);
-      try {
-        const res = await dbQuery<CloudProgressRow>(
-          "SELECT checklist, provas_feitas, notas_dificuldade, semana_atual FROM concurso_progresso WHERE usuario_id = $1;",
-          [user!.id]
-        );
-        if (cancelled) return;
-        setSyncError(null);
-
-        if (res.rows && res.rows.length > 0) {
-          const row = res.rows[0];
-          const dbChecklist: ChecklistState =
-            typeof row.checklist === "string" ? JSON.parse(row.checklist) : row.checklist || {};
-          const dbProvas: ExamsDoneState =
-            typeof row.provas_feitas === "string"
-              ? JSON.parse(row.provas_feitas)
-              : row.provas_feitas || {};
-
-          const mergedChecklist = mergeCloudAndLocalChecklist(latestRef.current.checklist, dbChecklist);
-          const mergedExams: ExamsDoneState = { ...latestRef.current.examsDone, ...dbProvas };
-
-          latestRef.current.checklist = mergedChecklist;
-          latestRef.current.examsDone = mergedExams;
-          setChecklist(mergedChecklist);
-          setExamsDone(mergedExams);
-          storage.setChecklist(mergedChecklist);
-          storage.setExamsDone(mergedExams);
-
-          if (mergedChecklist._collapsedWeeks && typeof mergedChecklist._collapsedWeeks === "object") {
-            setCollapsedWeeks(mergedChecklist._collapsedWeeks);
-            storage.setCollapsedWeeks(mergedChecklist._collapsedWeeks);
-          }
-
-          if (mergedChecklist._theme === "dark" || mergedChecklist._theme === "light") {
-            setTheme(mergedChecklist._theme);
-          }
-
-          if (mergedChecklist._simulados && typeof mergedChecklist._simulados === "object") {
-            for (const [simKey, simState] of Object.entries(mergedChecklist._simulados)) {
-              if (simState) storage.setSimuladoState(simKey, simState);
-            }
-          }
-
-          if (row.notas_dificuldade) {
-            const nextNotes = latestRef.current.difficultyNotes || row.notas_dificuldade || "";
-            latestRef.current.difficultyNotes = nextNotes;
-            setDifficultyNotesState(nextNotes);
-          }
-          if (typeof row.semana_atual === "number" && row.semana_atual >= 1 && row.semana_atual <= 12) {
-            latestRef.current.currentWeek = row.semana_atual;
-            setCurrentWeekState(row.semana_atual);
-          }
-        }
-
-        hydratedUserIdRef.current = user!.id;
-      } catch {
-        if (!cancelled) {
-          setSyncError("Não foi possível carregar dados da nuvem. Usando progresso local.");
-        }
-      } finally {
-        if (!cancelled) setIsSyncing(false);
-      }
-    }
-
-    void pull();
+    void pullAndSync();
     return () => {
-      cancelled = true;
+      pullSeqRef.current++;
     };
-  }, [user, setTheme]);
+  }, [user, pullAndSync]);
+
+  // Descarrega alterações pendentes na nuvem ao fechar/recarregar a aba
+  useEffect(() => {
+    const flushPendingOnExit = () => {
+      if (!user || hydratedUserIdRef.current !== user.id) return;
+      if (!hasPendingPushRef.current && !pushTimerRef.current) return;
+      if (pushTimerRef.current) {
+        window.clearTimeout(pushTimerRef.current);
+        pushTimerRef.current = null;
+      }
+      const snap = latestRef.current;
+      void fetch(API_ENDPOINT, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        keepalive: true,
+        body: JSON.stringify({
+          query: UPSERT_PROGRESS_SQL,
+          params: [
+            user.id,
+            JSON.stringify(snap.checklist),
+            JSON.stringify(snap.examsDone),
+            snap.difficultyNotes.trim(),
+            snap.currentWeek,
+          ],
+        }),
+      }).catch(() => {
+        // Já garantido no localStorage
+      });
+    };
+
+    window.addEventListener("pagehide", flushPendingOnExit);
+    window.addEventListener("beforeunload", flushPendingOnExit);
+    return () => {
+      window.removeEventListener("pagehide", flushPendingOnExit);
+      window.removeEventListener("beforeunload", flushPendingOnExit);
+    };
+  }, [user, UPSERT_PROGRESS_SQL]);
 
   // Sincronizar tema quando o usuário trocar (somente após nuvem hidratada)
   useEffect(() => {
@@ -421,13 +532,19 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
   const saveSimuladoState = useCallback(
     (simId: string, next: SimuladoState) => {
       storage.setSimuladoState(simId, next);
-      mutateChecklist((prev) => ({
-        ...prev,
-        _simulados: {
+      mutateChecklist((prev) => {
+        const nextSimulados: Record<string, SimuladoState> = {
           ...(prev._simulados || {}),
           [simId]: next,
-        },
-      }));
+        };
+        if (simId === "simulado-sem-01-02") {
+          nextSimulados["revisao_simulado_v1"] = next;
+        }
+        return {
+          ...prev,
+          _simulados: nextSimulados,
+        };
+      });
     },
     [mutateChecklist]
   );
@@ -442,21 +559,22 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
     ) => {
       if (deltaSeconds <= 0 && !countSession) return;
 
-      const nextStudyTime = addStudyDelta(
-        latestRef.current.checklist._studyTime,
-        deltaSeconds,
-        kind,
-        target,
-        countSession
-      );
-      const nextChecklist: ChecklistState = {
-        ...latestRef.current.checklist,
-        _studyTime: nextStudyTime,
-      };
-
-      latestRef.current.checklist = nextChecklist;
-      storage.setChecklist(nextChecklist);
-      setChecklist(nextChecklist);
+      setChecklist((prev) => {
+        const nextStudyTime = addStudyDelta(
+          prev._studyTime,
+          deltaSeconds,
+          kind,
+          target,
+          countSession
+        );
+        const nextChecklist: ChecklistState = {
+          ...prev,
+          _studyTime: nextStudyTime,
+        };
+        latestRef.current.checklist = nextChecklist;
+        storage.setChecklist(nextChecklist);
+        return nextChecklist;
+      });
 
       if (options?.flushKeepalive) {
         if (user && hydratedUserIdRef.current === user.id) {
@@ -466,14 +584,7 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
             headers: { "Content-Type": "application/json" },
             keepalive: true,
             body: JSON.stringify({
-              query: `INSERT INTO concurso_progresso (usuario_id, checklist, provas_feitas, notas_dificuldade, semana_atual, updated_at)
-                      VALUES ($1, $2::jsonb, $3::jsonb, $4, $5, NOW())
-                      ON CONFLICT (usuario_id) DO UPDATE SET
-                        checklist = EXCLUDED.checklist,
-                        provas_feitas = EXCLUDED.provas_feitas,
-                        notas_dificuldade = EXCLUDED.notas_dificuldade,
-                        semana_atual = EXCLUDED.semana_atual,
-                        updated_at = NOW();`,
+              query: UPSERT_PROGRESS_SQL,
               params: [
                 user.id,
                 JSON.stringify(snap.checklist),
@@ -491,7 +602,7 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
 
       scheduleCloudPush();
     },
-    [user, scheduleCloudPush]
+    [user, scheduleCloudPush, UPSERT_PROGRESS_SQL]
   );
 
   const { completedBlocksCount, totalBlocksCount, completedExamsCount } = useMemo(() => {
@@ -530,6 +641,7 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
         totalBlocksCount,
         completedExamsCount,
         clearSyncError,
+        retrySync,
         toggleBlock,
         setBlockDone,
         toggleWeekCollapse,

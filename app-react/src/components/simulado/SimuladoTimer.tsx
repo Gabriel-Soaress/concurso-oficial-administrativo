@@ -28,17 +28,19 @@ export function SimuladoTimer({ initialSeconds, onSyncSeconds }: SimuladoTimerPr
   useEffect(() => {
     if (!running) return;
     const id = window.setInterval(() => {
-      setSeconds((prev) => {
-        const next = prev + 1;
-        if (next % 10 === 0) onSyncSeconds(next);
-        return next;
-      });
+      setSeconds((prev) => prev + 1);
     }, 1000);
     return () => {
       window.clearInterval(id);
       onSyncSeconds(secondsRef.current);
     };
   }, [running, onSyncSeconds]);
+
+  useEffect(() => {
+    if (running && seconds > 0 && seconds % 10 === 0) {
+      onSyncSeconds(seconds);
+    }
+  }, [running, seconds, onSyncSeconds]);
 
   const handlePause = () => {
     setRunning(false);

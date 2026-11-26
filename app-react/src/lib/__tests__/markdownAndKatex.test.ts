@@ -144,4 +144,13 @@ describe("renderRichMarkdown (tabelas, tabelas indentadas e blocos ASCII)", () =
     expect(html).toContain("&lt;mark class=&quot;evil&quot;&gt;".replace(/&quot;/g, '"'));
     expect(html).not.toContain('<mark class="evil">');
   });
+
+  it("processa títulos #####, #hashtag sem espaço e pipe solto sem entrar em loop infinito", () => {
+    const md = "##### Título Nível 5\n\nTexto com #hashtag isolada no início:\n#semespaco\n\n| pipe solto sem fechar";
+    const html = renderRichMarkdown(md, "t_safe_loop");
+    expect(html).toContain("<h5");
+    expect(html).toContain("Título Nível 5");
+    expect(html).toContain("#semespaco");
+    expect(html).toContain("| pipe solto sem fechar");
+  });
 });

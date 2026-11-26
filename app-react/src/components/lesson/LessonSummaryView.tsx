@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {
   ArrowRight,
   BookOpen,
@@ -6,6 +6,7 @@ import {
   Circle,
   Download,
   ListChecks,
+  ListTree,
   Play,
   Sparkles,
 } from "lucide-react";
@@ -34,6 +35,7 @@ export function LessonSummaryView({
   onDownloadFullLesson,
   onDownloadAxis,
 }: LessonSummaryViewProps) {
+  const navigate = useNavigate();
   const firstPendingAxis = parsed.axes.find((a) => !completedAxes.includes(a.id));
   const doneCount = parsed.axes.filter((a) => completedAxes.includes(a.id)).length;
   const allAxesDone = doneCount === parsed.axes.length && parsed.axes.length > 0;
@@ -50,6 +52,30 @@ export function LessonSummaryView({
         : `Continuar de onde parei · Eixo ${firstPendingAxis?.index ?? 1}`;
 
   const totalCheckpointQ = parsed.axes.reduce((acc, a) => acc + a.checkpointQuestions.length, 0);
+
+  const introBody = parsed.introMd
+    ? parsed.introMd
+        .replace(/^#\s+.+\n?/, "")
+        .replace(/(?:\n?---+\s*)+$/, "")
+        .trim()
+    : "";
+  const summaryBody = parsed.summaryMd
+    ? parsed.summaryMd.replace(/(?:\n?---+\s*)+$/, "").trim()
+    : "";
+
+  const handleSummaryAnchorClick = (slug: string) => {
+    const axisMatch = slug.match(/^(?:eixo|bloco)-(\d+)/i);
+    if (axisMatch) {
+      navigate(`${baseUrl}/eixo/${axisMatch[1]}`);
+      return;
+    }
+    if (
+      /^(?:bateria|quest[õo]es|se[çc][ãa]o-de-fixa|checklist)/i.test(slug) &&
+      parsed.finalQuestions.length > 0
+    ) {
+      navigate(`${baseUrl}/questoes`);
+    }
+  };
 
   return (
     <div className="max-w-4xl mx-auto space-y-6">
@@ -118,15 +144,47 @@ export function LessonSummaryView({
         </div>
       </div>
 
-      {/* Mapa de Eixos (Sumário Interativo) */}
+      {/* 1. Contexto & Introdução */}
+      {introBody.length > 20 && (
+        <div className="surface rounded-2xl p-5 sm:p-7 border border-tech">
+          <div className="text-xs font-mono uppercase tracking-wider font-bold text-mut mb-3">
+            Contexto & Introdução
+          </div>
+          <MarkdownRenderer
+            content={introBody}
+            contextId={`${docId}_intro`}
+            docId={docId}
+          />
+        </div>
+      )}
+
+      {/* 2. Sumário da Aula */}
+      {summaryBody.length > 0 && (
+        <div className="surface rounded-2xl p-5 sm:p-7 border border-tech space-y-3">
+          <div className="flex items-center gap-2">
+            <ListTree className="w-4 h-4 text-indigo-500 shrink-0" />
+            <h2 className="text-base sm:text-lg font-extrabold text-pri">
+              Sumário da Aula
+            </h2>
+          </div>
+          <MarkdownRenderer
+            content={summaryBody}
+            contextId={`${docId}_summary`}
+            docId={docId}
+            onAnchorClick={handleSummaryAnchorClick}
+          />
+        </div>
+      )}
+
+      {/* 3. Atalho para os Eixos */}
       <div className="surface rounded-2xl p-5 sm:p-6 border border-tech space-y-4">
         <div className="flex items-center justify-between gap-2">
           <div>
             <h2 className="text-base sm:text-lg font-extrabold text-pri">
-              Sumário & Checkpoints da Aula
+              Atalho para os Eixos
             </h2>
             <p className="text-xs text-mut mt-0.5">
-              Avance eixo por eixo sem sobrecarga visual, ou clique diretamente em qualquer tópico para revisar.
+              Avance eixo por eixo sem sobrecarga visual, ou clique diretamente em qualquer etapa para ir direto ao conteúdo.
             </p>
           </div>
         </div>
@@ -227,20 +285,6 @@ export function LessonSummaryView({
           )}
         </div>
       </div>
-
-      {/* Prólogo / Introdução (se houver conteúdo relevante além do H1) */}
-      {parsed.introMd && parsed.introMd.replace(/^#\s+.+$/m, "").trim().length > 20 && (
-        <div className="surface rounded-2xl p-5 sm:p-7 border border-tech">
-          <div className="text-xs font-mono uppercase tracking-wider font-bold text-mut mb-3">
-            Introdução & Contexto
-          </div>
-          <MarkdownRenderer
-            content={parsed.introMd.replace(/^#\s+.+\n?/, "")}
-            contextId={`${docId}_intro`}
-            docId={docId}
-          />
-        </div>
-      )}
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import type { ChecklistState, DocAxisProgress, LegacyQuizEntry, QuizDocState } from "@/types";
+import type { ChecklistState, DocAxisProgress, LegacyQuizEntry, QuizDocState, SimuladoState } from "@/types";
 import { mergeStudyTimeStats } from "./studyTime";
 
 /**
@@ -136,6 +136,56 @@ function mergeAxesProgress(
   return merged;
 }
 
+function countAnswered(sim?: SimuladoState): number {
+  if (!sim?.answers) return 0;
+  let n = 0;
+  for (const val of Object.values(sim.answers)) {
+    if (val) n++;
+  }
+  return n;
+}
+
+function mergeSimuladoState(localSim?: SimuladoState, cloudSim?: SimuladoState): SimuladoState | undefined {
+  if (!localSim) return cloudSim;
+  if (!cloudSim) return localSim;
+
+  const localHasMore = countAnswered(localSim) > countAnswered(cloudSim);
+  const answers = localHasMore
+    ? { ...(cloudSim.answers || {}), ...(localSim.answers || {}) }
+    : { ...(localSim.answers || {}), ...(cloudSim.answers || {}) };
+  const eliminated = localHasMore
+    ? { ...(cloudSim.eliminated || {}), ...(localSim.eliminated || {}) }
+    : { ...(localSim.eliminated || {}), ...(cloudSim.eliminated || {}) };
+  const correctedMaterias = {
+    ...(localSim.correctedMaterias || {}),
+    ...(cloudSim.correctedMaterias || {}),
+  };
+
+  return {
+    ...(localHasMore ? cloudSim : localSim),
+    ...(localHasMore ? localSim : cloudSim),
+    answers,
+    eliminated,
+    correctedMaterias,
+    corrected: Boolean(localSim.corrected || cloudSim.corrected),
+    elapsedSeconds: Math.max(localSim.elapsedSeconds || 0, cloudSim.elapsedSeconds || 0),
+  };
+}
+
+function mergeSimuladosMap(
+  localSims?: Record<string, SimuladoState>,
+  cloudSims?: Record<string, SimuladoState>
+): Record<string, SimuladoState> | undefined {
+  if (!localSims && !cloudSims) return undefined;
+  const allIds = new Set([...Object.keys(localSims || {}), ...Object.keys(cloudSims || {})]);
+  const merged: Record<string, SimuladoState> = {};
+  for (const simId of allIds) {
+    const m = mergeSimuladoState(localSims?.[simId], cloudSims?.[simId]);
+    if (m) merged[simId] = m;
+  }
+  return merged;
+}
+
 /**
  * Mescla o checklist local com o da nuvem dando precedência à nuvem, mantendo
  * intactos `_quizzes`, `_simulados`, `_quizStore`, `_axesProgress` e hidratando
@@ -165,6 +215,7 @@ export function mergeCloudAndLocalChecklist(
       : undefined;
 
   const mergedStudyTime = mergeStudyTimeStats(local._studyTime, cloud._studyTime);
+  const mergedSimulados = mergeSimuladosMap(local._simulados, cloud._simulados);
 
   const combined: ChecklistState = {
     ...local,
@@ -173,9 +224,7 @@ export function mergeCloudAndLocalChecklist(
     ...(Object.keys(mergedQuizStore).length > 0 ? { _quizStore: mergedQuizStore } : {}),
     ...(mergedAxes ? { _axesProgress: mergedAxes } : {}),
     ...(mergedStudyTime ? { _studyTime: mergedStudyTime } : {}),
-    ...(local._simulados || cloud._simulados
-      ? { _simulados: { ...(local._simulados || {}), ...(cloud._simulados || {}) } }
-      : {}),
+    ...(mergedSimulados ? { _simulados: mergedSimulados } : {}),
   };
 
   return hydrateChecklistWithLegacyQuizzes(combined);

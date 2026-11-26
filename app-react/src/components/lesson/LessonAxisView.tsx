@@ -145,7 +145,7 @@ export function LessonAxisView({
           className="btn-secondary !py-2.5 !px-4 !text-xs sm:!text-sm"
         >
           <ArrowLeft className="w-4 h-4" />
-          <span>{axis.index === 1 ? "Voltar ao Sumário" : `Eixo ${axis.index - 1}`}</span>
+          <span>{axis.index === 1 ? "Voltar ao Início" : `Eixo ${axis.index - 1}`}</span>
         </button>
 
         <div className="text-center">

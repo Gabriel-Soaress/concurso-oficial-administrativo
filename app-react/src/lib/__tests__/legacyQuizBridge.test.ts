@@ -117,4 +117,44 @@ describe("legacyQuizBridge", () => {
     expect(merged._quizStore?.w4_esp_doc0?.mcAnswers?.final_q1).toBe("A");
     expect(merged._quizStore?.w4_esp_doc0?.mcAnswers?.rich_final_q1).toBe("A");
   });
+
+  it("preserva simulados respondidos localmente ao mesclar com a nuvem", () => {
+    const local: ChecklistState = {
+      _simulados: {
+        "simulado-sem-01-04": {
+          answers: { pt3_q1: "A", pt3_q2: "C" },
+          eliminated: { pt3_q1_B: true },
+          corrected: false,
+          correctedMaterias: { portugues: true },
+          elapsedSeconds: 320,
+        },
+        "simulado-sem-01-03": {
+          answers: { pt2_q1: "B" },
+          eliminated: {},
+          corrected: false,
+          correctedMaterias: {},
+          elapsedSeconds: 10,
+        },
+      },
+    };
+
+    const cloud: ChecklistState = {
+      _simulados: {
+        "simulado-sem-01-03": {
+          answers: { pt2_q1: "A", pt2_q2: "D" },
+          eliminated: {},
+          corrected: true,
+          correctedMaterias: { portugues: true },
+          elapsedSeconds: 500,
+        },
+      },
+    };
+
+    const merged = mergeCloudAndLocalChecklist(local, cloud);
+
+    expect(merged._simulados?.["simulado-sem-01-04"]?.answers).toEqual({ pt3_q1: "A", pt3_q2: "C" });
+    expect(merged._simulados?.["simulado-sem-01-04"]?.correctedMaterias).toEqual({ portugues: true });
+    expect(merged._simulados?.["simulado-sem-01-03"]?.answers).toEqual({ pt2_q1: "A", pt2_q2: "D" });
+    expect(merged._simulados?.["simulado-sem-01-03"]?.corrected).toBe(true);
+  });
 });

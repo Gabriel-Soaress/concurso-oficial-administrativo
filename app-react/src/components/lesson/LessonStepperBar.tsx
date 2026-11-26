@@ -58,8 +58,8 @@ export function LessonStepperBar({
       {
         key: "summary",
         to: baseUrl,
-        shortLabel: isInteractiveModule ? "Sumário · Interativa" : "Sumário",
-        fullLabel: "Visão Geral & Sumário da Aula",
+        shortLabel: isInteractiveModule ? "Início · Interativa" : "Início",
+        fullLabel: "Início & Visão Geral da Aula",
         kind: "summary",
         isDone: false,
       },
@@ -236,8 +236,8 @@ export function LessonStepperBar({
               <span>
                 {activeStep === "summary"
                   ? isInteractiveModule
-                    ? "Sumário · Aula Interativa"
-                    : "Visão Geral & Sumário"
+                    ? "Início · Aula Interativa"
+                    : "Início · Visão Geral da Aula"
                   : activeStep === "questoes"
                     ? "Etapa Final · Bateria de Questões"
                     : `Eixo ${activeStep} de ${axes.length}`}
@@ -265,7 +265,7 @@ export function LessonStepperBar({
               }`}
             >
               <Flag className="w-3 h-3" />
-              <span>Sumário</span>
+              <span>Início</span>
             </Link>
 
             {axes.map((axis) => {

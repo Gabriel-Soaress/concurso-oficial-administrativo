@@ -190,7 +190,7 @@ export function RichLessonView({
             <div>
               <h2 className="text-base sm:text-lg font-extrabold text-pri flex items-center gap-2">
                 <Layers className="w-5 h-5 text-indigo-500" />
-                <span>Sumário & Checkpoints por Eixo</span>
+                <span>Atalho para os Eixos & Checkpoints</span>
               </h2>
               <p className="text-xs text-mut mt-0.5">
                 Cada eixo traz teoria visual focada + 3 questões diretas para fixar na hora.
@@ -385,7 +385,7 @@ export function RichLessonView({
                   className="btn-secondary !py-2.5 !px-4 !text-xs sm:!text-sm"
                 >
                   <ArrowLeft className="w-4 h-4" />
-                  <span>{currentAxis.index === 1 ? "Voltar ao Sumário" : `Eixo ${currentAxis.index - 1}`}</span>
+                  <span>{currentAxis.index === 1 ? "Voltar ao Início" : `Eixo ${currentAxis.index - 1}`}</span>
                 </button>
 
                 <div className="text-center">

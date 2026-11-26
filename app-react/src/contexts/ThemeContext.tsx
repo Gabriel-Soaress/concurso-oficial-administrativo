@@ -1,4 +1,4 @@
-import { createContext, useContext, useEffect, useState, type ReactNode } from "react";
+import { createContext, useCallback, useContext, useEffect, useState, type ReactNode } from "react";
 import { storage } from "@/services/storage";
 
 export type ThemeMode = "light" | "dark";
@@ -19,8 +19,11 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
     storage.setTheme(theme);
   }, [theme]);
 
-  const setTheme = (next: ThemeMode) => setThemeState(next);
-  const toggleTheme = () => setThemeState((prev) => (prev === "dark" ? "light" : "dark"));
+  const setTheme = useCallback((next: ThemeMode) => setThemeState(next), []);
+  const toggleTheme = useCallback(
+    () => setThemeState((prev) => (prev === "dark" ? "light" : "dark")),
+    []
+  );
 
   return (
     <ThemeContext.Provider value={{ theme, setTheme, toggleTheme }}>

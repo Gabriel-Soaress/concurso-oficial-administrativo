@@ -20,5 +20,9 @@ export async function dbQuery<T = Record<string, unknown>>(
     throw new Error(`HTTP ${response.status}: ${errText || "Falha na API"}`);
   }
 
-  return (await response.json()) as DbQueryResponse<T>;
+  const data = (await response.json()) as DbQueryResponse<T>;
+  if (data.error) {
+    throw new Error(data.error);
+  }
+  return data;
 }

@@ -1,8 +1,8 @@
-import { AlertCircle, X } from "lucide-react";
+import { AlertCircle, RefreshCw, X } from "lucide-react";
 import { useProgress } from "@/contexts/ProgressContext";
 
 export function SyncErrorBanner() {
-  const { syncError, clearSyncError } = useProgress();
+  const { syncError, clearSyncError, retrySync, isSyncing } = useProgress();
   if (!syncError) return null;
 
   return (
@@ -11,6 +11,15 @@ export function SyncErrorBanner() {
       <div className="flex-1 text-xs">
         <div className="font-bold text-rose-600 dark:text-rose-400">Falha ao sincronizar progresso</div>
         <div className="text-sec mt-0.5 leading-relaxed">{syncError}</div>
+        <button
+          type="button"
+          onClick={() => void retrySync()}
+          disabled={isSyncing}
+          className="mt-2 inline-flex items-center gap-1.5 text-[11px] font-bold text-indigo-600 dark:text-indigo-400 hover:underline disabled:opacity-50 cursor-pointer"
+        >
+          <RefreshCw className={`w-3 h-3 ${isSyncing ? "animate-spin" : ""}`} />
+          <span>{isSyncing ? "Sincronizando..." : "Tentar sincronizar agora"}</span>
+        </button>
       </div>
       <button
         type="button"

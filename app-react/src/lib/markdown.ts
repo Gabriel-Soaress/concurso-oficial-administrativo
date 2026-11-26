@@ -448,7 +448,7 @@ function renderRichMarkdownStructure(
       continue;
     }
 
-    const hMatch = trimmed.match(/^(#{1,4})\s+(.+)$/);
+    const hMatch = trimmed.match(/^(#{1,6})\s+(.+)$/);
     if (hMatch) {
       const level = hMatch[1].length;
       const titleRaw = hMatch[2];
@@ -464,10 +464,12 @@ function renderRichMarkdownStructure(
         );
       } else if (level === 3) {
         out.push(`<h3 id="${slug}" class="text-base sm:text-lg font-bold pt-3 pb-1">${formattedTitle}</h3>`);
-      } else {
+      } else if (level === 4) {
         out.push(
           `<h4 id="${slug}" class="text-sm sm:text-base font-bold pt-2 text-indigo-600 dark:text-indigo-400">${formattedTitle}</h4>`
         );
+      } else {
+        out.push(`<h5 id="${slug}" class="text-sm font-bold pt-2 text-pri">${formattedTitle}</h5>`);
       }
       i++;
       continue;
@@ -555,8 +557,8 @@ function renderRichMarkdownStructure(
     while (
       i < lines.length &&
       lines[i].trim() !== "" &&
-      !lines[i].trim().startsWith("#") &&
-      !lines[i].trim().startsWith("|") &&
+      !/^#{1,6}\s+/.test(lines[i].trim()) &&
+      !(lines[i].trim().startsWith("|") && lines[i].trim().endsWith("|")) &&
       !/^---+$/.test(lines[i].trim()) &&
       !/^(\*|-|\d+\.)\s+/.test(lines[i].trim()) &&
       !/^@@(CALLOUT_BLOCK|CODE_BLOCK|DETAILS_BLOCK|RAW_HTML_TOKEN)_\d+@@$/.test(lines[i].trim())
@@ -568,6 +570,12 @@ function renderRichMarkdownStructure(
       out.push(
         `<p class="text-[15px] sm:text-base leading-relaxed text-pri font-normal my-3">${paraLines.join("<br/>")}</p>`
       );
+    } else {
+      // Salvaguarda anti-loop caso alguma linha isolada não case nos blocos acima
+      out.push(
+        `<p class="text-[15px] sm:text-base leading-relaxed text-pri font-normal my-3">${formatInlineMd(trimmed)}</p>`
+      );
+      i++;
     }
   }
 

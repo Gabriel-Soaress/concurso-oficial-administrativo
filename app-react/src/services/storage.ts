@@ -130,4 +130,35 @@ export const storage = {
       safeSet(STORAGE_KEYS.LEGACY_SIM_01, state);
     }
   },
+
+  getAllSimuladoStates(): Record<string, SimuladoState> {
+    const result: Record<string, SimuladoState> = {};
+    try {
+      for (let i = 0; i < localStorage.length; i++) {
+        const key = localStorage.key(i);
+        if (!key || !key.startsWith(STORAGE_KEYS.SIMULADO_PREFIX)) continue;
+        const simId = key.slice(STORAGE_KEYS.SIMULADO_PREFIX.length);
+        if (!simId) continue;
+        const parsed = safeParse<Partial<SimuladoState> | null>(localStorage.getItem(key), null);
+        if (!parsed || typeof parsed !== "object") continue;
+        const hasData =
+          Object.keys(parsed.answers || {}).length > 0 ||
+          Object.keys(parsed.eliminated || {}).length > 0 ||
+          Object.keys(parsed.correctedMaterias || {}).length > 0 ||
+          Boolean(parsed.corrected) ||
+          (typeof parsed.elapsedSeconds === "number" && parsed.elapsedSeconds > 0);
+        if (!hasData) continue;
+        result[simId] = {
+          answers: parsed.answers || {},
+          eliminated: parsed.eliminated || {},
+          corrected: Boolean(parsed.corrected),
+          correctedMaterias: parsed.correctedMaterias || {},
+          elapsedSeconds: typeof parsed.elapsedSeconds === "number" ? parsed.elapsedSeconds : 0,
+        };
+      }
+    } catch {
+      // Ignora erro de acesso ao localStorage
+    }
+    return result;
+  },
 };

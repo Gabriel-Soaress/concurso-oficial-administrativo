@@ -9,9 +9,10 @@ interface MarkdownRendererProps {
   contextId: string;
   docId?: string;
   className?: string;
+  onAnchorClick?: (slug: string) => void;
 }
 
-export function MarkdownRenderer({ content, contextId, docId, className = "" }: MarkdownRendererProps) {
+export function MarkdownRenderer({ content, contextId, docId, className = "", onAnchorClick }: MarkdownRendererProps) {
   const { getQuizDoc, updateQuizDoc } = useProgress();
   const [zoomDiagram, setZoomDiagram] = useState<ZoomDiagramPayload | null>(null);
 
@@ -46,7 +47,11 @@ export function MarkdownRenderer({ content, contextId, docId, className = "" }: 
       const slug = anchor.dataset.anchorSlug;
       if (slug) {
         const el = document.getElementById(slug);
-        if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+        if (el) {
+          el.scrollIntoView({ behavior: "smooth", block: "start" });
+        } else if (onAnchorClick) {
+          onAnchorClick(slug);
+        }
       }
       return;
     }

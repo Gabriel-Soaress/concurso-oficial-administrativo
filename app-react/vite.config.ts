@@ -69,4 +69,14 @@ export default defineConfig({
       },
     },
   },
+  preview: {
+    port: 4173,
+    proxy: {
+      "/api/db": {
+        target: "https://concurso-oficial-administrativo.vercel.app",
+        changeOrigin: true,
+        secure: true,
+      },
+    },
+  },
 });
