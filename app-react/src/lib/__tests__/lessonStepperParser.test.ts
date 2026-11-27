@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import fs from "node:fs";
 import path from "node:path";
 import { parseLessonIntoAxes } from "../lessonStepperParser";
+import { renderRichMarkdown } from "../markdown";
 
 describe("parseLessonIntoAxes", () => {
   it("divide uma aula com Eixos + 3 questões diretas por eixo + Bateria Final", () => {
@@ -96,5 +97,45 @@ Explicação final.
     expect(parsed.axes.length).toBe(3);
     expect(parsed.finalQuestions.length).toBeGreaterThanOrEqual(10);
     expect(parsed.checklistMd).toContain("Checklist");
+  });
+
+  it("divide corretamente a lista de fixação da Semana 05 em 4 blocos com 40 questões e gráficos SVG zoomáveis", () => {
+    const filePath = path.resolve(
+      __dirname,
+      "../../../../semana-05/exercicios_fixacao_equacoes_inequacoes_semana_05.md"
+    );
+    const md = fs.readFileSync(filePath, "utf8");
+    const parsed = parseLessonIntoAxes(md);
+
+    expect(parsed.hasAxes).toBe(true);
+    expect(parsed.axes).toHaveLength(4);
+    expect(parsed.finalQuestions).toHaveLength(0);
+
+    for (const axis of parsed.axes) {
+      expect(axis.checkpointQuestions).toHaveLength(10);
+      for (const q of axis.checkpointQuestions) {
+        expect(Object.keys(q.options).sort()).toEqual(["A", "B", "C", "D"]);
+      }
+    }
+
+    const svgCountBloco3 = parsed.axes[2].checkpointQuestions.filter((q) =>
+      q.statement.includes("<svg")
+    ).length;
+    const svgCountBloco4 = parsed.axes[3].checkpointQuestions.filter((q) =>
+      q.statement.includes("<svg")
+    ).length;
+
+    expect(svgCountBloco3).toBe(5);
+    expect(svgCountBloco4).toBe(6);
+
+    for (const axis of [parsed.axes[2], parsed.axes[3]]) {
+      for (const q of axis.checkpointQuestions) {
+        if (q.statement.includes("<svg")) {
+          const html = renderRichMarkdown(q.statement, `test_q${q.num}`);
+          expect(html).toContain("<svg");
+          expect(html).toContain('data-zoom-diagram="true"');
+        }
+      }
+    }
   });
 });

@@ -1,7 +1,10 @@
+import { useState, type KeyboardEvent, type MouseEvent } from "react";
 import { CheckCircle2, ChevronDown, ChevronUp, RotateCcw, Scissors, XCircle } from "lucide-react";
 import type { MCQuestion } from "@/types";
 import { useProgress } from "@/contexts/ProgressContext";
+import { extractZoomPayload } from "@/lib/diagramZoom";
 import { renderInlineMarkdown, renderRichMarkdown } from "@/lib/markdown";
+import { DiagramZoomModal, type ZoomDiagramPayload } from "./DiagramZoomModal";
 
 interface MCQuestionListProps {
   docId: string;
@@ -21,6 +24,7 @@ export function MCQuestionList({
   compact = false,
 }: MCQuestionListProps) {
   const { getQuizDoc, updateQuizDoc } = useProgress();
+  const [zoomDiagram, setZoomDiagram] = useState<ZoomDiagramPayload | null>(null);
   const docState = getQuizDoc(docId);
 
   const answers = docState.mcAnswers || {};
@@ -131,6 +135,27 @@ export function MCQuestionList({
     return checkedMap[k] && answers[k] === q.answer;
   }).length;
 
+  const handleDiagramClick = (e: MouseEvent<HTMLDivElement>) => {
+    const target = e.target as HTMLElement;
+    const zoomWrap = target.closest<HTMLElement>("[data-zoom-diagram]");
+    if (zoomWrap) {
+      const payload = extractZoomPayload(zoomWrap);
+      if (payload) setZoomDiagram(payload);
+    }
+  };
+
+  const handleDiagramKeyDown = (e: KeyboardEvent<HTMLDivElement>) => {
+    if (e.key !== "Enter" && e.key !== " ") return;
+    const target = e.target as HTMLElement;
+    const zoomWrap = target.closest<HTMLElement>("[data-zoom-diagram]");
+    if (!zoomWrap) return;
+    const payload = extractZoomPayload(zoomWrap);
+    if (payload) {
+      e.preventDefault();
+      setZoomDiagram(payload);
+    }
+  };
+
   const pct = checkedCount > 0 ? Math.round((correctCount / checkedCount) * 100) : 0;
 
   return (
@@ -176,7 +201,7 @@ export function MCQuestionList({
       )}
 
       {/* Lista de Questões */}
-      <div className="space-y-4">
+      <div className="space-y-4" onClick={handleDiagramClick} onKeyDown={handleDiagramKeyDown}>
         {questions.map((q) => {
           const k = qKey(q.num);
           const selected = answers[k] || "";
@@ -356,6 +381,8 @@ export function MCQuestionList({
           );
         })}
       </div>
+
+      <DiagramZoomModal diagram={zoomDiagram} onClose={() => setZoomDiagram(null)} />
     </div>
   );
 }
