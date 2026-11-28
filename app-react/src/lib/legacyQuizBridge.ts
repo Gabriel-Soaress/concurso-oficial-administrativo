@@ -103,8 +103,34 @@ export function hydrateChecklistWithLegacyQuizzes(checklist: ChecklistState): Ch
   };
 }
 
+function compactQuizDocState(doc: QuizDocState): QuizDocState {
+  const compact: QuizDocState = {};
+  const mapKeys = [
+    "mcAnswers",
+    "mcChecked",
+    "mcEliminated",
+    "mcOpenCommentary",
+    "wsInputs",
+    "wsChecked",
+    "innerChecks",
+  ] as const;
+
+  for (const key of mapKeys) {
+    const val = doc[key];
+    if (val && Object.keys(val).length > 0) {
+      (compact as Record<string, unknown>)[key] = val;
+    }
+  }
+
+  if (typeof doc.mcSubmittedAll === "boolean") compact.mcSubmittedAll = doc.mcSubmittedAll;
+  if (typeof doc.wsSubmittedAll === "boolean") compact.wsSubmittedAll = doc.wsSubmittedAll;
+  if (typeof doc.wsRevealedAll === "boolean") compact.wsRevealedAll = doc.wsRevealedAll;
+
+  return compact;
+}
+
 function mergeQuizDocState(localDoc: QuizDocState = {}, cloudDoc: QuizDocState = {}): QuizDocState {
-  return {
+  return compactQuizDocState({
     ...localDoc,
     ...cloudDoc,
     mcAnswers: { ...(localDoc.mcAnswers || {}), ...(cloudDoc.mcAnswers || {}) },
@@ -114,7 +140,13 @@ function mergeQuizDocState(localDoc: QuizDocState = {}, cloudDoc: QuizDocState =
     wsInputs: { ...(localDoc.wsInputs || {}), ...(cloudDoc.wsInputs || {}) },
     wsChecked: { ...(localDoc.wsChecked || {}), ...(cloudDoc.wsChecked || {}) },
     innerChecks: { ...(localDoc.innerChecks || {}), ...(cloudDoc.innerChecks || {}) },
-  };
+  });
+}
+
+function parseIsoTimeMs(iso?: string): number {
+  if (!iso) return NaN;
+  const ms = Date.parse(iso);
+  return Number.isFinite(ms) ? ms : NaN;
 }
 
 function mergeAxesProgress(
@@ -127,9 +159,24 @@ function mergeAxesProgress(
     const l = localAxes[docId];
     const c = cloudAxes[docId];
     const completed = Array.from(new Set([...(l?.completedAxes || []), ...(c?.completedAxes || [])]));
+
+    const lMs = parseIsoTimeMs(l?.completedAt);
+    const cMs = parseIsoTimeMs(c?.completedAt);
+
+    let preferLocal = false;
+    if (!Number.isNaN(lMs) && !Number.isNaN(cMs)) {
+      preferLocal = lMs !== cMs ? lMs > cMs : (l?.completedAxes?.length || 0) > (c?.completedAxes?.length || 0);
+    } else if (!Number.isNaN(lMs)) {
+      preferLocal = true;
+    } else if (!Number.isNaN(cMs)) {
+      preferLocal = false;
+    } else {
+      preferLocal = (l?.completedAxes?.length || 0) > (c?.completedAxes?.length || 0);
+    }
+
+    const base = preferLocal ? { ...(c || {}), ...(l || {}) } : { ...(l || {}), ...(c || {}) };
     merged[docId] = {
-      ...(l || {}),
-      ...(c || {}),
+      ...base,
       completedAxes: completed,
     };
   }

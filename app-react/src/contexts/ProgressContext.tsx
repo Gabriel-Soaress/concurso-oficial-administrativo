@@ -21,6 +21,12 @@ import { storage } from "@/services/storage";
 import { dbQuery } from "@/services/db";
 import { API_ENDPOINT } from "@/config/constants";
 import { hydrateChecklistWithLegacyQuizzes, mergeCloudAndLocalChecklist } from "@/lib/legacyQuizBridge";
+import {
+  UPSERT_PROGRESS_SQL,
+  buildKeepaliveExitRequestBody,
+  isPlainRecordEqual,
+  type ProgressSnapshot,
+} from "@/lib/progressSync";
 import { addStudyDelta } from "@/lib/studyTime";
 import { useAuth } from "./AuthContext";
 import { useTheme } from "./ThemeContext";
@@ -76,6 +82,8 @@ interface CloudProgressRow {
   semana_atual: number | null;
 }
 
+const VISIBILITY_PULL_STALE_MS = 30_000;
+
 function hydrateInitialChecklist(): ChecklistState {
   const base = hydrateChecklistWithLegacyQuizzes(storage.getChecklist());
   const localSims = storage.getAllSimuladoStates();
@@ -88,21 +96,6 @@ function hydrateInitialChecklist(): ChecklistState {
     ...base,
     ...(mergedSims ? { _simulados: mergedSims } : {}),
   };
-}
-
-function isPlainRecordEqual(a: unknown, b: unknown): boolean {
-  if (Object.is(a, b)) return true;
-  if (typeof a !== typeof b || a === null || b === null || typeof a !== "object") return false;
-  if (Array.isArray(a) || Array.isArray(b)) {
-    if (!Array.isArray(a) || !Array.isArray(b) || a.length !== b.length) return false;
-    return a.every((item, idx) => isPlainRecordEqual(item, b[idx]));
-  }
-  const objA = a as Record<string, unknown>;
-  const objB = b as Record<string, unknown>;
-  const keysA = Object.keys(objA).filter((k) => objA[k] !== undefined);
-  const keysB = Object.keys(objB).filter((k) => objB[k] !== undefined);
-  if (keysA.length !== keysB.length) return false;
-  return keysA.every((k) => Object.prototype.hasOwnProperty.call(objB, k) && isPlainRecordEqual(objA[k], objB[k]));
 }
 
 export function ProgressProvider({ children }: { children: ReactNode }) {
@@ -121,31 +114,26 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
   const [syncError, setSyncError] = useState<string | null>(null);
   const [isSyncing, setIsSyncing] = useState(false);
 
-  const hydratedUserIdRef = useRef<number | null>(null);
+  const syncErrorRef = useRef<string | null>(null);
+  syncErrorRef.current = syncError;
 
-  const latestRef = useRef({
+  const hydratedUserIdRef = useRef<number | null>(null);
+  const pullInFlightUserRef = useRef<number | null>(null);
+  const lastPullAtRef = useRef<number>(0);
+  const pushInFlightRef = useRef(false);
+  const mutationVersionRef = useRef(0);
+  const exitFlushedVersionRef = useRef(-1);
+
+  const latestRef = useRef<ProgressSnapshot>({
     checklist,
     examsDone,
     difficultyNotes,
     currentWeek,
   });
 
-  useEffect(() => {
-    latestRef.current = { checklist, examsDone, difficultyNotes, currentWeek };
-  }, [checklist, examsDone, difficultyNotes, currentWeek]);
-
   const pushTimerRef = useRef<number | null>(null);
   const hasPendingPushRef = useRef(false);
   const pullSeqRef = useRef(0);
-
-  const UPSERT_PROGRESS_SQL = `INSERT INTO concurso_progresso (usuario_id, checklist, provas_feitas, notas_dificuldade, semana_atual, updated_at)
-         VALUES ($1, $2::jsonb, $3::jsonb, $4, $5, NOW())
-         ON CONFLICT (usuario_id) DO UPDATE SET
-           checklist = EXCLUDED.checklist,
-           provas_feitas = EXCLUDED.provas_feitas,
-           notas_dificuldade = EXCLUDED.notas_dificuldade,
-           semana_atual = EXCLUDED.semana_atual,
-           updated_at = NOW();`;
 
   const pushProgressNow = useCallback(async () => {
     if (!user || hydratedUserIdRef.current !== user.id) return;
@@ -153,29 +141,67 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
       window.clearTimeout(pushTimerRef.current);
       pushTimerRef.current = null;
     }
+    if (pushInFlightRef.current) {
+      hasPendingPushRef.current = true;
+      return;
+    }
+
+    pushInFlightRef.current = true;
     setIsSyncing(true);
     try {
-      const snap = latestRef.current;
-      await dbQuery(UPSERT_PROGRESS_SQL, [
-        user.id,
-        JSON.stringify(snap.checklist),
-        JSON.stringify(snap.examsDone),
-        snap.difficultyNotes.trim(),
-        snap.currentWeek,
-      ]);
-      hasPendingPushRef.current = false;
-      setSyncError(null);
+      while (user && hydratedUserIdRef.current === user.id) {
+        const targetVersion = mutationVersionRef.current;
+        const snap = { ...latestRef.current };
+        await dbQuery(UPSERT_PROGRESS_SQL, [
+          user.id,
+          JSON.stringify(snap.checklist),
+          JSON.stringify(snap.examsDone),
+          snap.difficultyNotes.trim(),
+          snap.currentWeek,
+        ]);
+        setSyncError(null);
+        if (mutationVersionRef.current === targetVersion) {
+          hasPendingPushRef.current = false;
+          break;
+        }
+      }
     } catch {
       hasPendingPushRef.current = true;
       setSyncError("Sem conexão com o servidor. Suas alterações foram salvas localmente.");
     } finally {
+      pushInFlightRef.current = false;
       setIsSyncing(false);
     }
-  }, [user, UPSERT_PROGRESS_SQL]);
+  }, [user]);
+
+  const flushExitKeepalive = useCallback(() => {
+    if (!user || hydratedUserIdRef.current !== user.id) return;
+    if (!hasPendingPushRef.current && !pushTimerRef.current) return;
+    if (exitFlushedVersionRef.current === mutationVersionRef.current) return;
+
+    exitFlushedVersionRef.current = mutationVersionRef.current;
+    if (pushTimerRef.current) {
+      window.clearTimeout(pushTimerRef.current);
+      pushTimerRef.current = null;
+    }
+
+    const { body } = buildKeepaliveExitRequestBody(user.id, latestRef.current);
+    void fetch(API_ENDPOINT, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      keepalive: true,
+      body,
+    }).catch(() => {
+      // Já garantido no localStorage
+    });
+  }, [user]);
 
   const pullAndSync = useCallback(async () => {
     if (!user) return;
+    if (pullInFlightUserRef.current === user.id) return;
+
     const reqId = ++pullSeqRef.current;
+    pullInFlightUserRef.current = user.id;
     setIsSyncing(true);
     try {
       const res = await dbQuery<CloudProgressRow>(
@@ -185,7 +211,7 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
       if (pullSeqRef.current !== reqId) return;
       setSyncError(null);
 
-      // Garante que simulados salvos nas chaves individuais do localStorage entrem na mescla
+      // Garante que alterações locais recentes e chaves individuais de simulado entrem na mescla
       const localBase = latestRef.current.checklist;
       const localIndividualSims = storage.getAllSimuladoStates();
       const hydratedLocal =
@@ -250,8 +276,9 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
       }
 
       hydratedUserIdRef.current = user.id;
-      // Só envia de volta para a nuvem se houver diferença real entre o estado mesclado e o banco
-      if (hasLocalDiff) {
+      lastPullAtRef.current = Date.now();
+      // Envia de volta se houve diferença na mescla OU mutação local durante o pull
+      if (hasLocalDiff || hasPendingPushRef.current) {
         await pushProgressNow();
       }
     } catch {
@@ -259,7 +286,10 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
         setSyncError("Não foi possível carregar dados da nuvem. Usando progresso local.");
       }
     } finally {
-      if (pullSeqRef.current === reqId) setIsSyncing(false);
+      if (pullSeqRef.current === reqId) {
+        pullInFlightUserRef.current = null;
+        setIsSyncing(false);
+      }
     }
   }, [user, pushProgressNow]);
 
@@ -272,155 +302,169 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
     }
   }, [user, pullAndSync, pushProgressNow]);
 
-  const scheduleCloudPush = useCallback(() => {
-    if (!user) return;
-    hasPendingPushRef.current = true;
-    if (hydratedUserIdRef.current !== user.id) {
-      void pullAndSync();
-      return;
-    }
-    if (pushTimerRef.current) window.clearTimeout(pushTimerRef.current);
-    pushTimerRef.current = window.setTimeout(() => {
-      void pushProgressNow();
-    }, 650);
-  }, [user, pushProgressNow, pullAndSync]);
+  const scheduleCloudPush = useCallback(
+    (immediate = false) => {
+      if (!user) return;
+      hasPendingPushRef.current = true;
+      if (hydratedUserIdRef.current !== user.id) {
+        if (pullInFlightUserRef.current !== user.id) {
+          void pullAndSync();
+        }
+        return;
+      }
+      if (pushTimerRef.current) {
+        window.clearTimeout(pushTimerRef.current);
+        pushTimerRef.current = null;
+      }
+      if (immediate) {
+        void pushProgressNow();
+        return;
+      }
+      pushTimerRef.current = window.setTimeout(() => {
+        pushTimerRef.current = null;
+        void pushProgressNow();
+      }, 650);
+    },
+    [user, pushProgressNow, pullAndSync]
+  );
 
   // Puxar progresso da nuvem ao logar (bloqueando pushes até concluir a hidratação)
   useEffect(() => {
     if (!user) {
       hydratedUserIdRef.current = null;
+      pullInFlightUserRef.current = null;
       return;
     }
     hydratedUserIdRef.current = null;
+    pullInFlightUserRef.current = null;
     void pullAndSync();
     return () => {
       pullSeqRef.current++;
+      pullInFlightUserRef.current = null;
     };
   }, [user, pullAndSync]);
 
-  // Descarrega alterações pendentes na nuvem ao fechar/recarregar a aba
+  // Descarrega alterações pendentes na nuvem ao fechar/recarregar, trocar aba ou voltar online
   useEffect(() => {
-    const flushPendingOnExit = () => {
-      if (!user || hydratedUserIdRef.current !== user.id) return;
-      if (!hasPendingPushRef.current && !pushTimerRef.current) return;
-      if (pushTimerRef.current) {
-        window.clearTimeout(pushTimerRef.current);
-        pushTimerRef.current = null;
+    const handleVisibilityChange = () => {
+      if (!user) return;
+      if (document.hidden) {
+        if (hydratedUserIdRef.current === user.id && (hasPendingPushRef.current || pushTimerRef.current)) {
+          void pushProgressNow();
+        }
+      } else {
+        exitFlushedVersionRef.current = -1;
+        if (
+          hydratedUserIdRef.current === user.id &&
+          !pushInFlightRef.current &&
+          !hasPendingPushRef.current &&
+          Date.now() - lastPullAtRef.current > VISIBILITY_PULL_STALE_MS
+        ) {
+          void pullAndSync();
+        }
       }
-      const snap = latestRef.current;
-      void fetch(API_ENDPOINT, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        keepalive: true,
-        body: JSON.stringify({
-          query: UPSERT_PROGRESS_SQL,
-          params: [
-            user.id,
-            JSON.stringify(snap.checklist),
-            JSON.stringify(snap.examsDone),
-            snap.difficultyNotes.trim(),
-            snap.currentWeek,
-          ],
-        }),
-      }).catch(() => {
-        // Já garantido no localStorage
-      });
     };
 
-    window.addEventListener("pagehide", flushPendingOnExit);
-    window.addEventListener("beforeunload", flushPendingOnExit);
+    const handlePageShow = () => {
+      exitFlushedVersionRef.current = -1;
+    };
+
+    const handleOnline = () => {
+      if (hasPendingPushRef.current || syncErrorRef.current) {
+        void retrySync();
+      }
+    };
+
+    window.addEventListener("pagehide", flushExitKeepalive);
+    window.addEventListener("pageshow", handlePageShow);
+    document.addEventListener("visibilitychange", handleVisibilityChange);
+    window.addEventListener("online", handleOnline);
+
     return () => {
-      window.removeEventListener("pagehide", flushPendingOnExit);
-      window.removeEventListener("beforeunload", flushPendingOnExit);
+      window.removeEventListener("pagehide", flushExitKeepalive);
+      window.removeEventListener("pageshow", handlePageShow);
+      document.removeEventListener("visibilitychange", handleVisibilityChange);
+      window.removeEventListener("online", handleOnline);
     };
-  }, [user, UPSERT_PROGRESS_SQL]);
-
-  // Sincronizar tema quando o usuário trocar (somente após nuvem hidratada)
-  useEffect(() => {
-    if (latestRef.current.checklist._theme === theme) return;
-    setChecklist((prev) => {
-      if (prev._theme === theme) return prev;
-      const next = { ...prev, _theme: theme };
-      storage.setChecklist(next);
-      latestRef.current.checklist = next;
-      return next;
-    });
-    if (user && hydratedUserIdRef.current === user.id) {
-      scheduleCloudPush();
-    }
-  }, [theme, user, scheduleCloudPush]);
+  }, [user, flushExitKeepalive, pushProgressNow, pullAndSync, retrySync]);
 
   const mutateChecklist = useCallback(
-    (updater: (prev: ChecklistState) => ChecklistState) => {
-      setChecklist((prev) => {
-        const next = updater(prev);
-        storage.setChecklist(next);
-        latestRef.current.checklist = next;
-        return next;
-      });
-      scheduleCloudPush();
+    (updater: (prev: ChecklistState) => ChecklistState, options?: { immediate?: boolean }) => {
+      const prev = latestRef.current.checklist;
+      const next = updater(prev);
+      if (next === prev) return;
+      mutationVersionRef.current++;
+      latestRef.current.checklist = next;
+      storage.setChecklist(next);
+      setChecklist(next);
+      scheduleCloudPush(Boolean(options?.immediate));
     },
     [scheduleCloudPush]
   );
 
+  // Sincronizar tema quando o usuário trocar (somente após estado convergir)
+  useEffect(() => {
+    if (latestRef.current.checklist._theme === theme) return;
+    mutateChecklist((prev) => (prev._theme === theme ? prev : { ...prev, _theme: theme }));
+  }, [theme, mutateChecklist]);
+
   const toggleBlock = useCallback(
     (blockId: string) => {
-      mutateChecklist((prev) => ({ ...prev, [blockId]: !prev[blockId] }));
+      mutateChecklist((prev) => ({ ...prev, [blockId]: !prev[blockId] }), { immediate: true });
     },
     [mutateChecklist]
   );
 
   const setBlockDone = useCallback(
     (blockId: string, done: boolean) => {
-      mutateChecklist((prev) => ({ ...prev, [blockId]: done }));
+      mutateChecklist((prev) => ({ ...prev, [blockId]: done }), { immediate: true });
     },
     [mutateChecklist]
   );
 
   const toggleWeekCollapse = useCallback(
     (weekNum: number) => {
-      setCollapsedWeeks((prev) => {
-        const next = { ...prev, [weekNum]: !prev[weekNum] };
-        storage.setCollapsedWeeks(next);
-        mutateChecklist((c) => ({ ...c, _collapsedWeeks: next }));
-        return next;
-      });
+      const base = latestRef.current.checklist._collapsedWeeks || storage.getCollapsedWeeks();
+      const next = { ...base, [weekNum]: !base[weekNum] };
+      storage.setCollapsedWeeks(next);
+      setCollapsedWeeks(next);
+      mutateChecklist((c) => ({ ...c, _collapsedWeeks: next }));
     },
     [mutateChecklist]
   );
 
   const setMonthWeeksCollapsed = useCallback(
     (month: 1 | 2 | 3, collapsed: boolean) => {
-      setCollapsedWeeks((prev) => {
-        const next = { ...prev };
-        WEEKS_DATA.filter((w) => w.monthNum === month).forEach((w) => {
-          next[w.num] = collapsed;
-        });
-        storage.setCollapsedWeeks(next);
-        mutateChecklist((c) => ({ ...c, _collapsedWeeks: next }));
-        return next;
+      const base = latestRef.current.checklist._collapsedWeeks || storage.getCollapsedWeeks();
+      const next = { ...base };
+      WEEKS_DATA.filter((w) => w.monthNum === month).forEach((w) => {
+        next[w.num] = collapsed;
       });
+      storage.setCollapsedWeeks(next);
+      setCollapsedWeeks(next);
+      mutateChecklist((c) => ({ ...c, _collapsedWeeks: next }));
     },
     [mutateChecklist]
   );
 
   const toggleExamDone = useCallback(
     (examKey: string) => {
-      setExamsDone((prev) => {
-        const next = { ...prev, [examKey]: !prev[examKey] };
-        storage.setExamsDone(next);
-        latestRef.current.examsDone = next;
-        return next;
-      });
-      scheduleCloudPush();
+      const prev = latestRef.current.examsDone;
+      const next = { ...prev, [examKey]: !prev[examKey] };
+      mutationVersionRef.current++;
+      latestRef.current.examsDone = next;
+      storage.setExamsDone(next);
+      setExamsDone(next);
+      scheduleCloudPush(true);
     },
     [scheduleCloudPush]
   );
 
   const setDifficultyNotes = useCallback(
     (notes: string) => {
-      setDifficultyNotesState(notes);
+      mutationVersionRef.current++;
       latestRef.current.difficultyNotes = notes;
+      setDifficultyNotesState(notes);
       scheduleCloudPush();
     },
     [scheduleCloudPush]
@@ -428,8 +472,9 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
 
   const setCurrentWeek = useCallback(
     (weekNum: number) => {
-      setCurrentWeekState(weekNum);
+      mutationVersionRef.current++;
       latestRef.current.currentWeek = weekNum;
+      setCurrentWeekState(weekNum);
       scheduleCloudPush();
     },
     [scheduleCloudPush]
@@ -444,17 +489,20 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
 
   const updateQuizDoc = useCallback(
     (docId: string, updater: (prev: QuizDocState) => QuizDocState) => {
-      mutateChecklist((prev) => {
-        const currentStore = prev._quizStore || {};
-        const prevDoc = currentStore[docId] || {};
-        return {
-          ...prev,
-          _quizStore: {
-            ...currentStore,
-            [docId]: updater(prevDoc),
-          },
-        };
-      });
+      mutateChecklist(
+        (prev) => {
+          const currentStore = prev._quizStore || {};
+          const prevDoc = currentStore[docId] || {};
+          return {
+            ...prev,
+            _quizStore: {
+              ...currentStore,
+              [docId]: updater(prevDoc),
+            },
+          };
+        },
+        { immediate: true }
+      );
     },
     [mutateChecklist]
   );
@@ -468,24 +516,27 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
 
   const markAxisCompleted = useCallback(
     (docId: string, axisId: string, nextStep?: string) => {
-      mutateChecklist((prev) => {
-        const map = prev._axesProgress || {};
-        const current = map[docId] || { completedAxes: [] };
-        const set = new Set(current.completedAxes);
-        set.add(axisId);
-        return {
-          ...prev,
-          _axesProgress: {
-            ...map,
-            [docId]: {
-              ...current,
-              completedAxes: Array.from(set),
-              lastStep: nextStep ?? current.lastStep,
-              completedAt: new Date().toISOString(),
+      mutateChecklist(
+        (prev) => {
+          const map = prev._axesProgress || {};
+          const current = map[docId] || { completedAxes: [] };
+          const set = new Set(current.completedAxes);
+          set.add(axisId);
+          return {
+            ...prev,
+            _axesProgress: {
+              ...map,
+              [docId]: {
+                ...current,
+                completedAxes: Array.from(set),
+                lastStep: nextStep ?? current.lastStep,
+                completedAt: new Date().toISOString(),
+              },
             },
-          },
-        };
-      });
+          };
+        },
+        { immediate: true }
+      );
     },
     [mutateChecklist]
   );
@@ -532,19 +583,22 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
   const saveSimuladoState = useCallback(
     (simId: string, next: SimuladoState) => {
       storage.setSimuladoState(simId, next);
-      mutateChecklist((prev) => {
-        const nextSimulados: Record<string, SimuladoState> = {
-          ...(prev._simulados || {}),
-          [simId]: next,
-        };
-        if (simId === "simulado-sem-01-02") {
-          nextSimulados["revisao_simulado_v1"] = next;
-        }
-        return {
-          ...prev,
-          _simulados: nextSimulados,
-        };
-      });
+      mutateChecklist(
+        (prev) => {
+          const nextSimulados: Record<string, SimuladoState> = {
+            ...(prev._simulados || {}),
+            [simId]: next,
+          };
+          if (simId === "simulado-sem-01-02") {
+            nextSimulados["revisao_simulado_v1"] = next;
+          }
+          return {
+            ...prev,
+            _simulados: nextSimulados,
+          };
+        },
+        { immediate: true }
+      );
     },
     [mutateChecklist]
   );
@@ -559,50 +613,32 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
     ) => {
       if (deltaSeconds <= 0 && !countSession) return;
 
-      setChecklist((prev) => {
-        const nextStudyTime = addStudyDelta(
-          prev._studyTime,
-          deltaSeconds,
-          kind,
-          target,
-          countSession
-        );
-        const nextChecklist: ChecklistState = {
-          ...prev,
-          _studyTime: nextStudyTime,
-        };
-        latestRef.current.checklist = nextChecklist;
-        storage.setChecklist(nextChecklist);
-        return nextChecklist;
-      });
+      const prevChecklist = latestRef.current.checklist;
+      const nextStudyTime = addStudyDelta(
+        prevChecklist._studyTime,
+        deltaSeconds,
+        kind,
+        target,
+        countSession
+      );
+      const nextChecklist: ChecklistState = {
+        ...prevChecklist,
+        _studyTime: nextStudyTime,
+      };
+      mutationVersionRef.current++;
+      latestRef.current.checklist = nextChecklist;
+      storage.setChecklist(nextChecklist);
+      setChecklist(nextChecklist);
+      hasPendingPushRef.current = true;
 
       if (options?.flushKeepalive) {
-        if (user && hydratedUserIdRef.current === user.id) {
-          const snap = latestRef.current;
-          void fetch(API_ENDPOINT, {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            keepalive: true,
-            body: JSON.stringify({
-              query: UPSERT_PROGRESS_SQL,
-              params: [
-                user.id,
-                JSON.stringify(snap.checklist),
-                JSON.stringify(snap.examsDone),
-                snap.difficultyNotes.trim(),
-                snap.currentWeek,
-              ],
-            }),
-          }).catch(() => {
-            // Silencioso no encerramento da janela; já garantido no localStorage
-          });
-        }
+        flushExitKeepalive();
         return;
       }
 
       scheduleCloudPush();
     },
-    [user, scheduleCloudPush, UPSERT_PROGRESS_SQL]
+    [flushExitKeepalive, scheduleCloudPush]
   );
 
   const { completedBlocksCount, totalBlocksCount, completedExamsCount } = useMemo(() => {

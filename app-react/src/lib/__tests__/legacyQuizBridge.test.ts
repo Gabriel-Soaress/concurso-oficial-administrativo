@@ -157,4 +157,89 @@ describe("legacyQuizBridge", () => {
     expect(merged._simulados?.["simulado-sem-01-03"]?.answers).toEqual({ pt2_q1: "A", pt2_q2: "D" });
     expect(merged._simulados?.["simulado-sem-01-03"]?.corrected).toBe(true);
   });
+
+  it("mergeAxesProgress faz união dos eixos e escolhe lastStep/completedAt do timestamp mais recente", () => {
+    const localNewer = mergeCloudAndLocalChecklist(
+      {
+        _axesProgress: {
+          w5_rlm_doc0: {
+            completedAxes: ["eixo-1", "eixo-2", "eixo-3"],
+            lastStep: "eixo-4",
+            completedAt: "2026-11-26T23:35:00.000Z",
+          },
+        },
+      },
+      {
+        _axesProgress: {
+          w5_rlm_doc0: {
+            completedAxes: ["eixo-1", "eixo-4"],
+            lastStep: "eixo-2",
+            completedAt: "2026-11-26T23:27:00.000Z",
+          },
+        },
+      }
+    );
+
+    expect(localNewer._axesProgress?.w5_rlm_doc0?.completedAxes).toEqual([
+      "eixo-1",
+      "eixo-2",
+      "eixo-3",
+      "eixo-4",
+    ]);
+    expect(localNewer._axesProgress?.w5_rlm_doc0?.lastStep).toBe("eixo-4");
+    expect(localNewer._axesProgress?.w5_rlm_doc0?.completedAt).toBe("2026-11-26T23:35:00.000Z");
+
+    const cloudNewer = mergeCloudAndLocalChecklist(
+      {
+        _axesProgress: {
+          w5_rlm_doc0: {
+            completedAxes: ["eixo-1"],
+            lastStep: "eixo-2",
+            completedAt: "2026-11-26T23:20:00.000Z",
+          },
+        },
+      },
+      {
+        _axesProgress: {
+          w5_rlm_doc0: {
+            completedAxes: ["eixo-1", "eixo-2"],
+            lastStep: "eixo-3",
+            completedAt: "2026-11-26T23:30:00.000Z",
+          },
+        },
+      }
+    );
+
+    expect(cloudNewer._axesProgress?.w5_rlm_doc0?.completedAxes).toEqual(["eixo-1", "eixo-2"]);
+    expect(cloudNewer._axesProgress?.w5_rlm_doc0?.lastStep).toBe("eixo-3");
+    expect(cloudNewer._axesProgress?.w5_rlm_doc0?.completedAt).toBe("2026-11-26T23:30:00.000Z");
+  });
+
+  it("compacta mapas vazios em _quizStore durante a mescla", () => {
+    const merged = mergeCloudAndLocalChecklist(
+      {
+        _quizStore: {
+          w5_rlm_doc0: {
+            mcAnswers: { axis_1_q1: "A" },
+            mcChecked: {},
+            mcEliminated: {},
+            wsInputs: {},
+          },
+        },
+      },
+      {
+        _quizStore: {
+          w5_rlm_doc0: {
+            mcChecked: { axis_1_q1: true },
+            innerChecks: {},
+          },
+        },
+      }
+    );
+
+    expect(merged._quizStore?.w5_rlm_doc0).toEqual({
+      mcAnswers: { axis_1_q1: "A" },
+      mcChecked: { axis_1_q1: true },
+    });
+  });
 });

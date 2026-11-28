@@ -2,5 +2,11 @@
   "name": "concurso-oficial-administrativo",
   "version": "1.0.0",
   "private": true,
-  "type": "module"
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-vercel.mjs",
+    "dev": "npm --prefix app-react run dev",
+    "test": "npm --prefix app-react test",
+    "typecheck": "npm --prefix app-react run typecheck"
+  }
 }

@@ -115,14 +115,12 @@ export function useStudyTimeTracker(): void {
 
     document.addEventListener("visibilitychange", handleVisibility);
     window.addEventListener("pagehide", handleExit);
-    window.addEventListener("beforeunload", handleExit);
 
     return () => {
       window.clearInterval(intervalId);
       document.removeEventListener("visibilitychange", handleVisibility);
       window.removeEventListener("pagehide", handleExit);
-      window.removeEventListener("beforeunload", handleExit);
-      flush(true, true);
+      flush(true, false);
     };
   }, []);
 }
